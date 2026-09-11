@@ -5,26 +5,22 @@ mapscripts Naranja_IslaNavel_G05_M02_MapScripts {
 }
 
 script Naranja_IslaNavel_G05_M02_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
-    loadword(0, Naranja_IslaNavel_G05_M02_Text_08177335)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M02_Text_08177335, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M02_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 {
-    loadword(0, Naranja_IslaNavel_G05_M02_Text_081773C6)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M02_Text_081773C6, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M02_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId3 {
-    loadword(0, Naranja_IslaNavel_G05_M02_Text_08177437)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M02_Text_08177437, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M02_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaNavel_G05_M02_Text_081774B1)
-    callstd(3)
+    msgbox(Naranja_IslaNavel_G05_M02_Text_081774B1, MSGBOX_SIGN)
     end
 }
 

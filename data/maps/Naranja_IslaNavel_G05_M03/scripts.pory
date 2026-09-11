@@ -21,22 +21,19 @@ script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
 }
 
 script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId2 {
-    loadword(0, Naranja_IslaNavel_G05_M03_Text_0817768C)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M03_Text_0817768C, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3 {
-    loadword(0, Naranja_IslaNavel_G05_M03_Text_081776F5)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M03_Text_081776F5, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId4 {
     lock
     faceplayer
-    loadword(0, Naranja_IslaNavel_G05_M03_Text_086B7791)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M03_Text_086B7791, MSGBOX_DEFAULT)
     closemessage
     copyvar(VAR_0x8000, VAR_FACING)
     compare_var_to_value(VAR_0x8000, 4)
@@ -45,8 +42,7 @@ script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId4 {
     delay(0x30)
     nop
     nop
-    loadword(0, Naranja_IslaNavel_G05_M03_Text_086B7297)
-    callstd(6)
+    msgbox(Naranja_IslaNavel_G05_M03_Text_086B7297, MSGBOX_AUTOCLOSE)
     nop
     applymovement(5, Naranja_IslaNavel_G05_M03_Movement_086B7289)
     applymovement(6, Naranja_IslaNavel_G05_M03_Movement_086B728B)

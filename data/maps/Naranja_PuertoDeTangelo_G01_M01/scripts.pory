@@ -45,8 +45,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152837 {
     setvar(VAR_0x8004, 1)
     special(DoPCTurnOnEffect)
     playse(SE_PC_ON)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6, MSGBOX_DEFAULT)
     special(BedroomPC)
     waitstate
     releaseall
@@ -54,21 +53,18 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152837 {
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_0815285D {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A100C)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081A100C, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_2 {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172F9A)
-    callstd(3)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_08172F9A, MSGBOX_SIGN)
     end
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_4 {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_0817306C)
-    callstd(3)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_0817306C, MSGBOX_SIGN)
     end
 }
 
@@ -92,8 +88,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_N
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152AD4 {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_0817337E)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_0817337E, MSGBOX_DEFAULT)
     playbgm(MUS_ENCOUNTER_MAY, 1)
     applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
@@ -101,8 +96,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152AD4 {
     waitmovement(LOCALID_NONE)
     applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081733AF)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081733AF, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 4)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B29)
@@ -132,8 +126,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B3F {
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B4A {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081735C9)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081735C9, MSGBOX_DEFAULT)
     playbgm(MUS_ENCOUNTER_BRENDAN, 1)
     applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
@@ -141,8 +134,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B4A {
     waitmovement(LOCALID_NONE)
     applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081735FC)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081735FC, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 4)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B9F)
@@ -181,28 +173,24 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BB5 {
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BDB {
     checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0125)
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BFF)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081737AE)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081737AE, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BED {
     checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0125)
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152C08)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081738F2)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081738F2, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BFF {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08173883)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_08173883, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152C08 {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081739CC)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081739CC, MSGBOX_DEFAULT)
     return
 }
 
@@ -238,8 +226,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_3 {
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB {
     checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0051)
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A91)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172E18)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_08172E18, MSGBOX_DEFAULT)
     call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A9B)
     delay(0x1E)
     setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
@@ -264,8 +251,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A31 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C, MSGBOX_DEFAULT)
     closemessage
     applymovement(32776, Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AA9)
     waitmovement(LOCALID_NONE)
@@ -279,8 +265,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A61 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C, MSGBOX_DEFAULT)
     closemessage
     applymovement(32776, Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AB4)
     waitmovement(LOCALID_NONE)

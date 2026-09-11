@@ -350,8 +350,7 @@ script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40CC {
     copyvar(VAR_0x8007, VAR_LAST_TALKED)
     lock
     faceplayer
-    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A457E)
-    callstd(5)
+    msgbox(Naranja_7islasPomelo_G03_M02_Text_081A457E, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
     compare_var_to_value(VAR_RESULT, 1)
@@ -442,8 +441,7 @@ script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41FB {
     copyvar(VAR_0x8007, VAR_LAST_TALKED)
     lock
     faceplayer
-    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A45FE)
-    callstd(5)
+    msgbox(Naranja_7islasPomelo_G03_M02_Text_081A45FE, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
     compare_var_to_value(VAR_RESULT, 1)
@@ -564,20 +562,17 @@ script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D {
 }
 
 script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4339 {
-    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A141C)
-    callstd(2)
+    msgbox(Naranja_7islasPomelo_G03_M02_Text_081A141C, MSGBOX_NPC)
     end
 }
 
 script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4342 {
-    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A13DF)
-    callstd(2)
+    msgbox(Naranja_7islasPomelo_G03_M02_Text_081A13DF, MSGBOX_NPC)
     end
 }
 
 script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A434B {
-    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A145C)
-    callstd(2)
+    msgbox(Naranja_7islasPomelo_G03_M02_Text_081A145C, MSGBOX_NPC)
     end
 }
 

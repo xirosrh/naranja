@@ -47,74 +47,68 @@ Naranja_Route110_G29_M08_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId1::
 # 34 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_561, LOCALID_NONE, Naranja_Route110_G29_M08_Text_0819DC87, Naranja_Route110_G29_M08_Text_0819DCC6
 # 35 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M08_Text_0819DCE7
-# 36 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route110_G29_M08_Text_0819DCE7, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M08_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
-# 41 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 40 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_407, LOCALID_NONE, Naranja_Route110_G29_M08_Text_0819DD49, Naranja_Route110_G29_M08_Text_0819DD83
-# 42 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M08_Text_0819DD96
-# 43 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
-	callstd 6
+# 41 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+	msgbox Naranja_Route110_G29_M08_Text_0819DD96, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M08_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId3::
-# 48 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 46 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_554, LOCALID_NONE, Naranja_Route110_G29_M08_Text_0819DDCF, Naranja_Route110_G29_M08_Text_0819DDFE
-# 49 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M08_Text_0819DE44
-# 50 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
-	callstd 6
+# 47 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+	msgbox Naranja_Route110_G29_M08_Text_0819DE44, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M08_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4::
-# 55 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 52 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x7B
-# 56 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 53 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 57 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 54 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M08_Text_0819DC87::
-# 61 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 58 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "When I heard there was a strange\nhouse, I had to check it out.$"
 
 Naranja_Route110_G29_M08_Text_0819DCC6::
-# 65 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 62 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "I’ve discovered a tough TRAINER!$"
 
 Naranja_Route110_G29_M08_Text_0819DCE7::
-# 69 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 66 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "I’m sure having a good time checking\nthis place out.\pIt’s a challenge I’ve found worth\nrepeating!$"
 
 Naranja_Route110_G29_M08_Text_0819DD49::
-# 73 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 70 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "Maybe I could get my BIRD POKéMON\nto fly over the wall...$"
 
 Naranja_Route110_G29_M08_Text_0819DD83::
-# 77 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 74 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "Gwaaah! I blew it!$"
 
 Naranja_Route110_G29_M08_Text_0819DD96::
-# 81 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 78 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "Ehehehe... I guess I lost because I\nwas trying to cheat.$"
 
 Naranja_Route110_G29_M08_Text_0819DDCF::
-# 85 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 82 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "I’m getting dizzy from these rotating\ndoors...$"
 
 Naranja_Route110_G29_M08_Text_0819DDFE::
-# 89 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 86 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "Everything’s spinning around and\naround. I can’t take this anymore...$"
 
 Naranja_Route110_G29_M08_Text_0819DE44::
-# 93 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
+# 90 "data/maps/Naranja_Route110_G29_M08/scripts.pory"
 	.string "You don’t seem to be affected at all.\nOr do you have your poker face on?$"

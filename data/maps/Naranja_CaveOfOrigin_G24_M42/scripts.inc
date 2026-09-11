@@ -40,150 +40,146 @@ Naranja_CaveOfOrigin_G24_M42_EventScript_Trigger_1::
 # 31 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitmovement LOCALID_NONE
 # 32 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	loadword 0, Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4
+	msgbox Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4, MSGBOX_DEFAULT
 # 33 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	callstd 4
-# 34 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	closemessage
-# 35 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 34 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setweather 0
-# 36 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 35 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	doweather
-# 37 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 36 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	special WaitWeather
+# 37 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+	waitstate
 # 38 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	waitstate
-# 39 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	playse SE_M_DETECT
-# 40 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 39 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setfieldeffectargument 0, 9
-# 41 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 40 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setfieldeffectargument 1, 0xD
-# 42 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 41 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setfieldeffectargument 2, 0
-# 43 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 42 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	dofieldeffect 0x36
-# 44 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 43 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitfieldeffect 0x36
-# 45 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 44 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setvar VAR_RESULT, 2
-# 46 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 45 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	playse SE_ORB
+# 46 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+	special DoOrbEffect
 # 47 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	special DoOrbEffect
+	waitstate
 # 48 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	waitstate
-# 49 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	special DoOrbEffect
+# 49 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+	waitstate
 # 50 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	waitstate
-# 51 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	applymovement LOCALID_CAVE_OF_ORIGIN_G24_M42_248, Naranja_CaveOfOrigin_G24_M42_Movement_0815DE7D
-# 52 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 51 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitmovement LOCALID_NONE
-# 53 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 52 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	delay 0x3C
-# 54 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 53 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setwildbattle SPECIES_GROUDON, 0x2D, 0
-# 55 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 54 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitse
-# 56 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 55 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	playmoncry SPECIES_GROUDON, 2
-# 57 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 56 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	delay 0x28
-# 58 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 57 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitmoncry
-# 59 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 58 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 60 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 59 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	special StartGroudonKyogreBattle
-# 61 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 60 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitstate
-# 62 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 61 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	clearflag FLAG_SYS_POKEDEX_GET
-# 63 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 62 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 64 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 63 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 65 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 64 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	call_if EQUAL, Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DE73
-# 66 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 65 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setflag FLAG_HIDE_ISLA_NUEVA_G00_M07_WALLACE
-# 67 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 66 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setflag FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY
-# 68 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 67 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setflag FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY_2
-# 69 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 68 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_NUEVA_G15_M00_WALLACE
-# 70 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 69 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setvar VAR_NARANJA_CAVE_OF_ORIGIN_STORY_STATE, 1
-# 71 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 70 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071
-# 72 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 71 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_NUEVA_G00_M07_OLD_MAN_1
-# 73 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 72 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	clearflag FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A
-# 74 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 73 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setvar VAR_NARANJA_BEMENTER_STORY_STATE, 2
-# 75 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 74 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	clearflag FLAG_HIDE_BEMENTER_G24_M22_246
-# 76 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 75 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DE73::
+# 80 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+	msgbox Naranja_CaveOfOrigin_G24_M42_Text_081B5009, MSGBOX_DEFAULT
 # 81 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	loadword 0, Naranja_CaveOfOrigin_G24_M42_Text_081B5009
-# 82 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	callstd 4
-# 83 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	closemessage
 	return
 
 
 Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_081A01B5::
-# 88 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 86 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_8, 0xC6
-# 89 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 87 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_9, 0xCE
 	return
 
 
 Naranja_CaveOfOrigin_G24_M42_EventScript_Trigger_2::
-# 94 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 92 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	lockall
-# 95 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 93 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitse
-# 96 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 94 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	playmoncry SPECIES_GROUDON, 2
-# 97 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 95 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	waitmoncry
-# 98 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 96 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	setvar VAR_TEMP_5, 1
-# 99 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 97 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	releaseall
 	end
 
 
-# 103 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 101 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 Naranja_CaveOfOrigin_G24_M42_Movement_0815DE7D:
-# 104 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 102 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	init_affine_anim
-# 105 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 103 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	hide_reflection
+# 104 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+	delay_16
+# 105 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+	delay_16
 # 106 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	delay_16
-# 107 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
-	delay_16
-# 108 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	show_reflection
 	step_end
 
 Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4::
-# 111 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 109 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	.string "{PLAYER}’s RED ORB suddenly began\nglowing!$"
 
 Naranja_CaveOfOrigin_G24_M42_Text_081B5009::
-# 115 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
+# 113 "data/maps/Naranja_CaveOfOrigin_G24_M42/scripts.pory"
 	.string "GROUDON appears to have settled\ninto sleep again...$"

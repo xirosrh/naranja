@@ -5,14 +5,12 @@ mapscripts Naranja_IslaMandarina_G06_M07_MapScripts {
 }
 
 script Naranja_IslaMandarina_G06_M07_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId2 {
-    loadword(0, Naranja_IslaMandarina_G06_M07_Text_0817831D)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M07_Text_0817831D, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G06_M07_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
-    loadword(0, Naranja_IslaMandarina_G06_M07_Text_08178D11)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M07_Text_08178D11, MSGBOX_NPC)
     end
 }
 

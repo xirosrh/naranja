@@ -18,21 +18,18 @@ script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_Loc
     checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
     call_if(EQUAL, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B6560)
     applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G00_M14_Movement_08645ED1)
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CBCE)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CBCE, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId1 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CC28)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CC28, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId4 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CCD0)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CCD0, MSGBOX_NPC)
     end
 }
 
@@ -41,40 +38,34 @@ script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId3 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00C7)
     goto_if(EQUAL, Naranja_IslaMandarina_G00_M14_EventScript_Sub_0814E8C0)
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CD4D)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CD4D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Sub_0814E8C0 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CE30)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CE30, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Sign_2 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CEC0)
-    callstd(3)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CEC0, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Sign_4 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CF0D)
-    callstd(3)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CF0D, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Sign_7 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CF28)
-    callstd(3)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CF28, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Sign_6 {
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CF6D)
-    callstd(3)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CF6D, MSGBOX_SIGN)
     end
 }
 
@@ -96,16 +87,14 @@ script Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B5D6E {
     lock
     faceplayer
     applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G00_M14_Movement_08645ED1)
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_086B5D82)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_086B5D82, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B6560 {
     setflag(FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1)
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CAEB)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CAEB, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1, Naranja_IslaMandarina_G00_M14_Movement_086B6580)
     delay(0xFF)
     nop

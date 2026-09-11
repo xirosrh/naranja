@@ -9,21 +9,18 @@ script Naranja_IslaNueva_G15_M05_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0079)
     goto_if(EQUAL, Naranja_IslaNueva_G15_M05_EventScript_Sub_0815B2C7)
-    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818F991)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M05_Text_0818F991, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x13F)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0079)
-    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818FA03)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M05_Text_0818FA03, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M05_EventScript_Sub_0815B2C7 {
-    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818FA03)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M05_Text_0818FA03, MSGBOX_DEFAULT)
     release
     end
 }
@@ -33,8 +30,7 @@ script Naranja_IslaNueva_G15_M05_EventScript_OBJ_EVENT_GFX_KECLEON_1_LocalId2 {
     faceplayer
     waitse
     playmoncry(SPECIES_KECLEON, 0)
-    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818FA50)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M05_Text_0818FA50, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

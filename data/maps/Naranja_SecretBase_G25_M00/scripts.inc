@@ -42,1038 +42,936 @@ Naranja_SecretBase_G25_M00_OnFrame_1::
 # 29 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_NARANJA_SECRET_BASE_EVENT_STATE_2, 1
 # 30 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_08198F89
+	msgbox Naranja_SecretBase_G25_M00_Text_08198F89, MSGBOX_YESNO
 # 31 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 32 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 33 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 32 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A2E08
-# 34 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 33 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	closemessage
-# 35 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 34 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	playse SE_EXIT
-# 36 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 35 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special ClearAndLeaveSecretBase
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A2E08::
-# 41 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 40 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	closemessage
-# 42 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 41 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0060
-# 43 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 42 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special EnterNewlyCreatedSecretBase
-# 44 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 43 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	waitstate
 	end
 
 
 Naranja_SecretBase_G25_M00_OnWarp_1::
-# 49 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 48 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_0x8004, 0
-# 50 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 49 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_0x8005, 0
-# 51 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 50 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special InitSecretBaseDecorationSprites
-# 52 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 51 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_NARANJA_SECRET_BASE_STORY_STATE, 1
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_OBJECT_1_LocalId1::
-# 57 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 56 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special GetSecretBaseOwnerAndState
-# 58 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 57 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 0
-# 59 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 58 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3032
-# 60 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 59 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 1
-# 61 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 60 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A30AE
-# 62 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 61 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 2
-# 63 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 62 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A312A
-# 64 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 63 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 3
-# 65 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 64 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A31A6
-# 66 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 65 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 4
-# 67 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 66 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3222
-# 68 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 67 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 5
-# 69 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 68 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A329E
-# 70 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 69 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 6
-# 71 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 70 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A331A
-# 72 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 71 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 7
-# 73 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 72 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3396
-# 74 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 73 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 8
-# 75 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 74 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3412
-# 76 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 75 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_0x8004, 9
-# 77 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 76 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A348E
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3032::
-# 82 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 81 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 83 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 82 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3086
-# 84 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 83 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 85 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 84 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A30A5
-# 86 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 85 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 87 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 86 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
+# 87 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1AEA, MSGBOX_YESNO
 # 88 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1AEA
+	compare_var_to_value VAR_RESULT, 0
 # 89 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
+	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F
 # 90 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	compare_var_to_value VAR_RESULT, 0
-# 91 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F
-# 92 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 93 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 91 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 94 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 92 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 95 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 93 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 96 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 94 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F
-# 97 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 95 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 98 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1B83
-# 99 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 100 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 96 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1B83, MSGBOX_DEFAULT
+# 97 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3086::
-# 104 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1C3B
-# 105 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 101 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1C3B, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F::
-# 110 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 106 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 111 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 107 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 112 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 108 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 113 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1B97
-# 114 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 109 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1B97, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A30A5::
-# 119 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1BF8
-# 120 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 114 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1BF8, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A30AE::
-# 125 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 119 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 126 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 120 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3102
-# 127 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 121 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 128 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 122 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3121
-# 129 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 123 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 130 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 124 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 131 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1E67
-# 132 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 133 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 125 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1E67, MSGBOX_YESNO
+# 126 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 134 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 127 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B
-# 135 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 128 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 136 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 129 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 137 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 130 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 138 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 131 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 139 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 132 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B
-# 140 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 133 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 141 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1F04
-# 142 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 143 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 134 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1F04, MSGBOX_DEFAULT
+# 135 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3102::
-# 147 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1FBD
-# 148 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 139 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1FBD, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B::
-# 153 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 144 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 154 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 145 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 155 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 146 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 156 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1F2E
-# 157 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 147 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1F2E, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3121::
-# 162 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1F88
-# 163 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 152 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1F88, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A312A::
-# 168 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 157 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 169 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 158 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A317E
-# 170 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 159 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 171 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 160 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A319D
-# 172 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 161 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 173 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 162 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 174 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A218F
-# 175 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 176 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 163 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A218F, MSGBOX_YESNO
+# 164 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 177 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 165 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187
-# 178 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 166 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 179 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 167 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 180 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 168 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 181 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 169 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 182 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 170 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187
-# 183 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 171 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 184 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2220
-# 185 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 186 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 172 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2220, MSGBOX_DEFAULT
+# 173 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A317E::
-# 190 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A22FA
-# 191 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 177 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A22FA, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187::
-# 196 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 182 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 197 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 183 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 198 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 184 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 199 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2230
-# 200 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 185 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2230, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A319D::
-# 205 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2280
-# 206 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 190 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2280, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A31A6::
-# 211 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 195 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 212 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 196 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A31FA
-# 213 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 197 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 214 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 198 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3219
-# 215 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 199 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 216 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 200 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 217 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A24E1
-# 218 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 219 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 201 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A24E1, MSGBOX_YESNO
+# 202 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 220 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 203 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203
-# 221 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 204 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 222 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 205 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 223 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 206 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 224 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 207 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 225 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 208 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203
-# 226 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 209 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 227 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A256F
-# 228 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 229 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 210 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A256F, MSGBOX_DEFAULT
+# 211 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A31FA::
-# 233 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2609
-# 234 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 215 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2609, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203::
-# 239 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 220 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 240 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 221 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 241 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 222 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 242 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A258A
-# 243 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 223 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A258A, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3219::
-# 248 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A25D2
-# 249 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 228 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A25D2, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3222::
-# 254 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 233 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 255 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 234 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3276
-# 256 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 235 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 257 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 236 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3295
-# 258 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 237 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 259 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 238 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 260 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2830
-# 261 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 262 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 239 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2830, MSGBOX_YESNO
+# 240 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 263 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 241 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F
-# 264 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 242 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 265 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 243 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 266 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 244 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 267 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 245 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 268 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 246 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F
-# 269 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 247 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 270 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A28D7
-# 271 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 272 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 248 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A28D7, MSGBOX_DEFAULT
+# 249 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3276::
-# 276 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A297C
-# 277 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 253 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A297C, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F::
-# 282 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 258 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 283 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 259 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 284 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 260 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 285 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A28F4
-# 286 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 261 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A28F4, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3295::
-# 291 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A294D
-# 292 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 266 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A294D, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A329E::
-# 297 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 271 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 298 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 272 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32F2
-# 299 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 273 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 300 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 274 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3311
-# 301 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 275 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 302 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 276 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 303 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1CB2
-# 304 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 305 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 277 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1CB2, MSGBOX_YESNO
+# 278 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 306 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 279 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB
-# 307 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 280 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 308 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 281 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 309 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 282 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 310 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 283 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 311 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 284 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB
-# 312 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 285 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 313 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1D48
-# 314 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 315 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 286 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1D48, MSGBOX_DEFAULT
+# 287 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A32F2::
-# 319 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1DF6
-# 320 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 291 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1DF6, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB::
-# 325 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 296 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 326 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 297 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 327 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 298 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 328 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1D59
-# 329 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 299 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1D59, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3311::
-# 334 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A1DC0
-# 335 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 304 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A1DC0, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A331A::
-# 340 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 309 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 341 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 310 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A336E
-# 342 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 311 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 343 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 312 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A338D
-# 344 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 313 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 345 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 314 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 346 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2026
-# 347 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 348 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 315 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2026, MSGBOX_YESNO
+# 316 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 349 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 317 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377
-# 350 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 318 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 351 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 319 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 352 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 320 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 353 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 321 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 354 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 322 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377
-# 355 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 323 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 356 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2095
-# 357 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 358 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 324 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2095, MSGBOX_DEFAULT
+# 325 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A336E::
-# 362 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2147
-# 363 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 329 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2147, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377::
-# 368 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 334 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 369 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 335 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 370 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 336 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 371 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A20AE
-# 372 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 337 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A20AE, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A338D::
-# 377 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2109
-# 378 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 342 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2109, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3396::
-# 383 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 347 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 384 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 348 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33EA
-# 385 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 349 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 386 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 350 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3409
-# 387 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 351 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 388 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 352 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 389 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A236A
-# 390 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 391 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 353 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A236A, MSGBOX_YESNO
+# 354 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 392 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 355 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3
-# 393 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 356 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 394 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 357 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 395 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 358 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 396 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 359 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 397 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 360 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3
-# 398 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 361 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 399 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2405
-# 400 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 401 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 362 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2405, MSGBOX_DEFAULT
+# 363 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A33EA::
-# 405 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2480
-# 406 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 367 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2480, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3::
-# 411 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 372 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 412 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 373 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 413 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 374 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 414 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2420
-# 415 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 375 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2420, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3409::
-# 420 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2446
-# 421 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 380 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2446, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3412::
-# 426 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 385 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 427 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 386 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3466
-# 428 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 387 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 429 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 388 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3485
-# 430 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 389 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 431 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 390 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 432 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2663
-# 433 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 434 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 391 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2663, MSGBOX_YESNO
+# 392 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 435 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 393 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F
-# 436 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 394 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 437 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 395 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 438 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 396 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 439 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 397 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 440 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 398 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F
-# 441 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 399 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 442 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2710
-# 443 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 444 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 400 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2710, MSGBOX_DEFAULT
+# 401 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3466::
-# 448 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A27A4
-# 449 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 405 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A27A4, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F::
-# 454 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 410 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 455 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 411 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 456 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 412 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 457 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2736
-# 458 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 413 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2736, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3485::
-# 463 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A276A
-# 464 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 418 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A276A, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A348E::
-# 469 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 423 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	checkflag FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804
-# 470 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 424 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34E2
-# 471 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 425 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 472 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 426 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3501
-# 473 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 427 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	lock
-# 474 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 428 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	faceplayer
-# 475 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2A13
-# 476 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 5
-# 477 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 429 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2A13, MSGBOX_YESNO
+# 430 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 478 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 431 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB
-# 479 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 432 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 1
-# 480 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 433 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 481 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 434 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 482 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 435 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 483 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 436 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto_if EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB
-# 484 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 437 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 485 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2AE2
-# 486 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 4
-# 487 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 438 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2AE2, MSGBOX_DEFAULT
+# 439 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	goto Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A
 	return
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A34E2::
-# 491 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2BA4
-# 492 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 443 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2BA4, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB::
-# 497 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 448 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_RESULT, 0
-# 498 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 449 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special SetBattledOwnerFromResult
-# 499 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 450 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	erasebox 0, 0, 0xF, 0xA
-# 500 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2AFB
-# 501 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 451 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2AFB, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A3501::
-# 506 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	loadword 0, Naranja_SecretBase_G25_M00_Text_081A2B69
-# 507 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
-	callstd 2
+# 456 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+	msgbox Naranja_SecretBase_G25_M00_Text_081A2B69, MSGBOX_NPC
 	end
 
 
 Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A::
-# 512 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 461 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special PrepSecretBaseBattleFlags
-# 513 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 462 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_0x8004, 1
-# 514 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 463 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	setvar VAR_0x8005, 0
-# 515 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 464 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special DoSpecialTrainerBattle
-# 516 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 465 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	waitstate
-# 517 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 466 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	special HealPlayerParty
-# 518 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 467 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	release
 	end
 
 
-# 522 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 471 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 Naranja_SecretBase_G25_M00_Movement_081A2E11:
-# 523 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 472 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	walk_up
-# 524 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 473 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	walk_up
 	step_end
 
 Naranja_SecretBase_G25_M00_Text_08198F89::
-# 527 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 476 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Want to make your SECRET BASE here?$"
 
 Naranja_SecretBase_G25_M00_Text_081A1AEA::
-# 531 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 480 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Have you made a SECRET BASE already?\pI went here, there, everywhere before\nchoosing this place.\pSince you’re already here, how would\nyou like to battle?$"
 
 Naranja_SecretBase_G25_M00_Text_081A1B83::
-# 535 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 484 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Okay!\nHere we come!$"
 
 Naranja_SecretBase_G25_M00_Text_081A1B97::
-# 539 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 488 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Hunh?\nOh, you can’t now...$"
 
 Naranja_SecretBase_G25_M00_Text_081A1BF8::
-# 543 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 492 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "What do you think of my SECRET BASE?\nCome visit me again tomorrow.$"
 
 Naranja_SecretBase_G25_M00_Text_081A1C3B::
-# 547 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 496 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Have you made a SECRET BASE already?\pI went here, there, everywhere before\nchoosing this place.\pFeel free to hang out!$"
 
 Naranja_SecretBase_G25_M00_Text_081A1CB2::
-# 551 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 500 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "There’re a lot of places where you can\nmake a SECRET BASE.\pBut I like this spot best.\nDon’t you think it’s nice?\pOh, would you like to have a battle?$"
 
 Naranja_SecretBase_G25_M00_Text_081A1D48::
-# 555 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 504 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Okay, here goes!$"
 
 Naranja_SecretBase_G25_M00_Text_081A1D59::
-# 559 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 508 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Oh...\nYou can’t now, okay.$"
 
 Naranja_SecretBase_G25_M00_Text_081A1DC0::
-# 563 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 512 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "If you’re in this area again, I hope\nyou’ll visit me.$"
 
 Naranja_SecretBase_G25_M00_Text_081A1DF6::
-# 567 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 516 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "There’re a lot of places where you can\nmake a SECRET BASE.\pBut I like this spot best.\nDon’t you think it’s nice?$"
 
 Naranja_SecretBase_G25_M00_Text_081A1E67::
-# 571 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 520 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "This is a popular spot.\nIt’s always taken.\pOh! Were you thinking about taking this\nspot, too?\pI’ll tell you what, you can have this\nspot if you can beat me.$"
 
 Naranja_SecretBase_G25_M00_Text_081A1F04::
-# 575 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 524 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Okay!\nI’m going to defend my SECRET BASE!$"
 
 Naranja_SecretBase_G25_M00_Text_081A1F2E::
-# 579 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 528 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Hunh? Is that right?\nYou’re not interested in this spot?$"
 
 Naranja_SecretBase_G25_M00_Text_081A1F88::
-# 583 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 532 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Okay, when I move one day, this place\nwill be yours!$"
 
 Naranja_SecretBase_G25_M00_Text_081A1FBD::
-# 587 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 536 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "This is a popular spot.\nIt’s always taken.\pI waited a long time for it to open.\nI finally got to use it!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2026::
-# 591 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 540 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Welcome to my POKéMON LAB.\pI carry out research on battling in\nsecrecy.\pWould you like to see how strong I am?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2095::
-# 595 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 544 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I’m going to go all out!$"
 
 Naranja_SecretBase_G25_M00_Text_081A20AE::
-# 599 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 548 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Oh.\nSome other time, then!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2109::
-# 603 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 552 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Thanks for battling with me.\nPlease come back again tomorrow.$"
 
 Naranja_SecretBase_G25_M00_Text_081A2147::
-# 607 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 556 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Welcome to my POKéMON LAB.\pI carry out research on battling in\nsecrecy.$"
 
 Naranja_SecretBase_G25_M00_Text_081A218F::
-# 611 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 560 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "A big mansion is nice, but I like this\nsort of place more.\pI like it because all kinds of people\ncome visit me.\pSo, how would you like a battle?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2220::
-# 615 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 564 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "That’s the way!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2230::
-# 619 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 568 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "When you’re ready, give me a shout!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2280::
-# 623 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 572 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Well, anyway, I should go buy some\ndecorations and furniture.\pI want my SECRET BASE to be a place\nother people can enjoy.$"
 
 Naranja_SecretBase_G25_M00_Text_081A22FA::
-# 627 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 576 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "A big mansion is nice, but I like this\nsort of place more.\pI like it because all kinds of people\ncome visit me.$"
 
 Naranja_SecretBase_G25_M00_Text_081A236A::
-# 631 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 580 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I simply adore shopping for decorations\nand furniture.\pI also love raising POKéMON just\nas much.\pIf you would be so kind, will you battle\nwith my POKéMON?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2405::
-# 635 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 584 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Thank you.\nShall we begin?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2420::
-# 639 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 588 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Oh.\nHow disappointing...$"
 
 Naranja_SecretBase_G25_M00_Text_081A2446::
-# 643 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 592 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "That was all in good fun!\nI should go enjoy shopping now.$"
 
 Naranja_SecretBase_G25_M00_Text_081A2480::
-# 647 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 596 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I simply adore shopping for decorations\nand furniture.\pI also love raising POKéMON just\nas much.$"
 
 Naranja_SecretBase_G25_M00_Text_081A24E1::
-# 651 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 600 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Some people make their SECRET BASES in\nhard-to-find places.\lDo they want to just lie low?\pBut since you found me, how about we\nhave a battle?$"
 
 Naranja_SecretBase_G25_M00_Text_081A256F::
-# 655 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 604 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I’m not going down easily!$"
 
 Naranja_SecretBase_G25_M00_Text_081A258A::
-# 659 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 608 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Oh... Are you maybe tired from searching\nfor this place?$"
 
 Naranja_SecretBase_G25_M00_Text_081A25D2::
-# 663 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 612 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Where’s your SECRET BASE?\nI should go visit you there.$"
 
 Naranja_SecretBase_G25_M00_Text_081A2609::
-# 667 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 616 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Some people make their SECRET BASES in\nhard-to-find places.\lDo they want to just lie low?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2663::
-# 671 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 620 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "People have told me that you can get\ndecorations in several ways.\pWe should have a race to see who can\nget nicer decorations and furniture!\pIn the meantime, want to battle?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2710::
-# 675 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 624 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "This is my SECRET BASE.\nI can’t lose!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2736::
-# 679 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 628 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I’ll battle with you anytime.$"
 
 Naranja_SecretBase_G25_M00_Text_081A276A::
-# 683 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 632 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I won’t lose at collecting decorations.\nCome visit again!$"
 
 Naranja_SecretBase_G25_M00_Text_081A27A4::
-# 687 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 636 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "People have told me that you can get\ndecorations in several ways.\pWe should have a race to see who can\nget nicer decorations and furniture!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2830::
-# 691 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 640 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I found a spot I liked, and I did it up\nwith my favorite decorations.\pI raise my favorite POKéMON and grow\nstronger with it.\pThat’s what I do.\nWant to battle with me?$"
 
 Naranja_SecretBase_G25_M00_Text_081A28D7::
-# 695 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 644 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "Show me what you’re made of!$"
 
 Naranja_SecretBase_G25_M00_Text_081A28F4::
-# 699 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 648 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I guess there are times when you’re not\ninto it.$"
 
 Naranja_SecretBase_G25_M00_Text_081A294D::
-# 703 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 652 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "We can both become stronger.\nLet’s keep at it!$"
 
 Naranja_SecretBase_G25_M00_Text_081A297C::
-# 707 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 656 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I found a spot I liked, and I did it up\nwith my favorite decorations.\pI raise my favorite POKéMON and grow\nstronger with it.\pEvery day is a great day.$"
 
 Naranja_SecretBase_G25_M00_Text_081A2A13::
-# 711 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 660 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "You can learn a lot about the taste\nand sense of people by the kinds of\ldecorations they have, and how they\ldisplay them.\pWhat do you think of my taste?\nAre you speechless?\pWant to see my taste in battling?$"
 
 Naranja_SecretBase_G25_M00_Text_081A2AE2::
-# 715 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 664 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "There’s no holding back!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2AFB::
-# 719 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 668 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "I’ll be happy to demonstrate my style\nanytime.$"
 
 Naranja_SecretBase_G25_M00_Text_081A2B69::
-# 723 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 672 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "What did you think of my style?\nI’ll keep on polishing it!$"
 
 Naranja_SecretBase_G25_M00_Text_081A2BA4::
-# 727 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
+# 676 "data/maps/Naranja_SecretBase_G25_M00/scripts.pory"
 	.string "You can learn a lot about the taste\nand sense of people by the kinds of\ldecorations they have, and how they\ldisplay them.\pWhat do you think of my taste?\nAre you speechless?$"

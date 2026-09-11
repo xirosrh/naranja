@@ -6,8 +6,7 @@ mapscripts Naranja_IslaTangelo_G02_M02_MapScripts {
 }
 
 script Naranja_IslaTangelo_G02_M02_EventScript_Sub_0814F776 {
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_086B5730)
-    callstd(6)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5730, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -27,8 +26,7 @@ script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
 }
 
 script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_081748D1)
-    callstd(2)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_081748D1, MSGBOX_NPC)
     end
 }
 
@@ -44,15 +42,13 @@ script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_WALLY_LocalId4 {
 script Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5CF0 {
     setflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B)
     nop
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_086B5580)
-    callstd(6)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5580, MSGBOX_AUTOCLOSE)
     nop
     checkflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3)
     call_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     nop
     setflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY)
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_086B5790)
-    callstd(6)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5790, MSGBOX_AUTOCLOSE)
     nop
     release
     end
@@ -64,8 +60,7 @@ script Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5D20 {
     checkflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY)
     goto_if(EQUAL, Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5D50)
     setflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY)
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_086B5790)
-    callstd(6)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5790, MSGBOX_AUTOCLOSE)
     release
     end
 }
@@ -74,14 +69,12 @@ script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId3 {
     faceplayer
     setflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3)
     nop
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_086B5B91)
-    callstd(6)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5B91, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5D50 {
-    loadword(0, Naranja_IslaTangelo_G02_M02_Text_086B5AF3)
-    callstd(6)
+    msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5AF3, MSGBOX_AUTOCLOSE)
     end
 }
 

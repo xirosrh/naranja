@@ -5,14 +5,12 @@ mapscripts Naranja_ValnTang_G09_M01_MapScripts {
 }
 
 script Naranja_ValnTang_G09_M01_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId2 {
-    loadword(0, Naranja_ValnTang_G09_M01_Text_0817C7A2)
-    callstd(2)
+    msgbox(Naranja_ValnTang_G09_M01_Text_0817C7A2, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValnTang_G09_M01_EventScript_OBJ_EVENT_GFX_FIRE_CUSHION_LocalId3 {
-    loadword(0, Naranja_ValnTang_G09_M01_Text_0817C80C)
-    callstd(2)
+    msgbox(Naranja_ValnTang_G09_M01_Text_0817C80C, MSGBOX_NPC)
     end
 }
 
@@ -24,8 +22,7 @@ script Naranja_ValnTang_G09_M01_EventScript_Trigger_1 {
     setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
     setweather(0xA)
     doweather
-    loadword(0, Naranja_ValnTang_G09_M01_Text_086B3370)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M01_Text_086B3370, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_VALN_TANG_G09_M01_FIRE_CUSHION, Naranja_ValnTang_G09_M01_Movement_086B336A)
     delay(0x10)
@@ -33,8 +30,7 @@ script Naranja_ValnTang_G09_M01_EventScript_Trigger_1 {
     delay(0x50)
     releaseall
     setweather(0)
-    loadword(0, Naranja_ValnTang_G09_M01_Text_086B3400)
-    callstd(6)
+    msgbox(Naranja_ValnTang_G09_M01_Text_086B3400, MSGBOX_AUTOCLOSE)
     nop
     doweather
     end

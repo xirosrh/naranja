@@ -160,8 +160,7 @@ script Naranja_BandonedShip_G24_M66_EventScript_Sub_0815EE9B {
 
 script Naranja_BandonedShip_G24_M66_EventScript_Sign_5 {
     lockall
-    loadword(0, Naranja_BandonedShip_G24_M66_Text_08198EE2)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M66_Text_08198EE2, MSGBOX_DEFAULT)
     releaseall
     end
 }

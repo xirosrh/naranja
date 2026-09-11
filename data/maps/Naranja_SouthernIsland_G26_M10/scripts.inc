@@ -124,26 +124,26 @@ Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160BA7::
 
 Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160C08::
 # 83 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	loadword 0, Naranja_SouthernIsland_G26_M10_Text_081C52C5
+	msgbox Naranja_SouthernIsland_G26_M10_Text_081C52C5, MSGBOX_DEFAULT
 # 84 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	callstd 4
-# 85 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	releaseall
 	end
 
 
-# 89 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+# 88 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 Naranja_SouthernIsland_G26_M10_Movement_08160C12:
+# 89 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+	walk_up
 # 90 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_up
 # 91 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_up
-# 92 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	walk_up
 	step_end
 
-# 95 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+# 94 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 Naranja_SouthernIsland_G26_M10_Movement_08160C16:
+# 95 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+	delay_16
 # 96 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	delay_16
 # 97 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
@@ -157,19 +157,19 @@ Naranja_SouthernIsland_G26_M10_Movement_08160C16:
 # 101 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	delay_16
 # 102 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	delay_16
+	walk_down
 # 103 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
 # 104 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
 # 105 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	walk_down
-# 106 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 109 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+# 108 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 Naranja_SouthernIsland_G26_M10_Movement_08160C22:
+# 109 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+	walk_down
 # 110 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
 # 111 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
@@ -179,21 +179,19 @@ Naranja_SouthernIsland_G26_M10_Movement_08160C22:
 # 113 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
 # 114 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	walk_down
+	delay_16
 # 115 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	delay_16
 # 116 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	delay_16
+	walk_down
 # 117 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
 # 118 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
 # 119 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	walk_down
-# 120 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
-	walk_down
 	step_end
 
 Naranja_SouthernIsland_G26_M10_Text_081C52C5::
-# 123 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
+# 122 "data/maps/Naranja_SouthernIsland_G26_M10/scripts.pory"
 	.string "“All dreams are but another reality.\nNever forget...”$"

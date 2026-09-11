@@ -54,58 +54,52 @@ Naranja_ShoalCave_G24_M49_EventScript_Sign_1::
 
 Naranja_ShoalCave_G24_M49_EventScript_Sub_0815E445::
 # 41 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
-	loadword 0, Naranja_ShoalCave_G24_M47_Text_081C6979
+	msgbox Naranja_ShoalCave_G24_M47_Text_081C6979, MSGBOX_DEFAULT
 # 42 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
-	callstd 4
-# 43 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M49_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId2::
-# 48 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 47 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	lock
-# 49 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 48 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	faceplayer
-# 50 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 49 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	checkflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_011B
-# 51 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 50 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	goto_if EQUAL, Naranja_ShoalCave_G24_M49_EventScript_Sub_0815E47E
+# 51 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+	msgbox Naranja_ShoalCave_G24_M49_Text_08198200, MSGBOX_DEFAULT
 # 52 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
-	loadword 0, Naranja_ShoalCave_G24_M49_Text_08198200
-# 53 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
-	callstd 4
-# 54 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	setorcopyvar VAR_0x8000, 0xC4
-# 55 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 53 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 56 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 54 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	callstd 0
-# 57 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 55 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 58 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 56 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 59 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 57 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	setflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_011B
-# 60 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 58 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	release
 	end
 
 
 Naranja_ShoalCave_G24_M49_EventScript_Sub_0815E47E::
-# 65 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
-	loadword 0, Naranja_ShoalCave_G24_M49_Text_081982A2
-# 66 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
-	callstd 4
-# 67 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 63 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+	msgbox Naranja_ShoalCave_G24_M49_Text_081982A2, MSGBOX_DEFAULT
+# 64 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	release
 	end
 
 
 Naranja_ShoalCave_G24_M49_Text_08198200::
-# 71 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 68 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	.string "The penetrating cold around these\nparts is an impediment to training.\pBut with focus, one can overcome!\pWith this FOCUS BAND, buckle down and\nwithstand the cold!$"
 
 Naranja_ShoalCave_G24_M49_Text_081982A2::
-# 75 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
+# 72 "data/maps/Naranja_ShoalCave_G24_M49/scripts.pory"
 	.string "Everything starts with focus!$"

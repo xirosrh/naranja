@@ -64,80 +64,76 @@ Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1::
 # 42 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D59F
 # 43 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B5EEC
+	msgbox Naranja_Bementer_G24_M22_Text_081B5EEC, MSGBOX_DEFAULT
 # 44 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 45 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	closemessage
-# 46 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 45 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	fadescreen 1
-# 47 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 46 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	removeobject LOCALID_BEMENTER_G24_M22_246
-# 48 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 47 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	removeobject LOCALID_BEMENTER_G24_M22_241
-# 49 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 48 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	removeobject LOCALID_BEMENTER_G24_M22_241_2
-# 50 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 49 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	removeobject LOCALID_BEMENTER_G24_M22_241_3
-# 51 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 50 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setflag FLAG_HIDE_BEMENTER_G24_M22_246
-# 52 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 51 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setflag FLAG_HIDE_BEMENTER_G24_M22_241
-# 53 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 52 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	fadescreen 0
-# 54 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 53 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	delay 0x14
-# 55 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 54 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call Naranja_Bementer_G24_M22_EventScript_Sub_0815D57A
-# 56 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 55 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 0
-# 57 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 56 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5AA
-# 58 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 57 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 1
-# 59 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 58 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5BF
-# 60 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 59 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 2
-# 61 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 60 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5CA
+# 61 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B5FE6, MSGBOX_DEFAULT
 # 62 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B5FE6
-# 63 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 64 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x114
-# 65 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 63 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 66 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 64 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	callstd 0
-# 67 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 65 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setflag FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_00D4
-# 68 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 66 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D57A::
-# 73 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 71 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setflag FLAG_NARANJA_TEAM_HIDESHOAL_CAVE_EVENT_COMPLETE_006F
-# 74 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 72 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MURCOTT_STORY_STATE, 1
-# 75 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 73 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_MURCOTT_G00_M01_SCIENTIST_1
-# 76 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 74 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_MURCOTT_G00_M01_CAMERAMAN
-# 77 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 75 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_2, 1
-# 78 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 76 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_NARANJA_BEMENTER_STORY_STATE, 1
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D593::
-# 83 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 81 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D5E9
-# 84 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 82 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
@@ -147,567 +143,541 @@ Naranja_Bementer_G24_M22_EventScript_Sub_0815D59E::
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D59F::
-# 93 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 91 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D5EC
-# 94 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 92 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D5AA::
-# 99 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 97 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_OLD_WOMAN_1, Naranja_Bementer_G24_M22_Movement_0815D5DF
-# 100 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 98 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
-# 101 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 99 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843
-# 102 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 100 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D5BF::
-# 107 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 105 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_OLD_WOMAN_1, Naranja_Bementer_G24_M22_Movement_0815D5E3
-# 108 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 106 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D5CA::
-# 113 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 111 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_OLD_WOMAN_1, Naranja_Bementer_G24_M22_Movement_0815D5E5
-# 114 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 112 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
-# 115 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 113 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F
-# 116 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 114 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1::
-# 121 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 119 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	lock
-# 122 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 120 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	faceplayer
-# 123 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B64B3
-# 124 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 5
-# 125 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 121 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B64B3, MSGBOX_YESNO
+# 122 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 126 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 123 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D611
-# 127 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 124 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 128 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 125 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D61A
-# 129 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 126 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	release
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D611::
-# 134 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B65D6
-# 135 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
+# 131 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B65D6, MSGBOX_DEFAULT
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D61A::
-# 140 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B6823
-# 141 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
+# 136 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B6823, MSGBOX_DEFAULT
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3::
-# 146 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 141 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	lock
-# 147 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 142 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	faceplayer
-# 148 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 143 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	checkflag FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_0103
-# 149 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 144 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D6C4
-# 150 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 145 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071
-# 151 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 146 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D64A
-# 152 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 147 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081
-# 153 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 148 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D6BA
-# 154 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B60F9
-# 155 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 156 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 149 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B60F9, MSGBOX_DEFAULT
+# 150 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	release
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D64A::
-# 161 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B6283
-# 162 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 5
-# 163 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 155 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B6283, MSGBOX_YESNO
+# 156 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 164 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 157 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D669
-# 165 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 158 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 166 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 159 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D669::
-# 171 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 164 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_0x8004, 0x114
-# 172 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 165 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call Naranja_CuevaKabuto_G24_M10_EventScript_Sub_081A067F
-# 173 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 166 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	closemessage
-# 174 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 167 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement 32783, Naranja_7islasPomelo_G03_M04_Movement_081A0841
-# 175 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 168 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
-# 176 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 169 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	delay 0x28
-# 177 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 170 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement 32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839
-# 178 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 171 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
-# 179 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 172 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	delay 0xA
-# 180 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B639C
-# 181 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 182 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 173 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B639C, MSGBOX_DEFAULT
+# 174 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setflag FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_0103
-# 183 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 175 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	release
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B::
-# 188 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B62E7
-# 189 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 5
-# 190 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 180 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B62E7, MSGBOX_YESNO
+# 181 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 191 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 182 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D669
-# 192 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 183 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 193 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 184 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D6BA::
-# 198 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B617B
-# 199 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 200 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 189 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B617B, MSGBOX_DEFAULT
+# 190 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	release
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D6C4::
-# 205 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B63F8
-# 206 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 207 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 195 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B63F8, MSGBOX_DEFAULT
+# 196 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	release
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Trigger_4::
-# 212 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 201 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	lockall
-# 213 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 202 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_0x8008, 0
-# 214 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 203 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Trigger_5::
-# 218 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 207 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	lockall
-# 219 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 208 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_0x8008, 1
-# 220 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 209 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Trigger_6::
-# 224 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 213 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	lockall
-# 225 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 214 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_0x8008, 2
-# 226 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 215 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	goto Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2::
-# 230 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 219 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841
-# 231 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 220 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
-# 232 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 221 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_GraniteCave_G24_M00_Movement_081A0845
-# 233 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 222 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
-# 234 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 223 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	delay 0x32
-# 235 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 224 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 0
-# 236 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 225 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D75E
-# 237 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 226 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 1
-# 238 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 227 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D769
-# 239 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 228 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 2
-# 240 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 229 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D774
-# 241 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B6848
-# 242 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 4
-# 243 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 230 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B6848, MSGBOX_DEFAULT
+# 231 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	closemessage
-# 244 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 232 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 0
-# 245 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 233 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D77F
-# 246 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 234 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 1
-# 247 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 235 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D78A
-# 248 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 236 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	compare_var_to_value VAR_0x8008, 2
-# 249 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 237 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	call_if EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D795
-# 250 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 238 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	removeobject LOCALID_BEMENTER_G24_M22_246
-# 251 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 239 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_NARANJA_BEMENTER_STORY_STATE, 3
-# 252 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 240 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D75E::
-# 257 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 245 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A0
-# 258 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 246 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D769::
-# 263 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 251 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A3
-# 264 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 252 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D774::
-# 269 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 257 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A4
-# 270 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 258 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D77F::
-# 275 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 263 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A7
-# 276 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 264 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D78A::
-# 281 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 269 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7B0
-# 282 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 270 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_0815D795::
-# 287 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 275 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	applymovement LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7B9
-# 288 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 276 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	waitmovement LOCALID_NONE
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_Sub_081A0196::
-# 293 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 281 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_1, 0x77
-# 294 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 282 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_2, 0x78
-# 295 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 283 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_4, 0x75
-# 296 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 284 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_5, 0x76
-# 297 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 285 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_6, 0xC4
-# 298 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 286 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_7, 0xC3
 	return
 
 
 Naranja_Bementer_G24_M22_EventScript_OBJECT_4_LocalId4::
-# 303 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 291 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_588, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5CFD, Naranja_Bementer_G24_M22_Text_081B5D30
-# 304 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B5D6D
-# 305 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 6
+# 292 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B5D6D, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_OBJECT_5_LocalId5::
-# 310 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 297 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_589, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5DA2, Naranja_Bementer_G24_M22_Text_081B5DDB
-# 311 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B5DF1
-# 312 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 6
+# 298 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B5DF1, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Bementer_G24_M22_EventScript_OBJECT_6_LocalId6::
-# 317 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 303 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_590, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5E27, Naranja_Bementer_G24_M22_Text_081B5E60
-# 318 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	loadword 0, Naranja_Bementer_G24_M22_Text_081B5E84
-# 319 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	callstd 6
+# 304 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	msgbox Naranja_Bementer_G24_M22_Text_081B5E84, MSGBOX_AUTOCLOSE
 	end
 
 
-# 323 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 308 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D5DF:
-# 324 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 309 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
-# 325 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 310 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
-# 326 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 311 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 329 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 314 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D5E3:
-# 330 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 315 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
 	step_end
 
-# 333 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 318 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D5E5:
-# 334 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 319 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
-# 335 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 320 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
-# 336 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 321 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 339 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 324 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D5E9:
-# 340 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 325 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_left
-# 341 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 326 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 344 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 329 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D5EC:
-# 345 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 330 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_right
-# 346 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 331 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 349 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 334 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D7A0:
-# 350 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 335 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_left
-# 351 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 336 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 354 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 339 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D7A3:
 	step_end
 
-# 357 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 342 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D7A4:
-# 358 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 343 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_right
-# 359 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 344 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 362 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 347 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 Naranja_Bementer_G24_M22_Movement_0815D7A7:
-# 363 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 348 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_right
+# 349 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 350 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 351 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 352 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 353 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 354 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 355 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+	step_end
+
+# 358 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+Naranja_Bementer_G24_M22_Movement_0815D7B0:
+# 359 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_right
+# 360 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 361 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 362 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 363 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
 # 364 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
 # 365 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
 # 366 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
-# 367 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 368 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 369 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 370 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
 	step_end
 
+# 369 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+Naranja_Bementer_G24_M22_Movement_0815D7B9:
+# 370 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_left
+# 371 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
+# 372 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+	walk_down
 # 373 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-Naranja_Bementer_G24_M22_Movement_0815D7B0:
+	walk_down
 # 374 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_right
+	walk_down
 # 375 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
 # 376 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
 # 377 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	walk_down
-# 378 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 379 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 380 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 381 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-	step_end
-
-# 384 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-Naranja_Bementer_G24_M22_Movement_0815D7B9:
-# 385 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_left
-# 386 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 387 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 388 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 389 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 390 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 391 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
-# 392 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	walk_down
 	step_end
 
 Naranja_Bementer_G24_M22_Text_081B5CFD::
-# 395 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 380 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "I’ll show you exactly how scary\nTEAM MAGMA can be!$"
 
 Naranja_Bementer_G24_M22_Text_081B5D30::
-# 399 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 384 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "So you think you can stand up alone\nto TEAM MAGMA’s might...$"
 
 Naranja_Bementer_G24_M22_Text_081B5D6D::
-# 403 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 388 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Yeah, so you are strong...\nBut there’re a lot of us!$"
 
 Naranja_Bementer_G24_M22_Text_081B5DA2::
-# 407 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 392 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "What’s up with you?\nWhat does a single kid expect to do?$"
 
 Naranja_Bementer_G24_M22_Text_081B5DDB::
-# 411 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 396 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Dang...\nToo strong...$"
 
 Naranja_Bementer_G24_M22_Text_081B5DF1::
-# 415 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 400 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "You don’t know anything.\nQuit messing around with us!$"
 
 Naranja_Bementer_G24_M22_Text_081B5E27::
-# 419 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 404 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Hey, I remember you from MT. CHIMNEY!\nIt’s payback time!$"
 
 Naranja_Bementer_G24_M22_Text_081B5E60::
-# 423 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 408 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Urgggh...\nBeaten by some kid again!$"
 
 Naranja_Bementer_G24_M22_Text_081B5E84::
-# 427 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 412 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Heh, it doesn’t matter!\nWe bought ourselves some time!\pThe BOSS should have snatched what\nhe was after!$"
 
 Naranja_Bementer_G24_M22_Text_081B5EEC::
-# 431 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 416 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "MAXIE: Not you again...\pYou’ve impeded our plans repeatedly,\nbut this time you’re too late.\pThe BLUE ORB that rested atop\nMT. PYRE...\lI, MAXIE, claim it as mine!\pFufufu... Finally, I can realize my\ngrand design...\pCome on, crew!\nIt’s SLATEPORT next!$"
 
 Naranja_Bementer_G24_M22_Text_081B5FE6::
-# 435 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 420 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Oh, no...\nThis cannot happen...\pHow could they take the BLUE ORB?\pThe BLUE ORB and RED ORB must never\nbe separated. They belong together.\p... ... ... ... ... ... ... ...\nHmm...\pFine!\nYou take the remaining RED ORB.\pPlease take after that foul man and\nget the other ORB back!$"
 
 Naranja_Bementer_G24_M22_Text_081B60F9::
-# 439 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 424 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "The RED ORB you have been entrusted\nwith and the stolen BLUE ORB...\pThey must never be apart...\nSomething terrible will happen...$"
 
 Naranja_Bementer_G24_M22_Text_081B617B::
-# 443 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 428 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "So...\nGROUDON has awoken...\pThe wondrous ORB that is said to have\nbecalmed the raging GROUDON...\lIt is the RED ORB you bear.\pThat RED ORB was found buried inside\nthe CAVE OF ORIGIN in SOOTOPOLIS...\pThere is perhaps a link between\nGROUDON and the CAVE OF ORIGIN...$"
 
 Naranja_Bementer_G24_M22_Text_081B6283::
-# 447 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 432 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "That man, he returned the BLUE ORB.\pAre you going to return the RED ORB\nto its rightful place, too?$"
 
 Naranja_Bementer_G24_M22_Text_081B62E7::
-# 451 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 436 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "What’s that?!\pIf the balance is not restored, there\nis no telling what could happen.\pYou will return the RED ORB to its\nrightful place, yes?$"
 
 Naranja_Bementer_G24_M22_Text_081B639C::
-# 455 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 440 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "Yes...\nThe two ORBS should remain here.\pIt is how it should be for the good\nof all HOENN...$"
 
 Naranja_Bementer_G24_M22_Text_081B63F8::
-# 459 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 444 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "The spirit of the land...\pThat is what GROUDON is said to be in\nPOKéMON form...\pIn the same manner that we and POKéMON\nhave life, this very land is alive...\pGROUDON has taught us that...$"
 
 Naranja_Bementer_G24_M22_Text_081B64B3::
-# 463 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 448 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "MT. PYRE is where we calm the spirits\nof POKéMON that have passed on...\pThis is a high place where one can\nsee all of HOENN...\pThe disembodied spirits of POKéMON\nmust find solace here...\pIs it coincidence that you are here...\pWill you hear out my tale? A tale long\ntold in the HOENN region?$"
 
 Naranja_Bementer_G24_M22_Text_081B65D6::
-# 467 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 452 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "It happened long, long ago...\pThe world was wracked by a ferocious\nclash between the POKéMON of the land\land the POKéMON of the sea...\pThe POKéMON of the land raised\nmountains and created continents...\pThe POKéMON of the sea raised huge\nwaves and carved out oceans...\pTheir fierce duel raged without end.\pThe world was engulfed in vicious\nstorms and massive infernos.\pThe RED ORB and the BLUE ORB brought\nan end to the calamity.\pLight poured from the two ORBS and\nbecalmed the enraged adversaries.\pThe pair, made docile, burrowed deep\nunder the ground where eventually\lthey disappeared...$"
 
 Naranja_Bementer_G24_M22_Text_081B6823::
-# 471 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 456 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "I see...\nWell, that, too, is fine...$"
 
 Naranja_Bementer_G24_M22_Text_081B6848::
-# 475 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
+# 460 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	.string "MAXIE: You...\nSo you stopped GROUDON...\pI shouldn’t be surprised...\pI understand now that humans cannot\nfreely control the balance between\lthe land and the sea...\pSo I have come to return the\nBLUE ORB...\pI doubt that we will cross paths again...\nFarewell...$"

@@ -26,48 +26,42 @@ Naranja_IslaKumquat_G13_M06_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1::
 
 Naranja_IslaKumquat_G13_M06_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId2::
 # 23 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
-	loadword 0, Naranja_IslaKumquat_G13_M06_Text_08189FC9
-# 24 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaKumquat_G13_M06_Text_08189FC9, MSGBOX_NPC
 	end
 
 
 Naranja_IslaKumquat_G13_M06_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId3::
-# 29 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 28 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	lock
-# 30 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 29 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	faceplayer
-# 31 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 30 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_080D
-# 32 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 31 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	goto_if EQUAL, Naranja_IslaKumquat_G13_M06_EventScript_Sub_0815935D
+# 32 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+	msgbox Naranja_IslaKumquat_G13_M06_Text_0818A048, MSGBOX_DEFAULT
 # 33 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
-	loadword 0, Naranja_IslaKumquat_G13_M06_Text_0818A048
-# 34 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
-	callstd 4
-# 35 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaKumquat_G13_M06_EventScript_Sub_0815935D::
-# 40 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
-	loadword 0, Naranja_IslaKumquat_G13_M06_Text_0818A0A1
-# 41 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
-	callstd 4
-# 42 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 38 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+	msgbox Naranja_IslaKumquat_G13_M06_Text_0818A0A1, MSGBOX_DEFAULT
+# 39 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaKumquat_G13_M06_Text_08189FC9::
-# 46 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 43 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	.string "I wonder how many kinds of POKéMON\nthere are in the world?\pIt’d be great to cross seas and\ntrade POKéMON with people far away.$"
 
 Naranja_IslaKumquat_G13_M06_Text_0818A048::
-# 50 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 47 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	.string "I’ve been hearing about some rotten\nscoundrels who steal POKéMON and rip\loff METEORITES.$"
 
 Naranja_IslaKumquat_G13_M06_Text_0818A0A1::
-# 54 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
+# 51 "data/maps/Naranja_IslaKumquat_G13_M06/scripts.pory"
 	.string "Those rotten scoundrels who steal\nPOKéMON and rip off METEORITES...\pI haven’t seen them around recently.$"

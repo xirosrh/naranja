@@ -8,8 +8,7 @@ script Naranja_SinNombre_G25_M43_EventScript_Sub_0815FCE5 {
     special(SetSSTidalFlag)
     setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 7)
     playse(SE_DING_DONG)
-    loadword(0, Naranja_SinNombre_G25_M41_Text_08199007)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M41_Text_08199007, MSGBOX_DEFAULT)
     return
 }
 
@@ -17,8 +16,7 @@ script Naranja_SinNombre_G25_M43_EventScript_Sub_0815FCF9 {
     special(ResetSSTidalFlag)
     setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 4)
     playse(SE_DING_DONG)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_081990F8)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M43_Text_081990F8, MSGBOX_DEFAULT)
     return
 }
 
@@ -26,8 +24,7 @@ script Naranja_SinNombre_G25_M43_EventScript_Sub_0815FD50 {
     special(ResetSSTidalFlag)
     setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 8)
     playse(SE_DING_DONG)
-    loadword(0, Naranja_SinNombre_G25_M41_Text_081990B4)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M41_Text_081990B4, MSGBOX_DEFAULT)
     return
 }
 
@@ -49,31 +46,27 @@ script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId8 {
     faceplayer
     checkflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_0104)
     goto_if(EQUAL, Naranja_SinNombre_G25_M43_EventScript_Sub_0815FF3D)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199B65)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199B65, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x151)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_0104)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199C1A)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199C1A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_Sub_0815FF3D {
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199C1A)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199C1A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_Sign_1 {
     lockall
-    loadword(0, Naranja_SinNombre_G25_M43_Text_0819956B)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M43_Text_0819956B, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route119_G32_M00_EventScript_Sub_081A02CA)
     call(Naranja_SinNombre_G25_M43_EventScript_Sub_0815FD64)
@@ -83,50 +76,43 @@ script Naranja_SinNombre_G25_M43_EventScript_Sign_1 {
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_294, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_0819958A, Naranja_SinNombre_G25_M43_Text_08199613)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199630)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199630, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_255, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081996A6, Naranja_SinNombre_G25_M43_Text_081996BF)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_081996E1)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_081996E1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_256, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_08199723, Naranja_SinNombre_G25_M43_Text_08199747)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199778)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199778, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId4 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_SIN_NOMBRE_641, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081997C1, Naranja_SinNombre_G25_M43_Text_08199813, Naranja_SinNombre_G25_M43_Text_08199887)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199820)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199820, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId5 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_SIN_NOMBRE_641, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081998C5, Naranja_SinNombre_G25_M43_Text_0819990E, Naranja_SinNombre_G25_M43_Text_08199975)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_0819991C)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_0819991C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId6 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_138, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081999B7, Naranja_SinNombre_G25_M43_Text_081999FF)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199A10)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199A10, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId7 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_119, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_08199A62, Naranja_SinNombre_G25_M43_Text_08199ABF)
-    loadword(0, Naranja_SinNombre_G25_M43_Text_08199ADE)
-    callstd(6)
+    msgbox(Naranja_SinNombre_G25_M43_Text_08199ADE, MSGBOX_AUTOCLOSE)
     end
 }
 

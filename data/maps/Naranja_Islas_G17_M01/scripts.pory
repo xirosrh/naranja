@@ -25,13 +25,11 @@ script Naranja_Islas_G17_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
     faceplayer
     checkflag(FLAG_TEMP_1)
     goto_if(EQUAL, Naranja_Islas_G17_M01_EventScript_Sub_0815BE7C)
-    loadword(0, Naranja_Islas_G17_M01_Text_081C5EC6)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C5EC6, MSGBOX_DEFAULT)
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_007F)
     goto_if(EQUAL, Naranja_Islas_G17_M01_EventScript_Sub_0815BE4A)
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_007F)
-    loadword(0, Naranja_Islas_G17_M01_Text_081C5F48)
-    callstd(5)
+    msgbox(Naranja_Islas_G17_M01_Text_081C5F48, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_Islas_G17_M01_EventScript_Sub_0815BE6A)
     compare_var_to_value(VAR_RESULT, 0)
@@ -41,8 +39,7 @@ script Naranja_Islas_G17_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
 }
 
 script Naranja_Islas_G17_M01_EventScript_Sub_0815BE4A {
-    loadword(0, Naranja_Islas_G17_M01_Text_081C5F1B)
-    callstd(5)
+    msgbox(Naranja_Islas_G17_M01_Text_081C5F1B, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_Islas_G17_M01_EventScript_Sub_0815BE6A)
     compare_var_to_value(VAR_RESULT, 0)
@@ -52,14 +49,12 @@ script Naranja_Islas_G17_M01_EventScript_Sub_0815BE4A {
 }
 
 script Naranja_Islas_G17_M01_EventScript_Sub_0815BE6A {
-    loadword(0, Naranja_Islas_G17_M01_Text_081C5F9D)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C5F9D, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_Islas_G17_M01_EventScript_Sub_0815BE73 {
-    loadword(0, Naranja_Islas_G17_M01_Text_081C6121)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C6121, MSGBOX_DEFAULT)
     return
 }
 
@@ -67,8 +62,7 @@ script Naranja_Islas_G17_M01_EventScript_Sub_0815BE7C {
     message(Naranja_Islas_G17_M01_Text_081A0C42)
     waitmessage
     pokemartdecoration2(Naranja_Islas_G17_M01_Mart_0815BE94)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -78,20 +72,17 @@ script Naranja_Islas_G17_M01_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId2 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_005E)
     goto_if(LESS_THAN, Naranja_Islas_G17_M01_EventScript_Sub_0815BEB9)
-    loadword(0, Naranja_Islas_G17_M01_Text_081C61E8)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C61E8, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Islas_G17_M01_EventScript_Sub_0815BEB9 {
-    loadword(0, Naranja_Islas_G17_M01_Text_081C6158)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C6158, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x10C)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_Islas_G17_M01_Text_081C61E8)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C61E8, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_005E)
     release
     end
@@ -103,8 +94,7 @@ script Naranja_Islas_G17_M01_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3 {
     dotimebasedevents
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_08D0)
     goto_if(EQUAL, Naranja_Islas_G17_M01_EventScript_Sub_0815BF1A)
-    loadword(0, Naranja_Islas_G17_M01_Text_081C62DA)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C62DA, MSGBOX_DEFAULT)
     random(8)
     addvar(VAR_RESULT, 0x85)
     setorcopyvar(VAR_0x8000, VAR_RESULT)
@@ -113,15 +103,13 @@ script Naranja_Islas_G17_M01_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_08D0)
-    loadword(0, Naranja_Islas_G17_M01_Text_081C6335)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C6335, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Islas_G17_M01_EventScript_Sub_0815BF1A {
-    loadword(0, Naranja_Islas_G17_M01_Text_081C6335)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M01_Text_081C6335, MSGBOX_DEFAULT)
     release
     end
 }

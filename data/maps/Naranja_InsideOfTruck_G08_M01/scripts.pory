@@ -27,8 +27,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08151004 {
     applymovement(LOCALID_INSIDE_OF_TRUCK_G08_M01_HOT_SPRINGS_OLD_WOMAN, Naranja_InsideOfTruck_G08_M01_Movement_0815106D)
     waitmovement(LOCALID_NONE)
     delay(0x1E)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_086BF602)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_086BF602, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_0x8008, 0)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08151048)
@@ -71,8 +70,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_BRAWLY_LocalId8 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_INSIDE_OF_TRUCK_268, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_08175182, Naranja_InsideOfTruck_G08_M01_Text_08175246, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6)
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081531B5)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08175412)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08175412, MSGBOX_DEFAULT)
     release
     end
 }
@@ -82,8 +80,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08153177 {
     message(Naranja_InsideOfTruck_G08_M01_Text_086BEDB0)
     waitmessage
     call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08180DDA)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08180DDA, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_04B4)
     setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
     addvar(VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1)
@@ -100,8 +97,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081531B5 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_086BFB30)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_086BFB30, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A7)
     release
     end
@@ -136,8 +132,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_NORMAN_LocalId1 {
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549D6)
     compare_var_to_value(VAR_0x8000, 7)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815493D)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08179DF6)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08179DF6, MSGBOX_DEFAULT)
     closemessage
     copyvar(VAR_0x8000, VAR_FACING)
     compare_var_to_value(VAR_0x8000, 1)
@@ -182,14 +177,10 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154669 {
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815481C)
     compare_var_to_value(VAR_0x8008, 3)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815481C)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08179F07)
-    callstd(4)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08179F37)
-    callstd(4)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08179F70)
-    callstd(4)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A03A)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08179F07, MSGBOX_DEFAULT)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08179F37, MSGBOX_DEFAULT)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08179F70, MSGBOX_DEFAULT)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A03A, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_0x8008, 0)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154884)
     compare_var_to_value(VAR_0x8008, 1)
@@ -198,8 +189,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154669 {
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548A1)
     compare_var_to_value(VAR_0x8008, 3)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548B3)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A04A)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A04A, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_0x8008, 0)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548C5)
     compare_var_to_value(VAR_0x8008, 1)
@@ -208,12 +198,9 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154669 {
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548DB)
     compare_var_to_value(VAR_0x8008, 3)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548E6)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A0A8)
-    callstd(4)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A0EB)
-    callstd(4)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A156)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A0A8, MSGBOX_DEFAULT)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A0EB, MSGBOX_DEFAULT)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A156, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_0x8008, 0)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815492F)
     compare_var_to_value(VAR_0x8008, 1)
@@ -230,8 +217,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154669 {
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548F1)
     compare_var_to_value(VAR_0x8008, 3)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548F1)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A171)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A171, MSGBOX_DEFAULT)
     closemessage
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001)
     playbgm(MUS_FOLLOW_ME, 0)
@@ -374,29 +360,25 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081548FC {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154907 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A41E)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A41E, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154911 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A518)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A518, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815491B {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A5F3)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A5F3, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154925 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A5F3)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A5F3, MSGBOX_DEFAULT)
     release
     end
 }
@@ -427,8 +409,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815493D {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154A2C)
     checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154B69)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AA6B)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AA6B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -445,8 +426,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154969 {
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549B2)
     compare_var_to_value(VAR_ENIGMA_BERRY_AVAILABLE, 0)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549B2)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_081C5570)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_081C5570, MSGBOX_DEFAULT)
     setvar(VAR_RESULT, 1)
     return
 }
@@ -468,14 +448,12 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549B8 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549D6 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A653)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A653, MSGBOX_DEFAULT)
     trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_INSIDE_OF_TRUCK_269, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817A77A)
     message(Naranja_InsideOfTruck_G08_M01_Text_0817A7DD)
     waitmessage
     call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A805)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A805, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     setvar(VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 7)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
@@ -497,10 +475,8 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154A2C {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A9)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A8CF)
-    callstd(4)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A976)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A8CF, MSGBOX_DEFAULT)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A976, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 2)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154ABC)
@@ -519,8 +495,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154A2C {
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154AFE)
     compare_var_to_value(VAR_FACING, 4)
     call_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154B09)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A9F6)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A9F6, MSGBOX_DEFAULT)
     release
     end
 }
@@ -574,8 +549,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154B09 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154B69 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AB17)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AB17, MSGBOX_DEFAULT)
     release
     end
 }
@@ -586,8 +560,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_1 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 7)
     setvar(VAR_0x8009, 0x55)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B870)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B870, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -610,8 +583,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB7 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B844)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B844, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -622,8 +594,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_2 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 1)
     setvar(VAR_0x8009, 0x62)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B8D4)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B8D4, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -637,8 +608,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_3 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 7)
     setvar(VAR_0x8009, 0x2E)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B90F)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B90F, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -652,8 +622,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_4 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 1)
     setvar(VAR_0x8009, 0x3B)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B950)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B950, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -667,8 +636,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_5 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 7)
     setvar(VAR_0x8009, 0x3B)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B950)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B950, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -682,8 +650,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_6 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 1)
     setvar(VAR_0x8009, 0x48)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B98A)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B98A, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -697,8 +664,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_9 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 1)
     setvar(VAR_0x8009, 0x21)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817BA00)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817BA00, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -712,8 +678,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_10 {
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9)
     setvar(VAR_0x8008, 7)
     setvar(VAR_0x8009, 0x21)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817BA00)
-    callstd(5)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817BA00, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BA8)
     compare_var_to_value(VAR_RESULT, 0)
@@ -725,8 +690,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_071, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817ADA5, Naranja_InsideOfTruck_G08_M01_Text_0817AE11, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E1A)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E29)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AE30)
-    callstd(6)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AE30, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -739,8 +703,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E1A {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E29 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AEBB)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AEBB, MSGBOX_NPC)
     end
 }
 
@@ -748,8 +711,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId4 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_072, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817AF5A, Naranja_InsideOfTruck_G08_M01_Text_0817AF98, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E56)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E65)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AFD3)
-    callstd(6)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AFD3, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -762,8 +724,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E56 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E65 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B016)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B016, MSGBOX_NPC)
     end
 }
 
@@ -771,8 +732,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId6 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_073, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B058, Naranja_InsideOfTruck_G08_M01_Text_0817B0F7, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E92)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154EA1)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B12C)
-    callstd(6)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B12C, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -785,8 +745,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E92 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154EA1 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B1F4)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B1F4, MSGBOX_NPC)
     end
 }
 
@@ -794,8 +753,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_089, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B3F7, Naranja_InsideOfTruck_G08_M01_Text_0817B454, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F0A)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F19)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B46F)
-    callstd(6)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B46F, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -808,8 +766,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F0A {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F19 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B521)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B521, MSGBOX_NPC)
     end
 }
 
@@ -817,8 +774,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId5 
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_090, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B58D, Naranja_InsideOfTruck_G08_M01_Text_0817B5CB, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F46)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F55)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B5EA)
-    callstd(6)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B5EA, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -831,8 +787,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F46 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F55 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B6B5)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B6B5, MSGBOX_NPC)
     end
 }
 
@@ -840,8 +795,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId7 
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_091, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B6D4, Naranja_InsideOfTruck_G08_M01_Text_0817B732, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F82)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F91)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B749)
-    callstd(6)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B749, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -854,8 +808,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F82 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F91 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817B7C0)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B7C0, MSGBOX_NPC)
     end
 }
 
@@ -1011,15 +964,13 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId9 {
     faceplayer
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081551A0)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AB96)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AB96, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081551A0 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817AD49)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AD49, MSGBOX_DEFAULT)
     release
     end
 }
@@ -1039,15 +990,13 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_14 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081551CA {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817BAC0)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817BAC0, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081551D4 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817BAA5)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817BAA5, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -1058,8 +1007,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_W
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815661D)
     compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08156641)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08180EDB)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08180EDB, MSGBOX_DEFAULT)
     release
     end
 }
@@ -1068,8 +1016,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB {
     message(Naranja_InsideOfTruck_G08_M01_Text_086BFCE3)
     waitmessage
     call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_081752E6)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_081752E6, MSGBOX_DEFAULT)
     nop
     nop
     nop
@@ -1103,16 +1050,14 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815661D {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_0817A2A4)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A2A4, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6)
     release
     end
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08156641 {
-    loadword(0, Naranja_InsideOfTruck_G08_M01_Text_08180F1D)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G08_M01_Text_08180F1D, MSGBOX_DEFAULT)
     release
     end
 }

@@ -26,24 +26,20 @@ Naranja_IslaMellsweet_G14_M03_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1::
 
 Naranja_IslaMellsweet_G14_M03_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2::
 # 23 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M03_Text_0818D62F
-# 24 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaMellsweet_G14_M03_Text_0818D62F, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMellsweet_G14_M03_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3::
-# 29 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M03_Text_0818D69A
-# 30 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
-	callstd 2
+# 28 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M03_Text_0818D69A, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMellsweet_G14_M03_Text_0818D62F::
-# 34 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
+# 32 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
 	.string "The GYM LEADERS in this town are a\nformidable duo.\pTheir combination attacks are, like,\nexcellent and wow!$"
 
 Naranja_IslaMellsweet_G14_M03_Text_0818D69A::
-# 38 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
+# 36 "data/maps/Naranja_IslaMellsweet_G14_M03/scripts.pory"
 	.string "Depending on the special abilities of\nPOKéMON, some moves might change\lor not work at all.$"

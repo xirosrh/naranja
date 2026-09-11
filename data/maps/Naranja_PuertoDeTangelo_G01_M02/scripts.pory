@@ -69,8 +69,7 @@ script Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_08152902 {
 
 script Naranja_PuertoDeTangelo_G01_M02_OnFrame_2 {
     lockall
-    loadword(0, Naranja_PuebloPaleta_G01_M00_Text_08172574)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M00_Text_08172574, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_PuertoDeTangelo_G01_M02_Movement_0815295E)
     applymovement(LOCALID_PUERTO_DE_TANGELO_G01_M02_MOM, Naranja_PuertoDeTangelo_G01_M02_Movement_0815295E)
@@ -106,8 +105,7 @@ script Naranja_PuertoDeTangelo_G01_M02_OnFrame_4 {
     applymovement(LOCALID_PUERTO_DE_TANGELO_G01_M02_WOMAN_5, Naranja_PuertoDeTangelo_G01_M02_Movement_081529C0)
     waitmovement(LOCALID_NONE)
     special(GetRivalSonDaughterString)
-    loadword(0, Naranja_PuebloPaleta_G01_M00_Text_081730C2)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M00_Text_081730C2, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0057)
     setvar(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 2)
     releaseall
@@ -130,8 +128,7 @@ script Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081B6B2E {
     applymovement(LOCALID_PLAYER, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6CD4)
     waitmovement(LOCALID_NONE)
     playbgm(MUS_ENCOUNTER_INTERVIEWER, 0)
-    loadword(0, Naranja_PuebloPaleta_G01_M00_Text_081725C9)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M00_Text_081725C9, MSGBOX_DEFAULT)
     closemessage
     applymovement(32773, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BDE)
     waitmovement(LOCALID_NONE)
@@ -140,10 +137,8 @@ script Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081B6B2E {
     call(Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6BBE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuebloPaleta_G01_M00_Text_081725FE)
-    callstd(4)
-    loadword(0, Naranja_PuebloPaleta_G01_M00_Text_08172644)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M00_Text_081725FE, MSGBOX_DEFAULT)
+    msgbox(Naranja_PuebloPaleta_G01_M00_Text_08172644, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_TEMP_1, 1)
     applymovement(32773, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BE5)

@@ -255,54 +255,52 @@ Naranja_BandonedShip_G24_M66_EventScript_Sign_5::
 # 162 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	lockall
 # 163 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M66_Text_08198EE2
+	msgbox Naranja_BandonedShip_G24_M66_Text_08198EE2, MSGBOX_DEFAULT
 # 164 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
-	callstd 4
-# 165 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_BandonedShip_G24_M66_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1::
-# 170 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 169 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8000, 0xB
-# 171 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 170 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 172 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 171 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_BandonedShip_G24_M66_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2::
-# 177 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 176 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x116
-# 178 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 177 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 179 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 178 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_BandonedShip_G24_M66_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4::
-# 184 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 183 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x61
-# 185 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 184 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 186 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 185 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_BandonedShip_G24_M66_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3::
-# 191 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 190 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x132
-# 192 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 191 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 193 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 192 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_BandonedShip_G24_M66_Text_08198EE2::
-# 197 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
+# 196 "data/maps/Naranja_BandonedShip_G24_M66/scripts.pory"
 	.string "It’s bright and shiny!\nBut it’s just trash...$"

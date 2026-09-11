@@ -9,8 +9,7 @@ script Naranja_Underwater_G00_M52_EventScript_OBJ_EVENT_GFX_NURSE_LocalId3 {
     checkitem(ITEM_ROOM_2_KEY, 0)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, 0x086B703F)
-    loadword(0, Naranja_Underwater_G00_M52_Text_086B72C0)
-    callstd(6)
+    msgbox(Naranja_Underwater_G00_M52_Text_086B72C0, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_UNDERWATER_G00_M52_NURSE, Naranja_IslaPinkan_G00_M30_Movement_0800A854)
     delay(5)
     end

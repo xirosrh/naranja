@@ -20,8 +20,7 @@ script Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_Loca
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_FieryPath_G24_M14_EventScript_Sub_081B1026)
     setfieldeffectargument(0, 0x800D)
-    loadword(0, Naranja_FieryPath_G24_M14_Text_081B103D)
-    callstd(5)
+    msgbox(Naranja_FieryPath_G24_M14_Text_081B103D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_FieryPath_G24_M14_EventScript_Sub_081B103A)
     closemessage
@@ -32,22 +31,19 @@ script Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_Loca
 
 script Naranja_FieryPath_G24_M14_EventScript_Sub_081B1019 {
     setflag(FLAG_NARANJA_FIERY_PATH_EVENT_COMPLETE_0829)
-    loadword(0, Naranja_FieryPath_G24_M14_Text_081B109D)
-    callstd(3)
+    msgbox(Naranja_FieryPath_G24_M14_Text_081B109D, MSGBOX_SIGN)
     releaseall
     end
 }
 
 script Naranja_FieryPath_G24_M14_EventScript_Sub_081B1026 {
-    loadword(0, Naranja_FieryPath_G24_M14_Text_081B10E7)
-    callstd(3)
+    msgbox(Naranja_FieryPath_G24_M14_Text_081B10E7, MSGBOX_SIGN)
     releaseall
     end
 }
 
 script Naranja_FieryPath_G24_M14_EventScript_Sub_081B1030 {
-    loadword(0, Naranja_FieryPath_G24_M14_Text_081B1127)
-    callstd(3)
+    msgbox(Naranja_FieryPath_G24_M14_Text_081B1127, MSGBOX_SIGN)
     releaseall
     end
 }

@@ -10,8 +10,7 @@ script Naranja_IslaNueva_G15_M04_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalId
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemart(Naranja_IslaNueva_G15_M04_Mart_0815B234)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -23,15 +22,13 @@ script Naranja_IslaNueva_G15_M04_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId2 {
     goto_if(EQUAL, Naranja_IslaNueva_G15_M04_EventScript_Sub_0815B268)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
     goto_if(LESS_THAN, Naranja_IslaNueva_G15_M04_EventScript_Sub_0815B268)
-    loadword(0, Naranja_IslaNueva_G15_M04_Text_0818F8D7)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M04_Text_0818F8D7, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M04_EventScript_Sub_0815B268 {
-    loadword(0, Naranja_IslaNueva_G15_M04_Text_0818F890)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M04_Text_0818F890, MSGBOX_DEFAULT)
     release
     end
 }
@@ -43,15 +40,13 @@ script Naranja_IslaNueva_G15_M04_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId3 {
     goto_if(EQUAL, Naranja_IslaNueva_G15_M04_EventScript_Sub_0815B290)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
     goto_if(LESS_THAN, Naranja_IslaNueva_G15_M04_EventScript_Sub_0815B290)
-    loadword(0, Naranja_IslaNueva_G15_M04_Text_0818F96B)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M04_Text_0818F96B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M04_EventScript_Sub_0815B290 {
-    loadword(0, Naranja_IslaNueva_G15_M04_Text_0818F8F2)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M04_Text_0818F8F2, MSGBOX_DEFAULT)
     release
     end
 }

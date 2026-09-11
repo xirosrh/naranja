@@ -72,48 +72,42 @@ Naranja_IslaPomelo_G16_M02_EventScript_OBJ_EVENT_GFX_GLACIA_LocalId1::
 # 50 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 # 51 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G16_M02_Text_08190AF9
+	msgbox Naranja_IslaPomelo_G16_M02_Text_08190AF9, MSGBOX_DEFAULT
 # 52 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
-	callstd 4
-# 53 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_263, LOCALID_NONE, Naranja_IslaPomelo_G16_M02_Text_08190C01
-# 54 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 53 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	goto Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6FB
 	return
 
 
 Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6F1::
+# 57 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+	msgbox Naranja_IslaPomelo_G16_M02_Text_08190C8F, MSGBOX_DEFAULT
 # 58 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G16_M02_Text_08190C8F
-# 59 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
-	callstd 4
-# 60 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6FB::
-# 65 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 63 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DF
-# 66 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 64 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	call Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A0693
-# 67 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G16_M02_Text_08190C8F
-# 68 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
-	callstd 4
-# 69 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 65 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+	msgbox Naranja_IslaPomelo_G16_M02_Text_08190C8F, MSGBOX_DEFAULT
+# 66 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaPomelo_G16_M02_Text_08190AF9::
-# 73 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 70 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	.string "Welcome, my name is GLACIA of the\nELITE FOUR.\pI’ve traveled from afar to HOENN so\nthat I may hone my ice skills.\pBut all I have seen are challenges by\nweak TRAINERS and their POKéMON.\pWhat about you?\pIt would please me to no end if I could\ngo all out against you!$"
 
 Naranja_IslaPomelo_G16_M02_Text_08190C01::
-# 77 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 74 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	.string "You and your POKéMON...\nHow hot your spirits burn!\pThe all-consuming heat overwhelms.\pIt’s no surprise that my icy skills\nfailed to harm you.$"
 
 Naranja_IslaPomelo_G16_M02_Text_08190C8F::
-# 81 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
+# 78 "data/maps/Naranja_IslaPomelo_G16_M02/scripts.pory"
 	.string "Advance to the next room.\pAnd there, confirm the truly fearsome\nside of the POKéMON LEAGUE.$"

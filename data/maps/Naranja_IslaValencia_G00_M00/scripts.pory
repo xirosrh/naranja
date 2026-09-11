@@ -35,16 +35,13 @@ script Naranja_IslaValencia_G00_M00_OnFrame_1 {
     applymovement(LOCALID_ISLA_VALENCIA_G00_M00_GIRL_3, Naranja_IslaValencia_G00_M00_Movement_0814B7ED)
     applymovement(LOCALID_PLAYER, Naranja_IslaValencia_G00_M00_Movement_0814B7CC)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaValencia_G00_M00_Text_0816D361)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G00_M00_Text_0816D361, MSGBOX_DEFAULT)
     special(StartWallyTutorialBattle)
     waitstate
-    loadword(0, Naranja_IslaValencia_G00_M00_Text_0816D3DE)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G00_M00_Text_0816D3DE, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_VALENCIA_G00_M00_GIRL_3, Naranja_GraniteCave_G24_M00_Movement_081A083F, MAP_NARANJA_ISLA_VALENCIA_G00_M00)
     waitmovement(LOCALID_NONE, MAP_NARANJA_ISLA_MANDARIN_G00_M02)
-    loadword(0, Naranja_IslaValencia_G00_M00_Text_0816D408)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G00_M00_Text_0816D408, MSGBOX_DEFAULT)
     closemessage
     clearflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_4000)
     setvar(VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 3)
@@ -61,8 +58,7 @@ script Naranja_IslaValencia_G00_M00_OnFrame_1 {
 script Naranja_IslaValencia_G00_M00_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_IslaValencia_G00_M00_Text_08164490)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G00_M00_Text_08164490, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_VALENCIA_G00_M00_MART_EMPLOYEE, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -71,8 +67,7 @@ script Naranja_IslaValencia_G00_M00_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId1 {
 }
 
 script Naranja_IslaValencia_G00_M00_EventScript_Sign_4 {
-    loadword(0, Naranja_IslaValencia_G00_M00_Text_08164602)
-    callstd(3)
+    msgbox(Naranja_IslaValencia_G00_M00_Text_08164602, MSGBOX_SIGN)
     end
 }
 
@@ -84,16 +79,14 @@ script Naranja_IslaValencia_G00_M00_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Loca
     checkflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0128)
     goto_if(EQUAL, Naranja_IslaValencia_G00_M00_EventScript_Sub_081552EA)
     pokemart(Naranja_IslaValencia_G00_M00_Mart_081552D0)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaValencia_G00_M00_EventScript_Sub_081552EA {
     pokemart(Naranja_IslaValencia_G00_M00_Mart_081552FC)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -109,8 +102,7 @@ script Naranja_IslaValencia_G00_M00_EventScript_Sub_086B5DDC {
     lock
     applymovement(LOCALID_PLAYER, Naranja_IslaValencia_G00_M00_Movement_0801936A)
     nop
-    loadword(0, Naranja_IslaValencia_G00_M00_Text_086B5DF0)
-    callstd(6)
+    msgbox(Naranja_IslaValencia_G00_M00_Text_086B5DF0, MSGBOX_AUTOCLOSE)
     nop
     release
     end

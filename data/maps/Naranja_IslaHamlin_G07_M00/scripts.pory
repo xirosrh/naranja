@@ -20,20 +20,17 @@ script Naranja_IslaHamlin_G07_M00_OnTransition {
 }
 
 script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId3 {
-    loadword(0, Naranja_IslaHamlin_G07_M00_Text_08178E47)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M00_Text_08178E47, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId4 {
-    loadword(0, Naranja_IslaHamlin_G07_M00_Text_08178E79)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M00_Text_08178E79, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId2 {
-    loadword(0, Naranja_IslaHamlin_G07_M00_Text_08178ED9)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M00_Text_08178ED9, MSGBOX_NPC)
     end
 }
 

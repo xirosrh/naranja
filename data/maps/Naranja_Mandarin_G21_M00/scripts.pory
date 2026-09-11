@@ -11,14 +11,12 @@ script Naranja_Mandarin_G21_M00_OnTransition {
 }
 
 script Naranja_Mandarin_G21_M00_EventScript_Sub_0815C2E8 {
-    loadword(0, Naranja_Mandarin_G21_M00_Text_08193135)
-    callstd(2)
+    msgbox(Naranja_Mandarin_G21_M00_Text_08193135, MSGBOX_NPC)
     end
 }
 
 script Naranja_Mandarin_G21_M00_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId3 {
-    loadword(0, Naranja_Mandarin_G21_M00_Text_081931C1)
-    callstd(2)
+    msgbox(Naranja_Mandarin_G21_M00_Text_081931C1, MSGBOX_NPC)
     end
 }
 
@@ -27,15 +25,13 @@ script Naranja_Mandarin_G21_M00_EventScript_Sub_0815C2FA {
     faceplayer
     checkflag(FLAG_HIDE_MANDARIN_G21_M00_LITTLE_GIRL_1)
     goto_if(LESS_THAN, Naranja_Mandarin_G21_M00_EventScript_Sub_086B3DD0)
-    loadword(0, Naranja_Mandarin_G21_M00_Text_08192F33)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G21_M00_Text_08192F33, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Mandarin_G21_M00_EventScript_Sub_0815C30F {
-    loadword(0, Naranja_Mandarin_G21_M00_Text_086B3DB0)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G21_M00_Text_086B3DB0, MSGBOX_DEFAULT)
     release
     end
 }
@@ -45,13 +41,11 @@ script Naranja_Mandarin_G21_M00_EventScript_Sub_086B3DD0 {
     goto_if(EQUAL, Naranja_Mandarin_G21_M00_EventScript_Sub_0815C30F)
     nop
     setflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119)
-    loadword(0, Naranja_Mandarin_G21_M00_Text_08193049)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G21_M00_Text_08193049, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x158)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_Mandarin_G21_M00_Text_086B3DB0)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G21_M00_Text_086B3DB0, MSGBOX_DEFAULT)
     release
     end
 }

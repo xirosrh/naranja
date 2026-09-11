@@ -42,8 +42,7 @@ script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sign_4 {
 }
 
 script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C52 {
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A100C)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081A100C, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -52,8 +51,7 @@ script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C5C {
     setvar(VAR_0x8004, 2)
     special(DoPCTurnOnEffect)
     playse(SE_PC_ON)
-    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6, MSGBOX_DEFAULT)
     special(BedroomPC)
     waitstate
     releaseall

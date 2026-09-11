@@ -35,16 +35,13 @@ script Naranja_IslaHamlin_G07_M03_EventScript_Sub_081541B4 {
 }
 
 script Naranja_IslaHamlin_G07_M03_EventScript_Sub_081541CE {
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_08179155)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_08179155, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaHamlin_G07_M03_EventScript_Sub_081541D7 {
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_081790C1)
-    callstd(4)
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_08179155)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_081790C1, MSGBOX_DEFAULT)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_08179155, MSGBOX_DEFAULT)
     return
 }
 
@@ -54,8 +51,7 @@ script Naranja_IslaHamlin_G07_M03_EventScript_Sub_081541E8 {
 }
 
 script Naranja_IslaHamlin_G07_M03_EventScript_Sub_081541EC {
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_08179169)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_08179169, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x13B)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -63,22 +59,19 @@ script Naranja_IslaHamlin_G07_M03_EventScript_Sub_081541EC {
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_012B)
     special(SetPacifidlogTMReceivedDay)
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_08179283)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_08179283, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M03_EventScript_Sub_0815421B {
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_081791CA)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_081791CA, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M03_EventScript_Sub_08154225 {
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_0817922D)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_0817922D, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x135)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -86,8 +79,7 @@ script Naranja_IslaHamlin_G07_M03_EventScript_Sub_08154225 {
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_012B)
     special(SetPacifidlogTMReceivedDay)
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_08179283)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_08179283, MSGBOX_DEFAULT)
     release
     end
 }
@@ -95,8 +87,7 @@ script Naranja_IslaHamlin_G07_M03_EventScript_Sub_08154225 {
 script Naranja_IslaHamlin_G07_M03_EventScript_Sub_08154254 {
     specialvar(VAR_RESULT, GetDaysUntilPacifidlogTMAvailable)
     buffernumberstring(0, VAR_RESULT)
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_081792F2)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_081792F2, MSGBOX_DEFAULT)
     release
     end
 }
@@ -106,11 +97,9 @@ script Naranja_IslaHamlin_G07_M03_EventScript_OBJ_EVENT_GFX_AZURILL_LocalId2 {
     faceplayer
     waitse
     playmoncry(SPECIES_AZURILL, 0)
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_0817938B)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_0817938B, MSGBOX_DEFAULT)
     waitmoncry
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_0817939B)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_0817939B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -120,11 +109,9 @@ script Naranja_IslaHamlin_G07_M03_EventScript_OBJ_EVENT_GFX_AZURILL_LocalId3 {
     faceplayer
     waitse
     playmoncry(SPECIES_AZURILL, 2)
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_081793CC)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_081793CC, MSGBOX_DEFAULT)
     waitmoncry
-    loadword(0, Naranja_IslaHamlin_G07_M03_Text_081793DD)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M03_Text_081793DD, MSGBOX_DEFAULT)
     release
     end
 }

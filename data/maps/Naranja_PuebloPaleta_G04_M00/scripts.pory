@@ -5,8 +5,7 @@ mapscripts Naranja_PuebloPaleta_G04_M00_MapScripts {
 }
 
 script Naranja_PuebloPaleta_G04_M00_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId3 {
-    loadword(0, Naranja_PuebloPaleta_G04_M00_Text_081762A3)
-    callstd(2)
+    msgbox(Naranja_PuebloPaleta_G04_M00_Text_081762A3, MSGBOX_NPC)
     end
 }
 
@@ -18,8 +17,9 @@ script Naranja_PuebloPaleta_G04_M00_EventScript_Trigger_1 {
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_5051)
     goto_if(EQUAL, 0x086B0B00)
     nop
-    loadword(0, Naranja_PuebloPaleta_G04_M00_Text_08176209)
-    goto(Naranja_ValleCharizard_G04_M01_EventScript_Sub_0815369F)
+    msgbox(Naranja_PuebloPaleta_G04_M00_Text_08176209, MSGBOX_DEFAULT)
+    release
+    end
 }
 
 text Naranja_PuebloPaleta_G04_M00_Text_08176209 {

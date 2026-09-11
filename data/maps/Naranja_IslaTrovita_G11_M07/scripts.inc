@@ -26,112 +26,102 @@ Naranja_IslaTrovita_G11_M07_EventScript_Sub_08157BEF::
 # 20 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	pokemart Naranja_IslaTrovita_G11_M07_Mart_08157C00
 # 21 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	loadword 0, Naranja_CaminoFrio_G00_M29_Text_081A0C02
+	msgbox Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT
 # 22 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	callstd 4
-# 23 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M07_EventScript_Sub_08157C18::
-# 28 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 27 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	pokemart Naranja_IslaTrovita_G11_M07_Mart_08157C28
+# 28 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+	msgbox Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT
 # 29 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	loadword 0, Naranja_CaminoFrio_G00_M29_Text_081A0C02
-# 30 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	callstd 4
-# 31 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M07_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3::
-# 36 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M07_Text_08184C76
-# 37 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	callstd 2
+# 34 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M07_Text_08184C76, MSGBOX_NPC
 	end
 
 
 Naranja_IslaTrovita_G11_M07_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId2::
-# 42 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M07_Text_08184CD8
-# 43 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	callstd 2
+# 39 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M07_Text_08184CD8, MSGBOX_NPC
 	end
 
 
 Naranja_IslaTrovita_G11_M07_EventScript_OBJ_EVENT_GFX_BUG_CATCHER_LocalId4::
-# 48 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M07_Text_08184D43
-# 49 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
-	callstd 2
+# 44 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M07_Text_08184D43, MSGBOX_NPC
 	end
 
 
 	.align 2
-# 53 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 48 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 Naranja_IslaTrovita_G11_M07_Mart_08157C00:
-# 54 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 49 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_POKE_BALL
-# 55 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 50 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_POTION
-# 56 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 51 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_SUPER_POTION
-# 57 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 52 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_ANTIDOTE
-# 58 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 53 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
-# 59 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 54 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_ESCAPE_ROPE
-# 60 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 55 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_REPEL
-# 61 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 56 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_X_SPEED
-# 62 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 57 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_X_ATTACK
-# 63 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 58 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_X_DEFEND
 	.2byte ITEM_NONE
 
 	.align 2
-# 66 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 61 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 Naranja_IslaTrovita_G11_M07_Mart_08157C28:
-# 67 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 62 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_POKE_BALL
-# 68 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 63 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_TIMER_BALL
-# 69 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 64 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_REPEAT_BALL
-# 70 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 65 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_POTION
-# 71 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 66 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_SUPER_POTION
-# 72 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 67 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_ANTIDOTE
-# 73 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 68 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_PARALYZE_HEAL
-# 74 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 69 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_ESCAPE_ROPE
-# 75 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 70 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_REPEL
-# 76 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 71 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_X_SPEED
-# 77 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 72 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_X_ATTACK
-# 78 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 73 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.2byte ITEM_X_DEFEND
 	.2byte ITEM_NONE
 
 Naranja_IslaTrovita_G11_M07_Text_08184C76::
-# 81 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 76 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.string "I’m buying some PARLYZ HEALS and\nANTIDOTES.\pJust in case I run into SHROOMISH\nin PETALBURG WOODS.$"
 
 Naranja_IslaTrovita_G11_M07_Text_08184CD8::
-# 85 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 80 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.string "My POKéMON evolved.\nIt has a lot of HP now.\pI should buy SUPER POTIONS for it\ninstead of ordinary POTIONS.$"
 
 Naranja_IslaTrovita_G11_M07_Text_08184D43::
-# 89 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
+# 84 "data/maps/Naranja_IslaTrovita_G11_M07/scripts.pory"
 	.string "I’m getting an ESCAPE ROPE just in\ncase I get lost in a cave.\pI just need to use it to get back to the\nentrance.$"

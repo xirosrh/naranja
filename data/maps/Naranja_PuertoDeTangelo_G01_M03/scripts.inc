@@ -63,40 +63,36 @@ Naranja_PuertoDeTangelo_G01_M03_EventScript_Sign_4::
 
 Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C52::
 # 45 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
-	loadword 0, Naranja_PuertoDeTangelo_G01_M01_Text_081A100C
+	msgbox Naranja_PuertoDeTangelo_G01_M01_Text_081A100C, MSGBOX_DEFAULT
 # 46 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
-	callstd 4
-# 47 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C5C::
-# 52 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 51 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	setvar VAR_0x8004, 2
-# 53 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 52 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	special DoPCTurnOnEffect
-# 54 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 53 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	playse SE_PC_ON
+# 54 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+	msgbox Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6, MSGBOX_DEFAULT
 # 55 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
-	loadword 0, Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6
-# 56 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
-	callstd 4
-# 57 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	special BedroomPC
-# 58 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 56 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	waitstate
-# 59 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 57 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_PuertoDeTangelo_G01_M03_EventScript_Sign_3::
-# 64 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 62 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	lockall
-# 65 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 63 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	setvar VAR_0x8004, 1
-# 66 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
+# 64 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	goto Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB
 	return
 

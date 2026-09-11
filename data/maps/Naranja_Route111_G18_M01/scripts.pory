@@ -13,8 +13,7 @@ script Naranja_Route111_G18_M01_OnTransition {
 script Naranja_Route111_G18_M01_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_Route111_G18_M01_Text_081923AF)
-    callstd(5)
+    msgbox(Naranja_Route111_G18_M01_Text_081923AF, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route111_G18_M01_EventScript_Sub_0815BFFC)
     compare_var_to_value(VAR_RESULT, 0)
@@ -23,12 +22,10 @@ script Naranja_Route111_G18_M01_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId1 {
 }
 
 script Naranja_Route111_G18_M01_EventScript_Sub_0815BFFC {
-    loadword(0, Naranja_Route111_G18_M01_Text_08192423)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M01_Text_08192423, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route119_G32_M00_EventScript_Sub_081A02CA)
-    loadword(0, Naranja_Route111_G18_M01_Text_0819244D)
-    callstd(5)
+    msgbox(Naranja_Route111_G18_M01_Text_0819244D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route111_G18_M01_EventScript_Sub_0815BFFC)
     compare_var_to_value(VAR_RESULT, 0)
@@ -37,8 +34,7 @@ script Naranja_Route111_G18_M01_EventScript_Sub_0815BFFC {
 }
 
 script Naranja_Route111_G18_M01_EventScript_Sub_0815C029 {
-    loadword(0, Naranja_Route111_G18_M01_Text_081924C6)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M01_Text_081924C6, MSGBOX_DEFAULT)
     release
     end
 }

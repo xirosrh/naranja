@@ -12,15 +12,13 @@ script Naranja_IslaKumquat_G13_M09_OnFrame_1 {
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M09_LASS, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A1D6)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A1D6, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M09_LITTLE_GIRL_2, Naranja_IslaKumquat_G13_M09_Movement_08159402)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M09_MAN_5, Naranja_IslaKumquat_G13_M09_Movement_081593FA)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A1E8)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A1E8, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M09_LITTLE_GIRL_2, Naranja_IslaKumquat_G13_M09_Movement_08159409)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
@@ -139,8 +137,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId2 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159592)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A400)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A400, MSGBOX_DEFAULT)
     release
     end
 }
@@ -149,29 +146,25 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815956E {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159588)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A36A)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A36A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159588 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A391)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A391, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159592 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A48D)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A48D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815959C {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A4EA)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A4EA, MSGBOX_DEFAULT)
     release
     end
 }
@@ -189,8 +182,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159609)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A629)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A629, MSGBOX_DEFAULT)
     release
     end
 }
@@ -199,29 +191,25 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081595E5 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_081595FF)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A584)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A584, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081595FF {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A5AC)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A5AC, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159609 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A65B)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A65B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159613 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A6D4)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A6D4, MSGBOX_DEFAULT)
     release
     end
 }
@@ -239,8 +227,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId3 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159680)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A814)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A814, MSGBOX_DEFAULT)
     release
     end
 }
@@ -249,29 +236,25 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815965C {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159676)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A71E)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A71E, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159676 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A789)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A789, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159680 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A8C4)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A8C4, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815968A {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818A984)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818A984, MSGBOX_DEFAULT)
     release
     end
 }
@@ -289,8 +272,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_Local
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_081596F7)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AB0A)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AB0A, MSGBOX_DEFAULT)
     release
     end
 }
@@ -299,29 +281,25 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081596D3 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_081596ED)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AA39)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AA39, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081596ED {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AA83)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AA83, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081596F7 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AB41)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AB41, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159701 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818ABAE)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818ABAE, MSGBOX_DEFAULT)
     release
     end
 }
@@ -337,8 +315,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalI
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159763)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818ACC7)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818ACC7, MSGBOX_DEFAULT)
     release
     end
 }
@@ -347,22 +324,19 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815973F {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159759)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AC15)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AC15, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159759 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AC5E)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AC5E, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159763 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AD05)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AD05, MSGBOX_DEFAULT)
     release
     end
 }
@@ -378,8 +352,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId6 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_081597C5)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AE63)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AE63, MSGBOX_DEFAULT)
     release
     end
 }
@@ -388,22 +361,19 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081597A1 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_081597BB)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AD6D)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AD6D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081597BB {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818ADEF)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818ADEF, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_081597C5 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AEF5)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AEF5, MSGBOX_DEFAULT)
     release
     end
 }
@@ -419,8 +389,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId7 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159827)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818B030)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818B030, MSGBOX_DEFAULT)
     release
     end
 }
@@ -429,22 +398,19 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159803 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815981D)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AF62)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AF62, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815981D {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818AFD0)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818AFD0, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159827 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818B0C8)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818B0C8, MSGBOX_DEFAULT)
     release
     end
 }
@@ -460,8 +426,7 @@ script Naranja_IslaKumquat_G13_M09_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 7)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159889)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818B1FD)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818B1FD, MSGBOX_DEFAULT)
     release
     end
 }
@@ -470,22 +435,19 @@ script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159865 {
     specialvar(VAR_RESULT, GetNumFansOfPlayerInTrainerFanClub)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815987F)
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818B16E)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818B16E, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_0815987F {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818B181)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818B181, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M09_EventScript_Sub_08159889 {
-    loadword(0, Naranja_IslaKumquat_G13_M09_Text_0818B24F)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M09_Text_0818B24F, MSGBOX_DEFAULT)
     release
     end
 }

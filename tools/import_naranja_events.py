@@ -1008,6 +1008,13 @@ def emit_script_block(pointer: int, registry: Registry, formatter: Formatter) ->
     owner = registry.owners[pointer]
     lines = [f"script {label} {{"]
     cursor = pointer
+    msgbox_types = {
+        2: "MSGBOX_NPC",
+        3: "MSGBOX_SIGN",
+        4: "MSGBOX_DEFAULT",
+        5: "MSGBOX_YESNO",
+        6: "MSGBOX_AUTOCLOSE",
+    }
     for _ in range(4096):
         if cursor != pointer and cursor in registry.entries:
             lines.append(f"    goto({registry.entries[cursor]})")
@@ -1016,6 +1023,69 @@ def emit_script_block(pointer: int, registry: Registry, formatter: Formatter) ->
         if insn is None:
             lines.append("    end")
             break
+        # Poryscript has a native msgbox command for the Ruby idiom
+        # `loadword 0, text` followed immediately by a message callstd.
+        # Keep the two commands separate when the callstd is itself a branch
+        # target, because folding it would remove that entry point.
+        if (
+            insn.opcode == 0x0F
+            and int(insn.values[0]) == 0
+            and insn.next_address not in registry.entries
+        ):
+            next_insn = registry.instructions.get(insn.next_address)
+            if next_insn is not None and next_insn.opcode == 0x09:
+                msgbox_type = msgbox_types.get(int(next_insn.values[0]))
+                if msgbox_type is not None:
+                    text_label = registry.text_labels.get(
+                        int(insn.values[1]), f"0x{int(insn.values[1]):08X}"
+                    )
+                    lines.append(f"    msgbox({text_label}, {msgbox_type})")
+                    cursor = next_insn.next_address
+                    continue
+            # One Naranja cutscene starts the player's movement between
+            # loading the text pointer and invoking the message helper.
+            # applymovement does not use string bank 0, so it is equivalent
+            # (and clearer) to emit the movement followed by a native msgbox.
+            if next_insn is not None and next_insn.opcode == 0x50:
+                callstd_insn = registry.instructions.get(next_insn.next_address)
+                if callstd_insn is not None and callstd_insn.opcode == 0x09:
+                    msgbox_type = msgbox_types.get(int(callstd_insn.values[0]))
+                    if msgbox_type is not None:
+                        text_label = registry.text_labels.get(
+                            int(insn.values[1]), f"0x{int(insn.values[1]):08X}"
+                        )
+                        lines.append("    " + formatter.instruction(next_insn, owner))
+                        lines.append(f"    msgbox({text_label}, {msgbox_type})")
+                        cursor = callstd_insn.next_address
+                        continue
+            # Ruby occasionally loads a message and jumps to a shared helper
+            # whose first instruction is callstd. Inline that message path;
+            # the helper remains available for callers with dynamic text.
+            if next_insn is not None and next_insn.opcode == 0x05:
+                target = int(next_insn.values[0])
+                callstd_insn = registry.instructions.get(target)
+                if callstd_insn is not None and callstd_insn.opcode == 0x09:
+                    msgbox_type = msgbox_types.get(int(callstd_insn.values[0]))
+                    if msgbox_type is not None:
+                        text_label = registry.text_labels.get(
+                            int(insn.values[1]), f"0x{int(insn.values[1]):08X}"
+                        )
+                        lines.append(f"    msgbox({text_label}, {msgbox_type})")
+                        cursor = callstd_insn.next_address
+                        continue
+        # Ruby's message command only loads the text pointer; when followed
+        # by a message callstd, Poryscript can express both as one msgbox.
+        if insn.opcode == 0x67 and insn.next_address not in registry.entries:
+            next_insn = registry.instructions.get(insn.next_address)
+            if next_insn is not None and next_insn.opcode == 0x09:
+                msgbox_type = msgbox_types.get(int(next_insn.values[0]))
+                if msgbox_type is not None:
+                    text_label = registry.text_labels.get(
+                        int(insn.values[0]), f"0x{int(insn.values[0]):08X}"
+                    )
+                    lines.append(f"    msgbox({text_label}, {msgbox_type})")
+                    cursor = next_insn.next_address
+                    continue
         lines.append("    " + formatter.instruction(insn, owner))
         cursor = insn.next_address
         if insn.opcode in TERMINATORS:

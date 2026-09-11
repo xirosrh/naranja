@@ -175,8 +175,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_0816293F {
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162E2B)
     compare_var_to_value(VAR_TEMP_9, 3)
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162E63)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D423)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D423, MSGBOX_DEFAULT)
     random(3)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -202,8 +201,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_081629B3 {
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162ED3)
     compare_var_to_value(VAR_TEMP_9, 3)
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162F0B)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D636)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D636, MSGBOX_DEFAULT)
     random(3)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -229,8 +227,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162A27 {
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162E2B)
     compare_var_to_value(VAR_TEMP_9, 3)
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162E63)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D7D3)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D7D3, MSGBOX_DEFAULT)
     random(3)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -256,8 +253,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162A9B {
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162E2B)
     compare_var_to_value(VAR_TEMP_9, 3)
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162E63)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D93D)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D93D, MSGBOX_DEFAULT)
     random(3)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -283,8 +279,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162B0F {
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162ED3)
     compare_var_to_value(VAR_TEMP_9, 3)
     call_if(EQUAL, Naranja_Route110_G29_M07_EventScript_Sub_08162F0B)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819DA9A)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819DA9A, MSGBOX_DEFAULT)
     random(3)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -297,8 +292,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162B0F {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162B83 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D4AE)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D4AE, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x19, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -307,8 +301,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162B83 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162BA6 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D501)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D501, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x1A, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -317,8 +310,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162BA6 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162BC9 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D553)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D553, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x1B, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -327,8 +319,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162BC9 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162BEC {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D68E)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D68E, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x1C, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 2)
@@ -337,8 +328,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162BEC {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162C0F {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D6EC)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D6EC, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x1D, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -347,8 +337,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162C0F {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162C32 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D745)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D745, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x1E, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -357,8 +346,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162C32 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162C55 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D81B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D81B, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x1F, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -367,8 +355,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162C55 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162C78 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D865)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D865, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x20, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 2)
@@ -377,8 +364,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162C78 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162C9B {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D8BA)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D8BA, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x21, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -387,8 +373,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162C9B {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162CBE {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D987)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D987, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x22, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -397,8 +382,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162CBE {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162CE1 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D9DC)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D9DC, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x23, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -407,8 +391,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162CE1 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162D04 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819DA1D)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819DA1D, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x24, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -417,8 +400,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162D04 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162D27 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819DAEF)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819DAEF, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x25, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
@@ -427,8 +409,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162D27 {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162D4A {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819DB43)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819DB43, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x26, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -437,8 +418,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162D4A {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162D6D {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819DB97)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819DB97, MSGBOX_DEFAULT)
     multichoice(0, 0, 0x27, 1)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 2)
@@ -449,19 +429,16 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162D6D {
 script Naranja_Route110_G29_M07_EventScript_Sub_08162D90 {
     waitse
     playse(SE_FAILURE)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D5CF)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D5CF, MSGBOX_DEFAULT)
     applymovement(LOCALID_ROUTE110_G29_M07_MAN_1_1, Naranja_Route110_G29_M00_Movement_0816309F)
     applymovement(LOCALID_ROUTE110_G29_M07_MAN_1_2, Naranja_Route110_G29_M00_Movement_0816309F)
     applymovement(LOCALID_ROUTE110_G29_M07_MAN_1_3, Naranja_Route110_G29_M00_Movement_0816309F)
     applymovement(LOCALID_ROUTE110_G29_M07_MAN_1_4, Naranja_Route110_G29_M00_Movement_0816309F)
     applymovement(LOCALID_ROUTE110_G29_M07_MAN_1_5, Naranja_Route110_G29_M00_Movement_0816309F)
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D5ED)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D5ED, MSGBOX_DEFAULT)
     waitmovement(LOCALID_NONE)
     closemessage
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D615)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D615, MSGBOX_DEFAULT)
     closemessage
     warp(MAP_NARANJA_ROUTE_110_G29_M07, 0xFF, 0, 0x15)
     waitstate
@@ -476,8 +453,7 @@ script Naranja_Route110_G29_M07_EventScript_Sub_08162DDF {
 }
 
 script Naranja_Route110_G29_M07_EventScript_Sub_08162DE9 {
-    loadword(0, Naranja_Route110_G29_M07_Text_0819D599)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M07_Text_0819D599, MSGBOX_DEFAULT)
     releaseall
     end
 }

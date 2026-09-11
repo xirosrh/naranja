@@ -72,188 +72,182 @@ Naranja_IslaPomelo_G16_M00_EventScript_OBJ_EVENT_GFX_SIDNEY_LocalId1::
 # 50 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	playbgm MUS_ENCOUNTER_ELITE_FOUR, 0
 # 51 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G16_M00_Text_08190728
+	msgbox Naranja_IslaPomelo_G16_M00_Text_08190728, MSGBOX_DEFAULT
 # 52 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	callstd 4
-# 53 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_261, LOCALID_NONE, Naranja_IslaPomelo_G16_M00_Text_08190823
-# 54 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 53 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	goto Naranja_IslaPomelo_G16_M00_EventScript_Sub_0815B5C7
 	return
 
 
 Naranja_IslaPomelo_G16_M00_EventScript_Sub_0815B5BD::
+# 57 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+	msgbox Naranja_IslaPomelo_G16_M00_Text_0819086D, MSGBOX_DEFAULT
 # 58 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G16_M00_Text_0819086D
-# 59 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	callstd 4
-# 60 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaPomelo_G16_M00_EventScript_Sub_0815B5C7::
-# 65 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 63 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DD
-# 66 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 64 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	call Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A0693
-# 67 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G16_M00_Text_0819086D
-# 68 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	callstd 4
-# 69 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 65 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+	msgbox Naranja_IslaPomelo_G16_M00_Text_0819086D, MSGBOX_DEFAULT
+# 66 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A0693::
-# 74 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 71 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaPomelo_G16_M00_Movement_081A0853
-# 75 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 72 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	waitmovement LOCALID_NONE
-# 76 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 73 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	playse SE_DOOR
-# 77 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 74 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 1, 0x344, 0
-# 78 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 75 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 2, 0x345, 0
-# 79 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 76 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0, 2, 0x2DE, 1
-# 80 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 77 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 1, 2, 0x2DD, 1
-# 81 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 78 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 2, 2, 0x2DE, 1
-# 82 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 79 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 3, 2, 0x2DD, 1
-# 83 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 80 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 4, 2, 0x2DE, 1
-# 84 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 81 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 8, 2, 0x2DD, 1
-# 85 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 82 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 9, 2, 0x2DE, 1
-# 86 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 83 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0xA, 2, 0x2DD, 1
-# 87 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 84 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0xB, 2, 0x2DE, 1
-# 88 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 85 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0xC, 2, 0x2DD, 1
-# 89 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 86 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	special DrawWholeMapView
 	return
 
 
 Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A0710::
-# 94 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 91 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaPomelo_G16_M00_Movement_081A0847
-# 95 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 92 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	waitmovement LOCALID_NONE
-# 96 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 93 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	playse SE_TRUCK_DOOR
-# 97 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 94 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 5, 0xC, 0x206, 1
-# 98 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 95 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 0xC, 0x206, 1
-# 99 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 96 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 7, 0xC, 0x206, 1
-# 100 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 97 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 5, 0xD, 0x20E, 1
-# 101 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 98 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 0xD, 0x20E, 1
-# 102 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 99 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 7, 0xD, 0x20E, 1
-# 103 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 100 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	special DrawWholeMapView
 	return
 
 
 Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A0757::
-# 108 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 105 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 1, 0x344, 0
-# 109 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 106 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 2, 0x345, 0
-# 110 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 107 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 5, 0xC, 0x206, 1
-# 111 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 108 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 0xC, 0x206, 1
-# 112 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 109 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 7, 0xC, 0x206, 1
-# 113 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 110 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 5, 0xD, 0x20E, 1
-# 114 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 111 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 0xD, 0x20E, 1
-# 115 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 112 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 7, 0xD, 0x20E, 1
-# 116 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 113 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0, 2, 0x2DE, 1
-# 117 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 114 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 1, 2, 0x2DD, 1
-# 118 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 115 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 2, 2, 0x2DE, 1
-# 119 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 116 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 3, 2, 0x2DD, 1
-# 120 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 117 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 4, 2, 0x2DE, 1
-# 121 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 118 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 8, 2, 0x2DD, 1
-# 122 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 119 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 9, 2, 0x2DE, 1
-# 123 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 120 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0xA, 2, 0x2DD, 1
-# 124 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 121 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0xB, 2, 0x2DE, 1
-# 125 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 122 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 0xC, 2, 0x2DD, 1
 	return
 
 
 Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A07FA::
-# 130 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 127 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 5, 0xC, 0x206, 1
-# 131 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 128 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 0xC, 0x206, 1
-# 132 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 129 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 7, 0xC, 0x206, 1
-# 133 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 130 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 5, 0xD, 0x20E, 1
-# 134 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 131 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 6, 0xD, 0x20E, 1
-# 135 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 132 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	setmetatile 7, 0xD, 0x20E, 1
 	return
 
 
-# 139 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 136 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 Naranja_IslaPomelo_G16_M00_Movement_081A0847:
+# 137 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+	walk_up
+# 138 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+	walk_up
+# 139 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+	walk_up
 # 140 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	walk_up
 # 141 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	walk_up
 # 142 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	walk_up
-# 143 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	walk_up
-# 144 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	walk_up
-# 145 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	walk_up
 	step_end
 
-# 148 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 145 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 Naranja_IslaPomelo_G16_M00_Movement_081A0853:
-# 149 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 146 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	delay_16
-# 150 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 147 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	delay_16
 	step_end
 
 Naranja_IslaPomelo_G16_M00_Text_08190728::
-# 153 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 150 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	.string "Welcome, challenger!\nI’m SIDNEY of the ELITE FOUR.\pI like that look you’re giving me.\nI guess you’ll give me a good match.\lThat’s good! Looking real good!\pAll right! You and me, let’s enjoy a\nbattle that can only be staged here\lin the POKéMON LEAGUE!$"
 
 Naranja_IslaPomelo_G16_M00_Text_08190823::
-# 157 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 154 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	.string "Well, how do you like that? I lost!\nEh, it was fun, so it doesn’t matter.$"
 
 Naranja_IslaPomelo_G16_M00_Text_0819086D::
-# 161 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
+# 158 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	.string "Well, listen to what this loser has\nto say.\pYou’ve got what it takes to go far.\nNow, go on to the next room and enjoy\lyour next battle!$"

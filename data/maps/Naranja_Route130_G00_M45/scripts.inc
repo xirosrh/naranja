@@ -58,42 +58,38 @@ Naranja_Route130_G00_M45_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1::
 # 38 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE130_165, LOCALID_NONE, Naranja_Route130_G00_M45_Text_081C2401, Naranja_Route130_G00_M45_Text_081C245D
 # 39 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
-	loadword 0, Naranja_Route130_G00_M45_Text_081C2479
-# 40 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route130_G00_M45_Text_081C2479, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route130_G00_M45_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2::
-# 45 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 44 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE130_455, LOCALID_NONE, Naranja_Route130_G00_M45_Text_081C24DC, Naranja_Route130_G00_M45_Text_081C2525
-# 46 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
-	loadword 0, Naranja_Route130_G00_M45_Text_081C256E
-# 47 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
-	callstd 6
+# 45 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+	msgbox Naranja_Route130_G00_M45_Text_081C256E, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route130_G00_M45_Text_081C2401::
-# 51 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 49 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	.string "What a surprise! I didn’t expect to\nsee a TRAINER out in the sea.\pI think we should battle!$"
 
 Naranja_Route130_G00_M45_Text_081C245D::
-# 55 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 53 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	.string "This kid’s awfully tough...$"
 
 Naranja_Route130_G00_M45_Text_081C2479::
-# 59 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 57 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	.string "Your eyes have that look of someone\nwho’s experienced harsh challenges\land won. It suits you well!$"
 
 Naranja_Route130_G00_M45_Text_081C24DC::
-# 63 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 61 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	.string "In the deep blue sea,\nmy shattered blue heart finds\lcomfort among waves.$"
 
 Naranja_Route130_G00_M45_Text_081C2525::
-# 67 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 65 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	.string "Like the vast blue sea,\nthe world of POKéMON spans\ldepths beyond belief.$"
 
 Naranja_Route130_G00_M45_Text_081C256E::
-# 71 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
+# 69 "data/maps/Naranja_Route130_G00_M45/scripts.pory"
 	.string "The world’s children dream\nof one day becoming the\lPOKéMON CHAMPION.$"

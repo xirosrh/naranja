@@ -5,14 +5,12 @@ mapscripts Naranja_IslaShamouti_G12_M09_MapScripts {
 }
 
 script Naranja_IslaShamouti_G12_M09_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1 {
-    loadword(0, Naranja_IslaShamouti_G12_M09_Text_08186A61)
-    callstd(2)
+    msgbox(Naranja_IslaShamouti_G12_M09_Text_08186A61, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaShamouti_G12_M09_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId2 {
-    loadword(0, Naranja_IslaShamouti_G12_M09_Text_08186AD6)
-    callstd(2)
+    msgbox(Naranja_IslaShamouti_G12_M09_Text_08186AD6, MSGBOX_NPC)
     end
 }
 
@@ -22,8 +20,7 @@ script Naranja_IslaShamouti_G12_M09_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Loca
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration(Naranja_IslaShamouti_G12_M09_Mart_08158284)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -34,8 +31,7 @@ script Naranja_IslaShamouti_G12_M09_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Loca
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration(Naranja_IslaShamouti_G12_M09_Mart_081582B0)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }

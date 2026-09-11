@@ -698,84 +698,78 @@ Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId1::
 # 410 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_215, LOCALID_NONE, Naranja_Route110_G29_M05_Text_0819CF76, Naranja_Route110_G29_M05_Text_0819CF9D
 # 411 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M05_Text_0819CFE6
-# 412 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route110_G29_M05_Text_0819CFE6, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId2::
-# 417 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 416 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_473, LOCALID_NONE, Naranja_Route110_G29_M05_Text_0819D026, Naranja_Route110_G29_M05_Text_0819D065
-# 418 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M05_Text_0819D07A
-# 419 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
-	callstd 6
+# 417 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+	msgbox Naranja_Route110_G29_M05_Text_0819D07A, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_HIKER_LocalId3::
-# 424 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 422 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_630, LOCALID_NONE, Naranja_Route110_G29_M05_Text_0819D0AE, Naranja_Route110_G29_M05_Text_0819D0F0
-# 425 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M05_Text_0819D110
-# 426 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
-	callstd 6
+# 423 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+	msgbox Naranja_Route110_G29_M05_Text_0819D110, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId9::
-# 431 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 428 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x80
-# 432 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 429 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 433 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 430 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId8::
-# 438 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 435 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x7D
-# 439 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 436 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 440 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 437 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M05_Text_0819CF76::
-# 444 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 441 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I keep coming back to this same place!$"
 
 Naranja_Route110_G29_M05_Text_0819CF9D::
-# 448 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 445 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I’m already having trouble, and then\nyou have to beat me? It’s not fair!$"
 
 Naranja_Route110_G29_M05_Text_0819CFE6::
-# 452 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 449 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "It’s full of doors here!\nIt’s too small and dark in here! Help!$"
 
 Naranja_Route110_G29_M05_Text_0819D026::
-# 456 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 453 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I don’t know what’s going on here.\nI’m starting to feel sad...$"
 
 Naranja_Route110_G29_M05_Text_0819D065::
-# 460 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 457 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "You... You’re awful!$"
 
 Naranja_Route110_G29_M05_Text_0819D07A::
-# 464 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 461 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I know I’m weak!\nAnd, I have no sense of direction!$"
 
 Naranja_Route110_G29_M05_Text_0819D0AE::
-# 468 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 465 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I don’t get it. What would anyone want\nwith a house this bizarre?$"
 
 Naranja_Route110_G29_M05_Text_0819D0F0::
-# 472 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 469 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I don’t get it.\nHow did I lose?$"
 
 Naranja_Route110_G29_M05_Text_0819D110::
-# 476 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
+# 473 "data/maps/Naranja_Route110_G29_M05/scripts.pory"
 	.string "I don’t get it.\nHow many traps are in this house?\pYou may be the one to solve that.$"

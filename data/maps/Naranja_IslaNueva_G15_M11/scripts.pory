@@ -5,14 +5,12 @@ mapscripts Naranja_IslaNueva_G15_M11_MapScripts {
 }
 
 script Naranja_IslaNueva_G15_M11_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
-    loadword(0, Naranja_IslaNueva_G15_M11_Text_0818FFA9)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G15_M11_Text_0818FFA9, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNueva_G15_M11_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId2 {
-    loadword(0, Naranja_IslaNueva_G15_M11_Text_0819005B)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G15_M11_Text_0819005B, MSGBOX_NPC)
     end
 }
 

@@ -5,8 +5,7 @@ mapscripts Naranja_Safari_G26_M00_MapScripts {
 }
 
 script Naranja_Safari_G26_M00_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
-    loadword(0, Naranja_Safari_G26_M00_Text_081C3CAE)
-    callstd(2)
+    msgbox(Naranja_Safari_G26_M00_Text_081C3CAE, MSGBOX_NPC)
     end
 }
 

@@ -125,8 +125,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D62B {
     delay(0xA)
     applymovement(LOCALID_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1_4, Naranja_PuertoDeTangelo_G00_M09_Movement_0814D6AE)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816A7C9)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816A7C9, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1_4, Naranja_PuertoDeTangelo_G00_M09_Movement_0814D6B1)
     applymovement(LOCALID_PLAYER, Naranja_PuertoDeTangelo_G00_M09_Movement_0814D6B8)
@@ -154,14 +153,12 @@ script Naranja_PuertoDeTangelo_G00_M09_OnFrame_3 {
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId2 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AC00)
-    callstd(2)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AC00, MSGBOX_NPC)
     end
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId3 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AC56)
-    callstd(2)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AC56, MSGBOX_NPC)
     end
 }
 
@@ -174,15 +171,13 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_Loc
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D722)
     compare_var_to_value(VAR_NARANJA_PUERTO_DE_TANGELO_STORY_STATE, 0)
     goto_if(NOT_EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D708)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816ACEB)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816ACEB, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D708 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AD82)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AD82, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -193,15 +188,13 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D708 {
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D722 {
     special(GetPlayerBigGuyGirlString)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816ADF2)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816ADF2, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D72F {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AE25)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AE25, MSGBOX_DEFAULT)
     release
     end
 }
@@ -218,14 +211,12 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Trigger_1 {
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D755 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816ACEB)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816ACEB, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1, Naranja_PuertoDeTangelo_G00_M09_Movement_0814D787)
     applymovement(LOCALID_PLAYER, Naranja_PuertoDeTangelo_G00_M09_Movement_0814D793)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AD3C)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AD3C, MSGBOX_DEFAULT)
     closemessage
     return
 }
@@ -247,8 +238,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Trigger_3 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AD82)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AD82, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -258,14 +248,12 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Trigger_3 {
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sign_1 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AE50)
-    callstd(3)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AE50, MSGBOX_SIGN)
     end
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sign_2 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AE87)
-    callstd(3)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AE87, MSGBOX_SIGN)
     end
 }
 
@@ -292,8 +280,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sign_4 {
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D84E {
-    loadword(0, Naranja_PuebloPaleta_G26_M04_Text_0816AEAC)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M04_Text_0816AEAC, MSGBOX_DEFAULT)
     return
 }
 
@@ -339,8 +326,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D8B6 {
     call_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D926)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D931)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816A8EE)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816A8EE, MSGBOX_DEFAULT)
     closemessage
     checkplayergender
     compare_var_to_value(VAR_RESULT, 0)
@@ -670,17 +656,14 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814DD2B {
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814DD38 {
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816A8FD)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816A8FD, MSGBOX_DEFAULT)
     playfanfare(MUS_OBTAIN_ITEM)
     message(Naranja_PuertoDeTangelo_G00_M09_Text_0816AA32)
     waitfanfare
     waitmessage
     setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0112)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AA5C)
-    callstd(4)
-    loadword(0, Naranja_PuertoDeTangelo_G00_M09_Text_0816AB10)
-    callstd(4)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AA5C, MSGBOX_DEFAULT)
+    msgbox(Naranja_PuertoDeTangelo_G00_M09_Text_0816AB10, MSGBOX_DEFAULT)
     closemessage
     delay(0x1E)
     return

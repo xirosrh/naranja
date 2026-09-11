@@ -48,8 +48,7 @@ script Naranja_Underwater_G24_M26_OnResume {
 
 script Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalId1 {
     lockall
-    loadword(0, Naranja_Underwater_G24_M26_Text_08197435)
-    callstd(4)
+    msgbox(Naranja_Underwater_G24_M26_Text_08197435, MSGBOX_DEFAULT)
     releaseall
     end
 }

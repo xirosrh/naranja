@@ -5,22 +5,19 @@ mapscripts Naranja_IslaHamlin_G07_M05_MapScripts {
 }
 
 script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId2 {
-    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817961F)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M05_Text_0817961F, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
-    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817959B)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M05_Text_0817959B, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId3 {
     lock
     faceplayer
-    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817963D)
-    callstd(5)
+    msgbox(Naranja_IslaHamlin_G07_M05_Text_0817963D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaHamlin_G07_M05_EventScript_Sub_0815437F)
     compare_var_to_value(VAR_RESULT, 0)
@@ -29,15 +26,13 @@ script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId3 {
 }
 
 script Naranja_IslaHamlin_G07_M05_EventScript_Sub_0815437F {
-    loadword(0, Naranja_IslaHamlin_G07_M05_Text_08179656)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M05_Text_08179656, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M05_EventScript_Sub_08154389 {
-    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817968C)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M05_Text_0817968C, MSGBOX_DEFAULT)
     release
     end
 }

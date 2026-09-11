@@ -9,15 +9,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId9 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_0814F205)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081B8925)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081B8925, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_0814F205 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_136, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081B895E, Naranja_Desierto_G00_M32_Text_081B899E)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081B89C0)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081B89C0, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -26,33 +24,28 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_0814F3FA)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081B938E)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081B938E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_0814F3FA {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_155, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081B93EB, Naranja_Desierto_G00_M32_Text_081B9429)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081B9477)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081B9477, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1 {
-    loadword(0, Naranja_Desierto_G00_M32_Text_08170CA7)
-    callstd(2)
+    msgbox(Naranja_Desierto_G00_M32_Text_08170CA7, MSGBOX_NPC)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sign_1 {
-    loadword(0, Naranja_Desierto_G00_M32_Text_08170D02)
-    callstd(3)
+    msgbox(Naranja_Desierto_G00_M32_Text_08170D02, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sign_2 {
-    loadword(0, Naranja_Desierto_G00_M32_Text_08170D1E)
-    callstd(3)
+    msgbox(Naranja_Desierto_G00_M32_Text_08170D1E, MSGBOX_SIGN)
     end
 }
 
@@ -61,15 +54,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId10 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_08150DB4)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BD4F9)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BD4F9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_08150DB4 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_538, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD569, Naranja_Desierto_G00_M32_Text_081BD5AB)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BD5F2)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BD5F2, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -78,15 +69,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId8 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_08150E30)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BD7F5)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BD7F5, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_08150E30 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_364, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD83F, Naranja_Desierto_G00_M32_Text_081BD8A2)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BD8BD)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BD8BD, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -95,15 +84,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F_L
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_08150E6E)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BD98F)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BD98F, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_08150E6E {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_369, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD9F1, Naranja_Desierto_G00_M32_Text_081BDA41)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BDA6B)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BDA6B, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -119,15 +106,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_LASS_LocalId20 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_08150EC7)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BDC44)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BDC44, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_08150EC7 {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_DESIERTO_287, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDDEF, Naranja_Desierto_G00_M32_Text_081BDE2F, Naranja_Desierto_G00_M32_Text_081BDEA7)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BDE55)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BDE55, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -136,15 +121,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_LASS_LocalId19 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_08150F0D)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BDD4E)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BDD4E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_08150F0D {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_DESIERTO_287, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDEE3, Naranja_Desierto_G00_M32_Text_081BDF26, Naranja_Desierto_G00_M32_Text_081BDF90)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BDF37)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BDF37, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -153,15 +136,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId21 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_081510B6)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BE05E)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BE05E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_081510B6 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_037, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BE0AB, Naranja_Desierto_G00_M32_Text_081BE0D3)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081BE104)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081BE104, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -170,15 +151,13 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId3 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_081522CB)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081C1CC3)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081C1CC3, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_081522CB {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_376, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081C1D02, Naranja_Desierto_G00_M32_Text_081C1D45)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081C1D6B)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_081C1D6B, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -192,12 +171,10 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId1
     setfieldeffectargument(0, 0x800D)
     bufferpartymonnick(0, 0x800D)
     buffermovename(1, MOVE_CUT)
-    loadword(0, Naranja_Desierto_G00_M32_Text_081B0E3F)
-    callstd(5)
+    msgbox(Naranja_Desierto_G00_M32_Text_081B0E3F, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Desierto_G00_M32_EventScript_Sub_081B0E3C)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081B0E82)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081B0E82, MSGBOX_DEFAULT)
     closemessage
     dofieldeffect(2)
     waitstate
@@ -213,8 +190,7 @@ script Naranja_Desierto_G00_M32_EventScript_Sub_081B0E21 {
 }
 
 script Naranja_Desierto_G00_M32_EventScript_Sub_081B0E32 {
-    loadword(0, Naranja_Desierto_G00_M32_Text_086BEF40)
-    callstd(3)
+    msgbox(Naranja_Desierto_G00_M32_Text_086BEF40, MSGBOX_SIGN)
     releaseall
     end
 }
@@ -246,12 +222,10 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId18 {
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
     goto_if(LESS_THAN, Naranja_IslaTangelo_G06_M06_EventScript_OBJ_EVENT_GFX_LASS_LocalId1)
-    loadword(0, Naranja_Desierto_G00_M32_Text_086B8340)
-    callstd(6)
+    msgbox(Naranja_Desierto_G00_M32_Text_086B8340, MSGBOX_AUTOCLOSE)
     checktrainerflag(0x229)
     call_if(LESS_THAN, Naranja_Desierto_G00_M32_EventScript_Sub_08150E85)
-    loadword(0, Naranja_Desierto_G00_M32_Text_086B838D)
-    callstd(5)
+    msgbox(Naranja_Desierto_G00_M32_Text_086B838D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     closemessage
@@ -285,8 +259,7 @@ script Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId18 {
     applymovement(LOCALID_DESIERTO_G00_M32_AZUMARILL, Naranja_Desierto_G00_M32_Movement_086B8316)
     nop
     delay(0x40)
-    loadword(0, Naranja_Desierto_G00_M32_Text_086B83CC)
-    callstd(4)
+    msgbox(Naranja_Desierto_G00_M32_Text_086B83CC, MSGBOX_DEFAULT)
     nop
     release
     end

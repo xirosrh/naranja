@@ -10,8 +10,7 @@ script Naranja_IslaNavel_G05_M06_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
     waitmovement(LOCALID_NONE)
     checkflag(FLAG_TEMP_1)
     goto_if(EQUAL, Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CB6)
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177AF4)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177AF4, MSGBOX_DEFAULT)
     setflag(FLAG_TEMP_1)
     goto(Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CB6)
 }
@@ -20,8 +19,7 @@ script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CB6 {
     checkitem(ITEM_HEART_SCALE, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D60)
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177BDB)
-    callstd(5)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177BDB, MSGBOX_YESNO)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
     goto_if(EQUAL, Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D60)
@@ -29,8 +27,7 @@ script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CB6 {
 }
 
 script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CE4 {
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177C3F)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177C3F, MSGBOX_DEFAULT)
     special(ChooseMonForMoveRelearner)
     waitstate
     compare_var_to_value(VAR_0x8004, 0xFF)
@@ -44,33 +41,28 @@ script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CE4 {
 }
 
 script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D1A {
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177C5D)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177C5D, MSGBOX_DEFAULT)
     special(TeachMoveRelearnerMove)
     waitstate
     compare_var_to_value(VAR_0x8004, 0)
     goto_if(EQUAL, Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CE4)
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177CC3)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177CC3, MSGBOX_DEFAULT)
     removeitem(ITEM_HEART_SCALE, 1)
     goto(Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D60)
 }
 
 script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D44 {
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177C78)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177C78, MSGBOX_DEFAULT)
     goto(Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CE4)
 }
 
 script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D52 {
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177D33)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177D33, MSGBOX_DEFAULT)
     goto(Naranja_IslaNavel_G05_M06_EventScript_Sub_08153CE4)
 }
 
 script Naranja_IslaNavel_G05_M06_EventScript_Sub_08153D60 {
-    loadword(0, Naranja_IslaNavel_G05_M06_Text_08177CEF)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M06_Text_08177CEF, MSGBOX_DEFAULT)
     releaseall
     end
 }

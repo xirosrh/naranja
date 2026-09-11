@@ -9,23 +9,20 @@ script Naranja_IslaKumquat_G13_M14_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00EA)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M14_EventScript_Sub_08159BDA)
-    loadword(0, Naranja_IslaKumquat_G13_M14_Text_0818B83C)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M14_Text_0818B83C, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x14C)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00EA)
-    loadword(0, Naranja_IslaKumquat_G13_M14_Text_0818B883)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M14_Text_0818B883, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M14_EventScript_Sub_08159BDA {
-    loadword(0, Naranja_IslaKumquat_G13_M14_Text_0818B883)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M14_Text_0818B883, MSGBOX_DEFAULT)
     release
     end
 }

@@ -9,22 +9,19 @@ script Naranja_IslaTangelo_G02_M04_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
     goto_if(EQUAL, Naranja_IslaTangelo_G02_M04_EventScript_Sub_08152FDB)
-    loadword(0, Naranja_IslaTangelo_G02_M04_Text_08174A8A)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G02_M04_Text_08174A8A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTangelo_G02_M04_EventScript_Sub_08152FDB {
-    loadword(0, Naranja_IslaTangelo_G02_M04_Text_08174ACB)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G02_M04_Text_08174ACB, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTangelo_G02_M04_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId3 {
-    loadword(0, Naranja_IslaTangelo_G02_M04_Text_08174B10)
-    callstd(2)
+    msgbox(Naranja_IslaTangelo_G02_M04_Text_08174B10, MSGBOX_NPC)
     end
 }
 

@@ -14,8 +14,7 @@ mapscripts Naranja_PuebloPaleta_G01_M04_MapScripts {
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Trigger_1 {
     lockall
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BEC6C)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BEC6C, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_PuebloPaleta_G01_M04_Movement_0814E9FC)
     waitmovement(LOCALID_NONE)
@@ -41,8 +40,7 @@ script Naranja_PuebloPaleta_G01_M04_OnFrame_1 {
     waitmessage
     playfanfare(MUS_OBTAIN_ITEM)
     waitfanfare
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08173EF8)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08173EF8, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152CEA)
     compare_var_to_value(VAR_RESULT, 0)
@@ -57,8 +55,7 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152CEA {
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152CFA {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08173F3D)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08173F3D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D19)
     compare_var_to_value(VAR_RESULT, 0)
@@ -67,8 +64,7 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152CFA {
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D19 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174015)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174015, MSGBOX_DEFAULT)
     clearflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_03DF)
     setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 3)
     releaseall
@@ -76,8 +72,7 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D19 {
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D2B {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174075)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174075, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D19)
     compare_var_to_value(VAR_RESULT, 0)
@@ -99,23 +94,20 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalI
     goto_if(GREATER_THAN_OR_EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D90)
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0058)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D86)
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08173B29)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08173B29, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0058)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D86 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08173C88)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08173C88, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D90 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BF2DD)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BF2DD, MSGBOX_DEFAULT)
     release
     end
 }
@@ -127,18 +119,15 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId
     goto_if(LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11)
     compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 5)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E7B)
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_081740B4)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_081740B4, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152DBA {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_0817411F)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_0817411F, MSGBOX_DEFAULT)
     call(Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E6D)
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174248)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174248, MSGBOX_DEFAULT)
     applymovement(LOCALID_PUEBLO_PALETA_G01_M04_PROF_BIRCH_2, Naranja_PuebloPaleta_G01_M04_Movement_08152E97)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
@@ -158,29 +147,25 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152DBA {
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E13 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BFD1C)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BFD1C, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 4)
     setorcopyvar(VAR_0x8001, 5)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E85)
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BEDDD)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BEDDD, MSGBOX_DEFAULT)
     setvar(VAR_RESULT, 0)
     return
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E40 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BF801)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BF801, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 4)
     setorcopyvar(VAR_0x8001, 5)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E8E)
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BFF34)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BFF34, MSGBOX_DEFAULT)
     setvar(VAR_RESULT, 1)
     return
 }
@@ -195,27 +180,23 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E6D {
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E7B {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_0817436C)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_0817436C, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E85 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_081744F0)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_081744F0, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E8E {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_0817465B)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_0817465B, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sign_1 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_081746A2)
-    callstd(3)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_081746A2, MSGBOX_SIGN)
     end
 }
 
@@ -232,32 +213,27 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152EBE {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174505)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174505, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152EC7 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174671)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174671, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sign_10 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_081746E7)
-    callstd(3)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_081746E7, MSGBOX_SIGN)
     end
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sign_3 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174724)
-    callstd(3)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174724, MSGBOX_SIGN)
     end
 }
 
 script Naranja_PuebloPaleta_G01_M04_EventScript_Sign_4 {
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_08174748)
-    callstd(3)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_08174748, MSGBOX_SIGN)
     end
 }
 

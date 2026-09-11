@@ -9,12 +9,10 @@ script Naranja_IslaNueva_G15_M10_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_00F5)
     goto_if(EQUAL, Naranja_IslaNueva_G15_M10_EventScript_Sub_0815B3CD)
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_0818FEA1)
-    callstd(5)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_0818FEA1, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_IslaNueva_G15_M10_EventScript_Sub_0815B3C3)
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_0818FF12)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_0818FF12, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x75)
     callstd(7)
     compare_var_to_value(VAR_RESULT, 0)
@@ -25,25 +23,21 @@ script Naranja_IslaNueva_G15_M10_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
 }
 
 script Naranja_IslaNueva_G15_M10_EventScript_Sub_0815B3C3 {
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_0818FF6D)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_0818FF6D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M10_EventScript_Sub_0815B3CD {
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_0818FF95)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_0818FF95, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M10_EventScript_Sub_0815B3D7 {
     bufferdecorationname(1, 0x75)
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_081A0CEF)
-    callstd(4)
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_0818FF28)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_081A0CEF, MSGBOX_DEFAULT)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_0818FF28, MSGBOX_DEFAULT)
     release
     end
 }

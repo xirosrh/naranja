@@ -13,12 +13,10 @@ script Naranja_SouthernIsland_G26_M09_OnTransition {
 script Naranja_SouthernIsland_G26_M09_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C5215)
-    callstd(5)
+    msgbox(Naranja_SouthernIsland_G26_M09_Text_081C5215, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B25)
-    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C5281)
-    callstd(4)
+    msgbox(Naranja_SouthernIsland_G26_M09_Text_081C5281, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
@@ -33,8 +31,7 @@ script Naranja_SouthernIsland_G26_M09_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId1 
 }
 
 script Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B25 {
-    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C52A6)
-    callstd(4)
+    msgbox(Naranja_SouthernIsland_G26_M09_Text_081C52A6, MSGBOX_DEFAULT)
     release
     end
 }
@@ -52,8 +49,7 @@ script Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B3A {
 }
 
 script Naranja_SouthernIsland_G26_M09_EventScript_Sign_1 {
-    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C52FB)
-    callstd(3)
+    msgbox(Naranja_SouthernIsland_G26_M09_Text_081C52FB, MSGBOX_SIGN)
     end
 }
 

@@ -8,8 +8,7 @@ script Naranja_IslaNueva_G15_M12_EventScript_OBJ_EVENT_GFX_HIKER_LocalId2 {
     special(GetSeedotSizeRecordInfo)
     lock
     faceplayer
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081900F7)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081900F7, MSGBOX_DEFAULT)
     special(ChoosePartyMon)
     waitstate
     copyvar(VAR_RESULT, VAR_0x8004)
@@ -27,29 +26,25 @@ script Naranja_IslaNueva_G15_M12_EventScript_OBJ_EVENT_GFX_HIKER_LocalId2 {
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B448 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_08190366)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_08190366, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B452 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_08190329)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_08190329, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B45C {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081902E4)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081902E4, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B466 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_0819021D)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_0819021D, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x24)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -61,8 +56,7 @@ script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B466 {
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B488 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081902C4)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081902C4, MSGBOX_DEFAULT)
     release
     end
 }
@@ -71,8 +65,7 @@ script Naranja_IslaNueva_G15_M12_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId1 {
     special(GetLotadSizeRecordInfo)
     lock
     faceplayer
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_08190431)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_08190431, MSGBOX_DEFAULT)
     special(ChoosePartyMon)
     waitstate
     copyvar(VAR_RESULT, VAR_0x8004)
@@ -90,29 +83,25 @@ script Naranja_IslaNueva_G15_M12_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId1 {
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B4D9 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_0819065A)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_0819065A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B4E3 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_08190628)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_08190628, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B4ED {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081905E6)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081905E6, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B4F7 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_08190536)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_08190536, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x24)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -124,8 +113,7 @@ script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B4F7 {
 }
 
 script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B519 {
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081905C1)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081905C1, MSGBOX_DEFAULT)
     release
     end
 }
@@ -133,8 +121,7 @@ script Naranja_IslaNueva_G15_M12_EventScript_Sub_0815B519 {
 script Naranja_IslaNueva_G15_M12_EventScript_Sign_1 {
     special(GetSeedotSizeRecordInfo)
     lockall
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081903C9)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081903C9, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -142,8 +129,7 @@ script Naranja_IslaNueva_G15_M12_EventScript_Sign_1 {
 script Naranja_IslaNueva_G15_M12_EventScript_Sign_2 {
     special(GetLotadSizeRecordInfo)
     lockall
-    loadword(0, Naranja_IslaNueva_G15_M12_Text_081906BE)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M12_Text_081906BE, MSGBOX_DEFAULT)
     releaseall
     end
 }

@@ -45,8 +45,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_3 {
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FC39 {
     special(FinishCyclingRoadChallenge)
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0816EF65)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0816EF65, MSGBOX_DEFAULT)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0xA)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCC3)
@@ -74,32 +73,27 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FC39 {
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCC3 {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0816EF9F)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0816EF9F, MSGBOX_DEFAULT)
     goto(Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09)
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCD1 {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0816F012)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0816F012, MSGBOX_DEFAULT)
     goto(Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09)
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCDF {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0816F069)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0816F069, MSGBOX_DEFAULT)
     goto(Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09)
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCED {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0816F0D0)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0816F0D0, MSGBOX_DEFAULT)
     goto(Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09)
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCFB {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0816F139)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0816F139, MSGBOX_DEFAULT)
     goto(Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09)
 }
 
@@ -122,8 +116,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_2 {
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_081634A6 {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_0819E3AD)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_0819E3AD, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081634BB)
     waitmovement(LOCALID_NONE)
@@ -181,8 +174,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_5 {
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     applymovement(LOCALID_CAMINO_FRIO_G20_M01_BIG_SNORLAX_DOLL_2, Naranja_CaminoFrio_G20_M01_Movement_08166EB4)
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7CBF)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7CBF, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_08163538)
     waitmovement(LOCALID_NONE)
@@ -191,8 +183,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_5 {
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_OBJ_EVENT_GFX_BIG_SNORLAX_DOLL_LocalId2 {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7CBF)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7CBF, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_086B336E)
     waitmovement(LOCALID_NONE)
@@ -224,8 +215,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D51 {
     nop
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
     call_if(LESS_THAN, Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7DB1)
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7D9B)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7D9B, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_086B7207)
     waitmovement(LOCALID_NONE)
@@ -234,8 +224,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D51 {
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D85 {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7B61)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7B61, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_086B7DDA)
     waitmovement(LOCALID_NONE)
@@ -244,8 +233,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D85 {
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7DB1 {
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7BDB)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7BDB, MSGBOX_DEFAULT)
     closemessage
     fadenewbgm(MUS_GYM)
     setmetatile(0xB, 0x19, 0x256, 0)
@@ -301,8 +289,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B80B0 {
     delay(0x13)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_086B8190)
     delay(0xE0)
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7EA0)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7EA0, MSGBOX_AUTOCLOSE)
     warp(MAP_NARANJA_CAMINO_FRIO_G20_M01, 0, 0, 0)
     end
 }
@@ -314,8 +301,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B80D5 {
     delay(0xB0)
     removeitem(ITEM_MACH_BIKE, 1)
     nop
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7EE5)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7EE5, MSGBOX_AUTOCLOSE)
     warp(MAP_NARANJA_INSIDE_OF_TRUCK_G08_M01, 0x1F, 0, 0)
     end
 }
@@ -325,8 +311,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B810A {
     delay(0x20)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_086B81D0)
     delay(0xD0)
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7F28)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7F28, MSGBOX_AUTOCLOSE)
     warp(MAP_NARANJA_CAMINO_FRIO_G20_M01, 0, 0, 0)
     end
 }
@@ -336,8 +321,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B812F {
     delay(0x30)
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G00_M13_Movement_086B81F0)
     delay(0xE0)
-    loadword(0, Naranja_CaminoFrio_G20_M01_Text_086B7FA0)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G20_M01_Text_086B7FA0, MSGBOX_AUTOCLOSE)
     warp(MAP_NARANJA_CAMINO_FRIO_G20_M01, 0, 0, 0)
     end
 }

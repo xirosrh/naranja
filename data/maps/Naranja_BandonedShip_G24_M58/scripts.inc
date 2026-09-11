@@ -12,22 +12,20 @@ Naranja_BandonedShip_G24_M58_OnResume::
 
 Naranja_BandonedShip_G24_M58_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1::
 # 14 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M58_Text_081986FE
-# 15 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
-	callstd 2
+	msgbox Naranja_BandonedShip_G24_M58_Text_081986FE, MSGBOX_NPC
 	end
 
 
 Naranja_BandonedShip_G24_M58_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2::
-# 20 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
+# 19 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x55
-# 21 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
+# 20 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 22 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
+# 21 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_BandonedShip_G24_M58_Text_081986FE::
-# 26 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
+# 25 "data/maps/Naranja_BandonedShip_G24_M58/scripts.pory"
 	.string "Urrrrppp...\pI’m getting queasy just being aboard\nthis ship...\pIt’s not even moving, but...$"

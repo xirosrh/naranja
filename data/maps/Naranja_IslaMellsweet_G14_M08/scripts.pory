@@ -9,15 +9,13 @@ script Naranja_IslaMellsweet_G14_M08_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 
     faceplayer
     checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M08_EventScript_Sub_0815AB46)
-    loadword(0, Naranja_IslaMellsweet_G14_M08_Text_0818E0E3)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M08_Text_0818E0E3, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMellsweet_G14_M08_EventScript_Sub_0815AB46 {
-    loadword(0, Naranja_IslaMellsweet_G14_M08_Text_0818E125)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M08_Text_0818E125, MSGBOX_DEFAULT)
     release
     end
 }
@@ -29,15 +27,13 @@ script Naranja_IslaMellsweet_G14_M08_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_Loca
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M08_EventScript_Sub_0815AB6D)
     special(GetSecretBaseNearbyMapName)
-    loadword(0, Naranja_IslaMellsweet_G14_M08_Text_0818E17E)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M08_Text_0818E17E, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMellsweet_G14_M08_EventScript_Sub_0815AB6D {
-    loadword(0, Naranja_IslaMellsweet_G14_M08_Text_0818E1A7)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M08_Text_0818E1A7, MSGBOX_DEFAULT)
     release
     end
 }
@@ -47,8 +43,7 @@ script Naranja_IslaMellsweet_G14_M08_EventScript_OBJ_EVENT_GFX_SKITTY_LocalId3 {
     faceplayer
     waitse
     playmoncry(SPECIES_SKITTY, 0)
-    loadword(0, Naranja_IslaMellsweet_G14_M08_Text_0818E1E1)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M08_Text_0818E1E1, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

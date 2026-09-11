@@ -26,21 +26,18 @@ script Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId1 {
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635B5)
     compare_var_to_value(VAR_NARANJA_NORTE_STORY_STATE, 1)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635AB)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E4E6)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E4E6, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x10E)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 1)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E59B)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E59B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Norte_G30_M00_EventScript_Sub_081635AB {
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E59B)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E59B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -49,8 +46,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081635B5 {
     checkitem(ITEM_SOOT_SACK, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635E4)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E65B)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E65B, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0xFA)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163818)
     message(Naranja_Norte_G30_M00_Text_0819E757)
@@ -59,8 +55,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081635B5 {
 }
 
 script Naranja_Norte_G30_M00_EventScript_Sub_081635E4 {
-    loadword(0, Naranja_Norte_G30_M00_Text_0819EAC1)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819EAC1, MSGBOX_DEFAULT)
     release
     end
 }
@@ -97,8 +92,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_08163660 {
     setvar(VAR_0x800A, 0xFA)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0xFA)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xA)
@@ -112,8 +106,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_0816369C {
     setvar(VAR_0x800A, 0x1F4)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1F4)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xB)
@@ -127,8 +120,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081636D8 {
     setvar(VAR_0x800A, 0x1F4)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1F4)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xC)
@@ -142,8 +134,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_08163714 {
     setvar(VAR_0x800A, 0x3E8)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x3E8)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xD)
@@ -157,8 +148,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_08163750 {
     setvar(VAR_0x800A, 0x3E8)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x3E8)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xE)
@@ -173,8 +163,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_0816378C {
     setvar(VAR_0x800A, 0x1770)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1770)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xF)
@@ -189,8 +178,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081637CD {
     setvar(VAR_0x800A, 0x1F40)
     compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1F40)
     goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
-    callstd(5)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E7CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
     setvar(VAR_NARANJA_NORTE_STORY_STATE, 0x10)
@@ -199,8 +187,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081637CD {
 }
 
 script Naranja_Norte_G30_M00_EventScript_Sub_0816380E {
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E990)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E990, MSGBOX_DEFAULT)
     release
     end
 }
@@ -209,8 +196,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_08163818 {
     setvar(VAR_0x800A, 0xFA)
     subvar(VAR_0x800A, 0x4048)
     buffernumberstring(0, VAR_0x800A)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E697)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E697, MSGBOX_DEFAULT)
     release
     end
 }
@@ -230,15 +216,13 @@ script Naranja_Norte_G30_M00_EventScript_Sub_08163845 {
 }
 
 script Naranja_Norte_G30_M00_EventScript_Sub_08163851 {
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E827)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E827, MSGBOX_DEFAULT)
     closemessage
     fadescreen(1)
     playse(SE_SELECT)
     delay(0x1E)
     fadescreen(0)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E9D7)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E9D7, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_0x8009, 0)
     call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163889)
     compare_var_to_value(VAR_0x8009, 1)
@@ -267,16 +251,14 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081638A1 {
 
 script Naranja_Norte_G30_M00_EventScript_Sub_081638B4 {
     call(Naranja_Route110_G29_M00_EventScript_Sub_081A02A5)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819EA06)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819EA06, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Norte_G30_M00_EventScript_Sub_081638C3 {
     call(Naranja_Route110_G29_M00_EventScript_Sub_081A02B8)
-    loadword(0, Naranja_Norte_G30_M00_Text_0819EA64)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819EA64, MSGBOX_DEFAULT)
     release
     end
 }
@@ -350,8 +332,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_0816399D {
 }
 
 script Naranja_Norte_G30_M00_EventScript_Sub_081639B1 {
-    loadword(0, Naranja_Norte_G30_M00_Text_0819E9D7)
-    callstd(4)
+    msgbox(Naranja_Norte_G30_M00_Text_0819E9D7, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_0x8009, 0)
     call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163889)
     compare_var_to_value(VAR_0x8009, 1)
@@ -362,8 +343,7 @@ script Naranja_Norte_G30_M00_EventScript_Sub_081639B1 {
 }
 
 script Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId2 {
-    loadword(0, Naranja_Norte_G30_M00_Text_0819EB3B)
-    callstd(2)
+    msgbox(Naranja_Norte_G30_M00_Text_0819EB3B, MSGBOX_NPC)
     end
 }
 

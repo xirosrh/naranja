@@ -15,10 +15,8 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1 {
     checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094)
     call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0)
     faceplayer
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C14B)
-    callstd(4)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086B4970)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C14B, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086B4970, MSGBOX_DEFAULT)
     closemessage
     setorcopyvar(VAR_0x8000, 0x114)
     setorcopyvar(VAR_0x8001, 1)
@@ -32,8 +30,7 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1 {
 script Naranja_ValnTang_G09_M00_EventScript_Sub_08155388 {
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C472)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C472, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -41,8 +38,7 @@ script Naranja_ValnTang_G09_M00_EventScript_Sub_08155388 {
 script Naranja_ValnTang_G09_M00_EventScript_Sub_0815539C {
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C3F7)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C3F7, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -50,8 +46,7 @@ script Naranja_ValnTang_G09_M00_EventScript_Sub_0815539C {
 script Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0 {
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C2F2)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C2F2, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -62,21 +57,18 @@ script Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0 {
 script Naranja_ValnTang_G09_M00_EventScript_Sub_081553CF {
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C360)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C360, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC {
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C764)
-    callstd(2)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C764, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId4 {
-    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C53D)
-    callstd(2)
+    msgbox(Naranja_ValnTang_G09_M00_Text_0817C53D, MSGBOX_NPC)
     end
 }
 
@@ -84,12 +76,10 @@ script Naranja_ValnTang_G09_M00_EventScript_Trigger_1 {
     checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
     goto_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5)
     applymovement(LOCALID_PLAYER, Naranja_ValnTang_G09_M00_Movement_086B31C2)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086B321B)
-    callstd(6)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086B321B, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_VALN_TANG_G09_M00_MAN_7, Naranja_ValnTang_G09_M00_Movement_086B31C4)
     delay(0x90)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086B3254)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086B3254, MSGBOX_DEFAULT)
     applymovement(LOCALID_VALN_TANG_G09_M00_HIPSTER, Naranja_ValnTang_G09_M00_Movement_086B31D4)
     applymovement(LOCALID_VALN_TANG_G09_M00_BARD, Naranja_ValnTang_G09_M00_Movement_086B31D8)
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_ValnTang_G09_M00_Movement_086B31DF)
@@ -98,17 +88,14 @@ script Naranja_ValnTang_G09_M00_EventScript_Trigger_1 {
     delay(0xFF)
     delay(0xFF)
     delay(0xC0)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086B329E)
-    callstd(3)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086B329E, MSGBOX_SIGN)
     applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_ValnTang_G09_M00_Movement_086B3204)
     delay(0x90)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086B32E1)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086B32E1, MSGBOX_DEFAULT)
     applymovement(LOCALID_VALN_TANG_G09_M00_MAN_7, Naranja_ValnTang_G09_M00_Movement_086B3210)
     delay(0xFF)
     delay(0x40)
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086C0295)
-    callstd(4)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086C0295, MSGBOX_DEFAULT)
     goto(Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531)
 }
 
@@ -142,8 +129,7 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_BARD_LocalId2 {
     goto_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC)
     setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
     nop
-    loadword(0, Naranja_ValnTang_G09_M00_Text_086B36B1)
-    callstd(2)
+    msgbox(Naranja_ValnTang_G09_M00_Text_086B36B1, MSGBOX_NPC)
     end
 }
 

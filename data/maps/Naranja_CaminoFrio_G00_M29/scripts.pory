@@ -7,14 +7,12 @@ mapscripts Naranja_CaminoFrio_G00_M29_MapScripts {
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId20 {
     compare_var_to_value(0x212C, 1)
     goto_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_0814BBEA)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08164AA9)
-    callstd(2)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08164AA9, MSGBOX_NPC)
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_0814BBEA {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081653D1)
-    callstd(3)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081653D1, MSGBOX_SIGN)
     end
 }
 
@@ -24,8 +22,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150733 {
     dotimebasedevents
     checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_08CB)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150778)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081C5803)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081C5803, MSGBOX_DEFAULT)
     random(5)
     addvar(VAR_RESULT, 0xF)
     addvar(VAR_RESULT, 0x85)
@@ -35,15 +32,13 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150733 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_08CB)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081C5861)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081C5861, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150778 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081C5878)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081C5878, MSGBOX_DEFAULT)
     release
     end
 }
@@ -53,36 +48,31 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId12 
     faceplayer
     checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_00E7)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081507B9)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08170154)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08170154, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x125)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_00E7)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081701C5)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081701C5, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081507B9 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081701C5)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081701C5, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sign_1 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08170206)
-    callstd(3)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08170206, MSGBOX_SIGN)
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sign_2 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_0817022E)
-    callstd(3)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_0817022E, MSGBOX_SIGN)
     end
 }
 
@@ -98,8 +88,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150808 {
 
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId6 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_472, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC289, Naranja_CaminoFrio_G00_M29_Text_081BC2BE)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC2C6)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC2C6, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -108,15 +97,13 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId7 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150874)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC337)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC337, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150874 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_CAMINO_FRIO_143, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC3B3, Naranja_CaminoFrio_G00_M29_Text_081BC3E0)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC40F)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC40F, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -125,29 +112,25 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId17 
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081508B2)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC4B5)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC4B5, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081508B2 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_CAMINO_FRIO_206, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC525, Naranja_CaminoFrio_G00_M29_Text_081BC559)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC58C)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC58C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId16 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_338, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC5FC, Naranja_CaminoFrio_G00_M29_Text_081BC653)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC679)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC679, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId15 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_342, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC6EC, Naranja_CaminoFrio_G00_M29_Text_081BC750)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC78A)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC78A, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -158,8 +141,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId23 {
 
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId22 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_CAMINO_FRIO_679, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC8D8, Naranja_CaminoFrio_G00_M29_Text_081BC8FB, Naranja_CaminoFrio_G00_M29_Text_081BC96A)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081BC91E)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081BC91E, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -169,8 +151,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalI
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemart(Naranja_CaminoFrio_G00_M29_Mart_08153980)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -178,8 +159,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalI
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08154030 {
     lock
     faceplayer
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178A9C)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178A9C, MSGBOX_DEFAULT)
     specialvar(VAR_RESULT, GetLeadMonFriendshipScore)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -201,63 +181,54 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08154030 {
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_08154093 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178C90)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178C90, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_0815409D {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178C39)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178C39, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081540A7 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178BFA)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178BFA, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081540B1 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178BC4)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178BC4, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081540BB {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178B82)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178B82, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081540C5 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178B43)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178B43, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081540CF {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08178AF2)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08178AF2, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_AfterBattle_0815CBA7 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08194917)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08194917, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x157)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_BOY_3)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_08194A3E)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_08194A3E, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BOY_3, Naranja_CaminoFrio_G00_M29_Movement_086B8200)
     waitmovement(LOCALID_NONE)
@@ -308,8 +279,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A153D {
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A1558 {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A16CD)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A16CD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A1577)
     compare_var_to_value(VAR_RESULT, 0)
@@ -390,8 +360,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A15F9 {
     buffernumberstring(1, VAR_0x8006)
     lock
     faceplayer
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A17C0)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A17C0, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A161D)
     compare_var_to_value(VAR_RESULT, 0)
@@ -436,8 +405,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A165F {
     checkitem(ITEM_WAILMER_PAIL, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A168D)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A18E6)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A18E6, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A1693)
     compare_var_to_value(VAR_RESULT, 0)
@@ -482,12 +450,10 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_Local
     setfieldeffectargument(0, 0x800D)
     bufferpartymonnick(0, 0x800D)
     buffermovename(1, MOVE_ROCK_SMASH)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081B0F4B)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081B0F4B, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081B0F48)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081B0E82)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081B0E82, MSGBOX_DEFAULT)
     closemessage
     dofieldeffect(0x25)
     waitstate
@@ -505,8 +471,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081B0F0C {
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081B0F3E {
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081B0F90)
-    callstd(3)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081B0F90, MSGBOX_SIGN)
     releaseall
     end
 }
@@ -542,8 +507,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6630 {
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE)
     call_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6658)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_083272FC)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6855)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6855, MSGBOX_AUTOCLOSE)
     nop
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_0802DE50)
     delay(0x10)
@@ -554,9 +518,8 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6630 {
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6658 {
     checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6965)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_086B6674)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6965, MSGBOX_AUTOCLOSE)
     release
     end
 }
@@ -569,8 +532,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Trigger_1 {
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE)
     call_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_0803DEB2)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B68A8)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B68A8, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_081536F3)
     delay(0x10)
     release
@@ -582,12 +544,10 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B66BF {
     setflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_SWIMMER_F)
     givemon(SPECIES_GOLDUCK, 0x1E, 0x118)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_0803DEB2)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6A5B)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6A5B, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_081788C2)
     delay(0x10)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6A87)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6A87, MSGBOX_AUTOCLOSE)
     setobjectxy(LOCALID_CAMINO_FRIO_G00_M29_TOTODILE_DOLL, 0x11, 0x26)
     delay(0x10)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_TOTODILE_DOLL, Naranja_CaminoFrio_G00_M29_Movement_086B6ACA)
@@ -606,13 +566,11 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Trigger_3 {
     call_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     clearflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_08229547)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B68DD)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B68DD, MSGBOX_AUTOCLOSE)
     nop
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_085061EC)
     delay(0x40)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B691D)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B691D, MSGBOX_DEFAULT)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_086B6771)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_086B6779)
     delay(0x90)
@@ -630,8 +588,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_TOTODILE_DOLL_LocalI
     waitse
     nop
     delay(0x30)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6989)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6989, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_TOTODILE_DOLL, Naranja_CaminoFrio_G00_M29_Movement_086B67C1)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_086B67D1)
     delay(0xB0)
@@ -647,8 +604,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Trigger_2 {
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6630)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_08229547)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B67E0)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B67E0, MSGBOX_AUTOCLOSE)
     nop
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_086B5425)
     delay(0x10)
@@ -658,12 +614,10 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Trigger_2 {
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BARD_LocalId4 {
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE)
     call_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6B23)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6BB0)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6BB0, MSGBOX_DEFAULT)
     faceplayer
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_0802DE50)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6BB5)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6BB5, MSGBOX_AUTOCLOSE)
     release
     end
 }
@@ -671,14 +625,11 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BARD_LocalId4 {
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6B23 {
     lock
     faceplayer
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6BCB)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6BCB, MSGBOX_DEFAULT)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_080008A0)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6BDA)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6BDA, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_IslaPinkan_G00_M30_Movement_0800A854)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6C1A)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6C1A, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_086B67C1)
     delay(0x30)
     removeobject(LOCALID_CAMINO_FRIO_G00_M29_BARD)
@@ -701,15 +652,13 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6B23 {
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6D80 {
     faceplayer
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6F0D)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6F0D, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_NURSE, Naranja_CaminoFrio_G00_M29_Movement_086B67C2)
     delay(5)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_080008A0)
     delay(0x20)
     removeitem(ITEM_POTION, 1)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6FBA)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6FBA, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_086B67C2)
     delay(0x60)
     clearflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C)
@@ -719,8 +668,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6D80 {
 
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_NURSE_LocalId2 {
     faceplayer
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6DC0)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6DC0, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     nop
@@ -729,8 +677,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_NURSE_LocalId2 {
     checkitem(ITEM_POTION, 0)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6D80)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_086B6EC9)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6EC9, MSGBOX_AUTOCLOSE)
     end
 }
 

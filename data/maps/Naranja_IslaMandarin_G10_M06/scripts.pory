@@ -35,8 +35,7 @@ script Naranja_IslaMandarin_G10_M06_EventScript_OBJ_EVENT_GFX_TEALA_LocalId3 {
 }
 
 script Naranja_IslaMandarin_G10_M06_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4 {
-    loadword(0, Naranja_IslaMandarin_G10_M06_Text_08182724)
-    callstd(2)
+    msgbox(Naranja_IslaMandarin_G10_M06_Text_08182724, MSGBOX_NPC)
     end
 }
 

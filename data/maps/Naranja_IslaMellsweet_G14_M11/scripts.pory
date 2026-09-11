@@ -68,20 +68,17 @@ script Naranja_IslaMellsweet_G14_M11_OnFrame_1 {
 }
 
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD22 {
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E80E)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E80E, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD2B {
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E859)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E859, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD34 {
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E7B1)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E7B1, MSGBOX_DEFAULT)
     return
 }
 
@@ -90,8 +87,7 @@ script Naranja_IslaMellsweet_G14_M11_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId
     faceplayer
     compare_var_to_value(VAR_TEMP_1, 1)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD59)
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E59A)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E59A, MSGBOX_DEFAULT)
     release
     end
 }
@@ -99,15 +95,13 @@ script Naranja_IslaMellsweet_G14_M11_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD59 {
     special(SavePlayerParty)
     special(BufferEReaderTrainerName)
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E650)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E650, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
     call(Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADF5)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E741)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E741, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
     special(LoadPlayerParty)
@@ -117,8 +111,7 @@ script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD59 {
     erasebox(0, 0, 0xF, 0xA)
     special(SavePlayerParty)
     special(ReducePlayerPartyToSelectedMons)
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E777)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E777, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 2)
     call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE04)
@@ -134,15 +127,13 @@ script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD59 {
 
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8 {
     special(LoadPlayerParty)
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E698)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E698, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADF5 {
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E6DA)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E6DA, MSGBOX_DEFAULT)
     fadescreen(1)
     special(ChooseHalfPartyForBattle)
     waitstate
@@ -171,8 +162,7 @@ script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE28 {
 }
 
 script Naranja_IslaMellsweet_G14_M11_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E631)
-    callstd(3)
+    msgbox(Naranja_IslaMellsweet_G14_M11_Text_0818E631, MSGBOX_SIGN)
     end
 }
 

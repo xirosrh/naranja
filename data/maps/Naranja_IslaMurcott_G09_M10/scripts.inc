@@ -28,24 +28,20 @@ Naranja_IslaMurcott_G09_M10_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1::
 
 Naranja_IslaMurcott_G09_M10_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2::
 # 24 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
-	loadword 0, Naranja_IslaMurcott_G09_M10_Text_08180602
-# 25 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaMurcott_G09_M10_Text_08180602, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMurcott_G09_M10_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId3::
-# 30 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
-	loadword 0, Naranja_IslaMurcott_G09_M10_Text_081806CB
-# 31 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
-	callstd 2
+# 29 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
+	msgbox Naranja_IslaMurcott_G09_M10_Text_081806CB, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMurcott_G09_M10_Text_08180602::
-# 35 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
+# 33 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
 	.string "Want a tip for battling?\pI’d say it’s raising different kinds\nof POKéMON in a balanced manner.\pIt’s no good to make just one\nPOKéMON strong.\pIf it has a type disadvantage, it\nmight not stand a chance.$"
 
 Naranja_IslaMurcott_G09_M10_Text_081806CB::
-# 39 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
+# 37 "data/maps/Naranja_IslaMurcott_G09_M10/scripts.pory"
 	.string "I trade POKéMON with my friends.\pIf a traded POKéMON is holding an\nitem, it makes me twice as happy!$"

@@ -22,8 +22,7 @@ script Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_WINONA_LocalId1 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_SHAMOUTI_270, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185CCB, Naranja_IslaShamouti_G12_M01_Text_08185DBA, Naranja_IslaShamouti_G12_M01_EventScript_AfterBattle_08157F15)
     checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00AA)
     goto_if(LESS_THAN, Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157F3E)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185F98)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185F98, MSGBOX_DEFAULT)
     release
     end
 }
@@ -32,8 +31,7 @@ script Naranja_IslaShamouti_G12_M01_EventScript_AfterBattle_08157F15 {
     message(Naranja_IslaShamouti_G12_M01_Text_08185E48)
     waitmessage
     call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185E73)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185E73, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_04C9)
     setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_080C)
     setvar(VAR_0x8008, 6)
@@ -47,8 +45,7 @@ script Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157F3E {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185F4A)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185F4A, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00AA)
     release
     end
@@ -56,29 +53,25 @@ script Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157F3E {
 
 script Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_401, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_081859B9, Naranja_IslaShamouti_G12_M01_Text_081859EA)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185A02)
-    callstd(6)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185A02, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_404, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185A7F, Naranja_IslaShamouti_G12_M01_Text_08185AEC)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185B18)
-    callstd(6)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185B18, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_654, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185B8D, Naranja_IslaShamouti_G12_M01_Text_08185BEB)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185C00)
-    callstd(6)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185C00, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_655, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185C45, Naranja_IslaShamouti_G12_M01_Text_08185C7C)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185C8C)
-    callstd(6)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185C8C, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -87,15 +80,13 @@ script Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId6 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_04C9)
     goto_if(EQUAL, Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157FD3)
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_0818589C)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_0818589C, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157FD3 {
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185994)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185994, MSGBOX_DEFAULT)
     release
     end
 }
@@ -115,15 +106,13 @@ script Naranja_IslaShamouti_G12_M01_EventScript_Sign_2 {
 }
 
 script Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157FFD {
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185FEE)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185FEE, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_IslaShamouti_G12_M01_EventScript_Sub_08158007 {
-    loadword(0, Naranja_IslaShamouti_G12_M01_Text_08185FD5)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M01_Text_08185FD5, MSGBOX_DEFAULT)
     releaseall
     end
 }

@@ -408,22 +408,19 @@ script Naranja_Route110_G29_M05_EventScript_Sub_081626FD {
 
 script Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_215, LOCALID_NONE, Naranja_Route110_G29_M05_Text_0819CF76, Naranja_Route110_G29_M05_Text_0819CF9D)
-    loadword(0, Naranja_Route110_G29_M05_Text_0819CFE6)
-    callstd(6)
+    msgbox(Naranja_Route110_G29_M05_Text_0819CFE6, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_473, LOCALID_NONE, Naranja_Route110_G29_M05_Text_0819D026, Naranja_Route110_G29_M05_Text_0819D065)
-    loadword(0, Naranja_Route110_G29_M05_Text_0819D07A)
-    callstd(6)
+    msgbox(Naranja_Route110_G29_M05_Text_0819D07A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route110_G29_M05_EventScript_OBJ_EVENT_GFX_HIKER_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_630, LOCALID_NONE, Naranja_Route110_G29_M05_Text_0819D0AE, Naranja_Route110_G29_M05_Text_0819D0F0)
-    loadword(0, Naranja_Route110_G29_M05_Text_0819D110)
-    callstd(6)
+    msgbox(Naranja_Route110_G29_M05_Text_0819D110, MSGBOX_AUTOCLOSE)
     end
 }
 

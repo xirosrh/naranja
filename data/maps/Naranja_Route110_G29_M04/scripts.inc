@@ -158,84 +158,78 @@ Naranja_Route110_G29_M04_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId1::
 # 106 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_274, LOCALID_NONE, Naranja_Route110_G29_M04_Text_0819CD46, Naranja_Route110_G29_M04_Text_0819CD66
 # 107 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M04_Text_0819CD91
-# 108 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route110_G29_M04_Text_0819CD91, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M04_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId2::
-# 113 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 112 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_275, LOCALID_NONE, Naranja_Route110_G29_M04_Text_0819CDBF, Naranja_Route110_G29_M04_Text_0819CDF0
-# 114 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M04_Text_0819CE0D
-# 115 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
-	callstd 6
+# 113 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+	msgbox Naranja_Route110_G29_M04_Text_0819CE0D, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M04_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3::
-# 120 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 118 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_281, LOCALID_NONE, Naranja_Route110_G29_M04_Text_0819CE52, Naranja_Route110_G29_M04_Text_0819CE98
-# 121 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M04_Text_0819CEB8
-# 122 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
-	callstd 6
+# 119 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+	msgbox Naranja_Route110_G29_M04_Text_0819CEB8, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M04_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5::
-# 127 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 124 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x7A
-# 128 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 125 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 129 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 126 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M04_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4::
-# 134 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 131 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x7E
-# 135 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 132 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 136 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 133 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M04_Text_0819CD46::
-# 140 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 137 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "Which switch closes which hole?$"
 
 Naranja_Route110_G29_M04_Text_0819CD66::
-# 144 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 141 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "After that battle, I’m even more\nconfused!$"
 
 Naranja_Route110_G29_M04_Text_0819CD91::
-# 148 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 145 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "Can I get you to push all the buttons\nfor me?$"
 
 Naranja_Route110_G29_M04_Text_0819CDBF::
-# 152 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 149 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "Oh! You’re on your second TRICK HOUSE\nchallenge!$"
 
 Naranja_Route110_G29_M04_Text_0819CDF0::
-# 156 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 153 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "You’re good at battling too?$"
 
 Naranja_Route110_G29_M04_Text_0819CE0D::
-# 160 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 157 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "The TRICK MASTER rigged all the tricks\nin this house all by himself.$"
 
 Naranja_Route110_G29_M04_Text_0819CE52::
-# 164 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 161 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "I want to make my own GYM one day.\nSo, I’m studying how to set traps.$"
 
 Naranja_Route110_G29_M04_Text_0819CE98::
-# 168 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 165 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "I didn’t study battling enough!$"
 
 Naranja_Route110_G29_M04_Text_0819CEB8::
-# 172 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
+# 169 "data/maps/Naranja_Route110_G29_M04/scripts.pory"
 	.string "You’re strong, aren’t you?\nMaybe even enough to be a GYM LEADER!$"

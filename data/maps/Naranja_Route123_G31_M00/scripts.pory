@@ -16,8 +16,7 @@ script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
     dotimebasedevents
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08CD)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163A5A)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5BC4)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5BC4, MSGBOX_DEFAULT)
     random(0xA)
     addvar(VAR_RESULT, 0x14)
     addvar(VAR_RESULT, 0x85)
@@ -27,8 +26,7 @@ script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08CD)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5C66)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5C66, MSGBOX_DEFAULT)
     random(0xA)
     addvar(VAR_RESULT, 0x14)
     addvar(VAR_RESULT, 0x85)
@@ -37,15 +35,13 @@ script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5C83)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5C83, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route123_G31_M00_EventScript_Sub_08163A5A {
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5CDC)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5CDC, MSGBOX_DEFAULT)
     release
     end
 }
@@ -56,8 +52,7 @@ script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId2 {
     dotimebasedevents
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08D1)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163C13)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5D24)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5D24, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0xD)
     call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
     lock
@@ -70,10 +65,8 @@ script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId2 {
 }
 
 script Naranja_Route123_G31_M00_EventScript_Sub_08163A9B {
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5EC0)
-    callstd(4)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5E59)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5EC0, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5E59, MSGBOX_DEFAULT)
     release
     end
 }
@@ -95,8 +88,7 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163AAD {
 }
 
 script Naranja_Route123_G31_M00_EventScript_Sub_08163AF0 {
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5E0E)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5E0E, MSGBOX_DEFAULT)
     random(0xA)
     addvar(VAR_RESULT, 0x85)
     setorcopyvar(VAR_0x8000, VAR_RESULT)
@@ -110,8 +102,7 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163AF0 {
 script Naranja_Route123_G31_M00_EventScript_Sub_08163B1E {
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00F8)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5DC1, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xA3)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -124,8 +115,7 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163B1E {
 script Naranja_Route123_G31_M00_EventScript_Sub_08163B4F {
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00F9)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5DC1, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xA4)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -138,8 +128,7 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163B4F {
 script Naranja_Route123_G31_M00_EventScript_Sub_08163B80 {
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FA)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5DC1, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xA5)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -152,8 +141,7 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163B80 {
 script Naranja_Route123_G31_M00_EventScript_Sub_08163BB1 {
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FB)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5DC1, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xA6)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -166,8 +154,7 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163BB1 {
 script Naranja_Route123_G31_M00_EventScript_Sub_08163BE2 {
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FC)
     goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5DC1, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xA7)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -178,16 +165,14 @@ script Naranja_Route123_G31_M00_EventScript_Sub_08163BE2 {
 }
 
 script Naranja_Route123_G31_M00_EventScript_Sub_08163C13 {
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5E59)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5E59, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route123_G31_M00_EventScript_Sub_08163C1D {
     setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08D1)
-    loadword(0, Naranja_Route123_G31_M00_Text_081C5E59)
-    callstd(4)
+    msgbox(Naranja_Route123_G31_M00_Text_081C5E59, MSGBOX_DEFAULT)
     release
     end
 }

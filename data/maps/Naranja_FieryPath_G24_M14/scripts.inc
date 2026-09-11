@@ -30,96 +30,88 @@ Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2::
 # 22 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	setfieldeffectargument 0, 0x800D
 # 23 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	loadword 0, Naranja_FieryPath_G24_M14_Text_081B103D
+	msgbox Naranja_FieryPath_G24_M14_Text_081B103D, MSGBOX_YESNO
 # 24 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	callstd 5
-# 25 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 26 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 25 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	goto_if EQUAL, Naranja_FieryPath_G24_M14_EventScript_Sub_081B103A
-# 27 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 26 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	closemessage
-# 28 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 27 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	dofieldeffect 0x28
-# 29 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 28 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	waitstate
-# 30 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 29 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	goto Naranja_FieryPath_G24_M14_EventScript_Sub_081B1019
 	return
 
 
 Naranja_FieryPath_G24_M14_EventScript_Sub_081B1019::
-# 34 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 33 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	setflag FLAG_NARANJA_FIERY_PATH_EVENT_COMPLETE_0829
+# 34 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+	msgbox Naranja_FieryPath_G24_M14_Text_081B109D, MSGBOX_SIGN
 # 35 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	loadword 0, Naranja_FieryPath_G24_M14_Text_081B109D
-# 36 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	callstd 3
-# 37 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_FieryPath_G24_M14_EventScript_Sub_081B1026::
-# 42 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	loadword 0, Naranja_FieryPath_G24_M14_Text_081B10E7
-# 43 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	callstd 3
-# 44 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 40 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+	msgbox Naranja_FieryPath_G24_M14_Text_081B10E7, MSGBOX_SIGN
+# 41 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_FieryPath_G24_M14_EventScript_Sub_081B1030::
-# 49 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	loadword 0, Naranja_FieryPath_G24_M14_Text_081B1127
-# 50 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
-	callstd 3
-# 51 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 46 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+	msgbox Naranja_FieryPath_G24_M14_Text_081B1127, MSGBOX_SIGN
+# 47 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_FieryPath_G24_M14_EventScript_Sub_081B103A::
-# 56 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 52 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	closemessage
-# 57 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 53 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId8::
-# 62 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 58 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x5F
-# 63 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 59 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 64 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 60 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1::
-# 69 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 65 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x126
-# 70 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 66 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 71 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 67 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_FieryPath_G24_M14_Text_081B103D::
-# 75 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 71 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	.string "It’s a big boulder, but a POKéMON\nmay be able to push it aside.\pWould you like to use STRENGTH?$"
 
 Naranja_FieryPath_G24_M14_Text_081B109D::
-# 79 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 75 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	.string "{STR_VAR_1} used STRENGTH.\p{STR_VAR_1}’s STRENGTH made it possible\nto move boulders around.$"
 
 Naranja_FieryPath_G24_M14_Text_081B10E7::
-# 83 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 79 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	.string "It’s a big boulder, but a POKéMON\nmay be able to push it aside.$"
 
 Naranja_FieryPath_G24_M14_Text_081B1127::
-# 87 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
+# 83 "data/maps/Naranja_FieryPath_G24_M14/scripts.pory"
 	.string "STRENGTH made it possible to move\nboulders around.$"

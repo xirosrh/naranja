@@ -11,15 +11,13 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId1 {
     special(IsTrendyPhraseBoring)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081532B2)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081754C9)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081754C9, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081532B2 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175528)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175528, MSGBOX_DEFAULT)
     release
     end
 }
@@ -28,8 +26,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2 {
     lock
     faceplayer
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_0817559E)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_0817559E, MSGBOX_DEFAULT)
     release
     end
 }
@@ -39,8 +36,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId3 {
     faceplayer
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
     special(BufferDeepLinkPhrase)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081755F9)
-    callstd(5)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081755F9, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081532F6)
     compare_var_to_value(VAR_RESULT, 0)
@@ -49,15 +45,13 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId3 {
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081532F6 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175664)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175664, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153300 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081756B7)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081756B7, MSGBOX_DEFAULT)
     release
     end
 }
@@ -66,8 +60,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId4
     lock
     faceplayer
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_0817570D)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_0817570D, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_7ISLAS_POMELO_G03_M04_OLD_MAN_1, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
@@ -79,8 +72,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_Loca
     lock
     faceplayer
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_0817574C)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_0817574C, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_7ISLAS_POMELO_G03_M04_LITTLE_GIRL_1, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
@@ -92,8 +84,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_2_Local
     lock
     faceplayer
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175779)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175779, MSGBOX_DEFAULT)
     release
     end
 }
@@ -101,8 +92,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_2_Local
 script Naranja_7islasPomelo_G03_M04_EventScript_Sign_1 {
     lockall
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175842)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175842, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -132,29 +122,25 @@ script Naranja_7islasPomelo_G03_M04_EventScript_Sign_2 {
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081533CA {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081758C4)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081758C4, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081533D4 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081758E0)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081758E0, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081533DE {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081758FB)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081758FB, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081533E8 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175916)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175916, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -196,55 +182,45 @@ script Naranja_7islasPomelo_G03_M04_EventScript_Sub_0815340A {
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153470 {
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534FD)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175935)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175935, MSGBOX_DEFAULT)
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153535)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081759A1)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081759A1, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_0815348C {
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534FD)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175A5C)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175A5C, MSGBOX_DEFAULT)
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153535)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175AD9)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175AD9, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534A8 {
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534FD)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175B46)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175B46, MSGBOX_DEFAULT)
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153535)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175BA7)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175BA7, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534C4 {
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534FD)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175C41)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175C41, MSGBOX_DEFAULT)
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153535)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175CC2)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175CC2, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534E0 {
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_081534FD)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175D6B)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175D6B, MSGBOX_DEFAULT)
     call(Naranja_7islasPomelo_G03_M04_EventScript_Sub_08153535)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175DC3)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175DC3, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -319,8 +295,7 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId9 {
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
     checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_00E6)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081535D1)
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175E13)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175E13, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x144)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -332,15 +307,13 @@ script Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId9 {
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081535D1 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_08175EBE)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_08175EBE, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081A0CC2)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081A0CC2, MSGBOX_DEFAULT)
     release
     end
 }

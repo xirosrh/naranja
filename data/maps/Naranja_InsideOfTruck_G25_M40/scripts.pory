@@ -18,30 +18,25 @@ script Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_3 {
     call(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDE6)
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE89)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194D92)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194D92, MSGBOX_DEFAULT)
     closemessage
     playbgm(MUS_ENCOUNTER_MAGMA, 0)
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEC3)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194DED)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194DED, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB0)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194E6B)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194E6B, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE9E)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194E9A)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194E9A, MSGBOX_DEFAULT)
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEC8)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194EE8)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194EE8, MSGBOX_DEFAULT)
     trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_INSIDE_OF_TRUCK_575, LOCALID_NONE, Naranja_InsideOfTruck_G25_M40_Text_08194F83)
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB3)
     waitmovement(LOCALID_NONE)
@@ -54,23 +49,20 @@ script Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_3 {
 script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDE6 {
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE73)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194D71)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194D71, MSGBOX_DEFAULT)
     closemessage
     return
 }
 
 script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDFA {
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194FA4)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08194FA4, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB7)
     waitmovement(LOCALID_NONE)
     removeobject(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_0819507E)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_0819507E, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 3)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -80,18 +72,15 @@ script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDFA {
 }
 
 script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE3F {
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08195182)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08195182, MSGBOX_DEFAULT)
     goto(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE4D)
 }
 
 script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE4D {
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_0819510A)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_0819510A, MSGBOX_DEFAULT)
     applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CEA8)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08195153)
-    callstd(4)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_08195153, MSGBOX_DEFAULT)
     closemessage
     return
 }
@@ -153,8 +142,7 @@ script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC68 {
 }
 
 script Naranja_InsideOfTruck_G25_M40_EventScript_OBJ_EVENT_GFX_PIKACHU_LocalId3 {
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_086BF1C4)
-    callstd(3)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_086BF1C4, MSGBOX_SIGN)
     end
 }
 
@@ -178,8 +166,7 @@ script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650 {
 script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B5E60 {
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_0800)
-    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_086B0C20)
-    callstd(2)
+    msgbox(Naranja_InsideOfTruck_G25_M40_Text_086B0C20, MSGBOX_NPC)
     givemon(SPECIES_PIKACHU, 5, 0)
     nop
     end

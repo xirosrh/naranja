@@ -5,14 +5,12 @@ mapscripts Naranja_IslaValencia_G13_M16_MapScripts {
 }
 
 script Naranja_IslaValencia_G13_M16_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId1 {
-    loadword(0, Naranja_IslaValencia_G13_M16_Text_0818BEE8)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G13_M16_Text_0818BEE8, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaValencia_G13_M16_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId2 {
-    loadword(0, Naranja_IslaValencia_G13_M16_Text_0818BF4E)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G13_M16_Text_0818BF4E, MSGBOX_NPC)
     end
 }
 

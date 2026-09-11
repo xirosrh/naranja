@@ -9,8 +9,7 @@ script Naranja_IslaMandarin_G10_M04_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0102)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815733D)
-    loadword(0, Naranja_IslaMandarin_G10_M04_Text_0818244E)
-    callstd(4)
+    msgbox(Naranja_IslaMandarin_G10_M04_Text_0818244E, MSGBOX_DEFAULT)
     checkitem(ITEM_HARBOR_MAIL, 1)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_081572E5)
@@ -24,8 +23,7 @@ script Naranja_IslaMandarin_G10_M04_EventScript_Sub_081572E5 {
     waitmovement(LOCALID_NONE)
     applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaMandarin_G10_M04_Text_081824D8)
-    callstd(5)
+    msgbox(Naranja_IslaMandarin_G10_M04_Text_081824D8, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815731B)
     compare_var_to_value(VAR_RESULT, 0)
@@ -34,8 +32,7 @@ script Naranja_IslaMandarin_G10_M04_EventScript_Sub_081572E5 {
 }
 
 script Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815731B {
-    loadword(0, Naranja_IslaMandarin_G10_M04_Text_08182515)
-    callstd(4)
+    msgbox(Naranja_IslaMandarin_G10_M04_Text_08182515, MSGBOX_DEFAULT)
     removeitem(ITEM_HARBOR_MAIL, 1)
     setorcopyvar(VAR_0x8000, 0x104)
     setorcopyvar(VAR_0x8001, 1)
@@ -45,15 +42,13 @@ script Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815731B {
 }
 
 script Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815733D {
-    loadword(0, Naranja_IslaMandarin_G10_M04_Text_08182549)
-    callstd(4)
+    msgbox(Naranja_IslaMandarin_G10_M04_Text_08182549, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarin_G10_M04_EventScript_Sub_08157347 {
-    loadword(0, Naranja_IslaMandarin_G10_M04_Text_08182578)
-    callstd(4)
+    msgbox(Naranja_IslaMandarin_G10_M04_Text_08182578, MSGBOX_DEFAULT)
     release
     end
 }

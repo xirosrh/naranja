@@ -5,14 +5,12 @@ mapscripts Naranja_IslaMellsweet_G14_M02_MapScripts {
 }
 
 script Naranja_IslaMellsweet_G14_M02_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId1 {
-    loadword(0, Naranja_IslaMellsweet_G14_M02_Text_0818D536)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M02_Text_0818D536, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G14_M02_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
-    loadword(0, Naranja_IslaMellsweet_G14_M02_Text_0818D596)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M02_Text_0818D596, MSGBOX_NPC)
     end
 }
 
@@ -21,8 +19,7 @@ script Naranja_IslaMellsweet_G14_M02_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId3 
     faceplayer
     waitse
     playmoncry(SPECIES_WINGULL, 0)
-    loadword(0, Naranja_IslaMellsweet_G14_M02_Text_0818D61E)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M02_Text_0818D61E, MSGBOX_DEFAULT)
     waitmoncry
     closemessage
     setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00E0)

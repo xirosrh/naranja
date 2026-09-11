@@ -10,8 +10,7 @@ script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A078)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -22,8 +21,7 @@ script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId4 
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A0AC)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -34,8 +32,7 @@ script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId5 
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A0DC)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -46,27 +43,23 @@ script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId6 
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A10C)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId2 {
-    loadword(0, Naranja_IslaMandarina_G13_M21_Text_0818C4F9)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M21_Text_0818C4F9, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId7 {
-    loadword(0, Naranja_IslaMandarina_G13_M21_Text_0818C59F)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M21_Text_0818C59F, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId1 {
-    loadword(0, Naranja_IslaMandarina_G13_M21_Text_0818C556)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M21_Text_0818C556, MSGBOX_NPC)
     end
 }
 

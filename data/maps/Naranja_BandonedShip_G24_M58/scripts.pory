@@ -11,8 +11,7 @@ script Naranja_BandonedShip_G24_M58_OnResume {
 }
 
 script Naranja_BandonedShip_G24_M58_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1 {
-    loadword(0, Naranja_BandonedShip_G24_M58_Text_081986FE)
-    callstd(2)
+    msgbox(Naranja_BandonedShip_G24_M58_Text_081986FE, MSGBOX_NPC)
     end
 }
 

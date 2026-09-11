@@ -70,14 +70,12 @@ Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalI
 # 50 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
 	lockall
 # 51 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
-	loadword 0, Naranja_Underwater_G24_M26_Text_08197435
+	msgbox Naranja_Underwater_G24_M26_Text_08197435, MSGBOX_DEFAULT
 # 52 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
-	callstd 4
-# 53 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_Underwater_G24_M26_Text_08197435::
-# 57 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
+# 56 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
 	.string "“SUBMARINE EXPLORER 1” is painted\non the hull.\pThis is the submarine TEAM {AQUA}\nstole in SLATEPORT!\pTEAM {AQUA} must have gone\nashore here.$"

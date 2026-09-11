@@ -36,8 +36,7 @@ script Naranja_Route112_G19_M00_OnFrame_1 {
 script Naranja_Route112_G19_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_Route112_G19_M00_Text_081924F5)
-    callstd(5)
+    msgbox(Naranja_Route112_G19_M00_Text_081924F5, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD)
     compare_var_to_value(VAR_RESULT, 0)
@@ -46,8 +45,7 @@ script Naranja_Route112_G19_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
 }
 
 script Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD {
-    loadword(0, Naranja_MtChimney_G19_M01_Text_081925A9)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G19_M01_Text_081925A9, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ROUTE112_G19_M00_BEAUTY, Naranja_Route112_G19_M00_Movement_0815C0E6)
     applymovement(LOCALID_PLAYER, Naranja_Route112_G19_M00_Movement_0815C0F0)
@@ -63,8 +61,7 @@ script Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD {
 }
 
 script Naranja_Route112_G19_M00_EventScript_Sub_0815C0DC {
-    loadword(0, Naranja_Route112_G19_M00_Text_08192548)
-    callstd(4)
+    msgbox(Naranja_Route112_G19_M00_Text_08192548, MSGBOX_DEFAULT)
     release
     end
 }

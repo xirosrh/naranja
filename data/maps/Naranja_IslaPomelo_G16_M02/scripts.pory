@@ -48,15 +48,13 @@ script Naranja_IslaPomelo_G16_M02_EventScript_OBJ_EVENT_GFX_GLACIA_LocalId1 {
     checkflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DF)
     goto_if(EQUAL, Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6F1)
     playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
-    loadword(0, Naranja_IslaPomelo_G16_M02_Text_08190AF9)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M02_Text_08190AF9, MSGBOX_DEFAULT)
     trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_263, LOCALID_NONE, Naranja_IslaPomelo_G16_M02_Text_08190C01)
     goto(Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6FB)
 }
 
 script Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6F1 {
-    loadword(0, Naranja_IslaPomelo_G16_M02_Text_08190C8F)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M02_Text_08190C8F, MSGBOX_DEFAULT)
     release
     end
 }
@@ -64,8 +62,7 @@ script Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6F1 {
 script Naranja_IslaPomelo_G16_M02_EventScript_Sub_0815B6FB {
     setflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DF)
     call(Naranja_IslaPomelo_G16_M00_EventScript_Sub_081A0693)
-    loadword(0, Naranja_IslaPomelo_G16_M02_Text_08190C8F)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M02_Text_08190C8F, MSGBOX_DEFAULT)
     release
     end
 }

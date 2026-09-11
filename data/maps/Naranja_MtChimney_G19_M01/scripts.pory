@@ -35,8 +35,7 @@ script Naranja_MtChimney_G19_M01_OnFrame_1 {
 script Naranja_MtChimney_G19_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_MtChimney_G19_M01_Text_0819256A)
-    callstd(5)
+    msgbox(Naranja_MtChimney_G19_M01_Text_0819256A, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_MtChimney_G19_M01_EventScript_Sub_0815C16C)
     compare_var_to_value(VAR_RESULT, 0)
@@ -45,8 +44,7 @@ script Naranja_MtChimney_G19_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
 }
 
 script Naranja_MtChimney_G19_M01_EventScript_Sub_0815C16C {
-    loadword(0, Naranja_MtChimney_G19_M01_Text_081925A9)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G19_M01_Text_081925A9, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_MT_CHIMNEY_G19_M01_BEAUTY, Naranja_MtChimney_G19_M01_Movement_0815C1A5)
     applymovement(LOCALID_PLAYER, Naranja_MtChimney_G19_M01_Movement_0815C1AF)
@@ -62,8 +60,7 @@ script Naranja_MtChimney_G19_M01_EventScript_Sub_0815C16C {
 }
 
 script Naranja_MtChimney_G19_M01_EventScript_Sub_0815C19B {
-    loadword(0, Naranja_MtChimney_G19_M01_Text_081925BF)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G19_M01_Text_081925BF, MSGBOX_DEFAULT)
     release
     end
 }

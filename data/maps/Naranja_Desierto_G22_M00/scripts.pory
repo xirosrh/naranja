@@ -20,12 +20,10 @@ script Naranja_Desierto_G22_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId1 {
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B242B)
     compare_var_to_value(VAR_RESULT, 3)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B2558)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B28F2)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B28F2, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B236C)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A14)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A14, MSGBOX_DEFAULT)
     release
     end
 }
@@ -34,8 +32,7 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B236C {
     specialvar(VAR_RESULT, CountPartyNonEggMons)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B23F3)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2947)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2947, MSGBOX_DEFAULT)
     fadescreen(1)
     special(ChooseSendDaycareMon)
     waitstate
@@ -47,8 +44,7 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B236C {
     specialvar(VAR_0x8005, GetSelectedMonNicknameAndSpecies)
     waitse
     playmoncry(0x8005, 0)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B296E)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B296E, MSGBOX_DEFAULT)
     waitmoncry
     special(StoreSelectedPokemonInDaycare)
     incrementgamestat(0x2F)
@@ -60,44 +56,38 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B236C {
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B23D0 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A76)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A76, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B23DA {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B29AD)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B29AD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B236C)
     goto(Naranja_Desierto_G22_M00_EventScript_Sub_081B23D0)
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B23F3 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2BBB)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2BBB, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B23FD {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2C17)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2C17, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B2407 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B29F4)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B29F4, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B2411 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2ACC)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2ACC, MSGBOX_DEFAULT)
     return
 }
 
@@ -109,16 +99,13 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B241A {
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B242B {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A88)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A88, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0)
     call(Naranja_Desierto_G22_M00_EventScript_Sub_081B241A)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B29AD)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B29AD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B236C)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2BF6)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2BF6, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B2469)
     goto(Naranja_Desierto_G22_M00_EventScript_Sub_081B23D0)
@@ -142,8 +129,7 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B2469 {
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B24A8 {
     special(GetDaycareCostAndPrepareString)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2B49)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2B49, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B24C4)
     goto(Naranja_Desierto_G22_M00_EventScript_Sub_081B23D0)
@@ -153,8 +139,7 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B24C4 {
     specialvar(VAR_RESULT, IsEnoughForCostInVar0x8005)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B24DE)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A30)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A30, MSGBOX_DEFAULT)
     release
     end
 }
@@ -165,12 +150,10 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B24DE {
     specialvar(VAR_RESULT, TakePokemonFromDaycare)
     special(SubtractMoneyFromVar0x8005)
     playse(SE_SHOP)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2B75)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2B75, MSGBOX_DEFAULT)
     waitse
     playmoncry(0x800D, 0)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2B93)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2B93, MSGBOX_DEFAULT)
     waitmoncry
     specialvar(VAR_RESULT, GetDaycareState)
     compare_var_to_value(VAR_RESULT, 2)
@@ -179,33 +162,28 @@ script Naranja_Desierto_G22_M00_EventScript_Sub_081B24DE {
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B2520 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A4F)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A4F, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B2469)
     goto(Naranja_Desierto_G22_M00_EventScript_Sub_081B23D0)
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B2539 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2AEF)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2AEF, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Desierto_G22_M00_EventScript_Sub_081B2558 {
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A88)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A88, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0)
     call(Naranja_Desierto_G22_M00_EventScript_Sub_081B241A)
     setvar(VAR_0x8004, 1)
     call(Naranja_Desierto_G22_M00_EventScript_Sub_081B241A)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2BF6)
-    callstd(5)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2BF6, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Desierto_G22_M00_EventScript_Sub_081B2469)
-    loadword(0, Naranja_Desierto_G22_M00_Text_081B2A76)
-    callstd(4)
+    msgbox(Naranja_Desierto_G22_M00_Text_081B2A76, MSGBOX_DEFAULT)
     release
     end
 }

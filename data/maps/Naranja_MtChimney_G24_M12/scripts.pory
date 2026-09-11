@@ -21,15 +21,13 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId9 
     lock
     faceplayer
     showmoneybox(0, 0, 0)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195760)
-    callstd(5)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195760, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D00B)
     checkmoney(0xC8, 0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D018)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081957A9)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081957A9, MSGBOX_DEFAULT)
     checkitemspace(ITEM_LAVA_COOKIE, 1)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D000)
@@ -44,8 +42,7 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId9 
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815CFF3 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081A0CC2)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081A0CC2, MSGBOX_DEFAULT)
     hidemoneybox
     release
     end
@@ -58,86 +55,73 @@ script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D000 {
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D00B {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081957F7)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081957F7, MSGBOX_DEFAULT)
     hidemoneybox
     release
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D018 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081957BA)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081957BA, MSGBOX_DEFAULT)
     hidemoneybox
     release
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_7_LocalId7 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B40EA)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B40EA, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_6_LocalId6 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B4128)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B4128, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_8_LocalId8 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B416E)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B416E, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_3_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_597, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_081B3B36, Naranja_MtChimney_G24_M12_Text_081B3BB8)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3C07)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3C07, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_22_LocalId22 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_579, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_081B3C96, Naranja_MtChimney_G24_M12_Text_081B3D1E)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3D3D)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3D3D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_13_LocalId13 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3D9A)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3D9A, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_16_LocalId16 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3DF5)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3DF5, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_5_LocalId5 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3E1F)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3E1F, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_4_LocalId4 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3E7A)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3E7A, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3EBA)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3EBA, MSGBOX_SIGN)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId11 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B41B0)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B41B0, MSGBOX_SIGN)
     end
 }
 
@@ -147,12 +131,10 @@ script Naranja_MtChimney_G24_M12_EventScript_Sign_1 {
     goto_if(LESS_THAN, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D1D0)
     checkflag(FLAG_NARANJA_MT_CHIMNEY_EVENT_COMPLETE_0073)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D1C6)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195870)
-    callstd(5)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195870, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D1BC)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081958C6)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081958C6, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x118)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -162,29 +144,25 @@ script Naranja_MtChimney_G24_M12_EventScript_Sign_1 {
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D1BC {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081958FC)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081958FC, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D1C6 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195920)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195920, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D1D0 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195806)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195806, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sign_2 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_0819595C)
-    callstd(3)
+    msgbox(Naranja_MtChimney_G24_M12_Text_0819595C, MSGBOX_SIGN)
     end
 }
 
@@ -193,36 +171,31 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId25
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D20A)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195A04)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195A04, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D20A {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_MT_CHIMNEY_313, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195A45, Naranja_MtChimney_G24_M12_Text_08195AAD)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195AD9)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195AD9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId26 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_124, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195B1C, Naranja_MtChimney_G24_M12_Text_08195B5F)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195B84)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195B84, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId27 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_125, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195BB2, Naranja_MtChimney_G24_M12_Text_08195BF9)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195C31)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195C31, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId28 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_126, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195CD8, Naranja_MtChimney_G24_M12_Text_08195D2F)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_08195D5C)
-    callstd(6)
+    msgbox(Naranja_MtChimney_G24_M12_Text_08195D5C, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -242,21 +215,18 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJECT_1_LocalId1 {
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_081B2CB9 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3EC1)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3EC1, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_081B2CC2 {
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3F8C)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3F8C, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_2_LocalId2 {
     lockall
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B37BB)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B37BB, MSGBOX_DEFAULT)
     applymovement(LOCALID_MT_CHIMNEY_G24_M12_246, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
     playse(SE_PIN)
@@ -264,11 +234,9 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJECT_2_LocalId2 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_MT_CHIMNEY_G24_M12_246, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B38B3)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B38B3, MSGBOX_DEFAULT)
     trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_MT_CHIMNEY_602, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_081B3A68)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3A90)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3A90, MSGBOX_DEFAULT)
     closemessage
     delay(0x1E)
     fadescreen(1)
@@ -285,8 +253,7 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJECT_2_LocalId2 {
     call_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_081B2D88)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_MtChimney_G24_M12_Text_081B3FFE)
-    callstd(4)
+    msgbox(Naranja_MtChimney_G24_M12_Text_081B3FFE, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 4)
     call_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_081B2D93)

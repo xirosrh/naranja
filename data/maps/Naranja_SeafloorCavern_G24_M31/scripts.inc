@@ -14,20 +14,18 @@ Naranja_SeafloorCavern_G24_M31_EventScript_OBJECT_1_LocalId1::
 # 14 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SEAFLOOR_CAVERN_573, LOCALID_NONE, Naranja_SeafloorCavern_G24_M31_Text_081977B9, Naranja_SeafloorCavern_G24_M31_Text_081977E2
 # 15 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M31_Text_081977ED
-# 16 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
-	callstd 6
+	msgbox Naranja_SeafloorCavern_G24_M31_Text_081977ED, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_SeafloorCavern_G24_M31_Text_081977B9::
-# 20 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
+# 19 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
 	.string "Who are you?\nWhere did you come in from?$"
 
 Naranja_SeafloorCavern_G24_M31_Text_081977E2::
-# 24 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
+# 23 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
 	.string "Lost it...$"
 
 Naranja_SeafloorCavern_G24_M31_Text_081977ED::
-# 28 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
+# 27 "data/maps/Naranja_SeafloorCavern_G24_M31/scripts.pory"
 	.string "I can’t find the way out!\pI’m not afraid. Don’t get me wrong!$"

@@ -21,8 +21,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId
     faceplayer
     compare_var_to_value(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_3, 1)
     call_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_081574DC)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182B81)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182B81, MSGBOX_DEFAULT)
     release
     end
 }
@@ -34,15 +33,13 @@ script Naranja_IslaTrovita_G11_M01_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId
     call_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_081574DC)
     checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_011F)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157519)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182BD8)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182BD8, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157519 {
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182C25)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182C25, MSGBOX_DEFAULT)
     release
     end
 }
@@ -54,15 +51,13 @@ script Naranja_IslaTrovita_G11_M01_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId
     call_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_081574DC)
     checkflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157543)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182D2A)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182D2A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157543 {
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182D7E)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182D7E, MSGBOX_DEFAULT)
     release
     end
 }
@@ -72,8 +67,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId
     faceplayer
     compare_var_to_value(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_3, 1)
     call_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_081574DC)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182E6B)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182E6B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -85,8 +79,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_0815764A)
     compare_var_to_value(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_3, 1)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157640)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182ED5)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182ED5, MSGBOX_DEFAULT)
     checkitem(ITEM_ROOT_FOSSIL, 1)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_081575A6)
@@ -104,13 +97,11 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_081575A6 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_ISLA_TROVITA_G11_M01_SCIENTIST_1_5, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182F35)
-    callstd(5)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182F35, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157636)
     bufferitemname(0, ITEM_ROOT_FOSSIL)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08183023)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08183023, MSGBOX_DEFAULT)
     removeitem(ITEM_ROOT_FOSSIL, 1)
     setvar(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_3, 1)
     setvar(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_4, 1)
@@ -125,13 +116,11 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_081575EE {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_ISLA_TROVITA_G11_M01_SCIENTIST_1_5, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182F35)
-    callstd(5)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182F35, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157636)
     bufferitemname(0, ITEM_CLAW_FOSSIL)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08183023)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08183023, MSGBOX_DEFAULT)
     removeitem(ITEM_CLAW_FOSSIL, 1)
     setvar(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_3, 1)
     setvar(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_4, 2)
@@ -140,15 +129,13 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_081575EE {
 }
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157636 {
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08182FD7)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08182FD7, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157640 {
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08183072)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08183072, MSGBOX_DEFAULT)
     release
     end
 }
@@ -163,8 +150,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_0815764A {
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157661 {
     bufferspeciesname(1, SPECIES_LILEEP)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08183124)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08183124, MSGBOX_DEFAULT)
     getpartysize
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157707)
@@ -176,8 +162,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157661 {
     waitfanfare
     waitmessage
     givemon(SPECIES_KABUTO, 0x14, 0)
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_081A1102)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_081A1102, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_081A0678)
     release
@@ -186,8 +171,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157661 {
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_081576B4 {
     bufferspeciesname(1, SPECIES_ANORITH)
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_08183124)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_08183124, MSGBOX_DEFAULT)
     getpartysize
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157707)
@@ -199,8 +183,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_081576B4 {
     waitfanfare
     waitmessage
     givemon(SPECIES_DUSKULL, 0xA, 0xCC)
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_081A1102)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_081A1102, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_081A0678)
     release
@@ -208,8 +191,7 @@ script Naranja_IslaTrovita_G11_M01_EventScript_Sub_081576B4 {
 }
 
 script Naranja_IslaTrovita_G11_M01_EventScript_Sub_08157707 {
-    loadword(0, Naranja_IslaTrovita_G11_M01_Text_081831C8)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M01_Text_081831C8, MSGBOX_DEFAULT)
     release
     end
 }

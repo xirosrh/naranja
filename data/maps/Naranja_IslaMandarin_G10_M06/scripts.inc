@@ -54,12 +54,10 @@ Naranja_IslaMandarin_G10_M06_EventScript_OBJ_EVENT_GFX_TEALA_LocalId3::
 
 Naranja_IslaMandarin_G10_M06_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4::
 # 38 "data/maps/Naranja_IslaMandarin_G10_M06/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M06_Text_08182724
-# 39 "data/maps/Naranja_IslaMandarin_G10_M06/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaMandarin_G10_M06_Text_08182724, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMandarin_G10_M06_Text_08182724::
-# 43 "data/maps/Naranja_IslaMandarin_G10_M06/scripts.pory"
+# 42 "data/maps/Naranja_IslaMandarin_G10_M06/scripts.pory"
 	.string "Did you know that you can link battle\nat the COLOSSEUM here?\pThey put up your record on the wall\nfor everyone to see.\pIt’s embarrassing if you lose more\noften than you win...$"

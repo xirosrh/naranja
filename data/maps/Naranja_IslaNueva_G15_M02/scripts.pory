@@ -17,15 +17,13 @@ script Naranja_IslaNueva_G15_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
     goto_if(EQUAL, Naranja_IslaNueva_G15_M02_EventScript_Sub_0815B1C6)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
     goto_if(LESS_THAN, Naranja_IslaNueva_G15_M02_EventScript_Sub_0815B1C6)
-    loadword(0, Naranja_IslaNueva_G15_M02_Text_0818F770)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M02_Text_0818F770, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M02_EventScript_Sub_0815B1C6 {
-    loadword(0, Naranja_IslaNueva_G15_M02_Text_0818F6A2)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M02_Text_0818F6A2, MSGBOX_DEFAULT)
     release
     end
 }
@@ -37,15 +35,13 @@ script Naranja_IslaNueva_G15_M02_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId3 {
     goto_if(EQUAL, Naranja_IslaNueva_G15_M02_EventScript_Sub_0815B1EE)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
     goto_if(LESS_THAN, Naranja_IslaNueva_G15_M02_EventScript_Sub_0815B1EE)
-    loadword(0, Naranja_IslaNueva_G15_M02_Text_0818F860)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M02_Text_0818F860, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G15_M02_EventScript_Sub_0815B1EE {
-    loadword(0, Naranja_IslaNueva_G15_M02_Text_0818F7EA)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M02_Text_0818F7EA, MSGBOX_DEFAULT)
     release
     end
 }

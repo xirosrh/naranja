@@ -6,15 +6,13 @@ mapscripts Naranja_Route106_G00_M21_MapScripts {
 
 script Naranja_Route106_G00_M21_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE106_153, LOCALID_NONE, Naranja_Route106_G00_M21_Text_081B913D, Naranja_Route106_G00_M21_Text_081B917F)
-    loadword(0, Naranja_Route106_G00_M21_Text_081B918A)
-    callstd(6)
+    msgbox(Naranja_Route106_G00_M21_Text_081B918A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route106_G00_M21_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE106_443, LOCALID_NONE, Naranja_Route106_G00_M21_Text_081B91AC, Naranja_Route106_G00_M21_Text_081B91F8)
-    loadword(0, Naranja_Route106_G00_M21_Text_081B9222)
-    callstd(6)
+    msgbox(Naranja_Route106_G00_M21_Text_081B9222, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -23,22 +21,19 @@ script Naranja_Route106_G00_M21_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId3 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route106_G00_M21_EventScript_Sub_0814F38D)
-    loadword(0, Naranja_Route106_G00_M21_Text_081B8F55)
-    callstd(6)
+    msgbox(Naranja_Route106_G00_M21_Text_081B8F55, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route106_G00_M21_EventScript_Sub_0814F38D {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE106_339, LOCALID_NONE, Naranja_Route106_G00_M21_Text_081B8FAC, Naranja_Route106_G00_M21_Text_081B8FF5)
-    loadword(0, Naranja_Route106_G00_M21_Text_081B9011)
-    callstd(6)
+    msgbox(Naranja_Route106_G00_M21_Text_081B9011, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route106_G00_M21_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE106_340, LOCALID_NONE, Naranja_Route106_G00_M21_Text_081B9052, Naranja_Route106_G00_M21_Text_081B90D3)
-    loadword(0, Naranja_Route106_G00_M21_Text_081B910A)
-    callstd(6)
+    msgbox(Naranja_Route106_G00_M21_Text_081B910A, MSGBOX_AUTOCLOSE)
     end
 }
 

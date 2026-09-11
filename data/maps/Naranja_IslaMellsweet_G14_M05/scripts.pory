@@ -10,27 +10,23 @@ script Naranja_IslaMellsweet_G14_M05_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Loc
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemart(Naranja_IslaMellsweet_G14_M05_Mart_0815A940)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMellsweet_G14_M05_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 {
-    loadword(0, Naranja_IslaMellsweet_G14_M05_Text_0818D758)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M05_Text_0818D758, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G14_M05_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId3 {
-    loadword(0, Naranja_IslaMellsweet_G14_M05_Text_0818D7E7)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M05_Text_0818D7E7, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G14_M05_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId4 {
-    loadword(0, Naranja_IslaMellsweet_G14_M05_Text_0818D841)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M05_Text_0818D841, MSGBOX_NPC)
     end
 }
 

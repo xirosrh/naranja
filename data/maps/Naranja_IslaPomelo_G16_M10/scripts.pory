@@ -34,8 +34,7 @@ script Naranja_IslaPomelo_G16_M10_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalI
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemart(Naranja_IslaPomelo_G16_M10_Mart_0815BAC0)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -85,8 +84,7 @@ script Naranja_IslaPomelo_G16_M10_EventScript_Sub_0815BB3F {
 
 script Naranja_IslaPomelo_G16_M10_EventScript_Sub_0815BB4A {
     playse(SE_FAILURE)
-    loadword(0, Naranja_IslaPomelo_G16_M10_Text_0819179C)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M10_Text_0819179C, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -94,8 +92,7 @@ script Naranja_IslaPomelo_G16_M10_EventScript_Sub_0815BB4A {
 script Naranja_IslaPomelo_G16_M10_EventScript_Sub_0815BB57 {
     applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPomelo_G16_M10_Text_08191804)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M10_Text_08191804, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)

@@ -236,174 +236,158 @@ Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5::
 # 145 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_191, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180956, Naranja_IslaMandarin_G10_M00_Text_08180997
 # 146 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_081809D1
-# 147 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 6
+	msgbox Naranja_IslaMandarin_G10_M00_Text_081809D1, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
-# 152 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 151 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_194, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180A05, Naranja_IslaMandarin_G10_M00_Text_08180A42
-# 153 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_08180A5E
-# 154 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 6
+# 152 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_08180A5E, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4::
-# 159 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 157 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_323, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180AE0, Naranja_IslaMandarin_G10_M00_Text_08180B06
-# 160 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_08180B1D
-# 161 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 6
+# 158 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_08180B1D, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3::
-# 166 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 163 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_649, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180B5A, Naranja_IslaMandarin_G10_M00_Text_08180B93
-# 167 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_08180BAE
-# 168 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 6
+# 164 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_08180BAE, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId6::
-# 173 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 169 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	lock
-# 174 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 170 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	faceplayer
-# 175 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 171 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8
-# 176 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 172 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156757
-# 177 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_08180815
-# 178 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 4
-# 179 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 173 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_08180815, MSGBOX_DEFAULT
+# 174 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156757::
-# 184 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_0818091D
-# 185 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 4
-# 186 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 179 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_0818091D, MSGBOX_DEFAULT
+# 180 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_Sign_1::
-# 191 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 185 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	lockall
-# 192 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 186 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
-# 193 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 187 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781
-# 194 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 188 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B
 	return
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_Sign_2::
-# 198 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 192 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	lockall
-# 199 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 193 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
-# 200 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 194 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781
-# 201 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 195 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B
 	return
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781::
-# 205 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_08180F64
-# 206 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 4
-# 207 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 199 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_08180F64, MSGBOX_DEFAULT
+# 200 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B::
-# 212 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarin_G10_M00_Text_08180F4A
-# 213 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	callstd 4
-# 214 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 205 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+	msgbox Naranja_IslaMandarin_G10_M00_Text_08180F4A, MSGBOX_DEFAULT
+# 206 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMandarin_G10_M00_Text_08180815::
-# 218 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 210 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "Hey, how’s it going, the CHAMPION-\nbound {PLAYER}?\pWATTSON, the LEADER of MAUVILLE\nGYM, uses ELECTRIC-type POKéMON.\pIf you challenge him with WATER-type\nPOKéMON, he’ll zap them! Bzzt!\pAnd, he’s put in switch-controlled doors\nall over his GYM! Eccentric!\pHey, go for it!$"
 
 Naranja_IslaMandarin_G10_M00_Text_0818091D::
-# 222 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 214 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "Whoa, you’re electrifying!\nYou’ve powered the door open!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180956::
-# 226 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 218 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "My electric soul, it’ll shatter your\ndreams whole, whoah-yeahah!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180997::
-# 230 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 222 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "That was plugged in, amped up,\nover-driven electric, man!$"
 
 Naranja_IslaMandarin_G10_M00_Text_081809D1::
-# 234 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 226 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "POKéMON and rock, it’s all about heart,\nwhoah yeah!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180A05::
-# 238 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 230 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "I trained under WATTSON!\nThere ain’t no way I’d lose easily!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180A42::
-# 242 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 234 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "Unplugged and turned off...$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180A5E::
-# 246 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 238 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "WATTSON, our GYM LEADER, has been\naround for a long, long time.\pHe was battling even before your\ndaddy was born, that tough coot.$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180AE0::
-# 250 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 242 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "This GYM’s got puzzles!\nIsn’t it fun?$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180B06::
-# 254 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 246 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "It’s no fun to lose...$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180B1D::
-# 258 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 250 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "WATTSON says he likes setting up\nlittle traps with switches.$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180B5A::
-# 262 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 254 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "With my charm and my POKéMON’s moves,\nyou’ll be shocked!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180B93::
-# 266 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 258 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "I’m shocked by your power!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180BAE::
-# 270 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 262 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "I’ve heard that MAUVILLE was founded\nby WATTSON.\pHe was a TRAINER long before we\nbecame TRAINERS.\lHe must know all sorts of things!$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180F4A::
-# 274 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 266 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "MAUVILLE CITY POKéMON GYM$"
 
 Naranja_IslaMandarin_G10_M00_Text_08180F64::
-# 278 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
+# 270 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	.string "MAUVILLE CITY POKéMON GYM\pWATTSON’S CERTIFIED TRAINERS:\n{PLAYER}$"

@@ -5,8 +5,7 @@ mapscripts Naranja_IslaMandarina_G13_M17_MapScripts {
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_0818BFB5)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_0818BFB5, MSGBOX_NPC)
     end
 }
 
@@ -18,8 +17,7 @@ script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2 {
     goto_if(NOT_EQUAL, Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159EB1)
     checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_08CA)
     goto_if(EQUAL, Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E4C)
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4B5E)
-    callstd(5)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4B5E, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E56)
     setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_08CA)
@@ -28,8 +26,7 @@ script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2 {
     special(RetrieveLotteryNumber)
     copyvar(VAR_0x8008, VAR_RESULT)
     special(BufferLottoTicketNumber)
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4CF6)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4CF6, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_MANDARINA_G13_M17_BEAUTY_2, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     waitmovement(LOCALID_NONE)
     playse(SE_PC_ON)
@@ -65,65 +62,55 @@ script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2 {
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E3A {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4D7D)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4D7D, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E43 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4DD1)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4DD1, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E4C {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4C6A)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4C6A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E56 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4C85)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4C85, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E60 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4E27)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4E27, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E6E)
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E6E {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C501C)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C501C, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E78 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4E4F)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4E4F, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E81 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4E92)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4E92, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E8A {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4ED8)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4ED8, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E93 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4F1C)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4F1C, MSGBOX_DEFAULT)
     return
 }
 
@@ -133,15 +120,13 @@ script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159E9C {
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159EA7 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4F77)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4F77, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159EB1 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_081C4FCC)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_081C4FCC, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, VAR_POKELOT_PRIZE_ITEM)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -153,20 +138,17 @@ script Naranja_IslaMandarina_G13_M17_EventScript_Sub_08159EB1 {
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_0818BFDB)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_0818BFDB, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId4 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_0818C044)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_0818C044, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId5 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_0818C07A)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_0818C07A, MSGBOX_NPC)
     end
 }
 
@@ -175,16 +157,14 @@ script Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_AZUMARILL_LocalId
     faceplayer
     waitse
     playmoncry(SPECIES_AZUMARILL, 0)
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_0818C0C3)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_0818C0C3, MSGBOX_DEFAULT)
     waitmoncry
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M17_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaMandarina_G13_M17_Text_0818C0D9)
-    callstd(3)
+    msgbox(Naranja_IslaMandarina_G13_M17_Text_0818C0D9, MSGBOX_SIGN)
     end
 }
 

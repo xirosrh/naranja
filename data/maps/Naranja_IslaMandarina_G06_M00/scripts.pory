@@ -42,8 +42,7 @@ script Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153DA1 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M00_Movement_08153E23)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M04_Text_081A6832)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M04_Text_081A6832, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_MANDARINA_G06_M00_TEALA, Naranja_IslaMandarina_G06_M00_Movement_08153E2C)
     applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M00_Movement_08153E19)
@@ -61,8 +60,7 @@ script Naranja_IslaMandarina_G06_M00_EventScript_Sign_3 {
 }
 
 script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId4 {
-    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177D6C)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M00_Text_08177D6C, MSGBOX_NPC)
     end
 }
 
@@ -71,8 +69,7 @@ script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00EB)
     goto_if(EQUAL, Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153E76)
-    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177DEC)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M00_Text_08177DEC, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x14D)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -84,15 +81,13 @@ script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3 {
 }
 
 script Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153E76 {
-    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177E98)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M00_Text_08177E98, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId6 {
-    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177ECD)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M00_Text_08177ECD, MSGBOX_NPC)
     end
 }
 

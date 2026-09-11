@@ -5,8 +5,7 @@ mapscripts Naranja_Route119_G32_M02_MapScripts {
 }
 
 script Naranja_Route119_G32_M02_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId1 {
-    loadword(0, Naranja_Route119_G32_M02_Text_0819F371)
-    callstd(2)
+    msgbox(Naranja_Route119_G32_M02_Text_0819F371, MSGBOX_NPC)
     end
 }
 
@@ -15,8 +14,7 @@ script Naranja_Route119_G32_M02_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId2 {
     faceplayer
     waitse
     playmoncry(SPECIES_WINGULL, 0)
-    loadword(0, Naranja_Route119_G32_M02_Text_0819F406)
-    callstd(4)
+    msgbox(Naranja_Route119_G32_M02_Text_0819F406, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

@@ -7,8 +7,7 @@ mapscripts Naranja_IslaNueva_G15_M06_MapScripts {
 script Naranja_IslaNueva_G15_M06_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_IslaNueva_G15_M06_Text_0818FA66)
-    callstd(5)
+    msgbox(Naranja_IslaNueva_G15_M06_Text_0818FA66, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaNueva_G15_M06_EventScript_Sub_0815B307)
     compare_var_to_value(VAR_RESULT, 0)
@@ -18,14 +17,12 @@ script Naranja_IslaNueva_G15_M06_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId1 
 }
 
 script Naranja_IslaNueva_G15_M06_EventScript_Sub_0815B307 {
-    loadword(0, Naranja_IslaNueva_G15_M06_Text_0818FAAE)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M06_Text_0818FAAE, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaNueva_G15_M06_EventScript_Sub_0815B310 {
-    loadword(0, Naranja_IslaNueva_G15_M06_Text_0818FB04)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M06_Text_0818FB04, MSGBOX_DEFAULT)
     return
 }
 

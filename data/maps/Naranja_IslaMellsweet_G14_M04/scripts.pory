@@ -20,8 +20,7 @@ mapscripts Naranja_IslaMellsweet_G14_M04_MapScripts {
 }
 
 script Naranja_IslaMellsweet_G14_M04_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId4 {
-    loadword(0, Naranja_IslaMellsweet_G14_M04_Text_0818D6F5)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M04_Text_0818D6F5, MSGBOX_NPC)
     end
 }
 

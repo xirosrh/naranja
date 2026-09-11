@@ -14,15 +14,13 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId9 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150690)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081BBB9A)
-    callstd(6)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081BBB9A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150690 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_MANDARIN_434, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BBBCE, Naranja_Mandarin_G00_M31_Text_081BBC0D)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081BBC1C)
-    callstd(6)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081BBC1C, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -44,22 +42,19 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId21 {
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A67)
     checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A71)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081703CF)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081703CF, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150A67 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170556)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170556, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150A71 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081703F7)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081703F7, MSGBOX_DEFAULT)
     release
     end
 }
@@ -69,8 +64,7 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId19 {
     faceplayer
     checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_011F)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150B04)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081705AE)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081705AE, MSGBOX_DEFAULT)
     goto(Naranja_Mandarin_G00_M31_EventScript_Sub_08150A94)
 }
 
@@ -81,8 +75,7 @@ script Naranja_Mandarin_G00_M31_EventScript_Sub_08150A94 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150B12)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081707B8)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081707B8, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 2)
     call_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150AEE)
@@ -112,53 +105,45 @@ script Naranja_Mandarin_G00_M31_EventScript_Sub_08150AF9 {
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150B04 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170865)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170865, MSGBOX_DEFAULT)
     goto(Naranja_Mandarin_G00_M31_EventScript_Sub_08150A94)
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150B12 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_0817082A)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_0817082A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sign_1 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170A46)
-    callstd(3)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170A46, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sign_2 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170A60)
-    callstd(3)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170A60, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sign_3 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170AB8)
-    callstd(3)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170AB8, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sign_6 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170ACE)
-    callstd(3)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170ACE, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sign_7 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170B7D)
-    callstd(3)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170B7D, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId11 {
     lock
     faceplayer
-    loadword(0, Naranja_Mandarin_G00_M31_Text_0817032A)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_0817032A, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_MANDARIN_STORY_STATE, 2)
     release
     end
@@ -173,36 +158,30 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId22 {
     specialvar(VAR_RESULT, FoundBlackGlasses)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150BBB)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081708EE)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081708EE, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150BBB {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081709B7)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081709B7, MSGBOX_DEFAULT)
     closemessage
     goto(Naranja_Mandarin_G00_M31_EventScript_Sub_08150C03)
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150BCA {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081708EE)
-    callstd(4)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170921)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081708EE, MSGBOX_DEFAULT)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170921, MSGBOX_DEFAULT)
     specialvar(VAR_RESULT, FoundBlackGlasses)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150BF4)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08170A03)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08170A03, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150BF4 {
-    loadword(0, Naranja_Mandarin_G00_M31_Text_0817094D)
-    callstd(4)
+    msgbox(Naranja_Mandarin_G00_M31_Text_0817094D, MSGBOX_DEFAULT)
     closemessage
     goto(Naranja_Mandarin_G00_M31_EventScript_Sub_08150C03)
 }
@@ -236,8 +215,7 @@ script Naranja_Mandarin_G00_M31_EventScript_Sub_08150C42 {
 
 script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId13 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MANDARIN_631, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BCF79, Naranja_Mandarin_G00_M31_Text_081BCFBB)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081BCFE3)
-    callstd(6)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081BCFE3, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -246,15 +224,13 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId17 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150D23)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081BD3C3)
-    callstd(6)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081BD3C3, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150D23 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_MANDARIN_280, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BD405, Naranja_Mandarin_G00_M31_Text_081BD44A)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_081BD466)
-    callstd(6)
+    msgbox(Naranja_Mandarin_G00_M31_Text_081BD466, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -291,8 +267,7 @@ script Naranja_Mandarin_G00_M31_EventScript_Trigger_1 {
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     applymovement(LOCALID_MANDARIN_G00_M31_LITTLE_GIRL_1, Naranja_Mandarin_G00_M31_Movement_086B65E0)
     applymovement(LOCALID_PLAYER, Naranja_Mandarin_G00_M31_Movement_086B65E6)
-    loadword(0, Naranja_Mandarin_G00_M31_Text_08166EC6)
-    callstd(6)
+    msgbox(Naranja_Mandarin_G00_M31_Text_08166EC6, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, Naranja_Mandarin_G00_M31_Movement_086B65F0)
     applymovement(LOCALID_MANDARIN_G00_M31_LITTLE_GIRL_1, Naranja_Mandarin_G00_M31_Movement_086B6600)
     delay(0xB0)

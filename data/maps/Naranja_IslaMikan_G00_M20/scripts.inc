@@ -14,1118 +14,1042 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1::
 # 12 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814CC0E
 # 13 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_08168750
+	msgbox Naranja_IslaMikan_G00_M20_Text_08168750, MSGBOX_DEFAULT
 # 14 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 15 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814CC0E::
-# 20 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 19 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	lock
-# 21 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 20 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	faceplayer
-# 22 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 21 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL
-# 23 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 22 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId6
+# 23 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081689BF, MSGBOX_DEFAULT
 # 24 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081689BF
-# 25 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 26 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId16::
-# 31 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 29 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	lock
-# 32 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 30 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	faceplayer
-# 33 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 31 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6
-# 34 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 32 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EEFF
-# 35 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081C55B9
-# 36 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 37 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 33 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081C55B9, MSGBOX_DEFAULT
+# 34 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x1D
-# 38 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 35 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8001, 2
-# 39 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 36 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	callstd 0
-# 40 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 37 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 41 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 38 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 42 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 39 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6
-# 43 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081C5665
-# 44 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 45 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 40 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081C5665, MSGBOX_DEFAULT
+# 41 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EEFF::
-# 50 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081C5665
-# 51 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 52 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 46 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081C5665, MSGBOX_DEFAULT
+# 47 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sign_1::
-# 57 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DEB3
-# 58 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 3
+# 52 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DEB3, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sign_2::
-# 63 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DEC8
-# 64 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 3
+# 57 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DEC8, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sign_3::
-# 69 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086BF474
-# 70 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 3
+# 62 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086BF474, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sign_4::
-# 75 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DEFD
-# 76 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 3
+# 67 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DEFD, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sign_5::
-# 81 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DF16
-# 82 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 3
+# 72 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DF16, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId4::
-# 87 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DAC9
-# 88 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 2
+# 77 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DAC9, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId32::
-# 93 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 82 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	lock
-# 94 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 83 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	faceplayer
-# 95 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 84 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106
-# 96 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 85 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EFC2
-# 97 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DC5F
-# 98 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 99 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 86 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DC5F, MSGBOX_DEFAULT
+# 87 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8000, 0xBB
-# 100 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 88 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 101 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 89 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	callstd 0
-# 102 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 90 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 103 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 91 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 104 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 92 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106
-# 105 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 93 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EFC2::
-# 110 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DD0E
-# 111 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 112 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 98 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DD0E, MSGBOX_DEFAULT
+# 99 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6::
-# 117 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0816DBC9
-# 118 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 2
+# 104 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0816DBC9, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId28::
-# 123 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 109 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_319, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B86BE, Naranja_IslaMikan_G00_M20_Text_081B86E8
-# 124 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B871C
-# 125 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 110 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B871C, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3::
-# 130 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 115 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8770, Naranja_IslaMikan_G00_M20_Text_081B87A7
+# 116 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+# 117 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	compare_var_to_value VAR_RESULT, 1
+# 118 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7
+# 119 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B87C3, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7::
+# 124 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852
+# 125 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B8872, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26::
+# 130 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61
 # 131 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 132 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
 # 133 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7
-# 134 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B87C3
-# 135 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
-	end
-
-
-Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7::
-# 140 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852
-# 141 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B8872
-# 142 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
-	end
-
-
-Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26::
-# 147 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61
-# 148 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 149 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	compare_var_to_value VAR_RESULT, 1
-# 150 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243
-# 151 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B8A69
-# 152 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 134 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B8A69, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243::
-# 157 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 139 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8AA7, Naranja_IslaMikan_G00_M20_Text_081B8AD9
-# 158 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B8B02
-# 159 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 140 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B8B02, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId23::
-# 164 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 145 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B83E9, Naranja_IslaMikan_G00_M20_Text_081B8414, Naranja_IslaMikan_G00_M20_Text_081B845C
-# 165 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 146 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special GetPlayerBigGuyGirlString
-# 166 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B842C
-# 167 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 168 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 147 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B842C, MSGBOX_DEFAULT
+# 148 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId24::
-# 173 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 153 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B84DB, Naranja_IslaMikan_G00_M20_Text_081B850D, Naranja_IslaMikan_G00_M20_Text_081B8577
-# 174 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 154 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special GetPlayerBigGuyGirlString
-# 175 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081B853B
-# 176 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 177 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 155 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081B853B, MSGBOX_DEFAULT
+# 156 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_OnLoad::
-# 182 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 161 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL
-# 183 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 162 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F2A8
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F2A8::
-# 188 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 167 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setmetatile 5, 0x3C, 0x151, 1
-# 189 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 168 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setmetatile 5, 0x3D, 0x159, 1
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId25::
-# 194 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 173 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD634, Naranja_IslaMikan_G00_M20_Text_081BD67B
-# 195 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 174 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 196 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 175 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 197 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 176 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2
-# 198 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 177 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C47
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2::
-# 202 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 181 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD6F2, Naranja_IslaMikan_G00_M20_Text_081BD733
-# 203 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081BD74F
-# 204 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 182 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081BD74F, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId22::
-# 209 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 187 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE3E8, Naranja_IslaMikan_G00_M20_Text_081BE406
-# 210 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 188 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 211 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 189 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 212 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 190 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122
-# 213 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081BE413
-# 214 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 191 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081BE413, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122::
-# 219 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 196 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE489, Naranja_IslaMikan_G00_M20_Text_081BE4CC
-# 220 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081BE4D9
-# 221 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 197 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081BE4D9, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId9::
-# 226 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 202 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_405, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BEFC8, Naranja_IslaMikan_G00_M20_Text_081BF000
-# 227 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081BF015
-# 228 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 203 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081BF015, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WALLY_LocalId11::
-# 233 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 208 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	faceplayer
-# 234 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0818337E
-# 235 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 236 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 209 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0818337E, MSGBOX_DEFAULT
+# 210 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 237 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 211 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_08183422
-# 238 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 212 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitfanfare
-# 239 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 213 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 240 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 214 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0802
-# 241 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 215 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY
-# 242 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 216 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_08157812
-# 243 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 217 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	applymovement LOCALID_ISLA_MIKAN_G00_M20_WALLY, Naranja_IslaMikan_G00_M20_Movement_08157835
-# 244 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 218 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmovement LOCALID_NONE
-# 245 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_0818394A
-# 246 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 247 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 219 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_0818394A, MSGBOX_DEFAULT
+# 220 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId2::
-# 252 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 225 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	lock
-# 253 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 226 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	faceplayer
-# 254 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 227 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitse
-# 255 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 228 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	playmoncry SPECIES_WINGULL, 0
-# 256 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_08191FB9
-# 257 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 258 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 229 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_08191FB9, MSGBOX_DEFAULT
+# 230 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmoncry
-# 259 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 231 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_081B0F3A::
-# 264 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 236 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId21::
-# 269 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 241 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x45
-# 270 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 242 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 271 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 243 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId27::
-# 276 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 248 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8000, 4
-# 277 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 249 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 278 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 250 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId14::
-# 283 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 255 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x4E
-# 284 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 256 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 285 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 257 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C3D::
-# 290 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_081BD69B
-# 291 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
-# 292 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 262 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_081BD69B, MSGBOX_AUTOCLOSE
+# 263 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C47::
-# 297 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 268 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
-# 298 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 269 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C3D
-# 299 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 270 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A
-# 300 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 271 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E
-# 301 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B8CCA
-# 302 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 303 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 272 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B8CCA, MSGBOX_DEFAULT
+# 273 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkpartymove MOVE_THUNDER_SHOCK
-# 304 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 274 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 6
-# 305 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 275 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C72
-# 306 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 276 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkpartymove MOVE_THUNDERBOLT
-# 307 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 277 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C72
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C72::
-# 311 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 281 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 6
-# 312 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 282 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8ED0
-# 313 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 283 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	bufferpartymonnick 0, 0x800D
-# 314 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 284 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 0, 0x800D
-# 315 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 285 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	lockall
-# 316 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 286 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	nop
-# 317 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 287 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	nop
-# 318 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 288 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	nop
-# 319 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 289 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	nop
-# 320 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 290 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	closemessage
-# 321 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 291 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	dofieldeffect 0x25
-# 322 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 292 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitstate
-# 323 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 293 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x10
-# 324 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 294 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8E80
-# 325 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 295 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId9
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8E80::
-# 329 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 299 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x50
-# 330 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 300 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_086B8CBA
-# 331 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 301 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x30
-# 332 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 302 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	playse SE_M_DETECT
-# 333 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 303 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 0, 8
-# 334 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 304 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 1, 0x4B
-# 335 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 305 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 2, 0
-# 336 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 306 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	dofieldeffect 0x36
-# 337 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 307 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x10
-# 338 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 308 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	fadescreen 2
-# 339 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 309 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	applymovement LOCALID_ISLA_MIKAN_G00_M20_GIRL_2, Naranja_IslaMikan_G00_M20_Movement_086B8CB8
-# 340 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 310 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0xA0
-# 341 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 311 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	playse SE_M_DETECT
-# 342 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 312 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 0, 8
-# 343 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 313 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 1, 0x4B
-# 344 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 314 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setfieldeffectargument 2, 0
-# 345 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 315 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	dofieldeffect 0x36
-# 346 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 316 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 5
-# 347 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 317 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	fadescreen 2
-# 348 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 318 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_086B8CC7
-# 349 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 319 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x90
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8ED0::
-# 354 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B8E67
-# 355 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 4
-# 356 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 324 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B8E67, MSGBOX_DEFAULT
+# 325 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10::
-# 361 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 330 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
-# 362 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 331 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43
-# 363 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 332 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkitem ITEM_MOOMOO_MILK, 0
-# 364 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 333 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 365 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 334 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8FA6
-# 366 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 335 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29::
-# 370 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 339 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkitem ITEM_FRESH_WATER, 0
-# 371 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 340 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 372 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 341 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F7E
-# 373 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B8FD0
-# 374 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 342 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B8FD0, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43::
-# 379 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 347 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 380 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 348 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73
-# 381 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 349 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 382 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 350 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
-# 383 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 351 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
-# 384 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B8FEF
-# 385 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 5
-# 386 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 352 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B8FEF, MSGBOX_YESNO
+# 353 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 387 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 354 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
-# 388 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 355 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setwildbattle SPECIES_SURSKIT, 5, 0
-# 389 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 356 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special BattleSetup_StartLatiBattle
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73::
-# 394 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B9138
-# 395 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
-# 396 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 361 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B9138, MSGBOX_AUTOCLOSE
+# 362 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F7E::
-# 401 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B90BD
-# 402 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 5
-# 403 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 367 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B90BD, MSGBOX_YESNO
+# 368 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 404 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 369 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
-# 405 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 370 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	removeitem ITEM_FRESH_WATER, 1
-# 406 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 371 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 407 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 372 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
-# 408 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B90F8
-# 409 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 373 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B90F8, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8FA6::
-# 414 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B9039
-# 415 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 5
-# 416 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 378 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B9039, MSGBOX_YESNO
+# 379 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 417 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 380 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29
-# 418 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 381 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	removeitem ITEM_MOOMOO_MILK, 1
-# 419 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 382 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 420 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 383 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
-# 421 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	loadword 0, Naranja_IslaMikan_G00_M20_Text_086B907B
-# 422 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	callstd 6
+# 384 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+	msgbox Naranja_IslaMikan_G00_M20_Text_086B907B, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_PICHU_DOLL_LocalId15::
-# 427 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 389 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
-# 428 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 390 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10
-# 429 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 391 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 430 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 392 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73
-# 431 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 393 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142
-# 432 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 394 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43
-# 433 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 395 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY
-# 434 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 396 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B92C0
-# 435 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 397 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
-# 436 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 398 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240
-# 437 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 399 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A
 	return
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A::
-# 441 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 403 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 442 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 404 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
-# 443 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 405 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
-# 444 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 406 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B917F
-# 445 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 407 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x90
-# 446 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 408 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 447 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 409 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	nop
-# 448 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 410 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special RockSmashWildEncounter
-# 449 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 411 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 450 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 412 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_081B0F3A
-# 451 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 413 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitstate
-# 452 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 414 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	releaseall
-# 453 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 415 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B91B6
-# 454 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 416 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x40
-# 455 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 417 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 456 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 418 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240::
-# 461 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 423 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135
-# 462 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 424 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A
-# 463 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 425 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 464 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 426 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
-# 465 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 427 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
-# 466 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 428 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135
-# 467 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 429 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B917F
-# 468 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 430 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x90
-# 469 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 431 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 470 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 432 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitse
-# 471 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 433 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	playmoncry SPECIES_KECLEON, 0
-# 472 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 434 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B91B6
-# 473 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 435 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x40
-# 474 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 436 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 475 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 437 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setwildbattle SPECIES_KECLEON, 0xF, 0
-# 476 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 438 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special BattleSetup_StartLatiBattle
 	end
 
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_086B92C0::
-# 481 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 443 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137
-# 482 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 444 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A
-# 483 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 445 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
-# 484 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 446 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
-# 485 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 447 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
-# 486 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 448 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137
-# 487 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 449 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B917F
-# 488 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 450 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x90
-# 489 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 451 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 490 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 452 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitse
-# 491 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 453 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	playmoncry SPECIES_TREECKO, 0
-# 492 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 454 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B91B6
-# 493 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 455 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay 0x40
-# 494 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 456 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	waitmessage
-# 495 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 457 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	setwildbattle SPECIES_TREECKO, 0x14, 0
-# 496 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 458 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special BattleSetup_StartLatiBattle
 	end
 
 
-# 500 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 462 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 Naranja_IslaMikan_G00_M20_Movement_08157812:
-# 501 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 463 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_16
-# 502 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 464 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 505 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 467 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 Naranja_IslaMikan_G00_M20_Movement_08157835:
-# 506 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 468 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	jump_special_up
-# 507 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 469 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	walk_up
-# 508 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 470 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	walk_up
-# 509 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 471 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	jump_2_up
-# 510 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 472 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	set_invisible
 	step_end
 
-# 513 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 475 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 Naranja_IslaMikan_G00_M20_Movement_086B8CB8:
-# 514 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 476 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	emote_exclamation_mark
 	step_end
 
-# 517 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 479 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 Naranja_IslaMikan_G00_M20_Movement_086B8CBA:
-# 518 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 480 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	face_left
-# 519 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 481 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_4
-# 520 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 482 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	face_right
-# 521 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 483 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_4
-# 522 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 484 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	face_up
-# 523 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 485 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_16
-# 524 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 486 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_16
-# 525 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 487 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_16
-# 526 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 488 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	set_invisible
-# 527 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 489 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	delay_8
-# 528 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 490 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	set_invisible
 	step_end
 
-# 531 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 493 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 Naranja_IslaMikan_G00_M20_Movement_086B8CC7:
-# 532 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 494 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	set_visible
 	step_end
 
 Naranja_IslaMikan_G00_M20_Text_08168750::
-# 535 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 497 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "La fauna marina es riquìsima y variada\nen las {COLOR 0x0E}Islas Naranjas.$"
 
 Naranja_IslaMikan_G00_M20_Text_081689BF::
-# 539 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 501 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Vaya barbaridad!\n¡Ese petrolero encalló!\pEl incompetente de su capitán\nlo hizo chocar contra esas peñas.\pAvisa a JOY de NAVEL\nella nos podrá ayudar.$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DAC9::
-# 543 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 505 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "If you’re going to throw a POKé BALL,\nweaken the wild POKéMON first.\pIt will be easier to catch if it’s been\npoisoned, burned, or lulled to sleep.$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DBC9::
-# 547 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 509 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Oh, no, I’m not a TRAINER.\pBut that’s right, if TRAINERS lock eyes,\nit’s a challenge to battle.\pIf you don’t want to battle, stay out\nof their sight.$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DC5F::
-# 551 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 513 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Cuando sólo quieres llegar alto,\nes porque estás por los suelos.\pSi no controlas tu ego, \nte hundirás en el oceáno.\p¿Para que usarás esta corona?\n¿Si no reinas en tu corazón?$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DD0E::
-# 555 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 517 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Si solo te consuela\nque te alaben.\pAsì no dejarás de ser\nun infeliz.$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DEB3::
-# 559 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 521 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "{COLOR 0x06}¡Viaja en Lancha!$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DEC8::
-# 563 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 525 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Gimnasio Isla MIKAN\nLíder: SISSY\l“Veloz sirena’$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DEFD::
-# 567 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 529 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "PRETTY PETAL FLOWER SHOP$"
 
 Naranja_IslaMikan_G00_M20_Text_0816DF16::
-# 571 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 533 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Bienvenido a Pueblo PALETA\nSe te ha hecho corto el viaje, verdad.\pEs lo que tiene nuestra linea\nde zepelín…\p…viajes de gran lujo.\pNo te culpo de volver a queres montar\npero consigue un billete de zepelín\lprimero, ¿va?\l$"
 
 Naranja_IslaMikan_G00_M20_Text_0818337E::
-# 575 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 537 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "TRACEY: ¡Hola {PLAYER}!\pPara que no te pierdas  \nacepta este POKéNAVEGADOR.\pTiene muchas funciones\ncomo un mapa.\pPero ahora sigue el camino\nque al final SISSY te espera.$"
 
 Naranja_IslaMikan_G00_M20_Text_08183422::
-# 579 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 541 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "{PLAYER} received a POKéNAV.$"
 
 Naranja_IslaMikan_G00_M20_Text_0818394A::
-# 583 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 545 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡SURFEA MARRIL!$"
 
 Naranja_IslaMikan_G00_M20_Text_08191FB9::
-# 587 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 549 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "PEEKO: Pii pihyoroo!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B83E9::
-# 591 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 553 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "GINA: Okay, let’s battle with our\nPOKéMON!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8414::
-# 595 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 557 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "GINA: Losing upsets me!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B842C::
-# 599 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 561 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "GINA: {STR_VAR_1} is strong!\nWe have to train lots more!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B845C::
-# 603 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 565 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "GINA: Oh? Only one POKéMON?\nThen, we don’t battle with you.\pIf there’s only one POKéMON, it will\nbe lonesome. That’s not nice.$"
 
 Naranja_IslaMikan_G00_M20_Text_081B84DB::
-# 607 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 569 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "MIA: We are twins, so we battle\nPOKéMON together.$"
 
 Naranja_IslaMikan_G00_M20_Text_081B850D::
-# 611 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 573 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "MIA: We battled together, but we\nboth lost...$"
 
 Naranja_IslaMikan_G00_M20_Text_081B853B::
-# 615 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 577 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "MIA: We will train our POKéMON more\nand be strong like you.$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8577::
-# 619 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 581 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "MIA: You want to battle with us?\pIt’s a big no-no if you don’t have two\nPOKéMON with you.\lWe’re too strong for you!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B86BE::
-# 623 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 585 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¿Estás atascado pequeñ{RIVAL}? \p{COLOR 0x04}{PLAYER}: ¡Habló!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B86E8::
-# 627 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 589 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Estás amargad{RIVAL} porque   \nno encuentras el camino!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B871C::
-# 631 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 593 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Si pierdo algo\nbusco bajo mi cama.\p{COLOR 0x04}Eso no me ayudará.\p{COLOR 0x01}No dije que te ayudarìa$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8770::
-# 635 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 597 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Deberìa…\no no?\p¡Vale!\n¡Pelearé!\p¡Serás tú quien sufra!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B87A7::
-# 639 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 601 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Buá!\p+1\pEstoy acostumbrada$"
 
 Naranja_IslaMikan_G00_M20_Text_081B87C3::
-# 643 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 605 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Bueno no siempre se gana.\pMe alegro mucho de haber luchado   \ntodo lo que pude contra un entrenador\lcomo tú.\p¡Suerte!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8839::
-# 647 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 609 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Come on, battle with me!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8852::
-# 651 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 613 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Ohh...\nI thought I could win...$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8872::
-# 655 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 617 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "I made the decision to battle, so I\ncan accept this loss in grace.\pI am still upset about losing!$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8A24::
-# 659 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 621 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Las flores pueden hacer que todo\na nuestro alrededor brille.$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8A61::
-# 663 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 625 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Vaya! $"
 
 Naranja_IslaMikan_G00_M20_Text_081B8A69::
-# 667 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 629 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Toma todas las flores que quieras,   \nno pueden hacerte daño.$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8AA7::
-# 671 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 633 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Hello, we meet again.\nMay I ask you for a battle?$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8AD9::
-# 675 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 637 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Oh, my...\nI did the best that I could...$"
 
 Naranja_IslaMikan_G00_M20_Text_081B8B02::
-# 679 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 641 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "“Hello” is the beginning of “good-bye.”\nI hope we meet again.$"
 
 Naranja_IslaMikan_G00_M20_Text_081BD634::
-# 683 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 645 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Me descubriste!\pDéjame comprobar si dominas \nel arte de la imitación.$"
 
 Naranja_IslaMikan_G00_M20_Text_081BD67B::
-# 687 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 649 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Si mejoras te haré un regalo.  $"
 
 Naranja_IslaMikan_G00_M20_Text_081BD69B::
-# 691 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 653 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Cambatiste mis POKéMON \nen un visto y no visto.\pPero sube más tu nivel y te daré algo.$"
 
 Naranja_IslaMikan_G00_M20_Text_081BD6F2::
-# 695 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 657 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Ojalá hayas mejorado aún más\ntus artes de camuflaje\p¡En guardia!$"
 
 Naranja_IslaMikan_G00_M20_Text_081BD733::
-# 699 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 661 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Guau! \nHas mejorado mucho.$"
 
 Naranja_IslaMikan_G00_M20_Text_081BD74F::
-# 703 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 665 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Camuflarse requiere control absoluto\ny un sacrificio constante entrenando.$"
 
 Naranja_IslaMikan_G00_M20_Text_081BE3E8::
-# 707 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 669 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Let my melody rock your soul!$"
 
 Naranja_IslaMikan_G00_M20_Text_081BE406::
-# 711 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 673 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "La-lalala...$"
 
 Naranja_IslaMikan_G00_M20_Text_081BE413::
-# 715 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 677 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "An electric guitar doesn’t always\nhave to be noisy...\pIt can be strummed to squeeze out\nthis heart-stirring melody...$"
 
 Naranja_IslaMikan_G00_M20_Text_081BE489::
-# 719 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 681 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "A melody from my POKéMON and me...\nLet us deliver it to your soul.$"
 
 Naranja_IslaMikan_G00_M20_Text_081BE4CC::
-# 723 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 685 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "La-lalala...$"
 
 Naranja_IslaMikan_G00_M20_Text_081BE4D9::
-# 727 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 689 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "When I play, my emotions should reach\nyou through my electric guitar...$"
 
 Naranja_IslaMikan_G00_M20_Text_081BEFC8::
-# 731 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 693 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Do you have any moves that can strike\na flying POKéMON?$"
 
 Naranja_IslaMikan_G00_M20_Text_081BF000::
-# 735 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 697 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "You soared above me!$"
 
 Naranja_IslaMikan_G00_M20_Text_081BF015::
-# 739 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 701 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "The move FLY is convenient, don’t\nyou think?\pWhile the POKéMON is flying, almost\nno moves can strike it.$"
 
 Naranja_IslaMikan_G00_M20_Text_081C55B9::
-# 743 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 705 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¿Viste los POKé-BEBEDEROS?\pLlénalos de lìquido, \nespera un rato\ly si tienes suerte aparecerán\lPOKéMON que solo puedes capturar asì.\pA veces vienen algunos raros.\pTen esto.$"
 
 Naranja_IslaMikan_G00_M20_Text_081C5665::
-# 747 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 709 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Puedes llenar los POKé-BEBEDEROS\nde LECHE o de AGUA.\pParece que los POKéMON \nsuelen preferir la LECHE.\p¡Vigila bien siempre los bebederos!$"
 
 Naranja_IslaMikan_G00_M20_Text_086B8CCA::
-# 751 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 713 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "MIMA: Veo que derrotaste a SISSY.\pAunque el tipo agua sea\nmás debil que los POKéMON vegetales,\lvencer a SISSY es una gran hazaña. \pAunque no todo es lucha, {PLAYER}.\nEnséñame como dominas\lel arte del camuflaje\ly te daré algo que seguro te será útil.\p{COLOR 0x04}{PLAYER}: ¿Cómo camuflarme?\nNo me sé nigún truco.\p{COLOR 0x01}MIMA: Un entrenador debe contar\ncon las técnicas de sus POKéMON\lsi quiere camuflarse.\pTu POKéMON preferido te ayudará.$"
 
 Naranja_IslaMikan_G00_M20_Text_086B8E67::
-# 755 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 717 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¿O no lo llevas encima?$"
 
 Naranja_IslaMikan_G00_M20_Text_086B8FD0::
-# 759 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 721 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Este POKé-BEBEDERO está vacìo.$"
 
 Naranja_IslaMikan_G00_M20_Text_086B8FEF::
-# 763 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 725 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Argh!\nEl lìquido que habìa se llenó de bichos.\p¿Quieres combatir alguno?$"
 
 Naranja_IslaMikan_G00_M20_Text_086B9039::
-# 767 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 729 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Este POKé-BEBEDERO está vacìo.\n¿Quieres llenarlo con LECHE MO-MO?$"
 
 Naranja_IslaMikan_G00_M20_Text_086B907B::
-# 771 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 733 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Llenaste de LECHE el POKé-BEBEDERO.\n¡A los POKéMON les encantará!$"
 
 Naranja_IslaMikan_G00_M20_Text_086B90BD::
-# 775 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 737 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Este POKé-BEBEDERO está vacìo.\n¿Quieres echar AGUA FRESCA?$"
 
 Naranja_IslaMikan_G00_M20_Text_086B90F8::
-# 779 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 741 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Llenaste de AGUA el POKé-BEBEDERO.\nQuizá atraiga algún POKéMON.$"
 
 Naranja_IslaMikan_G00_M20_Text_086B9138::
-# 783 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 745 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Este POKé-BEBEDERO sigue lleno.\nAún no ha pasado el tiempo suficiente…$"
 
 Naranja_IslaMikan_G00_M20_Text_086B917F::
-# 787 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 749 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Un POKéMON se bebió la leche!\pA ver si anda por aquì…$"
 
 Naranja_IslaMikan_G00_M20_Text_086B91B6::
-# 791 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 753 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "¡Vaya!\nParece que escapó hace tiempo.$"
 
 Naranja_IslaMikan_G00_M20_Text_086BF474::
-# 795 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
+# 757 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	.string "Está entrando en \n{COLOR 0x0D}Isla TROVITA.$"

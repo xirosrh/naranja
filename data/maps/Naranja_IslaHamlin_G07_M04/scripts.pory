@@ -13,8 +13,7 @@ script Naranja_IslaHamlin_G07_M04_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId2 {
     copyvar(VAR_0x8004, VAR_0x8008)
     specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
     copyvar(VAR_0x8009, VAR_RESULT)
-    loadword(0, Naranja_IslaHamlin_G07_M04_Text_0817940E)
-    callstd(5)
+    msgbox(Naranja_IslaHamlin_G07_M04_Text_0817940E, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaHamlin_G07_M04_EventScript_Sub_08154320)
     special(ChoosePartyMon)
@@ -33,38 +32,33 @@ script Naranja_IslaHamlin_G07_M04_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId2 {
     special(DoInGameTradeScene)
     waitstate
     bufferspeciesname(0, 0x8009)
-    loadword(0, Naranja_IslaHamlin_G07_M04_Text_081794C4)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M04_Text_081794C4, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_009A)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M04_EventScript_Sub_08154320 {
-    loadword(0, Naranja_IslaHamlin_G07_M04_Text_081794ED)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M04_Text_081794ED, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M04_EventScript_Sub_0815432A {
     bufferspeciesname(0, 0x8009)
-    loadword(0, Naranja_IslaHamlin_G07_M04_Text_081794DF)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M04_Text_081794DF, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M04_EventScript_Sub_08154338 {
-    loadword(0, Naranja_IslaHamlin_G07_M04_Text_0817950A)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M04_Text_0817950A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M04_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId1 {
-    loadword(0, Naranja_IslaHamlin_G07_M04_Text_08179541)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M04_Text_08179541, MSGBOX_NPC)
     end
 }
 

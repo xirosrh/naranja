@@ -27,118 +27,114 @@ Naranja_IslaMellsweet_G14_M12_OnFrame_1::
 # 20 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	special CopyEReaderTrainerGreeting
 # 21 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	loadword 0, 0x20234CC
+	msgbox 0x20234CC, MSGBOX_DEFAULT
 # 22 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	callstd 4
+	closemessage
 # 23 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	closemessage
-# 24 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	setvar VAR_0x8004, 2
-# 25 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 24 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	setvar VAR_0x8005, 0
-# 26 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 25 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	special DoSpecialTrainerBattle
+# 26 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+	waitstate
 # 27 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	waitstate
-# 28 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	compare_var_to_value VAR_RESULT, 3
-# 29 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 28 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	call_if EQUAL, Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AED5
-# 30 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 29 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 31 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 30 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	call_if EQUAL, Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AEE3
-# 32 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 31 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	compare_var_to_value VAR_RESULT, 2
-# 33 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 32 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	call_if EQUAL, Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AEEE
-# 34 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 33 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	closemessage
-# 35 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 34 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	special HealPlayerParty
-# 36 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 35 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaMellsweet_G14_M12_Movement_0815AEFF
-# 37 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 36 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	waitmovement LOCALID_NONE
-# 38 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 37 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	special LoadPlayerParty
-# 39 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 38 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 40 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 39 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	warp MAP_NARANJA_ISLA_MELLSWEET_G14_M11, 0xFF, 3, 1
-# 41 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 40 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	waitstate
-# 42 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 41 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AED5::
-# 47 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 46 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 3
-# 48 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M12_Text_0818E796
-# 49 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	callstd 4
+# 47 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M12_Text_0818E796, MSGBOX_DEFAULT
 	return
 
 
 Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AEE3::
-# 54 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 52 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 1
-# 55 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 53 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	special ShowFieldMessageStringVar4
-# 56 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 54 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	waitmessage
-# 57 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 55 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	waitbuttonpress
 	return
 
 
 Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AEEE::
-# 62 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 60 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 2
-# 63 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 61 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	special ShowFieldMessageStringVar4
-# 64 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 62 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	waitmessage
-# 65 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 63 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	waitbuttonpress
 	return
 
 
-# 69 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 67 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 Naranja_IslaMellsweet_G14_M12_Movement_0815AEF9:
+# 68 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+	walk_down
+# 69 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+	walk_down
 # 70 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	walk_down
 # 71 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	walk_down
-# 72 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	walk_down
-# 73 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	walk_right
-# 74 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 72 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	walk_right
 	step_end
 
-# 77 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 75 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 Naranja_IslaMellsweet_G14_M12_Movement_0815AEFF:
+# 76 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+	walk_left
+# 77 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+	walk_left
 # 78 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	walk_left
+	walk_up
 # 79 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	walk_left
+	walk_up
 # 80 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	walk_up
 # 81 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	walk_up
 # 82 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	walk_up
-# 83 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
-	walk_up
-# 84 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	delay_8
 	step_end
 
 Naranja_IslaMellsweet_G14_M12_Text_0818E796::
-# 87 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
+# 85 "data/maps/Naranja_IslaMellsweet_G14_M12/scripts.pory"
 	.string "The match ended up a draw.$"

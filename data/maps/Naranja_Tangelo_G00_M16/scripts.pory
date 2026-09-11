@@ -21,8 +21,7 @@ script Naranja_Tangelo_G00_M16_OnFrame_1 {
 
 script Naranja_Tangelo_G00_M16_EventScript_Trigger_9 {
     lockall
-    loadword(0, Naranja_PuebloPaleta_G01_M04_Text_086BEC6C)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G01_M04_Text_086BEC6C, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_Tangelo_G00_M16_Movement_0814E9FE)
     waitmovement(LOCALID_NONE)
@@ -31,14 +30,12 @@ script Naranja_Tangelo_G00_M16_EventScript_Trigger_9 {
 }
 
 script Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId1 {
-    loadword(0, Naranja_Tangelo_G00_M16_Text_0816D25E)
-    callstd(2)
+    msgbox(Naranja_Tangelo_G00_M16_Text_0816D25E, MSGBOX_NPC)
     end
 }
 
 script Naranja_Tangelo_G00_M16_EventScript_Sign_1 {
-    loadword(0, Naranja_Tangelo_G00_M16_Text_086BF497)
-    callstd(3)
+    msgbox(Naranja_Tangelo_G00_M16_Text_086BF497, MSGBOX_SIGN)
     end
 }
 
@@ -53,23 +50,19 @@ script Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId5 {
     goto_if(EQUAL, Naranja_Tangelo_G00_M16_EventScript_Sub_081B22E7)
     compare_var_to_value(VAR_RESULT, 3)
     goto_if(EQUAL, Naranja_Tangelo_G00_M16_EventScript_Sub_081B22FE)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B25CB)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B25CB, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Tangelo_G00_M16_EventScript_Sub_081B2262 {
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B2659)
-    callstd(5)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B2659, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Tangelo_G00_M16_EventScript_Sub_081B2298)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B28C4)
-    callstd(5)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B28C4, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Tangelo_G00_M16_EventScript_Sub_081B2298)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B2745)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B2745, MSGBOX_DEFAULT)
     clearflag(FLAG_NARANJA_TANGELO_EVENT_COMPLETE_0086)
     special(RejectEggFromDayCare)
     release
@@ -80,8 +73,7 @@ script Naranja_Tangelo_G00_M16_EventScript_Sub_081B2298 {
     specialvar(VAR_RESULT, CalculatePlayerPartyCount)
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(NOT_EQUAL, Naranja_Tangelo_G00_M16_EventScript_Sub_081B22B2)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B2766)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B2766, MSGBOX_DEFAULT)
     release
     end
 }
@@ -92,8 +84,7 @@ script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22B2 {
     waitfanfare
     waitmessage
     waitbuttonpress
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B27CD)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B27CD, MSGBOX_DEFAULT)
     special(GiveEggFromDaycare)
     clearflag(FLAG_NARANJA_TANGELO_EVENT_COMPLETE_0086)
     release
@@ -108,15 +99,13 @@ script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22CD {
 }
 
 script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22DE {
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B27E3)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B27E3, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22E7 {
     special(GetDaycareMonNicknames)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B2710)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B2710, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0)
     call(Naranja_Tangelo_G00_M16_EventScript_Sub_081B22CD)
     release
@@ -125,8 +114,7 @@ script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22E7 {
 
 script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22FE {
     special(GetDaycareMonNicknames)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081B2897)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081B2897, MSGBOX_DEFAULT)
     special(SetDaycareCompatibilityString)
     special(ShowFieldMessageStringVar4)
     waitmessage
@@ -152,15 +140,13 @@ script Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_WALLY_LocalId2 {
 script Naranja_Tangelo_G00_M16_EventScript_Sub_086B4595 {
     lock
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_0815C64F)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_08178F9F)
-    callstd(2)
+    msgbox(Naranja_Tangelo_G00_M16_Text_08178F9F, MSGBOX_NPC)
     end
 }
 
 script Naranja_Tangelo_G00_M16_EventScript_Sub_086B45A7 {
     setflag(FLAG_HIDE_TANGELO_G00_M16_WALLY)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_086B45C2)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_086B45C2, MSGBOX_DEFAULT)
     nop
     nop
     nop
@@ -176,8 +162,7 @@ script Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_AZUMARILL_LocalId3 {
     faceplayer
     waitse
     playmoncry(SPECIES_MACHOP, 0)
-    loadword(0, Naranja_Tangelo_G00_M16_Text_081701F9)
-    callstd(4)
+    msgbox(Naranja_Tangelo_G00_M16_Text_081701F9, MSGBOX_DEFAULT)
     waitmoncry
     release
     end
@@ -188,8 +173,7 @@ script Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL_Loc
     faceplayer
     waitse
     playmoncry(SPECIES_KIRLIA, 0)
-    loadword(0, Naranja_IslaValencia_G13_M13_Text_0817E156)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G13_M13_Text_0817E156, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

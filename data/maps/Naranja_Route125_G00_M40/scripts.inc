@@ -16,188 +16,172 @@ Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1::
 # 15 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_161, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C0FCF, Naranja_Route125_G00_M40_Text_081C1002
 # 16 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C1013
-# 17 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route125_G00_M40_Text_081C1013, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2::
-# 22 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 21 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_162, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C104B, Naranja_Route125_G00_M40_Text_081C1073
-# 23 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C1083
-# 24 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 22 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C1083, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3::
-# 29 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 27 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_451, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C10C3, Naranja_Route125_G00_M40_Text_081C10FB
-# 30 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C110C
-# 31 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 28 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C110C, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4::
-# 36 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 33 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_452, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C1136, Naranja_Route125_G00_M40_Text_081C1175
-# 37 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C117F
-# 38 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 34 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C117F, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId5::
-# 43 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 39 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_492, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C11AF, Naranja_Route125_G00_M40_Text_081C11ED
-# 44 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 40 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 45 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 41 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 46 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 42 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	goto_if EQUAL, Naranja_Route125_G00_M40_EventScript_Sub_08151FB1
-# 47 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C1208
-# 48 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 43 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C1208, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_Sub_08151FB1::
-# 53 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 48 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE125_492, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C1282, Naranja_Route125_G00_M40_Text_081C12C5
-# 54 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C12EE
-# 55 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 49 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C12EE, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_LASS_LocalId6::
-# 60 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 54 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE125_678, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C13A1, Naranja_Route125_G00_M40_Text_081C13FF, Naranja_Route125_G00_M40_Text_081C146E
-# 61 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C141C
-# 62 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 55 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C141C, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_LASS_LocalId7::
-# 67 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 60 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE125_678, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C14AB, Naranja_Route125_G00_M40_Text_081C14E7, Naranja_Route125_G00_M40_Text_081C154F
-# 68 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	loadword 0, Naranja_Route125_G00_M40_Text_081C1508
-# 69 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
-	callstd 6
+# 61 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+	msgbox Naranja_Route125_G00_M40_Text_081C1508, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route125_G00_M40_Text_081C0FCF::
-# 73 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 65 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I heard you approaching, so I hung\naround for you!$"
 
 Naranja_Route125_G00_M40_Text_081C1002::
-# 77 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 69 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I beg for peace!$"
 
 Naranja_Route125_G00_M40_Text_081C1013::
-# 81 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 73 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "Sound travels faster in water than\nit does through air.$"
 
 Naranja_Route125_G00_M40_Text_081C104B::
-# 85 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 77 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "Hey, there!\nCheck out my sweet POKéMON!$"
 
 Naranja_Route125_G00_M40_Text_081C1073::
-# 89 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 81 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I floundered...$"
 
 Naranja_Route125_G00_M40_Text_081C1083::
-# 93 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 85 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I was blown away by HORSEA’s charm,\nso I started swimming, too.$"
 
 Naranja_Route125_G00_M40_Text_081C10C3::
-# 97 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 89 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I’m tired of swimming.\nAre you up for a battle with me?$"
 
 Naranja_Route125_G00_M40_Text_081C10FB::
-# 101 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 93 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "You’re too much!$"
 
 Naranja_Route125_G00_M40_Text_081C110C::
-# 105 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 97 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "Whew...\nWhich way is it to MOSSDEEP CITY?$"
 
 Naranja_Route125_G00_M40_Text_081C1136::
-# 109 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 101 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "How would you like to take on the\nWATER-type POKéMON I raised?$"
 
 Naranja_Route125_G00_M40_Text_081C1175::
-# 113 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 105 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I lost...$"
 
 Naranja_Route125_G00_M40_Text_081C117F::
-# 117 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 109 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "Your power... You’re the real deal.\nI’m amazed!$"
 
 Naranja_Route125_G00_M40_Text_081C11AF::
-# 121 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 113 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "Ahoy! I’m a buff, tough SAILOR!\nI’ve braved the world’s seas!$"
 
 Naranja_Route125_G00_M40_Text_081C11ED::
-# 125 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 117 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "Gwrroooar!\nI couldn’t win!$"
 
 Naranja_Route125_G00_M40_Text_081C1208::
-# 129 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 121 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "The tide ebbs and flows inside the\nSHOAL CAVE.\pBy the way, it’s about six hours from\nhigh tide to low tide. Did you know?$"
 
 Naranja_Route125_G00_M40_Text_081C1282::
-# 133 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 125 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "It’s high time I get my payback\nfrom you! Come on, we’re battling!$"
 
 Naranja_Route125_G00_M40_Text_081C12C5::
-# 137 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 129 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "I couldn’t win!\nI flat out couldn’t win!$"
 
 Naranja_Route125_G00_M40_Text_081C12EE::
-# 141 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 133 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "The SHOAL CAVE...\pThere are places you can and can’t\nget to depending on the rise and fall\lof the tide.\pBy the way, it’s about six hours from\nhigh tide to low tide. Don’t forget!$"
 
 Naranja_Route125_G00_M40_Text_081C13A1::
-# 145 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 137 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "KIM: A funny old man lives in the\nSHOAL CAVE. Someone told me.\lAre you going to see him, too?$"
 
 Naranja_Route125_G00_M40_Text_081C13FF::
-# 149 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 141 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "KIM: I thought we would win.$"
 
 Naranja_Route125_G00_M40_Text_081C141C::
-# 153 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 145 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "KIM: A funny old man lives in the\nSHOAL CAVE, doesn’t he?\pLet’s go see him, IRIS!$"
 
 Naranja_Route125_G00_M40_Text_081C146E::
-# 157 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 149 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "KIM: No, no, no! You need two POKéMON,\nor it’s just no good!$"
 
 Naranja_Route125_G00_M40_Text_081C14AB::
-# 161 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 153 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "IRIS: KIM, can you tell me what we’re\nlooking for out here?$"
 
 Naranja_Route125_G00_M40_Text_081C14E7::
-# 165 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 157 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "IRIS: Oh, we came sort of close.$"
 
 Naranja_Route125_G00_M40_Text_081C1508::
-# 169 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 161 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "IRIS: KIM, are we really going into\nthe SHOAL CAVE?\lWe’ll get all wet.$"
 
 Naranja_Route125_G00_M40_Text_081C154F::
-# 173 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
+# 165 "data/maps/Naranja_Route125_G00_M40/scripts.pory"
 	.string "IRIS: Oh, we could never, ever do\nanything like a 2-on-1 battle.$"

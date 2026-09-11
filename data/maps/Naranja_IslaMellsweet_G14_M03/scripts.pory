@@ -20,14 +20,12 @@ script Naranja_IslaMellsweet_G14_M03_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
 }
 
 script Naranja_IslaMellsweet_G14_M03_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2 {
-    loadword(0, Naranja_IslaMellsweet_G14_M03_Text_0818D62F)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M03_Text_0818D62F, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G14_M03_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3 {
-    loadword(0, Naranja_IslaMellsweet_G14_M03_Text_0818D69A)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M03_Text_0818D69A, MSGBOX_NPC)
     end
 }
 

@@ -28,28 +28,24 @@ script Naranja_Route119_G32_M01_EventScript_Sub_08163CF0 {
 
 script Naranja_Route119_G32_M01_EventScript_OBJECT_1_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_583, LOCALID_NONE, Naranja_Route119_G32_M01_Text_0819EEAF, Naranja_Route119_G32_M01_Text_0819EF1B)
-    loadword(0, Naranja_Route119_G32_M01_Text_0819EF3E)
-    callstd(6)
+    msgbox(Naranja_Route119_G32_M01_Text_0819EF3E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route119_G32_M01_EventScript_OBJECT_2_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_584, LOCALID_NONE, Naranja_Route119_G32_M01_Text_0819EFA3, Naranja_Route119_G32_M01_Text_0819EFDD)
-    loadword(0, Naranja_Route119_G32_M01_Text_0819EFE9)
-    callstd(6)
+    msgbox(Naranja_Route119_G32_M01_Text_0819EFE9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route119_G32_M01_EventScript_OBJECT_3_LocalId3 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE119_599, LOCALID_NONE, Naranja_Route119_G32_M01_Text_0819F042, Naranja_Route119_G32_M01_Text_0819F0F4, Naranja_Route119_G32_M01_EventScript_AfterBattle_08163D45)
-    loadword(0, Naranja_Route119_G32_M01_Text_0819F11B)
-    callstd(6)
+    msgbox(Naranja_Route119_G32_M01_Text_0819F11B, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route119_G32_M01_EventScript_AfterBattle_08163D45 {
-    loadword(0, Naranja_Route119_G32_M01_Text_0819F11B)
-    callstd(4)
+    msgbox(Naranja_Route119_G32_M01_Text_0819F11B, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_NARANJA_ROUTE119_EVENT_STATE_2, 1)
     clearflag(FLAG_HIDE_ROUTE119_G32_M01_MAN_5)
@@ -67,8 +63,7 @@ script Naranja_Route119_G32_M01_EventScript_AfterBattle_08163D45 {
 }
 
 script Naranja_Route119_G32_M01_EventScript_Sub_08163D7A {
-    loadword(0, Naranja_Route119_G32_M01_Text_0819F1CF)
-    callstd(4)
+    msgbox(Naranja_Route119_G32_M01_Text_0819F1CF, MSGBOX_DEFAULT)
     getpartysize
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_Route119_G32_M01_EventScript_Sub_08163DB4)
@@ -78,22 +73,19 @@ script Naranja_Route119_G32_M01_EventScript_Sub_08163D7A {
     waitmessage
     givemon(SPECIES_CASTFORM, 0x19, 0xD1)
     setflag(FLAG_NARANJA_ROUTE119_EVENT_COMPLETE_0097)
-    loadword(0, Naranja_Route119_G32_M01_Text_0819F27D)
-    callstd(4)
+    msgbox(Naranja_Route119_G32_M01_Text_0819F27D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route119_G32_M01_EventScript_Sub_08163DB4 {
-    loadword(0, Naranja_Route119_G32_M01_Text_0819F231)
-    callstd(4)
+    msgbox(Naranja_Route119_G32_M01_Text_0819F231, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route119_G32_M01_EventScript_Sub_08163DBE {
-    loadword(0, Naranja_Route119_G32_M01_Text_0819F2FE)
-    callstd(4)
+    msgbox(Naranja_Route119_G32_M01_Text_0819F2FE, MSGBOX_DEFAULT)
     release
     end
 }

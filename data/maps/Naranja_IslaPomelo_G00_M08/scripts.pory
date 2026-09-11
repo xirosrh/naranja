@@ -12,20 +12,17 @@ script Naranja_IslaPomelo_G00_M08_OnTransition {
 }
 
 script Naranja_IslaPomelo_G00_M08_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaPomelo_G00_M08_Text_0816A74D)
-    callstd(3)
+    msgbox(Naranja_IslaPomelo_G00_M08_Text_0816A74D, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaPomelo_G00_M08_EventScript_Sign_3 {
-    loadword(0, Naranja_IslaPomelo_G00_M08_Text_0816A787)
-    callstd(3)
+    msgbox(Naranja_IslaPomelo_G00_M08_Text_0816A787, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaPomelo_G00_M08_EventScript_Sign_4 {
-    loadword(0, Naranja_IslaPomelo_G00_M08_Text_0816A763)
-    callstd(3)
+    msgbox(Naranja_IslaPomelo_G00_M08_Text_0816A763, MSGBOX_SIGN)
     end
 }
 

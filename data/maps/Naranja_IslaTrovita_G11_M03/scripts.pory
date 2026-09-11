@@ -8,8 +8,7 @@ script Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId1 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_TROVITA_265, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183EE5, Naranja_IslaTrovita_G11_M03_Text_08183FC4, Naranja_IslaTrovita_G11_M03_EventScript_AfterBattle_081578FE)
     checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_00A5)
     goto_if(LESS_THAN, Naranja_IslaTrovita_G11_M03_EventScript_Sub_0815793C)
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_08184252)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_08184252, MSGBOX_DEFAULT)
     release
     end
 }
@@ -18,8 +17,7 @@ script Naranja_IslaTrovita_G11_M03_EventScript_AfterBattle_081578FE {
     message(Naranja_IslaTrovita_G11_M03_Text_081840AB)
     waitmessage
     call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_081840D5)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_081840D5, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_04B1)
     setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0807)
     setvar(VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 1)
@@ -38,23 +36,20 @@ script Naranja_IslaTrovita_G11_M03_EventScript_Sub_0815793C {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_00A5)
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_08184170)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_08184170, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_TROVITA_320, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183D99, Naranja_IslaTrovita_G11_M03_Text_08183DDD)
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_08183DF9)
-    callstd(6)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_08183DF9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_TROVITA_321, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183E38, Naranja_IslaTrovita_G11_M03_Text_08183E78)
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_08183E98)
-    callstd(6)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_08183E98, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -63,15 +58,13 @@ script Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId4 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_04B1)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M03_EventScript_Sub_081579A3)
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_08183A4B)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_08183A4B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M03_EventScript_Sub_081579A3 {
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_08183C90)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_08183C90, MSGBOX_DEFAULT)
     release
     end
 }
@@ -91,15 +84,13 @@ script Naranja_IslaTrovita_G11_M03_EventScript_Sign_2 {
 }
 
 script Naranja_IslaTrovita_G11_M03_EventScript_Sub_081579CD {
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_081842E6)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_081842E6, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_IslaTrovita_G11_M03_EventScript_Sub_081579D7 {
-    loadword(0, Naranja_IslaTrovita_G11_M03_Text_081842CC)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M03_Text_081842CC, MSGBOX_DEFAULT)
     releaseall
     end
 }

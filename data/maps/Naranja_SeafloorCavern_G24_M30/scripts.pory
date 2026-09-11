@@ -12,8 +12,7 @@ script Naranja_SeafloorCavern_G24_M30_OnTransition {
 
 script Naranja_SeafloorCavern_G24_M30_EventScript_OBJECT_10_LocalId10 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SEAFLOOR_CAVERN_600, LOCALID_NONE, Naranja_SeafloorCavern_G24_M30_Text_081975DC, Naranja_SeafloorCavern_G24_M30_Text_081976F3)
-    loadword(0, Naranja_SeafloorCavern_G24_M30_Text_08197704)
-    callstd(6)
+    msgbox(Naranja_SeafloorCavern_G24_M30_Text_08197704, MSGBOX_AUTOCLOSE)
     end
 }
 

@@ -5,8 +5,7 @@ mapscripts Naranja_IslaTrovita_G11_M14_MapScripts {
 }
 
 script Naranja_IslaTrovita_G11_M14_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
-    loadword(0, Naranja_IslaTrovita_G11_M14_Text_08185421)
-    callstd(2)
+    msgbox(Naranja_IslaTrovita_G11_M14_Text_08185421, MSGBOX_NPC)
     end
 }
 
@@ -15,8 +14,7 @@ script Naranja_IslaTrovita_G11_M14_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalI
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_00D5)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M14_EventScript_Sub_08157DCF)
-    loadword(0, Naranja_IslaTrovita_G11_M14_Text_08185461)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M14_Text_08185461, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xC)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -28,8 +26,7 @@ script Naranja_IslaTrovita_G11_M14_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalI
 }
 
 script Naranja_IslaTrovita_G11_M14_EventScript_Sub_08157DCF {
-    loadword(0, Naranja_IslaTrovita_G11_M14_Text_081854C4)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M14_Text_081854C4, MSGBOX_DEFAULT)
     release
     end
 }

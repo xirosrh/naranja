@@ -22,52 +22,46 @@ Naranja_BandonedShip_G24_M63_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId1::
 # 16 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB2D
 # 17 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M63_Text_08198C85
+	msgbox Naranja_BandonedShip_G24_M63_Text_08198C85, MSGBOX_DEFAULT
 # 18 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
-	callstd 4
-# 19 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	release
 	end
 
 
 Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB23::
+# 23 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+	msgbox Naranja_BandonedShip_G24_M63_Text_08198D00, MSGBOX_DEFAULT
 # 24 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M63_Text_08198D00
-# 25 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
-	callstd 4
-# 26 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	release
 	end
 
 
 Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB2D::
-# 31 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M63_Text_08198D7B
-# 32 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
-	callstd 4
-# 33 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 29 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+	msgbox Naranja_BandonedShip_G24_M63_Text_08198D7B, MSGBOX_DEFAULT
+# 30 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	release
 	end
 
 
 Naranja_BandonedShip_G24_M63_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2::
-# 38 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 35 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x11D
-# 39 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 36 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 40 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 37 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_BandonedShip_G24_M63_Text_08198C85::
-# 44 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 41 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	.string "I’m investigating this ship on behalf\nof CAPT. STERN.\pHe also asked me to find a SCANNER,\nbut I haven’t had any success...$"
 
 Naranja_BandonedShip_G24_M63_Text_08198D00::
-# 48 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 45 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	.string "Oh! That’s a SCANNER!\pListen, can I get you to deliver that\nto CAPT. STERN?\pI want to investigate this ship a\nlittle more.$"
 
 Naranja_BandonedShip_G24_M63_Text_08198D7B::
-# 52 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
+# 49 "data/maps/Naranja_BandonedShip_G24_M63/scripts.pory"
 	.string "This ship is called S.S. CACTUS.\nIt seems to be from an earlier era.$"

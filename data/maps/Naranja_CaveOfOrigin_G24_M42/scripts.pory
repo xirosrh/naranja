@@ -29,8 +29,7 @@ script Naranja_CaveOfOrigin_G24_M42_EventScript_Trigger_1 {
     lockall
     applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4)
-    callstd(4)
+    msgbox(Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4, MSGBOX_DEFAULT)
     closemessage
     setweather(0)
     doweather
@@ -78,8 +77,7 @@ script Naranja_CaveOfOrigin_G24_M42_EventScript_Trigger_1 {
 }
 
 script Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DE73 {
-    loadword(0, Naranja_CaveOfOrigin_G24_M42_Text_081B5009)
-    callstd(4)
+    msgbox(Naranja_CaveOfOrigin_G24_M42_Text_081B5009, MSGBOX_DEFAULT)
     closemessage
     return
 }

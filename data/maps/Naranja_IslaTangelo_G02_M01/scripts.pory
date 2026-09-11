@@ -5,14 +5,12 @@ mapscripts Naranja_IslaTangelo_G02_M01_MapScripts {
 }
 
 script Naranja_IslaTangelo_G02_M01_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId1 {
-    loadword(0, Naranja_IslaTangelo_G02_M01_Text_08174838)
-    callstd(2)
+    msgbox(Naranja_IslaTangelo_G02_M01_Text_08174838, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaTangelo_G02_M01_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId2 {
-    loadword(0, Naranja_IslaTangelo_G02_M01_Text_0817487B)
-    callstd(2)
+    msgbox(Naranja_IslaTangelo_G02_M01_Text_0817487B, MSGBOX_NPC)
     end
 }
 

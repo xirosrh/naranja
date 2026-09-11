@@ -54,20 +54,18 @@ Naranja_ShoalCave_G24_M48_EventScript_Sign_1::
 
 Naranja_ShoalCave_G24_M48_EventScript_Sub_0815E3E9::
 # 41 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
-	loadword 0, Naranja_ShoalCave_G24_M47_Text_081C6979
+	msgbox Naranja_ShoalCave_G24_M47_Text_081C6979, MSGBOX_DEFAULT
 # 42 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
-	callstd 4
-# 43 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M48_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1::
-# 48 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
+# 47 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x10
-# 49 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
+# 48 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 50 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
+# 49 "data/maps/Naranja_ShoalCave_G24_M48/scripts.pory"
 	callstd 1
 	end
 

@@ -73,20 +73,17 @@ script Naranja_IslaKumquat_G13_M03_OnFrame_1 {
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M03_GENTLEMAN, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     applymovement(LOCALID_PLAYER, Naranja_IslaKumquat_G13_M03_Movement_081586D3)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08187C42)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08187C42, MSGBOX_SIGN)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M03_GENTLEMAN, Naranja_Norte_G00_M28_Movement_081586D5)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_Norte_G00_M28_Movement_081586D5)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08187C64)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08187C64, MSGBOX_SIGN)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M03_GENTLEMAN, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_IslaKumquat_G13_M03_Movement_081586D3)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08187E1D)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08187E1D, MSGBOX_SIGN)
     setvar(VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_2, 1)
     releaseall
     end
@@ -108,32 +105,27 @@ script Naranja_IslaKumquat_G13_M03_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId1 
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815872C)
     compare_var_to_value(VAR_0x8000, 5)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158735)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08187F4E)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08187F4E, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815872C {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08187F9D)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08187F9D, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158735 {
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M03_GENTLEMAN, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818802F)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818802F, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M03_GENTLEMAN, Naranja_Norte_G00_M28_Movement_081586D5)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188041)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188041, MSGBOX_DEFAULT)
     goto(Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815875C)
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815875C {
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M03_GENTLEMAN, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188120)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188120, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x2C)
     callstd(7)
     compare_var_to_value(VAR_RESULT, 0)
@@ -146,16 +138,14 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815875C {
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158783 {
     call(Naranja_Route110_G29_M00_EventScript_Sub_081A02B8)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188166)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188166, MSGBOX_DEFAULT)
     closemessage
     releaseall
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158793 {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188194)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188194, MSGBOX_NPC)
     releaseall
     end
 }
@@ -164,8 +154,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sign_1 {
     lockall
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A2)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815883C)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188219)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188219, MSGBOX_SIGN)
     end
 }
 
@@ -173,8 +162,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sign_3 {
     lockall
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A4)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158858)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818824C)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818824C, MSGBOX_SIGN)
     end
 }
 
@@ -182,8 +170,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sign_5 {
     lockall
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A0)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158820)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_081882B4)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_081882B4, MSGBOX_SIGN)
     end
 }
 
@@ -191,8 +178,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sign_7 {
     lockall
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A1)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815882E)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188281)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188281, MSGBOX_SIGN)
     end
 }
 
@@ -200,32 +186,27 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sign_9 {
     lockall
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A3)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815884A)
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_081882E6)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_081882E6, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId2 {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188336)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188336, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3 {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_081883AB)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_081883AB, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId4 {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_08188423)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_08188423, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158820 {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818831A)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818831A, MSGBOX_SIGN)
     fadescreen(1)
     showcontestpainting(9)
     releaseall
@@ -233,8 +214,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158820 {
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815882E {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818831A)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818831A, MSGBOX_SIGN)
     fadescreen(1)
     showcontestpainting(0xA)
     releaseall
@@ -242,8 +222,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815882E {
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815883C {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818831A)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818831A, MSGBOX_SIGN)
     fadescreen(1)
     showcontestpainting(0xB)
     releaseall
@@ -251,8 +230,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815883C {
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815884A {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818831A)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818831A, MSGBOX_SIGN)
     fadescreen(1)
     showcontestpainting(0xC)
     releaseall
@@ -260,8 +238,7 @@ script Naranja_IslaKumquat_G13_M03_EventScript_Sub_0815884A {
 }
 
 script Naranja_IslaKumquat_G13_M03_EventScript_Sub_08158858 {
-    loadword(0, Naranja_IslaKumquat_G13_M03_Text_0818831A)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M03_Text_0818831A, MSGBOX_SIGN)
     fadescreen(1)
     showcontestpainting(0xD)
     releaseall

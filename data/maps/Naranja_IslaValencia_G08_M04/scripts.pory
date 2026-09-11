@@ -21,22 +21,19 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_08155213 {
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId3 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_0817BD30)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_0817BD30, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_0817BD92)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_0817BD92, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId5 {
     lock
     faceplayer
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_086C00D5)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_086C00D5, MSGBOX_DEFAULT)
     specialvar(VAR_RESULT, IsStarterInParty)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaValencia_G08_M04_EventScript_Sub_0815524F)
@@ -56,20 +53,17 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_0815524F {
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_08155272 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_0817BE6C)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_0817BE6C, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_0815527B {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_0817BEF1)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_0817BEF1, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_08155284 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_0817BF73)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_0817BF73, MSGBOX_DEFAULT)
     return
 }
 
@@ -78,14 +72,12 @@ script Naranja_IslaValencia_G08_M04_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId2 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0805)
     goto_if(EQUAL, Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BDB)
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1C97)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1C97, MSGBOX_DEFAULT)
     goto(Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B2D)
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B2D {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1D10)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1D10, MSGBOX_DEFAULT)
     multichoice(0x11, 6, 0x14, 0)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -100,14 +92,12 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B2D {
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B6C {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1D3A)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1D3A, MSGBOX_DEFAULT)
     goto(Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B2D)
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B7A {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1F7B)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1F7B, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_0x8004, 0)
     call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
@@ -123,8 +113,7 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1B7A {
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BB1 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1FF0)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1FF0, MSGBOX_DEFAULT)
     release
     end
 }
@@ -134,28 +123,24 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BBB {
     special(ShowEasyChatProfile)
     waitmessage
     delay(0x50)
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B2137)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B2137, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BD1 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1FA3)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1FA3, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BDB {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B202F)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B202F, MSGBOX_DEFAULT)
     goto(Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BE9)
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BE9 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B2063)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B2063, MSGBOX_DEFAULT)
     multichoice(0x11, 6, 0x14, 0)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
@@ -170,14 +155,12 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BE9 {
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C28 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B1D3A)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B1D3A, MSGBOX_DEFAULT)
     goto(Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1BE9)
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C36 {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B207F)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B207F, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_0x8004, 0)
     call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
@@ -193,8 +176,7 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C36 {
 }
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C6D {
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B20CE)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B20CE, MSGBOX_DEFAULT)
     release
     end
 }
@@ -205,8 +187,7 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C77 {
     checkflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_084C)
     goto_if(EQUAL, Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C96)
     setflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_084C)
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_081B21CC)
-    callstd(3)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_081B21CC, MSGBOX_SIGN)
     release
     end
 }
@@ -217,8 +198,7 @@ script Naranja_IslaValencia_G08_M04_EventScript_Sub_081B1C96 {
 
 script Naranja_IslaValencia_G08_M04_EventScript_Sub_086B3506 {
     faceplayer
-    loadword(0, Naranja_IslaValencia_G08_M04_Text_0817C1EC)
-    callstd(6)
+    msgbox(Naranja_IslaValencia_G08_M04_Text_0817C1EC, MSGBOX_AUTOCLOSE)
     goto(Naranja_ValnTang_G07_M02_EventScript_Trigger_1)
 }
 

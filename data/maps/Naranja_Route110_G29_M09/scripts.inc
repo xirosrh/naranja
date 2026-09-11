@@ -419,74 +419,68 @@ Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId1::
 # 280 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_237, LOCALID_NONE, Naranja_Route110_G29_M09_Text_0819DF0B, Naranja_Route110_G29_M09_Text_0819DF4B
 # 281 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M09_Text_0819DF7E
-# 282 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route110_G29_M09_Text_0819DF7E, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId3::
-# 287 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 286 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_105, LOCALID_NONE, Naranja_Route110_G29_M09_Text_0819DFBB, Naranja_Route110_G29_M09_Text_0819DFF2
-# 288 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M09_Text_0819E00F
-# 289 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
-	callstd 6
+# 287 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+	msgbox Naranja_Route110_G29_M09_Text_0819E00F, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_LASS_LocalId2::
-# 294 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 292 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_248, LOCALID_NONE, Naranja_Route110_G29_M09_Text_0819E054, Naranja_Route110_G29_M09_Text_0819E098
-# 295 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M09_Text_0819E0B2
-# 296 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
-	callstd 6
+# 293 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+	msgbox Naranja_Route110_G29_M09_Text_0819E0B2, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4::
-# 301 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 298 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x81
-# 302 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 299 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 303 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 300 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M09_Text_0819DF0B::
-# 307 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 304 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "The TRICK MASTER always vanishes\nlike smoke. How does he do it?$"
 
 Naranja_Route110_G29_M09_Text_0819DF4B::
-# 311 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 308 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "Aiyeeeh! You’re much too strong!\nHow do you do it?$"
 
 Naranja_Route110_G29_M09_Text_0819DF7E::
-# 315 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 312 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "I wish I could appear and disappear as\nif I were smoke, too.$"
 
 Naranja_Route110_G29_M09_Text_0819DFBB::
-# 319 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 316 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "Going around the same spot...\nIt begets ill fortune...$"
 
 Naranja_Route110_G29_M09_Text_0819DFF2::
-# 323 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 320 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "Defeated!\nIt’s a bad sign...$"
 
 Naranja_Route110_G29_M09_Text_0819E00F::
-# 327 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 324 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "I’ve circled the same spot over ten\ntimes now... It’s ill fortune...$"
 
 Naranja_Route110_G29_M09_Text_0819E054::
-# 331 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 328 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "Whoever wins will get through here\nfirst. That’s the feeling I get.$"
 
 Naranja_Route110_G29_M09_Text_0819E098::
-# 335 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 332 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "Oh!\nWell, go ahead, then!$"
 
 Naranja_Route110_G29_M09_Text_0819E0B2::
-# 339 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
+# 336 "data/maps/Naranja_Route110_G29_M09/scripts.pory"
 	.string "You’re solving all the puzzles in the\nTRICK HOUSE. That’s the feeling I get.$"

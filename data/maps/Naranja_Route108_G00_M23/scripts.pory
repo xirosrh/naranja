@@ -11,22 +11,19 @@ script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId2 {
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE108_157, LOCALID_NONE, Naranja_Route108_G00_M23_Text_081B9864, Naranja_Route108_G00_M23_Text_081B989F)
-    loadword(0, Naranja_Route108_G00_M23_Text_081B98BC)
-    callstd(6)
+    msgbox(Naranja_Route108_G00_M23_Text_081B98BC, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE108_447, LOCALID_NONE, Naranja_Route108_G00_M23_Text_081B9986, Naranja_Route108_G00_M23_Text_081B99BB)
-    loadword(0, Naranja_Route108_G00_M23_Text_081B99E9)
-    callstd(6)
+    msgbox(Naranja_Route108_G00_M23_Text_081B99E9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE108_214, LOCALID_NONE, Naranja_Route108_G00_M23_Text_081BC1C8, Naranja_Route108_G00_M23_Text_081BC23F)
-    loadword(0, Naranja_Route108_G00_M23_Text_081BC24F)
-    callstd(6)
+    msgbox(Naranja_Route108_G00_M23_Text_081BC24F, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -47,8 +44,7 @@ script Naranja_Route108_G00_M23_EventScript_AfterBattle_086B8820 {
     applymovement(9, Naranja_Route108_G00_M23_Movement_086B88D5)
     applymovement(5, Naranja_Route108_G00_M23_Movement_086B88D5)
     applymovement(LOCALID_PLAYER, Naranja_Route108_G00_M23_Movement_086B88EB)
-    loadword(0, Naranja_Route108_G00_M23_Text_081B97C3)
-    callstd(4)
+    msgbox(Naranja_Route108_G00_M23_Text_081B97C3, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_CaveOfOrigin_G24_M38_EventScript_Sub_081A04D3)
     delay(0x40)

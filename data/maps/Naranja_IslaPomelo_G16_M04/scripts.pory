@@ -34,8 +34,7 @@ script Naranja_IslaPomelo_G16_M04_OnFrame_1 {
 
 script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B805 {
     playbgm(MUS_ENCOUNTER_CHAMPION, 0)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08190F9C)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08190F9C, MSGBOX_DEFAULT)
     trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_335, LOCALID_NONE, Naranja_IslaPomelo_G16_M04_Text_081910A0)
     goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B821)
 }
@@ -45,8 +44,7 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B821 {
     setmetatile(6, 1, 0x346, 0)
     setmetatile(6, 2, 0x347, 0)
     special(DrawWholeMapView)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081910FE)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_081910FE, MSGBOX_DEFAULT)
     closemessage
     playse(SE_DOOR)
     checkplayergender
@@ -75,8 +73,7 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B881 {
 }
 
 script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B886 {
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191225)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08191225, MSGBOX_DEFAULT)
     delay(0x28)
     playse(SE_PIN)
     applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0833)
@@ -84,14 +81,12 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B886 {
     applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
     call(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9D2)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191268)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08191268, MSGBOX_DEFAULT)
     goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0)
 }
 
 script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8BB {
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081912B3)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_081912B3, MSGBOX_DEFAULT)
     delay(0x28)
     playse(SE_PIN)
     applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0833)
@@ -99,8 +94,7 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8BB {
     applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
     call(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9D2)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191305)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08191305, MSGBOX_DEFAULT)
     goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0)
 }
 
@@ -111,18 +105,15 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_0819134D)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_0819134D, MSGBOX_DEFAULT)
     call(Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081914C6)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_081914C6, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
     delay(0x14)
     applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191512)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08191512, MSGBOX_DEFAULT)
     closemessage
     delay(0x1E)
     applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_IslaPomelo_G16_M04_Movement_0815B9FB)
@@ -133,8 +124,7 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0 {
     delay(0x14)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191546)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08191546, MSGBOX_DEFAULT)
     checkplayergender
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9AB)
@@ -152,14 +142,12 @@ script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0 {
 }
 
 script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9AB {
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081915D7)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_081915D7, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9B4 {
-    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191675)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M04_Text_08191675, MSGBOX_DEFAULT)
     return
 }
 

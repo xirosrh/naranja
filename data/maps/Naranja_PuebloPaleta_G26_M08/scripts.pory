@@ -20,8 +20,7 @@ script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081608FA {
     applymovement(LOCALID_PUEBLO_PALETA_G26_M08_VARS, Naranja_PuebloPaleta_G26_M08_Movement_08160AC0)
     waitmovement(LOCALID_NONE)
     special(CallBattlePalaceFunction)
-    loadword(0, 0x20234CC)
-    callstd(4)
+    msgbox(0x20234CC, MSGBOX_DEFAULT)
     waitmessage
     closemessage
     special(HealPlayerParty)
@@ -58,8 +57,7 @@ script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_08160961 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_PuebloPaleta_G26_M08_Movement_08160ABC)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_PuebloPaleta_G26_M08_Text_0819ACDC)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M08_Text_0819ACDC, MSGBOX_DEFAULT)
     special(LoadPlayerParty)
     special(SavePlayerParty)
     special(CallBattlePikeFunction)
@@ -70,8 +68,7 @@ script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_08160961 {
 }
 
 script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081609B2 {
-    loadword(0, Naranja_PuebloPaleta_G26_M08_Text_0819AD09)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G26_M08_Text_0819AD09, MSGBOX_YESNO)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081609E0)
@@ -83,8 +80,7 @@ script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081609B2 {
 }
 
 script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081609E0 {
-    loadword(0, Naranja_PuebloPaleta_G26_M08_Text_0819AD3C)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G26_M08_Text_0819AD3C, MSGBOX_YESNO)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M08_EventScript_Sub_08160A0E)
@@ -96,8 +92,7 @@ script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081609E0 {
 }
 
 script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_08160A0E {
-    loadword(0, Naranja_PuebloPaleta_G26_M08_Text_0819AD66)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G26_M08_Text_0819AD66, MSGBOX_YESNO)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M08_EventScript_Sub_081609B2)
@@ -144,8 +139,7 @@ script Naranja_PuebloPaleta_G26_M08_EventScript_Sub_08160A94 {
     waitmessage
     playse(SE_SAVE)
     waitse
-    loadword(0, Naranja_PuebloPaleta_G26_M08_Text_081C6D05)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M08_Text_081C6D05, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M08_EventScript_Sub_08160AB1)
 }
 

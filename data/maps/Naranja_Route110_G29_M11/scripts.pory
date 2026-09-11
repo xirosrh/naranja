@@ -7,8 +7,7 @@ mapscripts Naranja_Route110_G29_M11_MapScripts {
 script Naranja_Route110_G29_M11_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_Route110_G29_M11_Text_0819E326)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M11_Text_0819E326, MSGBOX_DEFAULT)
     release
     end
 }

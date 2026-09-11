@@ -21,14 +21,12 @@ script Naranja_IslaMurcott_G09_M10_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
 }
 
 script Naranja_IslaMurcott_G09_M10_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2 {
-    loadword(0, Naranja_IslaMurcott_G09_M10_Text_08180602)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M10_Text_08180602, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMurcott_G09_M10_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId3 {
-    loadword(0, Naranja_IslaMurcott_G09_M10_Text_081806CB)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M10_Text_081806CB, MSGBOX_NPC)
     end
 }
 

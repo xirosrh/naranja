@@ -65,244 +65,224 @@ Naranja_IslaMellsweet_G14_M07_OnFrame_1::
 # 45 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	waitmovement LOCALID_NONE
 # 46 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DA77
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DA77, MSGBOX_DEFAULT
 # 47 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 4
-# 48 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x15A
-# 49 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 48 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 50 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 49 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	callstd 0
-# 51 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 50 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_007B
-# 52 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 51 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_012E
+# 52 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DB22, MSGBOX_DEFAULT
 # 53 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DB22
-# 54 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 4
-# 55 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	closemessage
-# 56 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 54 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	delay 0x14
-# 57 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 55 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	applymovement LOCALID_ISLA_MELLSWEET_G14_M07_STEVEN, Naranja_IslaMellsweet_G14_M07_Movement_0815AA76
-# 58 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 56 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	waitmovement LOCALID_NONE
-# 59 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 57 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MELLSWEET_EVENT_STATE_2, 1
-# 60 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 58 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2::
-# 65 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 63 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	lockall
-# 66 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DD12
-# 67 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 5
-# 68 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 64 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DD12, MSGBOX_YESNO
+# 65 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 69 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 66 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AAE6
-# 70 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 67 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	getpartysize
-# 71 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 68 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	compare_var_to_value VAR_RESULT, 6
-# 72 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 69 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AADC
-# 73 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 70 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	copyvar VAR_0x8004, VAR_RESULT
-# 74 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 71 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	removeobject LOCALID_ISLA_MELLSWEET_G14_M07_ITEM_BALL
-# 75 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 72 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
-# 76 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 73 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	message Naranja_IslaMellsweet_G14_M07_Text_0818DD61
-# 77 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 74 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	waitfanfare
-# 78 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 75 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	waitmessage
-# 79 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 76 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	givemon SPECIES_BELDUM, 5, 0
-# 80 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 77 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	bufferspeciesname 1, SPECIES_BELDUM
-# 81 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_081A1102
-# 82 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 5
-# 83 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 78 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_081A1102, MSGBOX_YESNO
+# 79 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 84 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 80 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	call_if EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_081A0678
-# 85 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 81 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setflag FLAG_HIDE_ISLA_MELLSWEET_G14_M07_ITEM_BALL
-# 86 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 82 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_012A
-# 87 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 83 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AADC::
-# 92 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DD77
-# 93 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 4
-# 94 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 88 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DD77, MSGBOX_DEFAULT
+# 89 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AAE6::
-# 99 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DD9E
-# 100 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 4
-# 101 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 94 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DD9E, MSGBOX_DEFAULT
+# 95 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_Sign_1::
-# 106 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818E0A3
-# 107 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 3
+# 100 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818E0A3, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId1::
-# 112 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DC25
-# 113 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 2
+# 105 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DC25, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId4::
-# 118 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 110 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	lockall
-# 119 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 111 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_012E
-# 120 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 112 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AB16
-# 121 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DF1A
-# 122 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 4
-# 123 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 113 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DF1A, MSGBOX_DEFAULT
+# 114 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AB16::
-# 128 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	loadword 0, Naranja_IslaMellsweet_G14_M07_Text_0818DDC2
-# 129 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
-	callstd 4
-# 130 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 119 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DDC2, MSGBOX_DEFAULT
+# 120 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3::
-# 135 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 125 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x15A
-# 136 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 126 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 137 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 127 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	callstd 1
-# 138 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 128 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_007B
 	end
 
 
 Naranja_IslaMellsweet_G14_M07_EventScript_Sub_081A0678::
-# 143 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 133 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	fadescreen 1
-# 144 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 134 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	special ChangePokemonNickname
-# 145 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 135 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	waitstate
 	return
 
 
-# 149 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 139 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 Naranja_IslaMellsweet_G14_M07_Movement_0815AA6E:
-# 150 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 140 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_left
-# 151 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 141 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_left
-# 152 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 142 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_left
-# 153 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 143 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_left
-# 154 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 144 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_left
-# 155 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 145 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_left
-# 156 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 146 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 159 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 149 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 Naranja_IslaMellsweet_G14_M07_Movement_0815AA76:
-# 160 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 150 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_up
-# 161 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 151 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_right
-# 162 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 152 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_right
-# 163 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 153 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_right
-# 164 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 154 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DA77::
-# 167 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 157 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "STEVEN: {PLAYER}{KUN}?\pYes, this is my place. It’s a little\nembarrassing how empty it is here.\pOh, here, you should take this HM.\pIt contains DIVE.\nI’ve already taught my POKéMON.$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DB22::
-# 171 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 161 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "STEVEN: While you’re using SURF, you\nshould notice dark patches of water.\pUse DIVE if you come to deep water\nlike it. You’ll drop to the seafloor.\pWhen you want to come back up, use\nDIVE again.\pIn some places, it won’t be possible\nfor you to surface, though.$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DC25::
-# 175 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 165 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "STEVEN: Apparently, there’s an\nunderwater cavern between\lMOSSDEEP and SOOTOPOLIS.\pYou know, the one that CAPT. STERN\nfound in his submarine.\pAn underwater cavern...\pThere might be some rare stones down\nthere... I should go for a DIVE...$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DD12::
-# 179 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 169 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "{PLAYER} checked the POKé BALL.\pIt contained the POKéMON\nBELDUM.\pTake the POKé BALL?$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DD61::
-# 183 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 173 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "{PLAYER} obtained a BELDUM.$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DD77::
-# 187 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 177 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "There is no space for another POKéMON.$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DD9E::
-# 191 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 181 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "{PLAYER} left the POKé BALL where\nit was.$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DDC2::
-# 195 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 185 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "It’s a letter.\p... ... ... ... ... ...\pTo {PLAYER}{KUN}...\pI’ve decided to do a little soul-\nsearching and train on the road.\pI don’t plan to return home for some\ntime.\pI have a favor to ask of you.\pI want you to take the POKé BALL on\nthe desk.\pInside it is a BELDUM, my favorite\nPOKéMON.\pI’m counting on you.\pMay our paths cross some day.\pSTEVEN STONE$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818DF1A::
-# 199 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 189 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "It’s a letter.\p... ... ... ... ... ...\pTo {PLAYER}{KUN}...\pI’ve decided to do a little soul-\nsearching and train on the road.\pI don’t plan to return home for some\ntime.\pI have a favor to ask of you.\pI want you to take the POKé BALL on\nthe desk.\pInside it is a BELDUM, my favorite\nPOKéMON.\pI’m counting on you.\pIf you’d like, you should also take\nthe HM DIVE.\pMay our paths cross some day.\pSTEVEN STONE$"
 
 Naranja_IslaMellsweet_G14_M07_Text_0818E0A3::
-# 203 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 193 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "It’s a collection of rare rocks and\nstones assembled by STEVEN.$"
 
 Naranja_IslaMellsweet_G14_M07_Text_081A1102::
-# 207 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
+# 197 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	.string "Want to give a nickname to the\n{STR_VAR_2} you received?$"

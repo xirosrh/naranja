@@ -101,210 +101,200 @@ Naranja_PuertoDeTangelo_G01_M02_OnFrame_2::
 # 71 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	lockall
 # 72 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G01_M00_Text_08172574
+	msgbox Naranja_PuebloPaleta_G01_M00_Text_08172574, MSGBOX_DEFAULT
 # 73 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	callstd 4
-# 74 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	closemessage
-# 75 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 74 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_PuertoDeTangelo_G01_M02_Movement_0815295E
-# 76 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 75 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PUERTO_DE_TANGELO_G01_M02_MOM, Naranja_PuertoDeTangelo_G01_M02_Movement_0815295E
-# 77 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 76 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 78 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 77 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	warp MAP_NARANJA_PUERTO_DE_TANGELO_G01_M03, 0xFF, 1, 1
-# 79 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 78 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitstate
-# 80 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 79 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_PuertoDeTangelo_G01_M02_OnFrame_1::
-# 85 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 84 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	lockall
-# 86 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 85 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_0x8004, 1
-# 87 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 86 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_0x8005, 1
-# 88 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 87 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	goto Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6956
 	return
 
 
 Naranja_PuertoDeTangelo_G01_M02_OnFrame_3::
-# 92 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 91 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	lockall
-# 93 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 92 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_0x8004, 1
-# 94 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 93 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_0x8005, 1
-# 95 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 94 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	goto Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081B6B2E
 	return
 
 
 Naranja_PuertoDeTangelo_G01_M02_OnFrame_4::
-# 99 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 98 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	lockall
-# 100 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 99 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	playse SE_PIN
-# 101 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 100 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PUERTO_DE_TANGELO_G01_M02_WOMAN_5, Naranja_GraniteCave_G24_M00_Movement_081A0833
+# 101 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	waitmovement LOCALID_NONE
 # 102 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	waitmovement LOCALID_NONE
-# 103 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PUERTO_DE_TANGELO_G01_M02_WOMAN_5, Naranja_GraniteCave_G24_M00_Movement_081A0835
+# 103 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	waitmovement LOCALID_NONE
 # 104 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	waitmovement LOCALID_NONE
-# 105 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843
-# 106 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 105 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PUERTO_DE_TANGELO_G01_M02_WOMAN_5, Naranja_PuertoDeTangelo_G01_M02_Movement_081529C0
-# 107 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 106 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 108 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 107 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	special GetRivalSonDaughterString
+# 108 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	msgbox Naranja_PuebloPaleta_G01_M00_Text_081730C2, MSGBOX_DEFAULT
 # 109 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G01_M00_Text_081730C2
-# 110 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	callstd 4
-# 111 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0057
-# 112 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 110 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 2
-# 113 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 111 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_PuertoDeTangelo_G01_M02_EventScript_Trigger_1::
-# 118 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 116 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	lockall
-# 119 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 117 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_0x8004, 1
-# 120 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 118 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_0x8005, 1
-# 121 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 119 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement 32772, Naranja_CaminoFrio_G20_M01_Movement_081A0843
-# 122 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 120 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 123 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 121 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	goto Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B69B7
 	return
 
 
 Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081B6B2E::
-# 127 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 125 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement 32773, Naranja_GraniteCave_G24_M00_Movement_081A083F
-# 128 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 126 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 129 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 127 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	call Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6B9D
-# 130 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 128 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6CD4
-# 131 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 129 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 132 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 130 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	playbgm MUS_ENCOUNTER_INTERVIEWER, 0
-# 133 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G01_M00_Text_081725C9
-# 134 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	callstd 4
-# 135 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 131 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	msgbox Naranja_PuebloPaleta_G01_M00_Text_081725C9, MSGBOX_DEFAULT
+# 132 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	closemessage
-# 136 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 133 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement 32773, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BDE
-# 137 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 134 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 138 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 135 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6CDA
+# 136 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	waitmovement LOCALID_NONE
+# 137 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	call Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6BBE
+# 138 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	applymovement LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843
 # 139 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
 # 140 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	call Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6BBE
+	msgbox Naranja_PuebloPaleta_G01_M00_Text_081725FE, MSGBOX_DEFAULT
 # 141 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	applymovement LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843
+	msgbox Naranja_PuebloPaleta_G01_M00_Text_08172644, MSGBOX_DEFAULT
 # 142 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	waitmovement LOCALID_NONE
-# 143 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G01_M00_Text_081725FE
-# 144 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	callstd 4
-# 145 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G01_M00_Text_08172644
-# 146 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	callstd 4
-# 147 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	closemessage
-# 148 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 143 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 149 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 144 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	applymovement 32773, Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BE5
-# 150 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 145 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 151 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 146 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	goto Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6AB8
 	return
 
 
-# 154 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 149 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 Naranja_PuertoDeTangelo_G01_M02_Movement_0815295E:
-# 155 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 150 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_up
 	step_end
 
-# 158 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 153 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 Naranja_PuertoDeTangelo_G01_M02_Movement_081529C0:
-# 159 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 154 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_down
-# 160 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 155 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_left
-# 161 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 156 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_left
+# 157 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	walk_left
+# 158 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	walk_left
+# 159 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	walk_left
+	step_end
+
 # 162 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_left
+Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BDE:
 # 163 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_left
+	walk_right
 # 164 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_left
+	walk_in_place_faster_left
 	step_end
 
 # 167 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BDE:
+Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BE5:
 # 168 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_right
 # 169 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	walk_down
+# 170 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 172 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-Naranja_PuertoDeTangelo_G01_M02_Movement_081B6BE5:
 # 173 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_right
+Naranja_PuertoDeTangelo_G01_M02_Movement_081B6CD4:
 # 174 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_down
 # 175 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_in_place_faster_left
-	step_end
-
+	walk_down
+# 176 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	walk_right
+# 177 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+	walk_right
 # 178 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-Naranja_PuertoDeTangelo_G01_M02_Movement_081B6CD4:
-# 179 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_down
-# 180 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_down
-# 181 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_right
-# 182 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
-	walk_right
-# 183 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_right
 	step_end
 
-# 186 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 181 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 Naranja_PuertoDeTangelo_G01_M02_Movement_081B6CDA:
-# 187 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
+# 182 "data/maps/Naranja_PuertoDeTangelo_G01_M02/scripts.pory"
 	walk_right
 	step_end

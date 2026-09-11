@@ -8,8 +8,7 @@ script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId2 {
     lock
     faceplayer
     setvar(VAR_0x8008, 2)
-    loadword(0, Naranja_Route111_G18_M00_Text_08191FCE)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M00_Text_08191FCE, MSGBOX_DEFAULT)
     goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
 }
 
@@ -19,8 +18,7 @@ script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3 {
     setvar(VAR_0x8008, 3)
     checkflag(FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_0115)
     goto_if(EQUAL, Naranja_Route111_G18_M00_EventScript_Sub_0815BF72)
-    loadword(0, Naranja_Route111_G18_M00_Text_0819208A)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M00_Text_0819208A, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xB5)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -31,8 +29,7 @@ script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3 {
 }
 
 script Naranja_Route111_G18_M00_EventScript_Sub_0815BF72 {
-    loadword(0, Naranja_Route111_G18_M00_Text_0819214D)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M00_Text_0819214D, MSGBOX_DEFAULT)
     goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
 }
 
@@ -40,8 +37,7 @@ script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
     lock
     faceplayer
     setvar(VAR_0x8008, 1)
-    loadword(0, Naranja_Route111_G18_M00_Text_08192190)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M00_Text_08192190, MSGBOX_DEFAULT)
     goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
 }
 
@@ -51,15 +47,13 @@ script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId4 {
     setvar(VAR_0x8008, 4)
     checkflag(FLAG_TEMP_4)
     goto_if(EQUAL, Naranja_Route111_G18_M00_EventScript_Sub_0815BFB6)
-    loadword(0, Naranja_Route111_G18_M00_Text_08192219)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M00_Text_08192219, MSGBOX_DEFAULT)
     setflag(FLAG_TEMP_4)
     goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
 }
 
 script Naranja_Route111_G18_M00_EventScript_Sub_0815BFB6 {
-    loadword(0, Naranja_Route111_G18_M00_Text_08192334)
-    callstd(4)
+    msgbox(Naranja_Route111_G18_M00_Text_08192334, MSGBOX_DEFAULT)
     goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
 }
 

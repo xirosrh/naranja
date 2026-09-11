@@ -586,546 +586,536 @@ Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40CC::
 # 352 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	faceplayer
 # 353 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	loadword 0, Naranja_7islasPomelo_G03_M02_Text_081A457E
+	msgbox Naranja_7islasPomelo_G03_M02_Text_081A457E, MSGBOX_YESNO
 # 354 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	callstd 5
-# 355 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 356 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 355 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 357 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 356 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 358 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 357 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40FA
-# 359 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 358 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40FA
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40FA::
-# 363 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 362 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	call Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41BB
+# 363 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	compare_var_to_value VAR_RESULT, 0
 # 364 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	compare_var_to_value VAR_RESULT, 0
+	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
 # 365 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 366 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 367 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 366 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
+# 367 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
 # 368 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 369 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A490C
-# 370 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 369 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 371 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 370 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special TryRecordMixLinkup
-# 372 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 371 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitstate
-# 373 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 372 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 374 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 373 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4166
-# 375 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 374 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 2
-# 376 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 375 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301
-# 377 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 376 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 3
-# 378 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 377 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D
-# 379 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 378 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 4
-# 380 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 379 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D
-# 381 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 380 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 5
-# 382 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 381 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 383 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 382 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 6
-# 384 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 383 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5
-# 385 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 384 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4166
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4166::
-# 389 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 388 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setvar VAR_0x8004, 3
-# 390 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 389 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	copyvar VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, VAR_0x8004
-# 391 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 390 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	messageautoscroll Naranja_7islasPomelo_G03_M02_Text_081A4A22
-# 392 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 391 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 393 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 392 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setmetatile 8, 3, 0x202, 0
-# 394 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 393 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special DrawWholeMapView
-# 395 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 394 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	delay 0x3C
-# 396 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 395 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	applymovement 32783, Naranja_7islasPomelo_G03_M02_Movement_081A4356
+# 396 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	waitmovement LOCALID_NONE
 # 397 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	waitmovement LOCALID_NONE
-# 398 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	closemessage
-# 399 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 398 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435B
+# 399 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	waitmovement LOCALID_NONE
 # 400 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	waitmovement LOCALID_NONE
-# 401 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	opendoor 8, 1
+# 401 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	waitdooranim
 # 402 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	waitdooranim
-# 403 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435F
-# 404 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 403 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 405 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 404 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	hideobjectat LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00
-# 406 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 405 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	closedoor 8, 1
-# 407 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 406 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitdooranim
-# 408 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 407 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
-# 409 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 408 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4325
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41BB::
-# 413 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 412 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	specialvar VAR_RESULT, CalculatePlayerPartyCount
-# 414 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 413 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 2
-# 415 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 414 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41E1
-# 416 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 415 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	specialvar VAR_RESULT, DoesPartyHaveEnigmaBerry
-# 417 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 416 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 418 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 417 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41EE
-# 419 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 418 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setvar VAR_RESULT, 1
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41E1::
-# 424 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 423 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A48A3
-# 425 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 424 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 426 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 425 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 427 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 426 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setvar VAR_RESULT, 0
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41EE::
-# 432 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 431 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A48DD
-# 433 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 432 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 434 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 433 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 435 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 434 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setvar VAR_RESULT, 0
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41FB::
-# 440 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 439 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0818
-# 441 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 440 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A434B
-# 442 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 441 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	copyvar VAR_0x8007, VAR_LAST_TALKED
-# 443 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 442 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	lock
-# 444 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 443 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	faceplayer
+# 444 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	msgbox Naranja_7islasPomelo_G03_M02_Text_081A45FE, MSGBOX_YESNO
 # 445 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	loadword 0, Naranja_7islasPomelo_G03_M02_Text_081A45FE
-# 446 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	callstd 5
-# 447 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 448 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 446 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 449 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 447 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 450 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 448 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4229
-# 451 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 449 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4229
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4229::
-# 455 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 453 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	call Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806
-# 456 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 454 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 457 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 455 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 458 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 456 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A490C
-# 459 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 457 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 460 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 458 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special ValidateMixingGameLanguage
+# 459 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	waitstate
+# 460 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	special SetChampionSaveWarp
 # 461 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitstate
 # 462 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	special SetChampionSaveWarp
-# 463 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	waitstate
-# 464 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 465 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 463 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4294
-# 466 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 464 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 2
-# 467 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 465 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301
-# 468 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 466 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 3
-# 469 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 467 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D
-# 470 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 468 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 4
-# 471 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 469 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D
-# 472 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 470 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 5
-# 473 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 471 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319
-# 474 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 472 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 6
-# 475 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 473 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5
-# 476 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 474 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	compare_var_to_value VAR_RESULT, 7
-# 477 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 475 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42E9
-# 478 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 476 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4294
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4294::
-# 482 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 480 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setvar VAR_0x8004, 4
-# 483 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 481 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	copyvar VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, VAR_0x8004
-# 484 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 482 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	messageautoscroll Naranja_7islasPomelo_G03_M02_Text_081A4A22
-# 485 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 483 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 486 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 484 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	setmetatile 0xB, 3, 0x202, 0
-# 487 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 485 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special DrawWholeMapView
-# 488 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 486 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	delay 0x3C
-# 489 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 487 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	applymovement 32783, Naranja_7islasPomelo_G03_M02_Movement_081A4356
-# 490 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 488 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 491 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 489 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	closemessage
-# 492 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 490 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435B
-# 493 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 491 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 494 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 492 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	opendoor 0xB, 1
-# 495 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 493 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitdooranim
-# 496 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 494 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435F
-# 497 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 495 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmovement LOCALID_NONE
-# 498 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 496 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	hideobjectat LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00
-# 499 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 497 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	closedoor 0xB, 1
-# 500 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 498 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitdooranim
-# 501 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 499 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
-# 502 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 500 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4325
 	return
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42E9::
-# 506 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 504 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special CloseLink
-# 507 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 505 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A4AC8
-# 508 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 506 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 509 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 507 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 510 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 508 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5::
-# 515 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 513 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special CloseLink
-# 516 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 514 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A4A85
-# 517 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 515 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 518 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 516 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 519 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 517 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301::
-# 524 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 522 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special CloseLink
-# 525 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 523 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A4A30
-# 526 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 524 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 527 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 525 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 528 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 526 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D::
-# 533 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 531 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special CloseLink
-# 534 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 532 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A4B1D
-# 535 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 533 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 536 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 534 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 537 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 535 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319::
-# 542 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 540 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special CloseLink
-# 543 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 541 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A4B59
-# 544 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 542 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 545 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 543 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 546 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 544 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4325::
-# 551 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 549 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special SetCableClubWarp
-# 552 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 550 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special DoCableClubWarp
-# 553 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 551 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitstate
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D::
-# 558 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 556 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	special CloseLink
-# 559 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 557 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	message Naranja_7islasPomelo_G03_M02_Text_081A4B6C
-# 560 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 558 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitmessage
-# 561 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 559 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	waitbuttonpress
-# 562 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 560 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	release
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4339::
-# 567 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	loadword 0, Naranja_7islasPomelo_G03_M02_Text_081A141C
-# 568 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	callstd 2
+# 565 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	msgbox Naranja_7islasPomelo_G03_M02_Text_081A141C, MSGBOX_NPC
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4342::
-# 573 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	loadword 0, Naranja_7islasPomelo_G03_M02_Text_081A13DF
-# 574 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	callstd 2
+# 570 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	msgbox Naranja_7islasPomelo_G03_M02_Text_081A13DF, MSGBOX_NPC
 	end
 
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A434B::
-# 579 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	loadword 0, Naranja_7islasPomelo_G03_M02_Text_081A145C
-# 580 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	callstd 2
+# 575 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	msgbox Naranja_7islasPomelo_G03_M02_Text_081A145C, MSGBOX_NPC
 	end
 
 
-# 584 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 579 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 Naranja_7islasPomelo_G03_M02_Movement_081A4354:
-# 585 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 580 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	face_down
 	step_end
 
-# 588 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 583 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 Naranja_7islasPomelo_G03_M02_Movement_081A4356:
-# 589 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 584 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	face_right
 	step_end
 
-# 592 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 587 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 Naranja_7islasPomelo_G03_M02_Movement_081A4358:
-# 593 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 588 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	walk_down
-# 594 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 589 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	walk_down
 	step_end
 
-# 597 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 592 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 Naranja_7islasPomelo_G03_M02_Movement_081A435B:
-# 598 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 593 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	walk_right
+# 594 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	walk_up
+# 595 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+	walk_up
+	step_end
+
+# 598 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+Naranja_7islasPomelo_G03_M02_Movement_081A435F:
 # 599 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	walk_up
-# 600 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	walk_up
 	step_end
 
-# 603 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-Naranja_7islasPomelo_G03_M02_Movement_081A435F:
-# 604 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	walk_up
-	step_end
-
-# 607 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 602 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 Naranja_7islasPomelo_G03_M02_Movement_081A4361:
-# 608 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 603 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	face_left
 	step_end
 
 Naranja_7islasPomelo_G03_M02_Text_081A13DF::
-# 611 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 606 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "I’m terribly sorry. The COLOSSEUM\nis undergoing adjustments.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A141C::
-# 615 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 610 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "I’m terribly sorry. The TRADE CENTER\nis undergoing inspections.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A145C::
-# 619 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 614 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "I’m terribly sorry. The RECORD CORNER\nis under preparation.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4510::
-# 623 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 618 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Welcome to the POKéMON CABLE CLUB\nCOLOSSEUM.\pYou may battle with your friends here.\pWould you like to battle?$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A457E::
-# 627 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 622 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Welcome to the POKéMON CABLE CLUB\nTRADE CENTER.\pYou may trade your POKéMON here\nwith a friend.\pWould you like to trade POKéMON?$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A45FE::
-# 631 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 626 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Welcome to the POKéMON CABLE CLUB\nRECORD CENTER.\pYou may mix your records as a TRAINER\nwith the records of your friends.\pWould you like to mix records?$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4696::
-# 635 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 630 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "There are three link battle modes.\pSINGLE BATTLE is for two TRAINERS\nwith one or more POKéMON each.\pEach TRAINER can have one POKéMON\nin battle at a time.\pDOUBLE BATTLE is for two TRAINERS\nwith two or more POKéMON each.\pEach TRAINER will send out two\nPOKéMON in battle at a time.\pMULTI BATTLE is for four TRAINERS\nwith one or more POKéMON each.\pEach TRAINER can have one POKéMON\nin battle at a time.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4826::
-# 639 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 634 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Would you like to battle?$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4840::
-# 643 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 638 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Which Battle Mode would you like\nto play?$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A486A::
-# 647 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 642 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "For a DOUBLE BATTLE, you must have\nat least two POKéMON.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A48A3::
-# 651 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 646 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "For trading, you must have at least\ntwo POKéMON with you.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A48DD::
-# 655 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 650 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Your {STR_VAR_1} BERRY-holding POKéMON\ncan’t be traded.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A490C::
-# 659 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 654 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Please wait.\n... ... B Button: Cancel$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4A22::
-# 663 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 658 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Please enter.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4A30::
-# 667 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 662 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Someone is not ready to link.\pPlease come back after everyone has\nmade preparations.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4A85::
-# 671 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 666 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Sorry, we have a transmission error...\nPlease reset and try again.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4AC8::
-# 675 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 670 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Sorry, we have a transmission error.\nYou may not mix records in different\llanguages.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4B1D::
-# 679 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 674 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "The link partners appear to have made\ndifferent selections.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4B59::
-# 683 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 678 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Please come again.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4B6C::
-# 687 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 682 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "The number of participants is\nincorrect.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4B95::
-# 691 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 686 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "The SINGLE Battle Mode cannot be\nplayed by {STR_VAR_1} players.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4BCC::
-# 695 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 690 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "The DOUBLE Battle Mode cannot be\nplayed by {STR_VAR_1} players.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4C03::
-# 699 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 694 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "There must be four players to play\nthis Battle Mode.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4C38::
-# 703 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 698 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "Please confirm the number of players\nand start again.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4E50::
-# 707 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 702 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "The TRAINER CARD data will\nbe rewritten.$"
 
 Naranja_7islasPomelo_G03_M02_Text_081A4E79::
-# 711 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
+# 706 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	.string "I hope to see you again!$"

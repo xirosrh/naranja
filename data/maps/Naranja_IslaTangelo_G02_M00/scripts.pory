@@ -5,8 +5,7 @@ mapscripts Naranja_IslaTangelo_G02_M00_MapScripts {
 }
 
 script Naranja_IslaTangelo_G02_M00_EventScript_OBJ_EVENT_GFX_HIKER_LocalId1 {
-    loadword(0, Naranja_IslaTangelo_G02_M00_Text_0817476D)
-    callstd(2)
+    msgbox(Naranja_IslaTangelo_G02_M00_Text_0817476D, MSGBOX_NPC)
     end
 }
 

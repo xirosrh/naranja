@@ -17,8 +17,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LATIAS_LocalId9 {
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_08166E65)
-    callstd(4)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_08166E65, MSGBOX_DEFAULT)
     closemessage
     addobject(LOCALID_ISLA_PINKAN_G00_M30_ITEM_BALL)
     addobject(LOCALID_ISLA_PINKAN_G00_M30_LATIAS)
@@ -27,8 +26,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4 {
     removeobject(LOCALID_ISLA_PINKAN_G00_M30_ITEM_BALL)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_LATIAS, Naranja_IslaPinkan_G00_M30_Movement_0814C5C2)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_08166E7E)
-    callstd(4)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_08166E7E, MSGBOX_DEFAULT)
     closemessage
     nop
     nop
@@ -50,39 +48,33 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4 {
 
 script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_PINKAN_046, LOCALID_NONE, Naranja_IslaPinkan_G00_M30_Text_081B8B40, Naranja_IslaPinkan_G00_M30_Text_081B8B93)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_081B8BDE)
-    callstd(6)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_081B8BDE, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_WALLY_LocalId1 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_08170273)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_08170273, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sign_3 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_081702E7)
-    callstd(3)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_081702E7, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId13 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_08170301)
-    callstd(3)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_08170301, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_08152F2E {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_08174945)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_08174945, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Trigger_2 {
     lockall
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_08194159)
-    callstd(4)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_08194159, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_MAGMA_MEMBER_M, Naranja_IslaPinkan_G00_M30_Movement_0815C9D3)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_ZIGZAGOON, Naranja_IslaPinkan_G00_M30_Movement_0815CA8A)
@@ -129,27 +121,23 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4060 {
     nop
     lock
     faceplayer
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4214)
-    callstd(5)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4214, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4520)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4386)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4386, MSGBOX_NPC)
     release
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4095 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B40B3)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B40B3, MSGBOX_NPC)
     release
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4520 {
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_BEAUTY, Naranja_CaminoFrio_G00_M29_Movement_080008A0)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4437)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4437, MSGBOX_NPC)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_CAMERAMAN, Naranja_IslaPinkan_G00_M30_Movement_0845D6E1)
     faceplayer
     delay(0x10)
@@ -170,15 +158,13 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4550 {
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B456E)
     nop
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4145)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4145, MSGBOX_NPC)
     release
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B456E {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4319)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4319, MSGBOX_NPC)
     release
     end
 }
@@ -203,26 +189,22 @@ script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_CAMERAMAN_LocalId8 {
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4BA2 {
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_BEAUTY, Naranja_IslaPinkan_G00_M30_Movement_083E76C6)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4CD0)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4CD0, MSGBOX_NPC)
     nop
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_NURSE, Naranja_IslaPinkan_G00_M30_Movement_086B5420)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4EDB)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4EDB, MSGBOX_NPC)
     applymovement(LOCALID_PLAYER, Naranja_IslaPinkan_G00_M30_Movement_084700A7)
     delay(0x20)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_BEAUTY, Naranja_IslaPinkan_G00_M30_Movement_086B4F51)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_CAMERAMAN, Naranja_IslaPinkan_G00_M30_Movement_086B4F58)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086C0384)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086C0384, MSGBOX_NPC)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_NURSE, Naranja_IslaPinkan_G00_M30_Movement_086B541C)
     delay(0x20)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_BEAUTY, Naranja_IslaPinkan_G00_M30_Movement_086B5400)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_CAMERAMAN, Naranja_IslaPinkan_G00_M30_Movement_086B5408)
     delay(0x60)
     nop
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B5410)
-    callstd(2)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B5410, MSGBOX_NPC)
     nop
     setflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_BEAUTY)
     removeobject(LOCALID_ISLA_PINKAN_G00_M30_DITTO_DOLL)
@@ -232,32 +214,27 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4BA2 {
 
 script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_KECLEON_1_LocalId5 {
     lock
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B4FC0)
-    callstd(5)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B4FC0, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CuevaKabuto_G24_M07_EventScript_Sub_086B38F4)
     checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_BEAUTY)
     goto_if(LESS_THAN, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4FB0)
     faceplayer
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B5068)
-    callstd(5)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B5068, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4FA2)
     applymovement(LOCALID_ISLA_PINKAN_G00_M30_KECLEON_1, Naranja_IslaPinkan_G00_M30_Movement_0800A854)
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B510E)
-    callstd(6)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B510E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4FA2 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B50C2)
-    callstd(6)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B50C2, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4FB0 {
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_086B502A)
-    callstd(6)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_086B502A, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -291,8 +268,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B5300 {
 
 script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_NURSE_LocalId7 {
     faceplayer
-    loadword(0, Naranja_IslaPinkan_G00_M30_Text_0816E35B)
-    callstd(6)
+    msgbox(Naranja_IslaPinkan_G00_M30_Text_0816E35B, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, Naranja_IslaPinkan_G00_M30_Movement_086B544D)
     release
     end

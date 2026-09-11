@@ -47,8 +47,7 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161994 {
 script Naranja_Route110_G29_M01_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C281)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C281, MSGBOX_DEFAULT)
     setvar(VAR_TEMP_2, 1)
     copyvar(VAR_0x8000, VAR_TRICK_HOUSE_LEVEL)
     compare_var_to_value(VAR_0x8000, 0)
@@ -71,18 +70,15 @@ script Naranja_Route110_G29_M01_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161A0B {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C2B2)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C2B2, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0x44)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -90,18 +86,15 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161A0B {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161A47 {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C333)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C333, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0xA)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -109,18 +102,15 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161A47 {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161A83 {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C3A7)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C3A7, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0xCC)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -128,18 +118,15 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161A83 {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161ABF {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C41F)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C41F, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0xC2)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -147,18 +134,15 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161ABF {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161AFB {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C491)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C491, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0x12C)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -166,18 +150,15 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161AFB {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161B37 {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C515)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C515, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0xD0)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -185,18 +166,15 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161B37 {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161B73 {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C567)
-    callstd(4)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C567, MSGBOX_DEFAULT)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C90B, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0x47)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C9BD, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     release
@@ -204,8 +182,7 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161B73 {
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161BAF {
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C5AF)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C5AF, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 1)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C74)
@@ -216,21 +193,18 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161BAF {
     compare_var_to_value(VAR_FACING, 4)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C95)
     delay(0x1E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C602)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C602, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
     delay(0x1E)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C691)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C691, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
     setorcopyvar(VAR_0x8000, 0x1F)
     callstd(7)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C61)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C85C)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C85C, MSGBOX_DEFAULT)
     call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
     special(ResetTrickHouseNuggetFlag)
     release
@@ -250,16 +224,14 @@ script Naranja_Route110_G29_M01_EventScript_Sub_08161C2E {
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161C4E {
     call(Naranja_Route110_G29_M00_EventScript_Sub_081A02A5)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C92E)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C92E, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 1)
     return
 }
 
 script Naranja_Route110_G29_M01_EventScript_Sub_08161C61 {
     call(Naranja_Route110_G29_M00_EventScript_Sub_081A02B8)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819C7D7)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819C7D7, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 1)
     return
 }
@@ -300,8 +272,7 @@ script Naranja_Route110_G29_M01_EventScript_Trigger_1 {
     playse(SE_M_EXPLOSION)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_Route110_G29_M01_Text_0819CA8B)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M01_Text_0819CA8B, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_Route110_G29_M01_Movement_08161CE8)
     waitmovement(LOCALID_NONE)

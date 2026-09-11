@@ -40,8 +40,7 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1 {
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D59E)
     compare_var_to_value(VAR_0x8008, 2)
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D59F)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B5EEC)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B5EEC, MSGBOX_DEFAULT)
     closemessage
     fadescreen(1)
     removeobject(LOCALID_BEMENTER_G24_M22_246)
@@ -59,8 +58,7 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1 {
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5BF)
     compare_var_to_value(VAR_0x8008, 2)
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5CA)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B5FE6)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B5FE6, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x114)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -120,8 +118,7 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_0815D5CA {
 script Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B64B3)
-    callstd(5)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B64B3, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D611)
     compare_var_to_value(VAR_RESULT, 0)
@@ -131,14 +128,12 @@ script Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
 }
 
 script Naranja_Bementer_G24_M22_EventScript_Sub_0815D611 {
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B65D6)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B65D6, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_Bementer_G24_M22_EventScript_Sub_0815D61A {
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B6823)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B6823, MSGBOX_DEFAULT)
     return
 }
 
@@ -151,15 +146,13 @@ script Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3 {
     goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D64A)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
     goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D6BA)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B60F9)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B60F9, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Bementer_G24_M22_EventScript_Sub_0815D64A {
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B6283)
-    callstd(5)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B6283, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D669)
     compare_var_to_value(VAR_RESULT, 0)
@@ -177,16 +170,14 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_0815D669 {
     applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
     delay(0xA)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B639C)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B639C, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_0103)
     release
     end
 }
 
 script Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B {
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B62E7)
-    callstd(5)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B62E7, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D669)
     compare_var_to_value(VAR_RESULT, 0)
@@ -195,15 +186,13 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B {
 }
 
 script Naranja_Bementer_G24_M22_EventScript_Sub_0815D6BA {
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B617B)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B617B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Bementer_G24_M22_EventScript_Sub_0815D6C4 {
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B63F8)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B63F8, MSGBOX_DEFAULT)
     release
     end
 }
@@ -238,8 +227,7 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2 {
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D769)
     compare_var_to_value(VAR_0x8008, 2)
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D774)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B6848)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B6848, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_0x8008, 0)
     call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D77F)
@@ -301,22 +289,19 @@ script Naranja_Bementer_G24_M22_EventScript_Sub_081A0196 {
 
 script Naranja_Bementer_G24_M22_EventScript_OBJECT_4_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_588, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5CFD, Naranja_Bementer_G24_M22_Text_081B5D30)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B5D6D)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B5D6D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Bementer_G24_M22_EventScript_OBJECT_5_LocalId5 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_589, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5DA2, Naranja_Bementer_G24_M22_Text_081B5DDB)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B5DF1)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B5DF1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Bementer_G24_M22_EventScript_OBJECT_6_LocalId6 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_590, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5E27, Naranja_Bementer_G24_M22_Text_081B5E60)
-    loadword(0, Naranja_Bementer_G24_M22_Text_081B5E84)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M22_Text_081B5E84, MSGBOX_AUTOCLOSE)
     end
 }
 

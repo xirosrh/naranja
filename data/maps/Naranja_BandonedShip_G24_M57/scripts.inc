@@ -38,98 +38,88 @@ Naranja_BandonedShip_G24_M57_EventScript_Sub_0815E9C0::
 
 Naranja_BandonedShip_G24_M57_EventScript_OBJ_EVENT_GFX_TUBER_M_LocalId1::
 # 33 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M57_Text_0819864A
-# 34 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	callstd 2
+	msgbox Naranja_BandonedShip_G24_M57_Text_0819864A, MSGBOX_NPC
 	end
 
 
 Naranja_BandonedShip_G24_M57_EventScript_Sign_1::
-# 39 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 38 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	lockall
-# 40 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 39 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	checkflag FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00EF
-# 41 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 40 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M57_EventScript_Sub_0815EA14
-# 42 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 41 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	checkitem ITEM_STORAGE_KEY, 1
-# 43 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 42 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 44 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 43 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M57_EventScript_Sub_0815EA0A
+# 44 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+	msgbox Naranja_BandonedShip_G24_M57_Text_08198692, MSGBOX_DEFAULT
 # 45 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M57_Text_08198692
-# 46 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	callstd 4
-# 47 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	playse SE_PIN
-# 48 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 46 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	removeitem ITEM_STORAGE_KEY, 1
-# 49 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 47 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	setflag FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00EF
-# 50 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 48 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	call Naranja_BandonedShip_G24_M57_EventScript_Sub_0815E9C0
-# 51 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 49 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	special DrawWholeMapView
-# 52 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 50 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_BandonedShip_G24_M57_EventScript_Sub_0815EA0A::
-# 57 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M57_Text_0819865C
-# 58 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	callstd 4
-# 59 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 55 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+	msgbox Naranja_BandonedShip_G24_M57_Text_0819865C, MSGBOX_DEFAULT
+# 56 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_BandonedShip_G24_M57_EventScript_Sub_0815EA14::
-# 64 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M57_Text_081986EC
-# 65 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	callstd 4
-# 66 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 61 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+	msgbox Naranja_BandonedShip_G24_M57_Text_081986EC, MSGBOX_DEFAULT
+# 62 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_BandonedShip_G24_M57_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2::
-# 71 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 67 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BANDONED_SHIP_496, LOCALID_NONE, Naranja_BandonedShip_G24_M57_Text_0819856F, Naranja_BandonedShip_G24_M57_Text_081985C5
-# 72 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	loadword 0, Naranja_BandonedShip_G24_M57_Text_081985D7
-# 73 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	callstd 6
+# 68 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+	msgbox Naranja_BandonedShip_G24_M57_Text_081985D7, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_BandonedShip_G24_M57_Text_0819856F::
-# 77 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 72 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "When we go out to sea, we SAILORS\nalways bring our POKéMON.\lHow about a quick battle?$"
 
 Naranja_BandonedShip_G24_M57_Text_081985C5::
-# 81 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 76 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "Whoops, I’m sunk!$"
 
 Naranja_BandonedShip_G24_M57_Text_081985D7::
-# 85 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 80 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "The ship’s bottom has sunk into the\ndepths.\pIf a POKéMON knew how to go underwater,\nwe might make some progress...$"
 
 Naranja_BandonedShip_G24_M57_Text_0819864A::
-# 89 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 84 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "Yay!\nIt’s a ship!$"
 
 Naranja_BandonedShip_G24_M57_Text_0819865C::
-# 93 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 88 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "The door is locked.\p“STORAGE” is painted on the door.$"
 
 Naranja_BandonedShip_G24_M57_Text_08198692::
-# 97 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 92 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "{PLAYER} inserted and turned the\nSTORAGE KEY.\pThe inserted KEY stuck fast, but the\ndoor opened.$"
 
 Naranja_BandonedShip_G24_M57_Text_081986EC::
-# 101 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
+# 96 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	.string "The door is open.$"

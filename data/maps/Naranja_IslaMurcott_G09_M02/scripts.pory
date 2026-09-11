@@ -42,8 +42,7 @@ script Naranja_IslaMurcott_G09_M02_EventScript_Sub_08155448 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_IslaMurcott_G09_M02_Movement_081554CA)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M04_Text_081A6832)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M04_Text_081A6832, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_MURCOTT_G09_M02_TEALA, Naranja_IslaMurcott_G09_M02_Movement_081554D3)
     applymovement(LOCALID_PLAYER, Naranja_IslaMurcott_G09_M02_Movement_081554C0)
@@ -53,20 +52,17 @@ script Naranja_IslaMurcott_G09_M02_EventScript_Sub_08155448 {
 }
 
 script Naranja_IslaMurcott_G09_M02_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3 {
-    loadword(0, Naranja_IslaMurcott_G09_M02_Text_0817C937)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M02_Text_0817C937, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMurcott_G09_M02_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId4 {
-    loadword(0, Naranja_IslaMurcott_G09_M02_Text_0817C9D5)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M02_Text_0817C9D5, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMurcott_G09_M02_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId8 {
-    loadword(0, Naranja_IslaMurcott_G09_M02_Text_0817CAEC)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M02_Text_0817CAEC, MSGBOX_NPC)
     end
 }
 
@@ -76,8 +72,7 @@ script Naranja_IslaMurcott_G09_M02_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_Local
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M02_EventScript_Sub_08155526)
     applymovement(LOCALID_ISLA_MURCOTT_G09_M02_LITTLE_GIRL_2, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaMurcott_G09_M02_Text_0817CA67)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M02_Text_0817CA67, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x111)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -87,8 +82,7 @@ script Naranja_IslaMurcott_G09_M02_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_Local
 }
 
 script Naranja_IslaMurcott_G09_M02_EventScript_Sub_08155526 {
-    loadword(0, Naranja_IslaMurcott_G09_M02_Text_0817CA88)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M02_Text_0817CA88, MSGBOX_NPC)
     end
 }
 
@@ -101,8 +95,7 @@ script Naranja_IslaMurcott_G09_M02_EventScript_Sign_3 {
 }
 
 script Naranja_IslaMurcott_G09_M02_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId6 {
-    loadword(0, Naranja_IslaKumquat_G13_M04_Text_081B7225)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M04_Text_081B7225, MSGBOX_NPC)
     end
 }
 

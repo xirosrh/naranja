@@ -146,178 +146,174 @@ Naranja_ShoalCave_G24_M47_EventScript_Sign_3::
 
 Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E289::
 # 97 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
-	loadword 0, Naranja_ShoalCave_G24_M47_Text_081C69B8
+	msgbox Naranja_ShoalCave_G24_M47_Text_081C69B8, MSGBOX_DEFAULT
 # 98 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
-	callstd 4
-# 99 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_Sign_4::
-# 104 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 103 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	lockall
-# 105 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 104 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	checkflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BD
-# 106 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 105 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E289
-# 107 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 106 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x2F
-# 108 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 107 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 109 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 108 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	callstd 0
-# 110 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 109 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 111 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 110 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 112 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 111 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setmetatile 0x29, 0xA, 0x35B, 0
-# 113 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 112 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	special DrawWholeMapView
-# 114 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 113 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BD
-# 115 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 114 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_Sign_5::
-# 120 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 119 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	lockall
-# 121 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 120 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	checkflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BE
-# 122 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 121 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E289
-# 123 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 122 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x2F
-# 124 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 123 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 125 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 124 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	callstd 0
-# 126 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 125 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 127 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 126 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 128 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 127 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setmetatile 6, 9, 0x35B, 0
-# 129 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 128 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	special DrawWholeMapView
-# 130 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 129 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BE
-# 131 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 130 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_Sign_6::
-# 136 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 135 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	lockall
-# 137 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 136 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	checkflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BF
-# 138 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 137 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E289
-# 139 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 138 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x2F
-# 140 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 139 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 141 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 140 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	callstd 0
-# 142 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 141 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 143 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 142 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 144 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 143 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setmetatile 0x10, 0xD, 0x35B, 0
-# 145 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 144 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	special DrawWholeMapView
-# 146 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 145 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BF
-# 147 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 146 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_Sign_1::
-# 152 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 151 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	lockall
-# 153 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 152 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	checkflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B8
-# 154 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 153 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E35B
-# 155 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 154 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x2E
-# 156 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 155 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 157 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 156 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	callstd 0
-# 158 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 157 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 159 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 158 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 160 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 159 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setmetatile 0x1F, 8, 0x35A, 0
-# 161 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 160 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	special DrawWholeMapView
-# 162 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 161 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B8
-# 163 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 162 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E35B::
+# 167 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+	msgbox Naranja_ShoalCave_G24_M47_Text_081C6979, MSGBOX_DEFAULT
 # 168 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
-	loadword 0, Naranja_ShoalCave_G24_M47_Text_081C6979
-# 169 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
-	callstd 4
-# 170 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_Sign_2::
-# 175 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 173 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	lockall
-# 176 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 174 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	checkflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B9
-# 177 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 175 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E35B
-# 178 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 176 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x2E
-# 179 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 177 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 180 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 178 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	callstd 0
-# 181 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 179 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 182 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 180 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 183 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 181 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setmetatile 0xE, 0x1A, 0x35A, 0
-# 184 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 182 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	special DrawWholeMapView
-# 185 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 183 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setflag FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B9
-# 186 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 184 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_ShoalCave_G24_M47_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1::
-# 191 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 189 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x44
-# 192 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 190 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 193 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 191 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_ShoalCave_G24_M47_Text_081C6979::
-# 197 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 195 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	.string "There was some SHOAL SALT here.\nBut, there’s nothing here now.$"
 
 Naranja_ShoalCave_G24_M47_Text_081C69B8::
-# 201 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
+# 199 "data/maps/Naranja_ShoalCave_G24_M47/scripts.pory"
 	.string "There was a SHOAL SHELL here.\nBut, there’s nothing here now.$"

@@ -5,8 +5,7 @@ mapscripts Naranja_IslaTrovita_G11_M13_MapScripts {
 }
 
 script Naranja_IslaTrovita_G11_M13_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId2 {
-    loadword(0, Naranja_IslaTrovita_G11_M13_Text_081853DD)
-    callstd(2)
+    msgbox(Naranja_IslaTrovita_G11_M13_Text_081853DD, MSGBOX_NPC)
     end
 }
 
@@ -15,8 +14,7 @@ script Naranja_IslaTrovita_G11_M13_EventScript_OBJ_EVENT_GFX_SKITTY_LocalId1 {
     faceplayer
     waitse
     playmoncry(SPECIES_SKITTY, 0)
-    loadword(0, Naranja_IslaTrovita_G11_M13_Text_08185410)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M13_Text_08185410, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

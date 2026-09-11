@@ -5,14 +5,12 @@ mapscripts Naranja_IslaShamouti_G12_M08_MapScripts {
 }
 
 script Naranja_IslaShamouti_G12_M08_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId1 {
-    loadword(0, Naranja_IslaShamouti_G12_M08_Text_0818696D)
-    callstd(2)
+    msgbox(Naranja_IslaShamouti_G12_M08_Text_0818696D, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaShamouti_G12_M08_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId3 {
-    loadword(0, Naranja_IslaShamouti_G12_M08_Text_081869D6)
-    callstd(2)
+    msgbox(Naranja_IslaShamouti_G12_M08_Text_081869D6, MSGBOX_NPC)
     end
 }
 
@@ -21,8 +19,7 @@ script Naranja_IslaShamouti_G12_M08_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId2
     faceplayer
     waitse
     playmoncry(SPECIES_ZIGZAGOON, 0)
-    loadword(0, Naranja_IslaShamouti_G12_M08_Text_08186A4F)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M08_Text_08186A4F, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

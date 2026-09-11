@@ -78,8 +78,7 @@ script Naranja_BandonedShip_G24_M65_EventScript_Sign_1 {
     checkitem(ITEM_ROOM_1_KEY, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECCF)
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198E90, MSGBOX_DEFAULT)
     playse(SE_PIN)
     removeitem(ITEM_ROOM_1_KEY, 1)
     setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
@@ -96,8 +95,7 @@ script Naranja_BandonedShip_G24_M65_EventScript_Sign_2 {
     checkitem(ITEM_ROOM_2_KEY, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECD9)
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198E90, MSGBOX_DEFAULT)
     playse(SE_PIN)
     removeitem(ITEM_ROOM_2_KEY, 1)
     setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
@@ -114,8 +112,7 @@ script Naranja_BandonedShip_G24_M65_EventScript_Sign_3 {
     checkitem(ITEM_ROOM_4_KEY, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECE3)
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198E90, MSGBOX_DEFAULT)
     playse(SE_PIN)
     removeitem(ITEM_ROOM_4_KEY, 1)
     setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
@@ -132,8 +129,7 @@ script Naranja_BandonedShip_G24_M65_EventScript_Sign_4 {
     checkitem(ITEM_ROOM_6_KEY, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECED)
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198E90, MSGBOX_DEFAULT)
     playse(SE_PIN)
     removeitem(ITEM_ROOM_6_KEY, 1)
     setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
@@ -144,36 +140,31 @@ script Naranja_BandonedShip_G24_M65_EventScript_Sign_4 {
 }
 
 script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECCF {
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198DC0)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198DC0, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECD9 {
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198DF4)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198DF4, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECE3 {
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E28)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198E28, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECED {
-    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E5C)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M65_Text_08198E5C, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7 {
-    loadword(0, Naranja_BandonedShip_G24_M57_Text_081986EC)
-    callstd(4)
+    msgbox(Naranja_BandonedShip_G24_M57_Text_081986EC, MSGBOX_DEFAULT)
     releaseall
     end
 }

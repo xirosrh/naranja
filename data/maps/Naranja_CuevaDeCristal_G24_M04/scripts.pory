@@ -31,8 +31,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C773 {
 script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId10 {
     lock
     faceplayer
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_08194766)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_08194766, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -46,8 +45,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_BLACK_BELT_Local
     checkflag(FLAG_TEMP_1)
     goto_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C7BC)
     setflag(FLAG_TEMP_1)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_081944C5)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_081944C5, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -56,8 +54,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_BLACK_BELT_Local
 }
 
 script Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C7BC {
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_081945B2)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_081945B2, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -74,8 +71,7 @@ script Naranja_CuevaDeCristal_G24_M04_OnFrame_1 {
     compare_var_to_value(VAR_TEMP_1, 3)
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C8EA)
     call(Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C92D)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_0819461D)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_0819461D, MSGBOX_DEFAULT)
     compare_var_to_value(VAR_TEMP_1, 2)
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C8EB)
     compare_var_to_value(VAR_TEMP_1, 3)
@@ -84,8 +80,7 @@ script Naranja_CuevaDeCristal_G24_M04_OnFrame_1 {
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setflag(FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_006A)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_08194693)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_08194693, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_TEMP_1, 1)
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C880)
@@ -93,8 +88,7 @@ script Naranja_CuevaDeCristal_G24_M04_OnFrame_1 {
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C892)
     compare_var_to_value(VAR_TEMP_1, 3)
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C8AE)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_08194706)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_08194706, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_TEMP_1, 1)
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C8F7)
@@ -197,8 +191,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId7
     faceplayer
     waitse
     playmoncry(SPECIES_WINGULL, 0)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_08194188)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_08194188, MSGBOX_DEFAULT)
     waitmoncry
     release
     end
@@ -208,11 +201,9 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6 {
     lock
     faceplayer
     playbgm(MUS_ENCOUNTER_MAGMA, 0)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_086C081B)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_086C081B, MSGBOX_DEFAULT)
     trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_CUEVA_DE_CRISTAL_581, LOCALID_NONE, Naranja_CuevaDeCristal_G24_M04_Text_08194243)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_08194274)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_08194274, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xA0)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -228,8 +219,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6 {
     applymovement(14, Naranja_CuevaDeCristal_G24_M04_Movement_0815CAC3)
     applymovement(17, Naranja_CuevaDeCristal_G24_M04_Movement_0815CAB4)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_0819432A)
-    callstd(4)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_0819432A, MSGBOX_DEFAULT)
     applymovement(17, Naranja_CuevaDeCristal_G24_M04_Movement_0815CA8E)
     waitmovement(LOCALID_NONE)
     message(Naranja_CuevaDeCristal_G24_M04_Text_0819434F)
@@ -249,8 +239,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6 {
 
 script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_HIKER_LocalId9 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CUEVA_DE_CRISTAL_635, LOCALID_NONE, Naranja_CuevaDeCristal_G24_M04_Text_08194814, Naranja_CuevaDeCristal_G24_M04_Text_081948A2)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_081948C4)
-    callstd(6)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_081948C4, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -296,8 +285,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_MACHOKE_FACING_A
     delay(0x10)
     fadescreen(0)
     delay(0x50)
-    loadword(0, Naranja_CuevaDeCristal_G24_M04_Text_086B2900)
-    callstd(2)
+    msgbox(Naranja_CuevaDeCristal_G24_M04_Text_086B2900, MSGBOX_NPC)
     delay(0x20)
     fadescreen(3)
     delay(0x10)

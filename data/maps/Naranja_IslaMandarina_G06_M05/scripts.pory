@@ -15,8 +15,7 @@ script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_MARILL_DOLL_Local
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F68 {
     applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M05_Movement_086B3B8C)
     delay(0x45)
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3BB2)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3BB2, MSGBOX_DEFAULT)
     nop
     release
     end
@@ -29,22 +28,19 @@ script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId3 {
     goto_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153FA5)
     checkflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_04BD)
     goto_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F9B)
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_0817859A)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_0817859A, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F9B {
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_08178683)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_08178683, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153FA5 {
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_081786B5)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_081786B5, MSGBOX_DEFAULT)
     release
     end
 }
@@ -60,13 +56,11 @@ script Naranja_IslaMandarina_G06_M05_EventScript_Trigger_4 {
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARINA_182, LOCALID_NONE, Naranja_IslaMandarina_G06_M05_Text_086B3C33, Naranja_IslaMandarina_G06_M05_Text_081BCB2E)
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_081BCB40)
-    callstd(6)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_081BCB40, MSGBOX_AUTOCLOSE)
     delay(0x80)
     setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123)
     clearflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_0817886A)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_0817886A, MSGBOX_NPC)
     release
     end
 }
@@ -86,8 +80,7 @@ script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId4 
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38C2 {
     lockall
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3972)
-    callstd(5)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3972, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38E4)
     compare_var_to_value(VAR_RESULT, 0)
@@ -97,34 +90,29 @@ script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38C2 {
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38E4 {
     lockall
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B39E2)
-    callstd(6)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B39E2, MSGBOX_AUTOCLOSE)
     setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
     end
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3902 {
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3A22)
-    callstd(6)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3A22, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3912 {
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3A72)
-    callstd(6)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3A72, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3922 {
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3AA2)
-    callstd(6)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3AA2, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3932 {
     lockall
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3AD7)
-    callstd(5)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3AD7, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3954)
     compare_var_to_value(VAR_RESULT, 0)
@@ -137,8 +125,7 @@ script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3954 {
     setorcopyvar(VAR_0x8000, 0x119)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3B35)
-    callstd(6)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B3B35, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -185,8 +172,7 @@ script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920 {
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_AQUA_MEMBER_F_LocalId2 {
-    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B4940)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G06_M05_Text_086B4940, MSGBOX_DEFAULT)
     call(0x086B3B80)
     end
 }

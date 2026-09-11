@@ -70,216 +70,206 @@ Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153DA1::
 # 44 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	waitmovement LOCALID_NONE
 # 45 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	loadword 0, Naranja_IslaKumquat_G13_M04_Text_081A6832
+	msgbox Naranja_IslaKumquat_G13_M04_Text_081A6832, MSGBOX_DEFAULT
 # 46 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	callstd 4
-# 47 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	closemessage
-# 48 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 47 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	applymovement LOCALID_ISLA_MANDARINA_G06_M00_TEALA, Naranja_IslaMandarina_G06_M00_Movement_08153E2C
-# 49 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 48 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_IslaMandarina_G06_M00_Movement_08153E19
-# 50 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 49 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	waitmovement LOCALID_NONE
-# 51 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 50 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	releaseall
 	return
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_Sign_3::
-# 56 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 55 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	lockall
-# 57 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 56 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	fadescreen 1
-# 58 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 57 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	showcontestpainting 1
-# 59 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 58 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId4::
-# 64 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarina_G06_M00_Text_08177D6C
-# 65 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	callstd 2
+# 63 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	msgbox Naranja_IslaMandarina_G06_M00_Text_08177D6C, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3::
-# 70 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 68 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	lock
-# 71 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 69 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	faceplayer
-# 72 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 70 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00EB
-# 73 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 71 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153E76
-# 74 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarina_G06_M00_Text_08177DEC
-# 75 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	callstd 4
-# 76 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 72 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	msgbox Naranja_IslaMandarina_G06_M00_Text_08177DEC, MSGBOX_DEFAULT
+# 73 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x14D
-# 77 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 74 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 78 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 75 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	callstd 0
-# 79 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 76 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 80 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 77 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 81 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 78 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00EB
-# 82 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 79 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153E76::
-# 87 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarina_G06_M00_Text_08177E98
-# 88 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	callstd 4
-# 89 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 84 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	msgbox Naranja_IslaMandarina_G06_M00_Text_08177E98, MSGBOX_DEFAULT
+# 85 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId6::
-# 94 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	loadword 0, Naranja_IslaMandarina_G06_M00_Text_08177ECD
-# 95 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	callstd 2
+# 90 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	msgbox Naranja_IslaMandarina_G06_M00_Text_08177ECD, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_Sign_4::
-# 100 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 95 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	lockall
-# 101 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 96 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	special ShowBerryBlenderRecordWindow
-# 102 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 97 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	waitbuttonpress
-# 103 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 98 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 104 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 99 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_Sign_2::
-# 109 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 104 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	setvar VAR_0x8008, 2
-# 110 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 105 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	setvar VAR_0x8009, 1
-# 111 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 106 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	applymovement 32776, Naranja_IslaKumquat_G13_M04_Movement_081B7821
-# 112 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 107 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	waitmovement LOCALID_NONE
-# 113 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 108 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	goto Naranja_IslaKumquat_G13_M04_EventScript_Sub_081B7681
 	return
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2::
-# 117 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 112 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	setvar VAR_0x8008, 2
-# 118 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 113 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	goto Naranja_IslaKumquat_G13_M04_EventScript_Sub_081B77B6
 	return
 
 
 Naranja_IslaMandarina_G06_M00_EventScript_Sign_1::
-# 122 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 117 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	goto Naranja_IslaKumquat_G13_M04_EventScript_Sub_081B783B
 	return
 
 
-# 125 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 120 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 Naranja_IslaMandarina_G06_M00_Movement_08153E19:
+# 121 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 122 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 123 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 124 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 125 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_up
 # 126 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
+	walk_up
 # 127 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
+	walk_up
 # 128 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
-# 129 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
-# 130 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_up
-# 131 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_up
-# 132 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_up
-# 133 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	delay_8
-# 134 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 129 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	set_invisible
 	step_end
 
-# 137 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 132 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 Naranja_IslaMandarina_G06_M00_Movement_08153E23:
-# 138 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 133 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 141 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 136 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 Naranja_IslaMandarina_G06_M00_Movement_08153E25:
-# 142 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 137 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_left
-# 143 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 138 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 146 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 141 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 Naranja_IslaMandarina_G06_M00_Movement_08153E28:
-# 147 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 142 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_down
-# 148 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 143 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_down
-# 149 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 144 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_in_place_faster_up
 	step_end
 
-# 152 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 147 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 Naranja_IslaMandarina_G06_M00_Movement_08153E2C:
+# 148 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 149 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 150 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_left
+# 151 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_up
+# 152 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+	walk_up
 # 153 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
+	walk_up
 # 154 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
-# 155 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_left
-# 156 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_up
-# 157 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_up
-# 158 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
-	walk_up
-# 159 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	delay_8
-# 160 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 155 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	set_invisible
 	step_end
 
-# 163 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 158 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 Naranja_IslaMandarina_G06_M00_Movement_08153E35:
-# 164 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 159 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
 Naranja_IslaMandarina_G06_M00_Text_08177D6C::
-# 167 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 162 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	.string "I went in through the entrance and\ntook a look around the CONTEST hall.\pGetting up on that big stage...\nIt’s going to be tense!$"
 
 Naranja_IslaMandarina_G06_M00_Text_08177DEC::
-# 171 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 166 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	.string "Oh, my love for POKéMON...\nThe attraction they evoke in me...\pWhoops!\nYou weren’t meant to see that!\lWell, anyway.\pIf you’re entering a CONTEST, try this\nmove on for size.$"
 
 Naranja_IslaMandarina_G06_M00_Text_08177E98::
-# 175 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 170 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	.string "My feelings for POKéMON...\nOh, they attract me so...$"
 
 Naranja_IslaMandarina_G06_M00_Text_08177ECD::
-# 179 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
+# 174 "data/maps/Naranja_IslaMandarina_G06_M00/scripts.pory"
 	.string "Which CONTEST are you planning on\nentering?\pIf you’re entering a COOL CONTEST,\na cool POKéMON has to be the one!\pPick a POKéMON worthy of the CONTEST\ntheme, and make sure it has the\lright set of moves to match.\pThat’s fundamental!$"

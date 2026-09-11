@@ -6,8 +6,7 @@ mapscripts Naranja_Route110_G29_M03_MapScripts {
 }
 
 script Naranja_Route110_G29_M03_EventScript_Sub_08161892 {
-    loadword(0, Naranja_Route110_G29_M03_Text_0819C1FF)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M03_Text_0819C1FF, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -17,8 +16,7 @@ script Naranja_Route110_G29_M03_EventScript_Sub_0816189C {
     message(Naranja_Route110_G29_M03_Text_0819C1B8)
     waitfanfare
     waitmessage
-    loadword(0, Naranja_Route110_G29_M03_Text_0819C1CB)
-    callstd(4)
+    msgbox(Naranja_Route110_G29_M03_Text_0819C1CB, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -48,22 +46,19 @@ script Naranja_Route110_G29_M03_EventScript_Sub_08161D26 {
 
 script Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_611, LOCALID_NONE, Naranja_Route110_G29_M03_Text_0819CB4F, Naranja_Route110_G29_M03_Text_0819CB93)
-    loadword(0, Naranja_Route110_G29_M03_Text_0819CBAB)
-    callstd(6)
+    msgbox(Naranja_Route110_G29_M03_Text_0819CBAB, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_332, LOCALID_NONE, Naranja_Route110_G29_M03_Text_0819CBD6, Naranja_Route110_G29_M03_Text_0819CC06)
-    loadword(0, Naranja_Route110_G29_M03_Text_0819CC1B)
-    callstd(6)
+    msgbox(Naranja_Route110_G29_M03_Text_0819CC1B, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_LASS_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_612, LOCALID_NONE, Naranja_Route110_G29_M03_Text_0819CC68, Naranja_Route110_G29_M03_Text_0819CC86)
-    loadword(0, Naranja_Route110_G29_M03_Text_0819CCAA)
-    callstd(6)
+    msgbox(Naranja_Route110_G29_M03_Text_0819CCAA, MSGBOX_AUTOCLOSE)
     end
 }
 

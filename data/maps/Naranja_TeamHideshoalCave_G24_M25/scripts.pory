@@ -25,8 +25,7 @@ script Naranja_TeamHideshoalCave_G24_M25_EventScript_Trigger_1 {
 
 script Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJECT_1_LocalId1 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_596, LOCALID_NONE, Naranja_TeamHideshoalCave_G24_M25_Text_08197093, Naranja_TeamHideshoalCave_G24_M25_Text_08197145, Naranja_TeamHideshoalCave_G24_M25_EventScript_AfterBattle_0815D8FD)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M25_Text_081971AE)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M25_Text_081971AE, MSGBOX_DEFAULT)
     release
     end
 }
@@ -39,8 +38,7 @@ script Naranja_TeamHideshoalCave_G24_M25_EventScript_AfterBattle_0815D8FD {
     delay(0x14)
     applymovement(32776, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M25_Text_08197162)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M25_Text_08197162, MSGBOX_DEFAULT)
     closemessage
     applymovement(32776, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     applymovement(32777, Naranja_TeamHideshoalCave_G24_M25_Movement_0815D95D)
@@ -49,8 +47,7 @@ script Naranja_TeamHideshoalCave_G24_M25_EventScript_AfterBattle_0815D8FD {
     delay(0x14)
     applymovement(32776, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M25_Text_081971AE)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M25_Text_081971AE, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0070)
     setflag(FLAG_HIDE_ISLA_KUMQUAT_G00_M05_241)
     release
@@ -59,22 +56,19 @@ script Naranja_TeamHideshoalCave_G24_M25_EventScript_AfterBattle_0815D8FD {
 
 script Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJECT_2_LocalId2 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_570, LOCALID_NONE, Naranja_TeamHideshoalCave_G24_M25_Text_08197270, Naranja_TeamHideshoalCave_G24_M25_Text_081972AC, Naranja_TeamHideshoalCave_G24_M25_EventScript_AfterBattle_0815D97D)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M25_Text_081972D2)
-    callstd(6)
+    msgbox(Naranja_TeamHideshoalCave_G24_M25_Text_081972D2, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_TeamHideshoalCave_G24_M25_EventScript_AfterBattle_0815D97D {
-    loadword(0, Naranja_TeamHideshoalCave_G24_M25_Text_081972D2)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M25_Text_081972D2, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJECT_5_LocalId5 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_593, LOCALID_NONE, Naranja_TeamHideshoalCave_G24_M25_Text_081972EF, Naranja_TeamHideshoalCave_G24_M25_Text_08197390)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M25_Text_081973C0)
-    callstd(6)
+    msgbox(Naranja_TeamHideshoalCave_G24_M25_Text_081973C0, MSGBOX_AUTOCLOSE)
     end
 }
 

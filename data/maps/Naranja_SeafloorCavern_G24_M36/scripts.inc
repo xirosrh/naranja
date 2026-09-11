@@ -34,462 +34,434 @@ Naranja_SeafloorCavern_G24_M36_EventScript_Trigger_1::
 # 24 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
 # 25 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4850
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4850, MSGBOX_DEFAULT
 # 26 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
+	closemessage
 # 27 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	closemessage
-# 28 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	addobject 32772
+# 28 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	applymovement LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F
 # 29 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	applymovement LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F
+	waitmovement LOCALID_NONE
 # 30 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	waitmovement LOCALID_NONE
-# 31 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_SeafloorCavern_G24_M36_Movement_0815DD36
+# 31 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	waitmovement LOCALID_NONE
 # 32 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	waitmovement LOCALID_NONE
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B486C, MSGBOX_DEFAULT
 # 33 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B486C
+	applymovement 32772, Naranja_7islasPomelo_G03_M04_Movement_081A0841
 # 34 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
+	waitmovement LOCALID_NONE
 # 35 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	applymovement 32772, Naranja_7islasPomelo_G03_M04_Movement_081A0841
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4897, MSGBOX_DEFAULT
 # 36 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	waitmovement LOCALID_NONE
-# 37 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4897
-# 38 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 39 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_IslaKumquat_G00_M05_Movement_081A0839
-# 40 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 37 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 41 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B491F
-# 42 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 43 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 38 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B491F, MSGBOX_DEFAULT
+# 39 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_SEAFLOOR_CAVERN_601, LOCALID_NONE, Naranja_SeafloorCavern_G24_M36_Text_081B49AE
-# 44 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B49C1
-# 45 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 46 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 40 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B49C1, MSGBOX_DEFAULT
+# 41 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setweather 0
-# 47 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 42 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	doweather
-# 48 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 43 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	special Script_FadeOutMapMusic
-# 49 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 44 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 50 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4A5A
-# 51 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 52 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 45 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4A5A, MSGBOX_DEFAULT
+# 46 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	special WaitWeather
-# 53 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 47 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 54 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 48 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_RESULT, 0
-# 55 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 49 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	playse SE_M_DETECT
-# 56 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 50 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setfieldeffectargument 0, 0x10
-# 57 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 51 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setfieldeffectargument 1, 0x2A
-# 58 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 52 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setfieldeffectargument 2, 0
-# 59 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 53 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	dofieldeffect 0x36
-# 60 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 54 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitfieldeffect 0x36
-# 61 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 55 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_RESULT, 1
-# 62 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 56 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	playfanfare MUS_AWAKEN_LEGEND
-# 63 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 57 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	playse SE_ORB
-# 64 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 58 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	special DoOrbEffect
-# 65 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 59 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_7islasPomelo_G03_M04_Movement_081A0841
-# 66 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 60 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841
-# 67 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 61 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 68 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 62 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay 0x96
-# 69 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 63 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	removeobject LOCALID_SEAFLOOR_CAVERN_G24_M36_249
-# 70 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 64 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	addobject LOCALID_SEAFLOOR_CAVERN_G24_M36_248
-# 71 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 65 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 72 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 66 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay 0x3C
-# 73 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 67 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement LOCALID_SEAFLOOR_CAVERN_G24_M36_248, Naranja_SeafloorCavern_G24_M36_Movement_0815DD4C
-# 74 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 68 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 75 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 69 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	special DoOrbEffect
-# 76 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 70 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 77 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 71 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8004, 1
-# 78 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 72 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8005, 1
-# 79 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 73 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	special ShakeCamera
-# 80 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 74 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 81 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 75 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement LOCALID_SEAFLOOR_CAVERN_G24_M36_248, Naranja_SeafloorCavern_G24_M36_Movement_0815DD57
-# 82 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 76 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 83 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 77 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	removeobject LOCALID_SEAFLOOR_CAVERN_G24_M36_248
-# 84 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 78 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay 4
-# 85 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 79 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8004, 2
-# 86 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 80 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8005, 2
-# 87 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 81 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	special ShakeCamera
-# 88 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 82 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 89 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 83 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay 0x1E
-# 90 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 84 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8004, 2
-# 91 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 85 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8005, 3
-# 92 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 86 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8006, 4
-# 93 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 87 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_0x8007, 5
-# 94 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4A89
-# 95 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 96 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 88 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4A89, MSGBOX_DEFAULT
+# 89 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	playse SE_PC_LOGIN
-# 97 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 90 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F
-# 98 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 91 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 99 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4ADB
-# 100 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 101 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 92 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4ADB, MSGBOX_DEFAULT
+# 93 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	closemessage
-# 102 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 94 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_SeafloorCavern_G24_M36_Movement_0815DD41
-# 103 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 95 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 104 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4B11
-# 105 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 106 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 96 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4B11, MSGBOX_DEFAULT
+# 97 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	closemessage
-# 107 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 98 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	playse SE_PC_OFF
-# 108 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 99 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay 0x14
-# 109 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 100 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_GraniteCave_G24_M00_Movement_081A0845
+# 101 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	waitmovement LOCALID_NONE
+# 102 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4C79, MSGBOX_DEFAULT
+# 103 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	closemessage
+# 104 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	addobject 32773
+# 105 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	addobject 32774
+# 106 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	addobject 32775
+# 107 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	applymovement 32775, Naranja_SeafloorCavern_G24_M36_Movement_0815DD63
+# 108 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	applymovement 32774, Naranja_SeafloorCavern_G24_M36_Movement_0815DD63
+# 109 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	applymovement 32773, Naranja_SeafloorCavern_G24_M36_Movement_0815DD5A
 # 110 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
 # 111 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4C79
-# 112 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 113 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	closemessage
-# 114 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	addobject 32773
-# 115 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	addobject 32774
-# 116 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	addobject 32775
-# 117 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	applymovement 32775, Naranja_SeafloorCavern_G24_M36_Movement_0815DD63
-# 118 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	applymovement 32774, Naranja_SeafloorCavern_G24_M36_Movement_0815DD63
-# 119 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	applymovement 32773, Naranja_SeafloorCavern_G24_M36_Movement_0815DD5A
-# 120 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	waitmovement LOCALID_NONE
-# 121 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_GraniteCave_G24_M00_Movement_081A083F
-# 122 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 112 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 123 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4D02
-# 124 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 125 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 113 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4D02, MSGBOX_DEFAULT
+# 114 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	playse SE_PIN
-# 126 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 115 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_GraniteCave_G24_M00_Movement_081A0833
-# 127 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 116 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 128 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 117 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_GraniteCave_G24_M00_Movement_081A0835
-# 129 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 118 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 130 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4DD3
-# 131 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 132 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4E37
-# 133 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 134 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 119 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4DD3, MSGBOX_DEFAULT
+# 120 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4E37, MSGBOX_DEFAULT
+# 121 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	closemessage
-# 135 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 122 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32773, Naranja_SeafloorCavern_G24_M36_Movement_0815DD60
-# 136 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 123 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	applymovement 32772, Naranja_SeafloorCavern_G24_M36_Movement_0815DD46
-# 137 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 124 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitmovement LOCALID_NONE
-# 138 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	loadword 0, Naranja_SeafloorCavern_G24_M36_Text_081B4ECA
-# 139 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	callstd 4
-# 140 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 125 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	msgbox Naranja_SeafloorCavern_G24_M36_Text_081B4ECA, MSGBOX_DEFAULT
+# 126 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_NARANJA_ROUTE128_STORY_STATE, 1
-# 141 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 127 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY
-# 142 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 128 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY_2
-# 143 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 129 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_NUEVA_G00_M07_WALLACE
-# 144 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 130 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_NUEVA_G00_M07_STEVEN
-# 145 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 131 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_NARANJA_ISLA_NUEVA_STORY_STATE, 1
-# 146 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 132 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE128_G00_M43_246
-# 147 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 133 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	clearflag FLAG_HIDE_ROUTE128_G00_M43_247
-# 148 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 134 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A
-# 149 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 135 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_ISLA_NUEVA_G00_M07_OLD_MAN_1
-# 150 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 136 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081
-# 151 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 137 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_ISLA_MELLSWEET_G14_M07_STEVEN
-# 152 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 138 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_NARANJA_ISLA_MELLSWEET_EVENT_STATE_2, 1
-# 153 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 139 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setvar VAR_NARANJA_SEAFLOOR_CAVERN_STORY_STATE, 1
-# 154 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 140 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_246
-# 155 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 141 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_247
-# 156 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 142 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_244
-# 157 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 143 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_248
-# 158 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 144 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_G24_M28_241
-# 159 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 145 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	warp MAP_NARANJA_ROUTE_128_G00_M43, 0xFF, 0x26, 0x16
-# 160 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 146 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	waitstate
-# 161 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 147 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SeafloorCavern_G24_M36_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6::
-# 166 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 152 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x13A
-# 167 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 153 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 168 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 154 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	callstd 1
 	end
 
 
-# 172 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 158 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD36:
-# 173 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 159 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
-# 174 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 160 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
-# 175 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 161 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
-# 176 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 162 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
-# 177 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 163 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
-# 178 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 164 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
-# 179 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 165 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_right
 	step_end
 
-# 182 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 168 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD41:
-# 183 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 169 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_left
-# 184 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 170 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
 	step_end
 
-# 187 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 173 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD46:
-# 188 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 174 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	face_up
-# 189 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 175 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	lock_facing_direction
-# 190 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 176 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_down
-# 191 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 177 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	unlock_facing_direction
-# 192 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 178 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 195 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 181 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD4C:
-# 196 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 182 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 197 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 183 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 198 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 184 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_slow_down
-# 199 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 185 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 200 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 186 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 201 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 187 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 202 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 188 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_slow_down
-# 203 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 189 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 204 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 190 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 205 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 191 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
 	step_end
 
-# 208 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 194 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD57:
-# 209 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 195 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	slide_up
-# 210 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 196 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	slide_up
 	step_end
 
-# 213 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 199 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD5A:
+# 200 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_fast_right
+# 201 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_fast_right
+# 202 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_fast_right
+# 203 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_fast_right
+# 204 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_fast_right
+	step_end
+
+# 207 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+Naranja_SeafloorCavern_G24_M36_Movement_0815DD60:
+# 208 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_right
+# 209 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_right
+	step_end
+
+# 212 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+Naranja_SeafloorCavern_G24_M36_Movement_0815DD63:
+# 213 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+	walk_fast_right
 # 214 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_fast_right
 # 215 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_fast_right
 # 216 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_fast_right
-# 218 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_fast_right
 	step_end
 
-# 221 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-Naranja_SeafloorCavern_G24_M36_Movement_0815DD60:
-# 222 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_right
-# 223 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_right
-	step_end
-
-# 226 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-Naranja_SeafloorCavern_G24_M36_Movement_0815DD63:
-# 227 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_fast_right
-# 228 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_fast_right
-# 229 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_fast_right
-# 230 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
-	walk_fast_right
-	step_end
-
-# 233 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 219 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 Naranja_SeafloorCavern_G24_M36_Movement_0815DD68:
-# 234 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 220 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
-# 235 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 221 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	delay_16
 	step_end
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4850::
-# 238 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 224 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: Hold it right there.$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B486C::
-# 242 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 228 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: Fufufu...\nSo it was you, after all.$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4897::
-# 246 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 232 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: Behold!\pSee how beautiful it is, the sleeping\nform of the ancient POKéMON GROUDON!\pI have waited so long for this day to\ncome...$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B491F::
-# 250 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 236 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: It surprises me, how you’ve\nmanaged to chase me here.\pBut that’s all over now.\pFor the realization of my dream,\nyou must disappear now!$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B49AE::
-# 254 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 240 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "I...\nI lost again?$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B49C1::
-# 258 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 244 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: Fufufu...\pI commend you. I must recognize that\nyou are truly gifted.\pBut!\nI have this in my possession!\pWith this BLUE ORB, I can make\nGROUDON...$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4A5A::
-# 262 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 248 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "The BLUE ORB suddenly began shining\nby itself!$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4A89::
-# 266 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 252 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: What?!\pI didn’t do anything.\nWhy did the BLUE ORB...\pWhere did GROUDON go?$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4ADB::
-# 270 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 256 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: Hm? It’s a message from our\nmembers outside...$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4B11::
-# 274 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 260 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: Yes, what is it?\pHm...\nThe sun is burning brightly?\pGood... That should have happened.\nThat is why we awakened GROUDON,\lto realize TEAM MAGMA’s vision of\lexpanding the world’s landmass.\pWhat?!\pIt’s far hotter than we envisioned?\nIt’s so hot that it’s dangerous?\pThat can’t be...\nThat’s just not possible...\pHold your position and monitor the\nsituation!$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4C79::
-# 278 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 264 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: There’s something wrong...\pThe BLUE ORB is supposed to awaken\nand control GROUDON...\pBut... Why?\nWhy did GROUDON disappear?\pWhy?!$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4D02::
-# 282 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 268 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "ARCHIE: What have you wrought?\pMAXIE... You’ve finally awoken GROUDON,\nhaven’t you?\pWhat will happen to the world if this\nsunshine continues for all eternity?\pThe world’s seas will all dry up and\ndisappear...$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4DD3::
-# 286 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 272 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "MAXIE: What are you saying?\pThe BLUE ORB should let me control\nGROUDON...\lThat can’t be possible...$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4E37::
-# 290 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 276 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "ARCHIE: We don’t have the time to\nargue about it here!\pGet outside and see for yourself!\pSee if what you’ve wrought is the\nworld that you desired!$"
 
 Naranja_SeafloorCavern_G24_M36_Text_081B4ECA::
-# 294 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
+# 280 "data/maps/Naranja_SeafloorCavern_G24_M36/scripts.pory"
 	.string "ARCHIE: {PLAYER}{KUN}, come on, you have\nto get out of here, too!$"

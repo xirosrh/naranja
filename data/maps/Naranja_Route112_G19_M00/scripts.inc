@@ -55,112 +55,106 @@ Naranja_Route112_G19_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1::
 # 38 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	faceplayer
 # 39 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	loadword 0, Naranja_Route112_G19_M00_Text_081924F5
+	msgbox Naranja_Route112_G19_M00_Text_081924F5, MSGBOX_YESNO
 # 40 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	callstd 5
-# 41 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 42 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 41 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD
-# 43 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 42 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 44 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 43 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Route112_G19_M00_EventScript_Sub_0815C0DC
 	end
 
 
 Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD::
+# 48 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	msgbox Naranja_MtChimney_G19_M01_Text_081925A9, MSGBOX_DEFAULT
 # 49 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	loadword 0, Naranja_MtChimney_G19_M01_Text_081925A9
-# 50 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	callstd 4
-# 51 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	closemessage
-# 52 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 50 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	applymovement LOCALID_ROUTE112_G19_M00_BEAUTY, Naranja_Route112_G19_M00_Movement_0815C0E6
-# 53 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 51 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_Route112_G19_M00_Movement_0815C0F0
-# 54 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 52 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	waitmovement LOCALID_NONE
-# 55 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 53 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	setvar VAR_0x8004, 0
-# 56 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 54 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	setvar VAR_NARANJA_ROUTE112_STORY_STATE, 1
-# 57 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 55 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	incrementgamestat 0x30
-# 58 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 56 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	special CableCarWarp
-# 59 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 57 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	special CableCar
-# 60 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 58 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	waitstate
-# 61 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 59 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_Route112_G19_M00_EventScript_Sub_0815C0DC::
-# 66 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	loadword 0, Naranja_Route112_G19_M00_Text_08192548
-# 67 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	callstd 4
-# 68 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 64 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	msgbox Naranja_Route112_G19_M00_Text_08192548, MSGBOX_DEFAULT
+# 65 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	release
 	end
 
 
-# 72 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 69 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 Naranja_Route112_G19_M00_Movement_0815C0E6:
-# 73 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 70 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_up
-# 74 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 71 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_up
-# 75 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 72 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_right
-# 76 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 73 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 79 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 76 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 Naranja_Route112_G19_M00_Movement_0815C0EB:
-# 80 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 77 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	delay_16
-# 81 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 78 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_left
-# 82 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 79 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_down
-# 83 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 80 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	walk_down
 	step_end
 
-# 86 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 83 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 Naranja_Route112_G19_M00_Movement_0815C0F0:
+# 84 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	walk_up
+# 85 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	walk_up
+# 86 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	walk_up
 # 87 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	walk_up
-# 88 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	walk_up
-# 89 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	walk_up
-# 90 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	delay_16
 	step_end
 
-# 93 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 90 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 Naranja_Route112_G19_M00_Movement_0815C0F5:
+# 91 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	walk_down
+# 92 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	walk_down
+# 93 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+	walk_down
 # 94 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	walk_down
-# 95 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	walk_down
-# 96 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
-	walk_down
-# 97 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	delay_16
 	step_end
 
 Naranja_Route112_G19_M00_Text_081924F5::
-# 100 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 97 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	.string "The CABLE CAR is ready to go up.\nWould you like to be on it?$"
 
 Naranja_Route112_G19_M00_Text_08192548::
-# 104 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
+# 101 "data/maps/Naranja_Route112_G19_M00/scripts.pory"
 	.string "Please ride with us another time.$"

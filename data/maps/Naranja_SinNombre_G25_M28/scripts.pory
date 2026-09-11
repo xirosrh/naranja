@@ -630,8 +630,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5245 {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A525F {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5273)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A68F0)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A68F0, MSGBOX_SIGN)
     return
 }
 
@@ -758,8 +757,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5377 {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A53B3 {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A53C7)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6A1F)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6A1F, MSGBOX_DEFAULT)
     return
 }
 
@@ -1202,8 +1200,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A58EE {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5930 {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5944)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6AF5)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6AF5, MSGBOX_SIGN)
     return
 }
 
@@ -1233,8 +1230,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A594A {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5984 {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5998)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6C06)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6C06, MSGBOX_DEFAULT)
     return
 }
 
@@ -1248,8 +1244,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5998 {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59A2 {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A59B6)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6C21)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6C21, MSGBOX_DEFAULT)
     return
 }
 
@@ -1263,8 +1258,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59B6 {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59C0 {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A59D4)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6C9D)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6C9D, MSGBOX_DEFAULT)
     return
 }
 
@@ -1278,8 +1272,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59D4 {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59DE {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A59F2)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D16)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6D16, MSGBOX_DEFAULT)
     return
 }
 
@@ -1341,8 +1334,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A49 {
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A75 {
     compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A89)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D3C)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6D3C, MSGBOX_DEFAULT)
     return
 }
 
@@ -1447,8 +1439,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BAB {
     call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C12)
     checkflag(FLAG_TEMP_2)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BF6)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DC5)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6DC5, MSGBOX_SIGN)
     waitmessage
     call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C7F)
     call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CE5)
@@ -1464,8 +1455,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BAB {
 
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BF6 {
     incrementgamestat(0x25)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6DF1, MSGBOX_SIGN)
     delay(0x5A)
     special(ShouldReadyContestArtist)
     compare_var_to_value(VAR_0x8004, 1)
@@ -1585,8 +1575,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CE5 {
     special(GetContestWinnerId)
     compare_var_to_value(VAR_0x8005, 3)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CFC)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6DF1, MSGBOX_SIGN)
     return
 }
 
@@ -1599,14 +1588,12 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CFC {
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D5B)
     compare_var_to_value(VAR_CONTEST_RANK, 3)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D3B)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6DF1, MSGBOX_SIGN)
     return
 }
 
 script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D2D {
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6E1F)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6E1F, MSGBOX_SIGN)
     setvar(VAR_NARANJA_ISLA_KUMQUAT_STORY_STATE, 4)
     return
 }
@@ -1617,8 +1604,7 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D3B {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D2D)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
-    callstd(3)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6DF1, MSGBOX_SIGN)
     return
 }
 
@@ -1627,15 +1613,12 @@ script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D5B {
     incrementgamestat(0x2A)
     setflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_083B)
     lockall
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D6A)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6D6A, MSGBOX_DEFAULT)
     playfanfare(MUS_OBTAIN_ITEM)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D96)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6D96, MSGBOX_DEFAULT)
     waitfanfare
     special(BufferContestWinnerMonName)
-    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DAC)
-    callstd(4)
+    msgbox(Naranja_SinNombre_G25_M28_Text_081A6DAC, MSGBOX_DEFAULT)
     releaseall
     return
 }

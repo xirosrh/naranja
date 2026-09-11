@@ -12,21 +12,18 @@ script Naranja_RutaAzul_G00_M18_OnTransition {
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId10 {
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_0816D950)
-    callstd(2)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_0816D950, MSGBOX_NPC)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId1 {
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_0816D996)
-    callstd(2)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_0816D996, MSGBOX_NPC)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_RUTA_AZUL_036, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B7D55, Naranja_RutaAzul_G00_M18_Text_081B7D8B)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B7DB2)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B7DB2, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -35,15 +32,13 @@ script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EDD6)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B7E50)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B7E50, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EDD6 {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_RUTA_AZUL_481, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B7FE7, Naranja_RutaAzul_G00_M18_Text_081B802B, Naranja_RutaAzul_G00_M18_Text_081B80AF)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B8053)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B8053, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -52,22 +47,19 @@ script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE1C)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B7F40)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B7F40, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE1C {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_RUTA_AZUL_481, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B80FE, Naranja_RutaAzul_G00_M18_Text_081B8123, Naranja_RutaAzul_G00_M18_Text_081B81A1)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B814D)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B814D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId6 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_RUTA_AZUL_336, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B81FA, Naranja_RutaAzul_G00_M18_Text_081B8258)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B8281)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B8281, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -76,23 +68,20 @@ script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId12 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE75)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B830D)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B830D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE75 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_RUTA_AZUL_293, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B8349, Naranja_RutaAzul_G00_M18_Text_081B838C)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B83A4)
-    callstd(6)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081B83A4, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11 {
     lock
     faceplayer
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C4449)
-    callstd(5)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081C4449, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_081A039B)
     call(Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0)
@@ -101,8 +90,7 @@ script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11 {
 }
 
 script Naranja_RutaAzul_G00_M18_EventScript_Sub_081A039B {
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C449B)
-    callstd(4)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081C449B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -123,8 +111,7 @@ script Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0 {
     copyvar(VAR_0x800A, VAR_RESULT)
     buffernumberstring(0, VAR_0x8008)
     buffernumberstring(1, VAR_0x8009)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C44DC)
-    callstd(4)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081C44DC, MSGBOX_DEFAULT)
     call(Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03A5)
     compare_var_to_value(VAR_0x800A, 0)
     goto_if(EQUAL, Naranja_IslaHamlin_G07_M03_EventScript_Sub_081A14DC)
@@ -134,8 +121,7 @@ script Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0 {
     copyvar(VAR_0x8009, VAR_0x8006)
     buffernumberstring(0, VAR_0x8008)
     buffernumberstring(1, VAR_0x8009)
-    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C4B05)
-    callstd(4)
+    msgbox(Naranja_RutaAzul_G00_M18_Text_081C4B05, MSGBOX_DEFAULT)
     return
 }
 
@@ -159,8 +145,7 @@ script Naranja_RutaAzul_G00_M18_EventScript_Sub_086B5DB0 {
     faceplayer
     applymovement(LOCALID_RUTA_AZUL_G00_M18_BOY_5, Naranja_RutaAzul_G00_M18_Movement_086B31DB)
     applymovement(LOCALID_PLAYER, Naranja_RutaAzul_G00_M18_Movement_08007B5B)
-    loadword(0, Naranja_IslaMandarina_G00_M14_Text_086B5D82)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G00_M14_Text_086B5D82, MSGBOX_DEFAULT)
     applymovement(LOCALID_PLAYER, Naranja_RutaAzul_G00_M18_Movement_08002F1C)
     release
     end

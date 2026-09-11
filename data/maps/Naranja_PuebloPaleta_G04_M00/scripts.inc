@@ -4,32 +4,30 @@ Naranja_PuebloPaleta_G04_M00_MapScripts::
 
 Naranja_PuebloPaleta_G04_M00_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId3::
 # 8 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G04_M00_Text_081762A3
-# 9 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
-	callstd 2
+	msgbox Naranja_PuebloPaleta_G04_M00_Text_081762A3, MSGBOX_NPC
 	end
 
 
 Naranja_PuebloPaleta_G04_M00_EventScript_Trigger_1::
-# 14 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+# 13 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
 	lockall
-# 15 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+# 14 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
 	checkflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_4051
-# 16 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+# 15 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaTangelo_G00_M10_EventScript_Trigger_1
+# 16 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+	nop
 # 17 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
-	nop
-# 18 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
 	checkflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_5051
-# 19 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+# 18 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
 	goto_if EQUAL, 0x086B0B00
-# 20 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+# 19 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
 	nop
+# 20 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
+	msgbox Naranja_PuebloPaleta_G04_M00_Text_08176209, MSGBOX_DEFAULT
 # 21 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
-	loadword 0, Naranja_PuebloPaleta_G04_M00_Text_08176209
-# 22 "data/maps/Naranja_PuebloPaleta_G04_M00/scripts.pory"
-	goto Naranja_ValleCharizard_G04_M01_EventScript_Sub_0815369F
-	return
+	release
+	end
 
 
 Naranja_PuebloPaleta_G04_M00_Text_08176209::

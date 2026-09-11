@@ -72,62 +72,60 @@ Naranja_AncientTomb_G24_M68_EventScript_Sign_1::
 
 Naranja_AncientTomb_G24_M68_EventScript_Sub_0815F038::
 # 54 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
-	loadword 0, Naranja_AncientTomb_G24_M68_Text_081A13BE
+	msgbox Naranja_AncientTomb_G24_M68_Text_081A13BE, MSGBOX_DEFAULT
 # 55 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
-	callstd 4
-# 56 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_AncientTomb_G24_M68_EventScript_Sign_2::
-# 61 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 60 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	lockall
-# 62 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 61 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	braillemessage Naranja_AncientTomb_G24_M68_Text_081C552E
-# 63 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 62 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	waitbuttonpress
-# 64 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 63 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 65 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 64 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_AncientTomb_G24_M68_EventScript_OBJ_EVENT_GFX_REGISTEEL_LocalId1::
-# 70 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 69 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	lock
-# 71 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 70 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	faceplayer
-# 72 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 71 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	waitse
-# 73 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 72 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	playmoncry SPECIES_REGISTEEL, 2
-# 74 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 73 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	delay 0x28
-# 75 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 74 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	waitmoncry
-# 76 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 75 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	setwildbattle SPECIES_REGISTEEL, 0x28, 0
-# 77 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 76 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	setflag FLAG_HIDE_ANCIENT_TOMB_G24_M68_REGISTEEL
-# 78 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 77 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 79 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 78 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	special StartRegiBattle
-# 80 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 79 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	waitstate
-# 81 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 80 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	clearflag FLAG_SYS_POKEDEX_GET
-# 82 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 81 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	release
 	end
 
 
 Naranja_AncientTomb_G24_M68_Text_081A13BE::
-# 86 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 85 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	.string "There is a big hole in the wall.$"
 
 Naranja_AncientTomb_G24_M68_Text_081C552E::
-# 90 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
+# 89 "data/maps/Naranja_AncientTomb_G24_M68/scripts.pory"
 	.string "  ëÛÀÂ+ÉìÒ éÌ+ ìÉÛÌÇ\nÒçáÌ ÀéÎ ßç=ÌÇ\nÀÉÛ ìç ìÒÌ àÙご\nÉé ìÒÌ ÛÉÎÎßÌわ$"

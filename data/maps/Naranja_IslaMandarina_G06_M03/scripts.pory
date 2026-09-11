@@ -12,14 +12,12 @@ script Naranja_IslaMandarina_G06_M03_OnTransition {
 }
 
 script Naranja_IslaMandarina_G06_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3 {
-    loadword(0, Naranja_IslaMandarina_G06_M03_Text_08178389)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M03_Text_08178389, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G06_M03_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
-    loadword(0, Naranja_IslaMandarina_G06_M03_Text_08178D8E)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M03_Text_08178D8E, MSGBOX_NPC)
     end
 }
 

@@ -34,154 +34,136 @@ Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId1::
 # 26 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157440
 # 27 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_081829A4
+	msgbox Naranja_IslaTrovita_G11_M00_Text_081829A4, MSGBOX_DEFAULT
 # 28 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 29 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157440::
+# 33 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_08182A19, MSGBOX_DEFAULT
 # 34 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_08182A19
-# 35 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 36 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815744A::
-# 41 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_08182AB3
-# 42 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 43 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 39 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_08182AB3, MSGBOX_DEFAULT
+# 40 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId2::
-# 48 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 45 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	lock
-# 49 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 46 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	faceplayer
-# 50 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 47 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090
-# 51 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 48 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815747B
-# 52 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 49 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
-# 53 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 50 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485
-# 54 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 51 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	checkflag FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS
-# 55 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 52 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485
-# 56 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_08182AF0
-# 57 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 58 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 53 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_08182AF0, MSGBOX_DEFAULT
+# 54 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815747B::
-# 63 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_08182B5A
-# 64 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 65 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 59 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_08182B5A, MSGBOX_DEFAULT
+# 60 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485::
-# 70 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_08182B2D
-# 71 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 72 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 65 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_08182B2D, MSGBOX_DEFAULT
+# 66 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3::
-# 77 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 71 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	lock
-# 78 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 72 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	faceplayer
-# 79 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 73 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090
-# 80 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 74 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574B6
-# 81 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 75 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
-# 82 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 76 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574C0
-# 83 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 77 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	checkflag FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS
-# 84 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 78 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574C0
-# 85 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_081828EE
-# 86 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 87 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 79 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_081828EE, MSGBOX_DEFAULT
+# 80 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574B6::
-# 92 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_081828EE
-# 93 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 94 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 85 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_081828EE, MSGBOX_DEFAULT
+# 86 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574C0::
-# 99 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	loadword 0, Naranja_IslaTrovita_G11_M00_Text_0818295E
-# 100 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	callstd 4
-# 101 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 91 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+	msgbox Naranja_IslaTrovita_G11_M00_Text_0818295E, MSGBOX_DEFAULT
+# 92 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaTrovita_G11_M00_Text_081828EE::
-# 105 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 96 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "Hello and welcome to the DEVON\nCORPORATION.\pWe’re proud producers of items and\nmedicine that enhance your life.$"
 
 Naranja_IslaTrovita_G11_M00_Text_0818295E::
-# 109 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 100 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "One of our research staff stupidly\ngot robbed of an important parcel.$"
 
 Naranja_IslaTrovita_G11_M00_Text_081829A4::
-# 113 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 104 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "Hey, those RUNNING SHOES!\nThey’re one of our products!\pIt makes me happy when I see someone\nusing something we made.$"
 
 Naranja_IslaTrovita_G11_M00_Text_08182A19::
-# 117 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 108 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "That stolen parcel...\pWell, sure it’s important, but it’s not\nanything that anyone can use.\pIn my estimation, that robber must not\nhave been very bright.$"
 
 Naranja_IslaTrovita_G11_M00_Text_08182AB3::
-# 121 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 112 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "It sounds like they’ve recovered\nthe ripped-off DEVON GOODS.$"
 
 Naranja_IslaTrovita_G11_M00_Text_08182AF0::
-# 125 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 116 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "I’m sorry, only authorized people\nare allowed to enter here.$"
 
 Naranja_IslaTrovita_G11_M00_Text_08182B2D::
-# 129 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 120 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "It’s beyond stupid.\nHow could we get robbed?$"
 
 Naranja_IslaTrovita_G11_M00_Text_08182B5A::
-# 133 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
+# 124 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	.string "Hi, there!\nYou’re always welcome here!$"

@@ -11,22 +11,19 @@ script Naranja_PuebloPaleta_G08_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId2 {
     goto_if(EQUAL, Naranja_PuebloPaleta_G08_M00_EventScript_Sub_0815446D)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G08_M00_EventScript_Sub_08154463)
-    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_086BF11B)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G08_M00_Text_086BF11B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G08_M00_EventScript_Sub_08154463 {
-    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_08179CA1)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G08_M00_Text_08179CA1, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G08_M00_EventScript_Sub_0815446D {
-    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_08179D12)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G08_M00_Text_08179D12, MSGBOX_DEFAULT)
     release
     end
 }
@@ -36,8 +33,7 @@ script Naranja_PuebloPaleta_G08_M00_EventScript_OBJ_EVENT_GFX_BIRCHS_BAG_LocalId
     faceplayer
     waitse
     playmoncry(SPECIES_MACHOKE, 0)
-    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_086BFAF4)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G08_M00_Text_086BFAF4, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

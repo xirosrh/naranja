@@ -136,8 +136,7 @@ script Naranja_SealedChamber_G24_M71_EventScript_Sign_11 {
 }
 
 script Naranja_SealedChamber_G24_M71_EventScript_Sub_0815F1CF {
-    loadword(0, Naranja_AncientTomb_G24_M68_Text_081A13BE)
-    callstd(4)
+    msgbox(Naranja_AncientTomb_G24_M68_Text_081A13BE, MSGBOX_DEFAULT)
     releaseall
     end
 }

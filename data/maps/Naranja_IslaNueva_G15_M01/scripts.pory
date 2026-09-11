@@ -6,57 +6,49 @@ mapscripts Naranja_IslaNueva_G15_M01_MapScripts {
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_613, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EA87, Naranja_IslaNueva_G15_M01_Text_0818EACF)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EAED)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818EAED, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId7 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_614, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EB22, Naranja_IslaNueva_G15_M01_Text_0818EB81)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EBB1)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818EBB1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_118, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EBFA, Naranja_IslaNueva_G15_M01_Text_0818EC5E)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EC92)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818EC92, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_128, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818ECEB, Naranja_IslaNueva_G15_M01_Text_0818ED18)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818ED2B)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818ED2B, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_129, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818ED91, Naranja_IslaNueva_G15_M01_Text_0818EDE8)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EE03)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818EE03, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId8 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_130, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EE96, Naranja_IslaNueva_G15_M01_Text_0818EEDC)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EEF7)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818EEF7, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId5 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_131, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EF39, Naranja_IslaNueva_G15_M01_Text_0818EFB8)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EFCA)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818EFCA, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId6 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_301, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818F037, Naranja_IslaNueva_G15_M01_Text_0818F07F)
-    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818F085)
-    callstd(6)
+    msgbox(Naranja_IslaNueva_G15_M01_Text_0818F085, MSGBOX_AUTOCLOSE)
     end
 }
 

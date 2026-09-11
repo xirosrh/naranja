@@ -20,8 +20,7 @@ script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId7 {
     checktrainerflag(0x27A)
     goto_if(LESS_THAN, Naranja_Islas_G27_M00_EventScript_Sub_08160C99)
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00D7)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B267)
-    callstd(4)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B267, MSGBOX_DEFAULT)
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00D8)
     goto_if(EQUAL, Naranja_Islas_G27_M00_EventScript_Sub_08160CFB)
     release
@@ -29,8 +28,7 @@ script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId7 {
 }
 
 script Naranja_Islas_G27_M00_EventScript_Sub_08160C99 {
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B22E)
-    callstd(4)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B22E, MSGBOX_DEFAULT)
     release
     end
 }
@@ -51,8 +49,7 @@ script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId8 {
     checktrainerflag(0x27A)
     goto_if(LESS_THAN, Naranja_Islas_G27_M00_EventScript_Sub_08160CF1)
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00D8)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B2E9)
-    callstd(4)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B2E9, MSGBOX_DEFAULT)
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00D7)
     goto_if(EQUAL, Naranja_Islas_G27_M00_EventScript_Sub_08160CFB)
     release
@@ -60,8 +57,7 @@ script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId8 {
 }
 
 script Naranja_Islas_G27_M00_EventScript_Sub_08160CF1 {
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B2B6)
-    callstd(4)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B2B6, MSGBOX_DEFAULT)
     release
     end
 }
@@ -78,68 +74,58 @@ script Naranja_Islas_G27_M00_EventScript_Sub_08160CFB {
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId12 {
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B33B)
-    callstd(2)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B33B, MSGBOX_NPC)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId11 {
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B37F)
-    callstd(2)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B37F, MSGBOX_NPC)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_Sign_1 {
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B3DE)
-    callstd(3)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B3DE, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_Sign_2 {
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B3FF)
-    callstd(3)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B3FF, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_117, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AD9B, Naranja_Islas_G27_M00_Text_0819ADDA)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819ADF7)
-    callstd(6)
+    msgbox(Naranja_Islas_G27_M00_Text_0819ADF7, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId9 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLAS_485, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AE3E, Naranja_Islas_G27_M00_Text_0819AE53, Naranja_Islas_G27_M00_Text_0819AEA9)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819AE6A)
-    callstd(6)
+    msgbox(Naranja_Islas_G27_M00_Text_0819AE6A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLAS_486, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819B148, Naranja_Islas_G27_M00_Text_0819B17D, Naranja_Islas_G27_M00_Text_0819B1DD)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B18D)
-    callstd(6)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B18D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_HIKER_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_634, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AEFB, Naranja_Islas_G27_M00_Text_0819AF3E)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819AF56)
-    callstd(6)
+    msgbox(Naranja_Islas_G27_M00_Text_0819AF56, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId5 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_116, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AF8A, Naranja_Islas_G27_M00_Text_0819AFDB)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B00D)
-    callstd(6)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B00D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_HIKER_LocalId6 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_633, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819B066, Naranja_Islas_G27_M00_Text_0819B0D7)
-    loadword(0, Naranja_Islas_G27_M00_Text_0819B0EF)
-    callstd(6)
+    msgbox(Naranja_Islas_G27_M00_Text_0819B0EF, MSGBOX_AUTOCLOSE)
     end
 }
 

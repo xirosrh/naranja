@@ -16,8 +16,7 @@ script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262 {
     checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0083)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C28F)
     setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B)
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192A0D)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192A0D, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x12D)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -33,27 +32,23 @@ script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262 {
 }
 
 script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C28F {
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192ACC)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192ACC, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_CaminoFrio_G20_M02_EventScript_Sign_1 {
     lockall
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192B4A)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192B4A, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C2B7)
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192DA9)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192DA9, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C2B7 {
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192C01)
-    callstd(5)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192C01, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C2CC)
     releaseall
@@ -61,14 +56,12 @@ script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C2B7 {
 }
 
 script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C2CC {
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192CB4)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192CB4, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_CaminoFrio_G20_M02_EventScript_Sign_2 {
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_08192DC1)
-    callstd(3)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_08192DC1, MSGBOX_SIGN)
     end
 }
 
@@ -79,8 +72,7 @@ script Naranja_CaminoFrio_G20_M02_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
     setflag(FLAG_HIDE_CAMINO_FRIO_G20_M02_NURSE)
     clearflag(FLAG_HIDE_ISLA_NAVEL_G05_M03_WOMAN_3)
     nop
-    loadword(0, Naranja_CaminoFrio_G20_M02_Text_086B73E3)
-    callstd(6)
+    msgbox(Naranja_CaminoFrio_G20_M02_Text_086B73E3, MSGBOX_AUTOCLOSE)
     closemessage
     copyvar(VAR_0x8000, VAR_FACING)
     compare_var_to_value(VAR_0x8000, 3)

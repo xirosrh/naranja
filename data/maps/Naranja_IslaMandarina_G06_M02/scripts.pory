@@ -10,27 +10,23 @@ script Naranja_IslaMandarina_G06_M02_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Loc
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemart(Naranja_IslaMandarina_G06_M02_Mart_08153ED4)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G06_M02_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId2 {
-    loadword(0, Naranja_IslaMandarina_G06_M02_Text_081781C9)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M02_Text_081781C9, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G06_M02_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3 {
-    loadword(0, Naranja_IslaMandarina_G06_M02_Text_08178240)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M02_Text_08178240, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMandarina_G06_M02_EventScript_OBJ_EVENT_GFX_LASS_LocalId4 {
-    loadword(0, Naranja_IslaMandarina_G06_M02_Text_081782C0)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G06_M02_Text_081782C0, MSGBOX_NPC)
     end
 }
 

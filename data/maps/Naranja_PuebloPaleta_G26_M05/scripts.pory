@@ -70,8 +70,7 @@ script Naranja_PuebloPaleta_G26_M05_OnFrame_1 {
 script Naranja_PuebloPaleta_G26_M05_OnFrame_2 {
     lock
     faceplayer
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A3FD)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A3FD, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_TEMP_0, 5)
     release
@@ -94,8 +93,7 @@ script Naranja_PuebloPaleta_G26_M05_OnFrame_3 {
     waitmessage
     playfanfare(MUS_OBTAIN_ITEM)
     waitfanfare
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A719)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A719, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0816037D)
 }
 
@@ -134,14 +132,12 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081603AD {
     special(CallBattleFactoryFunction)
     compare_var_to_value(VAR_RESULT, 0x31)
     goto_if(NOT_EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081603F8)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A617)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A617, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081603F8)
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081603F8 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_08199FA9)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_08199FA9, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_TEMP_0, 5)
     release
@@ -149,8 +145,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081603F8 {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160408 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A520)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A520, MSGBOX_DEFAULT)
     waitmessage
     closemessage
     setvar(VAR_TEMP_0, 5)
@@ -171,8 +166,7 @@ script Naranja_PuebloPaleta_G26_M05_OnFrame_4 {
     special(CallBattlePyramidFunction)
     playse(SE_SAVE)
     waitse
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_08199FA9)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_08199FA9, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_TEMP_0, 5)
     release
@@ -197,8 +191,7 @@ script Naranja_PuebloPaleta_G26_M05_OnFrame_5 {
     setvar(VAR_TEMP_0, 5)
     special(SavePlayerParty)
     special(CallBattlePikeFunction)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A0A8)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A0A8, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160664)
     warp(MAP_NARANJA_PUEBLO_PALETA_G26_M06, 0xFF, 1, 6)
@@ -215,8 +208,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_TEALA_LocalId1 {
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_OnFrame_3)
     special(SavePlayerParty)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_08199F2C)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_08199F2C, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081604BE)
 }
 
@@ -252,15 +244,13 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081604FA {
     copyvar(VAR_0x8005, VAR_RESULT)
     copyvar(VAR_0x8006, VAR_RESULT)
     special(CallBattleArenaFunction)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A07B)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A07B, MSGBOX_DEFAULT)
     fadescreen(1)
     special(ChoosePartyForBattleFrontier)
     waitstate
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0816064F)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_08199FDA)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_08199FDA, MSGBOX_YESNO)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0816064F)
@@ -295,8 +285,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160587 {
     special(SavePlayerParty)
     special(CallBattlePikeFunction)
     setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_6, 1)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A0A8)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A0A8, MSGBOX_DEFAULT)
     closemessage
     call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160664)
     warp(MAP_NARANJA_PUEBLO_PALETA_G26_M06, 0xFF, 1, 6)
@@ -306,8 +295,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160587 {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160600 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A0D1)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A0D1, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081604BE)
 }
 
@@ -321,14 +309,12 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0816060D {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160628 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A249)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A249, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160662)
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160635 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A32D)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A32D, MSGBOX_DEFAULT)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160662)
 }
 
@@ -344,8 +330,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0816064F {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160652 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_08199FA9)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_08199FA9, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0xB)
     special(CallBattleArenaFunction)
     goto(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160662)
@@ -373,8 +358,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160664 {
 script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId2 {
     lock
     faceplayer
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A747)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A747, MSGBOX_YESNO)
     copyvar(VAR_0x8000, VAR_RESULT)
     compare_var_to_value(VAR_0x8000, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081606CC)
@@ -385,8 +369,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId2 {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081606CC {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A7C3)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A7C3, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 1)
     call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
     lock
@@ -399,35 +382,30 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081606CC {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081606F7 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A7FD)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A7FD, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160701 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A83D)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A83D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0816070B {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A871)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A871, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId3 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A8AE)
-    callstd(2)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A8AE, MSGBOX_NPC)
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId4 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A946)
-    callstd(2)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A946, MSGBOX_NPC)
     end
 }
 
@@ -447,16 +425,14 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId6 {
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081607C5)
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_00ED)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160773)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819A9EE)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819A9EE, MSGBOX_DEFAULT)
     setvar(VAR_0x8008, 0x2A)
     setorcopyvar(VAR_0x8000, 0x2A)
     callstd(7)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081607AF)
     setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_00ED)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819ABAA)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819ABAA, MSGBOX_DEFAULT)
     release
     end
 }
@@ -465,33 +441,28 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_08160773 {
     specialvar(VAR_RESULT, GetBattleTowerSinglesStreak)
     compare_var_to_value(VAR_RESULT, 0x64)
     goto_if(LESS_THAN, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081607C5)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819AAC4)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819AAC4, MSGBOX_DEFAULT)
     setvar(VAR_0x8008, 0x2B)
     setorcopyvar(VAR_0x8000, 0x2B)
     callstd(7)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081607AF)
     setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_00EE)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819ABAA)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819ABAA, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081607AF {
     bufferdecorationname(1, 0x8008)
-    loadword(0, Naranja_IslaNueva_G15_M10_Text_081A0CEF)
-    callstd(4)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819ABED)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M10_Text_081A0CEF, MSGBOX_DEFAULT)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819ABED, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081607C5 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_0819AC55)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_0819AC55, MSGBOX_DEFAULT)
     release
     end
 }
@@ -512,8 +483,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2E3)
     copyvar(VAR_0x8009, VAR_0x8006)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A776D)
-    callstd(5)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A776D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE241)
     compare_var_to_value(VAR_RESULT, 0)
@@ -530,8 +500,7 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE241 {
     call_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2A1)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2AA)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A79EB)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A79EB, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0xC)
     copyvar(VAR_0x8005, VAR_0x8009)
     call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
@@ -545,29 +514,25 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE241 {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE297 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A78B7)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A78B7, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2A1 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A791B)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A791B, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2AA {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A7990)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A7990, MSGBOX_DEFAULT)
     return
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2B3 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2D9)
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A7A6E)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A7A6E, MSGBOX_DEFAULT)
     setflag(FLAG_TEMP_2)
     copyvar(VAR_0x8004, VAR_0x8008)
     setvar(VAR_0x8005, 7)
@@ -575,15 +540,13 @@ script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2B3 {
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2D9 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A7AE0)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A7AE0, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_PuebloPaleta_G26_M05_EventScript_Sub_081AE2E3 {
-    loadword(0, Naranja_PuebloPaleta_G26_M05_Text_081A7B66)
-    callstd(4)
+    msgbox(Naranja_PuebloPaleta_G26_M05_Text_081A7B66, MSGBOX_DEFAULT)
     release
     end
 }

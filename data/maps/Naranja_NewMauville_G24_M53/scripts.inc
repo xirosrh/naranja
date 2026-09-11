@@ -242,210 +242,204 @@ Naranja_NewMauville_G24_M53_EventScript_Trigger_10::
 # 142 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	lockall
 # 143 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	loadword 0, Naranja_NewMauville_G24_M53_Text_081983B1
+	msgbox Naranja_NewMauville_G24_M53_Text_081983B1, MSGBOX_DEFAULT
 # 144 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	callstd 4
-# 145 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	call Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B
-# 146 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 145 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setvar VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
-# 147 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 146 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B::
-# 152 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 151 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x21, 6, 0x24F, 0
-# 153 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 152 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x20, 2, 0x2F0, 1
-# 154 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 153 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x21, 2, 0x2F1, 1
-# 155 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 154 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x22, 2, 0x2F2, 1
-# 156 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 155 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x23, 2, 0x2F3, 1
-# 157 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 156 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x20, 3, 0x2F4, 1
-# 158 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 157 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x21, 3, 0x2F5, 1
-# 159 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 158 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x22, 3, 0x2F6, 1
-# 160 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 159 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setmetatile 0x23, 3, 0x2F7, 1
-# 161 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 160 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	special DrawWholeMapView
 	return
 
 
 Naranja_NewMauville_G24_M53_EventScript_Sign_1::
-# 166 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 165 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	lockall
-# 167 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 166 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	compare_var_to_value VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
-# 168 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 167 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	goto_if EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E8F6
+# 168 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+	msgbox Naranja_NewMauville_G24_M53_Text_08198315, MSGBOX_DEFAULT
 # 169 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	loadword 0, Naranja_NewMauville_G24_M53_Text_08198315
-# 170 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	callstd 4
-# 171 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_Sub_0815E8F6::
-# 176 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	loadword 0, Naranja_NewMauville_G24_M53_Text_08198395
-# 177 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	callstd 4
-# 178 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 174 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+	msgbox Naranja_NewMauville_G24_M53_Text_08198395, MSGBOX_DEFAULT
+# 175 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6::
-# 183 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 180 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	lock
-# 184 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 181 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	faceplayer
-# 185 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 182 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setwildbattle SPECIES_VOLTORB, 0x19, 0
-# 186 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 183 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	waitse
-# 187 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 184 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	playmoncry SPECIES_VOLTORB, 2
-# 188 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 185 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	delay 0x28
-# 189 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 186 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	waitmoncry
-# 190 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 187 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setflag FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_6
-# 191 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 188 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 192 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 189 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	dowildbattle
-# 193 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 190 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	clearflag FLAG_SYS_POKEDEX_GET
-# 194 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 191 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	release
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId7::
-# 199 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 196 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	lock
-# 200 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 197 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	faceplayer
-# 201 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 198 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setwildbattle SPECIES_VOLTORB, 0x19, 0
-# 202 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 199 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	waitse
-# 203 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 200 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	playmoncry SPECIES_VOLTORB, 2
-# 204 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 201 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	delay 0x28
-# 205 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 202 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	waitmoncry
-# 206 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 203 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setflag FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_7
-# 207 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 204 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 208 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 205 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	dowildbattle
-# 209 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 206 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	clearflag FLAG_SYS_POKEDEX_GET
-# 210 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 207 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	release
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId8::
-# 215 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 212 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	lock
-# 216 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 213 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	faceplayer
-# 217 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 214 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setwildbattle SPECIES_VOLTORB, 0x19, 0
-# 218 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 215 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	waitse
-# 219 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 216 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	playmoncry SPECIES_VOLTORB, 2
-# 220 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 217 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	delay 0x28
-# 221 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 218 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	waitmoncry
-# 222 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 219 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setflag FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_8
-# 223 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 220 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 224 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 221 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	dowildbattle
-# 225 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 222 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	clearflag FLAG_SYS_POKEDEX_GET
-# 226 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 223 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	release
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1::
-# 231 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 228 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8000, 2
-# 232 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 229 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 233 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 230 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2::
-# 238 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 235 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x55
-# 239 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 236 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 240 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 237 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3::
-# 245 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 242 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x60
-# 246 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 243 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 247 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 244 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4::
-# 252 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 249 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x17
-# 253 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 250 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 254 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 251 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5::
-# 259 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 256 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x12
-# 260 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 257 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 261 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 258 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_NewMauville_G24_M53_Text_08198315::
-# 265 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 262 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	.string "The generator is radiating heat that\ncan be felt even at a distance.\pIt looks like it should be turned off\nas soon as possible.$"
 
 Naranja_NewMauville_G24_M53_Text_08198395::
-# 269 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 266 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	.string "The generator quieted down.$"
 
 Naranja_NewMauville_G24_M53_Text_081983B1::
-# 273 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
+# 270 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	.string "{PLAYER} stepped on the switch.\pClick...\p... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pThe generator appears to have\nstopped...$"

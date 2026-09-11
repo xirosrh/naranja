@@ -5,14 +5,12 @@ mapscripts Naranja_IslaNueva_G15_M08_MapScripts {
 }
 
 script Naranja_IslaNueva_G15_M08_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
-    loadword(0, Naranja_IslaNueva_G15_M08_Text_0818FC92)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G15_M08_Text_0818FC92, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNueva_G15_M08_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId2 {
-    loadword(0, Naranja_IslaNueva_G15_M08_Text_0818FD41)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G15_M08_Text_0818FD41, MSGBOX_NPC)
     end
 }
 
@@ -21,8 +19,7 @@ script Naranja_IslaNueva_G15_M08_EventScript_OBJ_EVENT_GFX_AZUMARILL_LocalId3 {
     faceplayer
     waitse
     playmoncry(SPECIES_AZUMARILL, 0)
-    loadword(0, Naranja_IslaNueva_G15_M08_Text_0818FDD8)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G15_M08_Text_0818FDD8, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

@@ -5,8 +5,7 @@ mapscripts Naranja_IslaTangelo_G06_M06_MapScripts {
 }
 
 script Naranja_IslaTangelo_G06_M06_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
-    loadword(0, Naranja_IslaTangelo_G06_M06_Text_081BC0C3)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G06_M06_Text_081BC0C3, MSGBOX_DEFAULT)
     release
     end
 }

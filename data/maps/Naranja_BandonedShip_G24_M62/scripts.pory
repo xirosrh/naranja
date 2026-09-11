@@ -9,15 +9,13 @@ script Naranja_BandonedShip_G24_M62_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId1 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EA93)
-    loadword(0, Naranja_BandonedShip_G24_M62_Text_08198835)
-    callstd(6)
+    msgbox(Naranja_BandonedShip_G24_M62_Text_08198835, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EA93 {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_BANDONED_SHIP_642, LOCALID_NONE, Naranja_BandonedShip_G24_M62_Text_081989DF, Naranja_BandonedShip_G24_M62_Text_08198A53, Naranja_BandonedShip_G24_M62_Text_08198AEE)
-    loadword(0, Naranja_BandonedShip_G24_M62_Text_08198A70)
-    callstd(6)
+    msgbox(Naranja_BandonedShip_G24_M62_Text_08198A70, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -26,15 +24,13 @@ script Naranja_BandonedShip_G24_M62_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId2 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EAD9)
-    loadword(0, Naranja_BandonedShip_G24_M62_Text_08198934)
-    callstd(6)
+    msgbox(Naranja_BandonedShip_G24_M62_Text_08198934, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EAD9 {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_BANDONED_SHIP_642, LOCALID_NONE, Naranja_BandonedShip_G24_M62_Text_08198B3B, Naranja_BandonedShip_G24_M62_Text_08198BCF, Naranja_BandonedShip_G24_M62_Text_08198C40)
-    loadword(0, Naranja_BandonedShip_G24_M62_Text_08198BEA)
-    callstd(6)
+    msgbox(Naranja_BandonedShip_G24_M62_Text_08198BEA, MSGBOX_AUTOCLOSE)
     end
 }
 

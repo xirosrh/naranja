@@ -5,8 +5,7 @@ mapscripts Naranja_BandonedShip_G24_M56_MapScripts {
 }
 
 script Naranja_BandonedShip_G24_M56_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId1 {
-    loadword(0, Naranja_BandonedShip_G24_M56_Text_0819850A)
-    callstd(2)
+    msgbox(Naranja_BandonedShip_G24_M56_Text_0819850A, MSGBOX_NPC)
     end
 }
 

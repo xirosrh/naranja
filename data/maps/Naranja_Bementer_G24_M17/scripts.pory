@@ -6,15 +6,13 @@ mapscripts Naranja_Bementer_G24_M17_MapScripts {
 
 script Naranja_Bementer_G24_M17_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_236, LOCALID_NONE, Naranja_Bementer_G24_M17_Text_0819672B, Naranja_Bementer_G24_M17_Text_0819679D)
-    loadword(0, Naranja_Bementer_G24_M17_Text_081967B5)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M17_Text_081967B5, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Bementer_G24_M17_EventScript_OBJ_EVENT_GFX_LASS_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_247, LOCALID_NONE, Naranja_Bementer_G24_M17_Text_081967EF, Naranja_Bementer_G24_M17_Text_0819682B)
-    loadword(0, Naranja_Bementer_G24_M17_Text_08196842)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M17_Text_08196842, MSGBOX_AUTOCLOSE)
     end
 }
 

@@ -43,15 +43,13 @@ script Naranja_IslaMellsweet_G14_M07_OnFrame_1 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_ISLA_MELLSWEET_G14_M07_STEVEN, Naranja_IslaMellsweet_G14_M07_Movement_0815AA6E)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DA77)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DA77, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x15A)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_007B)
     setflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_012E)
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DB22)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DB22, MSGBOX_DEFAULT)
     closemessage
     delay(0x14)
     applymovement(LOCALID_ISLA_MELLSWEET_G14_M07_STEVEN, Naranja_IslaMellsweet_G14_M07_Movement_0815AA76)
@@ -63,8 +61,7 @@ script Naranja_IslaMellsweet_G14_M07_OnFrame_1 {
 
 script Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2 {
     lockall
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DD12)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DD12, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AAE6)
     getpartysize
@@ -78,8 +75,7 @@ script Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId
     waitmessage
     givemon(SPECIES_BELDUM, 5, 0)
     bufferspeciesname(1, SPECIES_BELDUM)
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_081A1102)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_081A1102, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_081A0678)
     setflag(FLAG_HIDE_ISLA_MELLSWEET_G14_M07_ITEM_BALL)
@@ -89,28 +85,24 @@ script Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId
 }
 
 script Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AADC {
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DD77)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DD77, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AAE6 {
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DD9E)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DD9E, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_IslaMellsweet_G14_M07_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818E0A3)
-    callstd(3)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818E0A3, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId1 {
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DC25)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DC25, MSGBOX_NPC)
     end
 }
 
@@ -118,15 +110,13 @@ script Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_Loca
     lockall
     checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_012E)
     goto_if(EQUAL, Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AB16)
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DF1A)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DF1A, MSGBOX_DEFAULT)
     releaseall
     end
 }
 
 script Naranja_IslaMellsweet_G14_M07_EventScript_Sub_0815AB16 {
-    loadword(0, Naranja_IslaMellsweet_G14_M07_Text_0818DDC2)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M07_Text_0818DDC2, MSGBOX_DEFAULT)
     releaseall
     end
 }

@@ -5,20 +5,17 @@ mapscripts Naranja_IslaValencia_G08_M06_MapScripts {
 }
 
 script Naranja_IslaValencia_G08_M06_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId4 {
-    loadword(0, Naranja_IslaValencia_G08_M06_Text_0817BFFD)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G08_M06_Text_0817BFFD, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaValencia_G08_M06_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId3 {
-    loadword(0, Naranja_IslaValencia_G08_M06_Text_0817C06C)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G08_M06_Text_0817C06C, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaValencia_G08_M06_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId2 {
-    loadword(0, Naranja_IslaValencia_G08_M06_Text_0817C0BC)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G08_M06_Text_0817C0BC, MSGBOX_NPC)
     end
 }
 

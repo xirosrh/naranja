@@ -5,8 +5,7 @@ mapscripts Naranja_IslaValencia_G13_M13_MapScripts {
 }
 
 script Naranja_IslaValencia_G13_M13_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
-    loadword(0, Naranja_IslaValencia_G13_M13_Text_0818B7B0)
-    callstd(2)
+    msgbox(Naranja_IslaValencia_G13_M13_Text_0818B7B0, MSGBOX_NPC)
     end
 }
 
@@ -15,8 +14,7 @@ script Naranja_IslaValencia_G13_M13_EventScript_OBJ_EVENT_GFX_WYNAUT_DOLL_LocalI
     faceplayer
     waitse
     playmoncry(SPECIES_VENONAT, 0)
-    loadword(0, Naranja_IslaValencia_G13_M13_Text_0817E156)
-    callstd(4)
+    msgbox(Naranja_IslaValencia_G13_M13_Text_0817E156, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

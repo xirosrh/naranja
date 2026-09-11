@@ -5,8 +5,7 @@ mapscripts Naranja_ValnTang_G07_M02_MapScripts {
 }
 
 script Naranja_ValnTang_G07_M02_EventScript_OBJ_EVENT_GFX_TRADER_LocalId1 {
-    loadword(0, Naranja_ValnTang_G07_M02_Text_086B3EB4)
-    callstd(2)
+    msgbox(Naranja_ValnTang_G07_M02_Text_086B3EB4, MSGBOX_NPC)
     end
 }
 

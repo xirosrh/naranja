@@ -43,8 +43,7 @@ script Naranja_CuevaKabuto_G24_M09_EventScript_Sub_086B513B {
     applymovement(LOCALID_PLAYER, Naranja_CuevaKabuto_G24_M09_Movement_086B51BC)
     delay(0x10)
     nop
-    loadword(0, Naranja_CuevaKabuto_G24_M09_Text_086B5C30)
-    callstd(6)
+    msgbox(Naranja_CuevaKabuto_G24_M09_Text_086B5C30, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -55,8 +54,7 @@ script Naranja_CuevaKabuto_G24_M09_EventScript_Sub_086B5170 {
     nop
     applymovement(LOCALID_PLAYER, Naranja_CuevaKabuto_G24_M09_Movement_08009606)
     nop
-    loadword(0, Naranja_CuevaKabuto_G24_M09_Text_086B5C8A)
-    callstd(6)
+    msgbox(Naranja_CuevaKabuto_G24_M09_Text_086B5C8A, MSGBOX_AUTOCLOSE)
     delay(0x20)
     setwildbattle(SPECIES_MAWILE, 0x14, 0)
     special(BattleSetup_StartLatiBattle)
@@ -75,16 +73,14 @@ script Naranja_CuevaKabuto_G24_M09_EventScript_Trigger_4 {
     clearflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_BEAUTY, Naranja_CuevaKabuto_G24_M09_Movement_086B854F)
     delay(0x20)
-    loadword(0, Naranja_CuevaKabuto_G24_M09_Text_086B8420)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M09_Text_086B8420, MSGBOX_DEFAULT)
     closemessage
     fadescreen(1)
     applymovement(LOCALID_PLAYER, Naranja_CuevaKabuto_G24_M09_Movement_086B8530)
     delay(0x50)
     fadescreen(0)
     animateflash(2)
-    loadword(0, Naranja_CuevaKabuto_G24_M09_Text_086B8580)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M09_Text_086B8580, MSGBOX_DEFAULT)
     closemessage
     playbgm(MUS_ENCOUNTER_MAGMA, 0)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_BEAUTY, Naranja_CuevaKabuto_G24_M09_Movement_086B8551)
@@ -102,16 +98,14 @@ script Naranja_CuevaKabuto_G24_M09_EventScript_Trigger_4 {
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_MAGMA_MEMBER_F, Naranja_CuevaKabuto_G24_M09_Movement_086B8570)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_ZIGZAGOON, Naranja_CuevaKabuto_G24_M09_Movement_086B8573)
     delay(0x30)
-    loadword(0, Naranja_CuevaKabuto_G24_M09_Text_086B86F9)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M09_Text_086B86F9, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_CAMERAMAN, Naranja_CuevaKabuto_G24_M09_Movement_086B857C)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_BEAUTY, Naranja_CuevaKabuto_G24_M09_Movement_086B857C)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_ZIGZAGOON, Naranja_CuevaKabuto_G24_M09_Movement_086B857C)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_MAGMA_MEMBER_F, Naranja_CuevaKabuto_G24_M09_Movement_086B857C)
     applymovement(LOCALID_CUEVA_KABUTO_G24_M09_MAGMA_MEMBER_M, Naranja_CuevaKabuto_G24_M09_Movement_086B857C)
-    loadword(0, Naranja_CuevaKabuto_G24_M09_Text_086B876E)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M09_Text_086B876E, MSGBOX_DEFAULT)
     closemessage
     fadescreen(1)
     applymovement(LOCALID_PLAYER, Naranja_CuevaKabuto_G24_M09_Movement_086B8540)
@@ -146,8 +140,7 @@ script Naranja_CuevaKabuto_G24_M09_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId4 
 }
 
 script Naranja_CuevaKabuto_G24_M09_EventScript_OBJ_EVENT_GFX_KECLEON_1_LocalId1 {
-    loadword(0, Naranja_CuevaKabuto_G24_M07_Text_086B8B67)
-    callstd(5)
+    msgbox(Naranja_CuevaKabuto_G24_M07_Text_086B8B67, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_CuevaKabuto_G24_M07_EventScript_Sub_086B38F4)
     closemessage

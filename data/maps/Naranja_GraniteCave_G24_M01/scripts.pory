@@ -9,15 +9,13 @@ script Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6A0)
-    loadword(0, Naranja_GraniteCave_G24_M01_Text_08193A60)
-    callstd(6)
+    msgbox(Naranja_GraniteCave_G24_M01_Text_08193A60, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6A0 {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_GRANITE_CAVE_392, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193AB3, Naranja_GraniteCave_G24_M01_Text_08193B21)
-    loadword(0, Naranja_GraniteCave_G24_M01_Text_08193B4C)
-    callstd(6)
+    msgbox(Naranja_GraniteCave_G24_M01_Text_08193B4C, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -26,15 +24,13 @@ script Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6E2)
-    loadword(0, Naranja_GraniteCave_G24_M01_Text_08193C35)
-    callstd(6)
+    msgbox(Naranja_GraniteCave_G24_M01_Text_08193C35, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6E2 {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_GRANITE_CAVE_681, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193E75, Naranja_GraniteCave_G24_M01_Text_08193ECE, Naranja_GraniteCave_G24_M01_Text_08193F59)
-    loadword(0, Naranja_GraniteCave_G24_M01_Text_08193EF3)
-    callstd(6)
+    msgbox(Naranja_GraniteCave_G24_M01_Text_08193EF3, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -43,15 +39,13 @@ script Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C728)
-    loadword(0, Naranja_GraniteCave_G24_M01_Text_08193D9A)
-    callstd(6)
+    msgbox(Naranja_GraniteCave_G24_M01_Text_08193D9A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C728 {
     trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_GRANITE_CAVE_681, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193FCA, Naranja_GraniteCave_G24_M01_Text_0819403A, Naranja_GraniteCave_G24_M01_Text_081940DF)
-    loadword(0, Naranja_GraniteCave_G24_M01_Text_08194066)
-    callstd(6)
+    msgbox(Naranja_GraniteCave_G24_M01_Text_08194066, MSGBOX_AUTOCLOSE)
     end
 }
 

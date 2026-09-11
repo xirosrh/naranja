@@ -56,138 +56,136 @@ Naranja_SealedChamber_G24_M72_EventScript_Sign_1::
 # 33 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	delay 0x28
 # 34 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
-	loadword 0, Naranja_SealedChamber_G24_M72_Text_081A138B
+	msgbox Naranja_SealedChamber_G24_M72_Text_081A138B, MSGBOX_DEFAULT
 # 35 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
-	callstd 4
-# 36 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	closemessage
-# 37 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 36 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	fadeinbgm 0
-# 38 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 37 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	setflag FLAG_NARANJA_SEALED_CHAMBER_EVENT_COMPLETE_00E4
-# 39 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 38 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sub_0815F247::
-# 44 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 43 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sign_2::
-# 49 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 48 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	lockall
-# 50 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 49 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	braillemessage Naranja_SealedChamber_G24_M72_Text_081C53F2
-# 51 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 50 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	waitbuttonpress
-# 52 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 51 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 53 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 52 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sign_3::
-# 58 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 57 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	lockall
-# 59 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 58 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	braillemessage Naranja_SealedChamber_G24_M72_Text_081C5414
-# 60 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 59 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	waitbuttonpress
-# 61 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 60 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 62 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 61 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sign_4::
-# 67 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 66 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	lockall
-# 68 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 67 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	braillemessage Naranja_SealedChamber_G24_M72_Text_081C5435
-# 69 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 68 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	waitbuttonpress
-# 70 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 69 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 71 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 70 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sign_5::
-# 76 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 75 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	lockall
-# 77 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 76 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	braillemessage Naranja_SealedChamber_G24_M72_Text_081C545C
-# 78 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 77 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	waitbuttonpress
-# 79 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 78 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 80 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 79 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sign_6::
-# 85 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 84 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	lockall
-# 86 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 85 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	braillemessage Naranja_SealedChamber_G24_M72_Text_081C5470
-# 87 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 86 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	waitbuttonpress
-# 88 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 87 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 89 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 88 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_EventScript_Sign_7::
-# 94 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 93 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	lockall
-# 95 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 94 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	braillemessage Naranja_SealedChamber_G24_M72_Text_081C549B
-# 96 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 95 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	waitbuttonpress
-# 97 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 96 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 98 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 97 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_SealedChamber_G24_M72_Text_081A138B::
-# 102 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 101 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "It sounded as if a door opened\nsomewhere far away.$"
 
 Naranja_SealedChamber_G24_M72_Text_081C53C1::
-# 106 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 105 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "Â éÛÈÂÊÉëàì ÂçÛÌà\nëÌßÉÂÀéìÒわ\nßÀàì ÂçÛÌà\n+ÀÉßçëÎわ$"
 
 Naranja_SealedChamber_G24_M72_Text_081C53F2::
-# 110 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 109 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "É àÛËÂÉé ìÒÉà\nÂÀ=Ì +Ì\nÒÀ=Ì\nßÉ=ÌÎわ$"
 
 Naranja_SealedChamber_G24_M72_Text_081C5414::
-# 114 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 113 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "ÇÁèÙÉÈ+Ì ç+Ì Àßß\nìç ìÒÌ\náçÙÌÛçéわ$"
 
 Naranja_SealedChamber_G24_M72_Text_081C5435::
-# 118 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 117 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "Â çÛÈÂÈぅìÇ +Ì\nàÌÀßÌÎ ìÒÌ\náçÙÌÛçé\nÀ+Àごわ$"
 
 Naranja_SealedChamber_G24_M72_Text_081C545C::
-# 122 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 121 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "ÀÉëÒÂÌ+Ì ÊÌÀëÌÎ Éìわ$"
 
 Naranja_SealedChamber_G24_M72_Text_081C5470::
-# 126 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 125 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "Ç èÛÉÂìÒçàÌ +ÉìÒ\nÂçぅëÀÔÌÇ\nìÒçàÌ +ÉìÒ\nÒçáÌわ$"
 
 Naranja_SealedChamber_G24_M72_Text_081C549B::
-# 130 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
+# 129 "data/maps/Naranja_SealedChamber_G24_M72/scripts.pory"
 	.string "Á êÛÇÂçáÌé À Îççëわ\nÀé ÌìÌëéÀß\náçÙÌÛçé\n+ÀÉìàわ$"

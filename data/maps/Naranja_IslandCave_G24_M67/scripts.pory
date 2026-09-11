@@ -50,8 +50,7 @@ script Naranja_IslandCave_G24_M67_EventScript_Sign_1 {
 }
 
 script Naranja_IslandCave_G24_M67_EventScript_Sub_0815EF72 {
-    loadword(0, Naranja_AncientTomb_G24_M68_Text_081A13BE)
-    callstd(4)
+    msgbox(Naranja_AncientTomb_G24_M68_Text_081A13BE, MSGBOX_DEFAULT)
     releaseall
     end
 }

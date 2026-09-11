@@ -31,8 +31,7 @@ script Naranja_SealedChamber_G24_M72_EventScript_Sign_1 {
     waitstate
     playse(SE_DOOR)
     delay(0x28)
-    loadword(0, Naranja_SealedChamber_G24_M72_Text_081A138B)
-    callstd(4)
+    msgbox(Naranja_SealedChamber_G24_M72_Text_081A138B, MSGBOX_DEFAULT)
     closemessage
     fadeinbgm(0)
     setflag(FLAG_NARANJA_SEALED_CHAMBER_EVENT_COMPLETE_00E4)

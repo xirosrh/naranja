@@ -34,8 +34,7 @@ script Naranja_ShoalCave_G24_M46_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
     checkitem(ITEM_SHOAL_SHELL, 4)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E138)
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C6793)
-    callstd(5)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C6793, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E16C)
     checkitemspace(ITEM_SHELL_BELL, 1)
@@ -43,8 +42,7 @@ script Naranja_ShoalCave_G24_M46_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
     call_if(EQUAL, Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E106)
     compare_var_to_value(VAR_RESULT, 2)
     goto_if(EQUAL, Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E12E)
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C6808)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C6808, MSGBOX_DEFAULT)
     removeitem(ITEM_SHOAL_SALT, 4)
     removeitem(ITEM_SHOAL_SHELL, 4)
     setorcopyvar(VAR_0x8000, 0xDB)
@@ -52,8 +50,7 @@ script Naranja_ShoalCave_G24_M46_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C688E)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C688E, MSGBOX_DEFAULT)
     setflag(FLAG_TEMP_2)
     release
     end
@@ -79,8 +76,7 @@ script Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E128 {
 }
 
 script Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E12E {
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C69F5)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C69F5, MSGBOX_DEFAULT)
     release
     end
 }
@@ -92,22 +88,19 @@ script Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E138 {
     checkitem(ITEM_SHOAL_SHELL, 1)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E162)
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C6668)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C6668, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E162 {
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C670D)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C670D, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_ShoalCave_G24_M46_EventScript_Sub_0815E16C {
-    loadword(0, Naranja_ShoalCave_G24_M46_Text_081C6944)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M46_Text_081C6944, MSGBOX_DEFAULT)
     release
     end
 }

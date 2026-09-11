@@ -23,8 +23,7 @@ script Naranja_IslaPomelo_G16_M11_OnFrame_1 {
     applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPomelo_G16_M11_Text_08191841)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M11_Text_08191841, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_IslaPomelo_G16_M11_Movement_0815BC60)
     applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M11_Movement_0815BC60)
@@ -33,8 +32,7 @@ script Naranja_IslaPomelo_G16_M11_OnFrame_1 {
     applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaPomelo_G16_M11_Text_081918D7)
-    callstd(4)
+    msgbox(Naranja_IslaPomelo_G16_M11_Text_081918D7, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)

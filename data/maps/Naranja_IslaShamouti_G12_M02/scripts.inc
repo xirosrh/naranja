@@ -26,36 +26,30 @@ Naranja_IslaShamouti_G12_M02_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1::
 
 Naranja_IslaShamouti_G12_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2::
 # 23 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
-	loadword 0, Naranja_IslaShamouti_G12_M02_Text_08186027
-# 24 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaShamouti_G12_M02_Text_08186027, MSGBOX_NPC
 	end
 
 
 Naranja_IslaShamouti_G12_M02_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3::
-# 29 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
-	loadword 0, Naranja_IslaShamouti_G12_M02_Text_08186086
-# 30 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
-	callstd 2
+# 28 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
+	msgbox Naranja_IslaShamouti_G12_M02_Text_08186086, MSGBOX_NPC
 	end
 
 
 Naranja_IslaShamouti_G12_M02_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId4::
-# 35 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
-	loadword 0, Naranja_IslaShamouti_G12_M02_Text_08186138
-# 36 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
-	callstd 2
+# 33 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
+	msgbox Naranja_IslaShamouti_G12_M02_Text_08186138, MSGBOX_NPC
 	end
 
 
 Naranja_IslaShamouti_G12_M02_Text_08186027::
-# 40 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
+# 37 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
 	.string "Listen, kid, are you working\non a POKéDEX?\pHmm... Go to the SAFARI ZONE.\nThat’s my suggestion.$"
 
 Naranja_IslaShamouti_G12_M02_Text_08186086::
-# 44 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
+# 41 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
 	.string "Have you done anything at the\nRECORD CORNER?\pIt’s pretty neat. It mixes and matches\nthe records of TRAINERS.\pI don’t know quite how it works,\nbut it’s cool. It’s exciting, even!$"
 
 Naranja_IslaShamouti_G12_M02_Text_08186138::
-# 48 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
+# 45 "data/maps/Naranja_IslaShamouti_G12_M02/scripts.pory"
 	.string "Hey, you’ve got a POKéNAV!\nIt’s the same as mine.\pCheck out the TRAINER’S EYES on it.\pIt shows you TRAINERS who want a\nrematch with you.\pIsn’t it great?\nYou have to hand it to DEVON!$"

@@ -19,23 +19,20 @@ script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1 {
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E08)
     checkflag(FLAG_TEMP_2)
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160DFE)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B4D9)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B4D9, MSGBOX_DEFAULT)
     setflag(FLAG_TEMP_2)
     release
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160DFE {
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B5B9)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B5B9, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160E08 {
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B609)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B609, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x1B)
     setorcopyvar(VAR_0x8001, 6)
     callstd(0)
@@ -47,20 +44,17 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160E08 {
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160E2C {
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B6BE)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B6BE, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160E36 {
     showmoneybox(0, 0, 0)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B702)
-    callstd(5)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B702, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E5A)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B773)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B773, MSGBOX_DEFAULT)
     hidemoneybox
     release
     end
@@ -73,8 +67,7 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160E5A {
     checkitemspace(ITEM_SODA_POP, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160EAB)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B74C)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B74C, MSGBOX_DEFAULT)
     removemoney(0x12C, 0)
     updatemoneybox(0)
     setorcopyvar(VAR_0x8000, 0x1B)
@@ -86,16 +79,14 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160E5A {
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160E9E {
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B759)
-    callstd(4)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B759, MSGBOX_DEFAULT)
     hidemoneybox
     release
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160EAB {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081A0CC2)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081A0CC2, MSGBOX_DEFAULT)
     hidemoneybox
     release
     end
@@ -103,22 +94,19 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160EAB {
 
 script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_493, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B809, Naranja_Route109_G28_M00_Text_0819B869, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B89F)
-    callstd(6)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B89F, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_647, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B8E5, Naranja_Route109_G28_M00_Text_0819B949, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B955)
-    callstd(6)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B955, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_TUBER_M_LocalId3 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_065, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B988, Naranja_Route109_G28_M00_Text_0819B9C7, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
-    loadword(0, Naranja_Route109_G28_M00_Text_0819B9E5)
-    callstd(6)
+    msgbox(Naranja_Route109_G28_M00_Text_0819B9E5, MSGBOX_AUTOCLOSE)
     end
 }
 

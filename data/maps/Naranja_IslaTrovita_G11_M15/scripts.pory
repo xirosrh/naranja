@@ -5,14 +5,12 @@ mapscripts Naranja_IslaTrovita_G11_M15_MapScripts {
 }
 
 script Naranja_IslaTrovita_G11_M15_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId1 {
-    loadword(0, Naranja_IslaTrovita_G11_M15_Text_0818551D)
-    callstd(2)
+    msgbox(Naranja_IslaTrovita_G11_M15_Text_0818551D, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaTrovita_G11_M15_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId2 {
-    loadword(0, Naranja_IslaTrovita_G11_M15_Text_0818554D)
-    callstd(2)
+    msgbox(Naranja_IslaTrovita_G11_M15_Text_0818554D, MSGBOX_NPC)
     end
 }
 

@@ -10,12 +10,10 @@ script Naranja_IslaKumquat_G13_M00_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M00_EventScript_Sub_08158326)
     checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_080D)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M00_EventScript_Sub_081582FF)
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186B71)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186B71, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186C2B)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186C2B, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -24,12 +22,10 @@ script Naranja_IslaKumquat_G13_M00_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
 }
 
 script Naranja_IslaKumquat_G13_M00_EventScript_Sub_081582FF {
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186CCE)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186CCE, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186D7F)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186D7F, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -38,12 +34,10 @@ script Naranja_IslaKumquat_G13_M00_EventScript_Sub_081582FF {
 }
 
 script Naranja_IslaKumquat_G13_M00_EventScript_Sub_08158326 {
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186E57)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186E57, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186F09)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186F09, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -60,8 +54,7 @@ script Naranja_IslaKumquat_G13_M00_EventScript_Trigger_1 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M00_Text_08186CA6)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M00_Text_08186CA6, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_PLAYER, Naranja_IslaKumquat_G13_M00_Movement_08158395)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M00_MAN_1_1, Naranja_IslaKumquat_G13_M00_Movement_0815839A)

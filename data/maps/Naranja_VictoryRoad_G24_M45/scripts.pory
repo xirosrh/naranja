@@ -6,29 +6,25 @@ mapscripts Naranja_VictoryRoad_G24_M45_MapScripts {
 
 script Naranja_VictoryRoad_G24_M45_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VICTORY_ROAD_082, LOCALID_NONE, Naranja_VictoryRoad_G24_M45_Text_08197EF2, Naranja_VictoryRoad_G24_M45_Text_08197F46)
-    loadword(0, Naranja_VictoryRoad_G24_M45_Text_08197F71)
-    callstd(6)
+    msgbox(Naranja_VictoryRoad_G24_M45_Text_08197F71, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_VictoryRoad_G24_M45_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VICTORY_ROAD_083, LOCALID_NONE, Naranja_VictoryRoad_G24_M45_Text_08197FE5, Naranja_VictoryRoad_G24_M45_Text_0819802B)
-    loadword(0, Naranja_VictoryRoad_G24_M45_Text_08198047)
-    callstd(6)
+    msgbox(Naranja_VictoryRoad_G24_M45_Text_08198047, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_VictoryRoad_G24_M45_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VICTORY_ROAD_099, LOCALID_NONE, Naranja_VictoryRoad_G24_M45_Text_08198089, Naranja_VictoryRoad_G24_M45_Text_081980AD)
-    loadword(0, Naranja_VictoryRoad_G24_M45_Text_081980C8)
-    callstd(6)
+    msgbox(Naranja_VictoryRoad_G24_M45_Text_081980C8, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_VictoryRoad_G24_M45_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VICTORY_ROAD_100, LOCALID_NONE, Naranja_VictoryRoad_G24_M45_Text_08198121, Naranja_VictoryRoad_G24_M45_Text_081981A3)
-    loadword(0, Naranja_VictoryRoad_G24_M45_Text_081981BA)
-    callstd(6)
+    msgbox(Naranja_VictoryRoad_G24_M45_Text_081981BA, MSGBOX_AUTOCLOSE)
     end
 }
 

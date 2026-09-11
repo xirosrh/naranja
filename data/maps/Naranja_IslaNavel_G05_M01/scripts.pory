@@ -42,8 +42,7 @@ script Naranja_IslaNavel_G05_M01_EventScript_Sub_081539F8 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G05_M01_Movement_08153A7A)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M04_Text_081A6832)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M04_Text_081A6832, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_NAVEL_G05_M01_TEALA, Naranja_IslaNavel_G05_M01_Movement_08153A83)
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G05_M01_Movement_08153A70)
@@ -53,28 +52,24 @@ script Naranja_IslaNavel_G05_M01_EventScript_Sub_081539F8 {
 }
 
 script Naranja_IslaNavel_G05_M01_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_2_LocalId2 {
-    loadword(0, Naranja_IslaNavel_G05_M01_Text_08177141)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M01_Text_08177141, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M01_EventScript_OBJ_EVENT_GFX_ARTIST_LocalId6 {
     checkflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_010E)
     goto_if(EQUAL, Naranja_IslaNavel_G05_M01_EventScript_Sub_08153AA9)
-    loadword(0, Naranja_IslaNavel_G05_M01_Text_08177246)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M01_Text_08177246, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M01_EventScript_Sub_08153AA9 {
-    loadword(0, Naranja_IslaNavel_G05_M01_Text_081772D8)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M01_Text_081772D8, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId3 {
-    loadword(0, Naranja_IslaNavel_G05_M01_Text_081771F2)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M01_Text_081771F2, MSGBOX_NPC)
     end
 }
 

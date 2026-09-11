@@ -34,130 +34,116 @@ Naranja_Route119_G32_M00_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId5::
 # 26 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Route119_G32_M00_EventScript_Sub_08163C67
 # 27 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819ED22
+	msgbox Naranja_Route119_G32_M00_Text_0819ED22, MSGBOX_DEFAULT
 # 28 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 4
-# 29 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_Sub_08163C67::
+# 33 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+	msgbox Naranja_Route119_G32_M00_Text_0819ECF4, MSGBOX_DEFAULT
 # 34 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819ECF4
-# 35 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 4
-# 36 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId4::
-# 41 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819ED6B
-# 42 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 2
+# 39 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+	msgbox Naranja_Route119_G32_M00_Text_0819ED6B, MSGBOX_NPC
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId3::
-# 47 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819EE25
-# 48 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 2
+# 44 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+	msgbox Naranja_Route119_G32_M00_Text_0819EE25, MSGBOX_NPC
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_Sign_1::
-# 53 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 49 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	lockall
-# 54 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819EE8B
-# 55 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 4
-# 56 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 50 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+	msgbox Naranja_Route119_G32_M00_Text_0819EE8B, MSGBOX_DEFAULT
+# 51 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	closemessage
-# 57 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 52 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	call Naranja_Route119_G32_M00_EventScript_Sub_081A02CA
-# 58 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 53 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_OBJECT_1_LocalId1::
-# 63 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 58 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_582, LOCALID_NONE, Naranja_Route119_G32_M00_Text_0819EB8A, Naranja_Route119_G32_M00_Text_0819EBEE
-# 64 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819EC0E
-# 65 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 6
+# 59 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+	msgbox Naranja_Route119_G32_M00_Text_0819EC0E, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_OBJECT_2_LocalId2::
-# 70 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 64 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_591, LOCALID_NONE, Naranja_Route119_G32_M00_Text_0819EC6B, Naranja_Route119_G32_M00_Text_0819EC89
-# 71 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	loadword 0, Naranja_Route119_G32_M00_Text_0819EC97
-# 72 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
-	callstd 6
+# 65 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+	msgbox Naranja_Route119_G32_M00_Text_0819EC97, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route119_G32_M00_EventScript_Sub_081A02CA::
-# 77 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 70 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	fadescreen 1
-# 78 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 71 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	playfanfare MUS_HEAL
-# 79 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 72 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	waitfanfare
-# 80 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 73 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	special HealPlayerParty
-# 81 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 74 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	fadescreen 0
 	return
 
 
 Naranja_Route119_G32_M00_Text_0819EB8A::
-# 85 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 78 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "The BOSS got interested in the\nresearch they have going here, so he\lsent us out.\pYou quit meddling!$"
 
 Naranja_Route119_G32_M00_Text_0819EBEE::
-# 89 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 82 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Blast it...\nBlasted by a kid...$"
 
 Naranja_Route119_G32_M00_Text_0819EC0E::
-# 93 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 86 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Our BOSS knows everything.\pBut I’m just a GRUNT. What would I know\nabout what he’s thinking?$"
 
 Naranja_Route119_G32_M00_Text_0819EC6B::
-# 97 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 90 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Huh?\nWhat’s a kid doing here?$"
 
 Naranja_Route119_G32_M00_Text_0819EC89::
-# 101 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 94 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Huh?\nI lost?!$"
 
 Naranja_Route119_G32_M00_Text_0819EC97::
-# 105 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 98 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Oh, no...\nI’ll catch an earful for losing to a kid...\pI should just take a nap in the bed...$"
 
 Naranja_Route119_G32_M00_Text_0819ECF4::
-# 109 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 102 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "While I was sleeping, everyone went\nupstairs!$"
 
 Naranja_Route119_G32_M00_Text_0819ED22::
-# 113 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 106 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Wow, you’re really strong!\pI wish I could be a POKéMON TRAINER\nlike you!$"
 
 Naranja_Route119_G32_M00_Text_0819ED6B::
-# 117 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 110 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "The PROFESSOR loves rain.\nThat’s a fact.\pBut if it keeps raining, people will be in\ntrouble. That’s another fact.\pAnd thus, the PROFESSOR is studying\nif the rain can be put to good use.$"
 
 Naranja_Route119_G32_M00_Text_0819EE25::
-# 121 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 114 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "Hello!\nWe’ve been saved by your actions!\pWhat I don’t understand is what on\nearth the {AQUA}S were up to.$"
 
 Naranja_Route119_G32_M00_Text_0819EE8B::
-# 125 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
+# 118 "data/maps/Naranja_Route119_G32_M00/scripts.pory"
 	.string "There’s a bed...\nLet’s take a rest.$"

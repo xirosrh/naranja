@@ -17,32 +17,27 @@ script Naranja_IslaHamlin_G00_M15_OnResume {
 }
 
 script Naranja_IslaHamlin_G00_M15_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId3 {
-    loadword(0, Naranja_IslaHamlin_G00_M15_Text_0816D04A)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G00_M15_Text_0816D04A, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G00_M15_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId1 {
-    loadword(0, Naranja_IslaHamlin_G00_M15_Text_0816CFC5)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G00_M15_Text_0816CFC5, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G00_M15_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId2 {
-    loadword(0, Naranja_IslaHamlin_G00_M15_Text_0816D08A)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G00_M15_Text_0816D08A, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaHamlin_G00_M15_EventScript_Sign_2 {
-    loadword(0, Naranja_IslaHamlin_G00_M15_Text_0816D0CE)
-    callstd(3)
+    msgbox(Naranja_IslaHamlin_G00_M15_Text_0816D0CE, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaHamlin_G00_M15_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaHamlin_G00_M15_Text_081A0D75)
-    callstd(3)
+    msgbox(Naranja_IslaHamlin_G00_M15_Text_081A0D75, MSGBOX_SIGN)
     end
 }
 

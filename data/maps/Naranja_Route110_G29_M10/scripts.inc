@@ -26,74 +26,68 @@ Naranja_Route110_G29_M10_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1::
 # 20 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_076, LOCALID_NONE, Naranja_Route110_G29_M10_Text_0819E178, Naranja_Route110_G29_M10_Text_0819E1A1
 # 21 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M10_Text_0819E1C5
-# 22 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
-	callstd 6
+	msgbox Naranja_Route110_G29_M10_Text_0819E1C5, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M10_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId3::
-# 27 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 26 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_093, LOCALID_NONE, Naranja_Route110_G29_M10_Text_0819E201, Naranja_Route110_G29_M10_Text_0819E22C
-# 28 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M10_Text_0819E24C
-# 29 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
-	callstd 6
+# 27 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+	msgbox Naranja_Route110_G29_M10_Text_0819E24C, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M10_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId2::
-# 34 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 32 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_077, LOCALID_NONE, Naranja_Route110_G29_M10_Text_0819E284, Naranja_Route110_G29_M10_Text_0819E2C1
-# 35 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
-	loadword 0, Naranja_Route110_G29_M10_Text_0819E2EE
-# 36 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
-	callstd 6
+# 33 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+	msgbox Naranja_Route110_G29_M10_Text_0819E2EE, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Route110_G29_M10_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4::
-# 41 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 38 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x7F
-# 42 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 39 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 43 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 40 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	callstd 1
 	end
 
 
 Naranja_Route110_G29_M10_Text_0819E178::
-# 47 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 44 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "Not many TRAINERS have made it\nthis far.$"
 
 Naranja_Route110_G29_M10_Text_0819E1A1::
-# 51 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 48 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "That must mean you’re tough, too...$"
 
 Naranja_Route110_G29_M10_Text_0819E1C5::
-# 55 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 52 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "You’ve beaten the POKéMON LEAGUE\nCHAMPION? That’s too much!$"
 
 Naranja_Route110_G29_M10_Text_0819E201::
-# 59 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 56 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "Consider yourself lucky to be\nbattling me!$"
 
 Naranja_Route110_G29_M10_Text_0819E22C::
-# 63 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 60 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "This isn’t right!\nI can’t lose!$"
 
 Naranja_Route110_G29_M10_Text_0819E24C::
-# 67 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 64 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "It’s a miracle that you beat me.\nYou can brag about it.$"
 
 Naranja_Route110_G29_M10_Text_0819E284::
-# 71 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 68 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "You’ve been slugging through the TRICK\nHOUSE challenge, too.$"
 
 Naranja_Route110_G29_M10_Text_0819E2C1::
-# 75 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 72 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "I see...\nYou possess an extraordinary style.$"
 
 Naranja_Route110_G29_M10_Text_0819E2EE::
-# 79 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
+# 76 "data/maps/Naranja_Route110_G29_M10/scripts.pory"
 	.string "Seeing someone like you should please\nthe TRICK MASTER.$"

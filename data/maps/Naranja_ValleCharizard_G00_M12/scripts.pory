@@ -90,26 +90,22 @@ script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_VARS_LocalId8 {
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5AB {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816BDA4)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816BDA4, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x117)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00DD)
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816BE7D)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816BE7D, MSGBOX_DEFAULT)
     goto(Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5F5)
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5D0 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816BF92)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816BF92, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x117)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     setflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00DD)
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C020)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C020, MSGBOX_DEFAULT)
     goto(Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5F5)
 }
 
@@ -227,38 +223,32 @@ script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E721 {
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C3FD)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C3FD, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId3 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C4DB)
-    callstd(3)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C4DB, MSGBOX_SIGN)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId4 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C59B)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C59B, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN_LocalId5 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C603)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C603, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN_LocalId6 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C694)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C694, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId1 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C54E)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C54E, MSGBOX_NPC)
     end
 }
 
@@ -267,15 +257,13 @@ script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_Loca
     faceplayer
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
     goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E)
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C174)
-    callstd(5)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C174, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7B2)
     getpartysize
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7A8)
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C2B6)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C2B6, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
     playfanfare(MUS_OBTAIN_ITEM)
     message(Naranja_ValleCharizard_G00_M12_Text_0816C2EA)
@@ -287,41 +275,35 @@ script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_Loca
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C398)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C398, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7A8 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C2FF)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C2FF, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7B2 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C33C)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C33C, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sign_4 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C72F)
-    callstd(3)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C72F, MSGBOX_SIGN)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sign_2 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C77C)
-    callstd(3)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C77C, MSGBOX_SIGN)
     end
 }
 
 script Naranja_ValleCharizard_G00_M12_EventScript_Sign_1 {
-    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C7CF)
-    callstd(3)
+    msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C7CF, MSGBOX_SIGN)
     end
 }
 

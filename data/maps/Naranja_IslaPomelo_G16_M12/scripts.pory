@@ -11,14 +11,12 @@ script Naranja_IslaPomelo_G16_M12_OnTransition {
 }
 
 script Naranja_IslaPomelo_G16_M12_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 {
-    loadword(0, Naranja_IslaPomelo_G16_M12_Text_08191967)
-    callstd(2)
+    msgbox(Naranja_IslaPomelo_G16_M12_Text_08191967, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaPomelo_G16_M12_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3 {
-    loadword(0, Naranja_IslaPomelo_G16_M12_Text_081919EF)
-    callstd(2)
+    msgbox(Naranja_IslaPomelo_G16_M12_Text_081919EF, MSGBOX_NPC)
     end
 }
 

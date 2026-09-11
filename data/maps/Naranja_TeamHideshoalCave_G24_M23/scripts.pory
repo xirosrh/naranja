@@ -15,15 +15,13 @@ script Naranja_TeamHideshoalCave_G24_M23_EventScript_OBJECT_1_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_TEAM_HIDESHOAL_CAVE_EVENT_COMPLETE_006F)
     goto_if(EQUAL, Naranja_TeamHideshoalCave_G24_M23_EventScript_Sub_0815D7E3)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M23_Text_08196AFD)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196AFD, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_TeamHideshoalCave_G24_M23_EventScript_Sub_0815D7E3 {
-    loadword(0, Naranja_TeamHideshoalCave_G24_M23_Text_08196BC5)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196BC5, MSGBOX_DEFAULT)
     release
     end
 }
@@ -33,29 +31,25 @@ script Naranja_TeamHideshoalCave_G24_M23_EventScript_OBJECT_2_LocalId2 {
     faceplayer
     checkflag(FLAG_NARANJA_TEAM_HIDESHOAL_CAVE_EVENT_COMPLETE_006F)
     goto_if(EQUAL, Naranja_TeamHideshoalCave_G24_M23_EventScript_Sub_0815D802)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M23_Text_08196C83)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196C83, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_TeamHideshoalCave_G24_M23_EventScript_Sub_0815D802 {
-    loadword(0, Naranja_TeamHideshoalCave_G24_M23_Text_08196D46)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196D46, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_TeamHideshoalCave_G24_M23_EventScript_OBJECT_3_LocalId3 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_567, LOCALID_NONE, Naranja_TeamHideshoalCave_G24_M23_Text_08196E01, Naranja_TeamHideshoalCave_G24_M23_Text_08196E28, Naranja_TeamHideshoalCave_G24_M23_EventScript_AfterBattle_0815D827)
-    loadword(0, Naranja_TeamHideshoalCave_G24_M23_Text_08196E3D)
-    callstd(6)
+    msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196E3D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_TeamHideshoalCave_G24_M23_EventScript_AfterBattle_0815D827 {
-    loadword(0, Naranja_TeamHideshoalCave_G24_M23_Text_08196E3D)
-    callstd(4)
+    msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196E3D, MSGBOX_DEFAULT)
     release
     end
 }

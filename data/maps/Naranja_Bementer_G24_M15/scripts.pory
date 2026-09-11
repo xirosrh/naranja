@@ -9,8 +9,7 @@ script Naranja_Bementer_G24_M15_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_011A)
     goto_if(EQUAL, Naranja_Bementer_G24_M15_EventScript_Sub_0815D352)
-    loadword(0, Naranja_Bementer_G24_M15_Text_08196151)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M15_Text_08196151, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xBE)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -22,21 +21,18 @@ script Naranja_Bementer_G24_M15_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId1 {
 }
 
 script Naranja_Bementer_G24_M15_EventScript_Sub_0815D352 {
-    loadword(0, Naranja_Bementer_G24_M15_Text_081961CE)
-    callstd(4)
+    msgbox(Naranja_Bementer_G24_M15_Text_081961CE, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Bementer_G24_M15_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId2 {
-    loadword(0, Naranja_Bementer_G24_M15_Text_08196218)
-    callstd(2)
+    msgbox(Naranja_Bementer_G24_M15_Text_08196218, MSGBOX_NPC)
     end
 }
 
 script Naranja_Bementer_G24_M15_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId3 {
-    loadword(0, Naranja_Bementer_G24_M15_Text_08196283)
-    callstd(2)
+    msgbox(Naranja_Bementer_G24_M15_Text_08196283, MSGBOX_NPC)
     end
 }
 

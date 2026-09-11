@@ -14,24 +14,20 @@ Naranja_IslaMandarina_G06_M03_OnTransition::
 
 Naranja_IslaMandarina_G06_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3::
 # 15 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
-	loadword 0, Naranja_IslaMandarina_G06_M03_Text_08178389
-# 16 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaMandarina_G06_M03_Text_08178389, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMandarina_G06_M03_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2::
-# 21 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
-	loadword 0, Naranja_IslaMandarina_G06_M03_Text_08178D8E
-# 22 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
-	callstd 2
+# 20 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
+	msgbox Naranja_IslaMandarina_G06_M03_Text_08178D8E, MSGBOX_NPC
 	end
 
 
 Naranja_IslaMandarina_G06_M03_Text_08178389::
-# 26 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
+# 24 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
 	.string "No todos los viejos son sabios,\nni todos los sabios son viejos.\pSin embargo yo sì.\nYo sé todo lo importante.$"
 
 Naranja_IslaMandarina_G06_M03_Text_08178D8E::
-# 30 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
+# 28 "data/maps/Naranja_IslaMandarina_G06_M03/scripts.pory"
 	.string "¡Che flac{RIVAL}!\p¿Tambien estás de paso?\nEsta ciudad es extraña.\lIncluso atacan SNUBULL en la calle.\pTe aconsejo que te quedes lo m nimo:\nDanny entrena en el Norte\len la nevada Isla NAVEL.$"

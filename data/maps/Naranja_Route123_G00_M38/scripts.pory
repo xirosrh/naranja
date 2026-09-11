@@ -15,21 +15,18 @@ script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId23 {
     faceplayer
     checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00E8)
     goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151CAC)
-    loadword(0, Naranja_Route123_G00_M38_Text_08171D83)
-    callstd(4)
+    msgbox(Naranja_Route123_G00_M38_Text_08171D83, MSGBOX_DEFAULT)
     special(IsGrassTypeInParty)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151CAA)
-    loadword(0, Naranja_Route123_G00_M38_Text_08171DC2)
-    callstd(4)
+    msgbox(Naranja_Route123_G00_M38_Text_08171DC2, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x133)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00E8)
-    loadword(0, Naranja_Route123_G00_M38_Text_08171E34)
-    callstd(4)
+    msgbox(Naranja_Route123_G00_M38_Text_08171E34, MSGBOX_DEFAULT)
     release
     end
 }
@@ -40,41 +37,35 @@ script Naranja_Route123_G00_M38_EventScript_Sub_08151CAA {
 }
 
 script Naranja_Route123_G00_M38_EventScript_Sub_08151CAC {
-    loadword(0, Naranja_Route123_G00_M38_Text_08171E34)
-    callstd(4)
+    msgbox(Naranja_Route123_G00_M38_Text_08171E34, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_Sign_4 {
-    loadword(0, Naranja_Route123_G00_M38_Text_08171E76)
-    callstd(3)
+    msgbox(Naranja_Route123_G00_M38_Text_08171E76, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_Sign_1 {
-    loadword(0, Naranja_Route123_G00_M38_Text_08171E8E)
-    callstd(3)
+    msgbox(Naranja_Route123_G00_M38_Text_08171E8E, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_Sign_6 {
-    loadword(0, Naranja_Route123_G00_M38_Text_08171EBC)
-    callstd(3)
+    msgbox(Naranja_Route123_G00_M38_Text_08171EBC, MSGBOX_SIGN)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId8 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_092, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081BFF6A, Naranja_Route123_G00_M38_Text_081BFFA2)
-    loadword(0, Naranja_Route123_G00_M38_Text_081BFFC1)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081BFFC1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId27 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_039, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C009E, Naranja_Route123_G00_M38_Text_081C00D4)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C0100)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C0100, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -83,15 +74,13 @@ script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId30 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151D3D)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C01B1)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C01B1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_Sub_08151D3D {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE123_238, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C01F9, Naranja_Route123_G00_M38_Text_081C0240)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C024E)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C024E, MSGBOX_AUTOCLOSE)
     end
 }
 
@@ -100,36 +89,31 @@ script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_LASS_LocalId31 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151D7B)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C030F)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C030F, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_Sub_08151D7B {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE123_249, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C0351, Naranja_Route123_G00_M38_Text_081C0380)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C038C)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C038C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId29 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE123_484, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C03CB, Naranja_Route123_G00_M38_Text_081C040E, Naranja_Route123_G00_M38_Text_081C0462)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C0423)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C0423, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId28 {
     trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE123_484, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C049C, Naranja_Route123_G00_M38_Text_081C04CD, Naranja_Route123_G00_M38_Text_081C0519)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C04E3)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C04E3, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId32 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_106, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C0554, Naranja_Route123_G00_M38_Text_081C059F)
-    loadword(0, Naranja_Route123_G00_M38_Text_081C05BC)
-    callstd(6)
+    msgbox(Naranja_Route123_G00_M38_Text_081C05BC, MSGBOX_AUTOCLOSE)
     end
 }
 

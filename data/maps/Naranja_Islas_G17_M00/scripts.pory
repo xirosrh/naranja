@@ -41,10 +41,8 @@ script Naranja_Islas_G17_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
 
 script Naranja_Islas_G17_M00_EventScript_Sub_0815BD0E {
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_0093)
-    loadword(0, Naranja_Islas_G17_M00_Text_08191A82)
-    callstd(4)
-    loadword(0, Naranja_Islas_G17_M00_Text_08191AAD)
-    callstd(5)
+    msgbox(Naranja_Islas_G17_M00_Text_08191A82, MSGBOX_DEFAULT)
+    msgbox(Naranja_Islas_G17_M00_Text_08191AAD, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Islas_G17_M00_EventScript_Sub_0815BD97)
     goto(Naranja_Islas_G17_M00_EventScript_Sub_0815BDAB)
@@ -65,38 +63,33 @@ script Naranja_Islas_G17_M00_EventScript_Sub_0815BD32 {
 }
 
 script Naranja_Islas_G17_M00_EventScript_Sub_0815BD65 {
-    loadword(0, Naranja_Islas_G17_M00_Text_08191CC3)
-    callstd(5)
+    msgbox(Naranja_Islas_G17_M00_Text_08191CC3, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Islas_G17_M00_EventScript_Sub_0815BD97)
     goto(Naranja_Islas_G17_M00_EventScript_Sub_0815BDAB)
 }
 
 script Naranja_Islas_G17_M00_EventScript_Sub_0815BD7E {
-    loadword(0, Naranja_Islas_G17_M00_Text_08191DA6)
-    callstd(5)
+    msgbox(Naranja_Islas_G17_M00_Text_08191DA6, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Islas_G17_M00_EventScript_Sub_0815BD97)
     goto(Naranja_Islas_G17_M00_EventScript_Sub_0815BDAB)
 }
 
 script Naranja_Islas_G17_M00_EventScript_Sub_0815BD97 {
-    loadword(0, Naranja_Islas_G17_M00_Text_08191C57)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M00_Text_08191C57, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Islas_G17_M00_EventScript_Sub_0815BDA1 {
-    loadword(0, Naranja_Islas_G17_M00_Text_08191EDB)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M00_Text_08191EDB, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Islas_G17_M00_EventScript_Sub_0815BDAB {
-    loadword(0, Naranja_Islas_G17_M00_Text_08191BFD)
-    callstd(4)
+    msgbox(Naranja_Islas_G17_M00_Text_08191BFD, MSGBOX_DEFAULT)
     call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C)
     setvar(VAR_NARANJA_ISLAS_STORY_STATE, 1)
     clearflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_OLD_MAN_1)

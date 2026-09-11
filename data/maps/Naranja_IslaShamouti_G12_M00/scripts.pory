@@ -13,8 +13,7 @@ script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId1 {
     copyvar(VAR_0x8004, VAR_0x8008)
     specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
     copyvar(VAR_0x8009, VAR_RESULT)
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_0818568C)
-    callstd(5)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_0818568C, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E95)
     special(ChoosePartyMon)
@@ -33,38 +32,33 @@ script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId1 {
     special(DoInGameTradeScene)
     waitstate
     bufferspeciesname(0, 0x8009)
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_081856F7)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_081856F7, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_009B)
     release
     end
 }
 
 script Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E95 {
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_0818577F)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_0818577F, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E9F {
     bufferspeciesname(0, 0x8009)
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_08185737)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_08185737, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157EAD {
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_081857C7)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_081857C7, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3 {
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_0818582A)
-    callstd(2)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_0818582A, MSGBOX_NPC)
     end
 }
 
@@ -73,8 +67,7 @@ script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId2
     faceplayer
     waitse
     playmoncry(SPECIES_ZIGZAGOON, 0)
-    loadword(0, Naranja_IslaShamouti_G12_M00_Text_08185888)
-    callstd(4)
+    msgbox(Naranja_IslaShamouti_G12_M00_Text_08185888, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

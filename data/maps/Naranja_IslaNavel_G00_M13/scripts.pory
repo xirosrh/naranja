@@ -14,14 +14,12 @@ script Naranja_IslaNavel_G00_M13_OnTransition {
 }
 
 script Naranja_IslaNavel_G00_M13_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId3 {
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_0816C941)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_0816C941, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G00_M13_EventScript_Sign_3 {
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_0816CA39)
-    callstd(3)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_0816CA39, MSGBOX_SIGN)
     end
 }
 
@@ -30,8 +28,7 @@ script Naranja_IslaNavel_G00_M13_EventScript_OBJ_EVENT_GFX_PIKACHU_LocalId1 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0105)
     goto_if(EQUAL, Naranja_IslaNavel_G00_M13_EventScript_Sub_0815C1F2)
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_081925E1)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_081925E1, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x13C)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -43,8 +40,7 @@ script Naranja_IslaNavel_G00_M13_EventScript_OBJ_EVENT_GFX_PIKACHU_LocalId1 {
 }
 
 script Naranja_IslaNavel_G00_M13_EventScript_Sub_0815C1F2 {
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_081926AE)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_081926AE, MSGBOX_DEFAULT)
     release
     end
 }
@@ -59,13 +55,11 @@ script Naranja_IslaNavel_G00_M13_EventScript_Sign_6 {
 }
 
 script Naranja_IslaNavel_G00_M13_EventScript_Sub_086B5466 {
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_086B54BD)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_086B54BD, MSGBOX_DEFAULT)
     applymovement(LOCALID_ISLA_NAVEL_G00_M13_PIKACHU, Naranja_IslaNavel_G00_M13_Movement_086B5561)
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G00_M13_Movement_08D6C557)
     nop
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_086B5516)
-    callstd(6)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_086B5516, MSGBOX_AUTOCLOSE)
     nop
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G00_M13_Movement_086B5571)
     delay(0x60)
@@ -77,8 +71,7 @@ script Naranja_IslaNavel_G00_M13_EventScript_Sub_086B5466 {
 }
 
 script Naranja_IslaNavel_G00_M13_EventScript_Sub_086B54A0 {
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_086B54DB)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_086B54DB, MSGBOX_DEFAULT)
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G00_M13_Movement_086B5571)
     delay(0x60)
     warp(MAP_NARANJA_INSIDE_OF_TRUCK_G08_M01, 0x1F, 0, 0)
@@ -92,8 +85,7 @@ script Naranja_IslaNavel_G00_M13_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId4
     delay(0xE0)
     removeitem(ITEM_MACH_BIKE, 1)
     nop
-    loadword(0, Naranja_IslaNavel_G00_M13_Text_086B8005)
-    callstd(6)
+    msgbox(Naranja_IslaNavel_G00_M13_Text_086B8005, MSGBOX_AUTOCLOSE)
     warp(MAP_NARANJA_CAMINO_FRIO_G00_M29, 3, 0, 0)
     end
 }

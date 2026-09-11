@@ -5,20 +5,17 @@ mapscripts Naranja_IslaNavel_G05_M00_MapScripts {
 }
 
 script Naranja_IslaNavel_G05_M00_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId1 {
-    loadword(0, Naranja_IslaNavel_G05_M00_Text_08170CEB)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M00_Text_08170CEB, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M00_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2 {
-    loadword(0, Naranja_IslaNavel_G05_M00_Text_08176FF0)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M00_Text_08176FF0, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNavel_G05_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId3 {
-    loadword(0, Naranja_IslaNavel_G05_M00_Text_081770E2)
-    callstd(2)
+    msgbox(Naranja_IslaNavel_G05_M00_Text_081770E2, MSGBOX_NPC)
     end
 }
 
@@ -27,8 +24,7 @@ script Naranja_IslaNavel_G05_M00_EventScript_OBJ_EVENT_GFX_SKITTY_LocalId4 {
     faceplayer
     waitse
     playmoncry(SPECIES_SKITTY, 0)
-    loadword(0, Naranja_IslaNavel_G05_M00_Text_081770D3)
-    callstd(4)
+    msgbox(Naranja_IslaNavel_G05_M00_Text_081770D3, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

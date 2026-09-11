@@ -21,20 +21,17 @@ script Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
 }
 
 script Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2 {
-    loadword(0, Naranja_ValleCharizard_G04_M05_Text_08176F08)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G04_M05_Text_08176F08, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
-    loadword(0, Naranja_ValleCharizard_G04_M05_Text_08176E92)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G04_M05_Text_08176E92, MSGBOX_NPC)
     end
 }
 
 script Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId4 {
-    loadword(0, Naranja_ValleCharizard_G04_M05_Text_08176F7A)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G04_M05_Text_08176F7A, MSGBOX_NPC)
     end
 }
 

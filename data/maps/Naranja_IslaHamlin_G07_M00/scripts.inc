@@ -26,36 +26,30 @@ Naranja_IslaHamlin_G07_M00_OnTransition::
 
 Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId3::
 # 23 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
-	loadword 0, Naranja_IslaHamlin_G07_M00_Text_08178E47
-# 24 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
-	callstd 2
+	msgbox Naranja_IslaHamlin_G07_M00_Text_08178E47, MSGBOX_NPC
 	end
 
 
 Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId4::
-# 29 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
-	loadword 0, Naranja_IslaHamlin_G07_M00_Text_08178E79
-# 30 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
-	callstd 2
+# 28 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
+	msgbox Naranja_IslaHamlin_G07_M00_Text_08178E79, MSGBOX_NPC
 	end
 
 
 Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId2::
-# 35 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
-	loadword 0, Naranja_IslaHamlin_G07_M00_Text_08178ED9
-# 36 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
-	callstd 2
+# 33 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
+	msgbox Naranja_IslaHamlin_G07_M00_Text_08178ED9, MSGBOX_NPC
 	end
 
 
 Naranja_IslaHamlin_G07_M00_Text_08178E47::
-# 40 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
+# 37 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
 	.string "What color is your TRAINER’S CARD?\nMine’s copper!$"
 
 Naranja_IslaHamlin_G07_M00_Text_08178E79::
-# 44 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
+# 41 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
 	.string "PACIFIDLOG TOWN floats on top of\na colony of CORSOLA.\pIf I told you that, would you believe me?$"
 
 Naranja_IslaHamlin_G07_M00_Text_08178ED9::
-# 48 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
+# 45 "data/maps/Naranja_IslaHamlin_G07_M00/scripts.pory"
 	.string "The ancestors of the people in\nPACIFIDLOG were said to have been\lborn on boats and then lived and died \laboard them.\pI understand that they lived that way\nbecause they were searching for\lsomething.$"

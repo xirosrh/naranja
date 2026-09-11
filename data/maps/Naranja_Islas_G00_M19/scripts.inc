@@ -55,308 +55,308 @@ Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId16::
 # 39 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if EQUAL, Naranja_Islas_G00_M19_EventScript_Sub_0814EF38
 # 40 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_0816DD91
+	msgbox Naranja_Islas_G00_M19_Text_0816DD91, MSGBOX_DEFAULT
 # 41 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 4
-# 42 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setorcopyvar VAR_0x8000, 0xB4
-# 43 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 42 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 44 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 43 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	callstd 0
-# 45 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 44 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 46 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 45 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 47 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 46 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_0117
-# 48 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 47 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	release
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_0814EF38::
+# 52 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_0816DE36, MSGBOX_DEFAULT
 # 53 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_0816DE36
-# 54 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 4
-# 55 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	release
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId2::
-# 60 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_0816DA13
-# 61 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 2
+# 58 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_0816DA13, MSGBOX_NPC
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_0814EFD5::
-# 66 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 63 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setobjectsubpriority LOCALID_ISLAS_G00_M19_OLD_MAN_1, MAP_NARANJA_ISLAS_G00_M19, 0
-# 67 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 64 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setobjectsubpriority LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19, 0
-# 68 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 65 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	applymovement LOCALID_ISLAS_G00_M19_OLD_MAN_1, Naranja_Islas_G00_M19_Movement_0814F16C
+# 66 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	waitmovement LOCALID_NONE
+# 67 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	removeobject LOCALID_ISLAS_G00_M19_OLD_MAN_1
+# 68 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	applymovement LOCALID_PLAYER, Naranja_Islas_G00_M19_Movement_0814F162
 # 69 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	waitmovement LOCALID_NONE
 # 70 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	removeobject LOCALID_ISLAS_G00_M19_OLD_MAN_1
-# 71 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	applymovement LOCALID_PLAYER, Naranja_Islas_G00_M19_Movement_0814F162
-# 72 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	waitmovement LOCALID_NONE
-# 73 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	hideobjectat LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19
-# 74 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 71 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	call Naranja_Islas_G00_M19_EventScript_Sub_081A02E7
-# 75 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 72 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	applymovement LOCALID_ISLAS_G00_M19_SPIN_CUSHION, Naranja_Islas_G00_M19_Movement_0814F09F
-# 76 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 73 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_Islas_G00_M19_Movement_0814F09F
-# 77 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 74 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	waitmovement LOCALID_NONE
-# 78 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 75 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_Islas_G00_M19_Movement_0814F166
-# 79 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 76 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	waitmovement LOCALID_NONE
-# 80 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 77 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	call Naranja_Islas_G00_M19_EventScript_Sub_081A02EF
-# 81 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 78 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	showobjectat LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11
-# 82 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 79 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_Islas_G00_M19_Movement_0814F168
-# 83 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 80 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	waitmovement LOCALID_NONE
-# 84 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 81 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setobjectxyperm LOCALID_ISLAS_G00_M19_GIRL_2, 0xC, 8
-# 85 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 82 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	addobject LOCALID_ISLAS_G00_M19_GIRL_2
-# 86 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 83 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setobjectsubpriority LOCALID_ISLAS_G00_M19_GIRL_2, MAP_NARANJA_7ISLAS_POMELO_G00_M11, 0
-# 87 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 84 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	clearflag FLAG_HIDE_7ISLAS_POMELO_G00_M11_OLD_MAN_1
-# 88 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 85 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	applymovement LOCALID_ISLAS_G00_M19_GIRL_2, Naranja_Islas_G00_M19_Movement_0814F16F
-# 89 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 86 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	waitmovement LOCALID_NONE
-# 90 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 87 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	addobject LOCALID_ISLAS_G00_M19_BOY_1_4
-# 91 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 88 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	clearflag FLAG_HIDE_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT
-# 92 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 89 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	call Naranja_Islas_G00_M19_EventScript_Sub_081A02EF
-# 93 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 90 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setflag FLAG_HIDE_ISLAS_G00_M19_SPIN_CUSHION
-# 94 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 91 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	hideobjectat LOCALID_ISLAS_G00_M19_SPIN_CUSHION, MAP_NARANJA_ISLAS_G00_M19
-# 95 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 92 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	copyvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008
-# 96 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 93 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	resetobjectsubpriority LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19
-# 97 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 94 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	resetobjectsubpriority LOCALID_ISLAS_G00_M19_GIRL_2, MAP_NARANJA_7ISLAS_POMELO_G00_M11
-# 98 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 95 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	copyobjectxytoperm LOCALID_ISLAS_G00_M19_GIRL_2
-# 99 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 96 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setvar VAR_NARANJA_ISLAS_STORY_STATE, 0
-# 100 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 97 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	checkflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00BD
-# 101 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 98 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if LESS_THAN, Naranja_Islas_G00_M19_EventScript_Sub_0814F08B
-# 102 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 99 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	checkflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00BD
-# 103 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 100 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if EQUAL, Naranja_Islas_G00_M19_EventScript_Sub_0814F095
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_0814F08B::
-# 108 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_0816B347
-# 109 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 4
-# 110 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 105 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_0816B347, MSGBOX_DEFAULT
+# 106 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_0814F095::
-# 115 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_0816B4B5
-# 116 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 4
-# 117 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 111 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_0816B4B5, MSGBOX_DEFAULT
+# 112 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId9::
-# 122 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 117 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_337, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B85EB, Naranja_Islas_G00_M19_Text_081B8637
-# 123 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081B8680
-# 124 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 118 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081B8680, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId28::
-# 129 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 123 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_151, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8C28, Naranja_Islas_G00_M19_Text_081B8C99
-# 130 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081B8CA9
-# 131 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 124 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081B8CA9, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5::
-# 136 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 129 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_152, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8CEE, Naranja_Islas_G00_M19_Text_081B8D23
-# 137 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081B8D45
-# 138 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 130 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081B8D45, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6::
-# 143 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 135 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_441, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8D99, Naranja_Islas_G00_M19_Text_081B8DDD
-# 144 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081B8DED
-# 145 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 136 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081B8DED, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3::
-# 150 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 141 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_442, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8E66, Naranja_Islas_G00_M19_Text_081B8EA0
-# 151 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081B8EBD
-# 152 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 142 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081B8EBD, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId23::
-# 157 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 147 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_322, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BD02B, Naranja_Islas_G00_M19_Text_081BD04C
-# 158 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081BD078
-# 159 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 148 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081BD078, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId24::
-# 164 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 153 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_273, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BD1C0, Naranja_Islas_G00_M19_Text_081BD21A
-# 165 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 154 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-# 166 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 155 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
-# 167 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 156 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if EQUAL, Naranja_Islas_G00_M19_EventScript_Sub_08150CB7
-# 168 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081BD248
-# 169 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 157 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081BD248, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_08150CB7::
-# 174 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 162 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLAS_273, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BD2A5, Naranja_Islas_G00_M19_Text_081BD2FE
-# 175 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081BD31A
-# 176 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 163 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081BD31A, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId25::
-# 181 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 168 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_075, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BFFF0, Naranja_Islas_G00_M19_Text_081C0057
-# 182 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	loadword 0, Naranja_Islas_G00_M19_Text_081C0075
-# 183 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	callstd 6
+# 169 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	msgbox Naranja_Islas_G00_M19_Text_081C0075, MSGBOX_AUTOCLOSE
 	end
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_081A02E7::
-# 188 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 174 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001
-# 189 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 175 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	playbgm MUS_SAILING, 0
 	return
 
 
 Naranja_Islas_G00_M19_EventScript_Sub_081A02EF::
-# 194 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 180 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	clearflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001
-# 195 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 181 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	fadedefaultbgm
 	return
 
 
 Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId7::
-# 200 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 186 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setorcopyvar VAR_0x8000, 0xD
-# 201 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 187 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 202 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 188 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	callstd 1
 	end
 
 
-# 206 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 192 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 Naranja_Islas_G00_M19_Movement_0814F09F:
+# 193 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+# 194 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+# 195 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+# 196 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+# 197 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_fast_down
+# 198 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_fast_down
+# 199 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_fast_down
+# 200 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_fast_down
+# 201 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_faster_down
+# 202 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_faster_down
+# 203 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_faster_down
+# 204 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_faster_down
+# 205 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_faster_down
+# 206 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_faster_down
 # 207 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
+	walk_faster_down
 # 208 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
+	walk_faster_down
 # 209 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
+	walk_faster_down
 # 210 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
+	walk_faster_down
 # 211 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_down
 # 212 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_down
 # 213 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_fast_down
 # 214 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_fast_down
 # 215 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_down
 # 216 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_down
 # 217 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 218 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 219 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 220 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 221 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 222 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 223 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 224 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 225 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 226 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 227 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_fast_down
 # 228 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
@@ -366,33 +366,33 @@ Naranja_Islas_G00_M19_Movement_0814F09F:
 # 230 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_fast_down
 # 231 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_down
 # 232 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_down
 # 233 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 234 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 235 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 236 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 237 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 238 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_faster_down
 # 239 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_down
 # 240 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_down
 # 241 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_down
 # 242 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_down
 # 243 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_down
 # 244 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_down
 # 245 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_faster_down
 # 246 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
@@ -532,49 +532,49 @@ Naranja_Islas_G00_M19_Movement_0814F09F:
 # 313 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_faster_down
 # 314 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_down
 # 315 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_down
 # 316 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_down
 # 317 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_down
 # 318 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 319 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 320 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 321 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_fast_right
 # 322 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 323 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 324 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 325 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 326 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 327 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_down
+	walk_faster_right
 # 328 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_right
 # 329 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_right
 # 330 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_right
 # 331 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
+	walk_faster_right
 # 332 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_right
 # 333 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_right
 # 334 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_right
 # 335 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_faster_right
 # 336 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_faster_right
 # 337 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
@@ -628,251 +628,223 @@ Naranja_Islas_G00_M19_Movement_0814F09F:
 # 361 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_faster_right
 # 362 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_right
 # 363 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_right
 # 364 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_right
 # 365 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_right
 # 366 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_right
 # 367 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_right
 # 368 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_down
 # 369 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_down
 # 370 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_down
 # 371 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_down
 # 372 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_down
 # 373 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_down
 # 374 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_down
 # 375 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_faster_right
+	walk_fast_down
 # 376 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_fast_down
 # 377 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_fast_down
 # 378 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_fast_down
 # 379 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_right
+	walk_fast_down
 # 380 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_right
+	walk_fast_down
 # 381 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_right
+	walk_fast_down
 # 382 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
+	walk_fast_down
 # 383 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
+	walk_fast_down
 # 384 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_fast_down
 # 385 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 386 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 387 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 388 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 389 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 390 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 391 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 392 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 393 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 394 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 395 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 396 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 397 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 398 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_fast_down
-# 399 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_down
+# 386 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+	step_end
+
+# 389 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+Naranja_Islas_G00_M19_Movement_0814F162:
+# 390 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_left
+# 391 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+# 392 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+	step_end
+
+# 395 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+Naranja_Islas_G00_M19_Movement_0814F166:
+# 396 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+	walk_down
+	step_end
+
+# 399 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+Naranja_Islas_G00_M19_Movement_0814F168:
 # 400 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_down
-	step_end
-
-# 403 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-Naranja_Islas_G00_M19_Movement_0814F162:
-# 404 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 401 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_left
-# 405 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
-# 406 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
-	step_end
-
-# 409 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-Naranja_Islas_G00_M19_Movement_0814F166:
-# 410 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
-	step_end
-
-# 413 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-Naranja_Islas_G00_M19_Movement_0814F168:
-# 414 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_down
-# 415 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	walk_left
-# 416 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 402 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_in_place_faster_right
 	step_end
 
-# 419 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 405 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 Naranja_Islas_G00_M19_Movement_0814F16C:
-# 420 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 406 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_down
-# 421 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 407 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_down
 	step_end
 
-# 424 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 410 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 Naranja_Islas_G00_M19_Movement_0814F16F:
-# 425 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 411 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_down
-# 426 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 412 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
 Naranja_Islas_G00_M19_Text_0816B347::
-# 429 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 415 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "MR. BRINEY: Ahoy!\nWe’ve hit land in DEWFORD.\pI suppose you’re off to deliver that\nLETTER to, who was it now, STEVEN!$"
 
 Naranja_Islas_G00_M19_Text_0816B4B5::
-# 433 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 419 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "MR. BRINEY: Ahoy!\nWe’ve hit land in DEWFORD!\pYou just go on and tell me whenever\nyou want to set sail again!$"
 
 Naranja_Islas_G00_M19_Text_0816DA13::
-# 437 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 423 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "That seaside cottage is where\nMR. BRINEY lives.\pHe was once a mighty sailor who never\nfeared the sea, however stormy.$"
 
 Naranja_Islas_G00_M19_Text_0816DD91::
-# 441 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 427 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "This FLOWER SHOP started selling\nsaplings recently.\pIt made me so happy, I went overboard\nshopping. I don’t need this WHITE HERB\lanymore. Would you take it, please?$"
 
 Naranja_Islas_G00_M19_Text_0816DE36::
-# 445 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 431 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "This FLOWER SHOP started selling\nsaplings recently.\pIt made me so happy, I went overboard\nshopping. Where should I put them?$"
 
 Naranja_Islas_G00_M19_Text_081B85EB::
-# 449 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 435 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "¿Conoces al famoso…\pSUPERPESCADOR?\p{COLOR 0x04}{PLAYER}: Pues no la verdad…\p{COLOR 0x01}Pues soy yo$"
 
 Naranja_Islas_G00_M19_Text_081B8637::
-# 453 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 439 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Con lo que me costó capturar todos \nestos pokemon… \p¡Ya buscaré más!$"
 
 Naranja_Islas_G00_M19_Text_081B8680::
-# 457 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 443 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Q incultura\pNo conocer al superpescador\nno conocerme a mí!\l$"
 
 Naranja_Islas_G00_M19_Text_081B8C28::
-# 461 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 447 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Jaja…\n¡Que tupi!\lHay que ser muy idiota para navegar\lsobre un cachorro de Lapras…\ljaja…\p{COLOR 0x06}Huiii\p{COLOR 0x01}Glug, glug…\n$"
 
 Naranja_Islas_G00_M19_Text_081B8C99::
-# 465 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 451 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Glub... Glub...$"
 
 Naranja_Islas_G00_M19_Text_081B8CA9::
-# 469 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 455 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Sigo creyendo q es ridículo nadar\nasí si puedes alquilar una lancha.$"
 
 Naranja_Islas_G00_M19_Text_081B8CEE::
-# 473 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 459 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Nadar es un gran ejercicio\p…yo estoy tan atletico!$"
 
 Naranja_Islas_G00_M19_Text_081B8D23::
-# 477 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 463 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Estoy perdiendo mi forma…$"
 
 Naranja_Islas_G00_M19_Text_081B8D45::
-# 481 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 467 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Para tener tan buena forma como yo\nnada…\l…o apuntate a un gimnasio\l…pero…\p¡Muévete!$"
 
 Naranja_Islas_G00_M19_Text_081B8D99::
-# 485 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 471 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Cuando entro en el agua me siento \ntan super ligera como un Hoppip.$"
 
 Naranja_Islas_G00_M19_Text_081B8DDD::
-# 489 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 475 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "¡Oh! ¿Porque…$"
 
 Naranja_Islas_G00_M19_Text_081B8DED::
-# 493 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 479 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Cuando estoy en el agua es como\nsi volase entre las nubes…\pParece ser un problema de coordinación.$"
 
 Naranja_Islas_G00_M19_Text_081B8E66::
-# 497 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 483 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Es increible lo relajantes que son    \nestas islas.$"
 
 Naranja_Islas_G00_M19_Text_081B8EA0::
-# 501 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 487 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "¡Perdí porque no te miraba !$"
 
 Naranja_Islas_G00_M19_Text_081B8EBD::
-# 505 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 491 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "¿Podrìa estar aún más relajado?\p{COLOR 0x04}Vas a…\p{COLOR 0x01}glug…$"
 
 Naranja_Islas_G00_M19_Text_081BD02B::
-# 509 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 495 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "My POKéMON rule!\nCheck them out!$"
 
 Naranja_Islas_G00_M19_Text_081BD04C::
-# 513 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 499 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Ouch! A scrape!\nI have to put on a bandage!$"
 
 Naranja_Islas_G00_M19_Text_081BD078::
-# 517 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 503 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Bandages are signs of toughness!\nI’ve got another one!$"
 
 Naranja_Islas_G00_M19_Text_081BD1C0::
-# 521 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 507 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "We learn all sorts of things at the\nTRAINER’S SCHOOL.\pI want to test things out for real!$"
 
 Naranja_Islas_G00_M19_Text_081BD21A::
-# 525 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 511 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "I slacked off in school...\nThat’s why I lost.$"
 
 Naranja_Islas_G00_M19_Text_081BD248::
-# 529 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 515 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "I’ll have to redo some courses at the\nTRAINER’S SCHOOL.\lIf I don’t, ROXANNE will be steamed.$"
 
 Naranja_Islas_G00_M19_Text_081BD2A5::
-# 533 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 519 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "I’ve been studying seriously at the\nTRAINER’S SCHOOL.\lI won’t lose like I did last time.$"
 
 Naranja_Islas_G00_M19_Text_081BD2FE::
-# 537 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 523 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Hunh?\nI studied diligently.$"
 
 Naranja_Islas_G00_M19_Text_081BD31A::
-# 541 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 527 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "I’ll have to redo some courses at the\nTRAINER’S SCHOOL.\lIf I don’t, ROXANNE will be steamed.$"
 
 Naranja_Islas_G00_M19_Text_081BFFF0::
-# 545 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 531 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "You seem to have a big collection\nof GYM BADGES.\pLet me see if you’re actually worthy of\nthose BADGES!$"
 
 Naranja_Islas_G00_M19_Text_081C0057::
-# 549 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 535 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "Oh, you’re worthy, all right!$"
 
 Naranja_Islas_G00_M19_Text_081C0075::
-# 553 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
+# 539 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	.string "You did your BADGES proud in that\nmatch!$"

@@ -30,24 +30,21 @@ script Naranja_IslaTrovita_G11_M02_OnWarp_1 {
 
 script Naranja_IslaTrovita_G11_M02_OnFrame_1 {
     lockall
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_0818374C)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_0818374C, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_TROVITA_G11_M02_TEALA, Naranja_IslaTrovita_G11_M02_Movement_08157815)
     waitmovement(LOCALID_NONE)
     delay(0x50)
     applymovement(LOCALID_ISLA_TROVITA_G11_M02_TEALA, Naranja_IslaTrovita_G11_M02_Movement_0815781E)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_08183903)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_08183903, MSGBOX_DEFAULT)
     closemessage
     playbgm(MUS_FOLLOW_ME, 0)
     applymovement(LOCALID_ISLA_TROVITA_G11_M02_TEALA, Naranja_IslaTrovita_G11_M02_Movement_08157803)
     applymovement(LOCALID_PLAYER, Naranja_IslaTrovita_G11_M02_Movement_08157827)
     waitmovement(LOCALID_NONE)
     fadedefaultbgm
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_0818320B)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_0818320B, MSGBOX_DEFAULT)
     releaseall
     nop
     nop
@@ -56,8 +53,7 @@ script Naranja_IslaTrovita_G11_M02_OnFrame_1 {
 }
 
 script Naranja_IslaTrovita_G11_M02_EventScript_Sub_081577D8 {
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_08183439)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_08183439, MSGBOX_DEFAULT)
     setflag(FLAG_HIDE_MANDARIN_G00_M31_SWIMMER_M)
     clearflag(FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BLACK_BELT)
     clearflag(FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WOMAN_3)
@@ -77,8 +73,7 @@ script Naranja_IslaTrovita_G11_M02_EventScript_OBJ_EVENT_GFX_MAGMA_MEMBER_F_Loca
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M02_EventScript_Sub_0815789B)
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00BD)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M02_EventScript_Sub_08157864)
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_0818351E)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_0818351E, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -87,16 +82,14 @@ script Naranja_IslaTrovita_G11_M02_EventScript_OBJ_EVENT_GFX_MAGMA_MEMBER_F_Loca
 }
 
 script Naranja_IslaTrovita_G11_M02_EventScript_Sub_08157864 {
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_0818353E)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_0818353E, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xB6)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0110)
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_081835B3)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_081835B3, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -105,8 +98,7 @@ script Naranja_IslaTrovita_G11_M02_EventScript_Sub_08157864 {
 }
 
 script Naranja_IslaTrovita_G11_M02_EventScript_Sub_0815789B {
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_0818368D)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_0818368D, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -119,22 +111,19 @@ script Naranja_IslaTrovita_G11_M02_EventScript_OBJ_EVENT_GFX_TEALA_LocalId2 {
     faceplayer
     checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_0100)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M02_EventScript_Sub_081578C5)
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_0818395C)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_0818395C, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M02_EventScript_Sub_081578C5 {
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_081839A3)
-    callstd(4)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_081839A3, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTrovita_G11_M02_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaTrovita_G11_M02_Text_08183A04)
-    callstd(3)
+    msgbox(Naranja_IslaTrovita_G11_M02_Text_08183A04, MSGBOX_SIGN)
     end
 }
 

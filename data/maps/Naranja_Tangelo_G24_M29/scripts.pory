@@ -12,8 +12,7 @@ script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId5 {
 script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_LAPRAS_DOLL_LocalId3 {
     lock
     faceplayer
-    loadword(0, Naranja_Tangelo_G24_M29_Text_081955B0)
-    callstd(6)
+    msgbox(Naranja_Tangelo_G24_M29_Text_081955B0, MSGBOX_AUTOCLOSE)
     setflag(FLAG_HIDE_TANGELO_G24_M29_BIG_LAPRAS_DOLL)
     clearflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY)
     clearflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3)
@@ -25,8 +24,7 @@ script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_LAPRAS_DOLL_LocalId
 script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_WAILMER_DOLL_LocalId9 {
     lock
     nop
-    loadword(0, Naranja_Tangelo_G24_M29_Text_086B5340)
-    callstd(6)
+    msgbox(Naranja_Tangelo_G24_M29_Text_086B5340, MSGBOX_AUTOCLOSE)
     release
     end
 }
@@ -34,8 +32,7 @@ script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_WAILMER_DOLL_LocalI
 script Naranja_Tangelo_G24_M29_EventScript_AfterBattle_086B5CD4 {
     nop
     setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
-    loadword(0, Naranja_Tangelo_G24_M29_Text_081B7BD0)
-    callstd(6)
+    msgbox(Naranja_Tangelo_G24_M29_Text_081B7BD0, MSGBOX_AUTOCLOSE)
     end
 }
 

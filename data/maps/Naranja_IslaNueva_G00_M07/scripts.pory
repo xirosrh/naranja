@@ -82,28 +82,24 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D183)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081696A4)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081696A4, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D183 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A455)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A455, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A2B2)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A2B2, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A2FB)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A2FB, MSGBOX_NPC)
     end
 }
 
@@ -114,8 +110,7 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId6 {
     special(GetPlayerBigGuyGirlString)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_08D2)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D241)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C63F2)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C63F2, MSGBOX_DEFAULT)
     random(0xA)
     addvar(VAR_RESULT, 0x14)
     addvar(VAR_RESULT, 0x85)
@@ -125,8 +120,7 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId6 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_08D2)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C64D0)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C64D0, MSGBOX_DEFAULT)
     random(2)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D1FF)
@@ -141,8 +135,7 @@ script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D1FF {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C650B)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C650B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -153,26 +146,22 @@ script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D220 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C650B)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C650B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D241 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C6540)
-    callstd(5)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C6540, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D25E)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C6626)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C6626, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D25E {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081C65D4)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081C65D4, MSGBOX_DEFAULT)
     release
     end
 }
@@ -182,15 +171,13 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId4 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_04D4)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D27D)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A4D6)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A4D6, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D27D {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A531)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A531, MSGBOX_DEFAULT)
     release
     end
 }
@@ -200,15 +187,13 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId9 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D29C)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_08169813)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_08169813, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D29C {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A587)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A587, MSGBOX_DEFAULT)
     release
     end
 }
@@ -218,15 +203,13 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId11 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D2BB)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081698A0)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081698A0, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D2BB {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A614)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A614, MSGBOX_DEFAULT)
     release
     end
 }
@@ -236,34 +219,29 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId7
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D2DA)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_081697A7)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_081697A7, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D2DA {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A6AE)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A6AE, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId8 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816972B)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816972B, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A6C7)
-    callstd(3)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A6C7, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sign_6 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A711)
-    callstd(3)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A711, MSGBOX_SIGN)
     end
 }
 
@@ -279,21 +257,18 @@ script Naranja_IslaNueva_G00_M07_EventScript_Trigger_1 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_STEVEN, Naranja_IslaNueva_G00_M07_Movement_0814D413)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_08169E0F)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_08169E0F, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_STEVEN, Naranja_IslaNueva_G00_M07_Movement_0814D417)
     applymovement(LOCALID_PLAYER, Naranja_IslaNueva_G00_M07_Movement_0814D440)
     waitmovement(LOCALID_ISLA_NUEVA_G00_M07_STEVEN)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_08169E82)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_08169E82, MSGBOX_DEFAULT)
     playse(SE_PIN)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_WALLACE, Naranja_GraniteCave_G24_M00_Movement_081A0833)
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_WALLACE, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_08169F3C)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_08169F3C, MSGBOX_DEFAULT)
     closemessage
     delay(0x1E)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_WALLACE, Naranja_IslaNueva_G00_M07_Movement_0814D46A)
@@ -306,8 +281,7 @@ script Naranja_IslaNueva_G00_M07_EventScript_Trigger_1 {
     delay(0x1E)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_STEVEN, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_08169F6B)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_08169F6B, MSGBOX_DEFAULT)
     closemessage
     delay(0x1E)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_WALLACE, Naranja_IslaNueva_G00_M07_Movement_0814D47C)
@@ -316,12 +290,10 @@ script Naranja_IslaNueva_G00_M07_EventScript_Trigger_1 {
     waitmovement(LOCALID_NONE)
     applymovement(LOCALID_ISLA_NUEVA_G00_M07_WALLACE, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A06C)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A06C, MSGBOX_DEFAULT)
     applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A13E)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A13E, MSGBOX_DEFAULT)
     copyobjectxytoperm(LOCALID_ISLA_NUEVA_G00_M07_WALLACE)
     setobjectmovementtype(LOCALID_ISLA_NUEVA_G00_M07_WALLACE, 9)
     copyobjectxytoperm(LOCALID_ISLA_NUEVA_G00_M07_STEVEN)
@@ -332,8 +304,7 @@ script Naranja_IslaNueva_G00_M07_EventScript_Trigger_1 {
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_WALLACE_LocalId5 {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A1DB)
-    callstd(2)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A1DB, MSGBOX_NPC)
     end
 }
 
@@ -342,15 +313,13 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId10 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
     goto_if(EQUAL, Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D4AD)
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A249)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A249, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaNueva_G00_M07_EventScript_Sub_0814D4AD {
-    loadword(0, Naranja_IslaNueva_G00_M07_Text_0816A33E)
-    callstd(4)
+    msgbox(Naranja_IslaNueva_G00_M07_Text_0816A33E, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)

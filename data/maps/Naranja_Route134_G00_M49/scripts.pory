@@ -12,36 +12,31 @@ script Naranja_Route134_G00_M49_OnResume {
 
 script Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE134_172, LOCALID_NONE, Naranja_Route134_G00_M49_Text_081C30C6, Naranja_Route134_G00_M49_Text_081C3110)
-    loadword(0, Naranja_Route134_G00_M49_Text_081C311A)
-    callstd(6)
+    msgbox(Naranja_Route134_G00_M49_Text_081C311A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE134_463, LOCALID_NONE, Naranja_Route134_G00_M49_Text_081C315E, Naranja_Route134_G00_M49_Text_081C3198)
-    loadword(0, Naranja_Route134_G00_M49_Text_081C31A0)
-    callstd(6)
+    msgbox(Naranja_Route134_G00_M49_Text_081C31A0, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId4 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE134_413, LOCALID_NONE, Naranja_Route134_G00_M49_Text_081C31D7, Naranja_Route134_G00_M49_Text_081C3213)
-    loadword(0, Naranja_Route134_G00_M49_Text_081C3229)
-    callstd(6)
+    msgbox(Naranja_Route134_G00_M49_Text_081C3229, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE134_397, LOCALID_NONE, Naranja_Route134_G00_M49_Text_081C3319, Naranja_Route134_G00_M49_Text_081C335C)
-    loadword(0, Naranja_Route134_G00_M49_Text_081C336E)
-    callstd(6)
+    msgbox(Naranja_Route134_G00_M49_Text_081C336E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId5 {
     trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE134_180, LOCALID_NONE, Naranja_Route134_G00_M49_Text_081C3262, Naranja_Route134_G00_M49_Text_081C329E)
-    loadword(0, Naranja_Route134_G00_M49_Text_081C32D6)
-    callstd(6)
+    msgbox(Naranja_Route134_G00_M49_Text_081C32D6, MSGBOX_AUTOCLOSE)
     end
 }
 

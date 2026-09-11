@@ -27,8 +27,7 @@ script Naranja_SecretBase_G25_M00_OnFrame_1 {
     applymovement(LOCALID_PLAYER, Naranja_SecretBase_G25_M00_Movement_081A2E11)
     waitmovement(LOCALID_NONE)
     setvar(VAR_NARANJA_SECRET_BASE_EVENT_STATE_2, 1)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_08198F89)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_08198F89, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A2E08)
     closemessage
@@ -85,8 +84,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3032 {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A30A5)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1AEA)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1AEA, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F)
     setvar(VAR_RESULT, 1)
@@ -95,14 +93,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3032 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1B83)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1B83, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3086 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1C3B)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1C3B, MSGBOX_NPC)
     end
 }
 
@@ -110,14 +106,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1B97)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1B97, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A30A5 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1BF8)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1BF8, MSGBOX_NPC)
     end
 }
 
@@ -128,8 +122,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A30AE {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3121)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1E67)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1E67, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B)
     setvar(VAR_RESULT, 1)
@@ -138,14 +131,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A30AE {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1F04)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1F04, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3102 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1FBD)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1FBD, MSGBOX_NPC)
     end
 }
 
@@ -153,14 +144,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1F2E)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1F2E, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3121 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1F88)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1F88, MSGBOX_NPC)
     end
 }
 
@@ -171,8 +160,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A312A {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A319D)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A218F)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A218F, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187)
     setvar(VAR_RESULT, 1)
@@ -181,14 +169,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A312A {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2220)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2220, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A317E {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A22FA)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A22FA, MSGBOX_NPC)
     end
 }
 
@@ -196,14 +182,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187 {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2230)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2230, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A319D {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2280)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2280, MSGBOX_NPC)
     end
 }
 
@@ -214,8 +198,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A31A6 {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3219)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A24E1)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A24E1, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203)
     setvar(VAR_RESULT, 1)
@@ -224,14 +207,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A31A6 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A256F)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A256F, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A31FA {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2609)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2609, MSGBOX_NPC)
     end
 }
 
@@ -239,14 +220,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203 {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A258A)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A258A, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3219 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A25D2)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A25D2, MSGBOX_NPC)
     end
 }
 
@@ -257,8 +236,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3222 {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3295)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2830)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2830, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F)
     setvar(VAR_RESULT, 1)
@@ -267,14 +245,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3222 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A28D7)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A28D7, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3276 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A297C)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A297C, MSGBOX_NPC)
     end
 }
 
@@ -282,14 +258,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A28F4)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A28F4, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3295 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A294D)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A294D, MSGBOX_NPC)
     end
 }
 
@@ -300,8 +274,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A329E {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3311)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1CB2)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1CB2, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB)
     setvar(VAR_RESULT, 1)
@@ -310,14 +283,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A329E {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1D48)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1D48, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A32F2 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1DF6)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1DF6, MSGBOX_NPC)
     end
 }
 
@@ -325,14 +296,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1D59)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1D59, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3311 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1DC0)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A1DC0, MSGBOX_NPC)
     end
 }
 
@@ -343,8 +312,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A331A {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A338D)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2026)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2026, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377)
     setvar(VAR_RESULT, 1)
@@ -353,14 +321,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A331A {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2095)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2095, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A336E {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2147)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2147, MSGBOX_NPC)
     end
 }
 
@@ -368,14 +334,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377 {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A20AE)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A20AE, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A338D {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2109)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2109, MSGBOX_NPC)
     end
 }
 
@@ -386,8 +350,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3396 {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3409)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A236A)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A236A, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3)
     setvar(VAR_RESULT, 1)
@@ -396,14 +359,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3396 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2405)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2405, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A33EA {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2480)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2480, MSGBOX_NPC)
     end
 }
 
@@ -411,14 +372,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3 {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2420)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2420, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3409 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2446)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2446, MSGBOX_NPC)
     end
 }
 
@@ -429,8 +388,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3412 {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3485)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2663)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2663, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F)
     setvar(VAR_RESULT, 1)
@@ -439,14 +397,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3412 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2710)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2710, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3466 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A27A4)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A27A4, MSGBOX_NPC)
     end
 }
 
@@ -454,14 +410,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2736)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2736, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3485 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A276A)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A276A, MSGBOX_NPC)
     end
 }
 
@@ -472,8 +426,7 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A348E {
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3501)
     lock
     faceplayer
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2A13)
-    callstd(5)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2A13, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB)
     setvar(VAR_RESULT, 1)
@@ -482,14 +435,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A348E {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2AE2)
-    callstd(4)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2AE2, MSGBOX_DEFAULT)
     goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A34E2 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2BA4)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2BA4, MSGBOX_NPC)
     end
 }
 
@@ -497,14 +448,12 @@ script Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB {
     setvar(VAR_RESULT, 0)
     special(SetBattledOwnerFromResult)
     erasebox(0, 0, 0xF, 0xA)
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2AFB)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2AFB, MSGBOX_NPC)
     end
 }
 
 script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3501 {
-    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2B69)
-    callstd(2)
+    msgbox(Naranja_SecretBase_G25_M00_Text_081A2B69, MSGBOX_NPC)
     end
 }
 

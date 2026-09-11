@@ -5,8 +5,7 @@ mapscripts Naranja_ValleCharizard_G04_M03_MapScripts {
 }
 
 script Naranja_ValleCharizard_G04_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
-    loadword(0, Naranja_ValleCharizard_G04_M03_Text_08176D07)
-    callstd(2)
+    msgbox(Naranja_ValleCharizard_G04_M03_Text_08176D07, MSGBOX_NPC)
     end
 }
 
@@ -15,8 +14,7 @@ script Naranja_ValleCharizard_G04_M03_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalI
     faceplayer
     waitse
     playmoncry(SPECIES_ZIGZAGOON, 0)
-    loadword(0, Naranja_ValleCharizard_G04_M03_Text_08176D94)
-    callstd(4)
+    msgbox(Naranja_ValleCharizard_G04_M03_Text_08176D94, MSGBOX_DEFAULT)
     waitmoncry
     release
     end

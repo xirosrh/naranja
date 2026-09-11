@@ -18,27 +18,23 @@ script Naranja_Route121_G23_M00_OnFrame_1 {
 }
 
 script Naranja_Route121_G23_M00_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId1 {
-    loadword(0, Naranja_Route121_G23_M00_Text_081C35D0)
-    callstd(2)
+    msgbox(Naranja_Route121_G23_M00_Text_081C35D0, MSGBOX_NPC)
     end
 }
 
 script Naranja_Route121_G23_M00_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId2 {
     lock
     faceplayer
-    loadword(0, Naranja_Route121_G23_M00_Text_081C3704)
-    callstd(5)
+    msgbox(Naranja_Route121_G23_M00_Text_081C3704, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route121_G23_M00_EventScript_Sub_0815C379)
-    loadword(0, Naranja_Route121_G23_M00_Text_081C373C)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C373C, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_Route121_G23_M00_EventScript_Sub_0815C379 {
-    loadword(0, Naranja_Route121_G23_M00_Text_081C375F)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C375F, MSGBOX_DEFAULT)
     release
     end
 }
@@ -48,12 +44,10 @@ script Naranja_Route121_G23_M00_EventScript_Trigger_1 {
     applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
     showmoneybox(0, 0, 0)
-    loadword(0, Naranja_Route121_G23_M00_Text_081C3832)
-    callstd(5)
+    msgbox(Naranja_Route121_G23_M00_Text_081C3832, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route121_G23_M00_EventScript_Sub_0815C3B3)
-    loadword(0, Naranja_Route121_G23_M00_Text_081C3895)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C3895, MSGBOX_DEFAULT)
     goto(Naranja_Route121_G23_M00_EventScript_Sub_0815C46C)
 }
 
@@ -65,18 +59,15 @@ script Naranja_Route121_G23_M00_EventScript_Sub_0815C3B3 {
     checkmoney(0x1F4, 0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Route121_G23_M00_EventScript_Sub_0815C45E)
-    loadword(0, Naranja_Route121_G23_M00_Text_081C38D9)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C38D9, MSGBOX_DEFAULT)
     removemoney(0x1F4, 0)
     updatemoneybox(0)
-    loadword(0, Naranja_Route121_G23_M00_Text_081C38F4)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C38F4, MSGBOX_DEFAULT)
     playfanfare(MUS_OBTAIN_ITEM)
     message(Naranja_Route121_G23_M00_Text_081C3910)
     waitfanfare
     waitmessage
-    loadword(0, Naranja_Route121_G23_M00_Text_081C392D)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C392D, MSGBOX_DEFAULT)
     closemessage
     hidemoneybox
     applymovement(LOCALID_PLAYER, Naranja_Route121_G23_M00_Movement_0815C47E)
@@ -95,8 +86,7 @@ script Naranja_Route121_G23_M00_EventScript_Sub_0815C425 {
     specialvar(VAR_RESULT, ScriptCheckFreePokemonStorageSpace)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route121_G23_M00_EventScript_Sub_0815C44F)
-    loadword(0, Naranja_Route121_G23_M00_Text_081C39A3)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C39A3, MSGBOX_DEFAULT)
     goto(Naranja_Route121_G23_M00_EventScript_Sub_0815C46C)
 }
 
@@ -105,14 +95,12 @@ script Naranja_Route121_G23_M00_EventScript_Sub_0815C44F {
 }
 
 script Naranja_Route121_G23_M00_EventScript_Sub_0815C450 {
-    loadword(0, Naranja_Route121_G23_M00_Text_081C39C3)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C39C3, MSGBOX_DEFAULT)
     goto(Naranja_Route121_G23_M00_EventScript_Sub_0815C46C)
 }
 
 script Naranja_Route121_G23_M00_EventScript_Sub_0815C45E {
-    loadword(0, Naranja_Route121_G23_M00_Text_081C38B5)
-    callstd(4)
+    msgbox(Naranja_Route121_G23_M00_Text_081C38B5, MSGBOX_DEFAULT)
     goto(Naranja_Route121_G23_M00_EventScript_Sub_0815C46C)
 }
 
@@ -126,8 +114,7 @@ script Naranja_Route121_G23_M00_EventScript_Sub_0815C46C {
 }
 
 script Naranja_Route121_G23_M00_EventScript_Sign_1 {
-    loadword(0, Naranja_Route121_G23_M00_Text_081C3E4B)
-    callstd(3)
+    msgbox(Naranja_Route121_G23_M00_Text_081C3E4B, MSGBOX_SIGN)
     end
 }
 

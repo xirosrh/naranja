@@ -80,8 +80,7 @@ script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160BA7 {
 }
 
 script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160C08 {
-    loadword(0, Naranja_SouthernIsland_G26_M10_Text_081C52C5)
-    callstd(4)
+    msgbox(Naranja_SouthernIsland_G26_M10_Text_081C52C5, MSGBOX_DEFAULT)
     releaseall
     end
 }

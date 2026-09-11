@@ -94,8 +94,7 @@ script Naranja_ShoalCave_G24_M47_EventScript_Sign_3 {
 }
 
 script Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E289 {
-    loadword(0, Naranja_ShoalCave_G24_M47_Text_081C69B8)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M47_Text_081C69B8, MSGBOX_DEFAULT)
     releaseall
     end
 }
@@ -165,8 +164,7 @@ script Naranja_ShoalCave_G24_M47_EventScript_Sign_1 {
 }
 
 script Naranja_ShoalCave_G24_M47_EventScript_Sub_0815E35B {
-    loadword(0, Naranja_ShoalCave_G24_M47_Text_081C6979)
-    callstd(4)
+    msgbox(Naranja_ShoalCave_G24_M47_Text_081C6979, MSGBOX_DEFAULT)
     releaseall
     end
 }

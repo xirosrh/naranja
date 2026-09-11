@@ -5,14 +5,12 @@ mapscripts Naranja_IslaMurcott_G09_M03_MapScripts {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CB71)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CB71, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId2 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CC80)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CC80, MSGBOX_NPC)
     end
 }
 
@@ -21,30 +19,26 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId13 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0109)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M03_EventScript_Sub_08155595)
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CCE2)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CCE2, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x149)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
     setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0109)
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CE28)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CE28, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_Sub_08155595 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CE28)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CE28, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CEF3)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CEF3, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_WOMAN_4, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -53,8 +47,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId4 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817CFA7)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817CFA7, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_CONTEST_JUDGE, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -63,8 +56,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_Local
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId5 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D054)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D054, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_GIRL_1_5, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -73,8 +65,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId5 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId6 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D07F)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D07F, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_BOY_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -83,8 +74,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId6 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId7 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D0F9)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D0F9, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_BOY_1_7, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -93,8 +83,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId7 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId8 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D222)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D222, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_FAT_MAN_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -103,8 +92,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId8 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId9 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D39A)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D39A, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_MANIAC, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -113,8 +101,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId9 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_HIKER_LocalId10 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D3F0)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D3F0, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_HIKER, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -123,8 +110,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_HIKER_LocalId10 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId12 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D300)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D300, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_BOY_1_12, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -133,8 +119,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId12 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId11 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D27F)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D27F, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_MURCOTT_G09_M03_BOY_3, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -143,8 +128,7 @@ script Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId11 {
 }
 
 script Naranja_IslaMurcott_G09_M03_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaMurcott_G09_M03_Text_0817D447)
-    callstd(3)
+    msgbox(Naranja_IslaMurcott_G09_M03_Text_0817D447, MSGBOX_SIGN)
     end
 }
 

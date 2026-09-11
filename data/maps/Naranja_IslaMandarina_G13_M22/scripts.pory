@@ -30,8 +30,7 @@ script Naranja_IslaMandarina_G13_M22_EventScript_OBJ_EVENT_GFX_ROOFTOP_SALE_WOMA
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
     pokemartdecoration(Naranja_IslaMandarina_G13_M22_Mart_0815A180)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
@@ -42,22 +41,19 @@ script Naranja_IslaMandarina_G13_M22_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId1 {
     getpokenewsactive(3)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1BA)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C61F)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C61F, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1BA {
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C685)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C685, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId2 {
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C70E)
-    callstd(2)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C70E, MSGBOX_NPC)
     end
 }
 
@@ -79,8 +75,7 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1DE {
     goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A227)
     compare_var_to_value(VAR_0x8000, 2)
     goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A232)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C7C3)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C7C3, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396)
 }
 
@@ -150,13 +145,11 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267 {
     updatemoneybox(0)
     bufferitemname(0, 0x4000)
     playse(SE_VEND)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C75F)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C75F, MSGBOX_DEFAULT)
     additem(0x4000, 1)
     bufferitemname(1, 0x4000)
     bufferstdstring(2, 0xE)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C8C)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_081A0C8C, MSGBOX_DEFAULT)
     random(0x40)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(NOT_EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E)
@@ -164,13 +157,11 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388)
     playse(SE_VEND)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C780)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C780, MSGBOX_DEFAULT)
     additem(0x4000, 1)
     bufferitemname(1, 0x4000)
     bufferstdstring(2, 0xE)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C8C)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_081A0C8C, MSGBOX_DEFAULT)
     random(0x40)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(NOT_EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E)
@@ -178,13 +169,11 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388)
     playse(SE_VEND)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C780)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C780, MSGBOX_DEFAULT)
     additem(0x4000, 1)
     bufferitemname(1, 0x4000)
     bufferstdstring(2, 0xE)
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C8C)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_081A0C8C, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E)
 }
 
@@ -195,14 +184,12 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E {
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A37A {
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C7AF)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C7AF, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396)
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388 {
-    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C79)
-    callstd(4)
+    msgbox(Naranja_IslaMandarina_G13_M22_Text_081A0C79, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396)
 }
 

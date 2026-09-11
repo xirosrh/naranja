@@ -7,20 +7,17 @@ mapscripts Naranja_CuevaKabuto_G24_M10_MapScripts {
 script Naranja_CuevaKabuto_G24_M10_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId1 {
     lock
     faceplayer
-    loadword(0, Naranja_CuevaKabuto_G24_M10_Text_08194AE5)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M10_Text_08194AE5, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 0x112)
     call(Naranja_CuevaKabuto_G24_M10_EventScript_Sub_081A067F)
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00BD)
-    loadword(0, Naranja_CuevaKabuto_G24_M10_Text_08194BDD)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M10_Text_08194BDD, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x14F)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_CuevaKabuto_G24_M10_EventScript_Sub_0815CC83)
-    loadword(0, Naranja_CuevaKabuto_G24_M10_Text_08194C8D)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M10_Text_08194C8D, MSGBOX_DEFAULT)
     closemessage
     compare_var_to_value(VAR_FACING, 2)
     call_if(EQUAL, Naranja_CuevaKabuto_G24_M10_EventScript_Sub_0815CC6D)
@@ -49,8 +46,7 @@ script Naranja_CuevaKabuto_G24_M10_EventScript_Sub_0815CC78 {
 }
 
 script Naranja_CuevaKabuto_G24_M10_EventScript_Sub_0815CC83 {
-    loadword(0, Naranja_CuevaKabuto_G24_M10_Text_08194D43)
-    callstd(4)
+    msgbox(Naranja_CuevaKabuto_G24_M10_Text_08194D43, MSGBOX_DEFAULT)
     return
 }
 

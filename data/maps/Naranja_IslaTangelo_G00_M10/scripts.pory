@@ -43,8 +43,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId3 {
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE79)
     setflag(FLAG_TEMP_1)
     playbgm(MUS_FOLLOW_ME, 0)
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_086B3490)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_086B3490, MSGBOX_DEFAULT)
     closemessage
     copyvar(VAR_0x8000, VAR_FACING)
     compare_var_to_value(VAR_0x8000, 1)
@@ -78,15 +77,13 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE35 {
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE4C {
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_086BF54C)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_086BF54C, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xD)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE83)
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816AFE1)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816AFE1, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084)
     fadedefaultbgm
     release
@@ -94,15 +91,13 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE4C {
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE79 {
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816AFE1)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816AFE1, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE83 {
-    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081A0CC2)
-    callstd(4)
+    msgbox(Naranja_7islasPomelo_G03_M04_Text_081A0CC2, MSGBOX_DEFAULT)
     fadedefaultbgm
     release
     end
@@ -113,8 +108,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId2 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DF26)
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816B0CC)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816B0CC, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_TANGELO_G00_M10_GIRL_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -127,8 +121,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Trigger_1 {
     applymovement(LOCALID_PLAYER, Naranja_IslaTangelo_G00_M10_Movement_0814DFEC)
     applymovement(LOCALID_ISLA_TANGELO_G00_M10_GIRL_2, Naranja_IslaTangelo_G00_M10_Movement_0814DFEF)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816B045)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816B045, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_TANGELO_G00_M10_GIRL_2, Naranja_IslaTangelo_G00_M10_Movement_086B336C)
     waitmovement(LOCALID_NONE)
@@ -137,8 +130,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Trigger_1 {
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DF26 {
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816B12A)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816B12A, MSGBOX_DEFAULT)
     release
     end
 }
@@ -187,14 +179,12 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DF92 {
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DFAA {
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816B196)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816B196, MSGBOX_DEFAULT)
     goto(Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DFC6)
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DFB8 {
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816B1BE)
-    callstd(4)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816B1BE, MSGBOX_DEFAULT)
     goto(Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DFC6)
 }
 
@@ -211,8 +201,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DFC6 {
 
 script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_DUSKULL_DOLL_LocalId5 {
     lockall
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_0816D51A)
-    callstd(2)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_0816D51A, MSGBOX_NPC)
     nop
     setwildbattle(SPECIES_GEODUDE, 5, 0)
     special(BattleSetup_StartLegendaryBattle)
@@ -220,8 +209,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_DUSKULL_DOLL_LocalI
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaTangelo_G00_M10_Text_086BEF1C)
-    callstd(3)
+    msgbox(Naranja_IslaTangelo_G00_M10_Text_086BEF1C, MSGBOX_SIGN)
     end
 }
 
@@ -233,16 +221,14 @@ script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Local
     checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_08152FA8)
     pokemart(Naranja_IslaTangelo_G00_M10_Mart_08152F9C)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_08152FA8 {
     pokemart(Naranja_IslaTangelo_G00_M10_Mart_08152FB8)
-    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
-    callstd(4)
+    msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)
     release
     end
 }

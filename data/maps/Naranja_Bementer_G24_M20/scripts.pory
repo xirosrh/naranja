@@ -9,15 +9,13 @@ script Naranja_Bementer_G24_M20_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1 {
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Bementer_G24_M20_EventScript_Sub_0815D46F)
-    loadword(0, Naranja_Bementer_G24_M20_Text_08196A4C)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M20_Text_08196A4C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Bementer_G24_M20_EventScript_Sub_0815D46F {
     trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_BEMENTER_108, LOCALID_NONE, Naranja_Bementer_G24_M20_Text_08196A95, Naranja_Bementer_G24_M20_Text_08196AB1)
-    loadword(0, Naranja_Bementer_G24_M20_Text_08196AC9)
-    callstd(6)
+    msgbox(Naranja_Bementer_G24_M20_Text_08196AC9, MSGBOX_AUTOCLOSE)
     end
 }
 

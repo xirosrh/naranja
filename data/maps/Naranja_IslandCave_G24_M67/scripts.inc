@@ -72,72 +72,70 @@ Naranja_IslandCave_G24_M67_EventScript_Sign_1::
 
 Naranja_IslandCave_G24_M67_EventScript_Sub_0815EF72::
 # 53 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
-	loadword 0, Naranja_AncientTomb_G24_M68_Text_081A13BE
+	msgbox Naranja_AncientTomb_G24_M68_Text_081A13BE, MSGBOX_DEFAULT
 # 54 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
-	callstd 4
-# 55 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslandCave_G24_M67_EventScript_Sign_2::
-# 60 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 59 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	lockall
-# 61 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 60 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	braillemessage Naranja_IslandCave_G24_M67_Text_081C54FC
-# 62 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 61 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	checkflag FLAG_NARANJA_ISLAND_CAVE_EVENT_COMPLETE_0851
-# 63 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 62 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	goto_if EQUAL, Naranja_IslandCave_G24_M67_EventScript_Sub_0815EF95
-# 64 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 63 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	special ShouldDoBrailleRegirockEffectOld
-# 65 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 64 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	waitstate
-# 66 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 65 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	goto Naranja_IslandCave_G24_M67_EventScript_Sub_0815EF95
 	return
 
 
 Naranja_IslandCave_G24_M67_EventScript_Sub_0815EF95::
-# 70 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 69 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	waitbuttonpress
-# 71 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 70 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	erasebox 0, 0, 0x1D, 0x13
-# 72 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 71 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslandCave_G24_M67_EventScript_OBJ_EVENT_GFX_REGICE_LocalId1::
-# 77 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 76 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	lock
-# 78 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 77 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	faceplayer
-# 79 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 78 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	waitse
-# 80 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 79 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	playmoncry SPECIES_REGICE, 2
-# 81 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 80 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	delay 0x28
-# 82 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 81 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	waitmoncry
-# 83 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 82 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	setwildbattle SPECIES_REGICE, 0x28, 0
-# 84 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 83 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	setflag FLAG_HIDE_ISLAND_CAVE_G24_M67_REGICE
-# 85 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 84 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	setflag FLAG_SYS_POKEDEX_GET
-# 86 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 85 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	special StartRegiBattle
-# 87 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 86 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	waitstate
-# 88 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 87 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	clearflag FLAG_SYS_POKEDEX_GET
-# 89 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 88 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	release
 	end
 
 
 Naranja_IslandCave_G24_M67_Text_081C54FC::
-# 93 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
+# 92 "data/maps/Naranja_IslandCave_G24_M67/scripts.pory"
 	.string "Â éÛÈÂàìçá ÀéÎ\n+ÀÉìわ +ÀÉì\nÊçë ìÉÛÌ ìç\náÀàà ì+ÉÂÌわ$"

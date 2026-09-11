@@ -16,62 +16,52 @@ script Naranja_IslaMellsweet_G00_M06_OnTransition {
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_08169266)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_08169266, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId1 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081692A1)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081692A1, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId4 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081691F2)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081691F2, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_08169370)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_08169370, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId5 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_08169314)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_08169314, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId8 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081694DA)
-    callstd(2)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081694DA, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_Sign_8 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081695D3)
-    callstd(3)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081695D3, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_Sign_2 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081695E6)
-    callstd(3)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081695E6, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_0816962F)
-    callstd(3)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_0816962F, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_Sign_5 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_0816965C)
-    callstd(3)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_0816965C, MSGBOX_SIGN)
     end
 }
 
@@ -84,8 +74,7 @@ script Naranja_IslaMellsweet_G00_M06_EventScript_Trigger_1 {
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId7 {
     lock
     faceplayer
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_0816944E)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_0816944E, MSGBOX_DEFAULT)
     applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
     release
@@ -97,12 +86,10 @@ script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId9 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114)
     goto_if(EQUAL, Naranja_IslaMellsweet_G00_M06_EventScript_Sub_0814D069)
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081690A9)
-    callstd(5)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081690A9, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMellsweet_G00_M06_EventScript_Sub_0814D073)
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_08169117)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_08169117, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xBB)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -114,15 +101,13 @@ script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId9 {
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_Sub_0814D069 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_0816916F)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_0816916F, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMellsweet_G00_M06_EventScript_Sub_0814D073 {
-    loadword(0, Naranja_IslaMellsweet_G00_M06_Text_081691A7)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G00_M06_Text_081691A7, MSGBOX_DEFAULT)
     release
     end
 }

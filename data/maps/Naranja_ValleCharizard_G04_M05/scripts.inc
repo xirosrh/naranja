@@ -28,36 +28,30 @@ Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1::
 
 Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2::
 # 24 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
-	loadword 0, Naranja_ValleCharizard_G04_M05_Text_08176F08
-# 25 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
-	callstd 2
+	msgbox Naranja_ValleCharizard_G04_M05_Text_08176F08, MSGBOX_NPC
 	end
 
 
 Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3::
-# 30 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
-	loadword 0, Naranja_ValleCharizard_G04_M05_Text_08176E92
-# 31 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
-	callstd 2
+# 29 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
+	msgbox Naranja_ValleCharizard_G04_M05_Text_08176E92, MSGBOX_NPC
 	end
 
 
 Naranja_ValleCharizard_G04_M05_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId4::
-# 36 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
-	loadword 0, Naranja_ValleCharizard_G04_M05_Text_08176F7A
-# 37 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
-	callstd 2
+# 34 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
+	msgbox Naranja_ValleCharizard_G04_M05_Text_08176F7A, MSGBOX_NPC
 	end
 
 
 Naranja_ValleCharizard_G04_M05_Text_08176E92::
-# 41 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
+# 38 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
 	.string "I think POKéMON get closer to their\nTRAINERS if they spend time together.\pThe longer the better.\nThat’s what I think.$"
 
 Naranja_ValleCharizard_G04_M05_Text_08176F08::
-# 45 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
+# 42 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
 	.string "I gave a RED オカキクケ to my POKéMON.\nIt looks a lot cooler all of a sudden.\pHmm...\nMaybe I ought to eat a RED オカキクケ.$"
 
 Naranja_ValleCharizard_G04_M05_Text_08176F7A::
-# 49 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
+# 46 "data/maps/Naranja_ValleCharizard_G04_M05/scripts.pory"
 	.string "Hohoho! Hey, kid, you can reach\nthe hot springs from here.\pIf POKéMON are getting rest, so too\nshould their TRAINERS.$"

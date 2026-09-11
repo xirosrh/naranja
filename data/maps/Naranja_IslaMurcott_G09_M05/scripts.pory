@@ -25,8 +25,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId5 
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155795 {
     setvar(VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_4, 1)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817D773)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817D773, MSGBOX_DEFAULT)
     goto(Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155808)
 }
 
@@ -46,21 +45,18 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081557A8 {
     call_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_0815588D)
     compare_var_to_value(VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_4, 2)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081557FE)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DA14)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DA14, MSGBOX_DEFAULT)
     goto(Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155808)
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081557FE {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DDD5)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DDD5, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155808 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DA49)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DA49, MSGBOX_DEFAULT)
     setvar(VAR_TEMP_1, 0)
     checkflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CC)
     call_if(LESS_THAN, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081559FE)
@@ -101,8 +97,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155893 {
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155899 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DA5C)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DA5C, MSGBOX_DEFAULT)
     release
     end
 }
@@ -111,14 +106,12 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081558A3 {
     checkitemspace(ITEM_RED_SCARF, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155998)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DB89)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DB89, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00C8)
     setorcopyvar(VAR_0x8000, 0xFE)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DC1B)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DC1B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -127,14 +120,12 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081558D4 {
     checkitemspace(ITEM_BLUE_SCARF, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155998)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DB89)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DB89, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00C9)
     setorcopyvar(VAR_0x8000, 0xFF)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DC74)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DC74, MSGBOX_DEFAULT)
     release
     end
 }
@@ -143,14 +134,12 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155905 {
     checkitemspace(ITEM_PINK_SCARF, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155998)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DB89)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DB89, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CA)
     setorcopyvar(VAR_0x8000, 0x100)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DCCB)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DCCB, MSGBOX_DEFAULT)
     release
     end
 }
@@ -159,14 +148,12 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155936 {
     checkitemspace(ITEM_GREEN_SCARF, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155998)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DB89)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DB89, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CB)
     setorcopyvar(VAR_0x8000, 0x101)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DD27)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DD27, MSGBOX_DEFAULT)
     release
     end
 }
@@ -175,21 +162,18 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155967 {
     checkitemspace(ITEM_YELLOW_SCARF, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155998)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DB89)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DB89, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CC)
     setorcopyvar(VAR_0x8000, 0x102)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DD78)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DD78, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155998 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DB0B)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DB0B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -259,8 +243,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId4 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0116)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155A75)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DE6B)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DE6B, MSGBOX_DEFAULT)
     specialvar(VAR_RESULT, GetLeadMonFriendshipScore)
     compare_var_to_value(VAR_RESULT, 4)
     goto_if(GREATER_THAN_OR_EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155A3A)
@@ -274,8 +257,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155A3A {
     waitmovement(LOCALID_NONE)
     applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DF57)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DF57, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xB8)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -287,21 +269,18 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155A3A {
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_08155A75 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817DFB8)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817DFB8, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817E03B)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817E03B, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817E0ED)
-    callstd(2)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817E0ED, MSGBOX_NPC)
     end
 }
 
@@ -310,8 +289,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_SKITTY_LocalId7 {
     faceplayer
     waitse
     playmoncry(SPECIES_SKITTY, 0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817E14E)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817E14E, MSGBOX_DEFAULT)
     waitmoncry
     release
     end
@@ -322,8 +300,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId6 
     faceplayer
     waitse
     playmoncry(SPECIES_ZIGZAGOON, 0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817E164)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817E164, MSGBOX_DEFAULT)
     waitmoncry
     release
     end
@@ -334,8 +311,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_AZUMARILL_LocalId8 
     faceplayer
     waitse
     playmoncry(SPECIES_AZUMARILL, 0)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_0817E178)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_0817E178, MSGBOX_DEFAULT)
     waitmoncry
     release
     end
@@ -347,8 +323,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADE4D {
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADED6)
     copyvar(VAR_0x8009, VAR_0x8006)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A8704)
-    callstd(5)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A8704, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADE84)
     compare_var_to_value(VAR_RESULT, 0)
@@ -357,8 +332,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADE4D {
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADE84 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A87CA)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A87CA, MSGBOX_DEFAULT)
     setvar(VAR_0x8004, 5)
     copyvar(VAR_0x8005, VAR_0x8009)
     setvar(VAR_0x8006, 1)
@@ -373,22 +347,19 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADE84 {
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADEB9 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A8667)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A8667, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADEC3 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A8818)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A8818, MSGBOX_DEFAULT)
     setvar(VAR_0x8005, 1)
     goto(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081ADE46)
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADED6 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A86B5)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A86B5, MSGBOX_DEFAULT)
     release
     end
 }
@@ -404,8 +375,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId3
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE0AC)
     copyvar(VAR_0x8009, VAR_0x8006)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A82F1)
-    callstd(5)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A82F1, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADFE9)
     compare_var_to_value(VAR_RESULT, 0)
@@ -414,8 +384,7 @@ script Naranja_IslaMurcott_G09_M05_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId3
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADFE9 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A83D0)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A83D0, MSGBOX_DEFAULT)
     random(3)
     copyvar(VAR_0x800A, VAR_RESULT)
     copyvar(VAR_0x8000, VAR_RESULT)
@@ -429,20 +398,17 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081ADFE9 {
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE020 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A8414)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A8414, MSGBOX_DEFAULT)
     goto(Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE04A)
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE02E {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A8470)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A8470, MSGBOX_DEFAULT)
     goto(Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE04A)
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE03C {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A84D5)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A84D5, MSGBOX_DEFAULT)
     goto(Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE04A)
 }
 
@@ -455,31 +421,27 @@ script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE04A {
     faceplayer
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE0A2)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A852D)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A852D, MSGBOX_DEFAULT)
     setvar(VAR_0x8006, 1)
     call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
     lock
     faceplayer
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE0A2)
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A85A6)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A85A6, MSGBOX_DEFAULT)
     copyvar(VAR_0x8007, VAR_0x800A)
     setvar(VAR_0x8005, 3)
     goto(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081ADE46)
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE0A2 {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A8667)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A8667, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaMurcott_G09_M05_EventScript_Sub_081AE0AC {
-    loadword(0, Naranja_IslaMurcott_G09_M05_Text_081A86B5)
-    callstd(4)
+    msgbox(Naranja_IslaMurcott_G09_M05_Text_081A86B5, MSGBOX_DEFAULT)
     release
     end
 }

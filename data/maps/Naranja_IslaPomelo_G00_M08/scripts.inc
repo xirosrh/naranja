@@ -14,44 +14,38 @@ Naranja_IslaPomelo_G00_M08_OnTransition::
 
 Naranja_IslaPomelo_G00_M08_EventScript_Sign_1::
 # 15 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G00_M08_Text_0816A74D
-# 16 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
-	callstd 3
+	msgbox Naranja_IslaPomelo_G00_M08_Text_0816A74D, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaPomelo_G00_M08_EventScript_Sign_3::
-# 21 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G00_M08_Text_0816A787
-# 22 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
-	callstd 3
+# 20 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+	msgbox Naranja_IslaPomelo_G00_M08_Text_0816A787, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaPomelo_G00_M08_EventScript_Sign_4::
-# 27 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
-	loadword 0, Naranja_IslaPomelo_G00_M08_Text_0816A763
-# 28 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
-	callstd 3
+# 25 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+	msgbox Naranja_IslaPomelo_G00_M08_Text_0816A763, MSGBOX_SIGN
 	end
 
 
 Naranja_IslaPomelo_G00_M08_EventScript_Trigger_1::
-# 33 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+# 30 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_081E
-# 34 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+# 31 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
 	setvar VAR_TEMP_1, 1
 	end
 
 
 Naranja_IslaPomelo_G00_M08_Text_0816A74D::
-# 38 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+# 35 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
 	.string "ENTERING VICTORY ROAD$"
 
 Naranja_IslaPomelo_G00_M08_Text_0816A763::
-# 42 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+# 39 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
 	.string "ENTERING POKéMON LEAGUE\nCENTER GATE$"
 
 Naranja_IslaPomelo_G00_M08_Text_0816A787::
-# 46 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
+# 43 "data/maps/Naranja_IslaPomelo_G00_M08/scripts.pory"
 	.string "EVER GRANDE CITY\p“The paradise of flowers, the sea,\nand POKéMON.”$"

@@ -22,15 +22,13 @@ script Naranja_IslaKumquat_G13_M10_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081598BA {
     checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M10_EventScript_Sub_081598CD)
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B306)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B306, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081598CD {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B36F)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B36F, MSGBOX_DEFAULT)
     checkitem(ITEM_SS_TICKET, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M10_EventScript_Sub_08159929)
@@ -54,15 +52,13 @@ script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081598F1 {
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_08159929 {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B3A9)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B3A9, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_08159933 {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B47D)
-    callstd(5)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B47D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M10_EventScript_Sub_0815997E)
     setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 5)
@@ -74,8 +70,7 @@ script Naranja_IslaKumquat_G13_M10_EventScript_Sub_08159933 {
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_0815995B {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B499)
-    callstd(5)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B499, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M10_EventScript_Sub_0815997E)
     call(Naranja_IslaKumquat_G13_M10_EventScript_Sub_0815998A)
@@ -92,8 +87,7 @@ script Naranja_IslaKumquat_G13_M10_EventScript_Sub_0815997E {
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_0815998A {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B4B3)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B4B3, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
@@ -123,8 +117,7 @@ script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081599D9 {
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081599E4 {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B45B)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B45B, MSGBOX_DEFAULT)
     release
     end
 }
@@ -136,8 +129,7 @@ script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081599EE {
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M10_EventScript_Sub_081598BA)
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0853)
     goto_if(LESS_THAN, Naranja_IslaKumquat_G13_M10_EventScript_Sub_081598BA)
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_081C50F2)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_081C50F2, MSGBOX_DEFAULT)
     closemessage
     applymovement(32783, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
@@ -148,8 +140,7 @@ script Naranja_IslaKumquat_G13_M10_EventScript_Sub_081599EE {
     delay(0x1E)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M10_SAILOR_2, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_081C5120)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_081C5120, MSGBOX_DEFAULT)
     closemessage
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M10_SAILOR_2, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
@@ -175,15 +166,13 @@ script Naranja_IslaKumquat_G13_M10_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId3 {
     faceplayer
     checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
     goto_if(EQUAL, Naranja_IslaKumquat_G13_M10_EventScript_Sub_08159AA2)
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B504)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B504, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaKumquat_G13_M10_EventScript_Sub_08159AA2 {
-    loadword(0, Naranja_IslaKumquat_G13_M10_Text_0818B58E)
-    callstd(4)
+    msgbox(Naranja_IslaKumquat_G13_M10_Text_0818B58E, MSGBOX_DEFAULT)
     release
     end
 }

@@ -10,22 +10,19 @@ script Naranja_IslaHamlin_G07_M06_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
     specialvar(VAR_RESULT, IsMirageIslandPresent)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaHamlin_G07_M06_EventScript_Sub_081543B0)
-    loadword(0, Naranja_IslaHamlin_G07_M06_Text_08179718)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M06_Text_08179718, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M06_EventScript_Sub_081543B0 {
-    loadword(0, Naranja_IslaHamlin_G07_M06_Text_0817973B)
-    callstd(4)
+    msgbox(Naranja_IslaHamlin_G07_M06_Text_0817973B, MSGBOX_DEFAULT)
     release
     end
 }
 
 script Naranja_IslaHamlin_G07_M06_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
-    loadword(0, Naranja_IslaHamlin_G07_M06_Text_08179765)
-    callstd(2)
+    msgbox(Naranja_IslaHamlin_G07_M06_Text_08179765, MSGBOX_NPC)
     end
 }
 

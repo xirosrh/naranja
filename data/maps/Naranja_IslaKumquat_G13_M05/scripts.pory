@@ -5,32 +5,27 @@ mapscripts Naranja_IslaKumquat_G13_M05_MapScripts {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId1 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_081890D4)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_081890D4, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId2 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_0818915F)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_0818915F, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189221)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189221, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId32 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189299)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189299, MSGBOX_NPC)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId4 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189301)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189301, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_4, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -39,8 +34,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId4 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId5 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189366)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189366, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_CONTEST_JUDGE, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -49,8 +43,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_Local
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId6 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_081893CE)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_081893CE, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_BLACK_BELT, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -59,8 +52,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId6
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId7 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189463)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189463, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_OLD_MAN_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -69,8 +61,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId7 
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId8 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189512)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189512, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_MANIAC, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -79,8 +70,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId8 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_6_LocalId9 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_0818956B)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_0818956B, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_6, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -89,14 +79,12 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_6_LocalId9 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId10 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_081895F3)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_081895F3, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId12 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189617)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189617, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_BOY_1_12, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -105,8 +93,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId12 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId22 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_081896BE)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_081896BE, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_CAMPER, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -115,8 +102,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId22 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId11 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_081896FE)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_081896FE, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_7, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -125,8 +111,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId11 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId13 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189771)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189771, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_4_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -135,8 +120,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId13 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId14 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_081897AA)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_081897AA, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_CONTEST_JUDGE_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -145,8 +129,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_Local
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId15 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_0818980B)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_0818980B, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_5, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -155,8 +138,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId15 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId16 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189874)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189874, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_LITTLE_GIRL_1, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -165,8 +147,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_Local
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId17 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_0818990A)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_0818990A, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_PSYCHIC_M, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -175,8 +156,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId17
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId18 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189981)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189981, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -185,8 +165,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId18 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId19 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189A1D)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189A1D, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_3, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -195,8 +174,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId19 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId21 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189A82)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189A82, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_MAN_1_21, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -205,8 +183,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId21 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId20 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189AE1)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189AE1, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_1_20, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -215,8 +192,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId20 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId23 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189B4E)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189B4E, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_4_3, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -225,8 +201,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId23 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId24 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189BBF)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189BBF, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_CONTEST_JUDGE_3, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -235,8 +210,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_Local
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId25 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189C29)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189C29, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_BOY_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -245,8 +219,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId25 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189C67)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189C67, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_GIRL_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -255,8 +228,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId27 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189CB3)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189CB3, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_BOY_3_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -265,8 +237,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId27 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId28 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189D11)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189D11, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_OLD_WOMAN_1_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -281,15 +252,13 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId29 {
     delay(0x19)
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_WOMAN_3_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189DA2)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189DA2, MSGBOX_SIGN)
     releaseall
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId31 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189E5F)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189E5F, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_LITTLE_GIRL_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -298,8 +267,7 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_Local
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId30 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189DF3)
-    callstd(2)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189DF3, MSGBOX_NPC)
     lockall
     applymovement(LOCALID_ISLA_KUMQUAT_G13_M05_MAN_1_30, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
     waitmovement(LOCALID_NONE)
@@ -308,20 +276,17 @@ script Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId30 {
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_Sign_1 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189EF3)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189EF3, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_Sign_2 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189F29)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189F29, MSGBOX_SIGN)
     end
 }
 
 script Naranja_IslaKumquat_G13_M05_EventScript_Sign_3 {
-    loadword(0, Naranja_IslaKumquat_G13_M05_Text_08189F5C)
-    callstd(3)
+    msgbox(Naranja_IslaKumquat_G13_M05_Text_08189F5C, MSGBOX_SIGN)
     end
 }
 

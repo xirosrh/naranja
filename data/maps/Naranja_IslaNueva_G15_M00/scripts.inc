@@ -161,188 +161,172 @@ Naranja_IslaNueva_G15_M00_EventScript_OBJ_EVENT_GFX_WALLACE_LocalId1::
 # 104 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B07A
 # 105 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818F4D7
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818F4D7, MSGBOX_DEFAULT
 # 106 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 107 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaNueva_G15_M00_EventScript_AfterBattle_0815B02D::
-# 112 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 111 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	message Naranja_IslaNueva_G15_M00_Text_0818F342
-# 113 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 112 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	waitmessage
-# 114 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 113 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	call Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5
+# 114 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818F36B, MSGBOX_DEFAULT
 # 115 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818F36B
-# 116 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 117 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_04D4
-# 118 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 116 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_080E
-# 119 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 117 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	setvar VAR_0x8008, 8
-# 120 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 118 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	call Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A01C0
-# 121 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 119 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B056
 	return
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B056::
-# 125 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 123 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x123
-# 126 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 124 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	setorcopyvar VAR_0x8001, 1
-# 127 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 125 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	callstd 0
-# 128 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 126 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
-# 129 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 127 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
-# 130 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818F466
-# 131 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 132 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 128 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818F466, MSGBOX_DEFAULT
+# 129 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_00AC
-# 133 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 130 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B07A::
-# 138 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818F5B4
-# 139 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 140 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 135 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818F5B4, MSGBOX_DEFAULT
+# 136 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaNueva_G15_M00_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId2::
-# 145 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 141 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	lock
-# 146 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 142 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	faceplayer
-# 147 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 143 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_04D4
-# 148 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 144 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B099
-# 149 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818E8A5
-# 150 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 151 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 145 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818E8A5, MSGBOX_DEFAULT
+# 146 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B099::
-# 156 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818E9C9
-# 157 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 158 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 151 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818E9C9, MSGBOX_DEFAULT
+# 152 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	release
 	end
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sign_1::
-# 163 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 157 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	lockall
-# 164 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 158 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_080E
-# 165 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 159 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B0C3
-# 166 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 160 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B0CD
 	return
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sign_2::
-# 170 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 164 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	lockall
-# 171 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 165 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_080E
-# 172 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 166 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B0C3
-# 173 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 167 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	goto Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B0CD
 	return
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B0C3::
-# 177 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818F665
-# 178 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 179 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 171 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818F665, MSGBOX_DEFAULT
+# 172 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	releaseall
 	end
 
 
 Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B0CD::
-# 184 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	loadword 0, Naranja_IslaNueva_G15_M00_Text_0818F649
-# 185 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	callstd 4
-# 186 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 177 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+	msgbox Naranja_IslaNueva_G15_M00_Text_0818F649, MSGBOX_DEFAULT
+# 178 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	releaseall
 	end
 
 
-# 190 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 182 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 Naranja_IslaNueva_G15_M00_Movement_0815AFFD:
-# 191 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 183 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	set_invisible
 	step_end
 
 Naranja_IslaNueva_G15_M00_Text_0818E8A5::
-# 194 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 186 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "Yo! How’s it going, CHAMPION-\nbound {PLAYER}?\pSOOTOPOLIS’s GYM LEADER WALLACE is\na master of WATER-type POKéMON.\pAnd, to get to WALLACE, an icy floor\nwill hamper your progress...\pListen, I’m sorry, but that’s all the\nadvice that I have for you.\pThe rest of the way, you have to\ngo for it yourself!$"
 
 Naranja_IslaNueva_G15_M00_Text_0818E9C9::
-# 198 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 190 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "Yow! You’ve beaten even WALLACE, who\nwas supposedly the best in all HOENN!\pOkay! Check out your TRAINER’s CARD.\pIf you’ve gotten all the BADGES, you’re\nset for the POKéMON LEAGUE challenge!$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F0CA::
-# 202 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 194 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "Allow me to formally introduce\nmyself.\pI am WALLACE.\nThe GYM LEADER of SOOTOPOLIS.\pThere’s something about you...\nA difference in your demeanor.\pI think I sense that in you.\pWhat happened inside the CAVE OF\nORIGIN, and what you did, I will likely\llearn through our upcoming battle.\pNow, show me. Show me the power you\nwield with your POKéMON.\pAnd I, in turn, shall present you with\na performance of illusions in water\lby me and my POKéMON!$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F282::
-# 206 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 198 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "Bravo.\pI realize now your authenticity and\nmagnificence as a POKéMON TRAINER.\pI find much joy in having met you and\nyour POKéMON.\pYou have proven yourself worthy of\nthe RAIN BADGE. Accept it.$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F342::
-# 210 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 202 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "{PLAYER} received the RAIN BADGE\nfrom WALLACE.$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F36B::
-# 214 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 206 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "Having that BADGE assures you the\nfull obedience of all your POKéMON to\levery command you make.\pThe BADGE also allows the use of the\nHM move WATERFALL to scale walls\lof cascading water.\pAnd, so that you never forget the\nbattle we shared, take this...$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F466::
-# 218 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 210 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "The TM I handed you contains\nWATER PULSE.\pIn use, it will occasionally confuse\nthe target with ultrasonic waves.$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F4D7::
-# 222 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 214 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "TRAINERS who have gathered all the\nGYM BADGES of HOENN should make way\lfor the ultimate destination.\pThe POKéMON LEAGUE.\pTravel to the easternmost reaches\nof HOENN, to the island EVER GRANDE.\lThe POKéMON LEAGUE is there.$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F5B4::
-# 226 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 218 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "There remains but one BADGE to\nobtain in HOENN.\pIf you wish to challenge the POKéMON\nLEAGUE, you must obtain the last\lBADGE from the GYM in FORTREE.$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F649::
-# 230 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 222 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "SOOTOPOLIS CITY POKéMON GYM$"
 
 Naranja_IslaNueva_G15_M00_Text_0818F665::
-# 234 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
+# 226 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	.string "SOOTOPOLIS CITY POKéMON GYM\pWALLACE’S CERTIFIED TRAINERS:\n{PLAYER}$"

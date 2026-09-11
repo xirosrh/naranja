@@ -18,8 +18,7 @@ script Naranja_IslaMellsweet_G14_M12_OnFrame_1 {
     applymovement(LOCALID_PLAYER, Naranja_IslaMellsweet_G14_M12_Movement_0815AEF9)
     waitmovement(LOCALID_NONE)
     special(CopyEReaderTrainerGreeting)
-    loadword(0, 0x20234CC)
-    callstd(4)
+    msgbox(0x20234CC, MSGBOX_DEFAULT)
     closemessage
     setvar(VAR_0x8004, 2)
     setvar(VAR_0x8005, 0)
@@ -45,8 +44,7 @@ script Naranja_IslaMellsweet_G14_M12_OnFrame_1 {
 
 script Naranja_IslaMellsweet_G14_M12_EventScript_Sub_0815AED5 {
     setvar(VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 3)
-    loadword(0, Naranja_IslaMellsweet_G14_M12_Text_0818E796)
-    callstd(4)
+    msgbox(Naranja_IslaMellsweet_G14_M12_Text_0818E796, MSGBOX_DEFAULT)
     return
 }
 
