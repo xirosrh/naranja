@@ -837,7 +837,7 @@ const struct Tileset gTileset_NaranjaPrimary00 =
     .palettes = gTilesetPalettes_NaranjaPrimary00,
     .metatiles = gMetatiles_NaranjaPrimary00,
     .metatileAttributes = gMetatileAttributes_NaranjaPrimary00,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaPrimary00,
 };
 
 const struct Tileset gTileset_NaranjaSecondary00 =
@@ -870,7 +870,7 @@ const struct Tileset gTileset_NaranjaSecondary02 =
     .palettes = gTilesetPalettes_NaranjaSecondary02,
     .metatiles = gMetatiles_NaranjaSecondary02,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary02,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary02,
 };
 
 const struct Tileset gTileset_NaranjaSecondary03 =
@@ -914,7 +914,7 @@ const struct Tileset gTileset_NaranjaSecondary06 =
     .palettes = gTilesetPalettes_NaranjaSecondary06,
     .metatiles = gMetatiles_NaranjaSecondary06,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary06,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary06,
 };
 
 const struct Tileset gTileset_NaranjaSecondary07 =
@@ -947,7 +947,7 @@ const struct Tileset gTileset_NaranjaSecondary09 =
     .palettes = gTilesetPalettes_NaranjaSecondary09,
     .metatiles = gMetatiles_NaranjaSecondary09,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary09,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary09,
 };
 
 const struct Tileset gTileset_NaranjaSecondary10 =
@@ -969,7 +969,7 @@ const struct Tileset gTileset_NaranjaSecondary11 =
     .palettes = gTilesetPalettes_NaranjaSecondary11,
     .metatiles = gMetatiles_NaranjaSecondary11,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary11,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary11,
 };
 
 const struct Tileset gTileset_NaranjaSecondary12 =
@@ -980,7 +980,7 @@ const struct Tileset gTileset_NaranjaSecondary12 =
     .palettes = gTilesetPalettes_NaranjaSecondary12,
     .metatiles = gMetatiles_NaranjaSecondary12,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary12,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary12,
 };
 
 const struct Tileset gTileset_NaranjaSecondary13 =
@@ -991,7 +991,7 @@ const struct Tileset gTileset_NaranjaSecondary13 =
     .palettes = gTilesetPalettes_NaranjaSecondary13,
     .metatiles = gMetatiles_NaranjaSecondary13,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary13,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary13,
 };
 
 const struct Tileset gTileset_NaranjaSecondary14 =
@@ -1002,7 +1002,7 @@ const struct Tileset gTileset_NaranjaSecondary14 =
     .palettes = gTilesetPalettes_NaranjaSecondary14,
     .metatiles = gMetatiles_NaranjaSecondary14,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary14,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary14,
 };
 
 const struct Tileset gTileset_NaranjaPrimary01 =
@@ -1013,7 +1013,7 @@ const struct Tileset gTileset_NaranjaPrimary01 =
     .palettes = gTilesetPalettes_NaranjaPrimary01,
     .metatiles = gMetatiles_NaranjaPrimary01,
     .metatileAttributes = gMetatileAttributes_NaranjaPrimary01,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaPrimary01,
 };
 
 const struct Tileset gTileset_NaranjaSecondary15 =
@@ -1134,7 +1134,7 @@ const struct Tileset gTileset_NaranjaSecondary25 =
     .palettes = gTilesetPalettes_NaranjaSecondary25,
     .metatiles = gMetatiles_NaranjaSecondary25,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary25,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary25,
 };
 
 const struct Tileset gTileset_NaranjaSecondary26 =
@@ -1167,7 +1167,7 @@ const struct Tileset gTileset_NaranjaSecondary28 =
     .palettes = gTilesetPalettes_NaranjaSecondary28,
     .metatiles = gMetatiles_NaranjaSecondary28,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary28,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary28,
 };
 
 const struct Tileset gTileset_NaranjaSecondary29 =
@@ -1255,7 +1255,7 @@ const struct Tileset gTileset_NaranjaSecondary36 =
     .palettes = gTilesetPalettes_NaranjaSecondary36,
     .metatiles = gMetatiles_NaranjaSecondary36,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary36,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary36,
 };
 
 const struct Tileset gTileset_NaranjaSecondary37 =
@@ -1266,7 +1266,7 @@ const struct Tileset gTileset_NaranjaSecondary37 =
     .palettes = gTilesetPalettes_NaranjaSecondary37,
     .metatiles = gMetatiles_NaranjaSecondary37,
     .metatileAttributes = gMetatileAttributes_NaranjaSecondary37,
-    .callback = NULL,
+    .callback = InitTilesetAnim_NaranjaSecondary37,
 };
 
 const struct Tileset gTileset_NaranjaSecondary38 =

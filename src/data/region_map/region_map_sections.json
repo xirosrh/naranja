@@ -1,168 +1,168 @@
 {
   "map_sections": [
     {
-      "id": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
+      "id": "MAPSEC_PUERTO_DE_TANGELO",
+      "name": "Puerto de TANGELO",
       "x": 4,
       "y": 11,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_OLDALE_TOWN",
-      "name": "OLDALE TOWN",
+      "id": "MAPSEC_ISLA_TANGELO",
+      "name": "Isla TANGELO",
       "x": 4,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_DEWFORD_TOWN",
-      "name": "DEWFORD TOWN",
+      "id": "MAPSEC_7_ISLAS_POMELO",
+      "name": "7 Islas POMELO",
       "x": 2,
       "y": 14,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_LAVARIDGE_TOWN",
-      "name": "LAVARIDGE TOWN",
+      "id": "MAPSEC_VALLE_CHARIZARD",
+      "name": "Valle Charizard",
       "x": 5,
       "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_FALLARBOR_TOWN",
-      "name": "FALLARBOR TOWN",
+      "id": "MAPSEC_ISLA_NAVEL",
+      "name": "Isla NAVEL",
       "x": 3,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_VERDANTURF_TOWN",
-      "name": "VERDANTURF TOWN",
+      "id": "MAPSEC_ISLA_MANDARINA",
+      "name": "Isla MANDARINA",
       "x": 4,
       "y": 6,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_PACIFIDLOG_TOWN",
-      "name": "PACIFIDLOG TOWN",
+      "id": "MAPSEC_ISLA_HAMLIN",
+      "name": "Isla HAMLIN",
       "x": 17,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_PETALBURG_CITY",
-      "name": "PETALBURG CITY",
+      "id": "MAPSEC_ISLA_VALENCIA",
+      "name": "Isla VALENCIA",
       "x": 1,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_SLATEPORT_CITY",
-      "name": "SLATEPORT CITY",
+      "id": "MAPSEC_ISLA_MURCOTT",
+      "name": "Isla MURCOTT",
       "x": 8,
       "y": 10,
       "width": 1,
       "height": 2
     },
     {
-      "id": "MAPSEC_MAUVILLE_CITY",
-      "name": "MAUVILLE CITY",
+      "id": "MAPSEC_ISLA_MANDARIN",
+      "name": "Isla MANDARIN",
       "x": 8,
       "y": 6,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_RUSTBORO_CITY",
-      "name": "RUSTBORO CITY",
+      "id": "MAPSEC_ISLA_TROVITA",
+      "name": "Isla TROVITA",
       "x": 0,
       "y": 5,
       "width": 1,
       "height": 2
     },
     {
-      "id": "MAPSEC_FORTREE_CITY",
-      "name": "FORTREE CITY",
+      "id": "MAPSEC_ISLA_SHAMOUTI",
+      "name": "Isla SHAMOUTI",
       "x": 12,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_LILYCOVE_CITY",
-      "name": "LILYCOVE CITY",
+      "id": "MAPSEC_ISLA_KUMQUAT",
+      "name": "Isla KUMQUAT",
       "x": 18,
       "y": 3,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_MOSSDEEP_CITY",
-      "name": "MOSSDEEP CITY",
+      "id": "MAPSEC_ISLA_MELLSWEET",
+      "name": "Isla MELLSWEET",
       "x": 24,
       "y": 5,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_SOOTOPOLIS_CITY",
-      "name": "SOOTOPOLIS CITY",
+      "id": "MAPSEC_ISLA_NUEVA",
+      "name": "Isla NUEVA",
       "x": 21,
       "y": 7,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_EVER_GRANDE_CITY",
-      "name": "EVER GRANDE CITY",
+      "id": "MAPSEC_ISLA_POMELO",
+      "name": "Isla POMELO",
       "x": 27,
       "y": 8,
       "width": 1,
       "height": 2
     },
     {
-      "id": "MAPSEC_ROUTE_101",
-      "name": "ROUTE 101",
+      "id": "MAPSEC_TANGELO",
+      "name": "Tangelo",
       "x": 4,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_102",
-      "name": "ROUTE 102",
+      "id": "MAPSEC_VALN_TANG",
+      "name": "Valn-Tang",
       "x": 2,
       "y": 9,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_103",
-      "name": "ROUTE 103",
+      "id": "MAPSEC_RUTA_AZUL",
+      "name": "Ruta AZUL",
       "x": 4,
       "y": 8,
       "width": 4,
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_104",
-      "name": "ROUTE 104",
+      "id": "MAPSEC_ISLAS",
+      "name": "Islas",
       "x": 0,
       "y": 7,
       "width": 1,
       "height": 3
     },
     {
-      "id": "MAPSEC_ROUTE_105",
-      "name": "ROUTE 105",
+      "id": "MAPSEC_ISLA_MIKAN",
+      "name": "Isla MIKAN",
       "x": 0,
       "y": 10,
       "width": 1,
@@ -177,8 +177,8 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_107",
-      "name": "ROUTE 107",
+      "id": "MAPSEC_ISLA_MORO",
+      "name": "Isla MORO",
       "x": 3,
       "y": 14,
       "width": 3,
@@ -225,40 +225,40 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_113",
-      "name": "ROUTE 113",
+      "id": "MAPSEC_NORTE",
+      "name": "Norte",
       "x": 4,
       "y": 0,
       "width": 4,
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_114",
-      "name": "ROUTE 114",
+      "id": "MAPSEC_CAMINO_FRIO",
+      "name": "Camino FRIO",
       "x": 1,
       "y": 0,
       "width": 2,
       "height": 3
     },
     {
-      "id": "MAPSEC_ROUTE_115",
-      "name": "ROUTE 115",
+      "id": "MAPSEC_ISLA_PINKAN",
+      "name": "Isla PINKAN",
       "x": 0,
       "y": 2,
       "width": 1,
       "height": 3
     },
     {
-      "id": "MAPSEC_ROUTE_116",
-      "name": "ROUTE 116",
+      "id": "MAPSEC_MANDARIN",
+      "name": "Mandarin",
       "x": 1,
       "y": 5,
       "width": 4,
       "height": 1
     },
     {
-      "id": "MAPSEC_ROUTE_117",
-      "name": "ROUTE 117",
+      "id": "MAPSEC_DESIERTO",
+      "name": "Desierto",
       "x": 5,
       "y": 6,
       "width": 3,
@@ -337,8 +337,8 @@
       "height": 3
     },
     {
-      "id": "MAPSEC_ROUTE_127",
-      "name": "ROUTE 127",
+      "id": "MAPSEC_ROUTE_666",
+      "name": "ROUTE 666",
       "x": 23,
       "y": 6,
       "width": 3,
@@ -401,7 +401,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_UNDERWATER_124",
+      "id": "MAPSEC_UNDERWATER_ROUTE_124",
       "name": "UNDERWATER",
       "x": 20,
       "y": 3,
@@ -409,7 +409,7 @@
       "height": 3
     },
     {
-      "id": "MAPSEC_UNDERWATER_126",
+      "id": "MAPSEC_UNDERWATER_ROUTE_126",
       "name": "UNDERWATER",
       "x": 20,
       "y": 6,
@@ -417,7 +417,7 @@
       "height": 3
     },
     {
-      "id": "MAPSEC_UNDERWATER_127",
+      "id": "MAPSEC_UNDERWATER_ROUTE_666",
       "name": "UNDERWATER",
       "x": 23,
       "y": 6,
@@ -425,7 +425,7 @@
       "height": 3
     },
     {
-      "id": "MAPSEC_UNDERWATER_128",
+      "id": "MAPSEC_UNDERWATER_ROUTE_128",
       "name": "UNDERWATER",
       "x": 23,
       "y": 9,
@@ -433,7 +433,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_UNDERWATER_SOOTOPOLIS",
+      "id": "MAPSEC_UNDERWATER_ISLA_NUEVA",
       "name": "UNDERWATER",
       "x": 21,
       "y": 7,
@@ -457,33 +457,33 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_SAFARI_ZONE",
-      "name": "SAFARI ZONE",
+      "id": "MAPSEC_SAFARI",
+      "name": "Safari",
       "x": 16,
       "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_BATTLE_FRONTIER",
-      "name": "BATTLE FRONTIER",
+      "id": "MAPSEC_PUEBLO_PALETA",
+      "name": "Pueblo PALETA",
       "x": 22,
       "y": 12,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_PETALBURG_WOODS",
-      "name": "PETALBURG WOODS",
+      "id": "MAPSEC_VALLE_DE_LAS_FLORES",
+      "name": "VALLE DE LAS FLORES",
       "x": 0,
-      "y": 8,
+      "y": 11,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_RUSTURF_TUNNEL",
-      "name": "RUSTURF TUNNEL",
-      "x": 2,
+      "id": "MAPSEC_CUEVA_DE_CRISTAL",
+      "name": "Cueva de CRISTAL",
+      "x": 3,
       "y": 5,
       "width": 1,
       "height": 1
@@ -491,8 +491,8 @@
     {
       "id": "MAPSEC_ABANDONED_SHIP",
       "name": "ABANDONED SHIP",
-      "x": 6,
-      "y": 14,
+      "x": 5,
+      "y": 13,
       "width": 1,
       "height": 1
     },
@@ -505,33 +505,32 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_METEOR_FALLS",
-      "name": "METEOR FALLS",
+      "id": "MAPSEC_CUEVA_KABUTO",
+      "name": "Cueva KABUTO",
       "x": 0,
-      "y": 3,
+      "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_METEOR_FALLS2",
-      "name": "METEOR FALLS",
+      "id": "MAPSEC_CUEVA_KABUTO_2",
+      "name": "Cueva KABUTO",
       "x": 1,
       "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_MT_PYRE",
-      "name": "MT. PYRE",
+      "id": "MAPSEC_BEMENTER",
+      "name": "BEMENTER",
       "x": 16,
       "y": 4,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_AQUA_HIDEOUT_OLD",
-      "name": "{AQUA} HIDEOUT",
-      "name_clone": true,
+      "id": "MAPSEC_TEAM_HIDESHOAL_CAVE",
+      "name": "TEAM HIDESHOAL CAVE",
       "x": 19,
       "y": 3,
       "width": 1,
@@ -588,7 +587,7 @@
     {
       "id": "MAPSEC_SOUTHERN_ISLAND",
       "name": "SOUTHERN ISLAND",
-      "x": 12,
+      "x": 10,
       "y": 14,
       "width": 1,
       "height": 1
@@ -602,7 +601,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_FIERY_PATH2",
+      "id": "MAPSEC_FIERY_PATH_2",
       "name": "FIERY PATH",
       "x": 7,
       "y": 3,
@@ -618,7 +617,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_JAGGED_PASS2",
+      "id": "MAPSEC_JAGGED_PASS_2",
       "name": "JAGGED PASS",
       "x": 7,
       "y": 2,
@@ -660,8 +659,8 @@
     {
       "id": "MAPSEC_DESERT_RUINS",
       "name": "DESERT RUINS",
-      "x": 8,
-      "y": 3,
+      "x": 4,
+      "y": 7,
       "width": 1,
       "height": 1
     },
@@ -675,7 +674,11 @@
     },
     {
       "id": "MAPSEC_INSIDE_OF_TRUCK",
-      "name": "INSIDE OF TRUCK"
+      "name": "INSIDE OF TRUCK",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_SKY_PILLAR",
@@ -687,11 +690,19 @@
     },
     {
       "id": "MAPSEC_SECRET_BASE",
-      "name": "SECRET BASE"
+      "name": "SECRET BASE",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_DYNAMIC",
-      "name": ""
+      "name": "Sin Nombre",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_PALLET_TOWN",

@@ -3,7 +3,7 @@
   "name": "Naranja_PuertoDeTangelo_G01_M01",
   "layout": "LAYOUT_NARANJA_PUERTO_DE_TANGELO_G01_M01",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_PUERTO_DE_TANGELO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

@@ -1,0 +1,348 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "active_sequences": [
+    {
+      "name": "GeneralFlower",
+      "tileset_directory": "data/tilesets/primary/naranja_00/anim/flower",
+      "table_pointer": "0x08376F24",
+      "frame_size": 128,
+      "sequence": [
+        "0x08376E04",
+        "0x08376D84",
+        "0x08376E04",
+        "0x08376E84"
+      ],
+      "unique_frames": 3
+    },
+    {
+      "name": "GeneralWater",
+      "tileset_directory": "data/tilesets/primary/naranja_00/anim/water",
+      "table_pointer": "0x08378D34",
+      "frame_size": 960,
+      "sequence": [
+        "0x08376F34",
+        "0x083772F4",
+        "0x083776B4",
+        "0x08377A74",
+        "0x08377E34",
+        "0x083781F4",
+        "0x083785B4",
+        "0x08378974"
+      ],
+      "unique_frames": 8
+    },
+    {
+      "name": "GeneralSandWaterEdge",
+      "tileset_directory": "data/tilesets/primary/naranja_00/anim/sand_water_edge",
+      "table_pointer": "0x08379614",
+      "frame_size": 320,
+      "sequence": [
+        "0x08378D54",
+        "0x08378E94",
+        "0x08378FD4",
+        "0x08379114",
+        "0x08379254",
+        "0x08379394",
+        "0x083794D4",
+        "0x08378D54"
+      ],
+      "unique_frames": 7
+    },
+    {
+      "name": "GeneralWaterfall",
+      "tileset_directory": "data/tilesets/primary/naranja_00/anim/waterfall",
+      "table_pointer": "0x08379934",
+      "frame_size": 192,
+      "sequence": [
+        "0x08379634",
+        "0x083796F4",
+        "0x083797B4",
+        "0x08379874"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "GeneralLandWaterEdge",
+      "tileset_directory": "data/tilesets/primary/naranja_00/anim/land_water_edge",
+      "table_pointer": "0x08379E44",
+      "frame_size": 320,
+      "sequence": [
+        "0x08379944",
+        "0x08379A84",
+        "0x08379BC4",
+        "0x08379D04"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "BuildingTv",
+      "tileset_directory": "data/tilesets/primary/naranja_01/anim/tv",
+      "table_pointer": "0x0837CA7C",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837C97C",
+        "0x0837C9FC"
+      ],
+      "unique_frames": 2
+    },
+    {
+      "name": "LavaridgeSteam",
+      "tileset_directory": "data/tilesets/secondary/naranja_09/anim/steam",
+      "table_pointer": "0x0837A054",
+      "frame_size": 128,
+      "sequence": [
+        "0x08379E54",
+        "0x08379ED4",
+        "0x08379F54",
+        "0x08379FD4"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "PacifidlogLogBridges",
+      "tileset_directory": "data/tilesets/secondary/naranja_11/anim/log_bridges",
+      "table_pointer": "0x0837ABA4",
+      "frame_size": 960,
+      "sequence": [
+        "0x0837A064",
+        "0x0837A424",
+        "0x0837A7E4",
+        "0x0837A424"
+      ],
+      "unique_frames": 3
+    },
+    {
+      "name": "UnderwaterSeaweed",
+      "tileset_directory": "data/tilesets/secondary/naranja_14/anim/seaweed",
+      "table_pointer": "0x0837ADB4",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837ABB4",
+        "0x0837AC34",
+        "0x0837ACB4",
+        "0x0837AD34"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "PacifidlogWaterCurrents",
+      "tileset_directory": "data/tilesets/secondary/naranja_11/anim/water_currents",
+      "table_pointer": "0x0837B5C4",
+      "frame_size": 256,
+      "sequence": [
+        "0x0837ADC4",
+        "0x0837AEC4",
+        "0x0837AFC4",
+        "0x0837B0C4",
+        "0x0837B1C4",
+        "0x0837B2C4",
+        "0x0837B3C4",
+        "0x0837B4C4"
+      ],
+      "unique_frames": 8
+    },
+    {
+      "name": "MauvilleFlower1",
+      "tileset_directory": "data/tilesets/secondary/naranja_12/anim/flower_1",
+      "table_pointer": "0x0837BB24",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837B5E4",
+        "0x0837B5E4",
+        "0x0837B664",
+        "0x0837B6E4",
+        "0x0837B764",
+        "0x0837B764",
+        "0x0837B764",
+        "0x0837B764",
+        "0x0837B764",
+        "0x0837B764",
+        "0x0837B6E4",
+        "0x0837B664"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "MauvilleFlower2",
+      "tileset_directory": "data/tilesets/secondary/naranja_12/anim/flower_2",
+      "table_pointer": "0x0837BB54",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837B864",
+        "0x0837B864",
+        "0x0837B8E4",
+        "0x0837B964",
+        "0x0837B9E4",
+        "0x0837B9E4",
+        "0x0837B9E4",
+        "0x0837B9E4",
+        "0x0837B9E4",
+        "0x0837B9E4",
+        "0x0837B964",
+        "0x0837B8E4"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "MauvilleFlower1Alt",
+      "tileset_directory": "data/tilesets/secondary/naranja_12/anim/flower_1_alt",
+      "table_pointer": "0x0837BB84",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837B5E4",
+        "0x0837B5E4",
+        "0x0837B7E4",
+        "0x0837B7E4"
+      ],
+      "unique_frames": 2
+    },
+    {
+      "name": "MauvilleFlower2Alt",
+      "tileset_directory": "data/tilesets/secondary/naranja_12/anim/flower_2_alt",
+      "table_pointer": "0x0837BB94",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837B864",
+        "0x0837B864",
+        "0x0837BA64",
+        "0x0837BA64"
+      ],
+      "unique_frames": 2
+    },
+    {
+      "name": "RustboroWindyWater",
+      "tileset_directory": "data/tilesets/secondary/naranja_02/anim/windy_water",
+      "table_pointer": "0x0837BFC4",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837BBA4",
+        "0x0837BC24",
+        "0x0837BCA4",
+        "0x0837BD24",
+        "0x0837BDA4",
+        "0x0837BE24",
+        "0x0837BEA4",
+        "0x0837BF24"
+      ],
+      "unique_frames": 8
+    },
+    {
+      "name": "RustboroFountain",
+      "tileset_directory": "data/tilesets/secondary/naranja_02/anim/fountain",
+      "table_pointer": "0x0837C0E4",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837BFE4",
+        "0x0837C064"
+      ],
+      "unique_frames": 2
+    },
+    {
+      "name": "CaveLava",
+      "tileset_directory": "data/tilesets/secondary/naranja_13/anim/lava",
+      "table_pointer": "0x0837C50C",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837C0EC",
+        "0x0837C16C",
+        "0x0837C1EC",
+        "0x0837C26C"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "EverGrandeFlowers",
+      "tileset_directory": "data/tilesets/secondary/naranja_06/anim/flowers",
+      "table_pointer": "0x0837C95C",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837C51C",
+        "0x0837C59C",
+        "0x0837C61C",
+        "0x0837C69C",
+        "0x0837C71C",
+        "0x0837C79C",
+        "0x0837C81C",
+        "0x0837C89C"
+      ],
+      "unique_frames": 8
+    },
+    {
+      "name": "SootopolisGymSideWaterfall",
+      "tileset_directory": "data/tilesets/secondary/naranja_36/anim/side_waterfall",
+      "table_pointer": "0x0837D684",
+      "frame_size": 384,
+      "sequence": [
+        "0x0837CA84",
+        "0x0837CC04",
+        "0x0837CD84"
+      ],
+      "unique_frames": 3
+    },
+    {
+      "name": "SootopolisGymFrontWaterfall",
+      "tileset_directory": "data/tilesets/secondary/naranja_36/anim/front_waterfall",
+      "table_pointer": "0x0837D690",
+      "frame_size": 640,
+      "sequence": [
+        "0x0837CF04",
+        "0x0837D184",
+        "0x0837D404"
+      ],
+      "unique_frames": 3
+    },
+    {
+      "name": "EliteFourWallLights",
+      "tileset_directory": "data/tilesets/secondary/naranja_37/anim/wall_lights",
+      "table_pointer": "0x0837D83C",
+      "frame_size": 32,
+      "sequence": [
+        "0x0837D79C",
+        "0x0837D7BC",
+        "0x0837D7DC",
+        "0x0837D7FC"
+      ],
+      "unique_frames": 4
+    },
+    {
+      "name": "EliteFourFloorLights",
+      "tileset_directory": "data/tilesets/secondary/naranja_37/anim/floor_lights",
+      "table_pointer": "0x0837D84C",
+      "frame_size": 128,
+      "sequence": [
+        "0x0837D69C",
+        "0x0837D71C"
+      ],
+      "unique_frames": 2
+    },
+    {
+      "name": "MauvilleGymElectricGates",
+      "tileset_directory": "data/tilesets/secondary/naranja_28/anim/electric_gates",
+      "table_pointer": "0x0837DC74",
+      "frame_size": 512,
+      "sequence": [
+        "0x0837D854",
+        "0x0837DA54"
+      ],
+      "unique_frames": 2
+    },
+    {
+      "name": "BikeShopBlinkingLights",
+      "tileset_directory": "data/tilesets/secondary/naranja_25/anim/blinking_lights",
+      "table_pointer": "0x0837DEDC",
+      "frame_size": 288,
+      "sequence": [
+        "0x0837DC7C",
+        "0x0837DD9C"
+      ],
+      "unique_frames": 2
+    }
+  ],
+  "unused_cave_frames": [
+    "0x0837C2EC",
+    "0x0837C36C",
+    "0x0837C3EC",
+    "0x0837C46C"
+  ]
+}

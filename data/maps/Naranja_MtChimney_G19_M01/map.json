@@ -3,7 +3,7 @@
   "name": "Naranja_MtChimney_G19_M01",
   "layout": "LAYOUT_NARANJA_ROUTE_112_G19_M00",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_MT_CHIMNEY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

@@ -3,7 +3,7 @@
   "name": "Naranja_Route110_G29_M02",
   "layout": "LAYOUT_NARANJA_ROUTE_110_G29_M02",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_ROUTE_110",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

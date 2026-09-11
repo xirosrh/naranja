@@ -3,7 +3,7 @@
   "name": "Naranja_BandonedShip_G24_M66",
   "layout": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M66",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_ABANDONED_SHIP",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
   "map_type": "MAP_TYPE_UNDERGROUND",

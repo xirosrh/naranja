@@ -3,7 +3,7 @@
   "name": "Naranja_IslaMandarina_G13_M23",
   "layout": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M23",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_ISLA_MANDARINA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

@@ -3,7 +3,7 @@
   "name": "Naranja_Tangelo_G24_M29",
   "layout": "LAYOUT_NARANJA_TANGELO_G24_M29",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_TANGELO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

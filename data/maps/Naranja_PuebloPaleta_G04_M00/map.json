@@ -3,7 +3,7 @@
   "name": "Naranja_PuebloPaleta_G04_M00",
   "layout": "LAYOUT_NARANJA_PUEBLO_PALETA_G04_M00",
   "music": "MUS_DUMMY",
-  "region_map_section": "MAPSEC_NONE",
+  "region_map_section": "MAPSEC_PUEBLO_PALETA",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
