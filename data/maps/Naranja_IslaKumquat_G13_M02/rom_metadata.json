@@ -1,0 +1,309 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 13,
+  "map_number": 2,
+  "region_map_section_id": 12,
+  "region_name": "Isla KUMQUAT",
+  "header_pointer": "0x08306558",
+  "layout_pointer": "0x082D2328",
+  "events_pointer": "0x0838972C",
+  "scripts_pointer": "0x0815841B",
+  "connections_pointer": "0x00000000",
+  "music_id": 373,
+  "source_layout_id": 103,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 45,
+      "kind": 0,
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815841C",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 48,
+      "kind": 0,
+      "x": 16,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08158425",
+      "flag": 775
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 38,
+      "kind": 0,
+      "x": 13,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08158558",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 99,
+      "kind": 0,
+      "x": 13,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": 5,
+      "movement_range_x": 2,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08158561",
+      "flag": 0
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 5,
+      "kind": 0,
+      "x": 2,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815856A",
+      "flag": 0
+    },
+    {
+      "local_id": 6,
+      "graphics_id": 26,
+      "kind": 0,
+      "x": 3,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08158573",
+      "flag": 0
+    },
+    {
+      "local_id": 7,
+      "graphics_id": 20,
+      "kind": 0,
+      "x": 11,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815857C",
+      "flag": 776
+    },
+    {
+      "local_id": 8,
+      "graphics_id": 99,
+      "kind": 0,
+      "x": 19,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815858E",
+      "flag": 779
+    },
+    {
+      "local_id": 9,
+      "graphics_id": 17,
+      "kind": 0,
+      "x": 2,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081585A3",
+      "flag": 780
+    },
+    {
+      "local_id": 10,
+      "graphics_id": 37,
+      "kind": 0,
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08158585",
+      "flag": 778
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "dest_warp_id": 3,
+      "dest_map_num": 5,
+      "dest_map_group": 0
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "elevation": 0,
+      "dest_warp_id": 13,
+      "dest_map_num": 5,
+      "dest_map_group": 0
+    },
+    {
+      "x": 16,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 3,
+      "dest_map_group": 13
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158510"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158510"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158534"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158534"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158507"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158519"
+    },
+    {
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158519"
+    },
+    {
+      "x": 15,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815853D"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158507"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815852B"
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815854F"
+    },
+    {
+      "x": 19,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158522"
+    },
+    {
+      "x": 20,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158522"
+    },
+    {
+      "x": 18,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815854F"
+    },
+    {
+      "x": 18,
+      "y": 11,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x08158546"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815854F"
+    }
+  ]
+}

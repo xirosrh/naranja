@@ -1,0 +1,105 @@
+{
+  "id": "MAP_NARANJA_BANDONED_SHIP_G24_M55",
+  "name": "Naranja_BandonedShip_G24_M55",
+  "layout": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M55",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M54",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M54",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 0,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M54",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 1,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M54",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M56",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M56",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 11,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M56",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M56",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M62",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M57",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M57",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M62",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

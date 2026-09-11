@@ -1,0 +1,194 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 25,
+  "region_map_section_id": 66,
+  "region_name": "TEAM HIDESHOAL CAVE",
+  "header_pointer": "0x0830702C",
+  "layout_pointer": "0x082DD29C",
+  "events_pointer": "0x0838D004",
+  "scripts_pointer": "0x0815D8B1",
+  "connections_pointer": "0x00000000",
+  "music_id": 430,
+  "source_layout_id": 146,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 23,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D8E1",
+      "flag": 924
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 23,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": 45,
+      "movement_range_x": 4,
+      "movement_range_y": 3,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815D962",
+      "flag": 924
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 3,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B19B5",
+      "flag": 1072
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 141,
+      "kind": 0,
+      "x": 19,
+      "y": 20,
+      "elevation": 1,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x00000000",
+      "flag": 943
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 242,
+      "kind": 0,
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 4,
+      "script_pointer": "0x0815D987",
+      "flag": 924
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 24,
+      "dest_map_group": 24
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 24,
+      "dest_map_group": 24
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "dest_warp_id": 3,
+      "dest_map_num": 24,
+      "dest_map_group": 24
+    },
+    {
+      "x": 31,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 5,
+      "dest_map_num": 25,
+      "dest_map_group": 24
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 8,
+      "dest_map_num": 25,
+      "dest_map_group": 24
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 3,
+      "dest_map_num": 25,
+      "dest_map_group": 24
+    },
+    {
+      "x": 18,
+      "y": 13,
+      "elevation": 3,
+      "dest_warp_id": 7,
+      "dest_map_num": 25,
+      "dest_map_group": 24
+    },
+    {
+      "x": 12,
+      "y": 13,
+      "elevation": 3,
+      "dest_warp_id": 6,
+      "dest_map_num": 25,
+      "dest_map_group": 24
+    },
+    {
+      "x": 31,
+      "y": 17,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 25,
+      "dest_map_group": 24
+    },
+    {
+      "x": 32,
+      "y": 20,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 24,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 28,
+      "y": 17,
+      "elevation": 3,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0815D8BD"
+    },
+    {
+      "x": 28,
+      "y": 16,
+      "elevation": 3,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0815D8BD"
+    }
+  ],
+  "bg_events": []
+}

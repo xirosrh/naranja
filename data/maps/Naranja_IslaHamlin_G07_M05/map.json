@@ -1,0 +1,35 @@
+{
+  "id": "MAP_NARANJA_ISLA_HAMLIN_G07_M05",
+  "name": "Naranja_IslaHamlin_G07_M05",
+  "layout": "LAYOUT_NARANJA_ISLA_HAMLIN_G07_M03",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_HAMLIN_G00_M15",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_HAMLIN_G00_M15",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

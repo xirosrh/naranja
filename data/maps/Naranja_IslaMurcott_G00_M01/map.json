@@ -1,0 +1,114 @@
+{
+  "id": "MAP_NARANJA_ISLA_MURCOTT_G00_M01",
+  "name": "Naranja_IslaMurcott_G00_M01",
+  "layout": "LAYOUT_NARANJA_ISLA_MURCOTT_G00_M01",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ROUTE_110_G00_M25",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_109_G00_M24",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_134_G00_M49",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 19,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M10",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M12",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 38,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALN_TANG_G09_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M02",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M05",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M06",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M04",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 31,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M06",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 28,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M08",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M08",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 21,
+      "y": 44,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MURCOTT_G09_M09",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

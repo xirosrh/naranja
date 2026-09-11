@@ -1,0 +1,137 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 0,
+  "map_number": 15,
+  "region_map_section_id": 6,
+  "region_name": "Isla HAMLIN",
+  "header_pointer": "0x083055EC",
+  "layout_pointer": "0x08292D74",
+  "events_pointer": "0x083810A8",
+  "scripts_pointer": "0x0814E8EE",
+  "connections_pointer": "0x083086DC",
+  "music_id": 408,
+  "source_layout_id": 16,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 8,
+      "kind": 0,
+      "x": 10,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0814E909",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 50,
+      "kind": 0,
+      "x": 11,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0814E912",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 5,
+      "kind": 0,
+      "x": 9,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0814E900",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 0,
+      "dest_map_group": 7
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 2,
+      "dest_map_group": 7
+    },
+    {
+      "x": 3,
+      "y": 22,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 3,
+      "dest_map_group": 7
+    },
+    {
+      "x": 12,
+      "y": 24,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 4,
+      "dest_map_group": 7
+    },
+    {
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 5,
+      "dest_map_group": 7
+    },
+    {
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 6,
+      "dest_map_group": 7
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 9,
+      "y": 15,
+      "elevation": 0,
+      "kind": 1,
+      "data": "0x081A00EA"
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814E91B"
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 0,
+      "kind": 1,
+      "data": "0x081A00EA"
+    }
+  ]
+}

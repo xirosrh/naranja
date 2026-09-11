@@ -1,0 +1,348 @@
+{
+  "source_rom": "C:\\Users\\maxi1\\Desktop\\RH\\naranja-binario\\NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_groups_offset": "0x00308588",
+  "region_map_entries_offset": "0x003E73C4",
+  "maps": 394,
+  "layouts": 310,
+  "primary_tilesets": 3,
+  "secondary_tilesets": 53,
+  "tilesets": [
+    {
+      "name": "NaranjaPrimary00",
+      "rom_pointer": "0x08286CF4",
+      "tile_count": 512,
+      "metatile_count": 512
+    },
+    {
+      "name": "NaranjaSecondary00",
+      "rom_pointer": "0x08286D0C",
+      "tile_count": 159,
+      "metatile_count": 144
+    },
+    {
+      "name": "NaranjaSecondary01",
+      "rom_pointer": "0x08286DE4",
+      "tile_count": 496,
+      "metatile_count": 363
+    },
+    {
+      "name": "NaranjaSecondary02",
+      "rom_pointer": "0x08286D24",
+      "tile_count": 496,
+      "metatile_count": 350
+    },
+    {
+      "name": "NaranjaSecondary03",
+      "rom_pointer": "0x08286DB4",
+      "tile_count": 493,
+      "metatile_count": 267
+    },
+    {
+      "name": "NaranjaSecondary04",
+      "rom_pointer": "0x08286DCC",
+      "tile_count": 432,
+      "metatile_count": 351
+    },
+    {
+      "name": "NaranjaSecondary05",
+      "rom_pointer": "0x08286E2C",
+      "tile_count": 180,
+      "metatile_count": 254
+    },
+    {
+      "name": "NaranjaSecondary06",
+      "rom_pointer": "0x08286DFC",
+      "tile_count": 320,
+      "metatile_count": 168
+    },
+    {
+      "name": "NaranjaSecondary07",
+      "rom_pointer": "0x08286D54",
+      "tile_count": 512,
+      "metatile_count": 364
+    },
+    {
+      "name": "NaranjaSecondary08",
+      "rom_pointer": "0x08286D3C",
+      "tile_count": 343,
+      "metatile_count": 144
+    },
+    {
+      "name": "NaranjaSecondary09",
+      "rom_pointer": "0x08286D84",
+      "tile_count": 348,
+      "metatile_count": 286
+    },
+    {
+      "name": "NaranjaSecondary10",
+      "rom_pointer": "0x08286D9C",
+      "tile_count": 368,
+      "metatile_count": 339
+    },
+    {
+      "name": "NaranjaSecondary11",
+      "rom_pointer": "0x08286E14",
+      "tile_count": 504,
+      "metatile_count": 191
+    },
+    {
+      "name": "NaranjaSecondary12",
+      "rom_pointer": "0x08286D6C",
+      "tile_count": 448,
+      "metatile_count": 434
+    },
+    {
+      "name": "NaranjaSecondary13",
+      "rom_pointer": "0x08286E8C",
+      "tile_count": 420,
+      "metatile_count": 414
+    },
+    {
+      "name": "NaranjaSecondary14",
+      "rom_pointer": "0x082870E4",
+      "tile_count": 500,
+      "metatile_count": 236
+    },
+    {
+      "name": "NaranjaPrimary01",
+      "rom_pointer": "0x08286E44",
+      "tile_count": 502,
+      "metatile_count": 512
+    },
+    {
+      "name": "NaranjaSecondary15",
+      "rom_pointer": "0x082870B4",
+      "tile_count": 480,
+      "metatile_count": 171
+    },
+    {
+      "name": "NaranjaSecondary16",
+      "rom_pointer": "0x082870CC",
+      "tile_count": 500,
+      "metatile_count": 154
+    },
+    {
+      "name": "NaranjaSecondary17",
+      "rom_pointer": "0x0828712C",
+      "tile_count": 509,
+      "metatile_count": 512
+    },
+    {
+      "name": "NaranjaSecondary18",
+      "rom_pointer": "0x08286E74",
+      "tile_count": 478,
+      "metatile_count": 198
+    },
+    {
+      "name": "NaranjaSecondary19",
+      "rom_pointer": "0x08286E5C",
+      "tile_count": 502,
+      "metatile_count": 282
+    },
+    {
+      "name": "NaranjaSecondary20",
+      "rom_pointer": "0x08287174",
+      "tile_count": 88,
+      "metatile_count": 61
+    },
+    {
+      "name": "NaranjaSecondary21",
+      "rom_pointer": "0x082871A4",
+      "tile_count": 70,
+      "metatile_count": 42
+    },
+    {
+      "name": "NaranjaSecondary22",
+      "rom_pointer": "0x08287084",
+      "tile_count": 430,
+      "metatile_count": 224
+    },
+    {
+      "name": "NaranjaSecondary23",
+      "rom_pointer": "0x08286F7C",
+      "tile_count": 503,
+      "metatile_count": 510
+    },
+    {
+      "name": "NaranjaSecondary24",
+      "rom_pointer": "0x082870FC",
+      "tile_count": 384,
+      "metatile_count": 140
+    },
+    {
+      "name": "NaranjaSecondary25",
+      "rom_pointer": "0x08286F94",
+      "tile_count": 512,
+      "metatile_count": 248
+    },
+    {
+      "name": "NaranjaSecondary26",
+      "rom_pointer": "0x08286EBC",
+      "tile_count": 319,
+      "metatile_count": 104
+    },
+    {
+      "name": "NaranjaSecondary27",
+      "rom_pointer": "0x08286F04",
+      "tile_count": 319,
+      "metatile_count": 101
+    },
+    {
+      "name": "NaranjaSecondary28",
+      "rom_pointer": "0x0828718C",
+      "tile_count": 160,
+      "metatile_count": 117
+    },
+    {
+      "name": "NaranjaSecondary29",
+      "rom_pointer": "0x08287144",
+      "tile_count": 469,
+      "metatile_count": 96
+    },
+    {
+      "name": "NaranjaSecondary30",
+      "rom_pointer": "0x0828715C",
+      "tile_count": 94,
+      "metatile_count": 56
+    },
+    {
+      "name": "NaranjaSecondary31",
+      "rom_pointer": "0x08286EA4",
+      "tile_count": 278,
+      "metatile_count": 58
+    },
+    {
+      "name": "NaranjaSecondary32",
+      "rom_pointer": "0x082871D4",
+      "tile_count": 84,
+      "metatile_count": 53
+    },
+    {
+      "name": "NaranjaSecondary33",
+      "rom_pointer": "0x0828709C",
+      "tile_count": 431,
+      "metatile_count": 143
+    },
+    {
+      "name": "NaranjaSecondary34",
+      "rom_pointer": "0x0828724C",
+      "tile_count": 128,
+      "metatile_count": 512
+    },
+    {
+      "name": "NaranjaSecondary35",
+      "rom_pointer": "0x082871EC",
+      "tile_count": 122,
+      "metatile_count": 80
+    },
+    {
+      "name": "NaranjaSecondary36",
+      "rom_pointer": "0x08287114",
+      "tile_count": 484,
+      "metatile_count": 99
+    },
+    {
+      "name": "NaranjaSecondary37",
+      "rom_pointer": "0x08287234",
+      "tile_count": 505,
+      "metatile_count": 331
+    },
+    {
+      "name": "NaranjaSecondary38",
+      "rom_pointer": "0x08286F1C",
+      "tile_count": 512,
+      "metatile_count": 256
+    },
+    {
+      "name": "NaranjaSecondary39",
+      "rom_pointer": "0x08286F4C",
+      "tile_count": 345,
+      "metatile_count": 72
+    },
+    {
+      "name": "NaranjaSecondary40",
+      "rom_pointer": "0x08286F64",
+      "tile_count": 355,
+      "metatile_count": 68
+    },
+    {
+      "name": "NaranjaSecondary41",
+      "rom_pointer": "0x08286EEC",
+      "tile_count": 422,
+      "metatile_count": 159
+    },
+    {
+      "name": "NaranjaPrimary02",
+      "rom_pointer": "0x0828721C",
+      "tile_count": 512,
+      "metatile_count": 512
+    },
+    {
+      "name": "NaranjaSecondary42",
+      "rom_pointer": "0x08286FC4",
+      "tile_count": 512,
+      "metatile_count": 324
+    },
+    {
+      "name": "NaranjaSecondary43",
+      "rom_pointer": "0x08286FAC",
+      "tile_count": 144,
+      "metatile_count": 83
+    },
+    {
+      "name": "NaranjaSecondary44",
+      "rom_pointer": "0x08287204",
+      "tile_count": 342,
+      "metatile_count": 252
+    },
+    {
+      "name": "NaranjaSecondary45",
+      "rom_pointer": "0x0828703C",
+      "tile_count": 512,
+      "metatile_count": 324
+    },
+    {
+      "name": "NaranjaSecondary46",
+      "rom_pointer": "0x0828700C",
+      "tile_count": 512,
+      "metatile_count": 324
+    },
+    {
+      "name": "NaranjaSecondary47",
+      "rom_pointer": "0x08287024",
+      "tile_count": 512,
+      "metatile_count": 324
+    },
+    {
+      "name": "NaranjaSecondary48",
+      "rom_pointer": "0x08286FDC",
+      "tile_count": 512,
+      "metatile_count": 324
+    },
+    {
+      "name": "NaranjaSecondary49",
+      "rom_pointer": "0x08286FF4",
+      "tile_count": 512,
+      "metatile_count": 324
+    },
+    {
+      "name": "NaranjaSecondary50",
+      "rom_pointer": "0x08287054",
+      "tile_count": 52,
+      "metatile_count": 38
+    },
+    {
+      "name": "NaranjaSecondary51",
+      "rom_pointer": "0x08286F34",
+      "tile_count": 312,
+      "metatile_count": 56
+    },
+    {
+      "name": "NaranjaSecondary52",
+      "rom_pointer": "0x082871BC",
+      "tile_count": 255,
+      "metatile_count": 149
+    }
+  ]
+}

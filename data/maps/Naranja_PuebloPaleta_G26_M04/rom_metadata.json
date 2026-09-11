@@ -1,0 +1,204 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 26,
+  "map_number": 4,
+  "region_map_section_id": 58,
+  "region_name": "Pueblo PALETA",
+  "header_pointer": "0x08307C18",
+  "layout_pointer": "0x08209124",
+  "events_pointer": "0x086B1DC0",
+  "scripts_pointer": "0x08160156",
+  "connections_pointer": "0x00000000",
+  "music_id": 384,
+  "source_layout_id": 266,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 36,
+      "kind": 0,
+      "x": 20,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160263",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 134,
+      "kind": 0,
+      "x": 7,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0814EB92",
+      "flag": 723
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 9,
+      "kind": 0,
+      "x": 10,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160275",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 140,
+      "kind": 0,
+      "x": 8,
+      "y": 26,
+      "elevation": 1,
+      "movement_type": 10,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08000000",
+      "flag": 0
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 45,
+      "kind": 0,
+      "x": 7,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160168",
+      "flag": 0
+    },
+    {
+      "local_id": 6,
+      "graphics_id": 16,
+      "kind": 0,
+      "x": 20,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0816026C",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 21,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 4,
+      "dest_map_group": 1
+    },
+    {
+      "x": 15,
+      "y": 15,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 0,
+      "dest_map_group": 8
+    },
+    {
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 0,
+      "dest_map_group": 1
+    },
+    {
+      "x": 19,
+      "y": 6,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 0,
+      "dest_map_group": 4
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 19,
+      "y": 8,
+      "elevation": 3,
+      "trigger": 16471,
+      "index": 0,
+      "script_pointer": "0x0814B7C3"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x00000000"
+    }
+  ],
+  "bg_events": [
+    {
+      "x": 16,
+      "y": 23,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814D82B"
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814D822"
+    },
+    {
+      "x": 13,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814D857"
+    },
+    {
+      "x": 18,
+      "y": 7,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814DDAA"
+    },
+    {
+      "x": 4,
+      "y": 22,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814F32F"
+    },
+    {
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0816025A"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 13,
+  "map_number": 8,
+  "region_map_section_id": 12,
+  "region_name": "Isla KUMQUAT",
+  "header_pointer": "0x08306600",
+  "layout_pointer": "0x082CE354",
+  "events_pointer": "0x08389E9C",
+  "scripts_pointer": "0x08159389",
+  "connections_pointer": "0x00000000",
+  "music_id": 404,
+  "source_layout_id": 63,
+  "show_map_name": false,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 5,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 5,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "MAP_NARANJA_ISLA_NUEVA_G15_M01",
+  "name": "Naranja_IslaNueva_G15_M01",
+  "layout": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M01",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 22,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ISLA_NUEVA_G15_M00",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

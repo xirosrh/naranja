@@ -1,0 +1,152 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 16,
+  "region_map_section_id": 65,
+  "region_name": "BEMENTER",
+  "header_pointer": "0x08306F30",
+  "layout_pointer": "0x082DB5EC",
+  "events_pointer": "0x0838C940",
+  "scripts_pointer": "0x0815D36E",
+  "connections_pointer": "0x00000000",
+  "music_id": 432,
+  "source_layout_id": 139,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 39,
+      "kind": 0,
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 17,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 2,
+      "script_pointer": "0x0815D39B",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 0,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B1933",
+      "flag": 1129
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 16,
+      "kind": 0,
+      "x": 5,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D389",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 25,
+      "kind": 0,
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D392",
+      "flag": 0
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 26,
+      "kind": 0,
+      "x": 2,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D3CD",
+      "flag": 0
+    },
+    {
+      "local_id": 6,
+      "graphics_id": 65,
+      "kind": 0,
+      "x": 3,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D3B2",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 15,
+      "dest_map_group": 24
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 17,
+      "dest_map_group": 24
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 17,
+      "dest_map_group": 24
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "elevation": 3,
+      "dest_warp_id": 5,
+      "dest_map_num": 17,
+      "dest_map_group": 24
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "elevation": 3,
+      "dest_warp_id": 5,
+      "dest_map_num": 15,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

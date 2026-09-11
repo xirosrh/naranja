@@ -1,0 +1,90 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 26,
+  "map_number": 3,
+  "region_map_section_id": 57,
+  "region_name": "Safari",
+  "header_pointer": "0x08307BFC",
+  "layout_pointer": "0x082ED348",
+  "events_pointer": "0x08391BD8",
+  "scripts_pointer": "0x08160036",
+  "connections_pointer": "0x08308E20",
+  "music_id": 428,
+  "source_layout_id": 242,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 125,
+      "kind": 0,
+      "x": 32,
+      "y": 34,
+      "elevation": 4,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081600A7",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 125,
+      "kind": 0,
+      "x": 26,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0816008C",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 125,
+      "kind": 0,
+      "x": 16,
+      "y": 6,
+      "elevation": 5,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160095",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 125,
+      "kind": 0,
+      "x": 15,
+      "y": 31,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0816009E",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 32,
+      "y": 33,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 0,
+      "dest_map_group": 23
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

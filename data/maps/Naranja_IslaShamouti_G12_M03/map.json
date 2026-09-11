@@ -1,0 +1,56 @@
+{
+  "id": "MAP_NARANJA_ISLA_SHAMOUTI_G12_M03",
+  "name": "Naranja_IslaShamouti_G12_M03",
+  "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M03",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 5,
+      "elevation": 4,
+      "dest_map": "MAP_NARANJA_ISLA_SHAMOUTI_G12_M02",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M24",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M25",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M26",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M27",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

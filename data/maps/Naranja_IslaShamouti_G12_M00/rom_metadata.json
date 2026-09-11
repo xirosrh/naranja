@@ -1,0 +1,83 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 12,
+  "map_number": 0,
+  "region_map_section_id": 11,
+  "region_name": "Isla SHAMOUTI",
+  "header_pointer": "0x08306408",
+  "layout_pointer": "0x082D1B3C",
+  "events_pointer": "0x08389004",
+  "scripts_pointer": "0x08157E12",
+  "connections_pointer": "0x00000000",
+  "music_id": 382,
+  "source_layout_id": 99,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 16,
+      "kind": 0,
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157E13",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 208,
+      "kind": 0,
+      "x": 2,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157EC0",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 22,
+      "kind": 0,
+      "x": 7,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157EB7",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 4,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 4,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

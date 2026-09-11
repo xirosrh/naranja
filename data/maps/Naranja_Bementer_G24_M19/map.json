@@ -1,0 +1,56 @@
+{
+  "id": "MAP_NARANJA_BEMENTER_G24_M19",
+  "name": "Naranja_Bementer_G24_M19",
+  "layout": "LAYOUT_NARANJA_BEMENTER_G24_M19",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BEMENTER_G24_M20",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BEMENTER_G24_M18",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 1,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BEMENTER_G24_M20",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BEMENTER_G24_M18",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 12,
+      "y": 12,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BEMENTER_G24_M18",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

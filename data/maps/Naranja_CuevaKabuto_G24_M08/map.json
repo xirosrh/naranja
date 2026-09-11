@@ -1,0 +1,70 @@
+{
+  "id": "MAP_NARANJA_CUEVA_KABUTO_G24_M08",
+  "name": "Naranja_CuevaKabuto_G24_M08",
+  "layout": "LAYOUT_NARANJA_CUEVA_KABUTO_G24_M08",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 23,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M07",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 3,
+      "y": 23,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M07",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M07",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M09",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M09",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M09",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 20,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M07",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

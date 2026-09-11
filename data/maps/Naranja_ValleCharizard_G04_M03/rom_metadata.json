@@ -1,0 +1,68 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 4,
+  "map_number": 3,
+  "region_map_section_id": 3,
+  "region_name": "Valle Charizard",
+  "header_pointer": "0x08305C44",
+  "layout_pointer": "0x082CE414",
+  "events_pointer": "0x083864D4",
+  "scripts_pointer": "0x081538AD",
+  "connections_pointer": "0x00000000",
+  "music_id": 363,
+  "source_layout_id": 64,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 29,
+      "kind": 0,
+      "x": 2,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081538AE",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 208,
+      "kind": 0,
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081538B7",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 4,
+      "dest_map_num": 12,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 4,
+      "dest_map_num": 12,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

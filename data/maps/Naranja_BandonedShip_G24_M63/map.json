@@ -1,0 +1,35 @@
+{
+  "id": "MAP_NARANJA_BANDONED_SHIP_G24_M63",
+  "name": "Naranja_BandonedShip_G24_M63",
+  "layout": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M63",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M54",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M54",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

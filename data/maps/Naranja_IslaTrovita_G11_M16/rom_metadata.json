@@ -1,0 +1,83 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 11,
+  "map_number": 16,
+  "region_map_section_id": 10,
+  "region_name": "Isla TROVITA",
+  "header_pointer": "0x083063EC",
+  "layout_pointer": "0x082D18E4",
+  "events_pointer": "0x08388F98",
+  "scripts_pointer": "0x08157DEC",
+  "connections_pointer": "0x00000000",
+  "music_id": 399,
+  "source_layout_id": 96,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 29,
+      "kind": 0,
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157DED",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 30,
+      "kind": 0,
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157DF6",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 209,
+      "kind": 0,
+      "x": 4,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157DFF",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 11,
+      "dest_map_num": 3,
+      "dest_map_group": 0
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 11,
+      "dest_map_num": 3,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

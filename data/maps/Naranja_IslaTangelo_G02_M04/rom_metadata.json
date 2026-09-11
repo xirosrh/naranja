@@ -1,0 +1,83 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 2,
+  "map_number": 4,
+  "region_map_section_id": 1,
+  "region_name": "Isla TANGELO",
+  "header_pointer": "0x08305B2C",
+  "layout_pointer": "0x082CE354",
+  "events_pointer": "0x08385E44",
+  "scripts_pointer": "0x08152F78",
+  "connections_pointer": "0x00000000",
+  "music_id": 404,
+  "source_layout_id": 63,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 83,
+      "kind": 0,
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08152F79",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 34,
+      "kind": 0,
+      "x": 5,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08152FC6",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 7,
+      "kind": 0,
+      "x": 9,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 3,
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08152FE5",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 3,
+      "dest_map_num": 10,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 3,
+      "dest_map_num": 10,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

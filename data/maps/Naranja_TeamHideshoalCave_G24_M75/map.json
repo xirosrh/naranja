@@ -1,0 +1,224 @@
+{
+  "id": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+  "name": "Naranja_TeamHideshoalCave_G24_M75",
+  "layout": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_MAGMA",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M74",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M76",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M76",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 29,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M76",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 8,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 23,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 39,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "13"
+    },
+    {
+      "x": 16,
+      "y": 16,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 21,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 21,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 38,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 43,
+      "y": 19,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 34,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "28"
+    },
+    {
+      "x": 41,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "16"
+    },
+    {
+      "x": 56,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "15"
+    },
+    {
+      "x": 56,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "16"
+    },
+    {
+      "x": 53,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "22"
+    },
+    {
+      "x": 59,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "20"
+    },
+    {
+      "x": 53,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "19"
+    },
+    {
+      "x": 56,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "24"
+    },
+    {
+      "x": 59,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 53,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "17"
+    },
+    {
+      "x": 56,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "21"
+    },
+    {
+      "x": 59,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "26"
+    },
+    {
+      "x": 53,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "25"
+    },
+    {
+      "x": 56,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "21"
+    },
+    {
+      "x": 59,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "dest_warp_id": "14"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,79 @@
+{
+  "id": "MAP_NARANJA_ISLA_MANDARINA_G00_M14",
+  "name": "Naranja_IslaMandarina_G00_M14",
+  "layout": "LAYOUT_NARANJA_ISLA_MANDARINA_G00_M14",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_FRONTIER",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_MANDARIN_G00_M31",
+      "offset": -80,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_DESIERTO_G00_M32",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_RUTA_AZUL_G00_M18",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G13_M17",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G06_M03",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G06_M03",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G06_M05",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G06_M07",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARIN_G10_M04",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

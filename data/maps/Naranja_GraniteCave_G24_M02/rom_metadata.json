@@ -1,0 +1,69 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 2,
+  "region_map_section_id": 55,
+  "region_name": "GRANITE CAVE",
+  "header_pointer": "0x08306DA8",
+  "layout_pointer": "0x082D7098",
+  "events_pointer": "0x0838BCE4",
+  "scripts_pointer": "0x0815C743",
+  "connections_pointer": "0x00000000",
+  "music_id": 386,
+  "source_layout_id": 128,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 4,
+      "dest_warp_id": 1,
+      "dest_map_num": 1,
+      "dest_map_group": 24
+    },
+    {
+      "x": 7,
+      "y": 11,
+      "elevation": 5,
+      "dest_warp_id": 2,
+      "dest_map_num": 1,
+      "dest_map_group": 24
+    },
+    {
+      "x": 18,
+      "y": 15,
+      "elevation": 4,
+      "dest_warp_id": 3,
+      "dest_map_num": 1,
+      "dest_map_group": 24
+    },
+    {
+      "x": 17,
+      "y": 3,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 3,
+      "dest_map_group": 24
+    },
+    {
+      "x": 3,
+      "y": 23,
+      "elevation": 5,
+      "dest_warp_id": 3,
+      "dest_map_num": 0,
+      "dest_map_group": 24
+    },
+    {
+      "x": 20,
+      "y": 36,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 0,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

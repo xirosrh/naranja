@@ -1,0 +1,91 @@
+{
+  "id": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+  "name": "Naranja_TeamHideshoalCave_G24_M25",
+  "layout": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_AQUA",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M24",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M24",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M24",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 31,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 18,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 12,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 31,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 32,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M24",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

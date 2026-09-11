@@ -1,0 +1,62 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 39,
+  "region_map_section_id": 72,
+  "region_name": "CAVE OF ORIGIN",
+  "header_pointer": "0x083071B4",
+  "layout_pointer": "0x082E067C",
+  "events_pointer": "0x0838D7AC",
+  "scripts_pointer": "0x0815DD7C",
+  "connections_pointer": "0x00000000",
+  "music_id": 386,
+  "source_layout_id": 160,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 5,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 38,
+      "dest_map_group": 24
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 40,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 12,
+      "y": 15,
+      "elevation": 3,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x081A04AF"
+    },
+    {
+      "x": 12,
+      "y": 16,
+      "elevation": 3,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x081A04AF"
+    },
+    {
+      "x": 12,
+      "y": 17,
+      "elevation": 3,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x081A04AF"
+    }
+  ],
+  "bg_events": []
+}

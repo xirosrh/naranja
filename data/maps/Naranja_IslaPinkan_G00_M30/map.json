@@ -1,0 +1,62 @@
+{
+  "id": "MAP_NARANJA_ISLA_PINKAN_G00_M30",
+  "name": "Naranja_IslaPinkan_G00_M30",
+  "layout": "LAYOUT_NARANJA_ISLA_PINKAN_G00_M30",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ISLA_TROVITA_G00_M03",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_CUEVA_KABUTO_G24_M07",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 23,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TROVITA_G11_M02",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G00_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G00_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G00_M00",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

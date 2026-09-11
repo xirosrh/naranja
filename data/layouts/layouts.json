@@ -4410,6 +4410,3106 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_VALENCIA_G00_M00",
+      "name": "Naranja_IslaValencia_G00_M00_Layout",
+      "width": 45,
+      "height": 45,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary00",
+      "border_filepath": "data/layouts/Naranja_IslaValencia_G00_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaValencia_G00_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MURCOTT_G00_M01",
+      "name": "Naranja_IslaMurcott_G00_M01_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_IslaMurcott_G00_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMurcott_G00_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARIN_G00_M02",
+      "name": "Naranja_IslaMandarin_G00_M02_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_IslaMandarin_G00_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarin_G00_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G00_M03",
+      "name": "Naranja_IslaTrovita_G00_M03_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G00_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G00_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_SHAMOUTI_G00_M04",
+      "name": "Naranja_IslaShamouti_G00_M04_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary03",
+      "border_filepath": "data/layouts/Naranja_IslaShamouti_G00_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaShamouti_G00_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G00_M05",
+      "name": "Naranja_IslaKumquat_G00_M05_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G00_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G00_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G00_M06",
+      "name": "Naranja_IslaMellsweet_G00_M06_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G00_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G00_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G00_M07",
+      "name": "Naranja_IslaNueva_G00_M07_Layout",
+      "width": 60,
+      "height": 60,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary05",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G00_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G00_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G00_M08",
+      "name": "Naranja_IslaPomelo_G00_M08_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary06",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G00_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G00_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUERTO_DE_TANGELO_G00_M09",
+      "name": "Naranja_PuertoDeTangelo_G00_M09_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary07",
+      "border_filepath": "data/layouts/Naranja_PuertoDeTangelo_G00_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuertoDeTangelo_G00_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TANGELO_G00_M10",
+      "name": "Naranja_IslaTangelo_G00_M10_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary07",
+      "border_filepath": "data/layouts/Naranja_IslaTangelo_G00_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTangelo_G00_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_7ISLAS_POMELO_G00_M11",
+      "name": "Naranja_7islasPomelo_G00_M11_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary08",
+      "border_filepath": "data/layouts/Naranja_7islasPomelo_G00_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_7islasPomelo_G00_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALLE_CHARIZARD_G00_M12",
+      "name": "Naranja_ValleCharizard_G00_M12_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary09",
+      "border_filepath": "data/layouts/Naranja_ValleCharizard_G00_M12/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValleCharizard_G00_M12/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NAVEL_G00_M13",
+      "name": "Naranja_IslaNavel_G00_M13_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary10",
+      "border_filepath": "data/layouts/Naranja_IslaNavel_G00_M13/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNavel_G00_M13/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G00_M14",
+      "name": "Naranja_IslaMandarina_G00_M14_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G00_M14/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G00_M14/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_HAMLIN_G00_M15",
+      "name": "Naranja_IslaHamlin_G00_M15_Layout",
+      "width": 20,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_IslaHamlin_G00_M15/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaHamlin_G00_M15/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TANGELO_G00_M16",
+      "name": "Naranja_Tangelo_G00_M16_Layout",
+      "width": 36,
+      "height": 26,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary07",
+      "border_filepath": "data/layouts/Naranja_Tangelo_G00_M16/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Tangelo_G00_M16/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALN_TANG_G00_M17",
+      "name": "Naranja_ValnTang_G00_M17_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary00",
+      "border_filepath": "data/layouts/Naranja_ValnTang_G00_M17/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValnTang_G00_M17/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_RUTA_AZUL_G00_M18",
+      "name": "Naranja_RutaAzul_G00_M18_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary07",
+      "border_filepath": "data/layouts/Naranja_RutaAzul_G00_M18/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_RutaAzul_G00_M18/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLAS_G00_M19",
+      "name": "Naranja_Islas_G00_M19_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary00",
+      "border_filepath": "data/layouts/Naranja_Islas_G00_M19/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Islas_G00_M19/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MIKAN_G00_M20",
+      "name": "Naranja_IslaMikan_G00_M20_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary08",
+      "border_filepath": "data/layouts/Naranja_IslaMikan_G00_M20/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMikan_G00_M20/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_106_G00_M21",
+      "name": "Naranja_Route106_G00_M21_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary08",
+      "border_filepath": "data/layouts/Naranja_Route106_G00_M21/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route106_G00_M21/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MORO_G00_M22",
+      "name": "Naranja_IslaMoro_G00_M22_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary08",
+      "border_filepath": "data/layouts/Naranja_IslaMoro_G00_M22/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMoro_G00_M22/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_108_G00_M23",
+      "name": "Naranja_Route108_G00_M23_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary07",
+      "border_filepath": "data/layouts/Naranja_Route108_G00_M23/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route108_G00_M23/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_109_G00_M24",
+      "name": "Naranja_Route109_G00_M24_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route109_G00_M24/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route109_G00_M24/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G00_M25",
+      "name": "Naranja_Route110_G00_M25_Layout",
+      "width": 40,
+      "height": 100,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary12",
+      "border_filepath": "data/layouts/Naranja_Route110_G00_M25/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G00_M25/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_111_G00_M26",
+      "name": "Naranja_Route111_G00_M26_Layout",
+      "width": 40,
+      "height": 140,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary12",
+      "border_filepath": "data/layouts/Naranja_Route111_G00_M26/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route111_G00_M26/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_112_G00_M27",
+      "name": "Naranja_Route112_G00_M27_Layout",
+      "width": 40,
+      "height": 60,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary09",
+      "border_filepath": "data/layouts/Naranja_Route112_G00_M27/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route112_G00_M27/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_NORTE_G00_M28",
+      "name": "Naranja_Norte_G00_M28_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary10",
+      "border_filepath": "data/layouts/Naranja_Norte_G00_M28/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Norte_G00_M28/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAMINO_FRIO_G00_M29",
+      "name": "Naranja_CaminoFrio_G00_M29_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary10",
+      "border_filepath": "data/layouts/Naranja_CaminoFrio_G00_M29/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaminoFrio_G00_M29/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_PINKAN_G00_M30",
+      "name": "Naranja_IslaPinkan_G00_M30_Layout",
+      "width": 40,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary10",
+      "border_filepath": "data/layouts/Naranja_IslaPinkan_G00_M30/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPinkan_G00_M30/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_MANDARIN_G00_M31",
+      "name": "Naranja_Mandarin_G00_M31_Layout",
+      "width": 100,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_Mandarin_G00_M31/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Mandarin_G00_M31/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_DESIERTO_G00_M32",
+      "name": "Naranja_Desierto_G00_M32_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_Desierto_G00_M32/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Desierto_G00_M32/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_118_G00_M33",
+      "name": "Naranja_Route118_G00_M33_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary12",
+      "border_filepath": "data/layouts/Naranja_Route118_G00_M33/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route118_G00_M33/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_119_G00_M34",
+      "name": "Naranja_Route119_G00_M34_Layout",
+      "width": 40,
+      "height": 140,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary03",
+      "border_filepath": "data/layouts/Naranja_Route119_G00_M34/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route119_G00_M34/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_120_G00_M35",
+      "name": "Naranja_Route120_G00_M35_Layout",
+      "width": 40,
+      "height": 100,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary03",
+      "border_filepath": "data/layouts/Naranja_Route120_G00_M35/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route120_G00_M35/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_121_G00_M36",
+      "name": "Naranja_Route121_G00_M36_Layout",
+      "width": 80,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Route121_G00_M36/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route121_G00_M36/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_122_G00_M37",
+      "name": "Naranja_Route122_G00_M37_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Route122_G00_M37/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route122_G00_M37/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_123_G00_M38",
+      "name": "Naranja_Route123_G00_M38_Layout",
+      "width": 140,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Route123_G00_M38/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route123_G00_M38/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_124_G00_M39",
+      "name": "Naranja_Route124_G00_M39_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route124_G00_M39/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route124_G00_M39/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_125_G00_M40",
+      "name": "Naranja_Route125_G00_M40_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route125_G00_M40/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route125_G00_M40/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_126_G00_M41",
+      "name": "Naranja_Route126_G00_M41_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route126_G00_M41/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route126_G00_M41/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_666_G00_M42",
+      "name": "Naranja_Route666_G00_M42_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route666_G00_M42/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route666_G00_M42/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_128_G00_M43",
+      "name": "Naranja_Route128_G00_M43_Layout",
+      "width": 120,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route128_G00_M43/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route128_G00_M43/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_129_G00_M44",
+      "name": "Naranja_Route129_G00_M44_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Route129_G00_M44/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route129_G00_M44/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_130_G00_M45",
+      "name": "Naranja_Route130_G00_M45_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_Route130_G00_M45/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route130_G00_M45/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_131_G00_M46",
+      "name": "Naranja_Route131_G00_M46_Layout",
+      "width": 60,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_Route131_G00_M46/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route131_G00_M46/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_132_G00_M47",
+      "name": "Naranja_Route132_G00_M47_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_Route132_G00_M47/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route132_G00_M47/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_133_G00_M48",
+      "name": "Naranja_Route133_G00_M48_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_Route133_G00_M48/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route133_G00_M48/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_134_G00_M49",
+      "name": "Naranja_Route134_G00_M49_Layout",
+      "width": 80,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_Route134_G00_M49/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route134_G00_M49/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G00_M50",
+      "name": "Naranja_Underwater_G00_M50_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G00_M50/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G00_M50/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G00_M51",
+      "name": "Naranja_Underwater_G00_M51_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G00_M51/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G00_M51/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G00_M52",
+      "name": "Naranja_Underwater_G00_M52_Layout",
+      "width": 80,
+      "height": 80,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G00_M52/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G00_M52/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G00_M53",
+      "name": "Naranja_Underwater_G00_M53_Layout",
+      "width": 120,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G00_M53/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G00_M53/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G01_M00",
+      "name": "Naranja_PuebloPaleta_G01_M00_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary15",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G01_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G01_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUERTO_DE_TANGELO_G01_M01",
+      "name": "Naranja_PuertoDeTangelo_G01_M01_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary15",
+      "border_filepath": "data/layouts/Naranja_PuertoDeTangelo_G01_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuertoDeTangelo_G01_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUERTO_DE_TANGELO_G01_M02",
+      "name": "Naranja_PuertoDeTangelo_G01_M02_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary15",
+      "border_filepath": "data/layouts/Naranja_PuertoDeTangelo_G01_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuertoDeTangelo_G01_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUERTO_DE_TANGELO_G01_M03",
+      "name": "Naranja_PuertoDeTangelo_G01_M03_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary15",
+      "border_filepath": "data/layouts/Naranja_PuertoDeTangelo_G01_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuertoDeTangelo_G01_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G01_M04",
+      "name": "Naranja_PuebloPaleta_G01_M04_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary16",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G01_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G01_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M00",
+      "name": "Naranja_IslaTangelo_G02_M00_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTangelo_G02_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTangelo_G02_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M01",
+      "name": "Naranja_IslaTangelo_G02_M01_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTangelo_G02_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTangelo_G02_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M02",
+      "name": "Naranja_IslaTangelo_G02_M02_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary18",
+      "border_filepath": "data/layouts/Naranja_IslaTangelo_G02_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTangelo_G02_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M03",
+      "name": "Naranja_IslaTangelo_G02_M03_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary18",
+      "border_filepath": "data/layouts/Naranja_IslaTangelo_G02_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTangelo_G02_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M04",
+      "name": "Naranja_IslaTangelo_G02_M04_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaTangelo_G02_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTangelo_G02_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_7ISLAS_POMELO_G03_M00",
+      "name": "Naranja_7islasPomelo_G03_M00_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_7islasPomelo_G03_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_7islasPomelo_G03_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MIKAN_G03_M03",
+      "name": "Naranja_IslaMikan_G03_M03_Layout",
+      "width": 18,
+      "height": 28,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary20",
+      "border_filepath": "data/layouts/Naranja_IslaMikan_G03_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMikan_G03_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_7ISLAS_POMELO_G03_M04",
+      "name": "Naranja_7islasPomelo_G03_M04_Layout",
+      "width": 17,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_7islasPomelo_G03_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_7islasPomelo_G03_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_7ISLAS_POMELO_G03_M05",
+      "name": "Naranja_7islasPomelo_G03_M05_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_7islasPomelo_G03_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_7islasPomelo_G03_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G04_M00",
+      "name": "Naranja_PuebloPaleta_G04_M00_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G04_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G04_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALLE_CHARIZARD_G04_M01",
+      "name": "Naranja_ValleCharizard_G04_M01_Layout",
+      "width": 11,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary21",
+      "border_filepath": "data/layouts/Naranja_ValleCharizard_G04_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValleCharizard_G04_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALLE_CHARIZARD_G04_M02",
+      "name": "Naranja_ValleCharizard_G04_M02_Layout",
+      "width": 11,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary21",
+      "border_filepath": "data/layouts/Naranja_ValleCharizard_G04_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValleCharizard_G04_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALLE_CHARIZARD_G04_M05",
+      "name": "Naranja_ValleCharizard_G04_M05_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary18",
+      "border_filepath": "data/layouts/Naranja_ValleCharizard_G04_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValleCharizard_G04_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NAVEL_G05_M01",
+      "name": "Naranja_IslaNavel_G05_M01_Layout",
+      "width": 15,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_IslaNavel_G05_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNavel_G05_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NAVEL_G05_M02",
+      "name": "Naranja_IslaNavel_G05_M02_Layout",
+      "width": 21,
+      "height": 18,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_IslaNavel_G05_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNavel_G05_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G06_M05",
+      "name": "Naranja_IslaMandarina_G06_M05_Layout",
+      "width": 17,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G06_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G06_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALN_TANG_G07_M02",
+      "name": "Naranja_ValnTang_G07_M02_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_ValnTang_G07_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValnTang_G07_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_HAMLIN_G07_M03",
+      "name": "Naranja_IslaHamlin_G07_M03_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaHamlin_G07_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaHamlin_G07_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_INSIDE_OF_TRUCK_G08_M01",
+      "name": "Naranja_InsideOfTruck_G08_M01_Layout",
+      "width": 9,
+      "height": 112,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary24",
+      "border_filepath": "data/layouts/Naranja_InsideOfTruck_G08_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_InsideOfTruck_G08_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_VALENCIA_G08_M03",
+      "name": "Naranja_IslaValencia_G08_M03_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaValencia_G08_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaValencia_G08_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALN_TANG_G09_M00",
+      "name": "Naranja_ValnTang_G09_M00_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary25",
+      "border_filepath": "data/layouts/Naranja_ValnTang_G09_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValnTang_G09_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALN_TANG_G09_M01",
+      "name": "Naranja_ValnTang_G09_M01_Layout",
+      "width": 17,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_ValnTang_G09_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ValnTang_G09_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MURCOTT_G09_M05",
+      "name": "Naranja_IslaMurcott_G09_M05_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary26",
+      "border_filepath": "data/layouts/Naranja_IslaMurcott_G09_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMurcott_G09_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MURCOTT_G09_M06",
+      "name": "Naranja_IslaMurcott_G09_M06_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary27",
+      "border_filepath": "data/layouts/Naranja_IslaMurcott_G09_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMurcott_G09_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MURCOTT_G09_M07",
+      "name": "Naranja_IslaMurcott_G09_M07_Layout",
+      "width": 20,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary27",
+      "border_filepath": "data/layouts/Naranja_IslaMurcott_G09_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMurcott_G09_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MURCOTT_G09_M08",
+      "name": "Naranja_IslaMurcott_G09_M08_Layout",
+      "width": 24,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaMurcott_G09_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMurcott_G09_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARIN_G10_M00",
+      "name": "Naranja_IslaMandarin_G10_M00_Layout",
+      "width": 10,
+      "height": 21,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary28",
+      "border_filepath": "data/layouts/Naranja_IslaMandarin_G10_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarin_G10_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARIN_G10_M01",
+      "name": "Naranja_IslaMandarin_G10_M01_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary25",
+      "border_filepath": "data/layouts/Naranja_IslaMandarin_G10_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarin_G10_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARIN_G10_M03",
+      "name": "Naranja_IslaMandarin_G10_M03_Layout",
+      "width": 22,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary29",
+      "border_filepath": "data/layouts/Naranja_IslaMandarin_G10_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarin_G10_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M00",
+      "name": "Naranja_IslaTrovita_G11_M00_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M01",
+      "name": "Naranja_IslaTrovita_G11_M01_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M02",
+      "name": "Naranja_IslaTrovita_G11_M02_Layout",
+      "width": 19,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M03",
+      "name": "Naranja_IslaTrovita_G11_M03_Layout",
+      "width": 11,
+      "height": 19,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary30",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M04",
+      "name": "Naranja_IslaTrovita_G11_M04_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary31",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M08",
+      "name": "Naranja_IslaTrovita_G11_M08_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M09",
+      "name": "Naranja_IslaTrovita_G11_M09_Layout",
+      "width": 14,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M10",
+      "name": "Naranja_IslaTrovita_G11_M10_Layout",
+      "width": 13,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M11",
+      "name": "Naranja_IslaTrovita_G11_M11_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M12",
+      "name": "Naranja_IslaTrovita_G11_M12_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M12/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M12/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M13",
+      "name": "Naranja_IslaTrovita_G11_M13_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M13/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M13/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M14",
+      "name": "Naranja_IslaTrovita_G11_M14_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M14/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M14/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M15",
+      "name": "Naranja_IslaTrovita_G11_M15_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaTrovita_G11_M15/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaTrovita_G11_M15/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_SHAMOUTI_G12_M00",
+      "name": "Naranja_IslaShamouti_G12_M00_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaShamouti_G12_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaShamouti_G12_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_SHAMOUTI_G12_M01",
+      "name": "Naranja_IslaShamouti_G12_M01_Layout",
+      "width": 20,
+      "height": 25,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary32",
+      "border_filepath": "data/layouts/Naranja_IslaShamouti_G12_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaShamouti_G12_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_SHAMOUTI_G12_M05",
+      "name": "Naranja_IslaShamouti_G12_M05_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaShamouti_G12_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaShamouti_G12_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_SHAMOUTI_G12_M09",
+      "name": "Naranja_IslaShamouti_G12_M09_Layout",
+      "width": 8,
+      "height": 6,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaShamouti_G12_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaShamouti_G12_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M00",
+      "name": "Naranja_IslaKumquat_G13_M00_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M01",
+      "name": "Naranja_IslaKumquat_G13_M01_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M02",
+      "name": "Naranja_IslaKumquat_G13_M02_Layout",
+      "width": 21,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary33",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M03",
+      "name": "Naranja_IslaKumquat_G13_M03_Layout",
+      "width": 22,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary33",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M04",
+      "name": "Naranja_IslaKumquat_G13_M04_Layout",
+      "width": 23,
+      "height": 12,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M05",
+      "name": "Naranja_IslaKumquat_G13_M05_Layout",
+      "width": 51,
+      "height": 33,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M09",
+      "name": "Naranja_IslaKumquat_G13_M09_Layout",
+      "width": 12,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M11",
+      "name": "Naranja_IslaKumquat_G13_M11_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_KUMQUAT_G13_M14",
+      "name": "Naranja_IslaKumquat_G13_M14_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaKumquat_G13_M14/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaKumquat_G13_M14/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M17",
+      "name": "Naranja_IslaMandarina_G13_M17_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M17/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M17/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M18",
+      "name": "Naranja_IslaMandarina_G13_M18_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M18/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M18/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M19",
+      "name": "Naranja_IslaMandarina_G13_M19_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M19/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M19/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M20",
+      "name": "Naranja_IslaMandarina_G13_M20_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M20/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M20/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M21",
+      "name": "Naranja_IslaMandarina_G13_M21_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M21/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M21/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M22",
+      "name": "Naranja_IslaMandarina_G13_M22_Layout",
+      "width": 18,
+      "height": 12,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M22/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M22/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M23",
+      "name": "Naranja_IslaMandarina_G13_M23_Layout",
+      "width": 4,
+      "height": 6,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary34",
+      "border_filepath": "data/layouts/Naranja_IslaMandarina_G13_M23/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMandarina_G13_M23/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G14_M00",
+      "name": "Naranja_IslaMellsweet_G14_M00_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary35",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G14_M07",
+      "name": "Naranja_IslaMellsweet_G14_M07_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G14_M09",
+      "name": "Naranja_IslaMellsweet_G14_M09_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G14_M10",
+      "name": "Naranja_IslaMellsweet_G14_M10_Layout",
+      "width": 16,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G14_M11",
+      "name": "Naranja_IslaMellsweet_G14_M11_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MELLSWEET_G14_M12",
+      "name": "Naranja_IslaMellsweet_G14_M12_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M12/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMellsweet_G14_M12/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M00",
+      "name": "Naranja_IslaNueva_G15_M00_Layout",
+      "width": 17,
+      "height": 26,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary36",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G15_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G15_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M01",
+      "name": "Naranja_IslaNueva_G15_M01_Layout",
+      "width": 17,
+      "height": 26,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary36",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G15_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G15_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M05",
+      "name": "Naranja_IslaNueva_G15_M05_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G15_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G15_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M06",
+      "name": "Naranja_IslaNueva_G15_M06_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G15_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G15_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M07",
+      "name": "Naranja_IslaNueva_G15_M07_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G15_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G15_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NUEVA_G15_M12",
+      "name": "Naranja_IslaNueva_G15_M12_Layout",
+      "width": 8,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_IslaNueva_G15_M12/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNueva_G15_M12/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M00",
+      "name": "Naranja_IslaPomelo_G16_M00_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M01",
+      "name": "Naranja_IslaPomelo_G16_M01_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M02",
+      "name": "Naranja_IslaPomelo_G16_M02_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M03",
+      "name": "Naranja_IslaPomelo_G16_M03_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M04",
+      "name": "Naranja_IslaPomelo_G16_M04_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M05",
+      "name": "Naranja_IslaPomelo_G16_M05_Layout",
+      "width": 11,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M08",
+      "name": "Naranja_IslaPomelo_G16_M08_Layout",
+      "width": 11,
+      "height": 34,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary37",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M10",
+      "name": "Naranja_IslaPomelo_G16_M10_Layout",
+      "width": 19,
+      "height": 12,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary18",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_POMELO_G16_M11",
+      "name": "Naranja_IslaPomelo_G16_M11_Layout",
+      "width": 15,
+      "height": 17,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary38",
+      "border_filepath": "data/layouts/Naranja_IslaPomelo_G16_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaPomelo_G16_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLAS_G17_M00",
+      "name": "Naranja_Islas_G17_M00_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Islas_G17_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Islas_G17_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLAS_G17_M01",
+      "name": "Naranja_Islas_G17_M01_Layout",
+      "width": 15,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary39",
+      "border_filepath": "data/layouts/Naranja_Islas_G17_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Islas_G17_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_112_G19_M00",
+      "name": "Naranja_Route112_G19_M00_Layout",
+      "width": 13,
+      "height": 12,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Route112_G19_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route112_G19_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_NAVEL_G20_M00",
+      "name": "Naranja_IslaNavel_G20_M00_Layout",
+      "width": 10,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary10",
+      "border_filepath": "data/layouts/Naranja_IslaNavel_G20_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaNavel_G20_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAMINO_FRIO_G20_M01",
+      "name": "Naranja_CaminoFrio_G20_M01_Layout",
+      "width": 29,
+      "height": 56,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary10",
+      "border_filepath": "data/layouts/Naranja_CaminoFrio_G20_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaminoFrio_G20_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAMINO_FRIO_G20_M02",
+      "name": "Naranja_CaminoFrio_G20_M02_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary18",
+      "border_filepath": "data/layouts/Naranja_CaminoFrio_G20_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaminoFrio_G20_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_MANDARIN_G21_M00",
+      "name": "Naranja_Mandarin_G21_M00_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Mandarin_G21_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Mandarin_G21_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_DESIERTO_G22_M00",
+      "name": "Naranja_Desierto_G22_M00_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary40",
+      "border_filepath": "data/layouts/Naranja_Desierto_G22_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Desierto_G22_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_121_G23_M00",
+      "name": "Naranja_Route121_G23_M00_Layout",
+      "width": 18,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary24",
+      "border_filepath": "data/layouts/Naranja_Route121_G23_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route121_G23_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_GRANITE_CAVE_G24_M00",
+      "name": "Naranja_GraniteCave_G24_M00_Layout",
+      "width": 30,
+      "height": 42,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary41",
+      "border_filepath": "data/layouts/Naranja_GraniteCave_G24_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_GraniteCave_G24_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_GRANITE_CAVE_G24_M01",
+      "name": "Naranja_GraniteCave_G24_M01_Layout",
+      "width": 30,
+      "height": 32,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary41",
+      "border_filepath": "data/layouts/Naranja_GraniteCave_G24_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_GraniteCave_G24_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_GRANITE_CAVE_G24_M02",
+      "name": "Naranja_GraniteCave_G24_M02_Layout",
+      "width": 29,
+      "height": 38,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary41",
+      "border_filepath": "data/layouts/Naranja_GraniteCave_G24_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_GraniteCave_G24_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_GRANITE_CAVE_G24_M03",
+      "name": "Naranja_GraniteCave_G24_M03_Layout",
+      "width": 11,
+      "height": 18,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary41",
+      "border_filepath": "data/layouts/Naranja_GraniteCave_G24_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_GraniteCave_G24_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CUEVA_DE_CRISTAL_G24_M04",
+      "name": "Naranja_CuevaDeCristal_G24_M04_Layout",
+      "width": 36,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary36",
+      "border_filepath": "data/layouts/Naranja_CuevaDeCristal_G24_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CuevaDeCristal_G24_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G24_M05",
+      "name": "Naranja_Underwater_G24_M05_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G24_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G24_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MIKAN_G24_M06",
+      "name": "Naranja_IslaMikan_G24_M06_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary42",
+      "border_filepath": "data/layouts/Naranja_IslaMikan_G24_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMikan_G24_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CUEVA_KABUTO_G24_M07",
+      "name": "Naranja_CuevaKabuto_G24_M07_Layout",
+      "width": 42,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary43",
+      "border_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CUEVA_KABUTO_G24_M08",
+      "name": "Naranja_CuevaKabuto_G24_M08_Layout",
+      "width": 32,
+      "height": 26,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary43",
+      "border_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CUEVA_KABUTO_G24_M09",
+      "name": "Naranja_CuevaKabuto_G24_M09_Layout",
+      "width": 32,
+      "height": 26,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary43",
+      "border_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CUEVA_KABUTO_G24_M10",
+      "name": "Naranja_CuevaKabuto_G24_M10_Layout",
+      "width": 15,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary43",
+      "border_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CuevaKabuto_G24_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VALLEDELASFLORES_G24_M11",
+      "name": "Naranja_Valledelasflores_G24_M11_Layout",
+      "width": 48,
+      "height": 44,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_Valledelasflores_G24_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Valledelasflores_G24_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_MT_CHIMNEY_G24_M12",
+      "name": "Naranja_MtChimney_G24_M12_Layout",
+      "width": 40,
+      "height": 47,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary09",
+      "border_filepath": "data/layouts/Naranja_MtChimney_G24_M12/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_MtChimney_G24_M12/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_JAGGED_PASS_G24_M13",
+      "name": "Naranja_JaggedPass_G24_M13_Layout",
+      "width": 30,
+      "height": 46,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary09",
+      "border_filepath": "data/layouts/Naranja_JaggedPass_G24_M13/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_JaggedPass_G24_M13/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_FIERY_PATH_G24_M14",
+      "name": "Naranja_FieryPath_G24_M14_Layout",
+      "width": 35,
+      "height": 38,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary09",
+      "border_filepath": "data/layouts/Naranja_FieryPath_G24_M14/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_FieryPath_G24_M14/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M15",
+      "name": "Naranja_Bementer_G24_M15_Layout",
+      "width": 22,
+      "height": 19,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M15/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M15/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M16",
+      "name": "Naranja_Bementer_G24_M16_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M16/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M16/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M17",
+      "name": "Naranja_Bementer_G24_M17_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M17/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M17/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M18",
+      "name": "Naranja_Bementer_G24_M18_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M18/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M18/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M19",
+      "name": "Naranja_Bementer_G24_M19_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M19/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M19/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M20",
+      "name": "Naranja_Bementer_G24_M20_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M20/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M20/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M21",
+      "name": "Naranja_Bementer_G24_M21_Layout",
+      "width": 38,
+      "height": 51,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M21/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M21/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BEMENTER_G24_M22",
+      "name": "Naranja_Bementer_G24_M22_Layout",
+      "width": 50,
+      "height": 37,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_Bementer_G24_M22/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Bementer_G24_M22/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M23",
+      "name": "Naranja_TeamHideshoalCave_G24_M23_Layout",
+      "width": 28,
+      "height": 30,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M23/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M23/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M24",
+      "name": "Naranja_TeamHideshoalCave_G24_M24_Layout",
+      "width": 51,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M24/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M24/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M25",
+      "name": "Naranja_TeamHideshoalCave_G24_M25_Layout",
+      "width": 34,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M25/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M25/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G24_M26",
+      "name": "Naranja_Underwater_G24_M26_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G24_M26/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G24_M26/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M27",
+      "name": "Naranja_SeafloorCavern_G24_M27_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M27/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M27/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M28",
+      "name": "Naranja_SeafloorCavern_G24_M28_Layout",
+      "width": 20,
+      "height": 21,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M28/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M28/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TANGELO_G24_M29",
+      "name": "Naranja_Tangelo_G24_M29_Layout",
+      "width": 18,
+      "height": 21,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary18",
+      "border_filepath": "data/layouts/Naranja_Tangelo_G24_M29/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Tangelo_G24_M29/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M30",
+      "name": "Naranja_SeafloorCavern_G24_M30_Layout",
+      "width": 16,
+      "height": 17,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M30/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M30/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M31",
+      "name": "Naranja_SeafloorCavern_G24_M31_Layout",
+      "width": 18,
+      "height": 19,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M31/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M31/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M32",
+      "name": "Naranja_SeafloorCavern_G24_M32_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M32/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M32/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLA_MIKAN_G24_M33",
+      "name": "Naranja_IslaMikan_G24_M33_Layout",
+      "width": 24,
+      "height": 23,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary42",
+      "border_filepath": "data/layouts/Naranja_IslaMikan_G24_M33/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslaMikan_G24_M33/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M34",
+      "name": "Naranja_SeafloorCavern_G24_M34_Layout",
+      "width": 23,
+      "height": 25,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M34/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M34/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M35",
+      "name": "Naranja_SeafloorCavern_G24_M35_Layout",
+      "width": 11,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M35/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M35/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M36",
+      "name": "Naranja_SeafloorCavern_G24_M36_Layout",
+      "width": 27,
+      "height": 46,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M36/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SeafloorCavern_G24_M36/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M37",
+      "name": "Naranja_CaveOfOrigin_G24_M37_Layout",
+      "width": 19,
+      "height": 26,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M37/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M37/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M38",
+      "name": "Naranja_CaveOfOrigin_G24_M38_Layout",
+      "width": 23,
+      "height": 23,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M38/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M38/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M39",
+      "name": "Naranja_CaveOfOrigin_G24_M39_Layout",
+      "width": 23,
+      "height": 23,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M39/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M39/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M40",
+      "name": "Naranja_CaveOfOrigin_G24_M40_Layout",
+      "width": 21,
+      "height": 21,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M40/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M40/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M41",
+      "name": "Naranja_CaveOfOrigin_G24_M41_Layout",
+      "width": 19,
+      "height": 21,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M41/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M41/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M42",
+      "name": "Naranja_CaveOfOrigin_G24_M42_Layout",
+      "width": 19,
+      "height": 19,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M42/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_CaveOfOrigin_G24_M42/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VICTORY_ROAD_G24_M43",
+      "name": "Naranja_VictoryRoad_G24_M43_Layout",
+      "width": 46,
+      "height": 45,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_VictoryRoad_G24_M43/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_VictoryRoad_G24_M43/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VICTORY_ROAD_G24_M44",
+      "name": "Naranja_VictoryRoad_G24_M44_Layout",
+      "width": 46,
+      "height": 31,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_VictoryRoad_G24_M44/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_VictoryRoad_G24_M44/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_VICTORY_ROAD_G24_M45",
+      "name": "Naranja_VictoryRoad_G24_M45_Layout",
+      "width": 46,
+      "height": 31,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_VictoryRoad_G24_M45/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_VictoryRoad_G24_M45/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M46",
+      "name": "Naranja_ShoalCave_G24_M46_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M46/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M46/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M47",
+      "name": "Naranja_ShoalCave_G24_M47_Layout",
+      "width": 46,
+      "height": 38,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M47/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M47/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M48",
+      "name": "Naranja_ShoalCave_G24_M48_Layout",
+      "width": 21,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M48/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M48/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M49",
+      "name": "Naranja_ShoalCave_G24_M49_Layout",
+      "width": 31,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M49/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M49/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M50",
+      "name": "Naranja_ShoalCave_G24_M50_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M50/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M50/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M51",
+      "name": "Naranja_ShoalCave_G24_M51_Layout",
+      "width": 46,
+      "height": 38,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M51/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M51/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_NEW_MAUVILLE_G24_M52",
+      "name": "Naranja_NewMauville_G24_M52_Layout",
+      "width": 9,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_NewMauville_G24_M52/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_NewMauville_G24_M52/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_NEW_MAUVILLE_G24_M53",
+      "name": "Naranja_NewMauville_G24_M53_Layout",
+      "width": 41,
+      "height": 41,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary25",
+      "border_filepath": "data/layouts/Naranja_NewMauville_G24_M53/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_NewMauville_G24_M53/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M54",
+      "name": "Naranja_BandonedShip_G24_M54_Layout",
+      "width": 23,
+      "height": 21,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M54/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M54/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M55",
+      "name": "Naranja_BandonedShip_G24_M55_Layout",
+      "width": 18,
+      "height": 12,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M55/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M55/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M56",
+      "name": "Naranja_BandonedShip_G24_M56_Layout",
+      "width": 18,
+      "height": 17,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M56/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M56/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M57",
+      "name": "Naranja_BandonedShip_G24_M57_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M57/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M57/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M58",
+      "name": "Naranja_BandonedShip_G24_M58_Layout",
+      "width": 27,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M58/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M58/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M59",
+      "name": "Naranja_BandonedShip_G24_M59_Layout",
+      "width": 18,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M59/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M59/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M60",
+      "name": "Naranja_BandonedShip_G24_M60_Layout",
+      "width": 8,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M60/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M60/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M61",
+      "name": "Naranja_BandonedShip_G24_M61_Layout",
+      "width": 9,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M61/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M61/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M62",
+      "name": "Naranja_BandonedShip_G24_M62_Layout",
+      "width": 9,
+      "height": 17,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M62/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M62/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M63",
+      "name": "Naranja_BandonedShip_G24_M63_Layout",
+      "width": 9,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M63/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M63/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M64",
+      "name": "Naranja_BandonedShip_G24_M64_Layout",
+      "width": 21,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M64/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M64/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M65",
+      "name": "Naranja_BandonedShip_G24_M65_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M65/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M65/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M66",
+      "name": "Naranja_BandonedShip_G24_M66_Layout",
+      "width": 44,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_BandonedShip_G24_M66/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_BandonedShip_G24_M66/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLAND_CAVE_G24_M67",
+      "name": "Naranja_IslandCave_G24_M67_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_IslandCave_G24_M67/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_IslandCave_G24_M67/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ANCIENT_TOMB_G24_M68",
+      "name": "Naranja_AncientTomb_G24_M68_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_AncientTomb_G24_M68/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_AncientTomb_G24_M68/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G24_M69",
+      "name": "Naranja_Underwater_G24_M69_Layout",
+      "width": 18,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G24_M69/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G24_M69/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_UNDERWATER_G24_M70",
+      "name": "Naranja_Underwater_G24_M70_Layout",
+      "width": 22,
+      "height": 48,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary14",
+      "border_filepath": "data/layouts/Naranja_Underwater_G24_M70/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Underwater_G24_M70/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEALED_CHAMBER_G24_M71",
+      "name": "Naranja_SealedChamber_G24_M71_Layout",
+      "width": 21,
+      "height": 23,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SealedChamber_G24_M71/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SealedChamber_G24_M71/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SEALED_CHAMBER_G24_M72",
+      "name": "Naranja_SealedChamber_G24_M72_Layout",
+      "width": 21,
+      "height": 23,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SealedChamber_G24_M72/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SealedChamber_G24_M72/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SCORCHED_SLAB_G24_M73",
+      "name": "Naranja_ScorchedSlab_G24_M73_Layout",
+      "width": 15,
+      "height": 20,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ScorchedSlab_G24_M73/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ScorchedSlab_G24_M73/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M74",
+      "name": "Naranja_TeamHideshoalCave_G24_M74_Layout",
+      "width": 28,
+      "height": 30,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M74/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M74/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M75",
+      "name": "Naranja_TeamHideshoalCave_G24_M75_Layout",
+      "width": 62,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M75/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M75/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M76",
+      "name": "Naranja_TeamHideshoalCave_G24_M76_Layout",
+      "width": 34,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary23",
+      "border_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M76/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_TeamHideshoalCave_G24_M76/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M77",
+      "name": "Naranja_SkyPillar_G24_M77_Layout",
+      "width": 18,
+      "height": 18,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M77/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M77/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M78",
+      "name": "Naranja_SkyPillar_G24_M78_Layout",
+      "width": 28,
+      "height": 23,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M78/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M78/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M79",
+      "name": "Naranja_SkyPillar_G24_M79_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M79/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M79/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M80",
+      "name": "Naranja_SkyPillar_G24_M80_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M80/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M80/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M81",
+      "name": "Naranja_SkyPillar_G24_M81_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M81/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M81/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M82",
+      "name": "Naranja_SkyPillar_G24_M82_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M82/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M82/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M83",
+      "name": "Naranja_ShoalCave_G24_M83_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary13",
+      "border_filepath": "data/layouts/Naranja_ShoalCave_G24_M83/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_ShoalCave_G24_M83/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M84",
+      "name": "Naranja_SkyPillar_G24_M84_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M84/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M84/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SKY_PILLAR_G24_M85",
+      "name": "Naranja_SkyPillar_G24_M85_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary11",
+      "border_filepath": "data/layouts/Naranja_SkyPillar_G24_M85/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SkyPillar_G24_M85/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M00",
+      "name": "Naranja_SecretBase_G25_M00_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary45",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M01",
+      "name": "Naranja_SecretBase_G25_M01_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary42",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M02",
+      "name": "Naranja_SecretBase_G25_M02_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary46",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M03",
+      "name": "Naranja_SecretBase_G25_M03_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary47",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M04",
+      "name": "Naranja_SecretBase_G25_M04_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary48",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M05",
+      "name": "Naranja_SecretBase_G25_M05_Layout",
+      "width": 11,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary49",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M06",
+      "name": "Naranja_SecretBase_G25_M06_Layout",
+      "width": 7,
+      "height": 16,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary45",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M07",
+      "name": "Naranja_SecretBase_G25_M07_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary42",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M08",
+      "name": "Naranja_SecretBase_G25_M08_Layout",
+      "width": 15,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary46",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M09",
+      "name": "Naranja_SecretBase_G25_M09_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary47",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M10",
+      "name": "Naranja_SecretBase_G25_M10_Layout",
+      "width": 7,
+      "height": 16,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary48",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M11",
+      "name": "Naranja_SecretBase_G25_M11_Layout",
+      "width": 15,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary49",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M12",
+      "name": "Naranja_SecretBase_G25_M12_Layout",
+      "width": 15,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary45",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M12/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M12/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M13",
+      "name": "Naranja_SecretBase_G25_M13_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary42",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M13/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M13/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M14",
+      "name": "Naranja_SecretBase_G25_M14_Layout",
+      "width": 10,
+      "height": 17,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary46",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M14/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M14/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M15",
+      "name": "Naranja_SecretBase_G25_M15_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary47",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M15/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M15/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M16",
+      "name": "Naranja_SecretBase_G25_M16_Layout",
+      "width": 17,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary48",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M16/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M16/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M17",
+      "name": "Naranja_SecretBase_G25_M17_Layout",
+      "width": 13,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary49",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M17/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M17/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M18",
+      "name": "Naranja_SecretBase_G25_M18_Layout",
+      "width": 9,
+      "height": 15,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary45",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M18/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M18/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M19",
+      "name": "Naranja_SecretBase_G25_M19_Layout",
+      "width": 14,
+      "height": 12,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary42",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M19/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M19/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M20",
+      "name": "Naranja_SecretBase_G25_M20_Layout",
+      "width": 9,
+      "height": 17,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary46",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M20/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M20/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M21",
+      "name": "Naranja_SecretBase_G25_M21_Layout",
+      "width": 13,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary47",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M21/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M21/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M22",
+      "name": "Naranja_SecretBase_G25_M22_Layout",
+      "width": 14,
+      "height": 14,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary48",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M22/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M22/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SECRET_BASE_G25_M23",
+      "name": "Naranja_SecretBase_G25_M23_Layout",
+      "width": 14,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary02",
+      "secondary_tileset": "gTileset_NaranjaSecondary49",
+      "border_filepath": "data/layouts/Naranja_SecretBase_G25_M23/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SecretBase_G25_M23/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M24",
+      "name": "Naranja_SinNombre_G25_M24_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary38",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M24/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M24/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M25",
+      "name": "Naranja_SinNombre_G25_M25_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary38",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M25/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M25/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M26",
+      "name": "Naranja_SinNombre_G25_M26_Layout",
+      "width": 20,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary38",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M26/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M26/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M27",
+      "name": "Naranja_SinNombre_G25_M27_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary38",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M27/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M27/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M28",
+      "name": "Naranja_SinNombre_G25_M28_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M28/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M28/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M29",
+      "name": "Naranja_SinNombre_G25_M29_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M29/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M29/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M30",
+      "name": "Naranja_SinNombre_G25_M30_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M30/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M30/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M31",
+      "name": "Naranja_SinNombre_G25_M31_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M31/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M31/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M32",
+      "name": "Naranja_SinNombre_G25_M32_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M32/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M32/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M33",
+      "name": "Naranja_SinNombre_G25_M33_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M33/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M33/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M34",
+      "name": "Naranja_SinNombre_G25_M34_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M34/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M34/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M35",
+      "name": "Naranja_SinNombre_G25_M35_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M35/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M35/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M36",
+      "name": "Naranja_SinNombre_G25_M36_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M36/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M36/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M37",
+      "name": "Naranja_SinNombre_G25_M37_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M37/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M37/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M38",
+      "name": "Naranja_SinNombre_G25_M38_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M38/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M38/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M39",
+      "name": "Naranja_SinNombre_G25_M39_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary22",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M39/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M39/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_INSIDE_OF_TRUCK_G25_M40",
+      "name": "Naranja_InsideOfTruck_G25_M40_Layout",
+      "width": 8,
+      "height": 28,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary50",
+      "border_filepath": "data/layouts/Naranja_InsideOfTruck_G25_M40/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_InsideOfTruck_G25_M40/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M41",
+      "name": "Naranja_SinNombre_G25_M41_Layout",
+      "width": 18,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M41/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M41/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M42",
+      "name": "Naranja_SinNombre_G25_M42_Layout",
+      "width": 17,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M42/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M42/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M43",
+      "name": "Naranja_SinNombre_G25_M43_Layout",
+      "width": 36,
+      "height": 18,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary44",
+      "border_filepath": "data/layouts/Naranja_SinNombre_G25_M43/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SinNombre_G25_M43/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SAFARI_G26_M00",
+      "name": "Naranja_Safari_G26_M00_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Safari_G26_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Safari_G26_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SAFARI_G26_M01",
+      "name": "Naranja_Safari_G26_M01_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Safari_G26_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Safari_G26_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SAFARI_G26_M02",
+      "name": "Naranja_Safari_G26_M02_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Safari_G26_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Safari_G26_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SAFARI_G26_M03",
+      "name": "Naranja_Safari_G26_M03_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary04",
+      "border_filepath": "data/layouts/Naranja_Safari_G26_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Safari_G26_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G26_M04",
+      "name": "Naranja_PuebloPaleta_G26_M04_Layout",
+      "width": 29,
+      "height": 32,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary01",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G26_M05",
+      "name": "Naranja_PuebloPaleta_G26_M05_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary34",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G26_M06",
+      "name": "Naranja_PuebloPaleta_G26_M06_Layout",
+      "width": 4,
+      "height": 7,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary34",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G26_M07",
+      "name": "Naranja_PuebloPaleta_G26_M07_Layout",
+      "width": 17,
+      "height": 5,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary34",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_PUEBLO_PALETA_G26_M08",
+      "name": "Naranja_PuebloPaleta_G26_M08_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary34",
+      "border_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_PuebloPaleta_G26_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SOUTHERN_ISLAND_G26_M09",
+      "name": "Naranja_SouthernIsland_G26_M09_Layout",
+      "width": 33,
+      "height": 30,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_SouthernIsland_G26_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SouthernIsland_G26_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SOUTHERN_ISLAND_G26_M10",
+      "name": "Naranja_SouthernIsland_G26_M10_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_SouthernIsland_G26_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_SouthernIsland_G26_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_SAFARI_G26_M11",
+      "name": "Naranja_Safari_G26_M11_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Safari_G26_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Safari_G26_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ISLAS_G27_M00",
+      "name": "Naranja_Islas_G27_M00_Layout",
+      "width": 1,
+      "height": 1,
+      "primary_tileset": "gTileset_NaranjaPrimary00",
+      "secondary_tileset": "gTileset_NaranjaSecondary02",
+      "border_filepath": "data/layouts/Naranja_Islas_G27_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Islas_G27_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_109_G28_M00",
+      "name": "Naranja_Route109_G28_M00_Layout",
+      "width": 15,
+      "height": 10,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary51",
+      "border_filepath": "data/layouts/Naranja_Route109_G28_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route109_G28_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M00",
+      "name": "Naranja_Route110_G29_M00_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M01",
+      "name": "Naranja_Route110_G29_M01_Layout",
+      "width": 12,
+      "height": 8,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M02",
+      "name": "Naranja_Route110_G29_M02_Layout",
+      "width": 15,
+      "height": 24,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M02/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M02/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M03",
+      "name": "Naranja_Route110_G29_M03_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M03/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M03/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M04",
+      "name": "Naranja_Route110_G29_M04_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M04/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M04/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M05",
+      "name": "Naranja_Route110_G29_M05_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M05/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M05/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M06",
+      "name": "Naranja_Route110_G29_M06_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M06/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M06/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M07",
+      "name": "Naranja_Route110_G29_M07_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M07/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M07/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M08",
+      "name": "Naranja_Route110_G29_M08_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M08/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M08/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M09",
+      "name": "Naranja_Route110_G29_M09_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M09/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M09/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M10",
+      "name": "Naranja_Route110_G29_M10_Layout",
+      "width": 15,
+      "height": 22,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary52",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M10/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M10/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_110_G29_M11",
+      "name": "Naranja_Route110_G29_M11_Layout",
+      "width": 15,
+      "height": 6,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary19",
+      "border_filepath": "data/layouts/Naranja_Route110_G29_M11/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route110_G29_M11/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_119_G32_M00",
+      "name": "Naranja_Route119_G32_M00_Layout",
+      "width": 20,
+      "height": 13,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary16",
+      "border_filepath": "data/layouts/Naranja_Route119_G32_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route119_G32_M00/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_119_G32_M01",
+      "name": "Naranja_Route119_G32_M01_Layout",
+      "width": 20,
+      "height": 11,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary16",
+      "border_filepath": "data/layouts/Naranja_Route119_G32_M01/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route119_G32_M01/map.bin"
+    },
+    {
+      "id": "LAYOUT_NARANJA_ROUTE_124_G33_M00",
+      "name": "Naranja_Route124_G33_M00_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_NaranjaPrimary01",
+      "secondary_tileset": "gTileset_NaranjaSecondary17",
+      "border_filepath": "data/layouts/Naranja_Route124_G33_M00/border.bin",
+      "blockdata_filepath": "data/layouts/Naranja_Route124_G33_M00/map.bin"
     }
   ]
 }

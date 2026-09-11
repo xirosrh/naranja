@@ -1,0 +1,98 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 5,
+  "map_number": 2,
+  "region_map_section_id": 4,
+  "region_name": "Isla NAVEL",
+  "header_pointer": "0x08305CEC",
+  "layout_pointer": "0x082CF4A0",
+  "events_pointer": "0x0838684C",
+  "scripts_pointer": "0x08153ACE",
+  "connections_pointer": "0x00000000",
+  "music_id": 452,
+  "source_layout_id": 73,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 19,
+      "kind": 0,
+      "x": 19,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": 2,
+      "movement_range_x": 2,
+      "movement_range_y": 2,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08153ACF",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 34,
+      "kind": 0,
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": 2,
+      "movement_range_x": 2,
+      "movement_range_y": 3,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08153AD8",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 35,
+      "kind": 0,
+      "x": 0,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": 2,
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08153AE1",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 17,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 1,
+      "dest_map_group": 5
+    },
+    {
+      "x": 11,
+      "y": 17,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 1,
+      "dest_map_group": 5
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 12,
+      "y": 14,
+      "elevation": 3,
+      "kind": 0,
+      "data": "0x08153AEA"
+    },
+    {
+      "x": 8,
+      "y": 14,
+      "elevation": 3,
+      "kind": 0,
+      "data": "0x08153AEA"
+    }
+  ]
+}

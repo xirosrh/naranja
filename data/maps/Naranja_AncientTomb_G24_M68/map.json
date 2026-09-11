@@ -1,0 +1,42 @@
+{
+  "id": "MAP_NARANJA_ANCIENT_TOMB_G24_M68",
+  "name": "Naranja_AncientTomb_G24_M68",
+  "layout": "LAYOUT_NARANJA_ANCIENT_TOMB_G24_M68",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 29,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ROUTE_120_G00_M35",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ANCIENT_TOMB_G24_M68",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ANCIENT_TOMB_G24_M68",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

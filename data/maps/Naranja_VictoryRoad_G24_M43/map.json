@@ -1,0 +1,56 @@
+{
+  "id": "MAP_NARANJA_VICTORY_ROAD_G24_M43",
+  "name": "Naranja_VictoryRoad_G24_M43",
+  "layout": "LAYOUT_NARANJA_VICTORY_ROAD_G24_M43",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 40,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ISLA_POMELO_G00_M08",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 39,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ISLA_POMELO_G00_M08",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 21,
+      "y": 32,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_VICTORY_ROAD_G24_M44",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 42,
+      "y": 38,
+      "elevation": 4,
+      "dest_map": "MAP_NARANJA_VICTORY_ROAD_G24_M44",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 9,
+      "y": 14,
+      "elevation": 4,
+      "dest_map": "MAP_NARANJA_VICTORY_ROAD_G24_M44",
+      "dest_warp_id": "4"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

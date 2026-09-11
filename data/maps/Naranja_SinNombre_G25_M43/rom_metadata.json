@@ -1,0 +1,253 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 25,
+  "map_number": 43,
+  "region_map_section_id": 87,
+  "region_name": "Sin Nombre",
+  "header_pointer": "0x08307B8C",
+  "layout_pointer": "0x082F6CE0",
+  "events_pointer": "0x083919D4",
+  "scripts_pointer": "0x0815FF05",
+  "connections_pointer": "0x00000000",
+  "music_id": 431,
+  "source_layout_id": 280,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 25,
+      "kind": 0,
+      "x": 4,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815FF5D",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 48,
+      "kind": 0,
+      "x": 34,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815FF74",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 48,
+      "kind": 0,
+      "x": 21,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815FF8B",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 65,
+      "kind": 0,
+      "x": 7,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815FFA2",
+      "flag": 0
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 26,
+      "kind": 0,
+      "x": 6,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815FFBD",
+      "flag": 0
+    },
+    {
+      "local_id": 6,
+      "graphics_id": 15,
+      "kind": 0,
+      "x": 22,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815FFD8",
+      "flag": 0
+    },
+    {
+      "local_id": 7,
+      "graphics_id": 20,
+      "kind": 0,
+      "x": 15,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815FFEF",
+      "flag": 0
+    },
+    {
+      "local_id": 8,
+      "graphics_id": 39,
+      "kind": 0,
+      "x": 28,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815FF06",
+      "flag": 951
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 5,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 14,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 23,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 31,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 3,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 32,
+      "y": 16,
+      "elevation": 0,
+      "dest_warp_id": 3,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 4,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 5,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 6,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    },
+    {
+      "x": 31,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 7,
+      "dest_map_num": 41,
+      "dest_map_group": 25
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 15,
+      "y": 11,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815FF47"
+    },
+    {
+      "x": 15,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815FF47"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "MAP_NARANJA_SIN_NOMBRE_G25_M43",
+  "name": "Naranja_SinNombre_G25_M43",
+  "layout": "LAYOUT_NARANJA_SIN_NOMBRE_G25_M43",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 23,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 31,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 32,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 31,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SIN_NOMBRE_G25_M41",
+      "dest_warp_id": "7"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

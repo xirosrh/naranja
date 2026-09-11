@@ -1,0 +1,53 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 18,
+  "map_number": 1,
+  "region_map_section_id": 26,
+  "region_name": "ROUTE 111",
+  "header_pointer": "0x08306C74",
+  "layout_pointer": "0x082CE414",
+  "events_pointer": "0x0838B7C0",
+  "scripts_pointer": "0x0815BFD1",
+  "connections_pointer": "0x00000000",
+  "music_id": 399,
+  "source_layout_id": 64,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 22,
+      "kind": 0,
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815BFDB",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 26,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 26,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

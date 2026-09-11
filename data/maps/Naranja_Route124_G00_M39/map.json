@@ -1,0 +1,54 @@
+{
+  "id": "MAP_NARANJA_ROUTE_124_G00_M39",
+  "name": "Naranja_Route124_G00_M39",
+  "layout": "LAYOUT_NARANJA_ROUTE_124_G00_M39",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ROUTE_126_G00_M41",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_ISLA_KUMQUAT_G00_M05",
+      "offset": 10,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_125_G00_M40",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_ISLA_MELLSWEET_G00_M06",
+      "offset": 40,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_UNDERWATER_G00_M50",
+      "offset": 0,
+      "direction": "dive"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 70,
+      "y": 48,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ROUTE_124_G33_M00",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

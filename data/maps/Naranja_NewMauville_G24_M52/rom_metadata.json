@@ -1,0 +1,46 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 52,
+  "region_map_section_id": 62,
+  "region_name": "NEW MAUVILLE",
+  "header_pointer": "0x08307320",
+  "layout_pointer": "0x082E5860",
+  "events_pointer": "0x0838DEF4",
+  "scripts_pointer": "0x0815E48A",
+  "connections_pointer": "0x00000000",
+  "music_id": 432,
+  "source_layout_id": 185,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 0,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 25,
+      "dest_map_group": 0
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 53,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "trigger": 16570,
+      "index": 0,
+      "script_pointer": "0x0815E4DC"
+    }
+  ],
+  "bg_events": []
+}

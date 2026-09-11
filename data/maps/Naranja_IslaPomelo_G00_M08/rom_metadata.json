@@ -1,0 +1,178 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 0,
+  "map_number": 8,
+  "region_map_section_id": 15,
+  "region_name": "Isla POMELO",
+  "header_pointer": "0x08305528",
+  "layout_pointer": "0x08291394",
+  "events_pointer": "0x083808E8",
+  "scripts_pointer": "0x0814D4D5",
+  "connections_pointer": "0x08308814",
+  "music_id": 422,
+  "source_layout_id": 9,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 30,
+      "y": 33,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 10,
+      "dest_map_group": 16
+    },
+    {
+      "x": 27,
+      "y": 48,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 12,
+      "dest_map_group": 16
+    },
+    {
+      "x": 18,
+      "y": 41,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 43,
+      "dest_map_group": 24
+    },
+    {
+      "x": 18,
+      "y": 27,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 43,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 17,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 16,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 18,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 19,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 20,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 21,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 22,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 23,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 24,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 25,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    },
+    {
+      "x": 26,
+      "y": 58,
+      "elevation": 1,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x0814D500"
+    }
+  ],
+  "bg_events": [
+    {
+      "x": 19,
+      "y": 43,
+      "elevation": 5,
+      "kind": 0,
+      "data": "0x0814D4E5"
+    },
+    {
+      "x": 29,
+      "y": 48,
+      "elevation": 0,
+      "kind": 1,
+      "data": "0x081A00EA"
+    },
+    {
+      "x": 18,
+      "y": 52,
+      "elevation": 5,
+      "kind": 0,
+      "data": "0x0814D4EE"
+    },
+    {
+      "x": 23,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0814D4F7"
+    },
+    {
+      "x": 28,
+      "y": 48,
+      "elevation": 0,
+      "kind": 1,
+      "data": "0x081A00EA"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "MAP_NARANJA_SEALED_CHAMBER_G24_M72",
+  "name": "Naranja_SealedChamber_G24_M72",
+  "layout": "LAYOUT_NARANJA_SEALED_CHAMBER_G24_M72",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SEALED_CHAMBER_G24_M71",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

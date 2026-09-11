@@ -1,0 +1,42 @@
+{
+  "id": "MAP_NARANJA_SEAFLOOR_CAVERN_G24_M30",
+  "name": "Naranja_SeafloorCavern_G24_M30",
+  "layout": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M30",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SEAFLOOR_CAVERN_G24_M35",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 10,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SEAFLOOR_CAVERN_G24_M34",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 4,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SEAFLOOR_CAVERN_G24_M28",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

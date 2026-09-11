@@ -1,0 +1,79 @@
+{
+  "id": "MAP_NARANJA_ROUTE_110_G00_M25",
+  "name": "Naranja_Route110_G00_M25",
+  "layout": "LAYOUT_NARANJA_ROUTE_110_G00_M25",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ISLA_MANDARIN_G00_M02",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_ISLA_MURCOTT_G00_M01",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_RUTA_AZUL_G00_M18",
+      "offset": 60,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 35,
+      "y": 24,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_NEW_MAUVILLE_G24_M52",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 66,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G29_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G29_M12",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G29_M12",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 16,
+      "y": 88,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G29_M11",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 88,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G29_M11",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,86 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 0,
+  "map_number": 51,
+  "region_map_section_id": 51,
+  "region_name": "UNDERWATER",
+  "header_pointer": "0x083059DC",
+  "layout_pointer": "0x082C8244",
+  "events_pointer": "0x083855E8",
+  "scripts_pointer": "0x08152638",
+  "connections_pointer": "0x08308D54",
+  "music_id": 411,
+  "source_layout_id": 51,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 45,
+      "y": 65,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 5,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 30,
+      "y": 17,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x000E006F"
+    },
+    {
+      "x": 41,
+      "y": 19,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x000F0002"
+    },
+    {
+      "x": 63,
+      "y": 19,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x0010006C"
+    },
+    {
+      "x": 10,
+      "y": 36,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x0011006A"
+    },
+    {
+      "x": 11,
+      "y": 39,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x00130041"
+    },
+    {
+      "x": 12,
+      "y": 35,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x00120032"
+    },
+    {
+      "x": 65,
+      "y": 60,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x0014006B"
+    },
+    {
+      "x": 9,
+      "y": 77,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x000C0031"
+    }
+  ]
+}

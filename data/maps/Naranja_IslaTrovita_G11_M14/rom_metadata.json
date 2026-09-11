@@ -1,0 +1,68 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 11,
+  "map_number": 14,
+  "region_map_section_id": 10,
+  "region_name": "Isla TROVITA",
+  "header_pointer": "0x083063B4",
+  "layout_pointer": "0x082FC218",
+  "events_pointer": "0x08388EE0",
+  "scripts_pointer": "0x08157D96",
+  "connections_pointer": "0x00000000",
+  "music_id": 399,
+  "source_layout_id": 296,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 29,
+      "kind": 0,
+      "x": 11,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157D97",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 5,
+      "kind": 0,
+      "x": 7,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 5,
+      "movement_range_x": 2,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08157DA0",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 13,
+      "dest_map_group": 11
+    },
+    {
+      "x": 1,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 15,
+      "dest_map_group": 11
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,68 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 26,
+  "map_number": 2,
+  "region_map_section_id": 57,
+  "region_name": "Safari",
+  "header_pointer": "0x08307BE0",
+  "layout_pointer": "0x082EC6A8",
+  "events_pointer": "0x08391B5C",
+  "scripts_pointer": "0x08160023",
+  "connections_pointer": "0x08308E00",
+  "music_id": 428,
+  "source_layout_id": 241,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 125,
+      "kind": 0,
+      "x": 22,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160024",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 0,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B1926",
+      "flag": 1131
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 7,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 11,
+      "dest_map_group": 26
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 32,
+      "y": 7,
+      "elevation": 3,
+      "kind": 0,
+      "data": "0x0816002D"
+    }
+  ]
+}

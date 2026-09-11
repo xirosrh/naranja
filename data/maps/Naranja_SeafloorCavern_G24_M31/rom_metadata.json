@@ -1,0 +1,69 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 31,
+  "region_map_section_id": 68,
+  "region_name": "SEAFLOOR CAVERN",
+  "header_pointer": "0x083070D4",
+  "layout_pointer": "0x082DE280",
+  "events_pointer": "0x0838D3BC",
+  "scripts_pointer": "0x0815DABF",
+  "connections_pointer": "0x00000000",
+  "music_id": 406,
+  "source_layout_id": 152,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 4,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 23,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815DACB",
+      "flag": 946
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 28,
+      "dest_map_group": 24
+    },
+    {
+      "x": 4,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 32,
+      "dest_map_group": 24
+    },
+    {
+      "x": 9,
+      "y": 10,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 32,
+      "dest_map_group": 24
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 27,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

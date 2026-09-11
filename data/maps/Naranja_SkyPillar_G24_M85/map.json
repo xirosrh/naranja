@@ -1,0 +1,28 @@
+{
+  "id": "MAP_NARANJA_SKY_PILLAR_G24_M85",
+  "name": "Naranja_SkyPillar_G24_M85",
+  "layout": "LAYOUT_NARANJA_SKY_PILLAR_G24_M85",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SKY_PILLAR_G24_M84",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

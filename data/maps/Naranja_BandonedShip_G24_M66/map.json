@@ -1,0 +1,84 @@
+{
+  "id": "MAP_NARANJA_BANDONED_SHIP_G24_M66",
+  "name": "Naranja_BandonedShip_G24_M66",
+  "layout": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M66",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 22,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 36,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 37,
+      "y": 14,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 21,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 36,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+      "dest_warp_id": "5"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

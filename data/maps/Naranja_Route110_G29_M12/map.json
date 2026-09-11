@@ -1,0 +1,49 @@
+{
+  "id": "MAP_NARANJA_ROUTE_110_G29_M12",
+  "name": "Naranja_Route110_G29_M12",
+  "layout": "LAYOUT_NARANJA_ROUTE_110_G29_M11",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G00_M25",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 2,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G00_M25",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G00_M25",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_110_G00_M25",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

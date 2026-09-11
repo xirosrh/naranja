@@ -1,0 +1,31 @@
+{
+  "id": "MAP_NARANJA_ROUTE_133_G00_M48",
+  "name": "Naranja_Route133_G00_M48",
+  "layout": "LAYOUT_NARANJA_ROUTE_133_G00_M48",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ROUTE_134_G00_M49",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_132_G00_M47",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

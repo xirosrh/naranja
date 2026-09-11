@@ -1,0 +1,144 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 26,
+  "map_number": 5,
+  "region_map_section_id": 58,
+  "region_name": "Pueblo PALETA",
+  "header_pointer": "0x08307C34",
+  "layout_pointer": "0x082F1E6C",
+  "events_pointer": "0x08391D40",
+  "scripts_pointer": "0x0816027E",
+  "connections_pointer": "0x00000000",
+  "music_id": 384,
+  "source_layout_id": 265,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 85,
+      "kind": 0,
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0816049E",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 65,
+      "kind": 0,
+      "x": 12,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081606A5",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 34,
+      "kind": 0,
+      "x": 10,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160715",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 7,
+      "kind": 0,
+      "x": 1,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0816071E",
+      "flag": 0
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 68,
+      "kind": 0,
+      "x": 4,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081AE1FF",
+      "flag": 918
+    },
+    {
+      "local_id": 6,
+      "graphics_id": 23,
+      "kind": 0,
+      "x": 7,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08160733",
+      "flag": 941
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 4,
+      "dest_map_group": 26
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 4,
+      "dest_map_group": 26
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 8,
+      "dest_map_group": 26
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 3,
+      "y": 5,
+      "elevation": 3,
+      "kind": 1,
+      "data": "0x08160727"
+    }
+  ]
+}

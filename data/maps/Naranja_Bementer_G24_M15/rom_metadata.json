@@ -1,0 +1,115 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 15,
+  "region_map_section_id": 65,
+  "region_name": "BEMENTER",
+  "header_pointer": "0x08306F14",
+  "layout_pointer": "0x082DB478",
+  "events_pointer": "0x0838C874",
+  "scripts_pointer": "0x0815D322",
+  "connections_pointer": "0x00000000",
+  "music_id": 432,
+  "source_layout_id": 138,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 30,
+      "kind": 0,
+      "x": 21,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D323",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 18,
+      "kind": 0,
+      "x": 17,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D35C",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 65,
+      "kind": 0,
+      "x": 13,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D365",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 18,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 37,
+      "dest_map_group": 0
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 21,
+      "dest_map_group": 24
+    },
+    {
+      "x": 18,
+      "y": 18,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 37,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 21,
+      "dest_map_group": 24
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 16,
+      "dest_map_group": 24
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 16,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": "MAP_NARANJA_ISLA_MANDARINA_G13_M20",
+  "name": "Naranja_IslaMandarina_G13_M20",
+  "layout": "LAYOUT_NARANJA_ISLA_MANDARINA_G13_M20",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 16,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G13_M19",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G13_M21",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G13_M23",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

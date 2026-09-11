@@ -1,0 +1,86 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 25,
+  "map_number": 27,
+  "region_map_section_id": 87,
+  "region_name": "Sin Nombre",
+  "header_pointer": "0x083079CC",
+  "layout_pointer": "0x082E9714",
+  "events_pointer": "0x08391488",
+  "scripts_pointer": "0x0815F57F",
+  "connections_pointer": "0x00000000",
+  "music_id": 422,
+  "source_layout_id": 225,
+  "show_map_name": false,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 127,
+      "dest_map_num": 127,
+      "dest_map_group": 127
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 127,
+      "dest_map_num": 127,
+      "dest_map_group": 127
+    },
+    {
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 127,
+      "dest_map_num": 127,
+      "dest_map_group": 127
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 127,
+      "dest_map_num": 127,
+      "dest_map_group": 127
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 3,
+      "y": 4,
+      "elevation": 3,
+      "trigger": 16384,
+      "index": 0,
+      "script_pointer": "0x081A4383"
+    },
+    {
+      "x": 3,
+      "y": 6,
+      "elevation": 3,
+      "trigger": 16384,
+      "index": 0,
+      "script_pointer": "0x081A43B9"
+    },
+    {
+      "x": 10,
+      "y": 4,
+      "elevation": 3,
+      "trigger": 16384,
+      "index": 0,
+      "script_pointer": "0x081A439E"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "trigger": 16384,
+      "index": 0,
+      "script_pointer": "0x081A43D4"
+    }
+  ],
+  "bg_events": []
+}

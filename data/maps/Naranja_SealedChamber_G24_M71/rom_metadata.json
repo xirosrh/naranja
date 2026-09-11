@@ -1,0 +1,233 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 71,
+  "region_map_section_id": 78,
+  "region_name": "SEALED CHAMBER",
+  "header_pointer": "0x08307534",
+  "layout_pointer": "0x082F83B8",
+  "events_pointer": "0x0838E8EC",
+  "scripts_pointer": "0x0815F0C6",
+  "connections_pointer": "0x00000000",
+  "music_id": 438,
+  "source_layout_id": 285,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 72,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F12C"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F13A"
+    },
+    {
+      "x": 5,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F148"
+    },
+    {
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F156"
+    },
+    {
+      "x": 11,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F164"
+    },
+    {
+      "x": 11,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F172"
+    },
+    {
+      "x": 11,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F180"
+    },
+    {
+      "x": 11,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F19C"
+    },
+    {
+      "x": 16,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F18E"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1AA"
+    },
+    {
+      "x": 10,
+      "y": 2,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1B8"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F12C"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F12C"
+    },
+    {
+      "x": 4,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F13A"
+    },
+    {
+      "x": 6,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F13A"
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F148"
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F148"
+    },
+    {
+      "x": 4,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F156"
+    },
+    {
+      "x": 6,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F156"
+    },
+    {
+      "x": 10,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F164"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F164"
+    },
+    {
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F172"
+    },
+    {
+      "x": 12,
+      "y": 9,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F172"
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F180"
+    },
+    {
+      "x": 12,
+      "y": 12,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F180"
+    },
+    {
+      "x": 10,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F19C"
+    },
+    {
+      "x": 12,
+      "y": 15,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F19C"
+    },
+    {
+      "x": 9,
+      "y": 2,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1D9"
+    },
+    {
+      "x": 11,
+      "y": 2,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1D9"
+    }
+  ]
+}

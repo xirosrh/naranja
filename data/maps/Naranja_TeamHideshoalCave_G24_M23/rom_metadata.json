@@ -1,0 +1,91 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 23,
+  "region_map_section_id": 66,
+  "region_name": "TEAM HIDESHOAL CAVE",
+  "header_pointer": "0x08306FF4",
+  "layout_pointer": "0x082DC26C",
+  "events_pointer": "0x0838CD6C",
+  "scripts_pointer": "0x0815D7C2",
+  "connections_pointer": "0x00000000",
+  "music_id": 430,
+  "source_layout_id": 144,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 13,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D7CE",
+      "flag": 821
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 14,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815D7ED",
+      "flag": 822
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 20,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 50,
+      "movement_range_x": 13,
+      "movement_range_y": 5,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815D80C",
+      "flag": 924
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 27,
+      "elevation": 1,
+      "dest_warp_id": 6,
+      "dest_map_num": 5,
+      "dest_map_group": 0
+    },
+    {
+      "x": 14,
+      "y": 27,
+      "elevation": 1,
+      "dest_warp_id": 6,
+      "dest_map_num": 5,
+      "dest_map_group": 0
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 24,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

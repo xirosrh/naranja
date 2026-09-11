@@ -1,0 +1,58 @@
+{
+  "id": "MAP_NARANJA_ROUTE_111_G00_M26",
+  "name": "Naranja_Route111_G00_M26",
+  "layout": "LAYOUT_NARANJA_ROUTE_111_G00_M26",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ISLA_MANDARIN_G00_M02",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_NORTE_G00_M28",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_112_G00_M27",
+      "offset": 20,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 113,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_111_G18_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 87,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MIKAN_G24_M06",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ROUTE_111_G18_M01",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

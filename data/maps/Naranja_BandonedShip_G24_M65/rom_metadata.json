@@ -1,0 +1,98 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 65,
+  "region_map_section_id": 61,
+  "region_name": "BANDONED SHIP",
+  "header_pointer": "0x0830748C",
+  "layout_pointer": "0x082F9D68",
+  "events_pointer": "0x0838E52C",
+  "scripts_pointer": "0x0815EB46",
+  "connections_pointer": "0x00000000",
+  "music_id": 381,
+  "source_layout_id": 290,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 66,
+      "dest_map_group": 24
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 66,
+      "dest_map_group": 24
+    },
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 4,
+      "dest_map_num": 66,
+      "dest_map_group": 24
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "dest_warp_id": 6,
+      "dest_map_num": 66,
+      "dest_map_group": 24
+    },
+    {
+      "x": 6,
+      "y": 3,
+      "elevation": 3,
+      "dest_warp_id": 7,
+      "dest_map_num": 66,
+      "dest_map_group": 24
+    },
+    {
+      "x": 9,
+      "y": 3,
+      "elevation": 3,
+      "dest_warp_id": 8,
+      "dest_map_num": 66,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 3,
+      "kind": 0,
+      "data": "0x0815EBF3"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "kind": 0,
+      "data": "0x0815EC2A"
+    },
+    {
+      "x": 3,
+      "y": 4,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815EC61"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815EC98"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 41,
+  "region_map_section_id": 72,
+  "region_name": "CAVE OF ORIGIN",
+  "header_pointer": "0x083071EC",
+  "layout_pointer": "0x082E0D50",
+  "events_pointer": "0x0838D86C",
+  "scripts_pointer": "0x0815DD9C",
+  "connections_pointer": "0x00000000",
+  "music_id": 386,
+  "source_layout_id": 162,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B1A44",
+      "flag": 1059
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 14,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 40,
+      "dest_map_group": 24
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 42,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 3,
+      "trigger": 16385,
+      "index": 0,
+      "script_pointer": "0x081A04AF"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "trigger": 16386,
+      "index": 0,
+      "script_pointer": "0x081A04BB"
+    },
+    {
+      "x": 8,
+      "y": 5,
+      "elevation": 3,
+      "trigger": 16386,
+      "index": 0,
+      "script_pointer": "0x081A04BB"
+    }
+  ],
+  "bg_events": []
+}

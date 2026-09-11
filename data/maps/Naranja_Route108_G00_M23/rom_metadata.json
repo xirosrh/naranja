@@ -1,0 +1,98 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 0,
+  "map_number": 23,
+  "region_map_section_id": 23,
+  "region_name": "ROUTE 108",
+  "header_pointer": "0x083056CC",
+  "layout_pointer": "0x08299724",
+  "events_pointer": "0x08381AE8",
+  "scripts_pointer": "0x0814F475",
+  "connections_pointer": "0x08308920",
+  "music_id": 401,
+  "source_layout_id": 24,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 44,
+      "kind": 0,
+      "x": 17,
+      "y": 13,
+      "elevation": 1,
+      "movement_type": 45,
+      "movement_range_x": 3,
+      "movement_range_y": 3,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815081F",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 152,
+      "kind": 0,
+      "x": 8,
+      "y": 6,
+      "elevation": 1,
+      "movement_type": 13,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0814F476",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 66,
+      "kind": 0,
+      "x": 50,
+      "y": 10,
+      "elevation": 1,
+      "movement_type": 24,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0814F48D",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 43,
+      "kind": 0,
+      "x": 36,
+      "y": 12,
+      "elevation": 1,
+      "movement_type": 51,
+      "movement_range_x": 6,
+      "movement_range_y": 3,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0814F4BB",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 6,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 54,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 38,
+      "y": 14,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x08560044"
+    }
+  ]
+}

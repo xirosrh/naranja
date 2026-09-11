@@ -1,0 +1,98 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 5,
+  "map_number": 0,
+  "region_map_section_id": 4,
+  "region_name": "Isla NAVEL",
+  "header_pointer": "0x08305CB4",
+  "layout_pointer": "0x082CE354",
+  "events_pointer": "0x083866DC",
+  "scripts_pointer": "0x08153966",
+  "connections_pointer": "0x00000000",
+  "music_id": 404,
+  "source_layout_id": 63,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 5,
+      "kind": 0,
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 10,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08150D60",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 20,
+      "kind": 0,
+      "x": 5,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815399C",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 25,
+      "kind": 0,
+      "x": 9,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081539A5",
+      "flag": 0
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 203,
+      "kind": 0,
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081539AE",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 13,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 13,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

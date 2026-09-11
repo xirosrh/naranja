@@ -1,0 +1,53 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 16,
+  "map_number": 6,
+  "region_map_section_id": 15,
+  "region_name": "Isla POMELO",
+  "header_pointer": "0x08306B40",
+  "layout_pointer": "0x082D4B84",
+  "events_pointer": "0x0838B3F4",
+  "scripts_pointer": "0x0815BA21",
+  "connections_pointer": "0x00000000",
+  "music_id": 429,
+  "source_layout_id": 117,
+  "show_map_name": false,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 12,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 1,
+      "dest_map_group": 16
+    },
+    {
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 2,
+      "dest_map_group": 16
+    },
+    {
+      "x": 4,
+      "y": 12,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 1,
+      "dest_map_group": 16
+    },
+    {
+      "x": 6,
+      "y": 12,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 1,
+      "dest_map_group": 16
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

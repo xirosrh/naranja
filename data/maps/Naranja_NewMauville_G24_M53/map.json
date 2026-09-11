@@ -1,0 +1,28 @@
+{
+  "id": "MAP_NARANJA_NEW_MAUVILLE_G24_M53",
+  "name": "Naranja_NewMauville_G24_M53",
+  "layout": "LAYOUT_NARANJA_NEW_MAUVILLE_G24_M53",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 32,
+      "y": 33,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_NEW_MAUVILLE_G24_M52",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

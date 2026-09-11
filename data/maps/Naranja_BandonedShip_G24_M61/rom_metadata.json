@@ -1,0 +1,53 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 61,
+  "region_map_section_id": 61,
+  "region_name": "BANDONED SHIP",
+  "header_pointer": "0x0830741C",
+  "layout_pointer": "0x082E7364",
+  "events_pointer": "0x0838E3D4",
+  "scripts_pointer": "0x0815EA66",
+  "connections_pointer": "0x00000000",
+  "music_id": 381,
+  "source_layout_id": 194,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 4,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B18A4",
+      "flag": 1098
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 3,
+      "dest_warp_id": 5,
+      "dest_map_num": 57,
+      "dest_map_group": 24
+    },
+    {
+      "x": 5,
+      "y": 7,
+      "elevation": 3,
+      "dest_warp_id": 5,
+      "dest_map_num": 57,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

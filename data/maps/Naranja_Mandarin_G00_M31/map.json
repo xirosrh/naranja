@@ -1,0 +1,53 @@
+{
+  "id": "MAP_NARANJA_MANDARIN_G00_M31",
+  "name": "Naranja_Mandarin_G00_M31",
+  "layout": "LAYOUT_NARANJA_MANDARIN_G00_M31",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ISLA_MANDARINA_G00_M14",
+      "offset": 80,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_ISLA_TROVITA_G00_M03",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 53,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_CAMINO_FRIO_G00_M29",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 90,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MANDARIN_G21_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 57,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_CUEVA_DE_CRISTAL_G24_M04",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,170 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 13,
+  "region_map_section_id": 76,
+  "region_name": "JAGGED PASS",
+  "header_pointer": "0x08306EDC",
+  "layout_pointer": "0x082FB55C",
+  "events_pointer": "0x0838C704",
+  "scripts_pointer": "0x0815D266",
+  "connections_pointer": "0x00000000",
+  "music_id": 366,
+  "source_layout_id": 293,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 55,
+      "kind": 0,
+      "x": 8,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815D285",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 31,
+      "kind": 0,
+      "x": 16,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": 14,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 2,
+      "script_pointer": "0x0815D2DA",
+      "flag": 0
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 23,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B17D4",
+      "flag": 1070
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 32,
+      "kind": 0,
+      "x": 13,
+      "y": 35,
+      "elevation": 3,
+      "movement_type": 15,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815D29C",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 40,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 27,
+      "dest_map_group": 0
+    },
+    {
+      "x": 15,
+      "y": 40,
+      "elevation": 3,
+      "dest_warp_id": 3,
+      "dest_map_num": 27,
+      "dest_map_group": 0
+    },
+    {
+      "x": 13,
+      "y": 5,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 12,
+      "dest_map_group": 24
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "elevation": 3,
+      "dest_warp_id": 3,
+      "dest_map_num": 12,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 13,
+      "y": 15,
+      "elevation": 3,
+      "trigger": 2,
+      "index": 0,
+      "script_pointer": "0x00000000"
+    },
+    {
+      "x": 21,
+      "y": 12,
+      "elevation": 3,
+      "trigger": 8,
+      "index": 0,
+      "script_pointer": "0x00000000"
+    },
+    {
+      "x": 14,
+      "y": 15,
+      "elevation": 3,
+      "trigger": 2,
+      "index": 0,
+      "script_pointer": "0x00000000"
+    },
+    {
+      "x": 18,
+      "y": 17,
+      "elevation": 3,
+      "trigger": 2,
+      "index": 0,
+      "script_pointer": "0x00000000"
+    },
+    {
+      "x": 22,
+      "y": 19,
+      "elevation": 3,
+      "trigger": 2,
+      "index": 0,
+      "script_pointer": "0x00000000"
+    }
+  ],
+  "bg_events": [
+    {
+      "x": 8,
+      "y": 10,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x004D0017"
+    },
+    {
+      "x": 7,
+      "y": 29,
+      "elevation": 3,
+      "kind": 7,
+      "data": "0x004C0003"
+    }
+  ]
+}

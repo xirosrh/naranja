@@ -1,0 +1,93 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 72,
+  "region_map_section_id": 78,
+  "region_name": "SEALED CHAMBER",
+  "header_pointer": "0x08307550",
+  "layout_pointer": "0x082FEA68",
+  "events_pointer": "0x0838E974",
+  "scripts_pointer": "0x0815F1E7",
+  "connections_pointer": "0x00000000",
+  "music_id": 438,
+  "source_layout_id": 305,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 71,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1E8"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F249"
+    },
+    {
+      "x": 14,
+      "y": 8,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F257"
+    },
+    {
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F265"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F273"
+    },
+    {
+      "x": 6,
+      "y": 18,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F281"
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F28F"
+    },
+    {
+      "x": 9,
+      "y": 4,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1E8"
+    },
+    {
+      "x": 11,
+      "y": 4,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815F1E8"
+    }
+  ]
+}

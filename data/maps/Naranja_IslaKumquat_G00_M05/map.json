@@ -1,0 +1,137 @@
+{
+  "id": "MAP_NARANJA_ISLA_KUMQUAT_G00_M05",
+  "name": "Naranja_IslaKumquat_G00_M05",
+  "layout": "LAYOUT_NARANJA_ISLA_KUMQUAT_G00_M05",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ROUTE_121_G00_M36",
+      "offset": 10,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_124_G00_M39",
+      "offset": -10,
+      "direction": "right"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 27,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MANDARINA_G06_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 37,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M06",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M02",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M04",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M09",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 70,
+      "y": 5,
+      "elevation": 1,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M23",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M12",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 42,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G13_M13",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 55,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M14",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 11,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M15",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G13_M16",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M10",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_KUMQUAT_G13_M02",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 71,
+      "y": 5,
+      "elevation": 1,
+      "dest_map": "MAP_NARANJA_TEAM_HIDESHOAL_CAVE_G24_M74",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

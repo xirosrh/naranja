@@ -1,0 +1,75 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 20,
+  "map_number": 2,
+  "region_map_section_id": 29,
+  "region_name": "Camino FRÍO",
+  "header_pointer": "0x08306D00",
+  "layout_pointer": "0x082D5260",
+  "events_pointer": "0x0838B978",
+  "scripts_pointer": "0x0815C258",
+  "connections_pointer": "0x00000000",
+  "music_id": 437,
+  "source_layout_id": 122,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 58,
+      "kind": 0,
+      "x": 3,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x086B71BF",
+      "flag": 870
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 29,
+      "dest_map_group": 0
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 2,
+      "dest_map_group": 20
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815C299"
+    },
+    {
+      "x": 8,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815C2D5"
+    },
+    {
+      "x": 7,
+      "y": 1,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815C2D5"
+    }
+  ]
+}

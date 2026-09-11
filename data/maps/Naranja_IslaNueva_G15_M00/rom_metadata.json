@@ -1,0 +1,91 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 15,
+  "map_number": 0,
+  "region_map_section_id": 14,
+  "region_name": "Isla NUEVA",
+  "header_pointer": "0x0830692C",
+  "layout_pointer": "0x082D3F0C",
+  "events_pointer": "0x0838AD50",
+  "scripts_pointer": "0x0815AF07",
+  "connections_pointer": "0x00000000",
+  "music_id": 364,
+  "source_layout_id": 110,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 133,
+      "kind": 0,
+      "x": 8,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815AFFF",
+      "flag": 815
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 23,
+      "kind": 0,
+      "x": 7,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815B084",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 25,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 7,
+      "dest_map_group": 0
+    },
+    {
+      "x": 9,
+      "y": 25,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 7,
+      "dest_map_group": 0
+    },
+    {
+      "x": 11,
+      "y": 22,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 1,
+      "dest_map_group": 15
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 6,
+      "y": 24,
+      "elevation": 0,
+      "kind": 0,
+      "data": "0x0815B0A3"
+    },
+    {
+      "x": 10,
+      "y": 24,
+      "elevation": 0,
+      "kind": 1,
+      "data": "0x0815B0B3"
+    }
+  ]
+}

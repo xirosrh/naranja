@@ -1,0 +1,41 @@
+{
+  "id": "MAP_NARANJA_ROUTE_128_G00_M43",
+  "name": "Naranja_Route128_G00_M43",
+  "layout": "LAYOUT_NARANJA_ROUTE_128_G00_M43",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ROUTE_666_G00_M42",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_129_G00_M44",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_ISLA_POMELO_G00_M08",
+      "offset": -40,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_UNDERWATER_G00_M53",
+      "offset": 0,
+      "direction": "dive"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

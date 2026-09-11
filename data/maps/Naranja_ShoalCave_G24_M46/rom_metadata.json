@@ -1,0 +1,84 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 46,
+  "region_map_section_id": 67,
+  "region_name": "SHOAL CAVE",
+  "header_pointer": "0x08307278",
+  "layout_pointer": "0x082E2A44",
+  "events_pointer": "0x0838DD2C",
+  "scripts_pointer": "0x0815E057",
+  "connections_pointer": "0x00000000",
+  "music_id": 432,
+  "source_layout_id": 165,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 30,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B19F6",
+      "flag": 1081
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 21,
+      "kind": 0,
+      "x": 18,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815E076",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 20,
+      "y": 30,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 40,
+      "dest_map_group": 0
+    },
+    {
+      "x": 19,
+      "y": 5,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 47,
+      "dest_map_group": 24
+    },
+    {
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "dest_warp_id": 6,
+      "dest_map_num": 47,
+      "dest_map_group": 24
+    },
+    {
+      "x": 27,
+      "y": 2,
+      "elevation": 3,
+      "dest_warp_id": 7,
+      "dest_map_num": 47,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

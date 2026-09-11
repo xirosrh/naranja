@@ -1,0 +1,37 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 5,
+  "region_map_section_id": 54,
+  "region_name": "UNDERWATER",
+  "header_pointer": "0x08306DFC",
+  "layout_pointer": "0x082D7AD4",
+  "events_pointer": "0x0838BEA8",
+  "scripts_pointer": "0x0815CAE4",
+  "connections_pointer": "0x00000000",
+  "music_id": 411,
+  "source_layout_id": 131,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 51,
+      "dest_map_group": 0
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 51,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

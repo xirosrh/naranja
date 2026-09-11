@@ -1,0 +1,29 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 0,
+  "map_number": 37,
+  "region_map_section_id": 37,
+  "region_name": "ROUTE 122",
+  "header_pointer": "0x08305854",
+  "layout_pointer": "0x082AD484",
+  "events_pointer": "0x083847E4",
+  "scripts_pointer": "0x08151C52",
+  "connections_pointer": "0x08308B28",
+  "music_id": 374,
+  "source_layout_id": 38,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 29,
+      "elevation": 0,
+      "dest_warp_id": 0,
+      "dest_map_num": 15,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

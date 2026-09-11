@@ -1,0 +1,67 @@
+{
+  "id": "MAP_NARANJA_TANGELO_G00_M16",
+  "name": "Naranja_Tangelo_G00_M16",
+  "layout": "LAYOUT_NARANJA_TANGELO_G00_M16",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ISLA_TANGELO_G00_M10",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_PUERTO_DE_TANGELO_G00_M09",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": -21527,
+      "y": -17410,
+      "elevation": 228,
+      "dest_map": "MAP_UNDEFINED",
+      "dest_warp_id": "233"
+    },
+    {
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TANGELO_G24_M29",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TANGELO_G24_M29",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 13,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G00_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G00_M00",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

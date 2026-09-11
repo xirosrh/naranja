@@ -1,0 +1,42 @@
+{
+  "id": "MAP_NARANJA_ISLA_MIKAN_G24_M06",
+  "name": "Naranja_IslaMikan_G24_M06",
+  "layout": "LAYOUT_NARANJA_ISLA_MIKAN_G24_M06",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ISLA_MIKAN_G00_M20",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 5,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_MIKAN_G24_M33",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 31,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ISLA_MIKAN_G24_M06",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -1,0 +1,437 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 4,
+  "region_map_section_id": 60,
+  "region_name": "Cueva de CRISTAL",
+  "header_pointer": "0x08306DE0",
+  "layout_pointer": "0x082D7924",
+  "events_pointer": "0x086B2874",
+  "scripts_pointer": "0x0815C745",
+  "connections_pointer": "0x00000000",
+  "music_id": 366,
+  "source_layout_id": 130,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 44,
+      "kind": 0,
+      "x": 22,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 12,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815C799",
+      "flag": 807
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 86,
+      "kind": 0,
+      "x": 25,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B0EB7",
+      "flag": 931
+    },
+    {
+      "local_id": 3,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 34,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B1793",
+      "flag": 1049
+    },
+    {
+      "local_id": 4,
+      "graphics_id": 96,
+      "kind": 0,
+      "x": 15,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": 64,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x086B3630",
+      "flag": 8490
+    },
+    {
+      "local_id": 5,
+      "graphics_id": 21,
+      "kind": 0,
+      "x": 21,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 12,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x08000000",
+      "flag": 16664
+    },
+    {
+      "local_id": 6,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 27,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815C9EA",
+      "flag": 878
+    },
+    {
+      "local_id": 7,
+      "graphics_id": 211,
+      "kind": 0,
+      "x": 29,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815C9D7",
+      "flag": 880
+    },
+    {
+      "local_id": 8,
+      "graphics_id": 86,
+      "kind": 0,
+      "x": 23,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 12,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B0EB7",
+      "flag": 932
+    },
+    {
+      "local_id": 9,
+      "graphics_id": 55,
+      "kind": 0,
+      "x": 24,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 1,
+      "trainer_sight_or_berry_tree_id": 3,
+      "script_pointer": "0x0815CACD",
+      "flag": 0
+    },
+    {
+      "local_id": 10,
+      "graphics_id": 20,
+      "kind": 0,
+      "x": 28,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x0815C782",
+      "flag": 983
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 0,
+      "elevation": 3,
+      "dest_warp_id": 12,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 31,
+      "y": 10,
+      "elevation": 3,
+      "dest_warp_id": 17,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 25,
+      "y": 21,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 31,
+      "dest_map_group": 0
+    },
+    {
+      "x": 12,
+      "y": 20,
+      "elevation": 0,
+      "dest_warp_id": 12,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 31,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 18,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 32,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 19,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 27,
+      "y": 5,
+      "elevation": 0,
+      "dest_warp_id": 21,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 25,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 25,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 11,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 23,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 23,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 24,
+      "y": 11,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 31,
+      "dest_map_group": 0
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 0,
+      "dest_warp_id": 8,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 20,
+      "y": 13,
+      "elevation": 0,
+      "dest_warp_id": 3,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "dest_warp_id": 27,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "dest_warp_id": 24,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "dest_warp_id": 26,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 3,
+      "y": 17,
+      "elevation": 0,
+      "dest_warp_id": 22,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_warp_id": 4,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 5,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 23,
+      "y": 20,
+      "elevation": 0,
+      "dest_warp_id": 2,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 6,
+      "y": 19,
+      "elevation": 0,
+      "dest_warp_id": 6,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 24,
+      "y": 15,
+      "elevation": 0,
+      "dest_warp_id": 16,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 34,
+      "y": 12,
+      "elevation": 0,
+      "dest_warp_id": 9,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "dest_warp_id": 14,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 34,
+      "y": 3,
+      "elevation": 0,
+      "dest_warp_id": 7,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 26,
+      "y": 3,
+      "elevation": 0,
+      "dest_warp_id": 15,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    },
+    {
+      "x": 26,
+      "y": 8,
+      "elevation": 0,
+      "dest_warp_id": 13,
+      "dest_map_num": 4,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "trigger": 16396,
+      "index": 0,
+      "script_pointer": "0x086B401C"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 3,
+      "trigger": 16396,
+      "index": 0,
+      "script_pointer": "0x086B4010"
+    },
+    {
+      "x": 15,
+      "y": 9,
+      "elevation": 3,
+      "trigger": 16396,
+      "index": 0,
+      "script_pointer": "0x086B4010"
+    },
+    {
+      "x": 11,
+      "y": 1,
+      "elevation": 3,
+      "trigger": 16396,
+      "index": 0,
+      "script_pointer": "0x086B401C"
+    },
+    {
+      "x": 22,
+      "y": 5,
+      "elevation": 3,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x0815C9A5"
+    }
+  ],
+  "bg_events": []
+}

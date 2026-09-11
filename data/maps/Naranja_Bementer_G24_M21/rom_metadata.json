@@ -1,0 +1,132 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 21,
+  "region_map_section_id": 65,
+  "region_name": "BEMENTER",
+  "header_pointer": "0x08306FBC",
+  "layout_pointer": "0x082FD7EC",
+  "events_pointer": "0x0838CBC4",
+  "scripts_pointer": "0x0815D486",
+  "connections_pointer": "0x00000000",
+  "music_id": 434,
+  "source_layout_id": 303,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 27,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B1974",
+      "flag": 1073
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 59,
+      "kind": 0,
+      "x": 19,
+      "y": 40,
+      "elevation": 3,
+      "movement_type": 1,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081B1981",
+      "flag": 1074
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 42,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 15,
+      "dest_map_group": 24
+    },
+    {
+      "x": 19,
+      "y": 10,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 22,
+      "dest_map_group": 24
+    },
+    {
+      "x": 20,
+      "y": 10,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 22,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 24,
+      "y": 21,
+      "elevation": 3,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x0815D4A7"
+    },
+    {
+      "x": 25,
+      "y": 21,
+      "elevation": 3,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x0815D4A7"
+    },
+    {
+      "x": 22,
+      "y": 27,
+      "elevation": 3,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x0815D4AC"
+    },
+    {
+      "x": 23,
+      "y": 28,
+      "elevation": 3,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x0815D4AC"
+    },
+    {
+      "x": 26,
+      "y": 21,
+      "elevation": 3,
+      "trigger": 0,
+      "index": 0,
+      "script_pointer": "0x0815D4A7"
+    }
+  ],
+  "bg_events": [
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "kind": 7,
+      "data": "0x001D0002"
+    },
+    {
+      "x": 16,
+      "y": 22,
+      "elevation": 0,
+      "kind": 7,
+      "data": "0x004E0023"
+    }
+  ]
+}

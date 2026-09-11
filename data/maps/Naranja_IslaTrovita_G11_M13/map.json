@@ -1,0 +1,42 @@
+{
+  "id": "MAP_NARANJA_ISLA_TROVITA_G11_M13",
+  "name": "Naranja_IslaTrovita_G11_M13",
+  "layout": "LAYOUT_NARANJA_ISLA_TROVITA_G11_M13",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 2,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TROVITA_G00_M03",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 3,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TROVITA_G00_M03",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TROVITA_G11_M14",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

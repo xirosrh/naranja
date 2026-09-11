@@ -1,0 +1,68 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 8,
+  "map_number": 3,
+  "region_map_section_id": 7,
+  "region_name": "Isla VALENCIA",
+  "header_pointer": "0x08305F70",
+  "layout_pointer": "0x082D00FC",
+  "events_pointer": "0x083874D8",
+  "scripts_pointer": "0x081551F1",
+  "connections_pointer": "0x00000000",
+  "music_id": 362,
+  "source_layout_id": 80,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 18,
+      "kind": 0,
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 2,
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081551F2",
+      "flag": 0
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 38,
+      "kind": 0,
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081551FB",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 0,
+      "dest_map_group": 0
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_warp_id": 1,
+      "dest_map_num": 0,
+      "dest_map_group": 0
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

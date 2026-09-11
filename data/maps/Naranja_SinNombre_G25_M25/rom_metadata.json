@@ -1,0 +1,70 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 25,
+  "map_number": 25,
+  "region_map_section_id": 87,
+  "region_name": "Sin Nombre",
+  "header_pointer": "0x08307994",
+  "layout_pointer": "0x082E9448",
+  "events_pointer": "0x08391388",
+  "scripts_pointer": "0x0815F57D",
+  "connections_pointer": "0x00000000",
+  "music_id": 422,
+  "source_layout_id": 223,
+  "show_map_name": false,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 28,
+      "kind": 0,
+      "x": 9,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": 9,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x081A44AD",
+      "flag": 0
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 127,
+      "dest_map_num": 127,
+      "dest_map_group": 127
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 3,
+      "dest_warp_id": 127,
+      "dest_map_num": 127,
+      "dest_map_group": 127
+    }
+  ],
+  "coord_events": [
+    {
+      "x": 4,
+      "y": 5,
+      "elevation": 3,
+      "trigger": 16384,
+      "index": 0,
+      "script_pointer": "0x081A43F0"
+    },
+    {
+      "x": 7,
+      "y": 5,
+      "elevation": 3,
+      "trigger": 16384,
+      "index": 0,
+      "script_pointer": "0x081A43FA"
+    }
+  ],
+  "bg_events": []
+}

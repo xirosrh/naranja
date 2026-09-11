@@ -1,0 +1,37 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 84,
+  "region_map_section_id": 85,
+  "region_name": "SKY PILLAR",
+  "header_pointer": "0x083076A0",
+  "layout_pointer": "0x083049D0",
+  "events_pointer": "0x0838EE3C",
+  "scripts_pointer": "0x0815F301",
+  "connections_pointer": "0x00000000",
+  "music_id": 406,
+  "source_layout_id": 331,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 2,
+      "dest_map_num": 82,
+      "dest_map_group": 24
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 85,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

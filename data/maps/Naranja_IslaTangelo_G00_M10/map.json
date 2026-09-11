@@ -1,0 +1,65 @@
+{
+  "id": "MAP_NARANJA_ISLA_TANGELO_G00_M10",
+  "name": "Naranja_IslaTangelo_G00_M10",
+  "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G00_M10",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_RUTA_AZUL_G00_M18",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_TANGELO_G00_M16",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_VALN_TANG_G00_M17",
+      "offset": 0,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TANGELO_G02_M00",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TANGELO_G06_M06",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TANGELO_G02_M02",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_TANGELO_G02_M02",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

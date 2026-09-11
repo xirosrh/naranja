@@ -1,0 +1,76 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 26,
+  "map_number": 10,
+  "region_map_section_id": 73,
+  "region_name": "SOUTHERN ISLAND",
+  "header_pointer": "0x08307CC0",
+  "layout_pointer": "0x082FAA74",
+  "events_pointer": "0x08391EAC",
+  "scripts_pointer": "0x08160B53",
+  "connections_pointer": "0x00000000",
+  "music_id": 381,
+  "source_layout_id": 292,
+  "show_map_name": true,
+  "object_events": [
+    {
+      "local_id": 1,
+      "graphics_id": 240,
+      "kind": 0,
+      "x": 13,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": 7,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x00000000",
+      "flag": 910
+    },
+    {
+      "local_id": 2,
+      "graphics_id": 241,
+      "kind": 0,
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": 8,
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": 0,
+      "trainer_sight_or_berry_tree_id": 0,
+      "script_pointer": "0x00000000",
+      "flag": 911
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 18,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 9,
+      "dest_map_group": 26
+    },
+    {
+      "x": 14,
+      "y": 18,
+      "elevation": 3,
+      "dest_warp_id": 1,
+      "dest_map_num": 9,
+      "dest_map_group": 26
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "x": 13,
+      "y": 11,
+      "elevation": 3,
+      "kind": 1,
+      "data": "0x08160B9B"
+    }
+  ]
+}

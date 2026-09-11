@@ -1,0 +1,37 @@
+{
+  "source_rom": "NaranjaB2.gba",
+  "source_sha1": "4a8b88c0f16500c0e8295c4adf61c4036a3876d0",
+  "map_group": 24,
+  "map_number": 27,
+  "region_map_section_id": 68,
+  "region_name": "SEAFLOOR CAVERN",
+  "header_pointer": "0x08307064",
+  "layout_pointer": "0x082DD6F8",
+  "events_pointer": "0x0838D0A4",
+  "scripts_pointer": "0x0815DA4A",
+  "connections_pointer": "0x00000000",
+  "music_id": 406,
+  "source_layout_id": 148,
+  "show_map_name": true,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 18,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 53,
+      "dest_map_group": 0
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_warp_id": 0,
+      "dest_map_num": 28,
+      "dest_map_group": 24
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

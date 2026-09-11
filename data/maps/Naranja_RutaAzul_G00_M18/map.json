@@ -1,0 +1,44 @@
+{
+  "id": "MAP_NARANJA_RUTA_AZUL_G00_M18",
+  "name": "Naranja_RutaAzul_G00_M18",
+  "layout": "LAYOUT_NARANJA_RUTA_AZUL_G00_M18",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NONE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ISLA_TANGELO_G00_M10",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE_110_G00_M25",
+      "offset": -60,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_ISLA_MANDARINA_G00_M14",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_ISLA_VALENCIA_G00_M00",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}
