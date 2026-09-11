@@ -1,0 +1,31 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValleCharizard_G04_M03_MapScripts {
+}
+
+script Naranja_ValleCharizard_G04_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
+    loadword(0, Naranja_ValleCharizard_G04_M03_Text_08176D07)
+    callstd(2)
+    end
+}
+
+script Naranja_ValleCharizard_G04_M03_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId2 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_ZIGZAGOON, 0)
+    loadword(0, Naranja_ValleCharizard_G04_M03_Text_08176D94)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_ValleCharizard_G04_M03_Text_08176D07 {
+    "My wife’s warming an EGG in the hot\nsprings. This is what she told me.\pShe left two POKéMON with the DAY CARE.\nAnd they discovered that EGG!"
+}
+
+text Naranja_ValleCharizard_G04_M03_Text_08176D94 {
+    "ZIGZAGOON: Pshoo!"
+}

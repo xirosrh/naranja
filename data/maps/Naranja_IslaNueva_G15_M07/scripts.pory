@@ -1,0 +1,47 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaNueva_G15_M07_MapScripts {
+}
+
+script Naranja_IslaNueva_G15_M07_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId1 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaNueva_G15_M07_Text_0818FB36)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaNueva_G15_M07_EventScript_Sub_0815B339)
+    loadword(0, Naranja_IslaNueva_G15_M07_Text_0818FBC0)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNueva_G15_M07_EventScript_Sub_0815B339 {
+    loadword(0, Naranja_IslaNueva_G15_M07_Text_0818FB9C)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNueva_G15_M07_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId2 {
+    loadword(0, Naranja_IslaNueva_G15_M07_Text_0818FC1A)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaNueva_G15_M07_Text_0818FB36 {
+    "You’re a POKéMON TRAINER, aren’t you?\pSOOTOPOLIS’s GYM LEADER WALLACE has\nmany fans.\lDo you have any?"
+}
+
+text Naranja_IslaNueva_G15_M07_Text_0818FB9C {
+    "Oh, then you must be pretty strong."
+}
+
+text Naranja_IslaNueva_G15_M07_Text_0818FBC0 {
+    "Oh, dear...\nThat’s a little lonesome.\pTry working a little harder to get a\nfan following."
+}
+
+text Naranja_IslaNueva_G15_M07_Text_0818FC1A {
+    "Dedicated fans come over from even\nKANTO and JOHTO.\pIt was really wild when I went to the\nTRAINER FAN CLUB in LILYCOVE."
+}

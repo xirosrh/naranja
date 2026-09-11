@@ -1,0 +1,438 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PuertoDeTangelo_G01_M01_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_PuertoDeTangelo_G01_M01_OnTransition
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_SECRET_BASE_STORY_STATE, 0: Naranja_PuertoDeTangelo_G01_M01_OnWarp_1
+    ]
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_OnTransition {
+    checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0082)
+    call_if(LESS_THAN, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081527CE)
+    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950)
+    call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D)
+    setvar(VAR_NARANJA_SECRET_BASE_STORY_STATE, 0)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081527CE {
+    setobjectxyperm(LOCALID_PUERTO_DE_TANGELO_G01_M01_RIVAL_BRENDAN_NORMAL, 1, 2)
+    setobjectmovementtype(LOCALID_PUERTO_DE_TANGELO_G01_M01_RIVAL_BRENDAN_NORMAL, 7)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_OnWarp_1 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_OnWarp_1)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_1 {
+    lockall
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152837)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_0815285D)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152837 {
+    setvar(VAR_0x8004, 1)
+    special(DoPCTurnOnEffect)
+    playse(SE_PC_ON)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6)
+    callstd(4)
+    special(BedroomPC)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_0815285D {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A100C)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_2 {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172F9A)
+    callstd(3)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_4 {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_0817306C)
+    callstd(3)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalId1 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0124)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BB5)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152AD4)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B4A)
+    playse(SE_EXIT)
+    removeobject(32783)
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_4, 3)
+    setvar(VAR_NARANJA_PUERTO_DE_TANGELO_STORY_STATE, 1)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152AD4 {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_0817337E)
+    callstd(4)
+    playbgm(MUS_ENCOUNTER_MAY, 1)
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081733AF)
+    callstd(4)
+    closemessage
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B29)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B34)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B3F)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B29 {
+    applymovement(32783, Naranja_PuertoDeTangelo_G01_M01_Movement_08152C11)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B34 {
+    applymovement(32783, Naranja_PuertoDeTangelo_G01_M01_Movement_08152C1C)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B3F {
+    applymovement(32783, Naranja_PuertoDeTangelo_G01_M01_Movement_08152C1C)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B4A {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081735C9)
+    callstd(4)
+    playbgm(MUS_ENCOUNTER_BRENDAN, 1)
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081735FC)
+    callstd(4)
+    closemessage
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B9F)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B9F)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BAA)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152B9F {
+    applymovement(32783, Naranja_PuertoDeTangelo_G01_M01_Movement_08152C30)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BAA {
+    applymovement(32783, Naranja_PuertoDeTangelo_G01_M01_Movement_08152C25)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BB5 {
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BDB)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BED)
+    setflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0125)
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BDB {
+    checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0125)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BFF)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081737AE)
+    callstd(4)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BED {
+    checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0125)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152C08)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081738F2)
+    callstd(4)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BFF {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08173883)
+    callstd(4)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152C08 {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081739CC)
+    callstd(4)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D {
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_VARS)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_241)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_242)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_243)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_244)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_245)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_246)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_247)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_248)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_249)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_250)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_251)
+    setflag(FLAG_HIDE_SECRET_BASE_G25_M00_252)
+    setflag(FLAG_HIDE_SECRET_BASE_G25_M00_253)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950 {
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_3 {
+    lockall
+    setvar(VAR_0x8004, 0)
+    goto(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB)
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB {
+    checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0051)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A91)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172E18)
+    callstd(4)
+    call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A9B)
+    delay(0x1E)
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
+    setflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0051)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MACHOKE_FACING_AWAY)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MACHOKE_CARRYING_BOX)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A31)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A61)
+    playse(SE_EXIT)
+    removeobject(32776)
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A31 {
+    setvar(VAR_0x8008, 0xE)
+    addobject(32776)
+    applymovement(32776, Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AA2)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C)
+    callstd(4)
+    closemessage
+    applymovement(32776, Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AA9)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A61 {
+    setvar(VAR_0x8008, 0xE)
+    addobject(32776)
+    applymovement(32776, Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AAD)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C)
+    callstd(4)
+    closemessage
+    applymovement(32776, Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AB4)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A91 {
+    incrementgamestat(0x2D)
+    fadescreen(1)
+    special(Special_ViewWallClock)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A9B {
+    fadescreen(1)
+    special(StartWallClock)
+    waitstate
+    return
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_08152C11 {
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    delay_8
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_08152C1C {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    delay_8
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_08152C25 {
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_up
+    delay_8
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_08152C30 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    delay_8
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AA2 {
+    delay_8
+    walk_down
+    walk_in_place_faster_left
+    delay_16
+    delay_8
+    walk_left
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AA9 {
+    walk_right
+    walk_up
+    delay_8
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AAD {
+    delay_8
+    walk_down
+    walk_in_place_faster_right
+    delay_16
+    delay_8
+    walk_right
+}
+
+movement Naranja_PuertoDeTangelo_G01_M01_Movement_081B6AB4 {
+    walk_left
+    walk_up
+    delay_8
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_08172E18 {
+    "The clock is stopped...\pBetter set it and start it!"
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_08172E4C {
+    "MOM: {PLAYER}, how do you like your\nnew room?\pGood! Everything’s put away neatly!\pThey finished moving everything in\ndownstairs, too.\pPOKéMON movers are so convenient!\pOh, you should make sure that\neverything’s all there on your desk."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_08172F9A {
+    "{PLAYER} flipped open the notebook.\pADVENTURE RULE NO. 1\nOpen the MENU with START.\pADVENTURE RULE NO. 2\nRecord your progress with SAVE.\pThe remaining pages are blank..."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_0817306C {
+    "It’s a Nintendo GameCube.\pA Game Boy Advance is connected to\nserve as the Controller."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_0817337E {
+    "POKéMON fully restored!\nItems ready, and... Huh?"
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081733AF {
+    "Huh?\nWho... Who are you?\p... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pOh, you’re {PLAYER}{KUN}.\nSo your move was today.\pUm... I’m MAY.\nGlad to meet you!\pI...\nI have this dream of becoming friends\lwith POKéMON all over the world.\pI... I heard about you, {PLAYER}{KUN}, from\nmy dad, PROF. BIRCH.\pI was hoping that you would be nice,\n{PLAYER}{KUN}, and that we could be friends.\pOh, this is silly, isn’t it?\nI... I’ve just met you, {PLAYER}{KUN}.\pEheheh...\pOh, no! I forgot!\pI was supposed to go help Dad catch\nsome wild POKéMON!\p{PLAYER}{KUN}, I’ll catch you later!"
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081735C9 {
+    "POKéMON fully restored...\nItems all packed, and..."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081735FC {
+    "Hey!\nYou...\pWho are you?\pOh, you’re {PLAYER}, aren’t you?\nMoved in next door, right?\pI didn’t know that you’re a girl.\pDad, PROF. BIRCH, said that our new\nnext-door neighbor is a GYM LEADER’s\lkid, so I assumed you’d be a guy.\pMy name’s BRENDAN.\nSo, hi, neighbor!\pHuh? Hey, {PLAYER}, don’t you have\na POKéMON?\pDo you want me to go catch you one?\pAw, darn, I forgot...\pI’m supposed to go help my dad catch\nsome wild POKéMON.\pSome other time, okay?"
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081737AE {
+    "MAY: {PLAYER}{KUN}!\pI was just checking my POKéDEX.\pThere’s still a lot of POKéMON that\nI’ve seen but haven’t caught.\pAnd there are many others that\nI think will evolve.\pI wonder where I should go catch\nsome POKéMON next?"
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_08173883 {
+    "MAY: I wonder where I should go catch\nsome POKéMON next?\pWouldn’t it be funny if we ran into each\nother, {PLAYER}{KUN}?"
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081738F2 {
+    "BRENDAN: Hey, it’s {PLAYER}.\pI was just checking out my POKéDEX.\pThere are still many POKéMON that\nI need to catch, I know, but this\lis looking pretty good.\pChecking this POKéDEX out gives me\nthe urge to hit the road again."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081739CC {
+    "BRENDAN: I’m having a hard time deciding\nwhere I should catch POKéMON next.\pHey, {PLAYER}, if I see you while I’m out\ncatching POKéMON, I can pitch you a\lbattle if you’d like."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081A100C {
+    "There’s an e-mail from POKéMON TRAINER\nSCHOOL.\p... ... ... ... ... ...\pA POKéMON may learn up to four moves.\pA TRAINER’s expertise is tested on the\nmove sets chosen for POKéMON.\p... ... ... ... ... ..."
+}
+
+text Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6 {
+    "{PLAYER} booted up the PC."
+}

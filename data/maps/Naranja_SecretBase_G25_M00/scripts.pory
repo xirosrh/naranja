@@ -1,0 +1,729 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SecretBase_G25_M00_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_SECRET_BASE_STORY_STATE, 0: Naranja_SecretBase_G25_M00_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SecretBase_G25_M00_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_SECRET_BASE_EVENT_STATE_2, 0: Naranja_SecretBase_G25_M00_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_RESUME: Naranja_SecretBase_G25_M00_OnResume
+}
+
+script Naranja_SecretBase_G25_M00_OnResume {
+    setstepcallback(6)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_OnTransition {
+    call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D)
+    special(SetSecretBaseOwnerGfxId)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_OnFrame_1 {
+    applymovement(LOCALID_PLAYER, Naranja_SecretBase_G25_M00_Movement_081A2E11)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_NARANJA_SECRET_BASE_EVENT_STATE_2, 1)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_08198F89)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A2E08)
+    closemessage
+    playse(SE_EXIT)
+    special(ClearAndLeaveSecretBase)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A2E08 {
+    closemessage
+    setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0060)
+    special(EnterNewlyCreatedSecretBase)
+    waitstate
+    end
+}
+
+script Naranja_SecretBase_G25_M00_OnWarp_1 {
+    setvar(VAR_0x8004, 0)
+    setvar(VAR_0x8005, 0)
+    special(InitSecretBaseDecorationSprites)
+    setvar(VAR_NARANJA_SECRET_BASE_STORY_STATE, 1)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_OBJECT_1_LocalId1 {
+    special(GetSecretBaseOwnerAndState)
+    compare_var_to_value(VAR_0x8004, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3032)
+    compare_var_to_value(VAR_0x8004, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A30AE)
+    compare_var_to_value(VAR_0x8004, 2)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A312A)
+    compare_var_to_value(VAR_0x8004, 3)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A31A6)
+    compare_var_to_value(VAR_0x8004, 4)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3222)
+    compare_var_to_value(VAR_0x8004, 5)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A329E)
+    compare_var_to_value(VAR_0x8004, 6)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A331A)
+    compare_var_to_value(VAR_0x8004, 7)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3396)
+    compare_var_to_value(VAR_0x8004, 8)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3412)
+    compare_var_to_value(VAR_0x8004, 9)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A348E)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3032 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3086)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A30A5)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1AEA)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1B83)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3086 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1C3B)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A308F {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1B97)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A30A5 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1BF8)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A30AE {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3102)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3121)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1E67)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1F04)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3102 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1FBD)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A310B {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1F2E)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3121 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1F88)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A312A {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A317E)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A319D)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A218F)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2220)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A317E {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A22FA)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3187 {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2230)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A319D {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2280)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A31A6 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A31FA)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3219)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A24E1)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A256F)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A31FA {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2609)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3203 {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A258A)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3219 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A25D2)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3222 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3276)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3295)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2830)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A28D7)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3276 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A297C)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A327F {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A28F4)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3295 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A294D)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A329E {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32F2)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3311)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1CB2)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1D48)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A32F2 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1DF6)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A32FB {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1D59)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3311 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A1DC0)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A331A {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A336E)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A338D)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2026)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2095)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A336E {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2147)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3377 {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A20AE)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A338D {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2109)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3396 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33EA)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3409)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A236A)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2405)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A33EA {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2480)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A33F3 {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2420)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3409 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2446)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3412 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3466)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3485)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2663)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2710)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3466 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A27A4)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A346F {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2736)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3485 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A276A)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A348E {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34E2)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A3501)
+    lock
+    faceplayer
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2A13)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB)
+    setvar(VAR_RESULT, 1)
+    special(SetBattledOwnerFromResult)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2AE2)
+    callstd(4)
+    goto(Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A)
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A34E2 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2BA4)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A34EB {
+    setvar(VAR_RESULT, 0)
+    special(SetBattledOwnerFromResult)
+    erasebox(0, 0, 0xF, 0xA)
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2AFB)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A3501 {
+    loadword(0, Naranja_SecretBase_G25_M00_Text_081A2B69)
+    callstd(2)
+    end
+}
+
+script Naranja_SecretBase_G25_M00_EventScript_Sub_081A350A {
+    special(PrepSecretBaseBattleFlags)
+    setvar(VAR_0x8004, 1)
+    setvar(VAR_0x8005, 0)
+    special(DoSpecialTrainerBattle)
+    waitstate
+    special(HealPlayerParty)
+    release
+    end
+}
+
+movement Naranja_SecretBase_G25_M00_Movement_081A2E11 {
+    walk_up
+    walk_up
+}
+
+text Naranja_SecretBase_G25_M00_Text_08198F89 {
+    "Want to make your SECRET BASE here?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1AEA {
+    "Have you made a SECRET BASE already?\pI went here, there, everywhere before\nchoosing this place.\pSince you’re already here, how would\nyou like to battle?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1B83 {
+    "Okay!\nHere we come!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1B97 {
+    "Hunh?\nOh, you can’t now..."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1BF8 {
+    "What do you think of my SECRET BASE?\nCome visit me again tomorrow."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1C3B {
+    "Have you made a SECRET BASE already?\pI went here, there, everywhere before\nchoosing this place.\pFeel free to hang out!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1CB2 {
+    "There’re a lot of places where you can\nmake a SECRET BASE.\pBut I like this spot best.\nDon’t you think it’s nice?\pOh, would you like to have a battle?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1D48 {
+    "Okay, here goes!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1D59 {
+    "Oh...\nYou can’t now, okay."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1DC0 {
+    "If you’re in this area again, I hope\nyou’ll visit me."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1DF6 {
+    "There’re a lot of places where you can\nmake a SECRET BASE.\pBut I like this spot best.\nDon’t you think it’s nice?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1E67 {
+    "This is a popular spot.\nIt’s always taken.\pOh! Were you thinking about taking this\nspot, too?\pI’ll tell you what, you can have this\nspot if you can beat me."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1F04 {
+    "Okay!\nI’m going to defend my SECRET BASE!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1F2E {
+    "Hunh? Is that right?\nYou’re not interested in this spot?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1F88 {
+    "Okay, when I move one day, this place\nwill be yours!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A1FBD {
+    "This is a popular spot.\nIt’s always taken.\pI waited a long time for it to open.\nI finally got to use it!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2026 {
+    "Welcome to my POKéMON LAB.\pI carry out research on battling in\nsecrecy.\pWould you like to see how strong I am?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2095 {
+    "I’m going to go all out!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A20AE {
+    "Oh.\nSome other time, then!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2109 {
+    "Thanks for battling with me.\nPlease come back again tomorrow."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2147 {
+    "Welcome to my POKéMON LAB.\pI carry out research on battling in\nsecrecy."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A218F {
+    "A big mansion is nice, but I like this\nsort of place more.\pI like it because all kinds of people\ncome visit me.\pSo, how would you like a battle?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2220 {
+    "That’s the way!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2230 {
+    "When you’re ready, give me a shout!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2280 {
+    "Well, anyway, I should go buy some\ndecorations and furniture.\pI want my SECRET BASE to be a place\nother people can enjoy."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A22FA {
+    "A big mansion is nice, but I like this\nsort of place more.\pI like it because all kinds of people\ncome visit me."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A236A {
+    "I simply adore shopping for decorations\nand furniture.\pI also love raising POKéMON just\nas much.\pIf you would be so kind, will you battle\nwith my POKéMON?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2405 {
+    "Thank you.\nShall we begin?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2420 {
+    "Oh.\nHow disappointing..."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2446 {
+    "That was all in good fun!\nI should go enjoy shopping now."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2480 {
+    "I simply adore shopping for decorations\nand furniture.\pI also love raising POKéMON just\nas much."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A24E1 {
+    "Some people make their SECRET BASES in\nhard-to-find places.\lDo they want to just lie low?\pBut since you found me, how about we\nhave a battle?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A256F {
+    "I’m not going down easily!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A258A {
+    "Oh... Are you maybe tired from searching\nfor this place?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A25D2 {
+    "Where’s your SECRET BASE?\nI should go visit you there."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2609 {
+    "Some people make their SECRET BASES in\nhard-to-find places.\lDo they want to just lie low?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2663 {
+    "People have told me that you can get\ndecorations in several ways.\pWe should have a race to see who can\nget nicer decorations and furniture!\pIn the meantime, want to battle?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2710 {
+    "This is my SECRET BASE.\nI can’t lose!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2736 {
+    "I’ll battle with you anytime."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A276A {
+    "I won’t lose at collecting decorations.\nCome visit again!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A27A4 {
+    "People have told me that you can get\ndecorations in several ways.\pWe should have a race to see who can\nget nicer decorations and furniture!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2830 {
+    "I found a spot I liked, and I did it up\nwith my favorite decorations.\pI raise my favorite POKéMON and grow\nstronger with it.\pThat’s what I do.\nWant to battle with me?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A28D7 {
+    "Show me what you’re made of!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A28F4 {
+    "I guess there are times when you’re not\ninto it."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A294D {
+    "We can both become stronger.\nLet’s keep at it!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A297C {
+    "I found a spot I liked, and I did it up\nwith my favorite decorations.\pI raise my favorite POKéMON and grow\nstronger with it.\pEvery day is a great day."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2A13 {
+    "You can learn a lot about the taste\nand sense of people by the kinds of\ldecorations they have, and how they\ldisplay them.\pWhat do you think of my taste?\nAre you speechless?\pWant to see my taste in battling?"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2AE2 {
+    "There’s no holding back!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2AFB {
+    "I’ll be happy to demonstrate my style\nanytime."
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2B69 {
+    "What did you think of my style?\nI’ll keep on polishing it!"
+}
+
+text Naranja_SecretBase_G25_M00_Text_081A2BA4 {
+    "You can learn a lot about the taste\nand sense of people by the kinds of\ldecorations they have, and how they\ldisplay them.\pWhat do you think of my taste?\nAre you speechless?"
+}

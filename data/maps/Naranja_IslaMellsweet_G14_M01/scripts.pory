@@ -1,0 +1,49 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMellsweet_G14_M01_MapScripts {
+}
+
+script Naranja_IslaMellsweet_G14_M01_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1 {
+    lock
+    faceplayer
+    bufferleadmonspeciesname(0)
+    loadword(0, Naranja_IslaMellsweet_G14_M01_Text_0818D465)
+    callstd(4)
+    specialvar(VAR_RESULT, GetPokeblockNameByMonNature)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M01_EventScript_Sub_0815A855)
+    loadword(0, Naranja_IslaMellsweet_G14_M01_Text_0818D475)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M01_EventScript_Sub_0815A855 {
+    loadword(0, Naranja_IslaMellsweet_G14_M01_Text_0818D4C0)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2 {
+    loadword(0, Naranja_IslaMellsweet_G14_M01_Text_0818D4F1)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaMellsweet_G14_M01_Text_0818D465 {
+    "Hmm!\nYour {STR_VAR_1}..."
+}
+
+text Naranja_IslaMellsweet_G14_M01_Text_0818D475 {
+    "It likes {STR_VAR_1}S,\ndoesn’t it?\pNo, I’m positive of it! It definitely\nlikes {STR_VAR_1}S!"
+}
+
+text Naranja_IslaMellsweet_G14_M01_Text_0818D4C0 {
+    "It doesn’t appear to like or dislike\nany オカキクケS."
+}
+
+text Naranja_IslaMellsweet_G14_M01_Text_0818D4F1 {
+    "My husband can tell what kind of\nオカキクケS a POKéMON likes at a glance."
+}

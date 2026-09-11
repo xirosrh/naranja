@@ -1,0 +1,307 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaKumquat_G13_M02_MapScripts {
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187348)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
+    lockall
+    applymovement(LOCALID_ISLA_KUMQUAT_G13_M02_GENTLEMAN, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    message(Naranja_IslaKumquat_G13_M02_Text_081873B9)
+    waitmessage
+    multichoice(0x14, 8, 0x10, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_08158458)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_0815844F)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_0815844F {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187459)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_08158458 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187495)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_08158477)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_08158481)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_08158477 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081874F5)
+    callstd(3)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_08158481 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187534)
+    callstd(3)
+    applymovement(LOCALID_ISLA_KUMQUAT_G13_M02_GENTLEMAN, Naranja_IslaKumquat_G13_M02_Movement_081584FC)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ISLA_KUMQUAT_G13_M02_GENTLEMAN)
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_081584BD)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_081584D2)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M02_EventScript_Sub_081584E7)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_081584BD {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_IslaKumquat_G13_M02_Movement_08158504)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_ISLA_KUMQUAT_G13_M03, 0xFF, 0xB, 8)
+    waitstate
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_081584D2 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_IslaKumquat_G13_M02_Movement_081584FE)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_ISLA_KUMQUAT_G13_M03, 0xFF, 0xB, 8)
+    waitstate
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sub_081584E7 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_IslaKumquat_G13_M02_Movement_08158501)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_ISLA_KUMQUAT_G13_M03, 0xFF, 0xB, 8)
+    waitstate
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_5 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_0818757F)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_1 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081875BE)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_6 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081875F8)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_12 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187641)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_10 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081876A1)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_3 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_0818770C)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_8 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_0818775F)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_15 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081877A9)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_Sign_11 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187810)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId3 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081878B7)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_ARTIST_LocalId4 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_0818791D)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId5 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081879BF)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId6 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_081879E6)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId7 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187A1A)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId10 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187AA0)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_ARTIST_LocalId8 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187B04)
+    callstd(2)
+    lockall
+    applymovement(LOCALID_ISLA_KUMQUAT_G13_M02_ARTIST_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G13_M02_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId9 {
+    loadword(0, Naranja_IslaKumquat_G13_M02_Text_08187B7F)
+    callstd(2)
+    end
+}
+
+movement Naranja_IslaKumquat_G13_M02_Movement_081584FC {
+    walk_up
+}
+
+movement Naranja_IslaKumquat_G13_M02_Movement_081584FE {
+    walk_left
+    walk_up
+}
+
+movement Naranja_IslaKumquat_G13_M02_Movement_08158501 {
+    walk_right
+    walk_up
+}
+
+movement Naranja_IslaKumquat_G13_M02_Movement_08158504 {
+    walk_up
+    walk_up
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187348 {
+    "Welcome to LILYCOVE MUSEUM.\pPlease take the time to enjoy our\ncollection of fantastic artwork\lfeaturing POKéMON."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081873B9 {
+    "I’m the CURATOR of this MUSEUM of\nfine arts.\pIt’s heartening to see someone so\nyoung as you in our MUSEUM.\pHave you viewed our collection of\npaintings already?"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187459 {
+    "Ah, then let me not disturb you.\nPlease, do take your time."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187495 {
+    "Oh? I do believe that you seem to\nbe a POKéMON TRAINER.\pHave you an interest in paintings,\ntoo?"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081874F5 {
+    "I see...\pI’m honored that you would visit\nus in spite of that."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187534 {
+    "Ah, excellent!\nYou do like paintings!\pThen, may I ask you to come with me?"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_0818757F {
+    "It’s a very old painting.\nThe paint is peeling here and there."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081875BE {
+    "It’s an odd landscape with bizarre\nand fantastic scenery."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081875F8 {
+    "It’s a painting of a beautiful, smiling\nwoman with a POKéMON on her lap."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187641 {
+    "It’s a painting of a legendary POKéMON\nfrom long ago.\pThe artist painted this from\nimagination."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081876A1 {
+    "It’s a painting of GRASS POKéMON\nswaying in a breeze.\pThey appear to be enjoying the wind’s\ngentle caress."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_0818770C {
+    "It’s a delicious-looking painting\nof BERRIES.\pThis painting could make you hungry!"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_0818775F {
+    "It’s a replica of a famous sculpture.\pIt depicts an ancient BIRD POKéMON."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081877A9 {
+    "It’s a big POKé BALL carved from a\nblack stone.\pIt was apparently used in festivals\nin the olden days."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187810 {
+    "It’s a huge stone tablet inscribed\nwith POKéMON and dense text in the\lsmall characters of an ancient,\lunreadable language."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081878B7 {
+    "Battling with POKéMON is fun,\nI’ll grant you that.\pBut one mustn’t forget our love for\nthe fine arts."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_0818791D {
+    "This ART MUSEUM... Well, you could\nsee many fantastic paintings.\pAnd the CURATOR is a wonderful person.\pAmong artists like myself, this MUSEUM\nis an inspiration."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081879BF {
+    "This lady is pretty!\nShe’s like Mommy!"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_081879E6 {
+    "This POKéMON is adorable!\nJust like our little boy!"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187A1A {
+    "I’d heard that this ART MUSEUM got\nin some new paintings.\pSo, naturally I hurried over.\pAre the new paintings up on the\nsecond floor?"
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187AA0 {
+    "Lately, the CURATOR has been\nunusually cheerful.\pI bet something good happened for him.\nDefinitely."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187B04 {
+    "I aim to see many great paintings\nhere and learn from them.\pI have this dream of one day having\nmy artwork exhibited here."
+}
+
+text Naranja_IslaKumquat_G13_M02_Text_08187B7F {
+    "The ART MUSEUM has become a favorite\ntourist destination.\pIt’s great for LILYCOVE...\nNo, great for the HOENN region!\pThis is what I’ve heard - a lone TRAINER\nprocured all the paintings upstairs."
+}

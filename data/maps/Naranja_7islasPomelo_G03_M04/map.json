@@ -13,7 +13,134 @@
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_GIRL_2",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_WOMAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_MAN_1_3",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_1",
+      "x": 5,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_OLD_MAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 9,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId4",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_LITTLE_GIRL_1",
+      "graphics_id": "OBJ_EVENT_GFX_TWIN",
+      "x": 5,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId5",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_LITTLE_BOY_2",
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 14,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_2_LocalId6",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_SCHOOL_KID_M",
+      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "x": 12,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId7",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_PSYCHIC_M",
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
+      "x": 15,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId8",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_7ISLAS_POMELO_G03_M04_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 8,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId9",
+      "flag": "FLAG_HIDE_7ISLAS_POMELO_G03_M04_MANIAC"
+    }
+  ],
   "warp_events": [
     {
       "x": 5,
@@ -31,5 +158,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 0,
+      "y": 1,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 1,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_7islasPomelo_G03_M04_EventScript_Sign_2"
+    }
+  ]
 }

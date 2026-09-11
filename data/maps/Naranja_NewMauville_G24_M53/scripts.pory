@@ -1,0 +1,275 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewMauville_G24_M53_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_NewMauville_G24_M53_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_NewMauville_G24_M53_OnTransition
+    MAP_SCRIPT_ON_LOAD: Naranja_NewMauville_G24_M53_OnLoad
+}
+
+script Naranja_NewMauville_G24_M53_OnResume {
+    compare_var_to_value(VAR_TEMP_1, 1)
+    call_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E5DA)
+    compare_var_to_value(VAR_TEMP_2, 1)
+    call_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E728)
+    checkflag(FLAG_SYS_POKEDEX_GET)
+    call_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E58F)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Sub_0815E58F {
+    removeobject(32783)
+    return
+}
+
+script Naranja_NewMauville_G24_M53_OnTransition {
+    setvar(VAR_TEMP_1, 0)
+    setvar(VAR_TEMP_2, 0)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_OnLoad {
+    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_TEMP_1, 1)
+    setvar(VAR_TEMP_2, 0)
+    playse(SE_PIN)
+    call(Naranja_NewMauville_G24_M53_EventScript_Sub_0815E5DA)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Trigger_2 {
+    lockall
+    setvar(VAR_TEMP_1, 0)
+    setvar(VAR_TEMP_2, 1)
+    playse(SE_PIN)
+    call(Naranja_NewMauville_G24_M53_EventScript_Sub_0815E728)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Sub_0815E5DA {
+    setmetatile(0x17, 0x22, 0x269, 1)
+    setmetatile(0x17, 0x23, 0x271, 1)
+    setmetatile(0x17, 0x24, 0x26D, 0)
+    setmetatile(0x17, 0x25, 0x281, 0)
+    setmetatile(0xA, 0x10, 0x269, 1)
+    setmetatile(0xA, 0x11, 0x271, 1)
+    setmetatile(0xA, 0x12, 0x26D, 0)
+    setmetatile(0xA, 0x13, 0x281, 0)
+    setmetatile(0xA, 0, 0x269, 1)
+    setmetatile(0xA, 1, 0x271, 1)
+    setmetatile(0xA, 2, 0x26D, 0)
+    setmetatile(0xA, 3, 0x281, 0)
+    setmetatile(0x25, 0x21, 0x2B6, 1)
+    setmetatile(0x25, 0x22, 0x2BE, 1)
+    setmetatile(0x25, 0x23, 0x2C6, 1)
+    setmetatile(0x25, 0x24, 0x2CE, 1)
+    setmetatile(0x1C, 0x16, 0x2B6, 1)
+    setmetatile(0x1C, 0x17, 0x2BE, 1)
+    setmetatile(0x1C, 0x18, 0x2C6, 1)
+    setmetatile(0x1C, 0x19, 0x2CE, 1)
+    setmetatile(0xA, 0x18, 0x2B6, 1)
+    setmetatile(0xA, 0x19, 0x2BE, 1)
+    setmetatile(0xA, 0x1A, 0x2C6, 1)
+    setmetatile(0xA, 0x1B, 0x2CE, 1)
+    setmetatile(0x15, 2, 0x2B6, 1)
+    setmetatile(0x15, 3, 0x2BE, 1)
+    setmetatile(0x15, 4, 0x2C6, 1)
+    setmetatile(0x15, 5, 0x2CE, 1)
+    setmetatile(6, 0xB, 0x24F, 0)
+    setmetatile(0xD, 0xA, 0x24F, 0)
+    setmetatile(0x10, 0x16, 0x24F, 0)
+    setmetatile(4, 0x1A, 0x24F, 0)
+    setmetatile(0x1E, 0x26, 0x24F, 0)
+    setmetatile(2, 0xB, 0x22E, 0)
+    setmetatile(0x11, 0xA, 0x22E, 0)
+    setmetatile(0x19, 0x12, 0x22E, 0)
+    setmetatile(0x12, 0x24, 0x22E, 0)
+    return
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Sub_0815E728 {
+    setmetatile(0x17, 0x22, 0x2B7, 1)
+    setmetatile(0x17, 0x23, 0x2BF, 1)
+    setmetatile(0x17, 0x24, 0x2C7, 1)
+    setmetatile(0x17, 0x25, 0x2CF, 1)
+    setmetatile(0xA, 0x10, 0x2B7, 1)
+    setmetatile(0xA, 0x11, 0x2BF, 1)
+    setmetatile(0xA, 0x12, 0x2C7, 1)
+    setmetatile(0xA, 0x13, 0x2CF, 1)
+    setmetatile(0xA, 0, 0x2B7, 1)
+    setmetatile(0xA, 1, 0x2BF, 1)
+    setmetatile(0xA, 2, 0x2C7, 1)
+    setmetatile(0xA, 3, 0x2CF, 1)
+    setmetatile(0x25, 0x21, 0x269, 1)
+    setmetatile(0x25, 0x22, 0x271, 1)
+    setmetatile(0x25, 0x23, 0x26D, 0)
+    setmetatile(0x25, 0x24, 0x281, 0)
+    setmetatile(0x1C, 0x16, 0x269, 1)
+    setmetatile(0x1C, 0x17, 0x271, 1)
+    setmetatile(0x1C, 0x18, 0x26D, 0)
+    setmetatile(0x1C, 0x19, 0x281, 0)
+    setmetatile(0xA, 0x18, 0x269, 1)
+    setmetatile(0xA, 0x19, 0x271, 1)
+    setmetatile(0xA, 0x1A, 0x26D, 0)
+    setmetatile(0xA, 0x1B, 0x281, 0)
+    setmetatile(0x15, 2, 0x269, 1)
+    setmetatile(0x15, 3, 0x271, 1)
+    setmetatile(0x15, 4, 0x26D, 0)
+    setmetatile(0x15, 5, 0x281, 0)
+    setmetatile(2, 0xB, 0x24F, 0)
+    setmetatile(0x11, 0xA, 0x24F, 0)
+    setmetatile(0x19, 0x12, 0x24F, 0)
+    setmetatile(0x12, 0x24, 0x24F, 0)
+    setmetatile(6, 0xB, 0x236, 0)
+    setmetatile(0xD, 0xA, 0x236, 0)
+    setmetatile(0x10, 0x16, 0x236, 0)
+    setmetatile(4, 0x1A, 0x236, 0)
+    setmetatile(0x1E, 0x26, 0x236, 0)
+    return
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Trigger_10 {
+    lockall
+    loadword(0, Naranja_NewMauville_G24_M53_Text_081983B1)
+    callstd(4)
+    call(Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B)
+    setvar(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    releaseall
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B {
+    setmetatile(0x21, 6, 0x24F, 0)
+    setmetatile(0x20, 2, 0x2F0, 1)
+    setmetatile(0x21, 2, 0x2F1, 1)
+    setmetatile(0x22, 2, 0x2F2, 1)
+    setmetatile(0x23, 2, 0x2F3, 1)
+    setmetatile(0x20, 3, 0x2F4, 1)
+    setmetatile(0x21, 3, 0x2F5, 1)
+    setmetatile(0x22, 3, 0x2F6, 1)
+    setmetatile(0x23, 3, 0x2F7, 1)
+    special(DrawWholeMapView)
+    return
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Sign_1 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    goto_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E8F6)
+    loadword(0, Naranja_NewMauville_G24_M53_Text_08198315)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_Sub_0815E8F6 {
+    loadword(0, Naranja_NewMauville_G24_M53_Text_08198395)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6 {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_VOLTORB, 0x19, 0)
+    waitse
+    playmoncry(SPECIES_VOLTORB, 2)
+    delay(0x28)
+    waitmoncry
+    setflag(FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_6)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    dowildbattle
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    release
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId7 {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_VOLTORB, 0x19, 0)
+    waitse
+    playmoncry(SPECIES_VOLTORB, 2)
+    delay(0x28)
+    waitmoncry
+    setflag(FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_7)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    dowildbattle
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    release
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId8 {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_VOLTORB, 0x19, 0)
+    waitse
+    playmoncry(SPECIES_VOLTORB, 2)
+    delay(0x28)
+    waitmoncry
+    setflag(FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_8)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    dowildbattle
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    release
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1 {
+    setorcopyvar(VAR_0x8000, 2)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2 {
+    setorcopyvar(VAR_0x8000, 0x55)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3 {
+    setorcopyvar(VAR_0x8000, 0x60)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4 {
+    setorcopyvar(VAR_0x8000, 0x17)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_NewMauville_G24_M53_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5 {
+    setorcopyvar(VAR_0x8000, 0x12)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_NewMauville_G24_M53_Text_08198315 {
+    "The generator is radiating heat that\ncan be felt even at a distance.\pIt looks like it should be turned off\nas soon as possible."
+}
+
+text Naranja_NewMauville_G24_M53_Text_08198395 {
+    "The generator quieted down."
+}
+
+text Naranja_NewMauville_G24_M53_Text_081983B1 {
+    "{PLAYER} stepped on the switch.\pClick...\p... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pThe generator appears to have\nstopped..."
+}

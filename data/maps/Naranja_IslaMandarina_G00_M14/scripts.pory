@@ -1,0 +1,179 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarina_G00_M14_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaMandarina_G00_M14_OnTransition
+}
+
+script Naranja_IslaMandarina_G00_M14_OnTransition {
+    setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_0814)
+    setvar(VAR_NARANJA_SIN_NOMBRE_STORY_STATE, 0)
+    setflag(FLAG_HIDE_ISLA_MANDARINA_G06_M00_REPORTER_M)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    call_if(EQUAL, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B6560)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G00_M14_Movement_08645ED1)
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CBCE)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId1 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CC28)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId4 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CCD0)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00C7)
+    goto_if(EQUAL, Naranja_IslaMandarina_G00_M14_EventScript_Sub_0814E8C0)
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CD4D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sub_0814E8C0 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CE30)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sign_2 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CEC0)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sign_4 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CF0D)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sign_7 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CF28)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sign_6 {
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CF6D)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Trigger_1 {
+    checkflag(FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1)
+    goto_if(LESS_THAN, Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Trigger_2 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    goto_if(LESS_THAN, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B5D6E)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B5D6E {
+    lock
+    faceplayer
+    applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G00_M14_Movement_08645ED1)
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_086B5D82)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B6560 {
+    setflag(FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1)
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_0816CAEB)
+    callstd(4)
+    applymovement(LOCALID_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1, Naranja_IslaMandarina_G00_M14_Movement_086B6580)
+    delay(0xFF)
+    nop
+    removeobject(512)
+    nop
+    release
+    end
+}
+
+movement Naranja_IslaMandarina_G00_M14_Movement_08645ED1 {
+    walk_slow_down
+    face_up
+}
+
+movement Naranja_IslaMandarina_G00_M14_Movement_086B6580 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_right
+    set_invisible
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CAEB {
+    "{COLOR 0x06}Marisa: {COLOR 0x01} Mi hermano Mateo\nesculpe en cristal…\p…pero no consigue inspirarse…\p…\p¡Oye!\p¿Conoces la leyenda del Onix de cristal?\p¡Ve a nuestra casa!\n¡Él te la explicará…\p…para que puedas partir a buscarlo!\p¡Asì se inspirará!"
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CBCE {
+    "¡Vete!\pMI hermano está triste porque no     \npuede realizar su trabajo.\pNo molestes."
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CC28 {
+    "A veces me siento vacìo \ny necesito marcarme objetivos,\lcosas que quiero alcanzar.\pPero se tornan en fracaso cuando\nme ciegan por completo\ly entiendo que son absurdas."
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CCD0 {
+    "¿Sabes lo bueno de Isla MANDARINO…\p…y que ninguna otra isla tiene?\p¡Aquì puedes comprar la felicidad\na un precio módico!"
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CD4D {
+    "Creo que ya no te puedes fiar de nadie…\p…es como…\p…como que no conocemos a nadie.\p¡Angustia!\pVeo todos los dìas las caras\nde quien trabaja conmigo\ly ni siquiera puedo saber que hace\lcuando no le veo…\p¿Tu crees posible conocer?"
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CE30 {
+    "Sin llegar a conocer realmente\nsomos ermitaños sociales\ltoda nuestra vida.\pY entonces no tenemos nada\nsi solo tenemos trastos metidos en casa."
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CEC0 {
+    "{COLOR 0x0D}Isla MANDARINA NORTE\n{COLOR 0x00}“La Gran Naranja”"
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CF0D {
+    "Saliendo Vd. de MANDARINA."
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CF28 {
+    "CENTRO COMERCIAL MANDARINA FELIZ\p“Reservamos el derecho de admisión”"
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_0816CF6D {
+    "Proyecto Gran Factorìa\n“No se acerquen: ALTO VOLTAJE”"
+}
+
+text Naranja_IslaMandarina_G00_M14_Text_086B5D82 {
+    "La puerta está cerrada."
+}

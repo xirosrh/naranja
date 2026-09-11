@@ -13,7 +13,148 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_AQUA",
   "connections": [],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_BLACK_BELT",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 22,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BLACK_BELT"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 25,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BREAKABLE_ROCK"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 34,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_MACHOKE_FACING_AWAY",
+      "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+      "x": 15,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_MACHOKE_FACING_AWAY_LocalId4",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_MACHOKE_FACING_AWAY"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_OLD_MAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 21,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_OLD_MAN_1"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_241",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 27,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_241"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 29,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId7",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WINGULL"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_BREAKABLE_ROCK_2",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 23,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BREAKABLE_ROCK_2"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 24,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_HIKER_LocalId9",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_WOMAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 28,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId10",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WOMAN_3"
+    }
+  ],
   "warp_events": [
     {
       "x": 12,
@@ -212,6 +353,52 @@
       "dest_warp_id": "13"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_NARANJA_BEMENTER_STORY_STATE_2",
+      "var_value": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_Trigger_5"
+    }
+  ],
   "bg_events": []
 }

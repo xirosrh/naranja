@@ -1,0 +1,109 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaShamouti_G12_M00_MapScripts {
+}
+
+script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_009B)
+    goto_if(EQUAL, Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157EAD)
+    setvar(VAR_0x8008, 1)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
+    copyvar(VAR_0x8009, VAR_RESULT)
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_0818568C)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E95)
+    special(ChoosePartyMon)
+    waitstate
+    copyvar(VAR_0x800A, VAR_0x8004)
+    compare_var_to_value(VAR_0x8004, 0xFF)
+    goto_if(EQUAL, Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E95)
+    copyvar(VAR_0x8005, VAR_0x800A)
+    specialvar(VAR_RESULT, GetTradeSpecies)
+    copyvar(VAR_0x800B, VAR_RESULT)
+    compare_var_to_var(VAR_RESULT, VAR_0x8009)
+    goto_if(NOT_EQUAL, Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E9F)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    copyvar(VAR_0x8005, VAR_0x800A)
+    special(CreateInGameTradePokemon)
+    special(DoInGameTradeScene)
+    waitstate
+    bufferspeciesname(0, 0x8009)
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_081856F7)
+    callstd(4)
+    setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_009B)
+    release
+    end
+}
+
+script Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E95 {
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_0818577F)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157E9F {
+    bufferspeciesname(0, 0x8009)
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_08185737)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaShamouti_G12_M00_EventScript_Sub_08157EAD {
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_081857C7)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3 {
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_0818582A)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaShamouti_G12_M00_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId2 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_ZIGZAGOON, 0)
+    loadword(0, Naranja_IslaShamouti_G12_M00_Text_08185888)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_0818568C {
+    "Hi, there’s this POKéMON that I’m\nlooking for.\pI want a {STR_VAR_1}.\nDo you have one?\pWould you trade it for my {STR_VAR_2}?"
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_081856F7 {
+    "Thank you!\pI’ll be good to your {STR_VAR_1},\nso please be nice to my {STR_VAR_2}!"
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_08185737 {
+    "Wait!\nThat POKéMON isn’t a {STR_VAR_1}.\pI guess you don’t want to trade\nwith me."
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_0818577F {
+    "Oh, okay. If you change your mind,\nplease come see me.\pI’ll be waiting!"
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_081857C7 {
+    "Thank you for trading with me!\pI really wanted this POKéMON, so\nI promise to take good care of it!"
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_0818582A {
+    "Trading POKéMON with others...\pIt’s as if you’re trading your own\nmemories with other people."
+}
+
+text Naranja_IslaShamouti_G12_M00_Text_08185888 {
+    "ZIGZAGOON: Gumomoh?"
+}

@@ -1,0 +1,181 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarina_G06_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaMandarina_G06_M00_OnTransition
+}
+
+script Naranja_IslaMandarina_G06_M00_OnTransition {
+    call(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081AE188)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_TEALA_LocalId1 {
+    setvar(VAR_0x800B, 5)
+    setvar(VAR_CONTEST_RANK, 0)
+    call(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081A4E92)
+    call(Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153DA1)
+    special(SetContestTrainerGfxIds)
+    call(Naranja_IslaKumquat_G13_M04_EventScript_Sub_0815FBDB)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 1)
+    warp(MAP_NARANJA_SIN_NOMBRE_G25_M28, 0xFF, 7, 5)
+    waitstate
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153DA1 {
+    lockall
+    applymovement(LOCALID_ISLA_MANDARINA_G06_M00_TEALA, Naranja_IslaMandarina_G06_M00_Movement_08153E25)
+    waitmovement(LOCALID_NONE)
+    playse(SE_BRIDGE_WALK)
+    setmetatile(4, 2, 0x221, 1)
+    setmetatile(4, 3, 0x261, 1)
+    special(DrawWholeMapView)
+    applymovement(LOCALID_ISLA_MANDARINA_G06_M00_TEALA, Naranja_IslaMandarina_G06_M00_Movement_08153E28)
+    waitmovement(LOCALID_NONE)
+    playse(SE_BRIDGE_WALK)
+    setmetatile(4, 2, 0x2D1, 1)
+    setmetatile(4, 3, 0x2D9, 1)
+    special(DrawWholeMapView)
+    delay(0x14)
+    applymovement(LOCALID_ISLA_MANDARINA_G06_M00_TEALA, Naranja_IslaMandarina_G06_M00_Movement_08153E35)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M00_Movement_08153E23)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaKumquat_G13_M04_Text_081A6832)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ISLA_MANDARINA_G06_M00_TEALA, Naranja_IslaMandarina_G06_M00_Movement_08153E2C)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M00_Movement_08153E19)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_Sign_3 {
+    lockall
+    fadescreen(1)
+    showcontestpainting(1)
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId4 {
+    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177D6C)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00EB)
+    goto_if(EQUAL, Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153E76)
+    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177DEC)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x14D)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00EB)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_Sub_08153E76 {
+    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177E98)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId6 {
+    loadword(0, Naranja_IslaMandarina_G06_M00_Text_08177ECD)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_Sign_4 {
+    lockall
+    special(ShowBerryBlenderRecordWindow)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_Sign_2 {
+    setvar(VAR_0x8008, 2)
+    setvar(VAR_0x8009, 1)
+    applymovement(32776, Naranja_IslaKumquat_G13_M04_Movement_081B7821)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081B7681)
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081B77B6)
+}
+
+script Naranja_IslaMandarina_G06_M00_EventScript_Sign_1 {
+    goto(Naranja_IslaKumquat_G13_M04_EventScript_Sub_081B783B)
+}
+
+movement Naranja_IslaMandarina_G06_M00_Movement_08153E19 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    delay_8
+    set_invisible
+}
+
+movement Naranja_IslaMandarina_G06_M00_Movement_08153E23 {
+    walk_in_place_faster_left
+}
+
+movement Naranja_IslaMandarina_G06_M00_Movement_08153E25 {
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_IslaMandarina_G06_M00_Movement_08153E28 {
+    walk_down
+    walk_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_IslaMandarina_G06_M00_Movement_08153E2C {
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    delay_8
+    set_invisible
+}
+
+movement Naranja_IslaMandarina_G06_M00_Movement_08153E35 {
+    walk_in_place_faster_right
+}
+
+text Naranja_IslaMandarina_G06_M00_Text_08177D6C {
+    "I went in through the entrance and\ntook a look around the CONTEST hall.\pGetting up on that big stage...\nIt’s going to be tense!"
+}
+
+text Naranja_IslaMandarina_G06_M00_Text_08177DEC {
+    "Oh, my love for POKéMON...\nThe attraction they evoke in me...\pWhoops!\nYou weren’t meant to see that!\lWell, anyway.\pIf you’re entering a CONTEST, try this\nmove on for size."
+}
+
+text Naranja_IslaMandarina_G06_M00_Text_08177E98 {
+    "My feelings for POKéMON...\nOh, they attract me so..."
+}
+
+text Naranja_IslaMandarina_G06_M00_Text_08177ECD {
+    "Which CONTEST are you planning on\nentering?\pIf you’re entering a COOL CONTEST,\na cool POKéMON has to be the one!\pPick a POKéMON worthy of the CONTEST\ntheme, and make sure it has the\lright set of moves to match.\pThat’s fundamental!"
+}

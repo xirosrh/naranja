@@ -1,0 +1,150 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaPomelo_G16_M11_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: Naranja_IslaPomelo_G16_M11_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_1, 0: Naranja_IslaPomelo_G16_M11_OnWarp_1
+    ]
+}
+
+script Naranja_IslaPomelo_G16_M11_OnWarp_1 {
+    turnobject(LOCALID_PLAYER, 2)
+    end
+}
+
+script Naranja_IslaPomelo_G16_M11_OnFrame_1 {
+    lockall
+    applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_IslaPomelo_G16_M11_Movement_0815BC59)
+    applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M11_Movement_0815BC59)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaPomelo_G16_M11_Text_08191841)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_IslaPomelo_G16_M11_Movement_0815BC60)
+    applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M11_Movement_0815BC60)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaPomelo_G16_M11_Text_081918D7)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ISLA_POMELO_G16_M11_STEVEN, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    dofieldeffect(0x3E)
+    waitfieldeffect(0x3E)
+    delay(0x28)
+    setvar(VAR_TEMP_1, 1)
+    call(Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC13)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaPomelo_G16_M11_EventScript_Sub_0815BC41)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaPomelo_G16_M11_EventScript_Sub_0815BC4D)
+    end
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0815BC41 {
+    setrespawn(1)
+    fadescreenspeed(1, 0x18)
+    special(GameClear)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0815BC4D {
+    setrespawn(2)
+    fadescreenspeed(1, 0x18)
+    special(GameClear)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC13 {
+    clearflag(FLAG_HIDE_ISLA_KUMQUAT_G13_M01_MAN_4)
+    call(Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FD09)
+    setflag(FLAG_HIDE_VALN_TANG_G09_M00_OLD_MAN_1)
+    clearflag(FLAG_HIDE_SIN_NOMBRE_G25_M41_OLD_MAN_1)
+    clearflag(FLAG_HIDE_ISLA_MELLSWEET_G14_M07_LITTLE_BOY_1)
+    setvar(VAR_NARANJA_ISLA_MELLSWEET_EVENT_STATE_2, 1)
+    clearflag(FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY_2)
+    clearflag(FLAG_HIDE_ISLA_MURCOTT_G09_M08_SS_TIDAL)
+    clearflag(FLAG_HIDE_ISLA_KUMQUAT_G13_M10_SS_TIDAL)
+    special(UpdateTrainerFanClubGameClear)
+    checkflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_0123)
+    call_if(LESS_THAN, Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC62)
+    checkflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_00FF)
+    call_if(LESS_THAN, Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC70)
+    checkflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_012A)
+    call_if(LESS_THAN, Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC5A)
+    checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_007B)
+    call_if(LESS_THAN, Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC5E)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC5A {
+    clearflag(FLAG_HIDE_ISLA_MELLSWEET_G14_M07_ITEM_BALL)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC5E {
+    clearflag(FLAG_HIDE_ISLA_MELLSWEET_G14_M07_ITEM_BALL_2)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC62 {
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 3)
+    setvar(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 3)
+    clearflag(FLAG_HIDE_PUEBLO_PALETA_G01_M00_NORMAN)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC70 {
+    setflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_085D)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FD09 {
+    clearflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DD)
+    clearflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DE)
+    clearflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DF)
+    clearflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04E0)
+    setvar(VAR_NARANJA_ISLA_POMELO_STORY_STATE, 0)
+    return
+}
+
+movement Naranja_IslaPomelo_G16_M11_Movement_0815BC59 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_IslaPomelo_G16_M11_Movement_0815BC60 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+text Naranja_IslaPomelo_G16_M11_Text_08191841 {
+    "STEVEN: This room...\pThis is where we keep records of\nPOKéMON that prevailed through\lharsh battles.\pIt is here that the LEAGUE CHAMPIONS\nare honored."
+}
+
+text Naranja_IslaPomelo_G16_M11_Text_081918D7 {
+    "STEVEN: Come on, let’s record your\nname as a TRAINER who triumphed over\lthe POKéMON LEAGUE, and the names of\lthe partners who battled with you."
+}

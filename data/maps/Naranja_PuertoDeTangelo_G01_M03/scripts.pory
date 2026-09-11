@@ -1,0 +1,67 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PuertoDeTangelo_G01_M03_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_PuertoDeTangelo_G01_M03_OnTransition
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_SECRET_BASE_STORY_STATE, 0: Naranja_PuertoDeTangelo_G01_M03_OnWarp_1
+    ]
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_OnTransition {
+    checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0082)
+    call_if(LESS_THAN, Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152A7A)
+    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4)
+    call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950)
+    call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D)
+    setvar(VAR_NARANJA_SECRET_BASE_STORY_STATE, 0)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152A7A {
+    setobjectxyperm(LOCALID_PUERTO_DE_TANGELO_G01_M03_RIVAL_MAY_NORMAL, 7, 2)
+    setobjectmovementtype(LOCALID_PUERTO_DE_TANGELO_G01_M03_RIVAL_MAY_NORMAL, 7)
+    return
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_OnWarp_1 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_G25_M00_OnWarp_1)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sign_4 {
+    lockall
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C52)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C5C)
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C52 {
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A100C)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152C5C {
+    setvar(VAR_0x8004, 2)
+    special(DoPCTurnOnEffect)
+    playse(SE_PC_ON)
+    loadword(0, Naranja_PuertoDeTangelo_G01_M01_Text_081A10D6)
+    callstd(4)
+    special(BedroomPC)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_PuertoDeTangelo_G01_M03_EventScript_Sign_3 {
+    lockall
+    setvar(VAR_0x8004, 1)
+    goto(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB)
+}

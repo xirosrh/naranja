@@ -1,0 +1,135 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarina_G13_M21_MapScripts {
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
+    lock
+    faceplayer
+    message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A078)
+    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId4 {
+    lock
+    faceplayer
+    message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A0AC)
+    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId5 {
+    lock
+    faceplayer
+    message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A0DC)
+    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId6 {
+    lock
+    faceplayer
+    message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_IslaMandarina_G13_M21_Mart_0815A10C)
+    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId2 {
+    loadword(0, Naranja_IslaMandarina_G13_M21_Text_0818C4F9)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId7 {
+    loadword(0, Naranja_IslaMandarina_G13_M21_Text_0818C59F)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G13_M21_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId1 {
+    loadword(0, Naranja_IslaMandarina_G13_M21_Text_0818C556)
+    callstd(2)
+    end
+}
+
+mart Naranja_IslaMandarina_G13_M21_Mart_0815A078 {
+    ITEM_X_DEFEND
+    ITEM_X_SPEED
+    ITEM_X_ACCURACY
+    ITEM_SUPER_REPEL
+    ITEM_05B
+    ITEM_05C
+    ITEM_SUN_STONE
+    ITEM_MOON_STONE
+    ITEM_FIRE_STONE
+    ITEM_THUNDER_STONE
+    ITEM_WATER_STONE
+    ITEM_LEAF_STONE
+}
+
+mart Naranja_IslaMandarina_G13_M21_Mart_0815A0AC {
+    ITEM_065
+    ITEM_066
+    ITEM_BIG_MUSHROOM
+    ITEM_069
+    ITEM_PEARL
+    ITEM_BIG_PEARL
+    ITEM_STARDUST
+    ITEM_STAR_PIECE
+    ITEM_NUGGET
+}
+
+mart Naranja_IslaMandarina_G13_M21_Mart_0815A0DC {
+    ITEM_CARBOS
+    ITEM_CALCIUM
+    ITEM_RARE_CANDY
+    ITEM_PP_UP
+    ITEM_ZINC
+    ITEM_PP_MAX
+    ITEM_048
+    ITEM_GUARD_SPEC
+    ITEM_DIRE_HIT
+}
+
+mart Naranja_IslaMandarina_G13_M21_Mart_0815A10C {
+    ITEM_03B
+    ITEM_03C
+    ITEM_03D
+    ITEM_03E
+    ITEM_HP_UP
+    ITEM_PROTEIN
+    ITEM_IRON
+    ITEM_RED_SHARD
+    ITEM_BLUE_SHARD
+    ITEM_YELLOW_SHARD
+}
+
+text Naranja_IslaMandarina_G13_M21_Text_0818C4F9 {
+    "This place is full of cute DOLLS.\pI should buy some for me, instead of\njust for my children."
+}
+
+text Naranja_IslaMandarina_G13_M21_Text_0818C556 {
+    "I’m not big enough to raise POKéMON,\nso I’m getting a cute DOLL instead."
+}
+
+text Naranja_IslaMandarina_G13_M21_Text_0818C59F {
+    "They sell many cute MATS here.\pI wonder which one I should get?\nMaybe I’ll buy them all..."
+}

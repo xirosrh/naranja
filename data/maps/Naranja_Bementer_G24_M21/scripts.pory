@@ -1,0 +1,49 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Bementer_G24_M21_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Bementer_G24_M21_OnTransition
+}
+
+script Naranja_Bementer_G24_M21_OnTransition {
+    call(Naranja_Bementer_G24_M21_EventScript_Sub_0815D492)
+    end
+}
+
+script Naranja_Bementer_G24_M21_EventScript_Sub_0815D492 {
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    compare_var_to_value(VAR_TEMP_1, 0xC)
+    goto_if(LESS_THAN, Naranja_Bementer_G24_M21_EventScript_Sub_0815D4A3)
+    return
+}
+
+script Naranja_Bementer_G24_M21_EventScript_Sub_0815D4A3 {
+    setweather(6)
+    return
+}
+
+script Naranja_Bementer_G24_M21_EventScript_Trigger_1 {
+    setweather(6)
+    doweather
+    end
+}
+
+script Naranja_Bementer_G24_M21_EventScript_Trigger_3 {
+    setweather(2)
+    doweather
+    end
+}
+
+script Naranja_Bementer_G24_M21_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId1 {
+    setorcopyvar(VAR_0x8000, 0x14)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Bementer_G24_M21_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2 {
+    setorcopyvar(VAR_0x8000, 0x150)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}

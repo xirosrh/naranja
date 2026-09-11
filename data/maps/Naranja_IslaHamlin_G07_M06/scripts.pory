@@ -1,0 +1,42 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaHamlin_G07_M06_MapScripts {
+}
+
+script Naranja_IslaHamlin_G07_M06_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
+    lock
+    faceplayer
+    specialvar(VAR_RESULT, IsMirageIslandPresent)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaHamlin_G07_M06_EventScript_Sub_081543B0)
+    loadword(0, Naranja_IslaHamlin_G07_M06_Text_08179718)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaHamlin_G07_M06_EventScript_Sub_081543B0 {
+    loadword(0, Naranja_IslaHamlin_G07_M06_Text_0817973B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaHamlin_G07_M06_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
+    loadword(0, Naranja_IslaHamlin_G07_M06_Text_08179765)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaHamlin_G07_M06_Text_08179718 {
+    "I can’t see MIRAGE ISLAND today..."
+}
+
+text Naranja_IslaHamlin_G07_M06_Text_0817973B {
+    "Oh! Oh my!\nI can see MIRAGE ISLAND today!"
+}
+
+text Naranja_IslaHamlin_G07_M06_Text_08179765 {
+    "MIRAGE ISLAND...\pIt must become visible and invisible\ndepending on the weather conditions\lthat make mirages appear.\pOr is it really appearing and\ndisappearing?"
+}

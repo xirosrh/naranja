@@ -1,0 +1,13 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaPomelo_G16_M08_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_1, 0: Naranja_IslaPomelo_G16_M08_OnWarp_1
+    ]
+}
+
+script Naranja_IslaPomelo_G16_M08_OnWarp_1 {
+    turnobject(LOCALID_PLAYER, 2)
+    end
+}

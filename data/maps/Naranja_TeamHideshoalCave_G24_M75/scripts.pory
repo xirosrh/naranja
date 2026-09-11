@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TeamHideshoalCave_G24_M75_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_TeamHideshoalCave_G24_M75_OnResume
+}
+
+script Naranja_TeamHideshoalCave_G24_M75_OnResume {
+    checkflag(FLAG_SYS_POKEDEX_GET)
+    call_if(EQUAL, Naranja_TeamHideshoalCave_G24_M75_EventScript_Sub_0815F2B8)
+    end
+}
+
+script Naranja_TeamHideshoalCave_G24_M75_EventScript_Sub_0815F2B8 {
+    removeobject(32783)
+    return
+}
+
+script Naranja_TeamHideshoalCave_G24_M75_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4 {
+    setorcopyvar(VAR_0x8000, 1)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_TeamHideshoalCave_G24_M75_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId7 {
+    setorcopyvar(VAR_0x8000, 0x6E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_TeamHideshoalCave_G24_M75_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5 {
+    setorcopyvar(VAR_0x8000, 0x25)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}

@@ -1,0 +1,236 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route123_G31_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route123_G31_M00_OnTransition
+}
+
+script Naranja_Route123_G31_M00_OnTransition {
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_0863)
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08CD)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163A5A)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5BC4)
+    callstd(4)
+    random(0xA)
+    addvar(VAR_RESULT, 0x14)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08CD)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5C66)
+    callstd(4)
+    random(0xA)
+    addvar(VAR_RESULT, 0x14)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5C83)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163A5A {
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5CDC)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId2 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08D1)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163C13)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5D24)
+    callstd(4)
+    setvar(VAR_0x8004, 0xD)
+    call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
+    lock
+    faceplayer
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AAD)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163A9B)
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163A9B {
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5EC0)
+    callstd(4)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5E59)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163AAD {
+    compare_var_to_value(VAR_0x8004, 0)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
+    compare_var_to_value(VAR_0x8004, 1)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163B1E)
+    compare_var_to_value(VAR_0x8004, 2)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163B4F)
+    compare_var_to_value(VAR_0x8004, 3)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163B80)
+    compare_var_to_value(VAR_0x8004, 4)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163BB1)
+    compare_var_to_value(VAR_0x8004, 5)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163BE2)
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163AF0 {
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5E0E)
+    callstd(4)
+    random(0xA)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    goto(Naranja_Route123_G31_M00_EventScript_Sub_08163C1D)
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163B1E {
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00F8)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xA3)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00F8)
+    goto(Naranja_Route123_G31_M00_EventScript_Sub_08163C1D)
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163B4F {
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00F9)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xA4)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00F9)
+    goto(Naranja_Route123_G31_M00_EventScript_Sub_08163C1D)
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163B80 {
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FA)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xA5)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FA)
+    goto(Naranja_Route123_G31_M00_EventScript_Sub_08163C1D)
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163BB1 {
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FB)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xA6)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FB)
+    goto(Naranja_Route123_G31_M00_EventScript_Sub_08163C1D)
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163BE2 {
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FC)
+    goto_if(EQUAL, Naranja_Route123_G31_M00_EventScript_Sub_08163AF0)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5DC1)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xA7)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00FC)
+    goto(Naranja_Route123_G31_M00_EventScript_Sub_08163C1D)
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163C13 {
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5E59)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_08163C1D {
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_08D1)
+    loadword(0, Naranja_Route123_G31_M00_Text_081C5E59)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G31_M00_EventScript_Sub_081A00F3 {
+    fadescreen(1)
+    special(ShowEasyChatScreen)
+    fadescreen(0)
+    return
+}
+
+text Naranja_Route123_G31_M00_Text_081C5BC4 {
+    "You may call me the BERRY MASTER.\pI dream of filling the world with\nbeautiful flowers, so I raise BERRIES\land hand them out to everyone.\pYou’re deserving of one!"
+}
+
+text Naranja_Route123_G31_M00_Text_081C5C66 {
+    "Why be stingy?\nTake another!"
+}
+
+text Naranja_Route123_G31_M00_Text_081C5C83 {
+    "Be sure to visit the PRETTY PETAL\nflower shop near RUSTBORO.\pLet flowers fill the world!"
+}
+
+text Naranja_Route123_G31_M00_Text_081C5CDC {
+    "I’m done for today.\nCome again another day.\pLet flowers fill the world!"
+}
+
+text Naranja_Route123_G31_M00_Text_081C5D24 {
+    "The way my husband grows BERRIES,\noh, he’s the best in the world.\pHe makes me proud, that he does.\pIncidentally, child, have you heard\na good saying lately?"
+}
+
+text Naranja_Route123_G31_M00_Text_081C5DC1 {
+    "Ah! What a remarkable saying!\nInspirational, it is!\pI want you to have this."
+}
+
+text Naranja_Route123_G31_M00_Text_081C5E0E {
+    "Oh! A good saying it is.\nYou’re quite remarkable.\pI want you to have this."
+}
+
+text Naranja_Route123_G31_M00_Text_081C5E59 {
+    "Our four grandchildren should become\nmore accomplished than my husband.\pJoy never goes out of my life!"
+}
+
+text Naranja_Route123_G31_M00_Text_081C5EC0 {
+    "Ah..."
+}

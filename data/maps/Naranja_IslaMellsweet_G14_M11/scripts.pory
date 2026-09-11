@@ -1,0 +1,254 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMellsweet_G14_M11_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_IslaMellsweet_G14_M11_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaMellsweet_G14_M11_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 1: Naranja_IslaMellsweet_G14_M11_OnFrame_1
+        VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 2: Naranja_IslaMellsweet_G14_M11_OnFrame_1
+        VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 3: Naranja_IslaMellsweet_G14_M11_OnFrame_1
+    ]
+}
+
+script Naranja_IslaMellsweet_G14_M11_OnLoad {
+    special(ValidateEReaderTrainer)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AC71)
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AC71 {
+    setmetatile(3, 0, 0x28D, 1)
+    setmetatile(3, 1, 0x295, 1)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_OnTransition {
+    special(ValidateEReaderTrainer)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AC9E)
+    compare_var_to_value(VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 0)
+    call_if(NOT_EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ACAF)
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AC9E {
+    setvar(VAR_TEMP_1, 1)
+    setobjectxyperm(LOCALID_ISLA_MELLSWEET_G14_M11_OLD_MAN_1, 3, 2)
+    setobjectmovementtype(LOCALID_ISLA_MELLSWEET_G14_M11_OLD_MAN_1, 8)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ACAF {
+    setobjectxyperm(LOCALID_ISLA_MELLSWEET_G14_M11_OLD_MAN_1, 2, 2)
+    setobjectmovementtype(LOCALID_ISLA_MELLSWEET_G14_M11_OLD_MAN_1, 0xA)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_OnFrame_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_IslaMellsweet_G14_M11_Movement_0815AD3D)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_MELLSWEET_G14_M11_OLD_MAN_1, Naranja_IslaMellsweet_G14_M11_Movement_0815AD3F)
+    waitmovement(LOCALID_NONE)
+    copyobjectxytoperm(LOCALID_ISLA_MELLSWEET_G14_M11_OLD_MAN_1)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD22)
+    compare_var_to_value(VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD2B)
+    compare_var_to_value(VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 3)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD34)
+    special(LoadPlayerParty)
+    setvar(VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE, 0)
+    releaseall
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD22 {
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E80E)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD2B {
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E859)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD34 {
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E7B1)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_TEMP_1, 1)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD59)
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E59A)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AD59 {
+    special(SavePlayerParty)
+    special(BufferEReaderTrainerName)
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E650)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
+    call(Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADF5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E741)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
+    special(LoadPlayerParty)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8)
+    erasebox(0, 0, 0xF, 0xA)
+    special(SavePlayerParty)
+    special(ReducePlayerPartyToSelectedMons)
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E777)
+    callstd(4)
+    closemessage
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE04)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE16)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE28)
+    warp(MAP_NARANJA_ISLA_MELLSWEET_G14_M12, 0xFF, 3, 1)
+    waitstate
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADE8 {
+    special(LoadPlayerParty)
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E698)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815ADF5 {
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E6DA)
+    callstd(4)
+    fadescreen(1)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE04 {
+    applymovement(32783, Naranja_IslaMellsweet_G14_M11_Movement_0815AE46)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMellsweet_G14_M11_Movement_0815AE3A)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE16 {
+    applymovement(32783, Naranja_IslaMellsweet_G14_M11_Movement_0815AE49)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMellsweet_G14_M11_Movement_0815AE3E)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sub_0815AE28 {
+    applymovement(32783, Naranja_IslaMellsweet_G14_M11_Movement_0815AE46)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMellsweet_G14_M11_Movement_0815AE42)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M11_EventScript_Sign_1 {
+    loadword(0, Naranja_IslaMellsweet_G14_M11_Text_0818E631)
+    callstd(3)
+    end
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AD3D {
+    walk_down
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AD3F {
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AE3A {
+    delay_16
+    walk_up
+    walk_up
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AE3E {
+    delay_16
+    walk_right
+    walk_up
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AE42 {
+    delay_16
+    walk_left
+    walk_up
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AE46 {
+    walk_left
+    walk_in_place_faster_right
+}
+
+movement Naranja_IslaMellsweet_G14_M11_Movement_0815AE49 {
+    walk_right
+    walk_in_place_faster_left
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E59A {
+    "When I was young, I traveled the world\nas a POKéMON TRAINER.\pNow that I’ve become an old buzzard,\nmy only amusement is watching young\lTRAINERS battle."
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E631 {
+    "The door appears to be locked."
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E650 {
+    "A TRAINER named {STR_VAR_1} is\nvisiting my home.\pWould you like to challenge\n{STR_VAR_1}?"
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E698 {
+    "You won’t battle? I’m disappointed\nthat I can’t see you battle..."
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E6DA {
+    "Oh, good, good!\pBut my house isn’t all that sturdy.\pCould I ask you to keep it down to\na 3-on-3 match?"
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E741 {
+    "Before you two battle, you should\nsave your progress."
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E777 {
+    "I hope to see a good match!"
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E7B1 {
+    "So, it became a standoff.\pIt was a brilliant match in which\nneither side conceded a step!"
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E80E {
+    "That was superlative!\pWhy, it was like seeing myself in my\nyouth again!"
+}
+
+text Naranja_IslaMellsweet_G14_M11_Text_0818E859 {
+    "Ah, too bad for you!\pBut it was a good match.\nI hope you can win next time."
+}

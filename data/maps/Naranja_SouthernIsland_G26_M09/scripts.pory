@@ -1,0 +1,94 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SouthernIsland_G26_M09_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SouthernIsland_G26_M09_OnTransition
+}
+
+script Naranja_SouthernIsland_G26_M09_OnTransition {
+    setflag(FLAG_NARANJA_SOUTHERN_ISLAND_EVENT_COMPLETE_0849)
+    end
+}
+
+script Naranja_SouthernIsland_G26_M09_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId1 {
+    lock
+    faceplayer
+    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C5215)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B25)
+    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C5281)
+    callstd(4)
+    closemessage
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    hideobjectat(LOCALID_SOUTHERN_ISLAND_G26_M09_SAILOR, MAP_NARANJA_SOUTHERN_ISLAND_G26_M09)
+    setvar(VAR_0x8004, 2)
+    call(Naranja_SouthernIsland_G26_M09_EventScript_Sub_081A047C)
+    warp(MAP_NARANJA_ISLA_KUMQUAT_G13_M10, 0xFF, 8, 0xB)
+    waitstate
+    release
+    end
+}
+
+script Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B25 {
+    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C52A6)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B2F {
+    applymovement(LOCALID_PLAYER, Naranja_SouthernIsland_G26_M09_Movement_08160B45)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B3A {
+    applymovement(LOCALID_PLAYER, Naranja_SouthernIsland_G26_M09_Movement_08160B47)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_SouthernIsland_G26_M09_EventScript_Sign_1 {
+    loadword(0, Naranja_SouthernIsland_G26_M09_Text_081C52FB)
+    callstd(3)
+    end
+}
+
+script Naranja_SouthernIsland_G26_M09_EventScript_Sub_081A047C {
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B2F)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_SouthernIsland_G26_M09_EventScript_Sub_08160B3A)
+    delay(0x1E)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00)
+    call(Naranja_IslaKumquat_G13_M10_EventScript_Sub_081A040E)
+    return
+}
+
+movement Naranja_SouthernIsland_G26_M09_Movement_08160B45 {
+    walk_down
+}
+
+movement Naranja_SouthernIsland_G26_M09_Movement_08160B47 {
+    walk_left
+    walk_in_place_faster_down
+}
+
+text Naranja_SouthernIsland_G26_M09_Text_081C5215 {
+    "Aye, mate, there’s nothing here to\nsee or do on this forgettable island.\pWhat say we sail back to LILYCOVE?"
+}
+
+text Naranja_SouthernIsland_G26_M09_Text_081C5281 {
+    "Aye, right, then!\nSail home we will!"
+}
+
+text Naranja_SouthernIsland_G26_M09_Text_081C52A6 {
+    "Aye, right, as you like, then."
+}
+
+text Naranja_SouthernIsland_G26_M09_Text_081C52FB {
+    "“Those whose memories fade seek to\ncarve them in their hearts...”"
+}

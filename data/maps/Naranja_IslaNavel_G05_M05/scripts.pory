@@ -1,0 +1,139 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaNavel_G05_M05_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaNavel_G05_M05_OnTransition
+}
+
+script Naranja_IslaNavel_G05_M05_OnTransition {
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_00E5)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C54)
+    checkitem(ITEM_METEORITE, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153BDA)
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177755)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153BDA {
+    checkflag(FLAG_TEMP_2)
+    call_if(LESS_THAN, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C2D)
+    checkflag(FLAG_TEMP_2)
+    call_if(EQUAL, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C3E)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C47)
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_081778C4)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x13B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setvar(VAR_0x8004, 0x118)
+    call(Naranja_CuevaKabuto_G24_M10_EventScript_Sub_081A067F)
+    setflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_00E5)
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177910)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C2D {
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177755)
+    callstd(4)
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_0817780E)
+    callstd(5)
+    return
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C3E {
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_081779B8)
+    callstd(5)
+    return
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C47 {
+    setflag(FLAG_TEMP_2)
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_0817797D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C54 {
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177910)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_00E5)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C86)
+    checkflag(FLAG_NARANJA_MT_CHIMNEY_EVENT_COMPLETE_008B)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C7C)
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177A2B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C7C {
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177A7C)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M05_EventScript_Sub_08153C86 {
+    loadword(0, Naranja_IslaNavel_G05_M05_Text_08177ABB)
+    callstd(4)
+    release
+    end
+}
+
+text Naranja_IslaNavel_G05_M05_Text_08177755 {
+    "PROF. COZMO: Oh...\nI never should have let myself be\lconned into telling TEAM {AQUA} where\lyou can find METEORITES...\pThat METEORITE from METEOR FALLS...\nIt’s never going to be mine now..."
+}
+
+text Naranja_IslaNavel_G05_M05_Text_0817780E {
+    "Oh!\nHah?\pThat item...\pCould it be?\pIs it the METEORITE that TEAM {AQUA}\ntook from METEOR FALLS?\pPlease, may I have it?\pI’m not asking for it for free.\nHow about in exchange for this TM?"
+}
+
+text Naranja_IslaNavel_G05_M05_Text_081778C4 {
+    "PROF. COZMO: This TM, it represents\nmy feeling of gratitude.\lPlease use it!"
+}
+
+text Naranja_IslaNavel_G05_M05_Text_08177910 {
+    "PROF. COZMO: Oh, I can’t believe it.\nThis is really, really great!\pThis is really going to help my research!"
+}
+
+text Naranja_IslaNavel_G05_M05_Text_0817797D {
+    "PROF. COZMO: Oh, but...\nI’m crushed with disappointment..."
+}
+
+text Naranja_IslaNavel_G05_M05_Text_081779B8 {
+    "PROF. COZMO: Please, may I have that\nMETEORITE?\pI’m not asking for it for free.\nHow about in exchange for this TM?"
+}
+
+text Naranja_IslaNavel_G05_M05_Text_08177A2B {
+    "PROF. COZMO went off to METEOR FALLS\non ROUTE 114 with some people from\lTEAM {AQUA}."
+}
+
+text Naranja_IslaNavel_G05_M05_Text_08177A7C {
+    "Poor PROF. COZMO...\nHe’s so depressed... I feel sorry for him."
+}
+
+text Naranja_IslaNavel_G05_M05_Text_08177ABB {
+    "Look at PROF. COZMO...\nHe’s so happy! I think it’s cute."
+}

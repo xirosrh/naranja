@@ -1,0 +1,63 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaHamlin_G07_M05_MapScripts {
+}
+
+script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId2 {
+    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817961F)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
+    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817959B)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaHamlin_G07_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId3 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817963D)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaHamlin_G07_M05_EventScript_Sub_0815437F)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaHamlin_G07_M05_EventScript_Sub_08154389)
+    end
+}
+
+script Naranja_IslaHamlin_G07_M05_EventScript_Sub_0815437F {
+    loadword(0, Naranja_IslaHamlin_G07_M05_Text_08179656)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaHamlin_G07_M05_EventScript_Sub_08154389 {
+    loadword(0, Naranja_IslaHamlin_G07_M05_Text_0817968C)
+    callstd(4)
+    release
+    end
+}
+
+text Naranja_IslaHamlin_G07_M05_Text_0817959B {
+    "People were saying they saw a POKéMON\nFLYING high above HOENN.\pIs it FLYING around all the time?\nDoesn’t it need to rest somewhere?"
+}
+
+text Naranja_IslaHamlin_G07_M05_Text_0817961F {
+    "A sky POKéMON!\nA sky POKéMON!"
+}
+
+text Naranja_IslaHamlin_G07_M05_Text_0817963D {
+    "Where did you come from?"
+}
+
+text Naranja_IslaHamlin_G07_M05_Text_08179656 {
+    "Yes?\nYES TOWN?\pI’ve never heard of a place like that."
+}
+
+text Naranja_IslaHamlin_G07_M05_Text_0817968C {
+    "No? That doesn’t make any sense.\nYou have to come from somewhere.\pOh! Wait! You’re not going to say you\nwere born at the bottom of the sea?"
+}

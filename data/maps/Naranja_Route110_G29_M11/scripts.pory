@@ -1,0 +1,18 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route110_G29_M11_MapScripts {
+}
+
+script Naranja_Route110_G29_M11_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalId1 {
+    lock
+    faceplayer
+    loadword(0, Naranja_Route110_G29_M11_Text_0819E326)
+    callstd(4)
+    release
+    end
+}
+
+text Naranja_Route110_G29_M11_Text_0819E326 {
+    "On CYCLING ROAD, you can go all out\nand cycle as fast as you’d like.\pIt feels great to go that fast, but try\nnot to crash into anyone!"
+}

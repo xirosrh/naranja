@@ -1,0 +1,73 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewMauville_G24_M52_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_NewMauville_G24_M52_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_NewMauville_G24_M52_OnTransition
+}
+
+script Naranja_NewMauville_G24_M52_OnLoad {
+    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 0)
+    call_if(EQUAL, Naranja_NewMauville_G24_M52_EventScript_Sub_0815E4A1)
+    end
+}
+
+script Naranja_NewMauville_G24_M52_EventScript_Sub_0815E4A1 {
+    setmetatile(3, 0, 0x314, 1)
+    setmetatile(4, 0, 0x315, 1)
+    setmetatile(5, 0, 0x316, 1)
+    setmetatile(3, 1, 0x31C, 1)
+    setmetatile(4, 1, 0x31D, 1)
+    setmetatile(5, 1, 0x31E, 1)
+    return
+}
+
+script Naranja_NewMauville_G24_M52_OnTransition {
+    setflag(FLAG_NARANJA_NEW_MAUVILLE_EVENT_COMPLETE_0840)
+    end
+}
+
+script Naranja_NewMauville_G24_M52_EventScript_Trigger_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_NewMauville_G24_M52_Text_081982C0)
+    callstd(4)
+    checkitem(ITEM_BASEMENT_KEY, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_NewMauville_G24_M52_EventScript_Sub_0815E55D)
+    loadword(0, Naranja_NewMauville_G24_M52_Text_081982D4)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_NewMauville_G24_M52_EventScript_Sub_0815E55D)
+    loadword(0, Naranja_NewMauville_G24_M52_Text_081982EA)
+    callstd(4)
+    setmetatile(3, 0, 0x2C3, 0)
+    setmetatile(4, 0, 0x2C4, 0)
+    setmetatile(5, 0, 0x2C5, 0)
+    setmetatile(3, 1, 0x2CB, 1)
+    setmetatile(4, 1, 0x2CC, 0)
+    setmetatile(5, 1, 0x2CD, 1)
+    special(DrawWholeMapView)
+    playse(SE_BANG)
+    setvar(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 1)
+    releaseall
+    end
+}
+
+script Naranja_NewMauville_G24_M52_EventScript_Sub_0815E55D {
+    releaseall
+    end
+}
+
+text Naranja_NewMauville_G24_M52_Text_081982C0 {
+    "The door is closed."
+}
+
+text Naranja_NewMauville_G24_M52_Text_081982D4 {
+    "Use the BASEMENT KEY?"
+}
+
+text Naranja_NewMauville_G24_M52_Text_081982EA {
+    "{PLAYER} used the BASEMENT KEY.\pThe door opened!"
+}

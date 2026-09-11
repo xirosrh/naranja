@@ -1,0 +1,31 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PuebloPaleta_G04_M00_MapScripts {
+}
+
+script Naranja_PuebloPaleta_G04_M00_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId3 {
+    loadword(0, Naranja_PuebloPaleta_G04_M00_Text_081762A3)
+    callstd(2)
+    end
+}
+
+script Naranja_PuebloPaleta_G04_M00_EventScript_Trigger_1 {
+    lockall
+    checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_4051)
+    goto_if(LESS_THAN, Naranja_IslaTangelo_G00_M10_EventScript_Trigger_1)
+    nop
+    checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_5051)
+    goto_if(EQUAL, 0x086B0B00)
+    nop
+    loadword(0, Naranja_PuebloPaleta_G04_M00_Text_08176209)
+    goto(Naranja_ValleCharizard_G04_M01_EventScript_Sub_0815369F)
+}
+
+text Naranja_PuebloPaleta_G04_M00_Text_08176209 {
+    "That CHARCOAL I gave you, it’s used\nfor making herbal medicine.\pIt also does wonders when held by\na POKéMON.\pIt intensifies the power of FIRE-type\nmoves."
+}
+
+text Naranja_PuebloPaleta_G04_M00_Text_081762A3 {
+    "Las normas son las normas\pNo puedo dejar que la gente pase\nsin pagar….            \l                           "
+}

@@ -1,0 +1,60 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PuebloPaleta_G08_M00_MapScripts {
+}
+
+script Naranja_PuebloPaleta_G08_M00_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_007A)
+    goto_if(EQUAL, Naranja_PuebloPaleta_G08_M00_EventScript_Sub_0815446D)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_PuebloPaleta_G08_M00_EventScript_Sub_08154463)
+    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_086BF11B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_PuebloPaleta_G08_M00_EventScript_Sub_08154463 {
+    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_08179CA1)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_PuebloPaleta_G08_M00_EventScript_Sub_0815446D {
+    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_08179D12)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_PuebloPaleta_G08_M00_EventScript_OBJ_EVENT_GFX_BIRCHS_BAG_LocalId1 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_MACHOKE, 0)
+    loadword(0, Naranja_PuebloPaleta_G08_M00_Text_086BFAF4)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_PuebloPaleta_G08_M00_Text_08179CA1 {
+    "Oh, hello, {PLAYER}! We’ve got\nsomething we want you to have.\pMy husband has it, so please have a\nword with him, dear."
+}
+
+text Naranja_PuebloPaleta_G08_M00_Text_08179D12 {
+    "I want you to keep this a secret\nfrom my husband...\pBut our WALLY left VERDANTURF TOWN\nwithout telling anyone.\pYou know, WALLY is frail, but\nhe’s surprisingly strong-willed.\pI’m sure that he’ll come back safe\nand sound one day!"
+}
+
+text Naranja_PuebloPaleta_G08_M00_Text_086BF11B {
+    "Delia: ¡Esta vez no tengo nada para tí!\n¿Crees que cada vez que vengas te\lvas a llevar algo?\p\pDe todos modos…\n¡Suerte!"
+}
+
+text Naranja_PuebloPaleta_G08_M00_Text_086BFAF4 {
+    "¡{PLAYER} encontró MOCHILA!\pDelia: ¡Eh! ¿Que haces?\n¡Esto es mío!"
+}

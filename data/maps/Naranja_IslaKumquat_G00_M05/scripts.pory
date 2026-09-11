@@ -1,0 +1,724 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaKumquat_G00_M05_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaKumquat_G00_M05_OnTransition
+    MAP_SCRIPT_ON_LOAD: Naranja_IslaKumquat_G00_M05_OnLoad
+}
+
+script Naranja_IslaKumquat_G00_M05_OnTransition {
+    setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_081B)
+    setvar(VAR_NARANJA_SIN_NOMBRE_STORY_STATE, 0)
+    setflag(FLAG_HIDE_ISLA_KUMQUAT_G13_M04_REPORTER_M)
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_081A02C1)
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
+    call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_OnLoad {
+    setmetatile(0x45, 4, 0xA9, 1)
+    setmetatile(0x46, 4, 0x2A8, 1)
+    setmetatile(0x47, 4, 0x2A9, 1)
+    setmetatile(0x48, 4, 0x2AA, 1)
+    setmetatile(0x45, 5, 0x91, 1)
+    setmetatile(0x46, 5, 0x2B0, 1)
+    setmetatile(0x47, 5, 0x2B1, 0)
+    setmetatile(0x48, 5, 0x2B2, 1)
+    setmetatile(0x45, 6, 0x1BE, 0)
+    setmetatile(0x46, 6, 0x1BF, 0)
+    setmetatile(0x47, 6, 0x170, 0)
+    setmetatile(0x48, 6, 0x1BD, 0)
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0070)
+    call_if(LESS_THAN, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CABE)
+    checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_080D)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CB2B)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CABE {
+    setmetatile(0x4C, 0xC, 0x290, 1)
+    setmetatile(0x4D, 0xC, 0x291, 1)
+    setmetatile(0x4C, 0xD, 0x2A0, 1)
+    setmetatile(0x4D, 0xD, 0x2A1, 1)
+    setmetatile(0x4C, 0xE, 0x298, 1)
+    setmetatile(0x4D, 0xE, 0x299, 1)
+    setmetatile(0x4C, 0xF, 0x2A0, 1)
+    setmetatile(0x4D, 0xF, 0x2A1, 1)
+    setmetatile(0x4D, 0x10, 0x298, 1)
+    setmetatile(0x4E, 0x10, 0x299, 1)
+    setmetatile(0x4D, 0x11, 0x2A0, 1)
+    setmetatile(0x4E, 0x11, 0x2A1, 1)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CB2B {
+    setmetatile(0x45, 4, 0xA9, 1)
+    setmetatile(0x46, 4, 0xA9, 1)
+    setmetatile(0x47, 4, 0xA9, 1)
+    setmetatile(0x48, 4, 0xA9, 1)
+    setmetatile(0x45, 5, 0x91, 1)
+    setmetatile(0x46, 5, 0x91, 1)
+    setmetatile(0x47, 5, 0x91, 1)
+    setmetatile(0x48, 5, 0x91, 1)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId16 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_08CF)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CBB4)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081C5A7A)
+    callstd(4)
+    random(0xA)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_08CF)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081C5B1D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CBB4 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081C5B5D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId3 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081686C9)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId4 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168819)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0070)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CC04)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081688C1)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CC04 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168934)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId6 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168A55)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId5 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168A8D)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId7 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168B1F)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId8 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168B9B)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId9 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_080D)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CC5D)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168C16)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CC5D {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168D15)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_5 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168DA9)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_6 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168DE1)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_7 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168E2F)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_1 {
+    lockall
+    specialvar(VAR_0x8004, CountPlayerMuseumPaintings)
+    copyvar(VAR_0x8000, VAR_0x8004)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CCA2)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168EA4)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CCA2 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168E67)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_8 {
+    lockall
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CCC0)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168EDA)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CCC0 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168F57)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_9 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168FA1)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_3 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168FF3)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sign_10 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08169072)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJECT_10_LocalId10 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00DA)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CD18)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_0816864A)
+    callstd(4)
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168675)
+    callstd(4)
+    applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00DA)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CD18 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_0816864A)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJECT_13_LocalId13 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168455)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJECT_14_LocalId14 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081684C2)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJECT_15_LocalId15 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168573)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJECT_12_LocalId12 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081685EB)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_VARS_LocalId17 {
+    lock
+    faceplayer
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CD60)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDD3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CD60 {
+    playbgm(MUS_ENCOUNTER_MAY, 1)
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDB0)
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E)
+    call_if(LESS_THAN, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDB9)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDC2)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167B94)
+    callstd(4)
+    copyvar(VAR_0x8000, VAR_STARTER_MON)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE46)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE56)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE66)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDB0 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167B55)
+    callstd(5)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDB9 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081679BF)
+    callstd(5)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDC2 {
+    setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167AEB)
+    callstd(4)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CDD3 {
+    playbgm(MUS_ENCOUNTER_BRENDAN, 1)
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE23)
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E)
+    call_if(LESS_THAN, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE2C)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE35)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081680A9)
+    callstd(4)
+    copyvar(VAR_0x8000, VAR_STARTER_MON)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE76)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE86)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE96)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE23 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168067)
+    callstd(5)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE2C {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167F75)
+    callstd(5)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE35 {
+    setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_0816802C)
+    callstd(4)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE46 {
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_665, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE56 {
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_666, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE66 {
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_664, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE76 {
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_662, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE86 {
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_663, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE96 {
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_661, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167C6B)
+    callstd(4)
+    setvar(VAR_RESULT, 0)
+    checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_080C)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEDE)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEEE)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEF7)
+    clearflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M03_RIVAL_MAY_NORMAL)
+    clearflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M03_PICHU_DOLL)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF6B)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEDE {
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_080E)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEE8)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEE8 {
+    setvar(VAR_RESULT, 1)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEEE {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167D08)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEF7 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF09)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167DDD)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF09 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08167EAA)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168149)
+    callstd(4)
+    setvar(VAR_RESULT, 0)
+    checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_080C)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEDE)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF47)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF50)
+    clearflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_RIVAL_BRENDAN_NORMAL)
+    goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF6B)
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF47 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_081681EA)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF50 {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF62)
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_08168282)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF62 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_0816835A)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF6B {
+    closemessage
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x32)
+    setfieldeffectargument(0, 1)
+    dofieldeffect(0x1E)
+    delay(0xF)
+    removeobject(32783)
+    waitfieldeffect(0x1E)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    setflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0124)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId2 {
+    loadword(0, Naranja_IslaKumquat_G00_M05_Text_0816DA89)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_Sub_081A02C1 {
+    setweather(0xC)
+    return
+}
+
+script Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId11 {
+    setorcopyvar(VAR_0x8000, 0x54)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+movement Naranja_IslaKumquat_G00_M05_Movement_081A0839 {
+    face_player
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081679BF {
+    "MAY: Oh, hey?\n{PLAYER}{KUN}, are you shopping, too?\pI bought a whole bunch of DOLLS and\nPOSTERS.\pOf course, I’ve also caught a lot of\nPOKéMON, and I’m raising them\lproperly, too.\pActually, I’m more worried if you’re\nraising POKéMON properly, {PLAYER}{KUN}.\pI’ll battle with you, so you can show\nme your POKéMON, {PLAYER}{KUN}."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167AEB {
+    "MAY: Oh, why? {PLAYER}{KUN}, haven’t you\nbeen raising your POKéMON?\pThat’s not a very good showing as a\nTRAINER..."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167B55 {
+    "MAY: Come on, battle with me, so I can\ncheck out your POKéMON!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167B94 {
+    "MAY: The POKéMON I raised won’t be\nbeaten by your POKéMON, {PLAYER}{KUN}!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167BD5 {
+    "... ... ... ... ... ... ... ...\pI remember the battle I had with you,\n{PLAYER}{KUN}, on ROUTE 103.\pThat battle helped you become this\nstrong, {PLAYER}{KUN}, didn’t it?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167C6B {
+    "MAY: I’m thinking of going back to\nLITTLEROOT soon.\pI’ve caught a decent group of POKéMON,\nand my POKéDEX is coming along, so\lI’m going home to show my dad."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167D08 {
+    "{PLAYER}{KUN}, what are you going to do?\pCollect all the GYM BADGES and take\nthe POKéMON LEAGUE challenge?\pWell, while you’re collecting BADGES,\n{PLAYER}{KUN}, I’m going to work on my\lPOKéDEX. I’ll complete it before you!\pSee you!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167DDD {
+    "{PLAYER}{KUN}, what are you going to do?\pAre you taking the POKéMON LEAGUE\nchallenge?\pOr, are you going to complete your\nPOKéDEX?\pI might’ve lost to you in battling,\nbut I’ll finish my POKéDEX before you!\pSee you!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167EAA {
+    "{PLAYER}{KUN}, what are you going to do?\pAre you taking the BATTLE TOWER\nchallenge?\pOr, are you going to complete your\nPOKéDEX?\pI might’ve lost to you in battling,\nbut I’ll finish my POKéDEX before you!\pSee you!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08167F75 {
+    "BRENDAN: Oh, hey, it’s {PLAYER}.\pI’m running an errand for my dad.\nNo, I’m not buying any DOLLS.\pAnyways, it’s been a while.\pWant to have a battle to see who’s been\nraising POKéMON better?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_0816802C {
+    "BRENDAN: Oh, what’s the matter?\nDon’t have the confidence?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168067 {
+    "BRENDAN: Want to battle to see who’s\nbeen raising POKéMON better?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081680A9 {
+    "BRENDAN: Aww, but you know I’m not\ngoing to lose to no {PLAYER}."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081680E4 {
+    "Humph...\nYou’ve done a lot of raising.\pThat stings a bit - I had a head start\non you as a TRAINER..."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168149 {
+    "BRENDAN: I...\nI plan on going home to LITTLEROOT.\pYou know I’m helping out my dad on his\nPOKéDEX. It’s coming together pretty\ldecently, so I should go show him."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081681EA {
+    "{PLAYER}, what are you going to do?\pCollect all the GYM BADGES and take\nthe POKéMON LEAGUE challenge?\pMaybe I’ll do that, too...\pWell, anyway, hang in there!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168282 {
+    "{PLAYER}, what are you going to do?\pSince you’re that strong, are you\ntaking the POKéMON LEAGUE challenge?\pHeh, even me - if I trained my POKéMON\na bit more, I should be stronger than\lyou, {PLAYER}.\pWell, anyway, hang in there!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_0816835A {
+    "{PLAYER}, what are you going to do?\pSince you’re that strong, are you\ntaking the BATTLE TOWER challenge?\pHeh, even me - if I trained my POKéMON\na bit more, I should be stronger than\lyou, {PLAYER}.\lMaybe I will go to the BATTLE TOWER.\pWell, anyway, hang in there!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168455 {
+    "Fufufu...\pWe moved more loot into our secret\nHIDEOUT today...\pWh-who are you?!\nI was just talking to myself!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081684C2 {
+    "I’m just a GRUNT, so I don’t know what\nthe BOSS is thinking...\pBut being on TEAM {AQUA}, I know I’ll get\nthe chance to do big things!\pWh-who are you?!\nI was just talking to myself!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168573 {
+    "Hey, you!\pDon’t go near the cave in the cove!\pWhy? You don’t need a reason why!\nI’m an adult, so you just listen to me!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081685EB {
+    "If this whole wide world becomes ours,\nTEAM {AQUA}’s, it will be a happier\lplace for POKéMON, too."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_0816864A {
+    "There! WAILMER!\nLeap out of the water now!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168675 {
+    "Hunh? What do you want?\pYou’re messing up our training, so can\nyou, like, get lost?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081686C9 {
+    "The POKéMON that come to this CONTEST\nHALL are all prizewinners.\lThey come from all over the country.\pMy heart swells with excitement!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168819 {
+    "I came from KANTO.\pThe HOENN region is beautiful with\nall its water and verdant nature.\pHunh? Wait a second...\pCould there be rare POKéMON that live\nonly in this area?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081688C1 {
+    "TEAM {AQUA}’s been training their\nWAILMER in the cove.\pWe SAILORS can’t get our boats out\nto sea with them in the way!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168934 {
+    "Ahoy, did you know?\pSomeone punted TEAM {AQUA} out of the\nway for us!\pThat got the WAILMER out of the cove,\nso we can get our boats out again."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168A55 {
+    "El transporte marìtimo de fuel   \nsiempre es peligroso."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168A8D {
+    "I’m an ART DEALER.\pI am a buyer and seller of fine art,\nespecially paintings.\pI’ve heard that the MUSEUM here has\nmagnificent works on exhibit..."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168B1F {
+    "Even as we grow old and wrinkled, the\nsea remains forever young with the\lvivid brilliance of life...\pFwohoho fwohohohoho..."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168B9B {
+    "It was sixty years ago that my husband\nproposed to me here.\lThe sea remains as beautiful as ever.\pMufufufu mufufufufufu..."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168C16 {
+    "Hm, you know of the peculiar cavern\nin this cove?\pThat had been a natural formation, but\nthen that TEAM {AQUA} lot came along\land made their renovations.\pThey call themselves the “nature-loving\nTEAM {AQUA}”!\pBut what they do and what they say\ndon’t match at all!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168D15 {
+    "That cave in the cove...\nIt seems someone sealed the entrance,\lso no one can enter it anymore.\pThat TEAM {AQUA} lot, they must\nhave gone away for good."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168DA9 {
+    "LILYCOVE CITY\p“Where the land ends and the\nsea begins.”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168DE1 {
+    "POKéMON CONTESTS\nMASTER RANK REGISTRATION\p“Enter CONTESTS with your friends!”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168E2F {
+    "COVE LILY MOTEL\p“Remember us as COVE LILY of\nLILYCOVE.”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168E67 {
+    "LILYCOVE MUSEUM\p“POKéMON Masterpiece Collection\non exhibit!”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168EA4 {
+    "LILYCOVE MUSEUM\p“{PLAYER}’s POKéMON Collection\non exhibit!”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168EDA {
+    "LILYCOVE CITY HARBOR\p“The ferry S.S. TIDAL is under\nconstruction in SLATEPORT CITY.\p“Service is scheduled to begin\nshortly.”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168F57 {
+    "LILYCOVE CITY HARBOR\p“Enjoy a delightful cruise on the\nferry S.S. TIDAL.”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168FA1 {
+    "POKéMON TRAINER FAN CLUB\pThe names of TRAINERS are scribbled\nall over the sign..."
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08168FF3 {
+    "LILYCOVE DEPARTMENT STORE\p“Overflowing with great merchandise\nand excitement!\p“A great place to find that something\nyou need!”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_08169072 {
+    "MOVE DELETER’S HOUSE\p“Unwanted POKéMON moves deleted.”"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_0816DA89 {
+    "The sea, huh?\pI wonder what it’s like at the bottom\nof the sea?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081C5A7A {
+    "When it gets right down to it...\pThe same way suits suit me perfectly,\na crisp breeze suits the sea.\pAnd you, a BERRY suits you to a “T”...\pWhy should that be so?"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081C5B1D {
+    "When it gets right down to it...\pIt’s because you’re a TRAINER!"
+}
+
+text Naranja_IslaKumquat_G00_M05_Text_081C5B5D {
+    "When it gets right down to it...\pThe way dignified simplicity suits me,\nオカキクケS perfectly suit POKéMON."
+}

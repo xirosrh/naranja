@@ -24,7 +24,50 @@
       "direction": "right"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ISLA_HAMLIN_G00_M15_GIRL_1_1",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 10,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_HAMLIN_G00_M15_FISHERMAN",
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 11,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_HAMLIN_G00_M15_LITTLE_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 9,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId3",
+      "flag": "0x0"
+    }
+  ],
   "warp_events": [
     {
       "x": 8,
@@ -70,5 +113,30 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 15,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_Sign_1"
+    }
+  ]
 }

@@ -1,0 +1,21 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Underwater_G00_M52_MapScripts {
+}
+
+script Naranja_Underwater_G00_M52_EventScript_OBJ_EVENT_GFX_NURSE_LocalId3 {
+    faceplayer
+    checkitem(ITEM_ROOM_2_KEY, 0)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, 0x086B703F)
+    loadword(0, Naranja_Underwater_G00_M52_Text_086B72C0)
+    callstd(6)
+    applymovement(LOCALID_UNDERWATER_G00_M52_NURSE, Naranja_IslaPinkan_G00_M30_Movement_0800A854)
+    delay(5)
+    end
+}
+
+text Naranja_Underwater_G00_M52_Text_086B72C0 {
+    "{COLOR 0x04}(JOY está gesticulando){COLOR 0x01}\p \p-No.\p-Hace como que bebe.\p-Señala a Shelder.\p \p-Algas… me indica las algas.\p-Se toca el ojo.\p-Otra vez señala las algas.\p \p{COLOR 0x04}(¿Necesitará algo de entre las algas?)"
+}

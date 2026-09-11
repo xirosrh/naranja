@@ -1,0 +1,18 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_CaveOfOrigin_G24_M40_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_CaveOfOrigin_G24_M40_OnTransition
+}
+
+script Naranja_CaveOfOrigin_G24_M40_OnTransition {
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
+    call_if(EQUAL, Naranja_CaveOfOrigin_G24_M38_EventScript_Sub_081A04E3)
+    end
+}
+
+script Naranja_CaveOfOrigin_G24_M40_EventScript_Trigger_3 {
+    lockall
+    setvar(VAR_TEMP_2, 1)
+    goto(Naranja_CaveOfOrigin_G24_M38_EventScript_Sub_081A04D3)
+}

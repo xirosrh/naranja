@@ -1,0 +1,477 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Bementer_G24_M22_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Bementer_G24_M22_OnTransition
+}
+
+script Naranja_Bementer_G24_M22_OnTransition {
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1)
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Trigger_2 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1)
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Trigger_3 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1)
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D4E1 {
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x32)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D593)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D59E)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D59F)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B5EEC)
+    callstd(4)
+    closemessage
+    fadescreen(1)
+    removeobject(LOCALID_BEMENTER_G24_M22_246)
+    removeobject(LOCALID_BEMENTER_G24_M22_241)
+    removeobject(LOCALID_BEMENTER_G24_M22_241_2)
+    removeobject(LOCALID_BEMENTER_G24_M22_241_3)
+    setflag(FLAG_HIDE_BEMENTER_G24_M22_246)
+    setflag(FLAG_HIDE_BEMENTER_G24_M22_241)
+    fadescreen(0)
+    delay(0x14)
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_0815D57A)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5AA)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5BF)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D5CA)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B5FE6)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x114)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_00D4)
+    releaseall
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D57A {
+    setflag(FLAG_NARANJA_TEAM_HIDESHOAL_CAVE_EVENT_COMPLETE_006F)
+    setvar(VAR_NARANJA_ISLA_MURCOTT_STORY_STATE, 1)
+    clearflag(FLAG_HIDE_ISLA_MURCOTT_G00_M01_SCIENTIST_1)
+    clearflag(FLAG_HIDE_ISLA_MURCOTT_G00_M01_CAMERAMAN)
+    setvar(VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_2, 1)
+    setvar(VAR_NARANJA_BEMENTER_STORY_STATE, 1)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D593 {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D5E9)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D59E {
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D59F {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D5EC)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D5AA {
+    applymovement(LOCALID_BEMENTER_G24_M22_OLD_WOMAN_1, Naranja_Bementer_G24_M22_Movement_0815D5DF)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D5BF {
+    applymovement(LOCALID_BEMENTER_G24_M22_OLD_WOMAN_1, Naranja_Bementer_G24_M22_Movement_0815D5E3)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D5CA {
+    applymovement(LOCALID_BEMENTER_G24_M22_OLD_WOMAN_1, Naranja_Bementer_G24_M22_Movement_0815D5E5)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId1 {
+    lock
+    faceplayer
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B64B3)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D611)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D61A)
+    release
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D611 {
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B65D6)
+    callstd(4)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D61A {
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B6823)
+    callstd(4)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_0103)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D6C4)
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D64A)
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D6BA)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B60F9)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D64A {
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B6283)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D669)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B)
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D669 {
+    setvar(VAR_0x8004, 0x114)
+    call(Naranja_CuevaKabuto_G24_M10_EventScript_Sub_081A067F)
+    closemessage
+    applymovement(32783, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x28)
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    delay(0xA)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B639C)
+    callstd(4)
+    setflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_0103)
+    release
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B {
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B62E7)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D669)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D69B)
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D6BA {
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B617B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D6C4 {
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B63F8)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Trigger_4 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2)
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Trigger_5 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2)
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Trigger_6 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2)
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D6F2 {
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x32)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D75E)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D769)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D774)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B6848)
+    callstd(4)
+    closemessage
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D77F)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D78A)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_Bementer_G24_M22_EventScript_Sub_0815D795)
+    removeobject(LOCALID_BEMENTER_G24_M22_246)
+    setvar(VAR_NARANJA_BEMENTER_STORY_STATE, 3)
+    releaseall
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D75E {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A0)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D769 {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A3)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D774 {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A4)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D77F {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7A7)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D78A {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7B0)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_0815D795 {
+    applymovement(LOCALID_BEMENTER_G24_M22_246, Naranja_Bementer_G24_M22_Movement_0815D7B9)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_Sub_081A0196 {
+    setvar(VAR_OBJ_GFX_ID_1, 0x77)
+    setvar(VAR_OBJ_GFX_ID_2, 0x78)
+    setvar(VAR_OBJ_GFX_ID_4, 0x75)
+    setvar(VAR_OBJ_GFX_ID_5, 0x76)
+    setvar(VAR_OBJ_GFX_ID_6, 0xC4)
+    setvar(VAR_OBJ_GFX_ID_7, 0xC3)
+    return
+}
+
+script Naranja_Bementer_G24_M22_EventScript_OBJECT_4_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_588, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5CFD, Naranja_Bementer_G24_M22_Text_081B5D30)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B5D6D)
+    callstd(6)
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_OBJECT_5_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_589, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5DA2, Naranja_Bementer_G24_M22_Text_081B5DDB)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B5DF1)
+    callstd(6)
+    end
+}
+
+script Naranja_Bementer_G24_M22_EventScript_OBJECT_6_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_590, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5E27, Naranja_Bementer_G24_M22_Text_081B5E60)
+    loadword(0, Naranja_Bementer_G24_M22_Text_081B5E84)
+    callstd(6)
+    end
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D5DF {
+    walk_down
+    walk_down
+    walk_in_place_faster_left
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D5E3 {
+    walk_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D5E5 {
+    walk_down
+    walk_down
+    walk_in_place_faster_right
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D5E9 {
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D5EC {
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D7A0 {
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D7A3 {
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D7A4 {
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D7A7 {
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D7B0 {
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_Bementer_G24_M22_Movement_0815D7B9 {
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5CFD {
+    "I’ll show you exactly how scary\nTEAM MAGMA can be!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5D30 {
+    "So you think you can stand up alone\nto TEAM MAGMA’s might..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5D6D {
+    "Yeah, so you are strong...\nBut there’re a lot of us!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5DA2 {
+    "What’s up with you?\nWhat does a single kid expect to do?"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5DDB {
+    "Dang...\nToo strong..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5DF1 {
+    "You don’t know anything.\nQuit messing around with us!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5E27 {
+    "Hey, I remember you from MT. CHIMNEY!\nIt’s payback time!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5E60 {
+    "Urgggh...\nBeaten by some kid again!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5E84 {
+    "Heh, it doesn’t matter!\nWe bought ourselves some time!\pThe BOSS should have snatched what\nhe was after!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5EEC {
+    "MAXIE: Not you again...\pYou’ve impeded our plans repeatedly,\nbut this time you’re too late.\pThe BLUE ORB that rested atop\nMT. PYRE...\lI, MAXIE, claim it as mine!\pFufufu... Finally, I can realize my\ngrand design...\pCome on, crew!\nIt’s SLATEPORT next!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B5FE6 {
+    "Oh, no...\nThis cannot happen...\pHow could they take the BLUE ORB?\pThe BLUE ORB and RED ORB must never\nbe separated. They belong together.\p... ... ... ... ... ... ... ...\nHmm...\pFine!\nYou take the remaining RED ORB.\pPlease take after that foul man and\nget the other ORB back!"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B60F9 {
+    "The RED ORB you have been entrusted\nwith and the stolen BLUE ORB...\pThey must never be apart...\nSomething terrible will happen..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B617B {
+    "So...\nGROUDON has awoken...\pThe wondrous ORB that is said to have\nbecalmed the raging GROUDON...\lIt is the RED ORB you bear.\pThat RED ORB was found buried inside\nthe CAVE OF ORIGIN in SOOTOPOLIS...\pThere is perhaps a link between\nGROUDON and the CAVE OF ORIGIN..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B6283 {
+    "That man, he returned the BLUE ORB.\pAre you going to return the RED ORB\nto its rightful place, too?"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B62E7 {
+    "What’s that?!\pIf the balance is not restored, there\nis no telling what could happen.\pYou will return the RED ORB to its\nrightful place, yes?"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B639C {
+    "Yes...\nThe two ORBS should remain here.\pIt is how it should be for the good\nof all HOENN..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B63F8 {
+    "The spirit of the land...\pThat is what GROUDON is said to be in\nPOKéMON form...\pIn the same manner that we and POKéMON\nhave life, this very land is alive...\pGROUDON has taught us that..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B64B3 {
+    "MT. PYRE is where we calm the spirits\nof POKéMON that have passed on...\pThis is a high place where one can\nsee all of HOENN...\pThe disembodied spirits of POKéMON\nmust find solace here...\pIs it coincidence that you are here...\pWill you hear out my tale? A tale long\ntold in the HOENN region?"
+}
+
+text Naranja_Bementer_G24_M22_Text_081B65D6 {
+    "It happened long, long ago...\pThe world was wracked by a ferocious\nclash between the POKéMON of the land\land the POKéMON of the sea...\pThe POKéMON of the land raised\nmountains and created continents...\pThe POKéMON of the sea raised huge\nwaves and carved out oceans...\pTheir fierce duel raged without end.\pThe world was engulfed in vicious\nstorms and massive infernos.\pThe RED ORB and the BLUE ORB brought\nan end to the calamity.\pLight poured from the two ORBS and\nbecalmed the enraged adversaries.\pThe pair, made docile, burrowed deep\nunder the ground where eventually\lthey disappeared..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B6823 {
+    "I see...\nWell, that, too, is fine..."
+}
+
+text Naranja_Bementer_G24_M22_Text_081B6848 {
+    "MAXIE: You...\nSo you stopped GROUDON...\pI shouldn’t be surprised...\pI understand now that humans cannot\nfreely control the balance between\lthe land and the sea...\pSo I have come to return the\nBLUE ORB...\pI doubt that we will cross paths again...\nFarewell..."
+}

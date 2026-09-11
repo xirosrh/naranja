@@ -44,6 +44,43 @@
       "dest_warp_id": "127"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_SinNombre_G25_M27_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_SinNombre_G25_M27_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 4,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_SinNombre_G25_M27_EventScript_Trigger_3"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_SinNombre_G25_M27_EventScript_Trigger_4"
+    }
+  ],
   "bg_events": []
 }

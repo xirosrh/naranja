@@ -29,7 +29,64 @@
       "direction": "down"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ISLA_MANDARINA_G00_M14_MAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 8,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1",
+      "graphics_id": "OBJ_EVENT_GFX_TWIN",
+      "x": 8,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2",
+      "flag": "FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1"
+    },
+    {
+      "local_id": "LOCALID_ISLA_MANDARINA_G00_M14_MAN_2_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 7,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_MANDARINA_G00_M14_MAN_2_3",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 4,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId4",
+      "flag": "FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY"
+    }
+  ],
   "warp_events": [
     {
       "x": 4,
@@ -74,6 +131,90 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 10,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Trigger_2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_IslaMandarin_G00_M02_EventScript_Sign_3"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 32,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaHamlin_G00_M15_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Sign_4"
+    },
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 3,
+      "elevation": 0,
+      "item": "ITEM_STICK",
+      "flag": "FLAG_HIDDEN_ITEM_ISLA_MANDARINA_G00_M14_STICK_5"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Sign_6"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Sign_7"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMandarina_G00_M14_EventScript_Sign_6"
+    }
+  ]
 }

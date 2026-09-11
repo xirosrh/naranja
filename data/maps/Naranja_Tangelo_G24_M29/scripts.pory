@@ -1,0 +1,60 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Tangelo_G24_M29_MapScripts {
+}
+
+script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_TANGELO_333, LOCALID_NONE, Naranja_Tangelo_G24_M29_Text_081B7B68, Naranja_Tangelo_G24_M29_Text_081B7B9D, Naranja_Tangelo_G24_M29_EventScript_AfterBattle_086B5CD4)
+    end
+}
+
+script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_LAPRAS_DOLL_LocalId3 {
+    lock
+    faceplayer
+    loadword(0, Naranja_Tangelo_G24_M29_Text_081955B0)
+    callstd(6)
+    setflag(FLAG_HIDE_TANGELO_G24_M29_BIG_LAPRAS_DOLL)
+    clearflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY)
+    clearflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3)
+    givemon(SPECIES_LAPRAS, 5, 0)
+    warp(MAP_NARANJA_ISLA_TANGELO_G02_M02, 1, 0, 0)
+    end
+}
+
+script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_WAILMER_DOLL_LocalId9 {
+    lock
+    nop
+    loadword(0, Naranja_Tangelo_G24_M29_Text_086B5340)
+    callstd(6)
+    release
+    end
+}
+
+script Naranja_Tangelo_G24_M29_EventScript_AfterBattle_086B5CD4 {
+    nop
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
+    loadword(0, Naranja_Tangelo_G24_M29_Text_081B7BD0)
+    callstd(6)
+    end
+}
+
+text Naranja_Tangelo_G24_M29_Text_081955B0 {
+    "{COLOR 0x06}Hiii hiii\p{COLOR 0x04}{PLAYER}: ¡Pobre lapras!\nLe han atacado, pero sus heridas\lya han mejorado mejor.\pNecesita ayuda de un experto.\n¿No crees Tacey?\p{COLOR 0x03}Tracey: Quizás sì.\pLo mejor será llevarlo al centro pokemon.\n¡Vamos!"
+}
+
+text Naranja_Tangelo_G24_M29_Text_081B7B68 {
+    "{COLOR 0x03}Tracey: ¿Conoces al Prf. OAK?\n¡¡ Demuéstramelo !!"
+}
+
+text Naranja_Tangelo_G24_M29_Text_081B7B9D {
+    "{COLOR 0x0D}¡Te llevas de maravilla\ncon tus pokemon !"
+}
+
+text Naranja_Tangelo_G24_M29_Text_081B7BD0 {
+    "{COLOR 0x03}Este Lapras te ayudará a moverte \npor el mar."
+}
+
+text Naranja_Tangelo_G24_M29_Text_086B5340 {
+    "No sé porque estára\neste wailmer en el centro\pDesde luego no parece\nque sea por depresión."
+}

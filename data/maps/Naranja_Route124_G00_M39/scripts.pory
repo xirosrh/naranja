@@ -1,0 +1,258 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route124_G00_M39_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route124_G00_M39_OnTransition
+}
+
+script Naranja_Route124_G00_M39_OnTransition {
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_081A02C1)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_Sign_1 {
+    loadword(0, Naranja_Route124_G00_M39_Text_08171ED1)
+    callstd(3)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE124_159, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0624, Naranja_Route124_G00_M39_Text_081C0675)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0693)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE124_160, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C06F7, Naranja_Route124_G00_M39_Text_081C0741)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0750)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE124_449, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C07B4, Naranja_Route124_G00_M39_Text_081C07F9)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route124_G00_M39_EventScript_Sub_08151E4D)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C080E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_Sub_08151E4D {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE124_449, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0888, Naranja_Route124_G00_M39_Text_081C08C8)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C08EA)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE124_450, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0936, Naranja_Route124_G00_M39_Text_081C096B)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0994)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE124_174, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C09CE, Naranja_Route124_G00_M39_Text_081C0A2F)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0A52)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId9 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE124_687, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0ABD, Naranja_Route124_G00_M39_Text_081C0B36, Naranja_Route124_G00_M39_Text_081C0BC8)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route124_G00_M39_EventScript_Sub_08151EBD)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0B72)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_Sub_08151EBD {
+    trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_ROUTE124_687, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0D1F, Naranja_Route124_G00_M39_Text_081C0DB5, Naranja_Route124_G00_M39_Text_081C0E5C)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0E06)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_TUBER_M_SWIMMING_LocalId10 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE124_687, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0C0E, Naranja_Route124_G00_M39_Text_081C0C4F, Naranja_Route124_G00_M39_Text_081C0CE0)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route124_G00_M39_EventScript_Sub_08151F03)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0C7F)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_Sub_08151F03 {
+    trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_ROUTE124_687, LOCALID_NONE, Naranja_Route124_G00_M39_Text_081C0EA2, Naranja_Route124_G00_M39_Text_081C0EE5, Naranja_Route124_G00_M39_Text_081C0F90)
+    loadword(0, Naranja_Route124_G00_M39_Text_081C0F19)
+    callstd(6)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6 {
+    setorcopyvar(VAR_0x8000, 0x30)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId7 {
+    setorcopyvar(VAR_0x8000, 0x31)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route124_G00_M39_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId8 {
+    setorcopyvar(VAR_0x8000, 0x32)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route124_G00_M39_Text_08171ED1 {
+    "HUNTER’S HOUSE"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0624 {
+    "Hey, are you lost at sea?\pIf you can beat my POKéMON, I can\nserve as your pilot."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0675 {
+    "I lost my bearings in battle!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0693 {
+    "Many people lose their bearings at sea.\pIf you’re that sort, you should refer\nto the POKéNAV’s MAP."
+}
+
+text Naranja_Route124_G00_M39_Text_081C06F7 {
+    "Hm! You’re riding a POKéMON instead\nof swimming yourself...\pI am envious!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0741 {
+    "Oh!\nI can’t..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0750 {
+    "I’m getting chilled...\nI’ve been in the water too long...\pI wish I could ride a POKéMON like you..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C07B4 {
+    "If you just float in the sea like\nthis, POKéMON come around to play."
+}
+
+text Naranja_Route124_G00_M39_Text_081C07F9 {
+    "Oh...\nLost at sea..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C080E {
+    "While swimming, I noticed that some\nPOKéMON attack, and some just watch.\pI guess POKéMON have personalities\nof their own."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0888 {
+    "If you just float in the sea like this,\nTRAINERS challenge you!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C08C8 {
+    "That’s strange...\nI lost again..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C08EA {
+    "This has nothing to do with anything,\nbut maybe I’ll visit the TRICK HOUSE."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0936 {
+    "I’m growing bored of swimming...\nHow about a battle?"
+}
+
+text Naranja_Route124_G00_M39_Text_081C096B {
+    "I had no idea that you were\nthis strong!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0994 {
+    "All the effort you put in must have\nmade you this strong."
+}
+
+text Naranja_Route124_G00_M39_Text_081C09CE {
+    "Fufufufu... I dive deep underwater\nto go deep under cover.\lPlumbing the depths is where I excel!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0A2F {
+    "Glub, glub, glub...\nI’m sinking..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0A52 {
+    "I have it on good authority that\nthere’s a DIVE spot around here.\pIt gives me the urge to go deep\nagain..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0ABD {
+    "RITA: Sigh...\pHere I am in the sea, but who’s with me?\nMy little brother!\pLet’s battle so I won’t have to dwell\non that!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0B36 {
+    "RITA: SAM! It’s your fault we lost!\nYou’re in for it later!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0B72 {
+    "RITA: Sigh...\pIf only it wasn’t my little brother\nnext to me, but a nice boyfriend..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0BC8 {
+    "RITA: You’re planning to battle us?\nNot unless you have more POKéMON."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0C0E {
+    "SAM: My big sister is tough at POKéMON!\pDon’t cry when you lose!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0C4F {
+    "SAM: Uh-oh...\nMy big sister will chew me out..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0C7F {
+    "SAM: My big sister is really scary\nwhen she gets angry.\pThat’s why she doesn’t have a\nboyfriend."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0CE0 {
+    "SAM: Did you want to battle us?\nBring some more POKéMON, then."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0D1F {
+    "RITA: Sigh...\pHere I am in the sea, but who’s with me?\nMy little brother!\pOh, hi, it’s been a while. Let’s battle\nso I won’t have to dwell on things!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0DB5 {
+    "RITA: SAM!\nIt’s your fault we lost again!\pWe’re having a training session later!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0E06 {
+    "RITA: Sigh...\pIf I had a nice boyfriend, we’d beat\nanyone with lovely combinations..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0E5C {
+    "RITA: You’re planning to battle us?\nNot unless you have more POKéMON."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0EA2 {
+    "SAM: If we lose, I’ll catch heck.\nI’m going to go totally all out!"
+}
+
+text Naranja_Route124_G00_M39_Text_081C0EE5 {
+    "SAM: Uh-oh...\nMy big sister will chew me out again."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0F19 {
+    "SAM: My big sister is really scary\nwhen she gets angry.\pShe’s going to make me train really\nhard with POKéMON later..."
+}
+
+text Naranja_Route124_G00_M39_Text_081C0F90 {
+    "SAM: Did you want to battle us?\nBring some more POKéMON, then."
+}

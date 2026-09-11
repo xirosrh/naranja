@@ -1,0 +1,1355 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route111_G00_M26_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_Route111_G00_M26_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route111_G00_M26_OnTransition
+}
+
+script Naranja_Route111_G00_M26_OnLoad {
+    checkflag(FLAG_NARANJA_SEALED_CHAMBER_EVENT_COMPLETE_00E4)
+    call_if(LESS_THAN, Naranja_Route111_G00_M26_EventScript_Sub_0814FFA6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0814FFA6 {
+    setmetatile(0x1D, 0x56, 0x7C, 1)
+    setmetatile(0x1D, 0x57, 0x91, 1)
+    return
+}
+
+script Naranja_Route111_G00_M26_OnTransition {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0814FFCD)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE313)
+    checktrainerflag(0x138)
+    goto_if(LESS_THAN, Naranja_Route111_G00_M26_EventScript_Sub_0815000D)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0814FFCD {
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    compare_var_to_value(VAR_TEMP_1, 0x22)
+    goto_if(LESS_THAN, Naranja_Route111_G00_M26_EventScript_Sub_0815000C)
+    compare_var_to_value(VAR_TEMP_1, 0x6B)
+    goto_if(GREATER_THAN, Naranja_Route111_G00_M26_EventScript_Sub_0815000C)
+    compare_var_to_value(VAR_TEMP_1, 0x48)
+    goto_if(GREATER_THAN, Naranja_Route111_G00_M26_EventScript_Sub_08150009)
+    compare_var_to_value(VAR_TEMP_0, 0x7D0)
+    goto_if(GREATER_THAN, Naranja_Route111_G00_M26_EventScript_Sub_0815000C)
+    compare_var_to_value(VAR_TEMP_0, 8)
+    goto_if(LESS_THAN, Naranja_Route111_G00_M26_EventScript_Sub_0815000C)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_08150009)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_08150009 {
+    setweather(8)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_0815000C)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815000C {
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815000D {
+    clearflag(FLAG_HIDE_ROUTE111_G00_M26_MAN_1_1)
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_WOMAN_2)
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_LASS)
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_OLD_WOMAN_1)
+    cleartrainerflag(0x124)
+    cleartrainerflag(0x12B)
+    cleartrainerflag(0x25E)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_FOSSIL_LocalId34 {
+    lockall
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FA54)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_0815005F)
+    setorcopyvar(VAR_0x8000, 0x11E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    closemessage
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_FOSSIL)
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_FOSSIL_2)
+    removeobject(LOCALID_ROUTE111_G00_M26_FOSSIL)
+    delay(0x1E)
+    applymovement(LOCALID_ROUTE111_G00_M26_FOSSIL_2, Naranja_Route111_G00_M26_Movement_081500AF)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE111_G00_M26_FOSSIL_2)
+    releaseall
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815005F {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FACE)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_FOSSIL_LocalId35 {
+    lockall
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FAED)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081500A5)
+    setorcopyvar(VAR_0x8000, 0x11F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    closemessage
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_FOSSIL_2)
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_FOSSIL)
+    removeobject(LOCALID_ROUTE111_G00_M26_FOSSIL_2)
+    delay(0x1E)
+    applymovement(LOCALID_ROUTE111_G00_M26_FOSSIL, Naranja_Route111_G00_M26_Movement_081500AF)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE111_G00_M26_FOSSIL)
+    releaseall
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081500A5 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FB67)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId17 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_08CC)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_08150100)
+    loadword(0, Naranja_Route111_G00_M26_Text_081C56F0)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x94)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_08CC)
+    special(GetPlayerBigGuyGirlString)
+    loadword(0, Naranja_Route111_G00_M26_Text_081C5781)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_08150100 {
+    loadword(0, Naranja_Route111_G00_M26_Text_081C57D2)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Trigger_2 {
+    lockall
+    setvar(VAR_0x8004, 1)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_0815013A)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Trigger_6 {
+    lockall
+    setvar(VAR_0x8004, 2)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_0815013A)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815013A {
+    checkitem(ITEM_GO_GOGGLES, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_08150151)
+    setvar(VAR_TEMP_3, 1)
+    releaseall
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_08150151 {
+    loadword(0, Naranja_Route111_G00_M26_Text_081A0F93)
+    callstd(4)
+    closemessage
+    compare_var_to_value(VAR_0x8004, 0)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_08150188)
+    compare_var_to_value(VAR_0x8004, 1)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_08150193)
+    compare_var_to_value(VAR_0x8004, 2)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_0815019E)
+    compare_var_to_value(VAR_0x8004, 3)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081501A9)
+    releaseall
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_08150188 {
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_081501B4)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_08150193 {
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_081501B6)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815019E {
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_081501B8)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081501A9 {
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_081501BA)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Trigger_5 {
+    setweather(2)
+    fadenewbgm(MUS_ROUTE110)
+    doweather
+    setvar(VAR_TEMP_3, 0)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Trigger_1 {
+    setweather(8)
+    fadenewbgm(MUS_DESERT)
+    doweather
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
+    lock
+    faceplayer
+    setflag(FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_0843)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F705)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081501F3)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F785)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081501F3 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F7B3)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ROUTE111_292, LOCALID_NONE, Naranja_Route111_G00_M26_Text_0816F7D2)
+    applymovement(LOCALID_ROUTE111_G00_M26_MAN_1_1, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F7FF)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE111_G00_M26_MAN_1_1, Naranja_Route111_G00_M26_Movement_08150356)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE111_G00_M26_MAN_1_1)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_0815035B)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    addobject(LOCALID_ROUTE111_G00_M26_WOMAN_2)
+    applymovement(LOCALID_ROUTE111_G00_M26_WOMAN_2, Naranja_Route111_G00_M26_Movement_08150359)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F82D)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ROUTE111_299, LOCALID_NONE, Naranja_Route111_G00_M26_Text_0816F8A6)
+    applymovement(LOCALID_ROUTE111_G00_M26_WOMAN_2, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F8D5)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE111_G00_M26_WOMAN_2, Naranja_Route111_G00_M26_Movement_08150356)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE111_G00_M26_WOMAN_2)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_0815035B)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    addobject(LOCALID_ROUTE111_G00_M26_LASS)
+    applymovement(LOCALID_ROUTE111_G00_M26_LASS, Naranja_Route111_G00_M26_Movement_08150359)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F90E)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ROUTE111_606, LOCALID_NONE, Naranja_Route111_G00_M26_Text_0816F956)
+    applymovement(LOCALID_ROUTE111_G00_M26_LASS, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F96C)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE111_G00_M26_LASS, Naranja_Route111_G00_M26_Movement_08150356)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE111_G00_M26_LASS)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    applymovement(LOCALID_PLAYER, Naranja_Route111_G00_M26_Movement_0815035B)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    addobject(LOCALID_ROUTE111_G00_M26_OLD_WOMAN_1)
+    applymovement(LOCALID_ROUTE111_G00_M26_OLD_WOMAN_1, Naranja_Route111_G00_M26_Movement_08150359)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816F991)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ROUTE111_312, LOCALID_NONE, Naranja_Route111_G00_M26_Text_0816F9EC)
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FA22)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE111_G00_M26_OLD_WOMAN_1, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_08150348)
+    applymovement(LOCALID_ROUTE111_G00_M26_OLD_WOMAN_1, Naranja_Route111_G00_M26_Movement_08150356)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE111_G00_M26_OLD_WOMAN_1)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_0815034F)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_08150348 {
+    opendoor(0xD, 0x71)
+    waitdooranim
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815034F {
+    closedoor(0xD, 0x71)
+    waitdooranim
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sign_2 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FC9C)
+    callstd(3)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sign_1 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FCB6)
+    callstd(3)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sign_3 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FCEF)
+    callstd(3)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sign_4 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FD05)
+    callstd(3)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sign_8 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FD1B)
+    callstd(3)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sign_13 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FD55)
+    callstd(3)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId8 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FB86)
+    callstd(2)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId36 {
+    loadword(0, Naranja_Route111_G00_M26_Text_0816FC3A)
+    callstd(2)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId9 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_211, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BAB4B, Naranja_Route111_G00_M26_Text_081BABC7)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BAC10)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_469, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BAC60, Naranja_Route111_G00_M26_Text_081BACC5)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BACD8)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId11 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_212, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BAD4B, Naranja_Route111_G00_M26_Text_081BADA3)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BADC2)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId12 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_470, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BAE24, Naranja_Route111_G00_M26_Text_081BAE6E)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BAE81)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_HIKER_LocalId10 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_044, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BAEC9, Naranja_Route111_G00_M26_Text_081BAF14)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_0815042A)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BAF5B)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_0815042A {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE111_044, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BAFC1, Naranja_Route111_G00_M26_Text_081BB034)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB070)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId29 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_218, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB111, Naranja_Route111_G00_M26_Text_081BB140)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB15B)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId28 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_476, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB199, Naranja_Route111_G00_M26_Text_081BB1D8)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB1F6)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId30 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_189, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB250, Naranja_Route111_G00_M26_Text_081BB27E)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB290)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId32 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_078, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB2E3, Naranja_Route111_G00_M26_Text_081BB313)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081504AD)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB33E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081504AD {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE111_078, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB3A7, Naranja_Route111_G00_M26_Text_081BB3FA)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB40E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId31 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE111_094, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB44F, Naranja_Route111_G00_M26_Text_081BB49F)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081504EB)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB4CE)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081504EB {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE111_094, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081BB529, Naranja_Route111_G00_M26_Text_081BB5A2)
+    loadword(0, Naranja_Route111_G00_M26_Text_081BB5C1)
+    callstd(6)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId33 {
+    lock
+    faceplayer
+    loadword(0, Naranja_Route111_G00_M26_Text_081A3520)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081A3877)
+    loadword(0, Naranja_Route111_G00_M26_Text_081A37B5)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081A3877 {
+    setorcopyvar(VAR_0x8000, 0x14B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081A38D9)
+    loadword(0, Naranja_Route111_G00_M26_Text_081A35C5)
+    callstd(4)
+    closemessage
+    setflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0060)
+    clearflag(FLAG_HIDE_ISLA_MURCOTT_G00_M01_MART_EMPLOYEE)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081A38C3)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081A38C3)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081A38CE)
+    removeobject(32783)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081A38C3 {
+    applymovement(32783, Naranja_Route111_G00_M26_Movement_081A38E3)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081A38CE {
+    applymovement(32783, Naranja_Route111_G00_M26_Movement_081A38EF)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081A38D9 {
+    loadword(0, Naranja_Route111_G00_M26_Text_081A37F6)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE313 {
+    cleartrainerflag(0x38)
+    specialvar(VAR_RESULT, GabbyAndTyGetBattleNum)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE384)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE38A)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE395)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE3A0)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE3AB)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE3B6)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE3C1)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE3CC)
+    compare_var_to_value(VAR_0x8000, 8)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE3D7)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE384 {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3E6)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE38A {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3EE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3E2)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE395 {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3F6)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3EA)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3A0 {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3FE)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3F2)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3AB {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE406)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE3FA)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3B6 {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE40E)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE402)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3C1 {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE416)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE40A)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3CC {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE41E)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE412)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3D7 {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE40E)
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE41A)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3E2 {
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_DITTO_DOLL)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3E6 {
+    clearflag(FLAG_HIDE_ROUTE111_G00_M26_DITTO_DOLL)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3EA {
+    setflag(FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3EE {
+    clearflag(FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3F2 {
+    setflag(FLAG_HIDE_ROUTE120_G00_M35_CAMERAMAN)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3F6 {
+    clearflag(FLAG_HIDE_ROUTE120_G00_M35_CAMERAMAN)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3FA {
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_REPORTER_F)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE3FE {
+    clearflag(FLAG_HIDE_ROUTE111_G00_M26_REPORTER_F)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE402 {
+    setflag(FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F_2)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE406 {
+    clearflag(FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F_2)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE40A {
+    setflag(FLAG_HIDE_ROUTE120_G00_M35_REPORTER_F)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE40E {
+    clearflag(FLAG_HIDE_ROUTE120_G00_M35_REPORTER_F)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE412 {
+    setflag(FLAG_HIDE_ROUTE111_G00_M26_REPORTER_F_2)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE416 {
+    clearflag(FLAG_HIDE_ROUTE111_G00_M26_REPORTER_F_2)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE41A {
+    setflag(FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F_3)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE41E {
+    clearflag(FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F_3)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId14 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE111_051, LOCALID_NONE, Naranja_Route111_G00_M26_Text_086B4C10, Naranja_Route111_G00_M26_Text_081ABFD3, Naranja_Route111_G00_M26_Text_081AC5CA, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE5A2)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC59E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId21 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE111_054, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081ABF50, Naranja_Route111_G00_M26_Text_081AC6F8, Naranja_Route111_G00_M26_Text_081AC5CA, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC59E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_CAMERAMAN_LocalId22 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE111_054, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081AC790, Naranja_Route111_G00_M26_Text_081AC8D7, Naranja_Route111_G00_M26_Text_081AC820, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC015)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId23 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE111_056, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081ABF50, Naranja_Route111_G00_M26_Text_081AC6F8, Naranja_Route111_G00_M26_Text_081AC5CA, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC59E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_CAMERAMAN_LocalId24 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE111_056, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081AC790, Naranja_Route111_G00_M26_Text_081AC8D7, Naranja_Route111_G00_M26_Text_081AC820, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC015)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE5A2 {
+    special(GabbyAndTyBeforeInterview)
+    special(GetGabbyAndTyLocalIds)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE5E0)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE5EB)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE5FD)
+    checkflag(FLAG_TEMP_1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE73A)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC7E4)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE5E0 {
+    applymovement(32772, Naranja_Route111_G00_M26_Movement_081AE699)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE5EB {
+    applymovement(32772, Naranja_Route111_G00_M26_Movement_081AE69B)
+    applymovement(32773, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE5FD {
+    applymovement(32772, Naranja_Route111_G00_M26_Movement_081AE69D)
+    applymovement(32773, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F {
+    special(GabbyAndTyBeforeInterview)
+    special(GetGabbyAndTyLocalIds)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE5E0)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE5EB)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE5FD)
+    checkflag(FLAG_TEMP_1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE73A)
+    specialvar(VAR_RESULT, GabbyAndTyGetLastQuote)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE69F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC10A)
+    callstd(4)
+    specialvar(VAR_RESULT, GabbyAndTyGetLastBattleTrivia)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE6AD)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE6BB)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE6C9)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE6D7)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE6E5)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE69F {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC60B)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE6AD {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC3CF)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE6BB {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC18D)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE6C9 {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC219)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE6D7 {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC2D6)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE6E5 {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC355)
+    callstd(5)
+    goto(Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3)
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE6F3 {
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE72D)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC40F)
+    callstd(4)
+    setvar(VAR_0x8004, 0xA)
+    call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
+    lock
+    faceplayer
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route111_G00_M26_EventScript_Sub_081AE72D)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC487)
+    callstd(4)
+    special(GabbyAndTyAfterInterview)
+    setflag(FLAG_TEMP_1)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE72D {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC553)
+    callstd(4)
+    setflag(FLAG_TEMP_1)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_Sub_081AE73A {
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC59E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId18 {
+    setorcopyvar(VAR_0x8000, 0x145)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId25 {
+    setorcopyvar(VAR_0x8000, 0x6C)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId26 {
+    setorcopyvar(VAR_0x8000, 0x3F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+movement Naranja_Route111_G00_M26_Movement_081500AF {
+    set_visible
+    delay_4
+    set_invisible
+    delay_4
+    set_visible
+    delay_4
+    set_invisible
+    delay_4
+    set_visible
+    delay_8
+    set_invisible
+    delay_8
+    set_visible
+    delay_8
+    set_invisible
+    delay_8
+    set_visible
+    delay_16
+    set_invisible
+    delay_16
+    set_visible
+}
+
+movement Naranja_Route111_G00_M26_Movement_081501B4 {
+    walk_up
+}
+
+movement Naranja_Route111_G00_M26_Movement_081501B6 {
+    walk_down
+}
+
+movement Naranja_Route111_G00_M26_Movement_081501B8 {
+    walk_left
+}
+
+movement Naranja_Route111_G00_M26_Movement_081501BA {
+    walk_right
+}
+
+movement Naranja_Route111_G00_M26_Movement_08150356 {
+    walk_in_place_faster_up
+    walk_up
+}
+
+movement Naranja_Route111_G00_M26_Movement_08150359 {
+    walk_down
+}
+
+movement Naranja_Route111_G00_M26_Movement_0815035B {
+    delay_16
+    delay_16
+    delay_16
+}
+
+movement Naranja_Route111_G00_M26_Movement_081A38E3 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+}
+
+movement Naranja_Route111_G00_M26_Movement_081A38EF {
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+}
+
+movement Naranja_Route111_G00_M26_Movement_081AE699 {
+    walk_in_place_down
+}
+
+movement Naranja_Route111_G00_M26_Movement_081AE69B {
+    walk_in_place_up
+}
+
+movement Naranja_Route111_G00_M26_Movement_081AE69D {
+    walk_in_place_left
+}
+
+text Naranja_Route111_G00_M26_Text_0816F705 {
+    "Hello! I take it you’re a traveler.\pHow’s this? What do you say to taking\non our family of four in a series of\lPOKéMON battles?"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F785 {
+    "Is that so?\nDrop in, if you change your mind!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F7B3 {
+    "That’s the spirit! I like you!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F7D2 {
+    "Aiyah!\nYou’re a lot tougher than I expected!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F7FF {
+    "Hey, all!\nI’ve found a pretty strong TRAINER!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F82D {
+    "Oh, my goodness! Aren’t you young?\pYou must be quite the TRAINER to beat\nmy husband, though.\pIt’s my turn to battle now!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F8A6 {
+    "Oh, gosh!\nI can’t get over how strong you are!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F8D5 {
+    "There’s a strong TRAINER here!\nThis one’s really strong!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F90E {
+    "You’re stronger than Mommy? Wow!\pBut I’m strong, too!\nReally! Honestly!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F956 {
+    "Huh? Did I just lose?"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F96C {
+    "This stinks...\p...Snivel... Grandma!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F991 {
+    "How dare you make my granddaughter\ncry!\pFor that, I’m going to smack you!\nPrepare to lose!"
+}
+
+text Naranja_Route111_G00_M26_Text_0816F9EC {
+    "Kwah! You are strong...\nMy granddaughter was right..."
+}
+
+text Naranja_Route111_G00_M26_Text_0816FA22 {
+    "If you’re not in any hurry, visit with\nus awhile."
+}
+
+text Naranja_Route111_G00_M26_Text_0816FA54 {
+    "You found the ROOT FOSSIL.\pIf this FOSSIL is taken, the other\none will sink into the sand...\pTake the ROOT FOSSIL anyway?"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FACE {
+    "{PLAYER} left the ROOT FOSSIL alone."
+}
+
+text Naranja_Route111_G00_M26_Text_0816FAED {
+    "You found the CLAW FOSSIL.\pIf this FOSSIL is taken, the other\none will sink into the sand...\pTake the CLAW FOSSIL anyway?"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FB67 {
+    "{PLAYER} left the CLAW FOSSIL alone."
+}
+
+text Naranja_Route111_G00_M26_Text_0816FB86 {
+    "If you don’t raise your POKéMON some\nmore, it could be tough to keep winning\lup through the ranks.\pI’ve heard the POKéMON LEAGUE’s\nELITE FOUR are far stronger than\lany GYM LEADER."
+}
+
+text Naranja_Route111_G00_M26_Text_0816FC3A {
+    "I challenged the WINSTRATE family,\nbut four matches in a row is tough\lgoing... They destroyed me."
+}
+
+text Naranja_Route111_G00_M26_Text_0816FC9C {
+    "ROUTE 111\nレ MAUVILLE CITY"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FCB6 {
+    "“Our family’s hearts beat as one!”\nTHE WINSTRATE’S HOUSE"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FCEF {
+    "ROUTE 111\nロ ROUTE 112"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FD05 {
+    "ROUTE 111\nロ ROUTE 113"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FD1B {
+    "OLD LADY’S REST STOP\n“Come in and rest your tired bones.”"
+}
+
+text Naranja_Route111_G00_M26_Text_0816FD55 {
+    "TRAINER TIPS\pOne of the indicators of a POKéMON’s\npowerfulness is SP. ATK. It stands for\l“SPECIAL ATTACK.”\pLikewise, SP. DEF stands for “SPECIAL\nDEFENSE.”"
+}
+
+text Naranja_Route111_G00_M26_Text_081A0F93 {
+    "The sandstorm is vicious.\nIt’s impossible to keep going."
+}
+
+text Naranja_Route111_G00_M26_Text_081A3520 {
+    "What’s that?\nWhat am I doing?\pI’m thinking about making my own room\nhere using a POKéMON move.\pI know! I’ll give you this TM.\nWill you use it to make your own room?"
+}
+
+text Naranja_Route111_G00_M26_Text_081A35C5 {
+    "Find a big tree that looks like it might\ndrop some vines.\pUse SECRET POWER in front of the tree.\nSome vines should get free and drop\ldown, so you can climb the tree.\pYou’ll find a lot of space for putting\nyour favorite things.\pIt’ll be your own secret room...\nA SECRET BASE!\pYou should make one, too.\pAnother thing, you don’t always have\nto make your SECRET BASE in a tree.\pTry using SECRET POWER on rock walls\nthat have small indents in them.\pI’m going to look for other places, too.\nOkay, bye!"
+}
+
+text Naranja_Route111_G00_M26_Text_081A37B5 {
+    "Oh, you don’t want this?\nIf you change your mind, tell me, okay?"
+}
+
+text Naranja_Route111_G00_M26_Text_081A37F6 {
+    "Oh, you don’t have any room for this.\pI’ll hold on to it, so come back for it\nanother time, okay?"
+}
+
+text Naranja_Route111_G00_M26_Text_081ABF50 {
+    "GABBY: Oh! You’re {PLAYER}! Hi!\nDo you remember us from last time?\pCan you show us how much stronger\nyou’ve become? Okay, cue interview!"
+}
+
+text Naranja_Route111_G00_M26_Text_081ABFD3 {
+    "Hemos presenciado una lucha magnífica\nque nunca podremos olvidar."
+}
+
+text Naranja_Route111_G00_M26_Text_081AC015 {
+    "GABBY: Awesome! Awesome!\nWho are you?!\pI knew we were onto something wild\nwhen we spotted you!\pOh, please let me explain. We travel\naround everywhere interviewing all\lsorts of TRAINERS.\pSo, would you give us a bit of your time\nfor an interview?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC10A {
+    "GABBY: “{STR_VAR_1}!”\pDo you remember? That’s the quote you\ngave us as the battle clincher last time.\pI never, ever forget stuff like that!"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC18D {
+    "The last time we battled, you stomped\nus before we could brace ourselves...\pAnyway, what do you think?\nDo you want to be interviewed again?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC219 {
+    "The last time we battled, didn’t you\nthrow a POKé BALL at us?\pWe were shocked! So we told everyone,\njust everyone, about it!\pAnyway, what do you think?\nDo you want to be interviewed again?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC2D6 {
+    "The last time we battled, your item\nskills cleverly did us in.\pAnyway, what do you think?\nDo you want to be interviewed again?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC355 {
+    "The last time we battled, we managed\nto look respectable.\pAnyway, what do you think?\nDo you want to be interviewed again?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC3CF {
+    "Anyway, what do you think?\nDo you want to be interviewed again?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC40F {
+    "¿Lo harás?\p¿Serás capaz de resumir esta compleja\namalgama de sentimientos que ha sido\lesta pelea… en una sola palabra?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC487 {
+    "Ehhh…\nBonita palabra…\l…creo.\pA pesar de ella seguiremos\nmuy de cerca tu carrera.\pPero todavìa hay mucho que ver\nen esta isla.\pY seguiremos el reportaje\ntras una breve pausa…\pEsperadnos hasta entonces."
+}
+
+text Naranja_Route111_G00_M26_Text_081AC553 {
+    "¿No dices nada?\pEs igual, no creas que voy a llorar.\nEl reportaje sigue."
+}
+
+text Naranja_Route111_G00_M26_Text_081AC59E {
+    "GABBY: We’ll be keeping an eye out\nfor you!"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC5CA {
+    "GABBY: Is there a strong TRAINER\nanywhere with a lot of POKéMON?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC60B {
+    "GABBY: Wow, you are something!\pYou’ve gotten a lot stronger - a lot -\nsince we last battled.\pWe were right about you when we\nspotted you as a hot TRAINER.\pSo, anyway, what do you think?\nAre you willing to give us an interview\lthis time?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC6F8 {
+    "GABBY: That was an intense battle!\nDid you get all that on camera?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC790 {
+    "TY: Hey, lookie here!\nI remember you!\pI’ll get this battle all on this\nhere camera!"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC7E4 {
+    "¡Gran batalla!\pAhora… \n¿Podrías dedicarnos unas palabritas?"
+}
+
+text Naranja_Route111_G00_M26_Text_081AC820 {
+    "TY: Do you only have the one POKéMON\nand that’s it?\pIf you had more POKéMON, it’d make for\nbetter footage, but..."
+}
+
+text Naranja_Route111_G00_M26_Text_081AC8D7 {
+    " \nÇÀ\nep, I got it all.\nThat whole battle’s on camera."
+}
+
+text Naranja_Route111_G00_M26_Text_081BAB4B {
+    "Oh, hey! Those GO-GOGGLES suit you.\nBut I think they look better on me.\pLet’s decide who they look better on\nwith a battle!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BABC7 {
+    "I couldn’t see what was happening at my\nsides because of the GO-GOGGLES."
+}
+
+text Naranja_Route111_G00_M26_Text_081BAC10 {
+    "The GO-GOGGLES make it possible to\nget through sandstorms.\lThat makes me happy!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BAC60 {
+    "I’m having a picnic in the desert.\pYou can always find a TRAINER, so\nI can enjoy a battle here, too!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BACC5 {
+    "Ohhh! You’re mean!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BACD8 {
+    "When you’re battling in a sandstorm,\nwatch out for your POKéMON’s HP.\pIt can faint if you don’t keep an eye\non it!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BAD4B {
+    "Wearing these GO-GOGGLES makes me\nfeel like a superhero.\lRight now, nobody can beat me!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BADA3 {
+    "I can’t win on spirit alone..."
+}
+
+text Naranja_Route111_G00_M26_Text_081BADC2 {
+    "I’m going to be a real hero one day.\nI’m going to work harder to make me\land my POKéMON stronger."
+}
+
+text Naranja_Route111_G00_M26_Text_081BAE24 {
+    "I heard there are fossils to be found\nin the desert. Where could they be?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BAE6E {
+    "I came up short..."
+}
+
+text Naranja_Route111_G00_M26_Text_081BAE81 {
+    "If they can find fossils in the desert,\nit must have been a sea before."
+}
+
+text Naranja_Route111_G00_M26_Text_081BAEC9 {
+    "For thirty years I have searched for\nancient ruins!\lI am to be challenged?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BAF14 {
+    "While I have searched for ruins, I’ve\nnot searched for strong POKéMON."
+}
+
+text Naranja_Route111_G00_M26_Text_081BAF5B {
+    "For thirty years I have searched for\nancient ruins!\pNo, wait, was that forty years?\nWhich was it now?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BAFC1 {
+    "For thirty years I have searched for\nancient ruins!\pNo, wait, was that forty years?\nAnyway, am I to be challenged?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB034 {
+    "I’ve found no ruins, nor have I found\nany strong POKéMON..."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB070 {
+    "For thirty years I have searched for\nancient ruins!\pNo, wait, was that forty years I’ve\nsearched?\pHmm... It could even be fifty...\nHow long have I been at this?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB111 {
+    "I’m full of pep!\nAnd my POKéMON is peppy, too!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB140 {
+    "My POKéMON lost its pep..."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB15B {
+    "When I see a TRAINER with a lot of pep,\nI can’t help looking."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB199 {
+    "I don’t know where you’re going, but\nwould you like to battle?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB1D8 {
+    "Oh, you’re disgustingly good!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB1F6 {
+    "I’m thinking that I should go to\nMT. CHIMNEY, but the view around\lhere is very nice, too."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB250 {
+    "To train myself, I challenge all\nwhom I meet!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB27E {
+    "Uncle! I give up!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB290 {
+    "All I can do is keep training until\nI can defeat strong TRAINERS such\las yourself."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB2E3 {
+    "Show me how much you’ve toughened\nyour POKéMON."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB313 {
+    "I see, you’ve toughened them\nconsiderably."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB33E {
+    "POKéMON and TRAINERS learn much\nthrough battling.\pWhat’s important is to never give up\neven if you lose."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB3A7 {
+    "We’re training here to elevate our\ngame to the next level.\lStay and train with us!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB3FA {
+    "Ooh, you’re decent!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB40E {
+    "Since you’re that strong, you should\naim for the POKéMON LEAGUE."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB44F {
+    "Oh, your POKéMON look like serious\nactors.\lI have to ask you for an engagement."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB49F {
+    "They didn’t just look strong, they\nare strong!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB4CE {
+    "I thought I was raising my POKéMON\ndiligently, but, oh no, there is still\lmuch to be done."
+}
+
+text Naranja_Route111_G00_M26_Text_081BB529 {
+    "You can make POKéMON stronger or\nweaker depending on the moves you\lteach them.\pWhat kinds of moves do your POKéMON\nknow?"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB5A2 {
+    "You’ve taught them good moves!"
+}
+
+text Naranja_Route111_G00_M26_Text_081BB5C1 {
+    "Maybe I should have stopped my\nPOKéMON from evolving until they\llearned better moves..."
+}
+
+text Naranja_Route111_G00_M26_Text_081C56F0 {
+    "I watered my plants lots and lots!\nA whole bunch of flowers bloomed!\pAnd then a whole bunch of BERRIES\nappeared!\pHere you go!\nYou can have this!"
+}
+
+text Naranja_Route111_G00_M26_Text_081C5781 {
+    "I’m going to try really hard and make\nsome RED オカキクケS!\pI hope you try hard, too!"
+}
+
+text Naranja_Route111_G00_M26_Text_081C57D2 {
+    "I wonder what color BERRIES I’ll look\nfor today?"
+}
+
+text Naranja_Route111_G00_M26_Text_086B4C10 {
+    "¡Buenos días audiencia!\pHoy nos situamos en una isla al norte\nde Trovita, con un gran equipo y con el \lcampeón de la liga Añil: {PLAYER}.\pVamos, lucha {PLAYER}.\n¡Ahora el protagonista eres tù!"
+}

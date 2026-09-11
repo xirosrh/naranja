@@ -1,0 +1,266 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMikan_G03_M03_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaMikan_G03_M03_OnTransition
+}
+
+script Naranja_IslaMikan_G03_M03_OnTransition {
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153071)
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153071 {
+    checktrainerflag(0x10A)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_081530AA)
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153122)
+    copyvar(VAR_0x8001, VAR_0x8000)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_081530BA)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_081530B6)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_081530B2)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_081530AE)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530AA {
+    setflashlevel(0)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530AE {
+    setflashlevel(1)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530B2 {
+    setflashlevel(2)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530B6 {
+    setflashlevel(3)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530BA {
+    setflashlevel(4)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530BE {
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153122)
+    nop1
+    compare_var_to_var(VAR_0x8000, VAR_0x8001)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_081530F5)
+    copyvar(VAR_0x8001, VAR_0x8000)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_081530F6)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153101)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_0815310C)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_081530F5)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530F5 {
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_081530F6 {
+    playse(SE_SWITCH)
+    animateflash(3)
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153071)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153101 {
+    playse(SE_SWITCH)
+    animateflash(2)
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153071)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_0815310C {
+    playse(SE_SWITCH)
+    animateflash(1)
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153071)
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153122 {
+    setvar(VAR_0x8000, 0)
+    checktrainerflag(0xB3)
+    goto_if(LESS_THAN, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153135)
+    addvar(VAR_0x8000, 1)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153135)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153135 {
+    checktrainerflag(0x1A9)
+    goto_if(LESS_THAN, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153143)
+    addvar(VAR_0x8000, 1)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153143)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153143 {
+    checktrainerflag(0x1AA)
+    goto_if(LESS_THAN, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153151)
+    addvar(VAR_0x8000, 1)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153151)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153151 {
+    return
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ISLA_MIKAN_179, LOCALID_NONE, Naranja_IslaMikan_G03_M03_Text_08174F61, Naranja_IslaMikan_G03_M03_Text_08174F7A, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_081531F4)
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08174F8E)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_081531F4 {
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_081530BE)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ISLA_MIKAN_425, LOCALID_NONE, Naranja_IslaMikan_G03_M03_Text_08174FCE, Naranja_IslaMikan_G03_M03_Text_08175009, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153216)
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08175031)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153216 {
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_081530BE)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ISLA_MIKAN_426, LOCALID_NONE, Naranja_IslaMikan_G03_M03_Text_081750C9, Naranja_IslaMikan_G03_M03_Text_08175104, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153238)
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08175117)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153238 {
+    call(Naranja_IslaMikan_G03_M03_EventScript_Sub_081530BE)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_04B4)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153254)
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08174D98)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153254 {
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08174F1E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_0815327E)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153288)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sign_4 {
+    lockall
+    checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
+    goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_0815327E)
+    goto(Naranja_IslaMikan_G03_M03_EventScript_Sub_08153288)
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_0815327E {
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08175490)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153288 {
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_08175477)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_MR_BRINEYS_BOAT_LocalId1 {
+    lock
+    setflag(FLAG_HIDE_ISLA_MIKAN_G03_M03_MR_BRINEYS_BOAT)
+    clearflag(FLAG_HIDE_INSIDE_OF_TRUCK_G08_M01_HOT_SPRINGS_OLD_WOMAN)
+    loadword(0, Naranja_IslaMikan_G03_M03_Text_0817BCB1)
+    callstd(6)
+    end
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08174D98 {
+    "Hey, how’s it going, CHAMPION-\nbound {PLAYER}?\pDEWFORD’s GYM LEADER BRAWLY commands\nFIGHTING-type POKéMON.\pGoing against him with NORMAL-type\nPOKéMON is asking for trouble.\pFIGHTING POKéMON will lay a serious\nsmack down on NORMAL POKéMON,\lso be careful!\pWhat’s worse, the GYM is as dark as\nthe ocean floor.\pBut it will get brighter after defeating\nthe TRAINERS in your way.\pHey, okay, go for it!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08174F1E {
+    "Whoah! It’s turned too bright in here!\pYour future is bright, too!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08174F61 {
+    "Might is right!\nCome on!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08174F7A {
+    "Not enough power..."
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08174F8E {
+    "Your skill overcame my strength!\nYour technique is commendable!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08174FCE {
+    "There’s no need for BRAWLY to be\ninvolved!\pI’ll crush you!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08175009 {
+    "But... How?\nHow could I lose so easily?"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08175031 {
+    "I’m not going to waste this loss.\nI’ll use it to motivate me to train!\pOne day I’ll become a GYM LEADER...\pNo, I’ll become the POKéMON LEAGUE\nCHAMPION!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_081750C9 {
+    "Don’t you dare brush me off!\nIt’s not my fault if you cry!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08175104 {
+    "Waaaaaaah!\nI lost!"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08175117 {
+    "I battle in the dark to make my heart\nstronger.\pBut because it’s so dark, I can never\nsee BRAWLY’s face..."
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08175477 {
+    "DEWFORD TOWN POKéMON GYM"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_08175490 {
+    "DEWFORD TOWN POKéMON GYM\pBRAWLY’S CERTIFIED TRAINERS:\n{PLAYER}"
+}
+
+text Naranja_IslaMikan_G03_M03_Text_0817BCB1 {
+    "¡Vaya! Tu Lapras es rápido,\nte mereces un combate,\lespérame en mi gimnasio."
+}

@@ -1,0 +1,79 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarin_G10_M04_MapScripts {
+}
+
+script Naranja_IslaMandarin_G10_M04_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0102)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815733D)
+    loadword(0, Naranja_IslaMandarin_G10_M04_Text_0818244E)
+    callstd(4)
+    checkitem(ITEM_HARBOR_MAIL, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_081572E5)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M04_EventScript_Sub_081572E5 {
+    playse(SE_PIN)
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaMandarin_G10_M04_Text_081824D8)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815731B)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M04_EventScript_Sub_08157347)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815731B {
+    loadword(0, Naranja_IslaMandarin_G10_M04_Text_08182515)
+    callstd(4)
+    removeitem(ITEM_HARBOR_MAIL, 1)
+    setorcopyvar(VAR_0x8000, 0x104)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0102)
+    goto(Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815733D)
+}
+
+script Naranja_IslaMandarin_G10_M04_EventScript_Sub_0815733D {
+    loadword(0, Naranja_IslaMandarin_G10_M04_Text_08182549)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M04_EventScript_Sub_08157347 {
+    loadword(0, Naranja_IslaMandarin_G10_M04_Text_08182578)
+    callstd(4)
+    release
+    end
+}
+
+text Naranja_IslaMandarin_G10_M04_Text_0818244E {
+    "If I had a BIKE, it’d be easy to cycle to\nSLATEPORT for some shopping.\pI’d be able to buy HARBOR MAIL at the\nPOKéMON MART in SLATEPORT..."
+}
+
+text Naranja_IslaMandarin_G10_M04_Text_081824D8 {
+    "Oh! You have HARBOR MAIL?\nWill you trade it for a COIN CASE?"
+}
+
+text Naranja_IslaMandarin_G10_M04_Text_08182515 {
+    "Oh, I’m so happy!\nOkay, I’ll trade you a COIN CASE!"
+}
+
+text Naranja_IslaMandarin_G10_M04_Text_08182549 {
+    "That COIN CASE can be used at the\nGAME CORNER."
+}
+
+text Naranja_IslaMandarin_G10_M04_Text_08182578 {
+    "Oh, that’s disappointing.\pA COIN CASE is needed for the\nGAME CORNER."
+}

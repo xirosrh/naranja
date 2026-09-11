@@ -13,7 +13,190 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_PUSHABLE_BOULDER",
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
+      "x": 23,
+      "y": 34,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId1",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_PUSHABLE_BOULDER"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_CUTTABLE_TREE",
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 45,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_MAGMA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_F",
+      "x": 18,
+      "y": 36,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_MAGMA_MEMBER_F"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_ZIGZAGOON",
+      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "x": 18,
+      "y": 39,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ZIGZAGOON"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 21,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_ITEM_BALL_2",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 33,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_2"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_ITEM_BALL_3",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 14,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId7",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_3"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_FIRE_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "x": 24,
+      "y": 24,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_FIRE_CUSHION_LocalId8",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_FIRE_CUSHION"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_BUG_CATCHER",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 15,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_BUG_CATCHER_LocalId9",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_GIRL_2",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "x": 2,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId10",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 23,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId11",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_ITEM_BALL_4",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 0,
+      "y": 39,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId12",
+      "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_4"
+    },
+    {
+      "local_id": "LOCALID_VALLEDELASFLORES_G24_M11_LASS",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 8,
+      "y": 32,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_LASS_LocalId13",
+      "flag": "0x0"
+    }
+  ],
   "warp_events": [
     {
       "x": 26,
@@ -58,6 +241,66 @@
       "dest_warp_id": "7"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 42,
+      "elevation": 3,
+      "var": "VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_3",
+      "var_value": "0",
+      "script": "Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_3"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 42,
+      "elevation": 3,
+      "var": "VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_3",
+      "var_value": "0",
+      "script": "Naranja_Valledelasflores_G24_M11_EventScript_Trigger_2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 13,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_LAPRAS_DOLL_LocalId3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 46,
+      "y": 33,
+      "elevation": 3,
+      "item": "ITEM_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_VALLEDELASFLORES_G24_M11_POTION_2"
+    },
+    {
+      "type": "hidden_item",
+      "x": 0,
+      "y": 35,
+      "elevation": 3,
+      "item": "ITEM_TINY_MUSHROOM",
+      "flag": "FLAG_HIDDEN_ITEM_VALLEDELASFLORES_G24_M11_TINY_MUSHROOM_3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 42,
+      "y": 35,
+      "elevation": 3,
+      "item": "ITEM_TINY_MUSHROOM",
+      "flag": "FLAG_HIDDEN_ITEM_VALLEDELASFLORES_G24_M11_TINY_MUSHROOM_4"
+    },
+    {
+      "type": "hidden_item",
+      "x": 24,
+      "y": 24,
+      "elevation": 3,
+      "item": "ITEM_POKE_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_VALLEDELASFLORES_G24_M11_POKE_BALL_5"
+    }
+  ]
 }

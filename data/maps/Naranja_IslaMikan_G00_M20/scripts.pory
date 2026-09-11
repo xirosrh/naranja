@@ -1,0 +1,797 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMikan_G00_M20_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_IslaMikan_G00_M20_OnLoad
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814CC0E)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_08168750)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814CC0E {
+    lock
+    faceplayer
+    checkflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId6)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081689BF)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId16 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EEFF)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081C55B9)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x1D)
+    setorcopyvar(VAR_0x8001, 2)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081C5665)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EEFF {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081C5665)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sign_1 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DEB3)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sign_2 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DEC8)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sign_3 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086BF474)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sign_4 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DEFD)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sign_5 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DF16)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId4 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DAC9)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId32 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EFC2)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DC5F)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xBB)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EFC2 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DD0E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0816DBC9)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId28 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_319, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B86BE, Naranja_IslaMikan_G00_M20_Text_081B86E8)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B871C)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8770, Naranja_IslaMikan_G00_M20_Text_081B87A7)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B87C3)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B8872)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B8A69)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8AA7, Naranja_IslaMikan_G00_M20_Text_081B8AD9)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B8B02)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId23 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B83E9, Naranja_IslaMikan_G00_M20_Text_081B8414, Naranja_IslaMikan_G00_M20_Text_081B845C)
+    special(GetPlayerBigGuyGirlString)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B842C)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId24 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B84DB, Naranja_IslaMikan_G00_M20_Text_081B850D, Naranja_IslaMikan_G00_M20_Text_081B8577)
+    special(GetPlayerBigGuyGirlString)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081B853B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_OnLoad {
+    checkflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL)
+    call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F2A8)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F2A8 {
+    setmetatile(5, 0x3C, 0x151, 1)
+    setmetatile(5, 0x3D, 0x159, 1)
+    return
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId25 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD634, Naranja_IslaMikan_G00_M20_Text_081BD67B)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2)
+    goto(Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C47)
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD6F2, Naranja_IslaMikan_G00_M20_Text_081BD733)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081BD74F)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId22 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE3E8, Naranja_IslaMikan_G00_M20_Text_081BE406)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081BE413)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE489, Naranja_IslaMikan_G00_M20_Text_081BE4CC)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081BE4D9)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId9 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_405, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BEFC8, Naranja_IslaMikan_G00_M20_Text_081BF000)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081BF015)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WALLY_LocalId11 {
+    faceplayer
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0818337E)
+    callstd(4)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(Naranja_IslaMikan_G00_M20_Text_08183422)
+    waitfanfare
+    waitmessage
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0802)
+    setflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_08157812)
+    applymovement(LOCALID_ISLA_MIKAN_G00_M20_WALLY, Naranja_IslaMikan_G00_M20_Movement_08157835)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_0818394A)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId2 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_08191FB9)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_081B0F3A {
+    releaseall
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId21 {
+    setorcopyvar(VAR_0x8000, 0x45)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId27 {
+    setorcopyvar(VAR_0x8000, 4)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId14 {
+    setorcopyvar(VAR_0x8000, 0x4E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C3D {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_081BD69B)
+    callstd(6)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C47 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    call_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C3D)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B8CCA)
+    callstd(4)
+    checkpartymove(MOVE_THUNDER_SHOCK)
+    compare_var_to_value(VAR_RESULT, 6)
+    call_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C72)
+    checkpartymove(MOVE_THUNDERBOLT)
+    goto(Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C72)
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C72 {
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8ED0)
+    bufferpartymonnick(0, 0x800D)
+    setfieldeffectargument(0, 0x800D)
+    lockall
+    nop
+    nop
+    nop
+    nop
+    closemessage
+    dofieldeffect(0x25)
+    waitstate
+    delay(0x10)
+    call(Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8E80)
+    goto(Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId9)
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8E80 {
+    delay(0x50)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_086B8CBA)
+    delay(0x30)
+    playse(SE_M_DETECT)
+    setfieldeffectargument(0, 8)
+    setfieldeffectargument(1, 0x4B)
+    setfieldeffectargument(2, 0)
+    dofieldeffect(0x36)
+    delay(0x10)
+    fadescreen(2)
+    applymovement(LOCALID_ISLA_MIKAN_G00_M20_GIRL_2, Naranja_IslaMikan_G00_M20_Movement_086B8CB8)
+    delay(0xA0)
+    playse(SE_M_DETECT)
+    setfieldeffectargument(0, 8)
+    setfieldeffectargument(1, 0x4B)
+    setfieldeffectargument(2, 0)
+    dofieldeffect(0x36)
+    delay(5)
+    fadescreen(2)
+    applymovement(LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_086B8CC7)
+    delay(0x90)
+    return
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8ED0 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B8E67)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43)
+    checkitem(ITEM_MOOMOO_MILK, 0)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8FA6)
+    goto(Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29)
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29 {
+    checkitem(ITEM_FRESH_WATER, 0)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F7E)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B8FD0)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B8FEF)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
+    setwildbattle(SPECIES_SURSKIT, 5, 0)
+    special(BattleSetup_StartLatiBattle)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B9138)
+    callstd(6)
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F7E {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B90BD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
+    removeitem(ITEM_FRESH_WATER, 1)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B90F8)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8FA6 {
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B9039)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29)
+    removeitem(ITEM_MOOMOO_MILK, 1)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    loadword(0, Naranja_IslaMikan_G00_M20_Text_086B907B)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_PICHU_DOLL_LocalId15 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    call_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10)
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73)
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142)
+    goto_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43)
+    checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B92C0)
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240)
+    goto(Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A)
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A {
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    message(Naranja_IslaMikan_G00_M20_Text_086B917F)
+    delay(0x90)
+    waitmessage
+    nop
+    special(RockSmashWildEncounter)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_081B0F3A)
+    waitstate
+    releaseall
+    message(Naranja_IslaMikan_G00_M20_Text_086B91B6)
+    delay(0x40)
+    waitmessage
+    release
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135)
+    call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135)
+    message(Naranja_IslaMikan_G00_M20_Text_086B917F)
+    delay(0x90)
+    waitmessage
+    waitse
+    playmoncry(SPECIES_KECLEON, 0)
+    message(Naranja_IslaMikan_G00_M20_Text_086B91B6)
+    delay(0x40)
+    waitmessage
+    setwildbattle(SPECIES_KECLEON, 0xF, 0)
+    special(BattleSetup_StartLatiBattle)
+    end
+}
+
+script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B92C0 {
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137)
+    call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137)
+    message(Naranja_IslaMikan_G00_M20_Text_086B917F)
+    delay(0x90)
+    waitmessage
+    waitse
+    playmoncry(SPECIES_TREECKO, 0)
+    message(Naranja_IslaMikan_G00_M20_Text_086B91B6)
+    delay(0x40)
+    waitmessage
+    setwildbattle(SPECIES_TREECKO, 0x14, 0)
+    special(BattleSetup_StartLatiBattle)
+    end
+}
+
+movement Naranja_IslaMikan_G00_M20_Movement_08157812 {
+    delay_16
+    walk_in_place_faster_up
+}
+
+movement Naranja_IslaMikan_G00_M20_Movement_08157835 {
+    jump_special_up
+    walk_up
+    walk_up
+    jump_2_up
+    set_invisible
+}
+
+movement Naranja_IslaMikan_G00_M20_Movement_086B8CB8 {
+    emote_exclamation_mark
+}
+
+movement Naranja_IslaMikan_G00_M20_Movement_086B8CBA {
+    face_left
+    delay_4
+    face_right
+    delay_4
+    face_up
+    delay_16
+    delay_16
+    delay_16
+    set_invisible
+    delay_8
+    set_invisible
+}
+
+movement Naranja_IslaMikan_G00_M20_Movement_086B8CC7 {
+    set_visible
+}
+
+text Naranja_IslaMikan_G00_M20_Text_08168750 {
+    "La fauna marina es riquìsima y variada\nen las {COLOR 0x0E}Islas Naranjas."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081689BF {
+    "¡Vaya barbaridad!\n¡Ese petrolero encalló!\pEl incompetente de su capitán\nlo hizo chocar contra esas peñas.\pAvisa a JOY de NAVEL\nella nos podrá ayudar."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DAC9 {
+    "If you’re going to throw a POKé BALL,\nweaken the wild POKéMON first.\pIt will be easier to catch if it’s been\npoisoned, burned, or lulled to sleep."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DBC9 {
+    "Oh, no, I’m not a TRAINER.\pBut that’s right, if TRAINERS lock eyes,\nit’s a challenge to battle.\pIf you don’t want to battle, stay out\nof their sight."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DC5F {
+    "Cuando sólo quieres llegar alto,\nes porque estás por los suelos.\pSi no controlas tu ego, \nte hundirás en el oceáno.\p¿Para que usarás esta corona?\n¿Si no reinas en tu corazón?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DD0E {
+    "Si solo te consuela\nque te alaben.\pAsì no dejarás de ser\nun infeliz."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DEB3 {
+    "{COLOR 0x06}¡Viaja en Lancha!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DEC8 {
+    "Gimnasio Isla MIKAN\nLíder: SISSY\l“Veloz sirena’"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DEFD {
+    "PRETTY PETAL FLOWER SHOP"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0816DF16 {
+    "Bienvenido a Pueblo PALETA\nSe te ha hecho corto el viaje, verdad.\pEs lo que tiene nuestra linea\nde zepelín…\p…viajes de gran lujo.\pNo te culpo de volver a queres montar\npero consigue un billete de zepelín\lprimero, ¿va?\l"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0818337E {
+    "TRACEY: ¡Hola {PLAYER}!\pPara que no te pierdas  \nacepta este POKéNAVEGADOR.\pTiene muchas funciones\ncomo un mapa.\pPero ahora sigue el camino\nque al final SISSY te espera."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_08183422 {
+    "{PLAYER} received a POKéNAV."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_0818394A {
+    "¡SURFEA MARRIL!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_08191FB9 {
+    "PEEKO: Pii pihyoroo!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B83E9 {
+    "GINA: Okay, let’s battle with our\nPOKéMON!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8414 {
+    "GINA: Losing upsets me!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B842C {
+    "GINA: {STR_VAR_1} is strong!\nWe have to train lots more!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B845C {
+    "GINA: Oh? Only one POKéMON?\nThen, we don’t battle with you.\pIf there’s only one POKéMON, it will\nbe lonesome. That’s not nice."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B84DB {
+    "MIA: We are twins, so we battle\nPOKéMON together."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B850D {
+    "MIA: We battled together, but we\nboth lost..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B853B {
+    "MIA: We will train our POKéMON more\nand be strong like you."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8577 {
+    "MIA: You want to battle with us?\pIt’s a big no-no if you don’t have two\nPOKéMON with you.\lWe’re too strong for you!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B86BE {
+    "¿Estás atascado pequeñ{RIVAL}? \p{COLOR 0x04}{PLAYER}: ¡Habló!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B86E8 {
+    "¡Estás amargad{RIVAL} porque   \nno encuentras el camino!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B871C {
+    "Si pierdo algo\nbusco bajo mi cama.\p{COLOR 0x04}Eso no me ayudará.\p{COLOR 0x01}No dije que te ayudarìa"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8770 {
+    "Deberìa…\no no?\p¡Vale!\n¡Pelearé!\p¡Serás tú quien sufra!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B87A7 {
+    "¡Buá!\p+1\pEstoy acostumbrada"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B87C3 {
+    "Bueno no siempre se gana.\pMe alegro mucho de haber luchado   \ntodo lo que pude contra un entrenador\lcomo tú.\p¡Suerte!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8839 {
+    "Come on, battle with me!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8852 {
+    "Ohh...\nI thought I could win..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8872 {
+    "I made the decision to battle, so I\ncan accept this loss in grace.\pI am still upset about losing!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8A24 {
+    "Las flores pueden hacer que todo\na nuestro alrededor brille."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8A61 {
+    "¡Vaya! "
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8A69 {
+    "Toma todas las flores que quieras,   \nno pueden hacerte daño."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8AA7 {
+    "Hello, we meet again.\nMay I ask you for a battle?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8AD9 {
+    "Oh, my...\nI did the best that I could..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081B8B02 {
+    "“Hello” is the beginning of “good-bye.”\nI hope we meet again."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BD634 {
+    "¡Me descubriste!\pDéjame comprobar si dominas \nel arte de la imitación."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BD67B {
+    "Si mejoras te haré un regalo.  "
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BD69B {
+    "Cambatiste mis POKéMON \nen un visto y no visto.\pPero sube más tu nivel y te daré algo."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BD6F2 {
+    "Ojalá hayas mejorado aún más\ntus artes de camuflaje\p¡En guardia!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BD733 {
+    "¡Guau! \nHas mejorado mucho."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BD74F {
+    "Camuflarse requiere control absoluto\ny un sacrificio constante entrenando."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BE3E8 {
+    "Let my melody rock your soul!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BE406 {
+    "La-lalala..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BE413 {
+    "An electric guitar doesn’t always\nhave to be noisy...\pIt can be strummed to squeeze out\nthis heart-stirring melody..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BE489 {
+    "A melody from my POKéMON and me...\nLet us deliver it to your soul."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BE4CC {
+    "La-lalala..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BE4D9 {
+    "When I play, my emotions should reach\nyou through my electric guitar..."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BEFC8 {
+    "Do you have any moves that can strike\na flying POKéMON?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BF000 {
+    "You soared above me!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081BF015 {
+    "The move FLY is convenient, don’t\nyou think?\pWhile the POKéMON is flying, almost\nno moves can strike it."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081C55B9 {
+    "¿Viste los POKé-BEBEDEROS?\pLlénalos de lìquido, \nespera un rato\ly si tienes suerte aparecerán\lPOKéMON que solo puedes capturar asì.\pA veces vienen algunos raros.\pTen esto."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_081C5665 {
+    "Puedes llenar los POKé-BEBEDEROS\nde LECHE o de AGUA.\pParece que los POKéMON \nsuelen preferir la LECHE.\p¡Vigila bien siempre los bebederos!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B8CCA {
+    "MIMA: Veo que derrotaste a SISSY.\pAunque el tipo agua sea\nmás debil que los POKéMON vegetales,\lvencer a SISSY es una gran hazaña. \pAunque no todo es lucha, {PLAYER}.\nEnséñame como dominas\lel arte del camuflaje\ly te daré algo que seguro te será útil.\p{COLOR 0x04}{PLAYER}: ¿Cómo camuflarme?\nNo me sé nigún truco.\p{COLOR 0x01}MIMA: Un entrenador debe contar\ncon las técnicas de sus POKéMON\lsi quiere camuflarse.\pTu POKéMON preferido te ayudará."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B8E67 {
+    "¿O no lo llevas encima?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B8FD0 {
+    "Este POKé-BEBEDERO está vacìo."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B8FEF {
+    "¡Argh!\nEl lìquido que habìa se llenó de bichos.\p¿Quieres combatir alguno?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B9039 {
+    "Este POKé-BEBEDERO está vacìo.\n¿Quieres llenarlo con LECHE MO-MO?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B907B {
+    "Llenaste de LECHE el POKé-BEBEDERO.\n¡A los POKéMON les encantará!"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B90BD {
+    "Este POKé-BEBEDERO está vacìo.\n¿Quieres echar AGUA FRESCA?"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B90F8 {
+    "Llenaste de AGUA el POKé-BEBEDERO.\nQuizá atraiga algún POKéMON."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B9138 {
+    "Este POKé-BEBEDERO sigue lleno.\nAún no ha pasado el tiempo suficiente…"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B917F {
+    "¡Un POKéMON se bebió la leche!\pA ver si anda por aquì…"
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086B91B6 {
+    "¡Vaya!\nParece que escapó hace tiempo."
+}
+
+text Naranja_IslaMikan_G00_M20_Text_086BF474 {
+    "Está entrando en \n{COLOR 0x0D}Isla TROVITA."
+}

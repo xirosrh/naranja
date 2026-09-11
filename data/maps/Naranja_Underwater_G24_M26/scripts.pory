@@ -1,0 +1,59 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Underwater_G24_M26_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_Underwater_G24_M26_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Underwater_G24_M26_OnTransition
+    MAP_SCRIPT_ON_LOAD: Naranja_Underwater_G24_M26_OnLoad
+}
+
+script Naranja_Underwater_G24_M26_OnTransition {
+    setflag(FLAG_NARANJA_UNDERWATER_EVENT_COMPLETE_0847)
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
+    goto_if(EQUAL, Naranja_Underwater_G24_M26_EventScript_Sub_0815D9BB)
+    end
+}
+
+script Naranja_Underwater_G24_M26_EventScript_Sub_0815D9BB {
+    setflag(FLAG_HIDE_UNDERWATER_G24_M26_RIVAL_BRENDAN_NORMAL)
+    end
+}
+
+script Naranja_Underwater_G24_M26_OnLoad {
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
+    call_if(EQUAL, Naranja_Underwater_G24_M26_EventScript_Sub_0815D9C9)
+    end
+}
+
+script Naranja_Underwater_G24_M26_EventScript_Sub_0815D9C9 {
+    setmetatile(5, 3, 0x21E, 1)
+    setmetatile(6, 3, 0x21E, 1)
+    setmetatile(7, 3, 0x21E, 1)
+    setmetatile(8, 3, 0x21E, 1)
+    setmetatile(5, 4, 0x228, 0)
+    setmetatile(6, 4, 0x228, 0)
+    setmetatile(7, 4, 0x228, 0)
+    setmetatile(8, 4, 0x228, 0)
+    setmetatile(5, 5, 0x228, 0)
+    setmetatile(6, 5, 0x228, 0)
+    setmetatile(7, 5, 0x228, 0)
+    setmetatile(8, 5, 0x228, 0)
+    return
+}
+
+script Naranja_Underwater_G24_M26_OnResume {
+    setdivewarp(MAP_NARANJA_SEAFLOOR_CAVERN_G24_M27, 0xFF, 0xA, 0x11)
+    end
+}
+
+script Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalId1 {
+    lockall
+    loadword(0, Naranja_Underwater_G24_M26_Text_08197435)
+    callstd(4)
+    releaseall
+    end
+}
+
+text Naranja_Underwater_G24_M26_Text_08197435 {
+    "“SUBMARINE EXPLORER 1” is painted\non the hull.\pThis is the submarine TEAM {AQUA}\nstole in SLATEPORT!\pTEAM {AQUA} must have gone\nashore here."
+}

@@ -1,0 +1,325 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_InsideOfTruck_G25_M40_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_InsideOfTruck_G25_M40_OnLoad
+    MAP_SCRIPT_ON_RESUME: Naranja_InsideOfTruck_G25_M40_OnResume
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_2 {
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    call_if(LESS_THAN, Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650)
+    release
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_3 {
+    lockall
+    call(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDE6)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE89)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194D92)
+    callstd(4)
+    closemessage
+    playbgm(MUS_ENCOUNTER_MAGMA, 0)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEC3)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194DED)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB0)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194E6B)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE9E)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194E9A)
+    callstd(4)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEC8)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194EE8)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_INSIDE_OF_TRUCK_575, LOCALID_NONE, Naranja_InsideOfTruck_G25_M40_Text_08194F83)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB3)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDFA)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE80)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE69)
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDE6 {
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CE73)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194D71)
+    callstd(4)
+    closemessage
+    return
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CDFA {
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08194FA4)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB7)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_0819507E)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 3)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE3F)
+    goto(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE4D)
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE3F {
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08195182)
+    callstd(4)
+    goto(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE4D)
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE4D {
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_0819510A)
+    callstd(4)
+    applymovement(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3, Naranja_InsideOfTruck_G25_M40_Movement_0815CEA8)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_08195153)
+    callstd(4)
+    closemessage
+    return
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815CE69 {
+    removeobject(LOCALID_INSIDE_OF_TRUCK_G25_M40_MOVING_BOX_3)
+    setvar(VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_3, 1)
+    releaseall
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_OnLoad {
+    setmetatile(4, 1, 0x208, 0)
+    setmetatile(4, 2, 0x210, 0)
+    setmetatile(4, 3, 0x218, 0)
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_OnResume {
+    setstepcallback(5)
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_1 {
+    lockall
+    setflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_4000)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC45)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC68)
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC45 {
+    setrespawn(1)
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 1)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MOM)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02FA)
+    setflag(FLAG_HIDE_PUEBLO_PALETA_G01_M00_BARD)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_RIVAL_BRENDAN_NORMAL)
+    setvar(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 1)
+    setdynamicwarp(MAP_NARANJA_PUERTO_DE_TANGELO_G00_M09, 0xFF, 3, 0xA)
+    releaseall
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC68 {
+    setrespawn(2)
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 2)
+    setflag(FLAG_HIDE_PUEBLO_PALETA_G01_M00_MOM)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02F9)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_WOMAN_5)
+    setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M03_RIVAL_MAY_NORMAL)
+    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 1)
+    setdynamicwarp(MAP_NARANJA_PUERTO_DE_TANGELO_G00_M09, 0xFF, 0xC, 0xA)
+    releaseall
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_OBJ_EVENT_GFX_PIKACHU_LocalId3 {
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_086BF1C4)
+    callstd(3)
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650 {
+    waitse
+    playmoncry(SPECIES_PIKACHU, 0)
+    setflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY)
+    setflag(FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3)
+    clearflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
+    clearflag(FLAG_HIDE_TANGELO_G00_M16_WALLY)
+    setflag(FLAG_HIDE_MANDARIN_G00_M31_LITTLE_GIRL_1)
+    setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B)
+    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142)
+    clearflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119)
+    nop
+    nop
+    call(Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B5E60)
+    end
+}
+
+script Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B5E60 {
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_0800)
+    loadword(0, Naranja_InsideOfTruck_G25_M40_Text_086B0C20)
+    callstd(2)
+    givemon(SPECIES_PIKACHU, 5, 0)
+    nop
+    end
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CE73 {
+    face_up
+    delay_16
+    face_right
+    delay_16
+    face_left
+    delay_16
+    face_down
+    delay_16
+    face_right
+    delay_16
+    face_up
+    delay_16
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CE80 {
+    walk_fast_right
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CE89 {
+    delay_16
+    face_player
+    walk_down
+    walk_down
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CE9E {
+    walk_fast_right
+    walk_fast_down
+    walk_fast_down
+    walk_fast_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CEA8 {
+    walk_in_place_faster_down
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    face_up
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CEB0 {
+    walk_fast_down
+    walk_fast_down
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CEB3 {
+    lock_facing_direction
+    walk_up
+    unlock_facing_direction
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CEB7 {
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    delay_16
+    delay_16
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CEC3 {
+    set_visible
+    walk_down
+    walk_down
+    delay_16
+}
+
+movement Naranja_InsideOfTruck_G25_M40_Movement_0815CEC8 {
+    walk_down
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194D71 {
+    "{COLOR 0x04}¡Ey!\n¡Un meowth salvaje !"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194D92 {
+    "Miiou\p¡Ríndete {PLAYER}!\nSabíamos que estabas aquí.\p{COLOR 0x04}{PLAYER}: Uahhh\n¡Que susto!\l¡Meowth asqueroso!\l"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194DED {
+    "{COLOR 0x07}¿Quieres problemas?\n¡Pues los has conseguido!\pJaja…\pTe creìas que te ibas a escapar de\nnosotros yendo tan lejos,verdad {PLAYER}…"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194E6B {
+    "Llevo mucho esperando Jessy.\p{COLOR 0x07}Cógele Meowth!"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194E9A {
+    "Jeje…    \n¡¡ Ya te tengo !!\lEsta vez Pikachu no se nos escapará.\p{COLOR 0x04}{PLAYER}: Ahhh…"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194EE8 {
+    "{COLOR 0x07}¡Bien hecho!\p{COLOR 0x04}{PLAYER}: ¡No conseguiréis nada!\nSois patéticos.\p{COLOR 0x07} ¿Ahh sì?\nPues creo que ya te hemos cogido…\p¡Tienes miedo {PLAYER}!   \n¡Prepárate para luchar!\l"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194F83 {
+    "{COLOR 0x06}Nooo…\p¡ Otra vez no !\n       "
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08194FA4 {
+    "{COLOR 0x07}¿Que has hecho?\nMe has derrotado {PLAYER}…\pYo era una gran entrenadora…\p…sniff…\p…pero resurgiré.\pConseguiré ese Pikachu.\p…snif…\p…pero me has hecho daño.\pMe lo pagarás {PLAYER}…\pno se cuando…\p…pero lo pagarás…\p…sniff…sniff…"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_0819507E {
+    "…otra derrota que contarle al jefe…\p¡Vaya día!\p¡Has hecho llorar a Jessy!\pTe daré esta SuperBall, que le habíamos\nrobado a un niño antes."
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_0819510A {
+    "Nos veremos pronto {PLAYER}…\p…y no te escaparás\pjaja…\p¡Te derrotaremos al fin!"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08195153 {
+    "¡El Team Rocket\ndespega de nuevo…"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_08195182 {
+    "You’re loaded with items.\nI can’t give you this GREAT BALL."
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_086B0C20 {
+    "¡Venga PIKACHU!\p¡Vamos! \n¡No te quedes atrás!\pTenemos que ver al profesor OAK.\n¡Vamos!"
+}
+
+text Naranja_InsideOfTruck_G25_M40_Text_086BF1C4 {
+    "{COLOR 0x0E}Pikaachu\p{COLOR 0x01}PIKACHU parece ansioso por llegar a\nPueblo PALETA…\py por tener más aventuras."
+}

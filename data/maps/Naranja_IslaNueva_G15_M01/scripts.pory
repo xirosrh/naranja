@@ -1,0 +1,157 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaNueva_G15_M01_MapScripts {
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_613, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EA87, Naranja_IslaNueva_G15_M01_Text_0818EACF)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EAED)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId7 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_614, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EB22, Naranja_IslaNueva_G15_M01_Text_0818EB81)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EBB1)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_118, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EBFA, Naranja_IslaNueva_G15_M01_Text_0818EC5E)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EC92)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_128, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818ECEB, Naranja_IslaNueva_G15_M01_Text_0818ED18)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818ED2B)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_129, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818ED91, Naranja_IslaNueva_G15_M01_Text_0818EDE8)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EE03)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId8 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_130, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EE96, Naranja_IslaNueva_G15_M01_Text_0818EEDC)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EEF7)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_131, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EF39, Naranja_IslaNueva_G15_M01_Text_0818EFB8)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818EFCA)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_301, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818F037, Naranja_IslaNueva_G15_M01_Text_0818F07F)
+    loadword(0, Naranja_IslaNueva_G15_M01_Text_0818F085)
+    callstd(6)
+    end
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EA87 {
+    "I’ll show you the sublime techniques\nI learned from our LEADER WALLACE!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EACF {
+    "Please forgive me, WALLACE..."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EAED {
+    "Watch what happens if you crack all\nthe floor tiles."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EB22 {
+    "You came all the way here, but you won’t\nget to see WALLACE.\pNot if you lose to me, you won’t!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EB81 {
+    "You’re strong!\nI was fooled by your cute looks!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EBB1 {
+    "You might be good enough to avoid\nbeing wiped out in one hit by WALLACE."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EBFA {
+    "The sight of WALLACE conducting a\nbattle...\pThe very beauty of it compelled me to\nbecome a TRAINER."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EC5E {
+    "You battled with more beauty than\nI could muster..."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EC92 {
+    "The grace you bring to battle is\nfabulous.\pOh... I’m so fortunate to have found\nPOKéMON."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818ECEB {
+    "I should teach you how harsh battles\ncan be."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818ED18 {
+    "Oh.\nYou’re strong."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818ED2B {
+    "I’ll tell you something good.\pIf you want to reach WALLACE, you\nneed to walk on each floor tile once."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818ED91 {
+    "The POKéMON GYM of the highest level\nin the HOENN region...\pThat’s the SOOTOPOLIS GYM."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EDE8 {
+    "What a high level you are!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EE03 {
+    "Rather than being satisfied by being\nin a strong GYM, I imagine training in\lother places will make you stronger.\lBut above all, it looks more fun."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EE96 {
+    "I train my POKéMON together with\nWALLACE.\pDon’t think I’m a pushover."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EEDC {
+    "I was bowled right over..."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EEF7 {
+    "I think you have potential.\nWhy don’t you stay and train with us?"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EF39 {
+    "A graceful glide across the ice while\ncrossing no lines...\pA TRAINER putting on that performance\nwould be elegantly beautiful!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EFB8 {
+    "Well, excuse me?!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818EFCA {
+    "This is really obvious, but how strong\nyou are as a TRAINER has nothing to do\lwith how young or old you are."
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818F037 {
+    "When I’m with my POKéMON, the time\nflies by before you can say, “Oops!”"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818F07F {
+    "Oops!"
+}
+
+text Naranja_IslaNueva_G15_M01_Text_0818F085 {
+    "I wish I can forget about lost causes\nbefore I can manage an “Oops!”"
+}

@@ -1,0 +1,41 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaShamouti_G12_M08_MapScripts {
+}
+
+script Naranja_IslaShamouti_G12_M08_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId1 {
+    loadword(0, Naranja_IslaShamouti_G12_M08_Text_0818696D)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaShamouti_G12_M08_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId3 {
+    loadword(0, Naranja_IslaShamouti_G12_M08_Text_081869D6)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaShamouti_G12_M08_EventScript_OBJ_EVENT_GFX_ZIGZAGOON_LocalId2 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_ZIGZAGOON, 0)
+    loadword(0, Naranja_IslaShamouti_G12_M08_Text_08186A4F)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_IslaShamouti_G12_M08_Text_0818696D {
+    "The tree houses of FORTREE are great!\pI think it’s the number one town for\nliving together with POKéMON."
+}
+
+text Naranja_IslaShamouti_G12_M08_Text_081869D6 {
+    "POKéMON and people have adapted to\nnature to survive.\pThere’s no need to make nature\nconform to the way we want to live."
+}
+
+text Naranja_IslaShamouti_G12_M08_Text_08186A4F {
+    "ZIGZAGOON: Bufuu!"
+}

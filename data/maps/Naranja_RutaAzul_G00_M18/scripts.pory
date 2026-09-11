@@ -1,0 +1,319 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_RutaAzul_G00_M18_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_RutaAzul_G00_M18_OnTransition
+}
+
+script Naranja_RutaAzul_G00_M18_OnTransition {
+    call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
+    call(Naranja_PuebloPaleta_G01_M04_EventScript_Sub_081A02F4)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId10 {
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_0816D950)
+    callstd(2)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId1 {
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_0816D996)
+    callstd(2)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_RUTA_AZUL_036, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B7D55, Naranja_RutaAzul_G00_M18_Text_081B7D8B)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B7DB2)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_RUTA_AZUL_481, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B7DF7, Naranja_RutaAzul_G00_M18_Text_081B7E3B, Naranja_RutaAzul_G00_M18_Text_081B7EAC)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EDD6)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B7E50)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EDD6 {
+    trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_RUTA_AZUL_481, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B7FE7, Naranja_RutaAzul_G00_M18_Text_081B802B, Naranja_RutaAzul_G00_M18_Text_081B80AF)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B8053)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_RUTA_AZUL_481, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B7EFB, Naranja_RutaAzul_G00_M18_Text_081B7F20, Naranja_RutaAzul_G00_M18_Text_081B7F8E)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE1C)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B7F40)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE1C {
+    trainerbattle(TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_RUTA_AZUL_481, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B80FE, Naranja_RutaAzul_G00_M18_Text_081B8123, Naranja_RutaAzul_G00_M18_Text_081B81A1)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B814D)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_RUTA_AZUL_336, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B81FA, Naranja_RutaAzul_G00_M18_Text_081B8258)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B8281)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId12 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_RUTA_AZUL_293, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B82A9, Naranja_RutaAzul_G00_M18_Text_081B82EC)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE75)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B830D)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE75 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_RUTA_AZUL_293, LOCALID_NONE, Naranja_RutaAzul_G00_M18_Text_081B8349, Naranja_RutaAzul_G00_M18_Text_081B838C)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081B83A4)
+    callstd(6)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11 {
+    lock
+    faceplayer
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C4449)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_RutaAzul_G00_M18_EventScript_Sub_081A039B)
+    call(Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0)
+    release
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_081A039B {
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C449B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03A5 {
+    copyvar(VAR_0x8004, VAR_0x8009)
+    special(ShowPokedexRatingMessage)
+    waitmessage
+    waitbuttonpress
+    return
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0 {
+    setvar(VAR_0x8004, 0)
+    specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+    copyvar(VAR_0x8008, VAR_0x8005)
+    copyvar(VAR_0x8009, VAR_0x8006)
+    copyvar(VAR_0x800A, VAR_RESULT)
+    buffernumberstring(0, VAR_0x8008)
+    buffernumberstring(1, VAR_0x8009)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C44DC)
+    callstd(4)
+    call(Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03A5)
+    compare_var_to_value(VAR_0x800A, 0)
+    goto_if(EQUAL, Naranja_IslaHamlin_G07_M03_EventScript_Sub_081A14DC)
+    setvar(VAR_0x8004, 1)
+    specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+    copyvar(VAR_0x8008, VAR_0x8005)
+    copyvar(VAR_0x8009, VAR_0x8006)
+    buffernumberstring(0, VAR_0x8008)
+    buffernumberstring(1, VAR_0x8009)
+    loadword(0, Naranja_RutaAzul_G00_M18_Text_081C4B05)
+    callstd(4)
+    return
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId13 {
+    setorcopyvar(VAR_0x8000, 0x49)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Trigger_1 {
+    lock
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
+    goto_if(LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_Sub_086B5DB0)
+    release
+    end
+}
+
+script Naranja_RutaAzul_G00_M18_EventScript_Sub_086B5DB0 {
+    lock
+    faceplayer
+    applymovement(LOCALID_RUTA_AZUL_G00_M18_BOY_5, Naranja_RutaAzul_G00_M18_Movement_086B31DB)
+    applymovement(LOCALID_PLAYER, Naranja_RutaAzul_G00_M18_Movement_08007B5B)
+    loadword(0, Naranja_IslaMandarina_G00_M14_Text_086B5D82)
+    callstd(4)
+    applymovement(LOCALID_PLAYER, Naranja_RutaAzul_G00_M18_Movement_08002F1C)
+    release
+    end
+}
+
+movement Naranja_RutaAzul_G00_M18_Movement_08002F1C {
+    face_down
+    delay_1
+    walk_down
+}
+
+movement Naranja_RutaAzul_G00_M18_Movement_08007B5B {
+    face_right
+}
+
+movement Naranja_RutaAzul_G00_M18_Movement_086B31DB {
+    walk_slow_up
+    walk_slow_right
+    face_up
+}
+
+text Naranja_RutaAzul_G00_M18_Text_0816D950 {
+    "My POKéMON is staggeringly tired...\nI should have brought a POTION..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_0816D996 {
+    "If you cross the sea from here,\nit’ll be a shortcut to OLDALE TOWN.\pFufufu, that’s useful, isn’t it?"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7D55 {
+    "Did you feel the tug of our soul-\nsoothing fragrance?"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7D8B {
+    "You weren’t led astray by our aroma..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7DB2 {
+    "Aromatherapy is a form of mental\nhealing that works with fragrances."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7DF7 {
+    "AMY: I’m AMY.\nAnd this is my little sister LIV.\lWe battle together!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7E3B {
+    "AMY: Uh-oh, we lost."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7E50 {
+    "AMY: You have to think about all\nkinds of things when you’re battling\lagainst two TRAINERS."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7EAC {
+    "AMY: Uh-oh, you have only one\nPOKéMON with you.\lYou can’t battle us like that."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7EFB {
+    "LIV: We battle together as one\nteam."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7F20 {
+    "LIV: Oh, we lost, big sister..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7F40 {
+    "LIV: We work perfectly together, me\nand my big sister...\pBut we still lost..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7F8E {
+    "LIV: If you want to battle us, you\nhave to have two POKéMON!\lIt’s not fair if you don’t!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B7FE7 {
+    "AMY: I’m AMY.\nAnd this is my little sister LIV.\lWe battle together!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B802B {
+    "AMY: Aww, boo!\nWe couldn’t win again..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B8053 {
+    "AMY: You have to think about all\nkinds of things when you’re battling\lagainst two TRAINERS."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B80AF {
+    "AMY: Uh-oh, you have only one\nPOKéMON with you.\lYou can’t battle us like that."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B80FE {
+    "LIV: We battle together as one\nteam."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B8123 {
+    "LIV: Awww, we lost again...\nBig sister..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B814D {
+    "LIV: We work perfectly together, me\nand my big sister...\pBut why did we lose again?"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B81A1 {
+    "LIV: If you want to battle us, you\nhave to have two POKéMON!\lIt’s not fair if you don’t!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B81FA {
+    "Gah! My fishing line’s all snarled up!\nI’m getting frustrated and mean!\lThat’s it! Battle me!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B8258 {
+    "Gah! Lost it!\nI’m even more annoyed now!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B8281 {
+    "Gah, I’m still boiling mad...\nGrrrrr..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B82A9 {
+    "My POKéMON is delightfully adorable!\nDon’t be shy - I’ll show you!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B82EC {
+    "Oh, my gosh!\nMy darling POKéMON!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B830D {
+    "My delightful POKéMON looks darling\neven when it’s fainted!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B8349 {
+    "Hi, you! My delightfully adorable\nPOKéMON has become more darling!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B838C {
+    "Oh!\nMy darling POKéMON!"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081B83A4 {
+    "The more I spend time with it, the\nmore adorable my POKéMON becomes."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081C4449 {
+    "PROF. BIRCH: Ah, {PLAYER}{KUN}!\pHave you come to show me how your\nPOKéDEX is coming along?"
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081C449B {
+    "Hm? Oh, you haven’t caught enough\nPOKéMON to make it worthwhile."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081C44DC {
+    "Hmhm...\pSo, you’ve seen {STR_VAR_1} POKéMON,\nand you’ve caught {STR_VAR_2} POKéMON..."
+}
+
+text Naranja_RutaAzul_G00_M18_Text_081C4B05 {
+    "Hmhm...\nOn a nationwide basis...\pYou’ve seen {STR_VAR_1} POKéMON,\nand you’ve caught {STR_VAR_2} POKéMON..."
+}

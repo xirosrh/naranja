@@ -1,0 +1,96 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_7islasPomelo_G03_M01_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_7islasPomelo_G03_M01_OnTransition
+}
+
+script Naranja_7islasPomelo_G03_M01_OnTransition {
+    setrespawn(0xF)
+    call(Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD1B)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId2 {
+    loadword(0, Naranja_7islasPomelo_G03_M01_Text_08174CDB)
+    callstd(2)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3 {
+    loadword(0, Naranja_7islasPomelo_G03_M01_Text_08174D32)
+    callstd(2)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD1B {
+    checkflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY)
+    goto_if(LESS_THAN, Naranja_IslaHamlin_G07_M03_EventScript_Sub_081A14DC)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_IslaHamlin_G07_M03_EventScript_Sub_081A14DC)
+    checkflag(FLAG_HIDE_ISLAS_G00_M19_SPIN_CUSHION)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD49)
+    checkflag(FLAG_HIDE_7ISLAS_POMELO_G00_M11_OLD_MAN_1)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD4F)
+    checkflag(FLAG_HIDE_ROUTE109_G00_M24_OLD_MAN_1)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD55)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD49 {
+    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 1)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD4F {
+    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 2)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD55 {
+    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 3)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD5B {
+    lock
+    faceplayer
+    loadword(0, Naranja_7islasPomelo_G03_M01_Text_081A0A7D)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M03_EventScript_Sub_086B8F00)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FDC7)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FDC7 {
+    message(Naranja_7islasPomelo_G03_M01_Text_081A0AFA)
+    waitmessage
+    return
+}
+
+text Naranja_7islasPomelo_G03_M01_Text_08174CDB {
+    "There’s a stone cavern at the edge\nof town.\pI’ve heard you can find rare stones\nthere."
+}
+
+text Naranja_7islasPomelo_G03_M01_Text_08174D32 {
+    "Even if a POKéMON faints and can’t\nbattle, it can still use a move learned\lfrom a Hidden Machine, HM."
+}
+
+text Naranja_7islasPomelo_G03_M01_Text_081A0A7D {
+    "¡ Muy buenos días ! \nGracias por volver a este Pokecentro.\lLe atiende la enfermera JOY.\p¿Quieres que te curemos tus Pokemon?"
+}
+
+text Naranja_7islasPomelo_G03_M01_Text_081A0AFA {
+    "¡ Adiós {PLAYER} !"
+}

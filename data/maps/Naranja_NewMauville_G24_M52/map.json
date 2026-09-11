@@ -30,6 +30,16 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NARANJA_NEW_MAUVILLE_STORY_STATE",
+      "var_value": "0",
+      "script": "Naranja_NewMauville_G24_M52_EventScript_Trigger_1"
+    }
+  ],
   "bg_events": []
 }

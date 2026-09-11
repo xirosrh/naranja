@@ -1,0 +1,53 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaNueva_G15_M05_MapScripts {
+}
+
+script Naranja_IslaNueva_G15_M05_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0079)
+    goto_if(EQUAL, Naranja_IslaNueva_G15_M05_EventScript_Sub_0815B2C7)
+    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818F991)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x13F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0079)
+    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818FA03)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNueva_G15_M05_EventScript_Sub_0815B2C7 {
+    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818FA03)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaNueva_G15_M05_EventScript_OBJ_EVENT_GFX_KECLEON_1_LocalId2 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_KECLEON, 0)
+    loadword(0, Naranja_IslaNueva_G15_M05_Text_0818FA50)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_IslaNueva_G15_M05_Text_0818F991 {
+    "For thirty years I’ve remained in\nSOOTOPOLIS honing my skills.\pI developed a shattering TM.\nI bequeath it to you!"
+}
+
+text Naranja_IslaNueva_G15_M05_Text_0818FA03 {
+    "TM31 contains BRICK BREAK! It’s a move\nso horrible that I can’t describe it."
+}
+
+text Naranja_IslaNueva_G15_M05_Text_0818FA50 {
+    "KECLEON: Puu puhyaah."
+}

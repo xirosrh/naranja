@@ -13,7 +13,22 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ISLA_MIKAN_G24_M06_REGIROCK",
+      "graphics_id": "OBJ_EVENT_GFX_REGIROCK",
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaMikan_G24_M06_EventScript_OBJ_EVENT_GFX_REGIROCK_LocalId1",
+      "flag": "FLAG_HIDE_ISLA_MIKAN_G24_M06_REGIROCK"
+    }
+  ],
   "warp_events": [
     {
       "x": 3,
@@ -38,5 +53,30 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 22,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMikan_G24_M06_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMikan_G24_M06_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaMikan_G24_M06_EventScript_Sign_2"
+    }
+  ]
 }

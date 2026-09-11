@@ -1,0 +1,268 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route118_G00_M33_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route118_G00_M33_OnTransition
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId18 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE118_307, LOCALID_NONE, Naranja_Route118_G00_M33_Text_081BC9AC, Naranja_Route118_G00_M33_Text_081BC9E6)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route118_G00_M33_EventScript_Sub_08150970)
+    loadword(0, Naranja_Route118_G00_M33_Text_081BCA0E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Sub_08150970 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE118_307, LOCALID_NONE, Naranja_Route118_G00_M33_Text_081BCA6B, Naranja_Route118_G00_M33_Text_081BCAB3)
+    loadword(0, Naranja_Route118_G00_M33_Text_081BCAC6)
+    callstd(6)
+    end
+}
+
+script Naranja_Route118_G00_M33_OnTransition {
+    call(Naranja_Route111_G00_M26_EventScript_Sub_081AE313)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId13 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ROUTE118_EVENT_COMPLETE_00E3)
+    goto_if(EQUAL, Naranja_Route118_G00_M33_EventScript_Sub_08150F89)
+    loadword(0, Naranja_Route118_G00_M33_Text_08170F12)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route118_G00_M33_EventScript_Sub_08150F5E)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route118_G00_M33_EventScript_Sub_08150F7F)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Sub_08150F5E {
+    loadword(0, Naranja_Route118_G00_M33_Text_08170F46)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x107)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_ROUTE118_EVENT_COMPLETE_00E3)
+    loadword(0, Naranja_Route118_G00_M33_Text_08170F7E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Sub_08150F7F {
+    loadword(0, Naranja_Route118_G00_M33_Text_08170FB0)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Sub_08150F89 {
+    loadword(0, Naranja_Route118_G00_M33_Text_08170FC8)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId7 {
+    loadword(0, Naranja_Route118_G00_M33_Text_08170FFE)
+    callstd(2)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Sign_2 {
+    loadword(0, Naranja_Route118_G00_M33_Text_0817108B)
+    callstd(3)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Sign_3 {
+    loadword(0, Naranja_Route118_G00_M33_Text_081710A5)
+    callstd(3)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ROUTE118_G00_M33_STEVEN, Naranja_InsideOfTruck_G08_M01_Movement_08151069)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08151004)
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId17 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE118_343, LOCALID_NONE, Naranja_Route118_G00_M33_Text_081BE24A, Naranja_Route118_G00_M33_Text_081BE291)
+    loadword(0, Naranja_Route118_G00_M33_Text_081BE2BE)
+    callstd(6)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_MR_BRINEYS_BOAT_LocalId15 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE118_344, LOCALID_NONE, Naranja_Route118_G00_M33_Text_081BE318, Naranja_Route118_G00_M33_Text_081BE385)
+    loadword(0, Naranja_Route118_G00_M33_Text_081BE39C)
+    callstd(6)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE118_398, LOCALID_NONE, Naranja_Route118_G00_M33_Text_081BE148, Naranja_Route118_G00_M33_Text_081BE188)
+    loadword(0, Naranja_Route118_G00_M33_Text_081BE19D)
+    callstd(6)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId16 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE118_408, LOCALID_NONE, Naranja_Route118_G00_M33_Text_081BE1D7, Naranja_Route118_G00_M33_Text_081BE1F5)
+    loadword(0, Naranja_Route118_G00_M33_Text_081BE20D)
+    callstd(6)
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE118_052, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081ABF50, Naranja_Route111_G00_M26_Text_081AC6F8, Naranja_Route111_G00_M26_Text_081AC5CA, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC59E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_CAMERAMAN_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE118_052, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081AC790, Naranja_Route111_G00_M26_Text_081AC8D7, Naranja_Route111_G00_M26_Text_081AC820, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC015)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId8 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE118_055, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081ABF50, Naranja_Route111_G00_M26_Text_081AC6F8, Naranja_Route111_G00_M26_Text_081AC5CA, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC59E)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_CAMERAMAN_LocalId9 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, TRAINER_NARANJA_ROUTE118_055, LOCALID_NONE, Naranja_Route111_G00_M26_Text_081AC790, Naranja_Route111_G00_M26_Text_081AC8D7, Naranja_Route111_G00_M26_Text_081AC820, Naranja_Route111_G00_M26_EventScript_AfterBattle_081AE60F)
+    loadword(0, Naranja_Route111_G00_M26_Text_081AC015)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route118_G00_M33_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId20 {
+    setorcopyvar(VAR_0x8000, 0x15)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route118_G00_M33_Text_08170F12 {
+    "Hmm!\nA GOOD ROD is really good!\pWouldn’t you agree?"
+}
+
+text Naranja_Route118_G00_M33_Text_08170F46 {
+    "Hmm!\nWe’re of identical minds!\pHmm!\nTake this GOOD ROD!"
+}
+
+text Naranja_Route118_G00_M33_Text_08170F7E {
+    "Wherever there’s water, try your luck\nat fishing."
+}
+
+text Naranja_Route118_G00_M33_Text_08170FB0 {
+    "Don’t you like to fish?"
+}
+
+text Naranja_Route118_G00_M33_Text_08170FC8 {
+    "Try catching all sorts of POKéMON\nwith your GOOD ROD."
+}
+
+text Naranja_Route118_G00_M33_Text_08170FFE {
+    "Even if there isn’t a boat, you can\ncross rivers and the sea if you have\la POKéMON that knows SURF.\pPOKéMON can be counted on to do so\nmuch!"
+}
+
+text Naranja_Route118_G00_M33_Text_0817108B {
+    "ROUTE 118\nロ MAUVILLE CITY"
+}
+
+text Naranja_Route118_G00_M33_Text_081710A5 {
+    "ROUTE 118\nル ROUTE 119"
+}
+
+text Naranja_Route118_G00_M33_Text_081BC9AC {
+    "Hm...\nYou seem rather capable...\lLet me keep you company!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BC9E6 {
+    "You’re much stronger than\nI’d imagined!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BCA0E {
+    "There is no such thing as a born genius.\nIt all depends on effort!\lThat is what I believe..."
+}
+
+text Naranja_Route118_G00_M33_Text_081BCA6B {
+    "Hm... As always, your agility speaks\nfor itself.\lCome, keep me company!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BCAB3 {
+    "As strong as ever!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BCAC6 {
+    "All it takes is effort!\pI lost because I haven’t put in enough\neffort!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BE148 {
+    "BIRD POKéMON that FLY elegantly in\nthe sky... They’re the best!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BE188 {
+    "Urgh... I crashed..."
+}
+
+text Naranja_Route118_G00_M33_Text_081BE19D {
+    "You’ve got great POKéMON.\nI’ll have to train mine better."
+}
+
+text Naranja_Route118_G00_M33_Text_081BE1D7 {
+    "Take flight!\nMy BIRD POKéMON!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BE1F5 {
+    "They did take flight..."
+}
+
+text Naranja_Route118_G00_M33_Text_081BE20D {
+    "If they’d get stronger, they’d be able\nto fly more freely..."
+}
+
+text Naranja_Route118_G00_M33_Text_081BE24A {
+    "I’m a FISHERMAN, but also a TRAINER.\nI’m raising the POKéMON I caught."
+}
+
+text Naranja_Route118_G00_M33_Text_081BE291 {
+    "I thought I was doing okay in my\ntraining..."
+}
+
+text Naranja_Route118_G00_M33_Text_081BE2BE {
+    "I couldn’t win by training POKéMON\nwhile I fished...\pWas I doing things in half measures?"
+}
+
+text Naranja_Route118_G00_M33_Text_081BE318 {
+    "For FISHERMEN, equipment is the key.\pBut for TRAINERS, the key ingredients\nare POKéMON and heart, of course!"
+}
+
+text Naranja_Route118_G00_M33_Text_081BE385 {
+    "I was beaten in heart?"
+}
+
+text Naranja_Route118_G00_M33_Text_081BE39C {
+    "Come to think of it, fishing is a battle\nbetween a FISHERMAN and a POKéMON."
+}

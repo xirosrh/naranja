@@ -1,0 +1,88 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route132_G00_M47_MapScripts {
+}
+
+script Naranja_Route132_G00_M47_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE132_169, LOCALID_NONE, Naranja_Route132_G00_M47_Text_081C2AFB, Naranja_Route132_G00_M47_Text_081C2B5B)
+    loadword(0, Naranja_Route132_G00_M47_Text_081C2B71)
+    callstd(6)
+    end
+}
+
+script Naranja_Route132_G00_M47_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE132_458, LOCALID_NONE, Naranja_Route132_G00_M47_Text_081C2BB5, Naranja_Route132_G00_M47_Text_081C2BEA)
+    loadword(0, Naranja_Route132_G00_M47_Text_081C2BFA)
+    callstd(6)
+    end
+}
+
+script Naranja_Route132_G00_M47_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE132_350, LOCALID_NONE, Naranja_Route132_G00_M47_Text_081C2C32, Naranja_Route132_G00_M47_Text_081C2C60)
+    loadword(0, Naranja_Route132_G00_M47_Text_081C2C78)
+    callstd(6)
+    end
+}
+
+script Naranja_Route132_G00_M47_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE132_181, LOCALID_NONE, Naranja_Route132_G00_M47_Text_081C2CD9, Naranja_Route132_G00_M47_Text_081C2D1F)
+    loadword(0, Naranja_Route132_G00_M47_Text_081C2D3E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route132_G00_M47_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3 {
+    setorcopyvar(VAR_0x8000, 0x44)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route132_G00_M47_Text_081C2AFB {
+    "I used to catch colds all the time as\na kid, but I became totally fit after\lI started swimming."
+}
+
+text Naranja_Route132_G00_M47_Text_081C2B5B {
+    "I crave more power..."
+}
+
+text Naranja_Route132_G00_M47_Text_081C2B71 {
+    "TRAINERS travel the fields and\nmountains, so they must be fit, too."
+}
+
+text Naranja_Route132_G00_M47_Text_081C2BB5 {
+    "I try not to swim where the currents\nare too strong."
+}
+
+text Naranja_Route132_G00_M47_Text_081C2BEA {
+    "Oh, please, no!"
+}
+
+text Naranja_Route132_G00_M47_Text_081C2BFA {
+    "If I get swept away, I’ll lose all my\nsense of place..."
+}
+
+text Naranja_Route132_G00_M47_Text_081C2C32 {
+    "Win or lose, you’ll never know until\nyou try!"
+}
+
+text Naranja_Route132_G00_M47_Text_081C2C60 {
+    "Waah!\nI sank in defeat!"
+}
+
+text Naranja_Route132_G00_M47_Text_081C2C78 {
+    "I never battle when I know I’ll win.\nI like to battle at the razor’s edge of\lvictory and defeat!"
+}
+
+text Naranja_Route132_G00_M47_Text_081C2CD9 {
+    "I contemplate POKéMON 24 hours a day.\nHow could you possibly beat me?"
+}
+
+text Naranja_Route132_G00_M47_Text_081C2D1F {
+    "I lose.\nI will concede defeat."
+}
+
+text Naranja_Route132_G00_M47_Text_081C2D3E {
+    "Urggh...\nYou’re a POKéMON fanatic, aren’t you?\pYou must contemplate POKéMON 24 hours\na day, don’t you?"
+}

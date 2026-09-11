@@ -1,0 +1,54 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_BandonedShip_G24_M63_MapScripts {
+}
+
+script Naranja_BandonedShip_G24_M63_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0126)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB2D)
+    checkitem(ITEM_SCANNER, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB23)
+    checkflag(FLAG_HIDE_BANDONED_SHIP_G24_M66_ITEM_BALL_2)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB2D)
+    loadword(0, Naranja_BandonedShip_G24_M63_Text_08198C85)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB23 {
+    loadword(0, Naranja_BandonedShip_G24_M63_Text_08198D00)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_BandonedShip_G24_M63_EventScript_Sub_0815EB2D {
+    loadword(0, Naranja_BandonedShip_G24_M63_Text_08198D7B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_BandonedShip_G24_M63_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2 {
+    setorcopyvar(VAR_0x8000, 0x11D)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_BandonedShip_G24_M63_Text_08198C85 {
+    "I’m investigating this ship on behalf\nof CAPT. STERN.\pHe also asked me to find a SCANNER,\nbut I haven’t had any success..."
+}
+
+text Naranja_BandonedShip_G24_M63_Text_08198D00 {
+    "Oh! That’s a SCANNER!\pListen, can I get you to deliver that\nto CAPT. STERN?\pI want to investigate this ship a\nlittle more."
+}
+
+text Naranja_BandonedShip_G24_M63_Text_08198D7B {
+    "This ship is called S.S. CACTUS.\nIt seems to be from an earlier era."
+}

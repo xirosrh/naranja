@@ -1,0 +1,305 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValnTang_G09_M00_MapScripts {
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1 {
+    lockall
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_08155388)
+    checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_080D)
+    call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_0815539C)
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095)
+    call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553CF)
+    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094)
+    call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0)
+    faceplayer
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C14B)
+    callstd(4)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086B4970)
+    callstd(4)
+    closemessage
+    setorcopyvar(VAR_0x8000, 0x114)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094)
+    setflag(FLAG_HIDE_ISLA_MURCOTT_G00_M01_VARS)
+    releaseall
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_08155388 {
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C472)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_0815539C {
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C3F7)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0 {
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C2F2)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_081553CF {
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C360)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC {
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C764)
+    callstd(2)
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId4 {
+    loadword(0, Naranja_ValnTang_G09_M00_Text_0817C53D)
+    callstd(2)
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Trigger_1 {
+    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
+    goto_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5)
+    applymovement(LOCALID_PLAYER, Naranja_ValnTang_G09_M00_Movement_086B31C2)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086B321B)
+    callstd(6)
+    applymovement(LOCALID_VALN_TANG_G09_M00_MAN_7, Naranja_ValnTang_G09_M00_Movement_086B31C4)
+    delay(0x90)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086B3254)
+    callstd(4)
+    applymovement(LOCALID_VALN_TANG_G09_M00_HIPSTER, Naranja_ValnTang_G09_M00_Movement_086B31D4)
+    applymovement(LOCALID_VALN_TANG_G09_M00_BARD, Naranja_ValnTang_G09_M00_Movement_086B31D8)
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_ValnTang_G09_M00_Movement_086B31DF)
+    delay(0x90)
+    applymovement(LOCALID_VALN_TANG_G09_M00_MAN_7, Naranja_ValnTang_G09_M00_Movement_086B31E4)
+    delay(0xFF)
+    delay(0xFF)
+    delay(0xC0)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086B329E)
+    callstd(3)
+    applymovement(LOCALID_VALN_TANG_G09_M00_HEX_MANIAC, Naranja_ValnTang_G09_M00_Movement_086B3204)
+    delay(0x90)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086B32E1)
+    callstd(4)
+    applymovement(LOCALID_VALN_TANG_G09_M00_MAN_7, Naranja_ValnTang_G09_M00_Movement_086B3210)
+    delay(0xFF)
+    delay(0x40)
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086C0295)
+    callstd(4)
+    goto(Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531)
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5 {
+    release
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531 {
+    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
+    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200D)
+    setflag(FLAG_HIDE_VALN_TANG_G09_M00_HEX_MANIAC)
+    setflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER)
+    setflag(FLAG_HIDE_VALN_TANG_G09_M01_TRADER)
+    setflag(FLAG_HIDE_MANDARIN_G21_M00_LITTLE_GIRL_1)
+    setflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE)
+    setflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL)
+    clearflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER_2)
+    clearflag(FLAG_HIDE_MANDARIN_G00_M31_LITTLE_GIRL_1)
+    clearflag(FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1)
+    clearflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    release
+    end
+}
+
+script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_BARD_LocalId2 {
+    faceplayer
+    checkflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER_2)
+    goto_if(LESS_THAN, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC)
+    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
+    goto_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC)
+    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
+    nop
+    loadword(0, Naranja_ValnTang_G09_M00_Text_086B36B1)
+    callstd(2)
+    end
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B31C2 {
+    walk_slow_up
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B31C4 {
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    walk_slow_left
+    walk_slow_up
+    walk_slow_up
+    face_left
+    delay_16
+    face_right
+    delay_16
+    face_up
+    emote_heart
+    face_down
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B31D4 {
+    emote_exclamation_mark
+    walk_slow_left
+    walk_slow_left
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B31D8 {
+    emote_exclamation_mark
+    walk_slow_right
+    walk_slow_right
+    walk_slow_up
+    walk_slow_right
+    face_up
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B31DF {
+    emote_exclamation_mark
+    face_left
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B31E4 {
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    emote_heart
+    face_up
+    delay_16
+    face_down
+    delay_16
+    delay_16
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_up
+    emote_heart
+    delay_16
+    delay_16
+    delay_16
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    emote_heart
+    face_down
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B3204 {
+    walk_slow_right
+    walk_slow_up
+    walk_slow_up
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    set_invisible
+}
+
+movement Naranja_ValnTang_G09_M00_Movement_086B3210 {
+    walk_slow_left
+    walk_slow_left
+    walk_slow_left
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    set_invisible
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C14B {
+    "{COLOR 0x09}Ivy: Vaya aventura estùpida…\pTenía que haber tenido cuidado de no\nacercarme a un Vileplume que estuviese\lmarcando su territorio con esporas.\p¡Vaya susto!"
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C2F2 {
+    "{COLOR 0x09}¿Viste los extraños colores \nde los pokemon de las islas?\pSe debe al diferente clima,\nesto los hace ùnicos"
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C360 {
+    "DOCK: Shipbuilding is an art.\pA lot of things can’t be figured out\njust by calculating.\pI really could use advice from a veteran\nwho knows the seas..."
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C3F7 {
+    "DOCK: Hi! MR. BRINEY’s joined us to\nlend us his help.\pThanks to the veteran sailor, the\nferry is steadily coming together."
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C472 {
+    "DOCK: The ferry is finally ready!\pThe new S.S. TIDAL is truly a marvel\nof technology!\pBut, I get the feeling that we can\nmake something even better.\pYou know, there’s never an end to\ntechnology’s march."
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C53D {
+    "MR. BRINEY: Ah, {PLAYER}{KUN}!\nIt’s been too long!\pAye, since I met you, this old seadog’s\nbeen feeling frisky!\pSo I’ve decided to help DOCK make a\nferry.\pAye, after all, a ferry would be able\nto carry a lot of people.\pBut, you know, that DOCK is really\nsomething special.\pWith his knack for technology and\nmy experience, I’m sure that we can\lbuild one great ship, aye!"
+}
+
+text Naranja_ValnTang_G09_M00_Text_0817C764 {
+    "Me dedico a estudiar las aguas\ny sus pokémon…\p…y me encanta !"
+}
+
+text Naranja_ValnTang_G09_M00_Text_086B321B {
+    "{COLOR 0x04}{PLAYER}: ¡Guau!  \n¡¡ El laboratorio de la profesora Ivy !!"
+}
+
+text Naranja_ValnTang_G09_M00_Text_086B3254 {
+    "Aquí debe estar el laboratorio de la\nprof. Ivy\p¡¡Cuántas chicas bonitas!!"
+}
+
+text Naranja_ValnTang_G09_M00_Text_086B329E {
+    "Hola preciosa.\p{COLOR 0x0A}Ivy: Yo…Ehh…\n…creo que tenía que ir…\lal jardín."
+}
+
+text Naranja_ValnTang_G09_M00_Text_086B32E1 {
+    "¡No te dejaré sola!!\n¡Espera!"
+}
+
+text Naranja_ValnTang_G09_M00_Text_086B36B1 {
+    "¡Guau!\nSalvaste a la profesora de una parálisis\p¿Así que piensas viajar\npor las {COLOR 0x0E}Islas Naranjas {COLOR 0x01}?\p¿Y como piensas moverte entre\nlas distintas islas?\p{COLOR 0x04}{PLAYER}: Ehh…\n…no lo había pensado\p{COLOR 0x01}En el centro de recuperación pokemon\nbuscaban un dueño para\lun lapras curado.\pHas demostrado lo que vales.\nVe allí de mi parte y así te ayudara\la desplazarte por el archipiélago."
+}
+
+text Naranja_ValnTang_G09_M00_Text_086B4970 {
+    "{COLOR 0x04}¡Pero la culpa la tuvo Brock!\n¡Usted no hizo nada!\p{COLOR 0x09}Jaja, menos mal\nque avisaste a Joy, {PLAYER}.\p{COLOR 0x04}Verás venimos por un recado de OAK.\p{COLOR 0x09}¿La こgsBallこ?\n{COLOR 0x04}Así es.\l{COLOR 0x09}La hemos estado investigando…\lpero no podemos ni abrirla.\lTe la daré para que se la lleves a OAK,\lnuestra especialidad son los pokemon,\lsu alimentación, vida, cría…\lOAK seguro que tendrá maquinaria\lmas sofisticada para abrirla…\p…y yo tengo mucho trabajo que hacer\ntodavía.\p¡Llévasela!\nÉl continuará la investigación."
+}
+
+text Naranja_ValnTang_G09_M00_Text_086C0295 {
+    "{COLOR 0x04}{PLAYER}: ¡Brock!\nQue chico más tonto…\pA ver como le digo yo ahora a la prof. Ivy\nque vengo a recoger la {COLOR 0x0D}gsBall.\p{COLOR 0x04}Será mejor encontrarla cuanto antes."
+}

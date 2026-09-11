@@ -1,0 +1,452 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValleCharizard_G00_M12_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ValleCharizard_G00_M12_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_VALLE_CHARIZARD_STORY_STATE, 1: Naranja_ValleCharizard_G00_M12_OnFrame_1
+    ]
+}
+
+script Naranja_ValleCharizard_G00_M12_OnTransition {
+    setflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_0812)
+    checkflag(FLAG_NARANJA_MT_CHIMNEY_EVENT_COMPLETE_008B)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E4DF)
+    call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
+    call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A0172)
+    compare_var_to_value(VAR_NARANJA_VALLE_CHARIZARD_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E4D0)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E4D0 {
+    setobjectxyperm(LOCALID_VALLE_CHARIZARD_G00_M12_VARS, 0xB, 9)
+    setobjectxyperm(LOCALID_VALLE_CHARIZARD_G00_M12_243, 0xB, 9)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E4DF {
+    clearflag(FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_OnFrame_1 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    opendoor(0xC, 0xF)
+    waitdooranim
+    addobject(LOCALID_VALLE_CHARIZARD_G00_M12_VARS)
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_VARS, Naranja_ValleCharizard_G00_M12_Movement_0814E70E)
+    waitmovement(LOCALID_NONE)
+    closedoor(0xC, 0xF)
+    waitdooranim
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_VARS, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E56B)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E570)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E68F)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5AB)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5D0)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E56B {
+    playbgm(MUS_ENCOUNTER_MAY, 1)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E570 {
+    playbgm(MUS_ENCOUNTER_BRENDAN, 1)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_VARS_LocalId8 {
+    lock
+    faceplayer
+    setvar(VAR_0x8008, 0)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E56B)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E570)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5AB)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5D0)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5AB {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816BDA4)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x117)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00DD)
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816BE7D)
+    callstd(4)
+    goto(Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5F5)
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5D0 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816BF92)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x117)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00DD)
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C020)
+    callstd(4)
+    goto(Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5F5)
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E5F5 {
+    closemessage
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E646)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E64E)
+    removeobject(LOCALID_VALLE_CHARIZARD_G00_M12_VARS)
+    addobject(LOCALID_VALLE_CHARIZARD_G00_M12_243)
+    delay(0x1E)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E69A)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6A5)
+    removeobject(LOCALID_VALLE_CHARIZARD_G00_M12_243)
+    setvar(VAR_NARANJA_VALLE_CHARIZARD_STORY_STATE, 2)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    compare_var_to_value(VAR_0x8008, 0)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E644)
+    releaseall
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E644 {
+    release
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E646 {
+    setobjectxyperm(LOCALID_VALLE_CHARIZARD_G00_M12_243, 6, 0x10)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E64E {
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E67B)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E680)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E685)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E68A)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E67B {
+    setobjectmovementtype(LOCALID_VALLE_CHARIZARD_G00_M12_243, 8)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E680 {
+    setobjectmovementtype(LOCALID_VALLE_CHARIZARD_G00_M12_243, 7)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E685 {
+    setobjectmovementtype(LOCALID_VALLE_CHARIZARD_G00_M12_243, 0xA)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E68A {
+    setobjectmovementtype(LOCALID_VALLE_CHARIZARD_G00_M12_243, 9)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E68F {
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_VARS, Naranja_ValleCharizard_G00_M12_Movement_0814E6E8)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E69A {
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_243, Naranja_ValleCharizard_G00_M12_Movement_0814E6EF)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6A5 {
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6D2)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6D2)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6DD)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6D2)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6D2 {
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_243, Naranja_ValleCharizard_G00_M12_Movement_0814E6FA)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E6DD {
+    applymovement(LOCALID_VALLE_CHARIZARD_G00_M12_243, Naranja_ValleCharizard_G00_M12_Movement_0814E703)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Trigger_1 {
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E721)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E721 {
+    incrementgamestat(0x31)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C3FD)
+    callstd(2)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId3 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C4DB)
+    callstd(3)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId4 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C59B)
+    callstd(2)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN_LocalId5 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C603)
+    callstd(2)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN_LocalId6 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C694)
+    callstd(2)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId1 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C54E)
+    callstd(2)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId9 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E)
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C174)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7B2)
+    getpartysize
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7A8)
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C2B6)
+    callstd(4)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(Naranja_ValleCharizard_G00_M12_Text_0816C2EA)
+    waitfanfare
+    waitmessage
+    giveegg(SPECIES_DITTO)
+    release
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C398)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7A8 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C2FF)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7B2 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C33C)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sign_4 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C72F)
+    callstd(3)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sign_2 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C77C)
+    callstd(3)
+    end
+}
+
+script Naranja_ValleCharizard_G00_M12_EventScript_Sign_1 {
+    loadword(0, Naranja_ValleCharizard_G00_M12_Text_0816C7CF)
+    callstd(3)
+    end
+}
+
+movement Naranja_ValleCharizard_G00_M12_Movement_0814E6E8 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_ValleCharizard_G00_M12_Movement_0814E6EF {
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+}
+
+movement Naranja_ValleCharizard_G00_M12_Movement_0814E6FA {
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+}
+
+movement Naranja_ValleCharizard_G00_M12_Movement_0814E703 {
+    walk_fast_down
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+}
+
+movement Naranja_ValleCharizard_G00_M12_Movement_0814E70E {
+    walk_down
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816BDA4 {
+    "MAY: {PLAYER}{KUN}! Long time no see!\pOh? While I was visiting the hot springs,\nyou got the LAVARIDGE GYM BADGE.\pYou must have caught good POKéMON...\nNo, I guess you raised some.\pI guess it would be okay for you to\nhave this."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816BE7D {
+    "MAY: With those GO-GOGGLES, you’ll\nhave no trouble getting through the\ldesert near ROUTE 111.\pBut, wow, {PLAYER}{KUN}...\nChallenging GYMS...\pYou’re trying hard because you don’t\nwant to lose to me, I bet!\p{PLAYER}{KUN}, I think I should challenge\nyour dad in PETALBURG GYM.\p{PLAYER}{KUN}, see you again!"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816BF92 {
+    "BRENDAN: {PLAYER}, hey, it’s been a while.\nHow’s it going?\pHmm...\nThat’s a decent collection of BADGES.\pAll right, then.\nYou may as well have this."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C020 {
+    "BRENDAN: Keep those with you if you’re\nplanning on going into that desert near\lROUTE 111.\pThere should be some POKéMON that\nare exclusively desert-dwellers.\lYou might look around for those.\pAs for me...\nI’m considering challenging NORMAN,\lthe GYM LEADER of PETALBURG.\pUnlike you, {PLAYER}, your dad looks like\nhe really is tough.\pSee you around!"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C174 {
+    "MIMA: Fue fascinante como utilizaste\nel poder eléctrico de PIKACHU\lpara hacer un truco de desaparición.\pMira, el otro dìa encontré un HUEVO.\pParece que lo haya puesto\nalguno de los POKÉMON de mi equipo.\pTú sabrás cuidarlo perfectamente\ny mi equipo ya está completo\p¿Te importarìa ocuparte de ello?"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C2B6 {
+    "De acuerdo.\nEstoy segura de que serás un maestro."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C2EA {
+    "{PLAYER} recibió el HUEVO."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C2FF {
+    "¡Tu equipo está completo!\n¡Haz sitio y repetiremos el truco!"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C33C {
+    "Entiendo, bueno si cambias de opinión\nque sepas que seguiré aquì."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C398 {
+    "¿El huevo eclosionó ya?\pCuìdalo muy bien, porfa.\pEs un POKéMON fabuloso, \nalgo escaso pero cariñoso."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C3FD {
+    "We draw as much hot water as we need,\nand yet the hot springs never run dry.\pIsn’t it magical?\pThese hot springs appear near active\nvolcanoes. Veins of water under the\lground are heated by magma to well up\las hot springs."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C4DB {
+    "Being buried in this hot sand is...\nSigh...\pSo warm and heavenly...\pEh? Gyaah! Ouch!\pA POKéMON nipped my backside!"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C54E {
+    "Oh, you like hot springs, do you?\pThat’s surprising for one as young\nas you."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C59B {
+    "I bathe in the hot springs every day.\pI want to become a beautiful and strong\nGYM LEADER like FLANNERY."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C603 {
+    "If people put POKéMON in hot springs,\nit might be seriously strange.\pWhy, it might be an electric bath, or\na bubble bath, or even a lava bath..."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C694 {
+    "They’re claiming that these hot springs\nare good for calming nervous tension,\lrelieving aching muscles, solving\lromantic problems, and attracting\lmoney..."
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C72F {
+    "LAVARIDGE TOWN\p“POKéMON CENTER HOT SPRINGS\nAn excellent place for relaxing!”"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C77C {
+    "LAVARIDGE TOWN POKéMON GYM\nLEADER: FLANNERY\l“One with a fiery passion that burns!”"
+}
+
+text Naranja_ValleCharizard_G00_M12_Text_0816C7CF {
+    "POKéMON HERB SHOP\n“Bitter taste - better cure!”"
+}

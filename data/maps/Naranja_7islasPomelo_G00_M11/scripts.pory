@@ -1,0 +1,836 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_7islasPomelo_G00_M11_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_7islasPomelo_G00_M11_OnTransition
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G00_M11_EventScript_Sub_086B93D0)
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_08166F6B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_OnTransition {
+    setflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0811)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00BD)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E076)
+    message(Naranja_7islasPomelo_G00_M11_Text_0816B522)
+    waitmessage
+    multichoicedefault(0x15, 6, 0, 2, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E04B)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E05B)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E06B)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E06B)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E04B {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B57D)
+    callstd(4)
+    closemessage
+    goto(Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E151)
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E05B {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B5D2)
+    callstd(4)
+    closemessage
+    goto(Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E1D8)
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E06B {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B627)
+    callstd(4)
+    closemessage
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E076 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B3BC)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E093)
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B471)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E093 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B417)
+    callstd(4)
+    closemessage
+    goto(Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E151)
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B23B)
+    callstd(2)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sign_1 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B2A7)
+    callstd(3)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sign_2 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B2D5)
+    callstd(3)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sign_5 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B317)
+    callstd(3)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_MR_BRINEYS_BOAT_LocalId4 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0101)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E11B)
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B665)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E0F0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E111)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E0F0 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B6A8)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x106)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0101)
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B6F9)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E111 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B828)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E11B {
+    message(Naranja_7islasPomelo_G00_M11_Text_0816B84E)
+    waitmessage
+    multichoice(0x14, 8, 0x32, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E13D)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E147)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E13D {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B866)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E147 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B89A)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E151 {
+    call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C)
+    setobjectsubpriority(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, MAP_NARANJA_7ISLAS_POMELO_G00_M11, 0)
+    setobjectsubpriority(LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11, 0)
+    applymovement(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, Naranja_7islasPomelo_G00_M11_Movement_0814E40E)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G00_M11_Movement_0814E402)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
+    call(Naranja_Islas_G00_M19_EventScript_Sub_081A02E7)
+    applymovement(LOCALID_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT, Naranja_7islasPomelo_G00_M11_Movement_0814E293)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G00_M11_Movement_0814E293)
+    waitmovement(LOCALID_NONE)
+    showobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19)
+    call(Naranja_Islas_G00_M19_EventScript_Sub_081A02EF)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G00_M11_Movement_0814E405)
+    waitmovement(LOCALID_NONE)
+    showobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19)
+    clearflag(FLAG_HIDE_ISLAS_G17_M00_OLD_MAN_1)
+    clearflag(FLAG_HIDE_ISLAS_G17_M00_WINGULL)
+    clearflag(FLAG_HIDE_ISLAS_G00_M19_SPIN_CUSHION)
+    setflag(FLAG_HIDE_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT)
+    hideobjectat(LOCALID_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
+    setvar(VAR_NARANJA_ISLAS_STORY_STATE, 2)
+    resetobjectsubpriority(LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
+    warp(MAP_NARANJA_ISLAS_G17_M00, 0xFF, 5, 4)
+    copyvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008)
+    waitstate
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E1D8 {
+    call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C)
+    setobjectsubpriority(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, MAP_NARANJA_7ISLAS_POMELO_G00_M11, 0)
+    setobjectsubpriority(LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11, 1)
+    applymovement(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, Naranja_7islasPomelo_G00_M11_Movement_0814E40E)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G00_M11_Movement_0814E402)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
+    call(Naranja_Islas_G00_M19_EventScript_Sub_081A02E7)
+    applymovement(LOCALID_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT, Naranja_7islasPomelo_G00_M11_Movement_0814E356)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G00_M11_Movement_0814E356)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_Islas_G00_M19_EventScript_Sub_081A02EF)
+    showobjectat(LOCALID_PLAYER, MAP_NARANJA_ROUTE_109_G00_M24)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G00_M11_Movement_0814E409)
+    waitmovement(LOCALID_NONE)
+    setobjectxyperm(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, 0x15, 0x1A)
+    addobject(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1)
+    setobjectsubpriority(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, MAP_NARANJA_ROUTE_109_G00_M24, 0)
+    applymovement(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, Naranja_7islasPomelo_G00_M11_Movement_0814E410)
+    waitmovement(LOCALID_NONE)
+    clearflag(FLAG_HIDE_ROUTE109_G00_M24_OLD_MAN_1)
+    addobject(LOCALID_7ISLAS_POMELO_G00_M11_WOMAN_3)
+    clearflag(FLAG_HIDE_ROUTE109_G00_M24_MR_BRINEYS_BOAT)
+    setflag(FLAG_HIDE_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT)
+    hideobjectat(LOCALID_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095)
+    call_if(LESS_THAN, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E281)
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095)
+    call_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E28A)
+    closemessage
+    copyvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008)
+    resetobjectsubpriority(LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
+    resetobjectsubpriority(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1, MAP_NARANJA_ROUTE_109_G00_M24)
+    copyobjectxytoperm(LOCALID_7ISLAS_POMELO_G00_M11_OLD_MAN_1)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E281 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816E080)
+    callstd(4)
+    return
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E28A {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816E1FA)
+    callstd(4)
+    return
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId5 {
+    lock
+    faceplayer
+    call(Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102)
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816B9CE)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E439)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E443)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E439 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816BD37)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E443 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816BADC)
+    callstd(4)
+    setvar(VAR_0x8004, 9)
+    call(Naranja_Route123_G31_M00_EventScript_Sub_081A00F3)
+    lock
+    faceplayer
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E46E)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E485)
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E46E {
+    incrementgamestat(2)
+    compare_var_to_value(VAR_0x8004, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E48F)
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816BB44)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E485 {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816BCE9)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E48F {
+    loadword(0, Naranja_7islasPomelo_G00_M11_Text_0816BCA2)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102 {
+    dotimebasedevents
+    setvar(VAR_0x8004, 0)
+    special(BufferTrendyPhraseString)
+    return
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C {
+    copyvar(VAR_0x8008, VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2)
+    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 0)
+    return
+}
+
+script Naranja_7islasPomelo_G00_M11_EventScript_Sub_086B93D0 {
+    setflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    setwildbattle(SPECIES_SNORLAX, 0x20, 0)
+    special(BattleSetup_StartLatiBattle)
+    release
+    end
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E293 {
+    walk_up
+    walk_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_up
+    walk_up
+    walk_left
+    walk_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_left
+    walk_fast_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_up
+    walk_fast_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E356 {
+    walk_right
+    walk_fast_right
+    walk_fast_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_up
+    walk_fast_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E402 {
+    walk_right
+    walk_up
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E405 {
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E409 {
+    walk_up
+    walk_up
+    walk_up
+    walk_in_place_faster_down
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E40E {
+    walk_up
+}
+
+movement Naranja_7islasPomelo_G00_M11_Movement_0814E410 {
+    walk_up
+    walk_up
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_08166F6B {
+    "ばカËËこ\nÑÑÂ\nだÈÎÎÎÎÎÎÎÀ\nÑÀÌÎÎÎÎÎÎ\nmon\nok\noff towards the tunnel over there."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B23B {
+    "DEWFORD TOWN is a tiny island community.\nIf something gets trendy here,\leveryone picks up on it right away."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B2A7 {
+    "DEWFORD TOWN\n“A tiny island in the blue sea.”"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B2D5 {
+    "DEWFORD TOWN POKéMON GYM\nLEADER: BRAWLY\l“A big wave in fighting!”"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B317 {
+    "DEWFORD HALL\n“Everyone’s information exchange!”"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B3BC {
+    "MR. BRINEY: Have you delivered your\nLETTER?\pOr were you meaning to sail back to\nPETALBURG?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B417 {
+    "MR. BRINEY: PETALBURG it is, then!\pAnchors aweigh!\nPEEKO, we’re setting sail, my darling!"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B471 {
+    "MR. BRINEY: Then you go on and deliver\nthe LETTER. I’ll be waiting."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B522 {
+    "MR. BRINEY: Ahoy!\nFor you, I’ll go out to sea anytime!\pNow, my friend, where are we bound?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B57D {
+    "MR. BRINEY: PETALBURG, is it?\pAnchors aweigh!\nPEEKO, we’re setting sail, my darling!"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B5D2 {
+    "MR. BRINEY: SLATEPORT, is it?\pAnchors aweigh!\nPEEKO, we’re setting sail, my darling!"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B627 {
+    "MR. BRINEY: Just tell me whenever you\nwant to set sail again."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B665 {
+    "This is a renowned fishing spot.\nAre you getting the itch to fish?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B6A8 {
+    "I hear you, and I like what\nyou’re saying!\pI’ll give you one of my fishing RODS."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B6F9 {
+    "And, as an added bonus, I’ll even throw\nin a little fishing advice!\pFirst, you want to face the water,\nthen use the ROD.\pFocus your mind...\nIf you get a bite, pull on the ROD.\pSometimes you can snag something\nimmediately, but with bigger catches,\lyou need to time the pulls on your ROD\lto haul them in."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B828 {
+    "Oh, is that so?\nThat’s too bad, then."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B84E {
+    "Yo!\nHow’s your fishing?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B866 {
+    "Is that right! That’s great!\nHaul in some big ones!"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B89A {
+    "Oh, hey, don’t get down on yourself!\nI’ll give you a little fishing advice.\pFirst, you want to face the water,\nthen use the ROD.\pFocus your mind...\nIf you get a bite, pull the ROD.\pSometimes you can snag something\nimmediately, but with bigger catches,\lyou need to time the pulls on your ROD\lto haul them in."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816B9CE {
+    "I like what’s hip, happening, and trendy.\nI’m always checking it out.\pListen, have you heard about this new\n“{STR_VAR_1}”?\pThat’s right!\nOf course you know!\pI mean, sheesh,\n“{STR_VAR_1}”...\lIt’s the hottest thing in cool!\pWherever you’re from,\n“{STR_VAR_1}”\lis the biggest happening thing, right?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816BADC {
+    "Hunh?\nIt’s not the hip and happening thing?\pWell, hey, you have to tell me,\nwhat’s new and what’s “in”?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816BB44 {
+    "Hunh?\n“{STR_VAR_2}”?\p... ...\p...Uh... Yeah! That’s right!\nYeah, I knew that! Knew it all along!\pOf course I know about that!\n“{STR_VAR_2},” right?\pYeah, that’s it, it’s there!\nIsn’t “{STR_VAR_2}”\lthe coolest, or what?\pIt’s the hippest thing in hip.\nYou think I’d not know about it?\p“{STR_VAR_1}”...\nIt’s, like, so five minutes ago.\pNow, “{STR_VAR_2}” is\nwhat’s vital and in tune with the times!"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816BCA2 {
+    "Hmm...\n“{STR_VAR_2},” huh?\pBut personally, I think\n“{STR_VAR_1}”\lis what’s real in cool."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816BCE9 {
+    "Well, if you hear of any happening new\ntrends, come share them with me, okay?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816BD37 {
+    "Yeah, absolutely right!\p“{STR_VAR_1}” is the\ndefinition of “in” right now."
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816E080 {
+    "MR. BRINEY: Ahoy!\nWe’ve made land in SLATEPORT!\pI suppose you’re going to visit CAPT.\nSTERN and deliver the DEVON GOODS?"
+}
+
+text Naranja_7islasPomelo_G00_M11_Text_0816E1FA {
+    "MR. BRINEY: Ahoy! We’ve made land in\nSLATEPORT!\pYou just go on and tell me whenever\nyou want to set sail again!"
+}

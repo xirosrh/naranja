@@ -24,7 +24,36 @@
       "direction": "right"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_SAFARI_G26_M02_ROXANNE",
+      "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
+      "x": 22,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Safari_G26_M02_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_SAFARI_G26_M02_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 0,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Safari_G26_M02_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2",
+      "flag": "FLAG_HIDE_SAFARI_G26_M02_ITEM_BALL"
+    }
+  ],
   "warp_events": [
     {
       "x": 29,
@@ -35,5 +64,14 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 7,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_Safari_G26_M02_EventScript_Sign_1"
+    }
+  ]
 }

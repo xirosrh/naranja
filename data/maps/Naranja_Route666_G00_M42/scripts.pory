@@ -1,0 +1,159 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route666_G00_M42_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route666_G00_M42_OnTransition
+}
+
+script Naranja_Route666_G00_M42_OnTransition {
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_081A02C1)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_374, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C17A8, Naranja_Route666_G00_M42_Text_081C17DD)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C17EC)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_384, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C1828, Naranja_Route666_G00_M42_Text_081C1860)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C1877)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_667, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C18CC, Naranja_Route666_G00_M42_Text_081C1930)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C195D)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId7 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_668, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C19A3, Naranja_Route666_G00_M42_Text_081C19D6)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C19E7)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_669, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C1A2E, Naranja_Route666_G00_M42_Text_081C1A73)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C1AA0)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId9 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_672, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C1AE2, Naranja_Route666_G00_M42_Text_081C1B2A)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C1B39)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId8 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE666_674, LOCALID_NONE, Naranja_Route666_G00_M42_Text_081C1B92, Naranja_Route666_G00_M42_Text_081C1BD9)
+    loadword(0, Naranja_Route666_G00_M42_Text_081C1BEC)
+    callstd(6)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3 {
+    setorcopyvar(VAR_0x8000, 0x46)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route666_G00_M42_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4 {
+    setorcopyvar(VAR_0x8000, 0x42)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route666_G00_M42_Text_081C17A8 {
+    "I can see it in your face. You want\nto challenge me."
+}
+
+text Naranja_Route666_G00_M42_Text_081C17DD {
+    "Awawawawawa..."
+}
+
+text Naranja_Route666_G00_M42_Text_081C17EC {
+    "A well-played match leaves me feeling\nrefreshed and serene."
+}
+
+text Naranja_Route666_G00_M42_Text_081C1828 {
+    "Do you have a rival whom you just\nhate to lose against?"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1860 {
+    "Arrrgh! I hate losing!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1877 {
+    "If you have a rival, don’t you get the\nfeeling that you have to keep getting\lbetter?"
+}
+
+text Naranja_Route666_G00_M42_Text_081C18CC {
+    "Through fishing, I have attained a\nstate of becalmed serenity...\lPlease, allow me to demonstrate..."
+}
+
+text Naranja_Route666_G00_M42_Text_081C1930 {
+    "Though I have lost, my heart remains\ncalm..."
+}
+
+text Naranja_Route666_G00_M42_Text_081C195D {
+    "It matters not that I catch nothing.\nThe line remains in the water..."
+}
+
+text Naranja_Route666_G00_M42_Text_081C19A3 {
+    "Whoops! Don’t tell me I snagged\na SURFING POKéMON?"
+}
+
+text Naranja_Route666_G00_M42_Text_081C19D6 {
+    "I can’t keep up!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C19E7 {
+    "Your POKéMON look pretty strong.\nThey’d be a handful if I hooked them!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1A2E {
+    "Well, hey! This is a match between a\nPOKéMON fan and a fishing buff!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1A73 {
+    "No! My line’s all tangled!\nThe party’s over!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1AA0 {
+    "My fishing line’s doing a dance!\nThe tangle tango! Hahaha, snarl!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1AE2 {
+    "What I learned at DEWFORD’s POKéMON\nGYM, I will put into practice here."
+}
+
+text Naranja_Route666_G00_M42_Text_081C1B2A {
+    "I was swamped!"
+}
+
+text Naranja_Route666_G00_M42_Text_081C1B39 {
+    "BRAWLY, DEWFORD’s GYM LEADER, used\nto train with a guy named BRUNO in\lKANTO, I’ve heard."
+}
+
+text Naranja_Route666_G00_M42_Text_081C1B92 {
+    "BIRD POKéMON have excellent vision.\nThey spot prey from great heights."
+}
+
+text Naranja_Route666_G00_M42_Text_081C1BD9 {
+    "Whew... I give up."
+}
+
+text Naranja_Route666_G00_M42_Text_081C1BEC {
+    "There’re lots of diving spots in the\nsea around here.\pYou can spot them easily from the sky\nbecause of their darker color."
+}

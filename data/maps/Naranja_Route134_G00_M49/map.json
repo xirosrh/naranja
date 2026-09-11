@@ -24,7 +24,78 @@
       "direction": "right"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ROUTE134_G00_M49_SWIMMER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 52,
+      "y": 9,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
+      "movement_range_x": 3,
+      "movement_range_y": 5,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE134_G00_M49_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 45,
+      "y": 5,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE134_G00_M49_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 41,
+      "y": 23,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE134_G00_M49_MAN_6",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 65,
+      "y": 14,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId4",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE134_G00_M49_BLACK_BELT",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 56,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 10,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_Route134_G00_M49_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId5",
+      "flag": "0x0"
+    }
+  ],
   "warp_events": [],
   "coord_events": [],
   "bg_events": []

@@ -1,0 +1,118 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMoro_G00_M22_MapScripts {
+}
+
+script Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MORO_154, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B926B, Naranja_IslaMoro_G00_M22_Text_081B92B7)
+    loadword(0, Naranja_IslaMoro_G00_M22_Text_081B92E7)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MORO_444, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B94C8, Naranja_IslaMoro_G00_M22_Text_081B94F2)
+    loadword(0, Naranja_IslaMoro_G00_M22_Text_081B94FF)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MORO_445, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B9538, Naranja_IslaMoro_G00_M22_Text_081B956B)
+    loadword(0, Naranja_IslaMoro_G00_M22_Text_081B9589)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MORO_692, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B95CB, Naranja_IslaMoro_G00_M22_Text_081B95FB, Naranja_IslaMoro_G00_M22_Text_081B9672)
+    loadword(0, Naranja_IslaMoro_G00_M22_Text_081B9630)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_TUBER_M_SWIMMING_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MORO_692, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B96AB, Naranja_IslaMoro_G00_M22_Text_081B9707, Naranja_IslaMoro_G00_M22_Text_081B9788)
+    loadword(0, Naranja_IslaMoro_G00_M22_Text_081B9735)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2 {
+    loadword(0, Naranja_IslaMoro_G00_M22_Text_08170C26)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaMoro_G00_M22_Text_08170C26 {
+    "I left my POKéMON at the DAY CARE.\pWhen I got it back, it had a new move\nthat I didn’t teach it.\lI was really, really surprised."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B926B {
+    "Yawn...\pI must have drifted off to sleep while\nI was drifting in the waves."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B92B7 {
+    "Ahaha, I lost...\nI’ll take a snooze, I think..."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B92E7 {
+    "Floating and being rocked by the\nwaves - it’s like sleeping in a plush,\lcomfy bed."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B94C8 {
+    "Do you know a little town called\nDEWFORD?"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B94F2 {
+    "I hate this!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B94FF {
+    "A weird saying is getting really\ntrendy at DEWFORD HALL."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9538 {
+    "Did you want to battle me?\nSure, I’ll go with you!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B956B {
+    "I wasn’t good enough for you."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9589 {
+    "I think you’re going to keep getting\nbetter. I’ll go for it, too!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B95CB {
+    "LISA: We challenge you as a sister\nand brother!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B95FB {
+    "LISA: Awesome.\nYou’re in a different class of tough."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9630 {
+    "LISA: Do you have any friends who\nwould go to the beach with you?"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9672 {
+    "LISA: If you want to battle with us,\nbring more POKéMON."
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B96AB {
+    "RAY: We always battle POKéMON, me\nand my sister.\pI always lose, but we can beat you\n2-on-2!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9707 {
+    "RAY: Wowee, you’re at a higher level\nthan us!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9735 {
+    "RAY: My sister gave me my POKéMON.\nI raised it, and now it’s my important\lpartner!"
+}
+
+text Naranja_IslaMoro_G00_M22_Text_081B9788 {
+    "RAY: If you want to battle us, go\nbring some more POKéMON!"
+}

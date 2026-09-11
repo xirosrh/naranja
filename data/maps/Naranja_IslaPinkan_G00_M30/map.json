@@ -19,7 +19,274 @@
       "direction": "down"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 27,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_WALLY_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_LASS",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 25,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 24,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId3",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_BEAUTY"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 16,
+      "y": 74,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_KECLEON_1",
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "x": 24,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_KECLEON_1_LocalId5",
+      "flag": "FLAG_HIDE_CUEVA_KABUTO_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_MAGMA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
+      "x": 20,
+      "y": 55,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_MAGMA_MEMBER_M_LocalId6",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_241"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_NURSE",
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 25,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_NURSE_LocalId7",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_CAMERAMAN",
+      "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
+      "x": 24,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_CAMERAMAN_LocalId8",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_BEAUTY"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_LATIAS",
+      "graphics_id": "OBJ_EVENT_GFX_LATIAS",
+      "x": 24,
+      "y": 66,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LATIAS_LocalId9",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 16,
+      "y": 54,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId10",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_ITEM_BALL_2",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 13,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId11",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_ITEM_BALL_2"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_PICHU_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_PICHU_DOLL",
+      "x": 25,
+      "y": 52,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_PICHU_DOLL_LocalId12",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "x": 25,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId13",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_BEAUTY"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_ZIGZAGOON",
+      "graphics_id": "OBJ_EVENT_GFX_ZIGZAGOON_2",
+      "x": 19,
+      "y": 53,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "256",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId7",
+      "flag": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_241"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_BREAKABLE_ROCK_2",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 5,
+      "y": 68,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_ITEM_BALL_3",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 18,
+      "y": 59,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId16",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_ITEM_BALL_3"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_TEALA",
+      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "x": 23,
+      "y": 52,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_TEALA"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_SPIN_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_SPIN_CUSHION",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId18",
+      "flag": "FLAG_HIDE_ISLA_PINKAN_G00_M30_SPIN_CUSHION"
+    },
+    {
+      "local_id": "LOCALID_ISLA_PINKAN_G00_M30_GRASS_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_GRASS_CUSHION",
+      "x": 33,
+      "y": 65,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    }
+  ],
   "warp_events": [
     {
       "x": 25,
@@ -57,6 +324,137 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 69,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 58,
+      "elevation": 3,
+      "var": "VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE",
+      "var_value": "2",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 57,
+      "elevation": 3,
+      "var": "VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE",
+      "var_value": "2",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_Trigger_2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "secret_base",
+      "x": 33,
+      "y": 16,
+      "elevation": 0,
+      "secret_base_id": "134217800"
+    },
+    {
+      "type": "secret_base",
+      "x": 36,
+      "y": 17,
+      "elevation": 0,
+      "secret_base_id": "134217790"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 72,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_Sign_3"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 20,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId13"
+    },
+    {
+      "type": "secret_base",
+      "x": 35,
+      "y": 20,
+      "elevation": 0,
+      "secret_base_id": "134217861"
+    },
+    {
+      "type": "secret_base",
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "secret_base_id": "134217770"
+    },
+    {
+      "type": "secret_base",
+      "x": 36,
+      "y": 18,
+      "elevation": 0,
+      "secret_base_id": "134217780"
+    },
+    {
+      "type": "secret_base",
+      "x": 34,
+      "y": 16,
+      "elevation": 0,
+      "secret_base_id": "134217771"
+    },
+    {
+      "type": "secret_base",
+      "x": 33,
+      "y": 57,
+      "elevation": 0,
+      "secret_base_id": "134217781"
+    },
+    {
+      "type": "secret_base",
+      "x": 36,
+      "y": 15,
+      "elevation": 0,
+      "secret_base_id": "134217902"
+    },
+    {
+      "type": "secret_base",
+      "x": 37,
+      "y": 15,
+      "elevation": 0,
+      "secret_base_id": "134217911"
+    },
+    {
+      "type": "secret_base",
+      "x": 35,
+      "y": 17,
+      "elevation": 0,
+      "secret_base_id": "134217791"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 57,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_IslaPinkan_G00_M30_EventScript_Sign_13"
+    },
+    {
+      "type": "hidden_item",
+      "x": 18,
+      "y": 57,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_ISLA_PINKAN_G00_M30_HEART_SCALE_14"
+    }
+  ]
 }

@@ -1,0 +1,713 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_7islasPomelo_G03_M02_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1: Naranja_7islasPomelo_G03_M02_OnFrame_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2: Naranja_7islasPomelo_G03_M02_OnFrame_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5: Naranja_7islasPomelo_G03_M02_OnFrame_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3: Naranja_7islasPomelo_G03_M02_OnFrame_4
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4: Naranja_7islasPomelo_G03_M02_OnFrame_5
+    ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1: Naranja_7islasPomelo_G03_M02_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2: Naranja_7islasPomelo_G03_M02_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5: Naranja_7islasPomelo_G03_M02_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3: Naranja_7islasPomelo_G03_M02_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4: Naranja_7islasPomelo_G03_M02_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_LOAD: Naranja_7islasPomelo_G03_M02_OnLoad
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_OBJ_EVENT_GFX_TEALA_LocalId1 {
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EA6)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_OBJ_EVENT_GFX_TEALA_LocalId2 {
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40CC)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_OBJ_EVENT_GFX_TEALA_LocalId3 {
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41FB)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_OnWarp_1 {
+    turnobject(32775, 4)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_OnLoad {
+    compare_var_to_value(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D6A)
+    compare_var_to_value(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D6A)
+    compare_var_to_value(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D6A)
+    compare_var_to_value(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D74)
+    compare_var_to_value(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D7E)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D6A {
+    setmetatile(5, 3, 0x202, 0)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D74 {
+    setmetatile(8, 3, 0x202, 0)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3D7E {
+    setmetatile(0xB, 3, 0x202, 0)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DB2 {
+    special(CloseLink)
+    setvar(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 0)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A4358)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_0x8007, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DD9)
+    applymovement(32775, Naranja_7islasPomelo_G03_M02_Movement_081A4354)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DD9)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DD9 {
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DDA {
+    special(CloseLink)
+    setvar(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 0)
+    compare_var_to_value(VAR_0x8007, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3E0C)
+    applymovement(32775, Naranja_7islasPomelo_G03_M02_Movement_081A4356)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A4358)
+    waitmovement(LOCALID_NONE)
+    applymovement(32775, Naranja_7islasPomelo_G03_M02_Movement_081A4354)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3E0C {
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A4358)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_OnFrame_4 {
+    lockall
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3E30)
+    setmetatile(8, 3, 0x25D, 1)
+    special(DrawWholeMapView)
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3E30 {
+    special(CloseLink)
+    setvar(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 0)
+    compare_var_to_value(VAR_0x8007, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3E0C)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A4361)
+    waitmovement(LOCALID_NONE)
+    applymovement(32775, Naranja_7islasPomelo_G03_M02_Movement_081A4356)
+    waitmovement(LOCALID_NONE)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4E50)
+    waitmessage
+    playse(SE_PIN)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4E79)
+    waitmessage
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A4358)
+    waitmovement(LOCALID_NONE)
+    applymovement(32775, Naranja_7islasPomelo_G03_M02_Movement_081A4354)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_OnFrame_5 {
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DB2)
+    setmetatile(0xB, 3, 0x25D, 1)
+    special(DrawWholeMapView)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_OnFrame_1 {
+    lockall
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3DDA)
+    setmetatile(5, 3, 0x25D, 1)
+    special(DrawWholeMapView)
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EA6 {
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4342)
+    copyvar(VAR_0x8007, VAR_LAST_TALKED)
+    lock
+    faceplayer
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4510)
+    waitmessage
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EBC)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EBC {
+    multichoice(0x11, 6, 0x11, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EF2)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FDD)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EF2)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EF2 {
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FEF)
+    compare_var_to_value(VAR_0x8004, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A490C)
+    waitmessage
+    special(TryBattleLinkup)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3F5E)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301)
+    compare_var_to_value(VAR_RESULT, 3)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D)
+    compare_var_to_value(VAR_RESULT, 4)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4068)
+    compare_var_to_value(VAR_RESULT, 5)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3F5E)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3F5E {
+    special(HealPlayerParty)
+    special(SavePlayerParty)
+    special(LoadPlayerBag)
+    copyvar(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, VAR_0x8004)
+    messageautoscroll(Naranja_7islasPomelo_G03_M02_Text_081A4A22)
+    waitmessage
+    setmetatile(5, 3, 0x202, 0)
+    special(DrawWholeMapView)
+    delay(0x3C)
+    applymovement(32783, Naranja_7islasPomelo_G03_M02_Movement_081A4356)
+    waitmovement(LOCALID_NONE)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435B)
+    waitmovement(LOCALID_NONE)
+    opendoor(5, 1)
+    waitdooranim
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435F)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00)
+    closedoor(5, 1)
+    waitdooranim
+    release
+    compare_var_to_value(VAR_0x8004, 5)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FCD)
+    special(SetCableClubWarp)
+    warp(MAP_NARANJA_SIN_NOMBRE_G25_M24, 0xFF, 6, 8)
+    special(DoCableClubWarp)
+    waitstate
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FCD {
+    special(SetCableClubWarp)
+    warp(MAP_NARANJA_SIN_NOMBRE_G25_M27, 0xFF, 5, 8)
+    special(DoCableClubWarp)
+    waitstate
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FDD {
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4696)
+    waitmessage
+    waitbuttonpress
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4826)
+    waitmessage
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EBC)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FEF {
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4840)
+    waitmessage
+    multichoice(0, 0, 0x12, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4062)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4042)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A403C)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4036)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4036)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4036)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4036 {
+    setvar(VAR_0x8004, 0)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A403C {
+    setvar(VAR_0x8004, 5)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4042 {
+    special(HasEnoughMonsForDoubleBattle)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(NOT_EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4056)
+    setvar(VAR_0x8004, 2)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4056 {
+    message(Naranja_7islasPomelo_G03_M02_Text_081A486A)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3FEF)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4062 {
+    setvar(VAR_0x8004, 1)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4068 {
+    copyvar(VAR_0x8000, VAR_0x8004)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40B1)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40A2)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4093)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4093 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4C03)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40C0)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40A2 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4BCC)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40C0)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40B1 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4B95)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40C0)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40C0 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4C38)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40CC {
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4339)
+    copyvar(VAR_0x8007, VAR_LAST_TALKED)
+    lock
+    faceplayer
+    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A457E)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40FA)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40FA)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40FA {
+    call(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41BB)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A490C)
+    waitmessage
+    special(TryRecordMixLinkup)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4166)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301)
+    compare_var_to_value(VAR_RESULT, 3)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D)
+    compare_var_to_value(VAR_RESULT, 4)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D)
+    compare_var_to_value(VAR_RESULT, 5)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4166)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4166 {
+    setvar(VAR_0x8004, 3)
+    copyvar(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, VAR_0x8004)
+    messageautoscroll(Naranja_7islasPomelo_G03_M02_Text_081A4A22)
+    waitmessage
+    setmetatile(8, 3, 0x202, 0)
+    special(DrawWholeMapView)
+    delay(0x3C)
+    applymovement(32783, Naranja_7islasPomelo_G03_M02_Movement_081A4356)
+    waitmovement(LOCALID_NONE)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435B)
+    waitmovement(LOCALID_NONE)
+    opendoor(8, 1)
+    waitdooranim
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435F)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00)
+    closedoor(8, 1)
+    waitdooranim
+    release
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4325)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41BB {
+    specialvar(VAR_RESULT, CalculatePlayerPartyCount)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41E1)
+    specialvar(VAR_RESULT, DoesPartyHaveEnigmaBerry)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41EE)
+    setvar(VAR_RESULT, 1)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41E1 {
+    message(Naranja_7islasPomelo_G03_M02_Text_081A48A3)
+    waitmessage
+    waitbuttonpress
+    setvar(VAR_RESULT, 0)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41EE {
+    message(Naranja_7islasPomelo_G03_M02_Text_081A48DD)
+    waitmessage
+    waitbuttonpress
+    setvar(VAR_RESULT, 0)
+    return
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A41FB {
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0818)
+    goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A434B)
+    copyvar(VAR_0x8007, VAR_LAST_TALKED)
+    lock
+    faceplayer
+    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A45FE)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4229)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4229)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4229 {
+    call(Naranja_PuebloPaleta_G26_M05_EventScript_Sub_0819F806)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A490C)
+    waitmessage
+    special(ValidateMixingGameLanguage)
+    waitstate
+    special(SetChampionSaveWarp)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4294)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301)
+    compare_var_to_value(VAR_RESULT, 3)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D)
+    compare_var_to_value(VAR_RESULT, 4)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D)
+    compare_var_to_value(VAR_RESULT, 5)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5)
+    compare_var_to_value(VAR_RESULT, 7)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42E9)
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4294)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4294 {
+    setvar(VAR_0x8004, 4)
+    copyvar(VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, VAR_0x8004)
+    messageautoscroll(Naranja_7islasPomelo_G03_M02_Text_081A4A22)
+    waitmessage
+    setmetatile(0xB, 3, 0x202, 0)
+    special(DrawWholeMapView)
+    delay(0x3C)
+    applymovement(32783, Naranja_7islasPomelo_G03_M02_Movement_081A4356)
+    waitmovement(LOCALID_NONE)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435B)
+    waitmovement(LOCALID_NONE)
+    opendoor(0xB, 1)
+    waitdooranim
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M02_Movement_081A435F)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00)
+    closedoor(0xB, 1)
+    waitdooranim
+    release
+    goto(Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4325)
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42E9 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4AC8)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A42F5 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4A85)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4301 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4A30)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A430D {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4B1D)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4319 {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4B59)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4325 {
+    special(SetCableClubWarp)
+    special(DoCableClubWarp)
+    waitstate
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A432D {
+    special(CloseLink)
+    message(Naranja_7islasPomelo_G03_M02_Text_081A4B6C)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4339 {
+    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A141C)
+    callstd(2)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4342 {
+    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A13DF)
+    callstd(2)
+    end
+}
+
+script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A434B {
+    loadword(0, Naranja_7islasPomelo_G03_M02_Text_081A145C)
+    callstd(2)
+    end
+}
+
+movement Naranja_7islasPomelo_G03_M02_Movement_081A4354 {
+    face_down
+}
+
+movement Naranja_7islasPomelo_G03_M02_Movement_081A4356 {
+    face_right
+}
+
+movement Naranja_7islasPomelo_G03_M02_Movement_081A4358 {
+    walk_down
+    walk_down
+}
+
+movement Naranja_7islasPomelo_G03_M02_Movement_081A435B {
+    walk_right
+    walk_up
+    walk_up
+}
+
+movement Naranja_7islasPomelo_G03_M02_Movement_081A435F {
+    walk_up
+}
+
+movement Naranja_7islasPomelo_G03_M02_Movement_081A4361 {
+    face_left
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A13DF {
+    "I’m terribly sorry. The COLOSSEUM\nis undergoing adjustments."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A141C {
+    "I’m terribly sorry. The TRADE CENTER\nis undergoing inspections."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A145C {
+    "I’m terribly sorry. The RECORD CORNER\nis under preparation."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4510 {
+    "Welcome to the POKéMON CABLE CLUB\nCOLOSSEUM.\pYou may battle with your friends here.\pWould you like to battle?"
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A457E {
+    "Welcome to the POKéMON CABLE CLUB\nTRADE CENTER.\pYou may trade your POKéMON here\nwith a friend.\pWould you like to trade POKéMON?"
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A45FE {
+    "Welcome to the POKéMON CABLE CLUB\nRECORD CENTER.\pYou may mix your records as a TRAINER\nwith the records of your friends.\pWould you like to mix records?"
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4696 {
+    "There are three link battle modes.\pSINGLE BATTLE is for two TRAINERS\nwith one or more POKéMON each.\pEach TRAINER can have one POKéMON\nin battle at a time.\pDOUBLE BATTLE is for two TRAINERS\nwith two or more POKéMON each.\pEach TRAINER will send out two\nPOKéMON in battle at a time.\pMULTI BATTLE is for four TRAINERS\nwith one or more POKéMON each.\pEach TRAINER can have one POKéMON\nin battle at a time."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4826 {
+    "Would you like to battle?"
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4840 {
+    "Which Battle Mode would you like\nto play?"
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A486A {
+    "For a DOUBLE BATTLE, you must have\nat least two POKéMON."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A48A3 {
+    "For trading, you must have at least\ntwo POKéMON with you."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A48DD {
+    "Your {STR_VAR_1} BERRY-holding POKéMON\ncan’t be traded."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A490C {
+    "Please wait.\n... ... B Button: Cancel"
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4A22 {
+    "Please enter."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4A30 {
+    "Someone is not ready to link.\pPlease come back after everyone has\nmade preparations."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4A85 {
+    "Sorry, we have a transmission error...\nPlease reset and try again."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4AC8 {
+    "Sorry, we have a transmission error.\nYou may not mix records in different\llanguages."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4B1D {
+    "The link partners appear to have made\ndifferent selections."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4B59 {
+    "Please come again."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4B6C {
+    "The number of participants is\nincorrect."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4B95 {
+    "The SINGLE Battle Mode cannot be\nplayed by {STR_VAR_1} players."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4BCC {
+    "The DOUBLE Battle Mode cannot be\nplayed by {STR_VAR_1} players."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4C03 {
+    "There must be four players to play\nthis Battle Mode."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4C38 {
+    "Please confirm the number of players\nand start again."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4E50 {
+    "The TRAINER CARD data will\nbe rewritten."
+}
+
+text Naranja_7islasPomelo_G03_M02_Text_081A4E79 {
+    "I hope to see you again!"
+}

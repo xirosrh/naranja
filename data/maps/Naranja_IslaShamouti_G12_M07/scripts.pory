@@ -1,0 +1,108 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaShamouti_G12_M07_MapScripts {
+}
+
+script Naranja_IslaShamouti_G12_M07_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId1 {
+    loadword(0, Naranja_IslaShamouti_G12_M07_Text_081867AF)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaShamouti_G12_M07_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId2 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00DF)
+    goto_if(EQUAL, Naranja_IslaShamouti_G12_M07_EventScript_Sub_08158204)
+    checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00E0)
+    goto_if(EQUAL, Naranja_IslaShamouti_G12_M07_EventScript_Sub_081581D6)
+    checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00DE)
+    goto_if(EQUAL, Naranja_IslaShamouti_G12_M07_EventScript_Sub_081581C2)
+    loadword(0, Naranja_IslaShamouti_G12_M07_Text_08186835)
+    callstd(4)
+    closemessage
+    setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00DE)
+    clearflag(FLAG_HIDE_ISLA_MELLSWEET_G14_M02_WINGULL)
+    applymovement(LOCALID_ISLA_SHAMOUTI_G12_M07_WINGULL, Naranja_IslaShamouti_G12_M07_Movement_08158218)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ISLA_SHAMOUTI_G12_M07_WINGULL)
+    releaseall
+    end
+}
+
+script Naranja_IslaShamouti_G12_M07_EventScript_Sub_081581C2 {
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaShamouti_G12_M07_Text_0818684E)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaShamouti_G12_M07_EventScript_Sub_081581D6 {
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaShamouti_G12_M07_Text_08186881)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xB9)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00DF)
+    releaseall
+    end
+}
+
+script Naranja_IslaShamouti_G12_M07_EventScript_Sub_08158204 {
+    applymovement(32783, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaShamouti_G12_M07_Text_08186924)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaShamouti_G12_M07_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId3 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    loadword(0, Naranja_IslaShamouti_G12_M07_Text_0818695C)
+    callstd(4)
+    waitmoncry
+    release
+    end
+}
+
+movement Naranja_IslaShamouti_G12_M07_Movement_08158218 {
+    walk_fast_down
+    walk_fast_down
+    walk_fast_right
+    walk_in_place_faster_down
+    delay_8
+}
+
+text Naranja_IslaShamouti_G12_M07_Text_081867AF {
+    "By being together with POKéMON,\npeople make more and more friends.\pAnd that brings the world closer\ntogether. I think it’s wonderful!"
+}
+
+text Naranja_IslaShamouti_G12_M07_Text_08186835 {
+    "There!\nGo, BIRD POKéMON!"
+}
+
+text Naranja_IslaShamouti_G12_M07_Text_0818684E {
+    "Heheh, I asked my WINGULL to run an\nerrand for me."
+}
+
+text Naranja_IslaShamouti_G12_M07_Text_08186881 {
+    "Good!\nWelcome back, WINGULL!\pHuh? What is this?\nWhat is it holding?\pA MENTAL HERB?\nIt must have picked it up somewhere.\pBut I’m not a TRAINER, so you can\nhave it."
+}
+
+text Naranja_IslaShamouti_G12_M07_Text_08186924 {
+    "Thanks to my WINGULL, I have friends\nwho live far away."
+}
+
+text Naranja_IslaShamouti_G12_M07_Text_0818695C {
+    "WINGULL: Pihyoh!"
+}

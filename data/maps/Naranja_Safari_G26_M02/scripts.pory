@@ -1,0 +1,32 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Safari_G26_M02_MapScripts {
+}
+
+script Naranja_Safari_G26_M02_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId1 {
+    loadword(0, Naranja_Safari_G26_M02_Text_081C3C39)
+    callstd(2)
+    end
+}
+
+script Naranja_Safari_G26_M02_EventScript_Sign_1 {
+    loadword(0, Naranja_Safari_G26_M02_Text_081C3EA3)
+    callstd(3)
+    end
+}
+
+script Naranja_Safari_G26_M02_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2 {
+    setorcopyvar(VAR_0x8000, 0x19)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Safari_G26_M02_Text_081C3C39 {
+    "Sometimes, when I toss a オカキクケ at \nPOKéMON, it gets ignored.\pDo POKéMON have likes and dislikes\nabout what they eat?"
+}
+
+text Naranja_Safari_G26_M02_Text_081C3EA3 {
+    "“Relieve your tired feet.”\nREST HOUSE"
+}

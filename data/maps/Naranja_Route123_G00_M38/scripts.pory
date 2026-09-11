@@ -1,0 +1,302 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route123_G00_M38_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route123_G00_M38_OnTransition
+}
+
+script Naranja_Route123_G00_M38_OnTransition {
+    special(SetRoute123Weather)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId23 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00E8)
+    goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151CAC)
+    loadword(0, Naranja_Route123_G00_M38_Text_08171D83)
+    callstd(4)
+    special(IsGrassTypeInParty)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151CAA)
+    loadword(0, Naranja_Route123_G00_M38_Text_08171DC2)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x133)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE123_EVENT_COMPLETE_00E8)
+    loadword(0, Naranja_Route123_G00_M38_Text_08171E34)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sub_08151CAA {
+    release
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sub_08151CAC {
+    loadword(0, Naranja_Route123_G00_M38_Text_08171E34)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sign_4 {
+    loadword(0, Naranja_Route123_G00_M38_Text_08171E76)
+    callstd(3)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sign_1 {
+    loadword(0, Naranja_Route123_G00_M38_Text_08171E8E)
+    callstd(3)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sign_6 {
+    loadword(0, Naranja_Route123_G00_M38_Text_08171EBC)
+    callstd(3)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId8 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_092, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081BFF6A, Naranja_Route123_G00_M38_Text_081BFFA2)
+    loadword(0, Naranja_Route123_G00_M38_Text_081BFFC1)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId27 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_039, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C009E, Naranja_Route123_G00_M38_Text_081C00D4)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C0100)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId30 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_238, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C013F, Naranja_Route123_G00_M38_Text_081C01A3)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151D3D)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C01B1)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sub_08151D3D {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE123_238, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C01F9, Naranja_Route123_G00_M38_Text_081C0240)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C024E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_LASS_LocalId31 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_249, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C028C, Naranja_Route123_G00_M38_Text_081C0303)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route123_G00_M38_EventScript_Sub_08151D7B)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C030F)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_Sub_08151D7B {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE123_249, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C0351, Naranja_Route123_G00_M38_Text_081C0380)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C038C)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId29 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE123_484, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C03CB, Naranja_Route123_G00_M38_Text_081C040E, Naranja_Route123_G00_M38_Text_081C0462)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C0423)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId28 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE123_484, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C049C, Naranja_Route123_G00_M38_Text_081C04CD, Naranja_Route123_G00_M38_Text_081C0519)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C04E3)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId32 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE123_106, LOCALID_NONE, Naranja_Route123_G00_M38_Text_081C0554, Naranja_Route123_G00_M38_Text_081C059F)
+    loadword(0, Naranja_Route123_G00_M38_Text_081C05BC)
+    callstd(6)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId21 {
+    setorcopyvar(VAR_0x8000, 0x43)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId22 {
+    setorcopyvar(VAR_0x8000, 0x44)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId33 {
+    setorcopyvar(VAR_0x8000, 2)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route123_G00_M38_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId34 {
+    setorcopyvar(VAR_0x8000, 0x24)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route123_G00_M38_Text_08171D83 {
+    "I love GRASS-type POKéMON!\pDo you have any GRASS-type POKéMON?"
+}
+
+text Naranja_Route123_G00_M38_Text_08171DC2 {
+    "Oh?\pYou like GRASS-type POKéMON, too,\ndon’t you?\pI’m so happy, you can have this!\nIt’s a token of our friendship."
+}
+
+text Naranja_Route123_G00_M38_Text_08171E34 {
+    "I check trees with my GRASS-type\nPOKéMON. I’m like a tree doctor."
+}
+
+text Naranja_Route123_G00_M38_Text_08171E76 {
+    "ワ ROUTE 123\nロ ROUTE 118"
+}
+
+text Naranja_Route123_G00_M38_Text_08171E8E {
+    "ル MT. PYRE\n“Forbidden to the faint of heart.”"
+}
+
+text Naranja_Route123_G00_M38_Text_08171EBC {
+    "BERRY MASTER’S HOUSE"
+}
+
+text Naranja_Route123_G00_M38_Text_081BFF6A {
+    "Want to determine how strong you are?\nI’ll be the test!"
+}
+
+text Naranja_Route123_G00_M38_Text_081BFFA2 {
+    "You passed with flying colors!"
+}
+
+text Naranja_Route123_G00_M38_Text_081BFFC1 {
+    "To best even me...\nYour strength is marvelous!"
+}
+
+text Naranja_Route123_G00_M38_Text_081C009E {
+    "They say that good times are filled\nwith good aromas."
+}
+
+text Naranja_Route123_G00_M38_Text_081C00D4 {
+    "Oh...\nI smell the bitter scent of misery..."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0100 {
+    "The BERRY MASTER’s garden is filled\nwith uplifting fragrances."
+}
+
+text Naranja_Route123_G00_M38_Text_081C013F {
+    "Being a psychic is about willpower.\pI’ve willed myself not to lose to\nanyone. That makes me strong!"
+}
+
+text Naranja_Route123_G00_M38_Text_081C01A3 {
+    "I feel sad..."
+}
+
+text Naranja_Route123_G00_M38_Text_081C01B1 {
+    "Being a psychic is about willpower.\nI thought I wouldn’t lose to you..."
+}
+
+text Naranja_Route123_G00_M38_Text_081C01F9 {
+    "I’ve convinced myself that I won’t\nlose anymore. That makes me strong!"
+}
+
+text Naranja_Route123_G00_M38_Text_081C0240 {
+    "I feel sad..."
+}
+
+text Naranja_Route123_G00_M38_Text_081C024E {
+    "I should train at MT. PYRE...\nI’ll never beat you this way..."
+}
+
+text Naranja_Route123_G00_M38_Text_081C028C {
+    "Don’t be too happy if your POKéMON\ndevelop psychic powers.\pYou need to refine those powers to\nmake them really useful."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0303 {
+    "Astounding!"
+}
+
+text Naranja_Route123_G00_M38_Text_081C030F {
+    "We all have psychic powers.\nWe’ve just forgotten how to use them."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0351 {
+    "Have you awoken the psychic powers\nwithin you?"
+}
+
+text Naranja_Route123_G00_M38_Text_081C0380 {
+    "Astounding!"
+}
+
+text Naranja_Route123_G00_M38_Text_081C038C {
+    "Your power with POKéMON...\nThat could be a psychic power, too."
+}
+
+text Naranja_Route123_G00_M38_Text_081C03CB {
+    "MIU: Hello, TRAINER. I hope your\nPOKéMON won’t cry when they lose."
+}
+
+text Naranja_Route123_G00_M38_Text_081C040E {
+    "MIU: Uh-oh, we lost."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0423 {
+    "MIU: TRAINER, your POKéMON are\nstrong because you are friends."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0462 {
+    "MIU: It’s no fun to battle if you\ndon’t have two POKéMON."
+}
+
+text Naranja_Route123_G00_M38_Text_081C049C {
+    "YUKI: Okay!\nWe’re beating the TRAINER’s POKéMON!"
+}
+
+text Naranja_Route123_G00_M38_Text_081C04CD {
+    "YUKI: Uh-oh, we lost."
+}
+
+text Naranja_Route123_G00_M38_Text_081C04E3 {
+    "YUKI: Why are you so strong?\nWe’ve never lost before."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0519 {
+    "YUKI: It’s no fun to battle if you\ndon’t have two POKéMON."
+}
+
+text Naranja_Route123_G00_M38_Text_081C0554 {
+    "MT. PYRE...\nWhere the spirits of POKéMON sleep...\lWill your POKéMON sleep?"
+}
+
+text Naranja_Route123_G00_M38_Text_081C059F {
+    "Overflowing with vitality..."
+}
+
+text Naranja_Route123_G00_M38_Text_081C05BC {
+    "MT. PYRE...\nWhere the spirits of POKéMON sleep...\pIt must overflow with a power that\nsoothes spirits..."
+}

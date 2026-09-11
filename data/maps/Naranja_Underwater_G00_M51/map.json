@@ -40,5 +40,70 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 30,
+      "y": 17,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_HEART_SCALE_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 41,
+      "y": 19,
+      "elevation": 3,
+      "item": "ITEM_ULTRA_BALL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_ULTRA_BALL_2"
+    },
+    {
+      "type": "hidden_item",
+      "x": 63,
+      "y": 19,
+      "elevation": 3,
+      "item": "ITEM_STARDUST",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_STARDUST_3"
+    },
+    {
+      "type": "hidden_item",
+      "x": 10,
+      "y": 36,
+      "elevation": 3,
+      "item": "ITEM_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_PEARL_4"
+    },
+    {
+      "type": "hidden_item",
+      "x": 11,
+      "y": 39,
+      "elevation": 3,
+      "item": "ITEM_IRON",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_IRON_5"
+    },
+    {
+      "type": "hidden_item",
+      "x": 12,
+      "y": 35,
+      "elevation": 3,
+      "item": "ITEM_YELLOW_SHARD",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_YELLOW_SHARD_6"
+    },
+    {
+      "type": "hidden_item",
+      "x": 65,
+      "y": 60,
+      "elevation": 3,
+      "item": "ITEM_BIG_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_BIG_PEARL_7"
+    },
+    {
+      "type": "hidden_item",
+      "x": 9,
+      "y": 77,
+      "elevation": 3,
+      "item": "ITEM_BLUE_SHARD",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M51_BLUE_SHARD_8"
+    }
+  ]
 }

@@ -30,6 +30,34 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 15,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Naranja_CaveOfOrigin_G24_M38_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 16,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Naranja_CaveOfOrigin_G24_M38_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 17,
+      "elevation": 3,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "Naranja_CaveOfOrigin_G24_M38_EventScript_Trigger_1"
+    }
+  ],
   "bg_events": []
 }

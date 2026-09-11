@@ -1,0 +1,139 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route131_G00_M46_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route131_G00_M46_OnTransition
+}
+
+script Naranja_Route131_G00_M46_OnTransition {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    call_if(EQUAL, Naranja_Route131_G00_M46_EventScript_Sub_0815244E)
+    end
+}
+
+script Naranja_Route131_G00_M46_EventScript_Sub_0815244E {
+    setmaplayoutindex(0x140)
+    return
+}
+
+script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_166, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C25B3, Naranja_Route131_G00_M46_Text_081C25F8)
+    loadword(0, Naranja_Route131_G00_M46_Text_081C262A)
+    callstd(6)
+    end
+}
+
+script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_167, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C26B9, Naranja_Route131_G00_M46_Text_081C271F)
+    loadword(0, Naranja_Route131_G00_M46_Text_081C2726)
+    callstd(6)
+    end
+}
+
+script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_456, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C2774, Naranja_Route131_G00_M46_Text_081C27A4)
+    loadword(0, Naranja_Route131_G00_M46_Text_081C27CF)
+    callstd(6)
+    end
+}
+
+script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_457, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C284A, Naranja_Route131_G00_M46_Text_081C2883)
+    loadword(0, Naranja_Route131_G00_M46_Text_081C2898)
+    callstd(6)
+    end
+}
+
+script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE131_686, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C28E2, Naranja_Route131_G00_M46_Text_081C2918, Naranja_Route131_G00_M46_Text_081C29B2)
+    loadword(0, Naranja_Route131_G00_M46_Text_081C2950)
+    callstd(6)
+    end
+}
+
+script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_TUBER_M_SWIMMING_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE131_686, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C29F3, Naranja_Route131_G00_M46_Text_081C2A20, Naranja_Route131_G00_M46_Text_081C2ACA)
+    loadword(0, Naranja_Route131_G00_M46_Text_081C2A5D)
+    callstd(6)
+    end
+}
+
+text Naranja_Route131_G00_M46_Text_081C25B3 {
+    "The sea is teeming with POKéMON.\nIt’s not easy swimming, I tell you."
+}
+
+text Naranja_Route131_G00_M46_Text_081C25F8 {
+    "POKéMON raised by TRAINERS are\nseriously tough..."
+}
+
+text Naranja_Route131_G00_M46_Text_081C262A {
+    "Gasp... Gasp... I’m wiped out...\pThe going’s easy. It’s the leaving\nthat’s the hard part.\pWill I have any energy left to make\nthe return trip?"
+}
+
+text Naranja_Route131_G00_M46_Text_081C26B9 {
+    "The sea... The sea... The sea...\nThe sea as far as these eyes can see!\lI’m sick and tired of the sea!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C271F {
+    "Bleah!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C2726 {
+    "Bored I am by the sea, but swim I must.\pI’m a born swimmer!\nThat’s what I am."
+}
+
+text Naranja_Route131_G00_M46_Text_081C2774 {
+    "Hi, sweetie, wait!\nWe should battle, you and I!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C27A4 {
+    "You’re tough in spite of the way\nyou look!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C27CF {
+    "Did you see a guy over there who whines\nthat he’s bored of the sea?\pThat’s all talk.\nHe’s hopelessly in love with the sea!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C284A {
+    "Why do men love bathing suits so much?\pThey all ogle me!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C2883 {
+    "I’m out of my depth!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C2898 {
+    "Maybe it’s not my bathing suit that\nmakes men look. It must be my beauty!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C28E2 {
+    "RELI: We’ll work together as siblings\nto take you on!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C2918 {
+    "RELI: We couldn’t win even though we\nworked together..."
+}
+
+text Naranja_Route131_G00_M46_Text_081C2950 {
+    "RELI: The people of PACIFIDLOG are\ntogether with the sea and POKéMON from\lthe time they are born."
+}
+
+text Naranja_Route131_G00_M46_Text_081C29B2 {
+    "RELI: You don’t have two POKéMON?\nWe can’t enjoy a battle, then."
+}
+
+text Naranja_Route131_G00_M46_Text_081C29F3 {
+    "IAN: I’m doing my best together with\nmy sis!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C2A20 {
+    "IAN: I did my best with my sis, but\nwe still couldn’t win..."
+}
+
+text Naranja_Route131_G00_M46_Text_081C2A5D {
+    "IAN: You know how PACIFIDLOG is\na floating town?\pSo, wherever there is the sea, that’s\na part of PACIFIDLOG!"
+}
+
+text Naranja_Route131_G00_M46_Text_081C2ACA {
+    "IAN: If you have two POKéMON, we’ll\ntake you on!"
+}

@@ -1,0 +1,208 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route109_G28_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route109_G28_M00_OnTransition
+}
+
+script Naranja_Route109_G28_M00_OnTransition {
+    setflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_083F)
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008C)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E36)
+    checkflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008D)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E08)
+    checkflag(FLAG_TEMP_2)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160DFE)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B4D9)
+    callstd(4)
+    setflag(FLAG_TEMP_2)
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160DFE {
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B5B9)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160E08 {
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B609)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x1B)
+    setorcopyvar(VAR_0x8001, 6)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E2C)
+    setflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008C)
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160E2C {
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B6BE)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160E36 {
+    showmoneybox(0, 0, 0)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B702)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E5A)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B773)
+    callstd(4)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160E5A {
+    checkmoney(0x12C, 0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E9E)
+    checkitemspace(ITEM_SODA_POP, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160EAB)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B74C)
+    callstd(4)
+    removemoney(0x12C, 0)
+    updatemoneybox(0)
+    setorcopyvar(VAR_0x8000, 0x1B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160E9E {
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B759)
+    callstd(4)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160EAB {
+    loadword(0, Naranja_7islasPomelo_G03_M04_Text_081A0CC2)
+    callstd(4)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_493, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B809, Naranja_Route109_G28_M00_Text_0819B869, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B89F)
+    callstd(6)
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_647, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B8E5, Naranja_Route109_G28_M00_Text_0819B949, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B955)
+    callstd(6)
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_TUBER_M_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_065, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B988, Naranja_Route109_G28_M00_Text_0819B9C7, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
+    loadword(0, Naranja_Route109_G28_M00_Text_0819B9E5)
+    callstd(6)
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09 {
+    checktrainerflag(0x1ED)
+    goto_if(LESS_THAN, Naranja_Route109_G28_M00_EventScript_Sub_08160F29)
+    checktrainerflag(0x287)
+    goto_if(LESS_THAN, Naranja_Route109_G28_M00_EventScript_Sub_08160F29)
+    checktrainerflag(0x41)
+    goto_if(LESS_THAN, Naranja_Route109_G28_M00_EventScript_Sub_08160F29)
+    setflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008D)
+    release
+    end
+}
+
+script Naranja_Route109_G28_M00_EventScript_Sub_08160F29 {
+    release
+    end
+}
+
+text Naranja_Route109_G28_M00_Text_0819B4D9 {
+    "I’m the owner of the SEASHORE HOUSE.\nBut you can call me MR. SEA!\pWhat I love above all is to see hot\nPOKéMON battles.\pLet me see that your heart burns hot!\pIf you can defeat all the TRAINERS\nhere, I’ll reward your efforts."
+}
+
+text Naranja_Route109_G28_M00_Text_0819B5B9 {
+    "Show me some hot matches!\pI run this SEASHORE HOUSE just for\nthat reason alone!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B609 {
+    "You’re scorching hot!\nThose battles blazed!\lI’m more than just satisfied!\pAs thanks for showing me your hot\nstreak, I want you to take these.\pIt’s half a dozen bottles of SODA POP!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B6BE {
+    "Oh, but hey, your BAG’s jammed full.\nI’ll hang on to these for you."
+}
+
+text Naranja_Route109_G28_M00_Text_0819B702 {
+    "Want to buy some SODA POP?\nPOKéMON love it!\pJust ¥300 a bottle!\nBuy some!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B74C {
+    "Here you go!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B759 {
+    "You don’t have the money."
+}
+
+text Naranja_Route109_G28_M00_Text_0819B773 {
+    "No?\nThat’s too bad."
+}
+
+text Naranja_Route109_G28_M00_Text_0819B809 {
+    "If you’re looking for a battle on the\nhigh seas, you’ll find no hotter \lTRAINER than me, matey!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B869 {
+    "That was a hot battle!\nI can accept that loss, matey!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B89F {
+    "Whenever I’m in SLATEPORT, I enjoy\nhot battles and ice-cold SODA POP!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B8E5 {
+    "Boring battles aren’t worth the effort.\pFiery hot battles are what toughen up\nTRAINERS and POKéMON!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B949 {
+    "That’s hot!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B955 {
+    "Whew, I’m all thirsty.\nMaybe I’ll have a SODA POP."
+}
+
+text Naranja_Route109_G28_M00_Text_0819B988 {
+    "I’m going to show you how great my\nPOKéMON are, but don’t cry!"
+}
+
+text Naranja_Route109_G28_M00_Text_0819B9C7 {
+    "...I lost, but I won’t cry..."
+}
+
+text Naranja_Route109_G28_M00_Text_0819B9E5 {
+    "If one of my POKéMON knew the move\nfor carrying me across water on its\lback, I could get rid of this inner tube."
+}

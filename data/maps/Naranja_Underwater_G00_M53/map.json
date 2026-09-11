@@ -35,5 +35,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 38,
+      "y": 19,
+      "elevation": 3,
+      "item": "ITEM_PROTEIN",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M53_PROTEIN_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 69,
+      "y": 18,
+      "elevation": 3,
+      "item": "ITEM_PEARL",
+      "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M53_PEARL_2"
+    }
+  ]
 }

@@ -24,7 +24,64 @@
       "direction": "left"
     }
   ],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ROUTE129_G00_M44_SWIMMER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 15,
+      "y": 23,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 4,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_Route129_G00_M44_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE129_G00_M44_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 35,
+      "y": 9,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_DOWN_LEFT_UP",
+      "movement_range_x": 5,
+      "movement_range_y": 2,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_Route129_G00_M44_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE129_G00_M44_SWIMMER_F_2",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 9,
+      "y": 14,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_Route129_G00_M44_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ROUTE129_G00_M44_SWIMMER_M_2",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 28,
+      "y": 16,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_Route129_G00_M44_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId4",
+      "flag": "0x0"
+    }
+  ],
   "warp_events": [],
   "coord_events": [],
   "bg_events": []

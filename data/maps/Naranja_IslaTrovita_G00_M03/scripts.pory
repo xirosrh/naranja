@@ -1,0 +1,586 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaTrovita_G00_M03_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaTrovita_G00_M03_OnTransition
+}
+
+script Naranja_IslaTrovita_G00_M03_OnTransition {
+    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0819)
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
+    call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId2 {
+    lock
+    faceplayer
+    checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C39B)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_0816689D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C39B {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_0816690C)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId11 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166A67)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId1 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166AE0)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId6 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0807)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C3CF)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_0816696D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C3CF {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_081669FE)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId5 {
+    lock
+    faceplayer
+    checkflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C3EE)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166B86)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C3EE {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166BEF)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId4 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166C98)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId3 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166CFA)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sign_9 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08167374)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sign_8 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_081673FA)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sign_1 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08167439)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sign_5 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_081674DD)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sign_2 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08167525)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sign_10 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08167568)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_2_LocalId7 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166D59)
+    callstd(4)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_LITTLE_BOY_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId8 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166DB0)
+    callstd(4)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_LITTLE_GIRL_2, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId13 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166DEE)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_1 {
+    lockall
+    setobjectxyperm(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xE, 0x15)
+    setobjectmovementtype(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xA)
+    setvar(VAR_0x8004, 0)
+    goto(Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_3 {
+    lockall
+    setobjectxyperm(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xE, 0x15)
+    setobjectmovementtype(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xA)
+    setvar(VAR_0x8004, 2)
+    goto(Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_4 {
+    lockall
+    setobjectxyperm(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xE, 0x15)
+    setobjectmovementtype(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xA)
+    setvar(VAR_0x8004, 3)
+    goto(Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_5 {
+    lockall
+    setobjectxyperm(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xE, 0x15)
+    setobjectmovementtype(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, 0xA)
+    setvar(VAR_0x8004, 4)
+    goto(Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_6 {
+    lockall
+    setvar(VAR_TEMP_1, 0)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_7 {
+    lockall
+    setvar(VAR_TEMP_1, 1)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_8 {
+    lockall
+    setvar(VAR_TEMP_1, 2)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_9 {
+    lockall
+    setvar(VAR_TEMP_1, 3)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650 {
+    compare_var_to_value(VAR_TEMP_1, 0)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C691)
+    compare_var_to_value(VAR_TEMP_1, 1)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C6BD)
+    compare_var_to_value(VAR_TEMP_1, 2)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C6E9)
+    compare_var_to_value(VAR_TEMP_1, 3)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C715)
+    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_009F)
+    setvar(VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 3)
+    copyobjectxytoperm(LOCALID_ISLA_TROVITA_G00_M03_MAN_2)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166EA5)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C691 {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C6BD {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C6E9 {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C715 {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_IslaTrovita_G00_M03_Movement_0814C74B)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_10 {
+    lockall
+    setvar(VAR_TEMP_1, 0)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_11 {
+    lockall
+    setvar(VAR_TEMP_1, 1)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_12 {
+    lockall
+    setvar(VAR_TEMP_1, 2)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Trigger_13 {
+    lockall
+    setvar(VAR_TEMP_1, 3)
+    goto(Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D)
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D {
+    compare_var_to_value(VAR_TEMP_1, 0)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C7FE)
+    compare_var_to_value(VAR_TEMP_1, 1)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C82A)
+    compare_var_to_value(VAR_TEMP_1, 2)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C856)
+    compare_var_to_value(VAR_TEMP_1, 3)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C882)
+    compare_var_to_value(VAR_TEMP_1, 4)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C8B8)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08166FB4)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x16)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C7F5)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_0816707F)
+    callstd(4)
+    closemessage
+    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090)
+    setflag(FLAG_HIDE_ISLA_TROVITA_G00_M03_MAN_2)
+    setvar(VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 5)
+    delay(0x1E)
+    warp(MAP_NARANJA_ISLA_TROVITA_G11_M02, 0xFF, 2, 2)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C7F5 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_0816704C)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C7FE {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C82A {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C856 {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C882 {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_IslaTrovita_G00_M03_Movement_0814C74B)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C8B8 {
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_TROVITA_G00_M03_MAN_2, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_VARS_LocalId14 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0120)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C917)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C8FD)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C90A)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C8FD {
+    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0120)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_081670A7)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C90A {
+    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0120)
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_08167213)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C917 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C92F)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C939)
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C92F {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_0816713C)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C939 {
+    loadword(0, Naranja_IslaTrovita_G00_M03_Text_081672B8)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G00_M03_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId12 {
+    setorcopyvar(VAR_0x8000, 0x4C)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+movement Naranja_IslaTrovita_G00_M03_Movement_0814C74B {
+    walk_down
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_0816689D {
+    "The DEVON CORPORATION...\nWe all just shorten it to DEVON.\pThat company makes all sorts of\nconvenient products."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_0816690C {
+    "Hm? A sneaky-looking man?\pCome to think of it, yes, a shady-\nlooking guy went around the corner."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_0816696D {
+    "Have you taken the POKéMON GYM\nchallenge?\pWhen you get that shiny GYM BADGE\nin hand, I guess TRAINERS begin to\lrealize what is required of them."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_081669FE {
+    "Hey, that’s RUSTBORO’s GYM BADGE!\pOut of all the POKéMON GYM BADGES,\nRUSTBORO’s is the coolest, I’d say."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166A67 {
+    "Oh? Who might you be?\nYou’re a new face around these parts.\pHave you just transferred into the\nPOKéMON TRAINER’S SCHOOL?"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166AE0 {
+    "I challenged the GYM LEADER, but...\pIt’s not going to be easy winning with\nmy FIRE-type POKéMON...\pFIRE-type POKéMON don’t match up\nwell against ROCK-type POKéMON..."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166B86 {
+    "The old sailor MR. BRINEY lives in a\ncottage by the sea.\pHe goes for walks in the tunnel every\nso often."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166BEF {
+    "The old sailor MR. BRINEY lives in a\ncottage by the sea.\pHe said he was going shopping in\nSLATEPORT for his pet, PEEKO.\pThat old seadog, he must really love\nthat PEEKO."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166C98 {
+    "Wow, you have POKéMON with you, too.\pWhen I get bigger, I’m going to go\nplaces with POKéMON, too."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166CFA {
+    "POKéMON TRAINER’S SCHOOL!\pIf I go to this school, will I be able\nto catch rare POKéMON easily?"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166D59 {
+    "If a POKéMON gains experience in\nbattles, it can sometimes change in\lthe way it looks."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166DB0 {
+    "A POKéMON changes shape?\nIf one did that, I would be shocked!"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166DEE {
+    "A POKéMON you get in a trade from\nsomeone grows fast.\pBut if you don’t have certain GYM\nBADGES, it may not obey you..."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166EA5 {
+    "Ñラùù\nùùヨメùùù\nÑÈカ\nÎÎÎÎÎÎù\nÌÌÌÌÌÌÌ\n¡No te vayas todavìa!\pQuedaste conmigo en que ayudarìas\na mi hermanito encontrando el Onix.\pVen a nuestra y ofrécele tu ayuda.\p¡Eso le animará muchìsimo!\p¡Arreando!"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08166FB4 {
+    "Sto. MARA: ¿{PLAYER}?\p¡Ah!\pMi prima de Isla VALENCIA\nme habló de tì.\pPor lo visto liaste una buena\nestrellándote con un Zépelin.\p…remolinos…\pCúrate con esto."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_0816704C {
+    "Vaya… tú mochila esta llena. \nNo podrás guardarlo."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_0816707F {
+    "Bueno… ven por aquì.\n¡Te enseñaré algo!"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_081670A7 {
+    "MAY: Oh, hi, {PLAYER}{KUN}!\nHow’s your POKéDEX coming along?\pMine’s looking pretty decent.\pI caught POKéMON in PETALBURG WOODS\nuntil I ran out of POKé BALLS."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_0816713C {
+    "MAY: Oh, by the way, I passed MR. BRINEY\nin PETALBURG WOODS.\pI guess he’s on his way home to his\ncottage by the sea.\p{PLAYER}{KUN}, you just moved here so you\nmight not know this, but MR. BRINEY\lwas once a revered seafarer."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08167213 {
+    "BRENDAN: {PLAYER}, how’s your POKéDEX?\nHave you filled in any pages yet?\pMine rules.\pI went on a POKéMON-catching frenzy\nin PETALBURG WOODS until I ran out\lof POKé BALLS."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_081672B8 {
+    "BRENDAN: By the way, I walked by MR.\nBRINEY in PETALBURG WOODS.\pI bet he was on his way home to his\ncottage by the sea.\pI bet you didn’t know this, but he’s\nalways got a POKéMON with him."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08167374 {
+    "“Timesaving tunnel nearing\ncompletion!”\p...Is what it says on the sign, but\nthere’s also a big “X” splashed\lacross it in red paint..."
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_081673FA {
+    "DEVON CORPORATION\p“For all your living needs, we make\nit all.”"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08167439 {
+    "RUSTBORO CITY POKéMON GYM\nLEADER: ROXANNE\p“The ROCK-loving honors student!”"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_081674DD {
+    "RUSTBORO CITY\p“The city probing the integration of\nnature and science.”"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08167525 {
+    "POKéMON TRAINER’S SCHOOL\p“We’ll teach you anything about\nPOKéMON!”"
+}
+
+text Naranja_IslaTrovita_G00_M03_Text_08167568 {
+    "CUTTER’S HOUSE"
+}

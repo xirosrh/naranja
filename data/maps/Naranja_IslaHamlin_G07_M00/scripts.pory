@@ -1,0 +1,50 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaHamlin_G07_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaHamlin_G07_M00_OnTransition
+}
+
+script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_IslaHamlin_G07_M00_OnTransition {
+    setrespawn(0x13)
+    end
+}
+
+script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId3 {
+    loadword(0, Naranja_IslaHamlin_G07_M00_Text_08178E47)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId4 {
+    loadword(0, Naranja_IslaHamlin_G07_M00_Text_08178E79)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaHamlin_G07_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_2_LocalId2 {
+    loadword(0, Naranja_IslaHamlin_G07_M00_Text_08178ED9)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaHamlin_G07_M00_Text_08178E47 {
+    "What color is your TRAINER’S CARD?\nMine’s copper!"
+}
+
+text Naranja_IslaHamlin_G07_M00_Text_08178E79 {
+    "PACIFIDLOG TOWN floats on top of\na colony of CORSOLA.\pIf I told you that, would you believe me?"
+}
+
+text Naranja_IslaHamlin_G07_M00_Text_08178ED9 {
+    "The ancestors of the people in\nPACIFIDLOG were said to have been\lborn on boats and then lived and died \laboard them.\pI understand that they lived that way\nbecause they were searching for\lsomething."
+}

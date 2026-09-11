@@ -1,0 +1,117 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_CaveOfOrigin_G24_M42_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_CaveOfOrigin_G24_M42_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_CaveOfOrigin_G24_M42_OnTransition
+}
+
+script Naranja_CaveOfOrigin_G24_M42_OnResume {
+    checkflag(FLAG_SYS_POKEDEX_GET)
+    call_if(EQUAL, Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DDC1)
+    end
+}
+
+script Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DDC1 {
+    removeobject(LOCALID_CAVE_OF_ORIGIN_G24_M42_248)
+    return
+}
+
+script Naranja_CaveOfOrigin_G24_M42_OnTransition {
+    setmaplayoutindex(0x139)
+    call(Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_081A01B5)
+    checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
+    call_if(EQUAL, Naranja_CaveOfOrigin_G24_M38_EventScript_Sub_081A04E3)
+    end
+}
+
+script Naranja_CaveOfOrigin_G24_M42_EventScript_Trigger_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4)
+    callstd(4)
+    closemessage
+    setweather(0)
+    doweather
+    special(WaitWeather)
+    waitstate
+    playse(SE_M_DETECT)
+    setfieldeffectargument(0, 9)
+    setfieldeffectargument(1, 0xD)
+    setfieldeffectargument(2, 0)
+    dofieldeffect(0x36)
+    waitfieldeffect(0x36)
+    setvar(VAR_RESULT, 2)
+    playse(SE_ORB)
+    special(DoOrbEffect)
+    waitstate
+    special(DoOrbEffect)
+    waitstate
+    applymovement(LOCALID_CAVE_OF_ORIGIN_G24_M42_248, Naranja_CaveOfOrigin_G24_M42_Movement_0815DE7D)
+    waitmovement(LOCALID_NONE)
+    delay(0x3C)
+    setwildbattle(SPECIES_GROUDON, 0x2D, 0)
+    waitse
+    playmoncry(SPECIES_GROUDON, 2)
+    delay(0x28)
+    waitmoncry
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(StartGroudonKyogreBattle)
+    waitstate
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DE73)
+    setflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_WALLACE)
+    setflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY)
+    setflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY_2)
+    clearflag(FLAG_HIDE_ISLA_NUEVA_G15_M00_WALLACE)
+    setvar(VAR_NARANJA_CAVE_OF_ORIGIN_STORY_STATE, 1)
+    setflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)
+    clearflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_OLD_MAN_1)
+    clearflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    setvar(VAR_NARANJA_BEMENTER_STORY_STATE, 2)
+    clearflag(FLAG_HIDE_BEMENTER_G24_M22_246)
+    releaseall
+    end
+}
+
+script Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_0815DE73 {
+    loadword(0, Naranja_CaveOfOrigin_G24_M42_Text_081B5009)
+    callstd(4)
+    closemessage
+    return
+}
+
+script Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_081A01B5 {
+    setvar(VAR_OBJ_GFX_ID_8, 0xC6)
+    setvar(VAR_OBJ_GFX_ID_9, 0xCE)
+    return
+}
+
+script Naranja_CaveOfOrigin_G24_M42_EventScript_Trigger_2 {
+    lockall
+    waitse
+    playmoncry(SPECIES_GROUDON, 2)
+    waitmoncry
+    setvar(VAR_TEMP_5, 1)
+    releaseall
+    end
+}
+
+movement Naranja_CaveOfOrigin_G24_M42_Movement_0815DE7D {
+    init_affine_anim
+    hide_reflection
+    delay_16
+    delay_16
+    show_reflection
+}
+
+text Naranja_CaveOfOrigin_G24_M42_Text_081B4FE4 {
+    "{PLAYER}’s RED ORB suddenly began\nglowing!"
+}
+
+text Naranja_CaveOfOrigin_G24_M42_Text_081B5009 {
+    "GROUDON appears to have settled\ninto sleep again..."
+}

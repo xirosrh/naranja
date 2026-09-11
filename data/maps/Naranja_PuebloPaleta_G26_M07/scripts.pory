@@ -1,0 +1,87 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PuebloPaleta_G26_M07_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_PuebloPaleta_G26_M07_OnLoad
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: Naranja_PuebloPaleta_G26_M07_OnFrame_1
+    ]
+}
+
+script Naranja_PuebloPaleta_G26_M07_OnLoad {
+    compare_var_to_value(VAR_0x8006, 1)
+    goto_if(EQUAL, Naranja_PuebloPaleta_G26_M07_EventScript_Sub_0816086E)
+    setmetatile(0xC, 0, 0x207, 0)
+    setmetatile(0xC, 1, 0x20F, 0)
+    end
+}
+
+script Naranja_PuebloPaleta_G26_M07_EventScript_Sub_0816086E {
+    setmetatile(0xF, 0, 0x207, 0)
+    setmetatile(0xF, 1, 0x20F, 0)
+    end
+}
+
+script Naranja_PuebloPaleta_G26_M07_OnFrame_1 {
+    setvar(VAR_TEMP_0, 1)
+    compare_var_to_value(VAR_0x8006, 1)
+    goto_if(EQUAL, Naranja_PuebloPaleta_G26_M07_EventScript_Sub_081608B1)
+    applymovement(LOCALID_PUEBLO_PALETA_G26_M07_TEALA, Naranja_PuebloPaleta_G26_M07_Movement_081608D5)
+    applymovement(LOCALID_PLAYER, Naranja_PuebloPaleta_G26_M07_Movement_081608D4)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_PuebloPaleta_G26_M07_EventScript_Sub_081608C2)
+}
+
+script Naranja_PuebloPaleta_G26_M07_EventScript_Sub_081608B1 {
+    applymovement(LOCALID_PUEBLO_PALETA_G26_M07_TEALA, Naranja_PuebloPaleta_G26_M07_Movement_081608D2)
+    applymovement(LOCALID_PLAYER, Naranja_PuebloPaleta_G26_M07_Movement_081608D1)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_PuebloPaleta_G26_M07_EventScript_Sub_081608C2)
+}
+
+script Naranja_PuebloPaleta_G26_M07_EventScript_Sub_081608C2 {
+    setvar(VAR_TEMP_0, 0)
+    warp(MAP_NARANJA_PUEBLO_PALETA_G26_M08, 0xFF, 4, 8)
+    waitstate
+    end
+}
+
+movement Naranja_PuebloPaleta_G26_M07_Movement_081608D1 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    set_invisible
+}
+
+movement Naranja_PuebloPaleta_G26_M07_Movement_081608D2 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    set_invisible
+}
+
+movement Naranja_PuebloPaleta_G26_M07_Movement_081608D4 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    set_invisible
+}
+
+movement Naranja_PuebloPaleta_G26_M07_Movement_081608D5 {
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    set_invisible
+}

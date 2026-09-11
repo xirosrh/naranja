@@ -1,0 +1,270 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarina_G13_M22_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaMandarina_G13_M22_OnTransition
+}
+
+script Naranja_IslaMandarina_G13_M22_OnTransition {
+    getpokenewsactive(3)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A15F)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A163)
+    end
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A15F {
+    clearflag(FLAG_HIDE_ISLA_MANDARINA_G13_M22_ROOFTOP_SALE_WOMAN)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A163 {
+    setflag(FLAG_HIDE_ISLA_MANDARINA_G13_M22_ROOFTOP_SALE_WOMAN)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_OBJ_EVENT_GFX_ROOFTOP_SALE_WOMAN_LocalId3 {
+    lock
+    faceplayer
+    message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration(Naranja_IslaMandarina_G13_M22_Mart_0815A180)
+    loadword(0, Naranja_CaminoFrio_G00_M29_Text_081A0C02)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId1 {
+    lock
+    faceplayer
+    getpokenewsactive(3)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1BA)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C61F)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1BA {
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C685)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId2 {
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C70E)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sign_1 {
+    lockall
+    message(Naranja_IslaMandarina_G13_M22_Text_0818C72B)
+    waitmessage
+    showmoneybox(0, 0, 0)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1DE)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1DE {
+    multichoice(0x10, 0, 0x2A, 0)
+    copyvar(VAR_TEMP_1, VAR_RESULT)
+    copyvar(VAR_0x8000, VAR_TEMP_1)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A21C)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A227)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A232)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C7C3)
+    callstd(4)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A21C {
+    setvar(VAR_TEMP_0, 0x1A)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A227 {
+    setvar(VAR_TEMP_0, 0x1B)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A232 {
+    setvar(VAR_TEMP_0, 0x1C)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A23D {
+    checkmoney(0xC8, 0)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A244 {
+    checkmoney(0x12C, 0)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A24B {
+    checkmoney(0x15E, 0)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A252 {
+    removemoney(0xC8, 0)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A259 {
+    removemoney(0x12C, 0)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A260 {
+    removemoney(0x15E, 0)
+    return
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267 {
+    compare_var_to_value(VAR_TEMP_1, 0)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A23D)
+    compare_var_to_value(VAR_TEMP_1, 1)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A244)
+    compare_var_to_value(VAR_TEMP_1, 2)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A24B)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A37A)
+    checkitemspace(0x4000, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388)
+    compare_var_to_value(VAR_TEMP_1, 0)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A252)
+    compare_var_to_value(VAR_TEMP_1, 1)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A259)
+    compare_var_to_value(VAR_TEMP_1, 2)
+    call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A260)
+    updatemoneybox(0)
+    bufferitemname(0, 0x4000)
+    playse(SE_VEND)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C75F)
+    callstd(4)
+    additem(0x4000, 1)
+    bufferitemname(1, 0x4000)
+    bufferstdstring(2, 0xE)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C8C)
+    callstd(4)
+    random(0x40)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(NOT_EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E)
+    checkitemspace(0x4000, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388)
+    playse(SE_VEND)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C780)
+    callstd(4)
+    additem(0x4000, 1)
+    bufferitemname(1, 0x4000)
+    bufferstdstring(2, 0xE)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C8C)
+    callstd(4)
+    random(0x40)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(NOT_EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E)
+    checkitemspace(0x4000, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388)
+    playse(SE_VEND)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C780)
+    callstd(4)
+    additem(0x4000, 1)
+    bufferitemname(1, 0x4000)
+    bufferstdstring(2, 0xE)
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C8C)
+    callstd(4)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A36E {
+    message(Naranja_IslaMandarina_G13_M22_Text_0818C72B)
+    waitmessage
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1DE)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A37A {
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_0818C7AF)
+    callstd(4)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A388 {
+    loadword(0, Naranja_IslaMandarina_G13_M22_Text_081A0C79)
+    callstd(4)
+    goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396)
+}
+
+script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A396 {
+    hidemoneybox
+    releaseall
+    end
+}
+
+mart Naranja_IslaMandarina_G13_M22_Mart_0815A180 {
+    ITEM_BLUE_FLUTE
+    ITEM_MAX_ETHER
+    ITEM_ELIXIR
+    ITEM_MAX_ELIXIR
+    ITEM_YELLOW_FLUTE
+    ITEM_REVIVAL_HERB
+    ITEM_RED_FLUTE
+    ITEM_LAVA_COOKIE
+    ITEM_ETHER
+    ITEM_SACRED_ASH
+    ITEM_SHOAL_SALT
+    ITEM_SHOAL_SHELL
+    ITEM_075
+    ITEM_070
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C61F {
+    "Don’t they have set dates for their\nclear-out sales?\pI watch TV, but they never show any\ncommercials."
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C685 {
+    "Yes! I’ve been waiting a long time for\nthis clear-out sale.\pThey have items that you can only get\nhere. I’m going to load up, that I am!"
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C70E {
+    "Ohh... I’m bone-dry thirsty!"
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C72B {
+    "It’s a VENDING MACHINE.\nWhich drink would you like?"
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C75F {
+    "Clang!\pA can of {STR_VAR_1} dropped down."
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C780 {
+    "Clang!\pScore! An extra can of {STR_VAR_1}\ndropped down!"
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C7AF {
+    "Not enough money..."
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_0818C7C3 {
+    "Decided against buying a drink."
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_081A0C79 {
+    "The BAG is full..."
+}
+
+text Naranja_IslaMandarina_G13_M22_Text_081A0C8C {
+    "{PLAYER} colocó {STR_VAR_2}\nen la sección de {STR_VAR_3}."
+}

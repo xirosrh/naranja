@@ -1,0 +1,100 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaKumquat_G13_M01_MapScripts {
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_TEMP_2)
+    call_if(LESS_THAN, Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583C7)
+    checkflag(FLAG_TEMP_2)
+    call_if(EQUAL, Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583DD)
+    specialvar(VAR_RESULT, HasAllHoennMons)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583D0)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583C7 {
+    loadword(0, Naranja_IslaKumquat_G13_M01_Text_08186FE7)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583D0 {
+    setflag(FLAG_TEMP_2)
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    goto(Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583DD)
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_Sub_081583DD {
+    message(Naranja_IslaKumquat_G13_M01_Text_0818708F)
+    waitmessage
+    call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
+    special(Special_ShowDiploma)
+    waitstate
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId4 {
+    loadword(0, Naranja_IslaKumquat_G13_M01_Text_08187149)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId2 {
+    loadword(0, Naranja_IslaKumquat_G13_M01_Text_0818719E)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId3 {
+    loadword(0, Naranja_IslaKumquat_G13_M01_Text_081871DF)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId6 {
+    loadword(0, Naranja_IslaKumquat_G13_M01_Text_0818729A)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M01_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId5 {
+    loadword(0, Naranja_IslaKumquat_G13_M01_Text_081872D4)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_08186FE7 {
+    "I’m the GAME DESIGNER.\pOh, is that right?\nYou’re working on a POKéDEX?\pIt’s tough trying to complete it,\nbut don’t give up.\pIf you do complete it, please come\nshow me."
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_0818708F {
+    "Wow! That’s awesome!\nYep, it’s totally awesome!\pThis POKéDEX is completely filled!\nYou really must love POKéMON!\pI’m so impressed!\pLet me give you something in\nrecognition of your feat!"
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_08187149 {
+    "Me? You’re talking to me?\nI’m the PROGRAMMER.\pI wonder what the SLOTS are\nlike here."
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_0818719E {
+    "I’m the GRAPHIC ARTIST! Aren’t the\nPOKéMON of HOENN interesting?"
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_081871DF {
+    "The girl TUBERS, they’re cute, hey?\nTo battle against a cute TUBER...\pWhoop, it drives me wild!\pAnd the TWINS! Aren’t they cute?\nA 2-on-2 battle with TWINS...\pWhoop, it’s unbearably fun!"
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_0818729A {
+    "The sea breeze tickles my heart.\nIt feels wonderful here!"
+}
+
+text Naranja_IslaKumquat_G13_M01_Text_081872D4 {
+    "You never know when and where\npeople will challenge you.\pThat’s why I never leave home without\nmy GAME BOY ADVANCE."
+}

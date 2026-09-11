@@ -1,0 +1,286 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarina_G06_M05_MapScripts {
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_MARILL_DOLL_LocalId1 {
+    lock
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    goto_if(LESS_THAN, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3B90)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F68 {
+    applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M05_Movement_086B3B8C)
+    delay(0x45)
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3BB2)
+    callstd(4)
+    nop
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_VICTORY_ROAD_EVENT_COMPLETE_007E)
+    goto_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153FA5)
+    checkflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_04BD)
+    goto_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F9B)
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_0817859A)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F9B {
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_08178683)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153FA5 {
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_081786B5)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Trigger_4 {
+    checkflag(FLAG_HIDE_ISLA_MANDARINA_G06_M05_AQUA_MEMBER_F)
+    goto_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920)
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    goto_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3FFD)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARINA_182, LOCALID_NONE, Naranja_IslaMandarina_G06_M05_Text_086B3C33, Naranja_IslaMandarina_G06_M05_Text_081BCB2E)
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_081BCB40)
+    callstd(6)
+    delay(0x80)
+    setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123)
+    clearflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_0817886A)
+    callstd(2)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId4 {
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2121)
+    call_if(LESS_THAN, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3902)
+    checkflag(FLAG_HIDE_ISLA_MANDARINA_G06_M05_MARILL_DOLL)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3932)
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3922)
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3912)
+    call(Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38C2)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38C2 {
+    lockall
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3972)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38E4)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_CuevaKabuto_G24_M07_EventScript_Sub_086B38F4)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38E4 {
+    lockall
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B39E2)
+    callstd(6)
+    setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3902 {
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3A22)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3912 {
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3A72)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3922 {
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3AA2)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3932 {
+    lockall
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3AD7)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3954)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_CuevaKabuto_G24_M07_EventScript_Sub_086B38F4)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3954 {
+    clearflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2121)
+    setorcopyvar(VAR_0x8000, 0x119)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B3B35)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3B90 {
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123)
+    goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
+    fadescreen(2)
+    fadescreen(0)
+    delay(0x10)
+    fadescreen(2)
+    fadescreen(0)
+    delay(0x25)
+    fadescreen(2)
+    fadescreen(0)
+    goto(Naranja_IslaMandarina_G06_M05_EventScript_Sub_08153F68)
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3FFD {
+    applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G06_M05_Movement_086B403C)
+    goto(Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4040)
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4040 {
+    delay(0x30)
+    applymovement(LOCALID_ISLA_MANDARINA_G06_M05_AQUA_MEMBER_F, Naranja_IslaMandarina_G06_M05_Movement_086B402B)
+    applymovement(LOCALID_ISLA_MANDARINA_G06_M05_AQUA_MEMBER_M, Naranja_IslaMandarina_G06_M05_Movement_086B4034)
+    setflag(FLAG_HIDE_ISLA_MANDARINA_G06_M05_AQUA_MEMBER_F)
+    goto(Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C)
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Trigger_5 {
+    checkflag(FLAG_HIDE_ISLA_MANDARINA_G06_M05_AQUA_MEMBER_F)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920)
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4040)
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920 {
+    checkflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122)
+    call_if(EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C)
+    release
+    end
+}
+
+script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_AQUA_MEMBER_F_LocalId2 {
+    loadword(0, Naranja_IslaMandarina_G06_M05_Text_086B4940)
+    callstd(4)
+    call(0x086B3B80)
+    end
+}
+
+movement Naranja_IslaMandarina_G06_M05_Movement_086B3B8C {
+    walk_left
+}
+
+movement Naranja_IslaMandarina_G06_M05_Movement_086B402B {
+    walk_slow_down
+    delay_16
+    jump_2_left
+    walk_slow_down
+    walk_slow_down
+    walk_slow_down
+    walk_slow_down
+    face_right
+}
+
+movement Naranja_IslaMandarina_G06_M05_Movement_086B4034 {
+    walk_slow_down
+    delay_16
+    jump_2_right
+    walk_slow_down
+    walk_slow_down
+    walk_slow_left
+    face_down
+}
+
+movement Naranja_IslaMandarina_G06_M05_Movement_086B403C {
+    acro_wheelie_move_right
+    face_up
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_0817859A {
+    "こ\n"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_08178683 {
+    "WALLY’s gone away...\nHe slipped off on his own..."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_081786B5 {
+    "UNCLE: Is that right?\nWALLY’s gone away that far all by\lhimself...\pWell, I have to give him credit - he is\nmy little brother’s son."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_0817886A {
+    "{COLOR 0x04}Drowzee ha conseguido escapar del TR.\p ¡Vamos!\n¡ Directo a por él !"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_081BCB2E {
+    "Ouch, ouch, ouch!"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_081BCB40 {
+    "Butch & Cassidy: {COLOR 0x02}¡El team Rocket \nte derrotará donde quiera que vayas!"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3972 {
+    "Humm…\nEsta bater a parece que da energ a\la todo el edificio.\pQuizá apagándola\ncorte la corriente del edificio."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B39E2 {
+    "Apagaste el generador."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3A22 {
+    "Un agujero en la pared.\p{COLOR 0x04}Aquí antes había una batería…\p…que recuerdos."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3A72 {
+    "Ya la habías apagado antes.\n¿Recuerdas?"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3AA2 {
+    "Algo la ha dejado bloqueada\ny no se puede apagar."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3AD7 {
+    "Menos mal que ya pasó todo.\pA lo mejor más tarde necesitas la batería.\n¿Quieres llevártela?"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3B35 {
+    "Zaka!\p¡Ya tienes batería!"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3BB2 {
+    "{COLOR 0x04}Arghh\pParece que pikachu pierde el control\ncuando me voy hacia el amplificador.\pDebo pararlo.\pCreo que estoy perdiendo salud."
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B3C33 {
+    "Butch y Cassidy:\n{COLOR 0x0D}¿Pretendes frustrar\lnuestros planes renacuaj{RIVAL}?\p{COLOR 0x06}Con este amplificador atraemos a\ntodos los pokemon de la ciudad, gracias\la la mente de nuestro DROWZEE.\p{COLOR 0x0D}Y tu PIKACHU ya ha empezado\na rebelarse.\p{COLOR 0x04}{PLAYER}:¿De veras?\nHe apagado la bater a del amplificador.\l¡No podéis hacerme nada!\p{COLOR 0x0D}Cassidy: Eso es lo que tú crees\n{COLOR 0x06}Butch: ¡Vamos!\l ¡Preparate para luchar!"
+}
+
+text Naranja_IslaMandarina_G06_M05_Text_086B4940 {
+    "{COLOR 0x04}¡El Team Rocket\ndespega de nuevo!\n"
+}

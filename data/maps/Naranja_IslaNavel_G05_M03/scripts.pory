@@ -1,0 +1,178 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaNavel_G05_M03_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaNavel_G05_M03_OnTransition
+}
+
+script Naranja_IslaNavel_G05_M03_OnTransition {
+    setrespawn(0x11)
+    call(Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD1B)
+    end
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_NURSE_LocalId1 {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_IslaNavel_G05_M03_EventScript_Sub_086B8F00)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId2 {
+    loadword(0, Naranja_IslaNavel_G05_M03_Text_0817768C)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId3 {
+    loadword(0, Naranja_IslaNavel_G05_M03_Text_081776F5)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId4 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaNavel_G05_M03_Text_086B7791)
+    callstd(4)
+    closemessage
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 4)
+    call_if(EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_086B71F5)
+    applymovement(5, Naranja_IslaNavel_G05_M03_Movement_086B7284)
+    delay(0x30)
+    nop
+    nop
+    loadword(0, Naranja_IslaNavel_G05_M03_Text_086B7297)
+    callstd(6)
+    nop
+    applymovement(5, Naranja_IslaNavel_G05_M03_Movement_086B7289)
+    applymovement(6, Naranja_IslaNavel_G05_M03_Movement_086B728B)
+    delay(0xB0)
+    goto(Naranja_IslaNavel_G05_M03_EventScript_Sub_08153B69)
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_Sub_08153B69 {
+    playse(SE_SLIDING_DOOR)
+    removeobject(5)
+    removeobject(6)
+    release
+    end
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FD7C {
+    incrementgamestat(0xF)
+    message(Naranja_IslaNavel_G05_M03_Text_086C01EF)
+    waitmessage
+    applymovement(32779, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    dofieldeffect(0x19)
+    waitfieldeffect(0x19)
+    applymovement(32779, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    special(HealPlayerParty)
+    checkflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111)
+    goto_if(LESS_THAN, Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDCE)
+    goto(Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDB0)
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDB0 {
+    message(Naranja_IslaNavel_G05_M03_Text_086C0229)
+    waitmessage
+    applymovement(32779, Naranja_IslaNavel_G05_M03_Movement_0819FDF4)
+    waitmovement(LOCALID_NONE)
+    message(Naranja_7islasPomelo_G03_M01_Text_081A0AFA)
+    waitmessage
+    return
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDCE {
+    specialvar(VAR_RESULT, IsPokerusInParty)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDEA)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDB0)
+    end
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDEA {
+    message(Naranja_IslaNavel_G05_M03_Text_081A1275)
+    waitmessage
+    setflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111)
+    return
+}
+
+script Naranja_IslaNavel_G05_M03_EventScript_Sub_086B8F00 {
+    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    call(Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FD7C)
+    return
+}
+
+movement Naranja_IslaNavel_G05_M03_Movement_0819FDF4 {
+    nurse_joy_bow
+    delay_4
+}
+
+movement Naranja_IslaNavel_G05_M03_Movement_086B7284 {
+    walk_left
+    jump_left
+    face_right
+}
+
+movement Naranja_IslaNavel_G05_M03_Movement_086B7289 {
+    walk_in_place_faster_down
+    lock_facing_direction
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_IslaNavel_G05_M03_Movement_086B728B {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+}
+
+text Naranja_IslaNavel_G05_M03_Text_0817768C {
+    "I wonder what POKéMON looked like\nlong, long ago?\pMaybe the FOSSIL MANIAC at the edge\nof town will know."
+}
+
+text Naranja_IslaNavel_G05_M03_Text_081776F5 {
+    "In the fields of FALLARBOR, we plant\nseedlings of hardy trees that thrive\leven in volcanic ash."
+}
+
+text Naranja_IslaNavel_G05_M03_Text_081A1275 {
+    "Your POKéMON may be infected with\nPOKéRUS.\pLittle is known about the POKéRUS\nexcept that they are microscopic life-\lforms that attach to POKéMON.\pWhile infected, POKéMON are said to\ngrow exceptionally well."
+}
+
+text Naranja_IslaNavel_G05_M03_Text_086B7297 {
+    "¡Muchísimas gracias por todo!\n¡Adiós {PLAYER}!"
+}
+
+text Naranja_IslaNavel_G05_M03_Text_086B7791 {
+    "¡Perfecto!\pGracias a tu POCIÓN\nSEEL recuperó su salud,\launque las heridas tardarán\lun poco más en cicatrizar.\pEres muy buen{RIVAL} cuidando\ny entrenando POKéMON.\pAsì que te haré algún regalo\npara que sigas con tu aventura.\pHumm…\p¡Ya sé!\p¡Ven luego a visitarme y te lo doy!"
+}
+
+text Naranja_IslaNavel_G05_M03_Text_086C01EF {
+    "Deberías no forzar a tus pokemon.\nEso les pondra tristes."
+}
+
+text Naranja_IslaNavel_G05_M03_Text_086C0229 {
+    "¡Ya está!\p{COLOR 0x04}{PLAYER}: ¡Muchas gracias enfermera!\p{COLOR 0x01}¡ Cuida mucho tus pokemon !\pY también los que no son tuyos. "
+}

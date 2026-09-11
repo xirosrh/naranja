@@ -1,0 +1,341 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route110_G29_M09_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_Route110_G29_M09_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route110_G29_M09_OnTransition
+    MAP_SCRIPT_ON_LOAD: Naranja_Route110_G29_M09_OnLoad
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_ROUTE110_EVENT_STATE_14, 1: Naranja_Route110_G29_M09_OnFrame_1
+    ]
+}
+
+script Naranja_Route110_G29_M09_OnResume {
+    call(Naranja_Route110_G29_M09_EventScript_Sub_08163167)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_08163167 {
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_08163195)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081631A8)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081631BB)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081631CE)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081631E1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_08163195 {
+    setmetatile(0xD, 0x11, 0x262, 0)
+    setmetatile(0xC, 0x10, 0x23F, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081631A8 {
+    setmetatile(0xC, 0xD, 0x262, 0)
+    setmetatile(0xC, 0xB, 0x23F, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081631BB {
+    setmetatile(7, 0xC, 0x262, 0)
+    setmetatile(5, 0xA, 0x23F, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081631CE {
+    setmetatile(6, 6, 0x27C, 0)
+    setmetatile(4, 4, 0x23F, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081631E1 {
+    setmetatile(8, 4, 0x261, 0)
+    setmetatile(7, 5, 0x23F, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081631F4 {
+    setmetatile(0xD, 0x11, 0x263, 0)
+    setmetatile(0xC, 0x10, 0x23E, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_08163207 {
+    setmetatile(0xC, 0xD, 0x261, 0)
+    setmetatile(0xC, 0xB, 0x23E, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_0816321A {
+    setmetatile(7, 0xC, 0x263, 0)
+    setmetatile(5, 0xA, 0x23E, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_0816322D {
+    setmetatile(6, 6, 0x27B, 0)
+    setmetatile(4, 4, 0x23E, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_08163240 {
+    setmetatile(8, 4, 0x260, 0)
+    setmetatile(7, 5, 0x23E, 1)
+    return
+}
+
+script Naranja_Route110_G29_M09_OnTransition {
+    compare_var_to_value(VAR_NARANJA_ROUTE110_EVENT_STATE_14, 1)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_0816326E)
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_0816326E {
+    end
+}
+
+script Naranja_Route110_G29_M09_OnLoad {
+    compare_var_to_value(VAR_NARANJA_ROUTE110_EVENT_STATE_14, 1)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_08163167)
+    end
+}
+
+script Naranja_Route110_G29_M09_OnFrame_1 {
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_14, 0)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sign_1 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_ROUTE110_EVENT_STATE_11, 0)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_0816329D)
+    goto(Naranja_Route110_G29_M03_EventScript_Sub_08161892)
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_0816329D {
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_11, 1)
+    goto(Naranja_Route110_G29_M03_EventScript_Sub_0816189C)
+}
+
+script Naranja_Route110_G29_M09_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_14, 1)
+    warpteleport(MAP_NARANJA_ROUTE_110_G29_M09, 0xFF, 3, 0x13)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sign_2 {
+    lockall
+    delay(0x20)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    call_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_08163195)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081631F4)
+    special(DrawWholeMapView)
+    playse(SE_CLICK)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    goto_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081633A4)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081633A9)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sign_4 {
+    lockall
+    delay(0x20)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    call_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081631A8)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_08163207)
+    special(DrawWholeMapView)
+    playse(SE_CLICK)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    goto_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081633AE)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081633B3)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sign_3 {
+    lockall
+    delay(0x20)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    call_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081631BB)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_0816321A)
+    special(DrawWholeMapView)
+    playse(SE_CLICK)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    goto_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081633B8)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081633BD)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sign_5 {
+    lockall
+    delay(0x20)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    call_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081631CE)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_0816322D)
+    special(DrawWholeMapView)
+    playse(SE_CLICK)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    goto_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081633C2)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081633C7)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sign_6 {
+    lockall
+    delay(0x20)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    call_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081631E1)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    call_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_08163240)
+    special(DrawWholeMapView)
+    playse(SE_CLICK)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    goto_if(LESS_THAN, Naranja_Route110_G29_M09_EventScript_Sub_081633CC)
+    checkflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    goto_if(EQUAL, Naranja_Route110_G29_M09_EventScript_Sub_081633D1)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633A4 {
+    setflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633A9 {
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C2)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633AE {
+    setflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633B3 {
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C3)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633B8 {
+    setflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633BD {
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C4)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633C2 {
+    setflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633C7 {
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C5)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633CC {
+    setflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_Sub_081633D1 {
+    clearflag(FLAG_NARANJA_ROUTE110_EVENT_COMPLETE_00C6)
+    releaseall
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_237, LOCALID_NONE, Naranja_Route110_G29_M09_Text_0819DF0B, Naranja_Route110_G29_M09_Text_0819DF4B)
+    loadword(0, Naranja_Route110_G29_M09_Text_0819DF7E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_105, LOCALID_NONE, Naranja_Route110_G29_M09_Text_0819DFBB, Naranja_Route110_G29_M09_Text_0819DFF2)
+    loadword(0, Naranja_Route110_G29_M09_Text_0819E00F)
+    callstd(6)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_LASS_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_248, LOCALID_NONE, Naranja_Route110_G29_M09_Text_0819E054, Naranja_Route110_G29_M09_Text_0819E098)
+    loadword(0, Naranja_Route110_G29_M09_Text_0819E0B2)
+    callstd(6)
+    end
+}
+
+script Naranja_Route110_G29_M09_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId4 {
+    setorcopyvar(VAR_0x8000, 0x81)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route110_G29_M09_Text_0819DF0B {
+    "The TRICK MASTER always vanishes\nlike smoke. How does he do it?"
+}
+
+text Naranja_Route110_G29_M09_Text_0819DF4B {
+    "Aiyeeeh! You’re much too strong!\nHow do you do it?"
+}
+
+text Naranja_Route110_G29_M09_Text_0819DF7E {
+    "I wish I could appear and disappear as\nif I were smoke, too."
+}
+
+text Naranja_Route110_G29_M09_Text_0819DFBB {
+    "Going around the same spot...\nIt begets ill fortune..."
+}
+
+text Naranja_Route110_G29_M09_Text_0819DFF2 {
+    "Defeated!\nIt’s a bad sign..."
+}
+
+text Naranja_Route110_G29_M09_Text_0819E00F {
+    "I’ve circled the same spot over ten\ntimes now... It’s ill fortune..."
+}
+
+text Naranja_Route110_G29_M09_Text_0819E054 {
+    "Whoever wins will get through here\nfirst. That’s the feeling I get."
+}
+
+text Naranja_Route110_G29_M09_Text_0819E098 {
+    "Oh!\nWell, go ahead, then!"
+}
+
+text Naranja_Route110_G29_M09_Text_0819E0B2 {
+    "You’re solving all the puzzles in the\nTRICK HOUSE. That’s the feeling I get."
+}

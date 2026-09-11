@@ -1,0 +1,199 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_BandonedShip_G24_M65_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_BandonedShip_G24_M65_OnResume
+    MAP_SCRIPT_ON_LOAD: Naranja_BandonedShip_G24_M65_OnLoad
+}
+
+script Naranja_BandonedShip_G24_M65_OnResume {
+    setdivewarp(MAP_NARANJA_BANDONED_SHIP_G24_M60, 0xFF, 5, 4)
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_OnLoad {
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    call_if(LESS_THAN, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBCB)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    call_if(LESS_THAN, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBD5)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    call_if(LESS_THAN, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBDF)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    call_if(LESS_THAN, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBE9)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    call_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBA3)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    call_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBAD)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    call_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBB7)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    call_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBC1)
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBA3 {
+    setmetatile(3, 8, 0x22B, 1)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBAD {
+    setmetatile(6, 8, 0x22B, 1)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBB7 {
+    setmetatile(3, 3, 0x21A, 0)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBC1 {
+    setmetatile(9, 3, 0x21A, 0)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBCB {
+    setmetatile(3, 8, 0x233, 1)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBD5 {
+    setmetatile(6, 8, 0x233, 1)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBDF {
+    setmetatile(3, 3, 0x234, 0)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBE9 {
+    setmetatile(9, 3, 0x234, 0)
+    return
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_ROOM_1_KEY, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECCF)
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
+    callstd(4)
+    playse(SE_PIN)
+    removeitem(ITEM_ROOM_1_KEY, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    call(Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBA3)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sign_2 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_ROOM_2_KEY, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECD9)
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
+    callstd(4)
+    playse(SE_PIN)
+    removeitem(ITEM_ROOM_2_KEY, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    call(Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBAD)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sign_3 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_ROOM_4_KEY, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECE3)
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
+    callstd(4)
+    playse(SE_PIN)
+    removeitem(ITEM_ROOM_4_KEY, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    call(Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBB7)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sign_4 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_ROOM_6_KEY, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECED)
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E90)
+    callstd(4)
+    playse(SE_PIN)
+    removeitem(ITEM_ROOM_6_KEY, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    call(Naranja_BandonedShip_G24_M65_EventScript_Sub_0815EBC1)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECCF {
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198DC0)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECD9 {
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198DF4)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECE3 {
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E28)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECED {
+    loadword(0, Naranja_BandonedShip_G24_M65_Text_08198E5C)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7 {
+    loadword(0, Naranja_BandonedShip_G24_M57_Text_081986EC)
+    callstd(4)
+    releaseall
+    end
+}
+
+text Naranja_BandonedShip_G24_M65_Text_08198DC0 {
+    "The door is locked.\p“RM. 1” is painted on the door."
+}
+
+text Naranja_BandonedShip_G24_M65_Text_08198DF4 {
+    "The door is locked.\p“RM. 2” is painted on the door."
+}
+
+text Naranja_BandonedShip_G24_M65_Text_08198E28 {
+    "The door is locked.\p“RM. 4” is painted on the door."
+}
+
+text Naranja_BandonedShip_G24_M65_Text_08198E5C {
+    "The door is locked.\p“RM. 6” is painted on the door."
+}
+
+text Naranja_BandonedShip_G24_M65_Text_08198E90 {
+    "{PLAYER} inserted and turned the\nKEY.\pThe inserted KEY stuck fast, but the\ndoor opened."
+}

@@ -1,0 +1,1892 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SinNombre_G25_M28_MapScripts {
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_SIN_NOMBRE_STORY_STATE, 1: Naranja_SinNombre_G25_M28_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_SIN_NOMBRE_STORY_STATE, 1: Naranja_SinNombre_G25_M28_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SinNombre_G25_M28_OnTransition
+    MAP_SCRIPT_ON_RESUME: Naranja_SinNombre_G25_M28_OnResume
+}
+
+script Naranja_SinNombre_G25_M28_OnTransition {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5A5)
+    setvar(VAR_TEMP_0, 1)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815F630)
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5A5 {
+    special(GetContestMultiplayerId)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5E0)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5E4)
+    compare_var_to_value(VAR_RESULT, 2)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5E8)
+    compare_var_to_value(VAR_RESULT, 3)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5EC)
+    compare_var_to_value(VAR_RESULT, 4)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5F0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5E0 {
+    savebgm(MUS_LINK_CONTEST_P1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5E4 {
+    savebgm(MUS_LINK_CONTEST_P2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5E8 {
+    savebgm(MUS_LINK_CONTEST_P3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5EC {
+    savebgm(MUS_LINK_CONTEST_P4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F5F0 {
+    savebgm(MUS_CONTEST)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_OnResume {
+    compare_var_to_value(VAR_TEMP_9, 1)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F600)
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F600 {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815F919)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_OnFrame_1 {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A514D)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815FB64)
+    end
+}
+
+script Naranja_SinNombre_G25_M28_OnWarp_1 {
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_PUERTO_DE_TANGELO_G00_M09)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815F919)
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F630 {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6E6)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_0815F646)
+    compare_var_to_value(VAR_TEMP_0, 8)
+    goto_if(LESS_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F630)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F646 {
+    copyvar(VAR_0x8000, VAR_TEMP_0)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F699)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6A4)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6AF)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6BA)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6C5)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6D0)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6DB)
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F699 {
+    copyvar(VAR_OBJ_GFX_ID_4, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6A4 {
+    copyvar(VAR_OBJ_GFX_ID_5, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6AF {
+    copyvar(VAR_OBJ_GFX_ID_6, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6BA {
+    copyvar(VAR_OBJ_GFX_ID_7, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6C5 {
+    copyvar(VAR_OBJ_GFX_ID_8, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6D0 {
+    copyvar(VAR_OBJ_GFX_ID_9, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6DB {
+    copyvar(VAR_OBJ_GFX_ID_A, VAR_TEMP_1)
+    addvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F6E6 {
+    setvar(VAR_RESULT, 0x20)
+    special(GenerateContestRand)
+    addvar(VAR_RESULT, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F859)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F85F)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F865)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F86B)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F871)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F877)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F87D)
+    compare_var_to_value(VAR_0x8000, 8)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F883)
+    compare_var_to_value(VAR_0x8000, 9)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F889)
+    compare_var_to_value(VAR_0x8000, 0xA)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F88F)
+    compare_var_to_value(VAR_0x8000, 0xB)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F895)
+    compare_var_to_value(VAR_0x8000, 0xC)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F89B)
+    compare_var_to_value(VAR_0x8000, 0xD)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8A1)
+    compare_var_to_value(VAR_0x8000, 0xE)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8A7)
+    compare_var_to_value(VAR_0x8000, 0xF)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8AD)
+    compare_var_to_value(VAR_0x8000, 0x10)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8B3)
+    compare_var_to_value(VAR_0x8000, 0x11)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8B9)
+    compare_var_to_value(VAR_0x8000, 0x12)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8BF)
+    compare_var_to_value(VAR_0x8000, 0x13)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8C5)
+    compare_var_to_value(VAR_0x8000, 0x14)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8CB)
+    compare_var_to_value(VAR_0x8000, 0x15)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8D1)
+    compare_var_to_value(VAR_0x8000, 0x16)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8D7)
+    compare_var_to_value(VAR_0x8000, 0x17)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8DD)
+    compare_var_to_value(VAR_0x8000, 0x18)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8E3)
+    compare_var_to_value(VAR_0x8000, 0x19)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8E9)
+    compare_var_to_value(VAR_0x8000, 0x1A)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8EF)
+    compare_var_to_value(VAR_0x8000, 0x1B)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8F5)
+    compare_var_to_value(VAR_0x8000, 0x1C)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8FB)
+    compare_var_to_value(VAR_0x8000, 0x1D)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F901)
+    compare_var_to_value(VAR_0x8000, 0x1E)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F907)
+    compare_var_to_value(VAR_0x8000, 0x1F)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F90D)
+    compare_var_to_value(VAR_0x8000, 0x20)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F913)
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F859 {
+    setvar(VAR_TEMP_1, 5)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F85F {
+    setvar(VAR_TEMP_1, 6)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F865 {
+    setvar(VAR_TEMP_1, 7)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F86B {
+    setvar(VAR_TEMP_1, 8)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F871 {
+    setvar(VAR_TEMP_1, 0xA)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F877 {
+    setvar(VAR_TEMP_1, 0xB)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F87D {
+    setvar(VAR_TEMP_1, 0xC)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F883 {
+    setvar(VAR_TEMP_1, 0xD)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F889 {
+    setvar(VAR_TEMP_1, 0xE)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F88F {
+    setvar(VAR_TEMP_1, 0xF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F895 {
+    setvar(VAR_TEMP_1, 0x11)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F89B {
+    setvar(VAR_TEMP_1, 0x12)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8A1 {
+    setvar(VAR_TEMP_1, 0x13)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8A7 {
+    setvar(VAR_TEMP_1, 0x14)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8AD {
+    setvar(VAR_TEMP_1, 0x15)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8B3 {
+    setvar(VAR_TEMP_1, 0x16)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8B9 {
+    setvar(VAR_TEMP_1, 0x19)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8BF {
+    setvar(VAR_TEMP_1, 0x1A)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8C5 {
+    setvar(VAR_TEMP_1, 0x1B)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8CB {
+    setvar(VAR_TEMP_1, 0x2F)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8D1 {
+    setvar(VAR_TEMP_1, 0x1E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8D7 {
+    setvar(VAR_TEMP_1, 0x1F)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8DD {
+    setvar(VAR_TEMP_1, 0x20)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8E3 {
+    setvar(VAR_TEMP_1, 0x21)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8E9 {
+    setvar(VAR_TEMP_1, 0x22)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8EF {
+    setvar(VAR_TEMP_1, 0x23)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8F5 {
+    setvar(VAR_TEMP_1, 0x24)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F8FB {
+    setvar(VAR_TEMP_1, 0x25)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F901 {
+    setvar(VAR_TEMP_1, 0x26)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F907 {
+    setvar(VAR_TEMP_1, 0x2C)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F90D {
+    setvar(VAR_TEMP_1, 0x2D)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F913 {
+    setvar(VAR_TEMP_1, 0x2E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F919 {
+    copyvar(VAR_0x8000, VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F956)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F969)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815F9C4)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FA70)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FA70)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F956 {
+    createvobject(5, 0x14, 3, 2, 3, 1)
+    createvobject(0x2E, 0x18, 0xB, 2, 3, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F969 {
+    createvobject(0x2D, 0, 2, 3, 3, 4)
+    createvobject(0x42, 1, 2, 4, 3, 4)
+    createvobject(0x37, 2, 2, 7, 3, 4)
+    createvobject(0x2E, 3, 2, 8, 3, 4)
+    createvobject(5, 0xA, 0xC, 3, 3, 3)
+    createvobject(0x14, 0xB, 0xC, 4, 3, 3)
+    createvobject(0x18, 0xC, 0xC, 7, 3, 3)
+    createvobject(0xC, 0xD, 0xC, 8, 3, 3)
+    createvobject(0x2F, 0x14, 3, 2, 3, 1)
+    createvobject(0x2E, 0x18, 0xB, 2, 3, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815F9C4 {
+    createvobject(0x2D, 0, 2, 3, 3, 4)
+    createvobject(0x42, 1, 2, 4, 3, 4)
+    createvobject(0x37, 2, 2, 7, 3, 4)
+    createvobject(0x30, 3, 2, 8, 3, 4)
+    createvobject(5, 0xA, 0xC, 3, 3, 3)
+    createvobject(0x14, 0xB, 0xC, 4, 3, 3)
+    createvobject(0x18, 0xC, 0xC, 7, 3, 3)
+    createvobject(0x2D, 0xD, 0xC, 8, 3, 3)
+    createvobject(0x16, 0x14, 3, 2, 3, 1)
+    createvobject(0x17, 0x14, 6, 2, 3, 1)
+    createvobject(0x22, 0x14, 7, 2, 3, 1)
+    createvobject(0x2E, 0x18, 8, 2, 3, 1)
+    createvobject(0x30, 0x18, 0xB, 2, 3, 1)
+    createvobject(0xB, 0x19, 3, 9, 3, 2)
+    createvobject(0x23, 0x1A, 4, 9, 3, 2)
+    createvobject(0x11, 0x1B, 5, 9, 3, 2)
+    createvobject(0x29, 0x1C, 9, 9, 3, 2)
+    createvobject(0x26, 0x1D, 0xA, 9, 3, 2)
+    createvobject(0x53, 0x1E, 0xB, 9, 3, 2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FA70 {
+    createvobject(0x2D, 0, 2, 3, 3, 4)
+    createvobject(0x42, 1, 2, 4, 3, 4)
+    createvobject(0x37, 2, 2, 7, 3, 4)
+    createvobject(0xC, 3, 2, 8, 3, 4)
+    createvobject(0x27, 4, 1, 3, 3, 4)
+    createvobject(0x22, 6, 1, 5, 3, 4)
+    createvobject(0x1A, 7, 1, 6, 3, 4)
+    createvobject(0x30, 9, 1, 8, 3, 4)
+    createvobject(5, 0xA, 0xC, 3, 3, 3)
+    createvobject(0x14, 0xB, 0xC, 4, 3, 3)
+    createvobject(0x18, 0xC, 0xC, 7, 3, 3)
+    createvobject(0x2D, 0xD, 0xC, 8, 3, 3)
+    createvobject(0x32, 0xE, 0xD, 3, 3, 3)
+    createvobject(0x34, 0xF, 0xD, 4, 3, 3)
+    createvobject(0x41, 0x11, 0xD, 6, 3, 3)
+    createvobject(0x53, 0x12, 0xD, 7, 3, 3)
+    createvobject(0x74, 0x13, 0xD, 8, 3, 3)
+    createvobject(0x19, 0x14, 3, 2, 3, 1)
+    createvobject(0x1F, 0x15, 6, 2, 3, 1)
+    createvobject(0x21, 0x16, 7, 2, 3, 1)
+    createvobject(0x2E, 0x18, 0xB, 2, 3, 1)
+    createvobject(0x31, 0x19, 3, 9, 3, 2)
+    createvobject(0x23, 0x1A, 4, 9, 3, 2)
+    createvobject(0x30, 0x1B, 5, 9, 3, 2)
+    createvobject(0x29, 0x1C, 9, 9, 3, 2)
+    createvobject(0x26, 0x1D, 0xA, 9, 3, 2)
+    createvobject(0x53, 0x1E, 0xB, 9, 3, 2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FB64 {
+    copyvar(VAR_0x8000, VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBA1)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBAD)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBB9)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBC5)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBD1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBA1 {
+    incrementgamestat(0x24)
+    warp(MAP_NARANJA_ISLA_MANDARINA_G06_M00, 0xFF, 5, 4)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBAD {
+    incrementgamestat(0x24)
+    warp(MAP_NARANJA_ISLA_NAVEL_G05_M01, 0xFF, 5, 4)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBB9 {
+    incrementgamestat(0x24)
+    warp(MAP_NARANJA_ISLA_MURCOTT_G09_M02, 0xFF, 5, 4)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBC5 {
+    incrementgamestat(0x24)
+    warp(MAP_NARANJA_ISLA_KUMQUAT_G13_M04, 0xFF, 6, 4)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_0815FBD1 {
+    warp(MAP_NARANJA_ISLA_KUMQUAT_G13_M04, 0xFF, 7, 4)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A514D {
+    setvar(VAR_0x8006, 0)
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_243, Naranja_SinNombre_G25_M28_Movement_081A5DBF)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D85)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A51A0)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A51EA)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5245)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A527A)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A58EE)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A594A)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A59FC)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A49)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A90)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BAB)
+    setvar(VAR_NARANJA_SIN_NOMBRE_STORY_STATE, 2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A51A0 {
+    copyvar(VAR_0x8000, VAR_CONTEST_RANK)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A51D2)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A51D8)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A51DE)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A51E4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A51D2 {
+    setvar(VAR_0x8009, 5)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A51D8 {
+    setvar(VAR_0x8009, 6)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A51DE {
+    setvar(VAR_0x8009, 7)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A51E4 {
+    setvar(VAR_0x8009, 8)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A51EA {
+    copyvar(VAR_0x8000, VAR_CONTEST_CATEGORY)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5227)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A522D)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5233)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5239)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A523F)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5227 {
+    setvar(VAR_0x8008, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A522D {
+    setvar(VAR_0x8008, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5233 {
+    setvar(VAR_0x8008, 2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5239 {
+    setvar(VAR_0x8008, 3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A523F {
+    setvar(VAR_0x8008, 4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5245 {
+    bufferstdstring(1, 0x8008)
+    bufferstdstring(2, 0x8009)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A525F)
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D87)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A525F {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5273)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A68F0)
+    callstd(3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5273 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6976)
+    waitmessage
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A527A {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A52AE)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5323)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5455)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A53E5)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5880)
+    addvar(VAR_0x8006, 1)
+    compare_var_to_value(VAR_0x8006, 4)
+    goto_if(NOT_EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A527A)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5377)
+    setvar(VAR_TEMP_1, 6)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A52AE {
+    compare_var_to_value(VAR_0x8006, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A52DB)
+    compare_var_to_value(VAR_0x8006, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A52ED)
+    compare_var_to_value(VAR_0x8006, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A52FF)
+    compare_var_to_value(VAR_0x8006, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5311)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A52DB {
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_VARS, Naranja_SinNombre_G25_M28_Movement_081A5DCE)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    setvar(VAR_0x800B, 3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A52ED {
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_241, Naranja_SinNombre_G25_M28_Movement_081A5DDA)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    setvar(VAR_0x800B, 4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A52FF {
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_242, Naranja_SinNombre_G25_M28_Movement_081A5DE2)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    setvar(VAR_0x800B, 5)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5311 {
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_243, Naranja_SinNombre_G25_M28_Movement_081A5DEA)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    setvar(VAR_0x800B, 0xE)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5323 {
+    special(BufferContestTrainerAndMonNames)
+    addvar(VAR_0x8006, 1)
+    buffernumberstring(1, VAR_0x8006)
+    lockall
+    applymovement(32779, Naranja_SinNombre_G25_M28_Movement_081A5D9C)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    addobject(LOCALID_SIN_NOMBRE_G25_M28_ITEM_BALL)
+    playse(SE_LEDGE)
+    lockall
+    applymovement(32779, Naranja_SinNombre_G25_M28_Movement_081A5D9C)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    addvar(VAR_0x8006, 0xFFFF)
+    playse(SE_BALL_OPEN)
+    special(ShowContestEntryMonPic)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A535E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A535E {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5370)
+    message(Naranja_SinNombre_G25_M28_Text_081A6A04)
+    waitmessage
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5370 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6A04)
+    waitmessage
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5377 {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A53B3)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A53CE)
+    playse(SE_M_ENCORE2)
+    waitmessage
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A90)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D9F)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_CONTEST_JUDGE, Naranja_SinNombre_G25_M28_Movement_081A5DA1)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D8F)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_CONTEST_JUDGE, Naranja_SinNombre_G25_M28_Movement_081A5D8F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A53B3 {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A53C7)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6A1F)
+    callstd(4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A53C7 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6A1F)
+    waitmessage
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A53CE {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A53DF)
+    message(Naranja_SinNombre_G25_M28_Text_081A6AE1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A53DF {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6AE1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A53E5 {
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5DAF)
+    waitmovement(LOCALID_NONE)
+    playse(SE_M_ENCORE2)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5AE4)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_248, Naranja_SinNombre_G25_M28_Movement_081A5DB7)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_245, Naranja_SinNombre_G25_M28_Movement_081A5DBB)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_246, Naranja_SinNombre_G25_M28_Movement_081A5DB7)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5DB7)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_249, Naranja_SinNombre_G25_M28_Movement_081A5DAF)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_250, Naranja_SinNombre_G25_M28_Movement_081A5DBB)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_244, Naranja_SinNombre_G25_M28_Movement_081A5DB3)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_247, Naranja_SinNombre_G25_M28_Movement_081A5DAF)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5DC1)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5DCA)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_CONTEST_JUDGE, Naranja_SinNombre_G25_M28_Movement_081A5DC5)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5455 {
+    special(GetContestMonCondition)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 1)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A555A)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 2)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A55B8)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 3)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5616)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 4)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5674)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A56D2)
+    setvar(VAR_TEMP_1, 9)
+    setvar(VAR_TEMP_2, 9)
+    setvar(VAR_TEMP_3, 9)
+    setvar(VAR_TEMP_4, 9)
+    setvar(VAR_TEMP_5, 9)
+    setvar(VAR_TEMP_6, 9)
+    setvar(VAR_TEMP_7, 9)
+    setvar(VAR_TEMP_8, 9)
+    compare_var_to_value(VAR_TEMP_0, 0)
+    call_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A54EB)
+    setvar(VAR_TEMP_1, 0)
+    setvar(VAR_TEMP_2, 0)
+    setvar(VAR_TEMP_3, 0)
+    setvar(VAR_TEMP_4, 0)
+    setvar(VAR_TEMP_5, 0)
+    setvar(VAR_TEMP_6, 0)
+    setvar(VAR_TEMP_7, 0)
+    setvar(VAR_TEMP_8, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A54EB {
+    setvar(VAR_RESULT, 8)
+    special(GenerateContestRand)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5760)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5784)
+    compare_var_to_value(VAR_RESULT, 2)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A57A8)
+    compare_var_to_value(VAR_RESULT, 3)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A57CC)
+    compare_var_to_value(VAR_RESULT, 4)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A57F0)
+    compare_var_to_value(VAR_RESULT, 5)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5814)
+    compare_var_to_value(VAR_RESULT, 6)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5838)
+    compare_var_to_value(VAR_RESULT, 7)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A585C)
+    compare_var_to_value(VAR_TEMP_0, 0)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A54EB)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A555A {
+    compare_var_to_value(VAR_0x8004, 0x50)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A575A)
+    compare_var_to_value(VAR_0x8004, 0x46)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5754)
+    compare_var_to_value(VAR_0x8004, 0x3C)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A574E)
+    compare_var_to_value(VAR_0x8004, 0x32)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5748)
+    compare_var_to_value(VAR_0x8004, 0x28)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5742)
+    compare_var_to_value(VAR_0x8004, 0x1E)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A573C)
+    compare_var_to_value(VAR_0x8004, 0x14)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5736)
+    compare_var_to_value(VAR_0x8004, 0xA)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5730)
+    setvar(VAR_TEMP_0, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A55B8 {
+    compare_var_to_value(VAR_0x8004, 0xE6)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A575A)
+    compare_var_to_value(VAR_0x8004, 0xD2)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5754)
+    compare_var_to_value(VAR_0x8004, 0xBE)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A574E)
+    compare_var_to_value(VAR_0x8004, 0xAA)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5748)
+    compare_var_to_value(VAR_0x8004, 0x96)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5742)
+    compare_var_to_value(VAR_0x8004, 0x82)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A573C)
+    compare_var_to_value(VAR_0x8004, 0x6E)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5736)
+    compare_var_to_value(VAR_0x8004, 0x5A)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5730)
+    setvar(VAR_TEMP_0, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5616 {
+    compare_var_to_value(VAR_0x8004, 0x17C)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A575A)
+    compare_var_to_value(VAR_0x8004, 0x15E)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5754)
+    compare_var_to_value(VAR_0x8004, 0x140)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A574E)
+    compare_var_to_value(VAR_0x8004, 0x122)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5748)
+    compare_var_to_value(VAR_0x8004, 0x104)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5742)
+    compare_var_to_value(VAR_0x8004, 0xE6)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A573C)
+    compare_var_to_value(VAR_0x8004, 0xC8)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5736)
+    compare_var_to_value(VAR_0x8004, 0xAA)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5730)
+    setvar(VAR_TEMP_0, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5674 {
+    compare_var_to_value(VAR_0x8004, 0x258)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A575A)
+    compare_var_to_value(VAR_0x8004, 0x230)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5754)
+    compare_var_to_value(VAR_0x8004, 0x208)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A574E)
+    compare_var_to_value(VAR_0x8004, 0x1E0)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5748)
+    compare_var_to_value(VAR_0x8004, 0x1B8)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5742)
+    compare_var_to_value(VAR_0x8004, 0x190)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A573C)
+    compare_var_to_value(VAR_0x8004, 0x168)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5736)
+    compare_var_to_value(VAR_0x8004, 0x140)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5730)
+    setvar(VAR_TEMP_0, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A56D2 {
+    compare_var_to_value(VAR_0x8004, 0x258)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A575A)
+    compare_var_to_value(VAR_0x8004, 0x226)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5754)
+    compare_var_to_value(VAR_0x8004, 0x1F4)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A574E)
+    compare_var_to_value(VAR_0x8004, 0x1C2)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5748)
+    compare_var_to_value(VAR_0x8004, 0x190)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5742)
+    compare_var_to_value(VAR_0x8004, 0x12C)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A573C)
+    compare_var_to_value(VAR_0x8004, 0xC8)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5736)
+    compare_var_to_value(VAR_0x8004, 0x64)
+    goto_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5730)
+    setvar(VAR_TEMP_0, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5730 {
+    setvar(VAR_TEMP_0, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5736 {
+    setvar(VAR_TEMP_0, 2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A573C {
+    setvar(VAR_TEMP_0, 3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5742 {
+    setvar(VAR_TEMP_0, 4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5748 {
+    setvar(VAR_TEMP_0, 5)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A574E {
+    setvar(VAR_TEMP_0, 6)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5754 {
+    setvar(VAR_TEMP_0, 7)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A575A {
+    setvar(VAR_TEMP_0, 8)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5760 {
+    compare_var_to_value(VAR_TEMP_1, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5783)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_244, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_1, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5783 {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5784 {
+    compare_var_to_value(VAR_TEMP_2, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A57A7)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_245, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_2, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A57A7 {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A57A8 {
+    compare_var_to_value(VAR_TEMP_3, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A57CB)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_246, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_3, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A57CB {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A57CC {
+    compare_var_to_value(VAR_TEMP_4, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A57EF)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_247, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_4, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A57EF {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A57F0 {
+    compare_var_to_value(VAR_TEMP_5, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5813)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_248, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_5, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5813 {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5814 {
+    compare_var_to_value(VAR_TEMP_6, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5837)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_249, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_6, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5837 {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5838 {
+    compare_var_to_value(VAR_TEMP_7, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A585B)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_250, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_7, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A585B {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A585C {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A587F)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_ARTIST, Naranja_SinNombre_G25_M28_Movement_081A5D8D)
+    playse(SE_PIN)
+    delay(0xE)
+    setvar(VAR_TEMP_8, 1)
+    addvar(VAR_TEMP_0, 0xFFFF)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A587F {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5880 {
+    closemessage
+    release
+    removeobject(LOCALID_SIN_NOMBRE_G25_M28_ITEM_BALL)
+    special(HideContestEntryMonPic)
+    copyvar(VAR_0x8000, VAR_0x8006)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A58BA)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A58C7)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A58D4)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A58E1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A58BA {
+    lockall
+    applymovement(32779, Naranja_SinNombre_G25_M28_Movement_081A5DD4)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A58C7 {
+    lockall
+    applymovement(32779, Naranja_SinNombre_G25_M28_Movement_081A5DDE)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A58D4 {
+    lockall
+    applymovement(32779, Naranja_SinNombre_G25_M28_Movement_081A5DE6)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A58E1 {
+    lockall
+    applymovement(32779, Naranja_SinNombre_G25_M28_Movement_081A5DF0)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A58EE {
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5DA3)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5930)
+    waitmessage
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D91)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_CONTEST_JUDGE, Naranja_SinNombre_G25_M28_Movement_081A5D95)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    setvar(VAR_TEMP_9, 1)
+    startcontest
+    setvar(VAR_TEMP_9, 0)
+    lockall
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D95)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_CONTEST_JUDGE, Naranja_SinNombre_G25_M28_Movement_081A5D91)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5930 {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5944)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6AF5)
+    callstd(3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5944 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6AF5)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A594A {
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5984)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A59A2)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D8B)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A59C0)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A59DE)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_WOMAN_4, Naranja_SinNombre_G25_M28_Movement_081A5D8F)
+    waitmovement(LOCALID_NONE)
+    closemessage
+    releaseall
+    setvar(VAR_TEMP_9, 1)
+    showcontestresults
+    setvar(VAR_TEMP_9, 0)
+    playbgm(MUS_CONTEST_WINNER, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5984 {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5998)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6C06)
+    callstd(4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5998 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6C06)
+    waitmessage
+    delay(0x1E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59A2 {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A59B6)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6C21)
+    callstd(4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59B6 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6C21)
+    waitmessage
+    delay(0x1E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59C0 {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A59D4)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6C9D)
+    callstd(4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59D4 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6C9D)
+    waitmessage
+    delay(0x1E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59DE {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A59F2)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D16)
+    callstd(4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59F2 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6D16)
+    waitmessage
+    delay(0x1E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A59FC {
+    special(GetContestWinnerId)
+    copyvar(VAR_0x8000, VAR_0x8005)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A31)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A37)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A3D)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A43)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A31 {
+    setvar(VAR_TEMP_3, 3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A37 {
+    setvar(VAR_TEMP_3, 4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A3D {
+    setvar(VAR_TEMP_3, 5)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A43 {
+    setvar(VAR_TEMP_3, 0xE)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A49 {
+    special(BufferContestWinnerTrainerName)
+    special(BufferContestWinnerMonName)
+    addvar(VAR_0x8005, 1)
+    buffernumberstring(1, VAR_0x8005)
+    addvar(VAR_0x8005, 0xFFFF)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A75)
+    applymovement(16387, Naranja_SinNombre_G25_M28_Movement_081A5D99)
+    waitmovement(LOCALID_NONE)
+    playse(SE_M_ENCORE2)
+    setvar(VAR_TEMP_1, 0)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A75 {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A89)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D3C)
+    callstd(4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A89 {
+    messageautoscroll(Naranja_SinNombre_G25_M28_Text_081A6D3C)
+    waitmessage
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A90 {
+    addvar(VAR_TEMP_1, 1)
+    lockall
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 1)
+    call_if(GREATER_THAN, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5AE4)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_248, Naranja_SinNombre_G25_M28_Movement_081A5DB7)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_245, Naranja_SinNombre_G25_M28_Movement_081A5DBB)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_246, Naranja_SinNombre_G25_M28_Movement_081A5DB7)
+    delay(0x1E)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_249, Naranja_SinNombre_G25_M28_Movement_081A5DAF)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_250, Naranja_SinNombre_G25_M28_Movement_081A5DBB)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_244, Naranja_SinNombre_G25_M28_Movement_081A5DB3)
+    applymovement(LOCALID_SIN_NOMBRE_G25_M28_247, Naranja_SinNombre_G25_M28_Movement_081A5DAF)
+    compare_var_to_value(VAR_TEMP_1, 4)
+    goto_if(NOT_EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A90)
+    delay(0x1E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5AE4 {
+    turnvobject(0, 1)
+    turnvobject(2, 1)
+    turnvobject(4, 4)
+    turnvobject(6, 1)
+    turnvobject(8, 1)
+    turnvobject(0xA, 1)
+    turnvobject(0xC, 1)
+    turnvobject(0xE, 1)
+    turnvobject(0x10, 1)
+    turnvobject(0x12, 1)
+    turnvobject(0x14, 4)
+    turnvobject(0x16, 4)
+    turnvobject(0x19, 4)
+    turnvobject(0x1B, 3)
+    turnvobject(0x1C, 4)
+    delay(0xA)
+    turnvobject(0, 4)
+    turnvobject(2, 4)
+    turnvobject(4, 4)
+    turnvobject(6, 4)
+    turnvobject(8, 4)
+    turnvobject(0xA, 3)
+    turnvobject(0xC, 3)
+    turnvobject(0xE, 3)
+    turnvobject(0x10, 3)
+    turnvobject(0x12, 3)
+    turnvobject(0x14, 1)
+    turnvobject(0x16, 1)
+    turnvobject(0x19, 2)
+    turnvobject(0x1B, 2)
+    turnvobject(0x1C, 2)
+    delay(0xA)
+    turnvobject(1, 2)
+    turnvobject(3, 2)
+    turnvobject(5, 2)
+    turnvobject(7, 2)
+    turnvobject(9, 4)
+    turnvobject(0xB, 2)
+    turnvobject(0xF, 2)
+    turnvobject(0xD, 2)
+    turnvobject(0x11, 2)
+    turnvobject(0x13, 2)
+    turnvobject(0x15, 3)
+    turnvobject(0x17, 3)
+    turnvobject(0x18, 3)
+    turnvobject(0x1A, 4)
+    turnvobject(0x1D, 3)
+    turnvobject(0x1E, 3)
+    delay(0xA)
+    turnvobject(1, 4)
+    turnvobject(3, 4)
+    turnvobject(5, 4)
+    turnvobject(7, 4)
+    turnvobject(9, 4)
+    turnvobject(0xB, 3)
+    turnvobject(0xF, 3)
+    turnvobject(0xD, 3)
+    turnvobject(0x11, 3)
+    turnvobject(0x13, 3)
+    turnvobject(0x15, 1)
+    turnvobject(0x17, 1)
+    turnvobject(0x18, 1)
+    turnvobject(0x1A, 2)
+    turnvobject(0x1D, 2)
+    turnvobject(0x1E, 2)
+    delay(0xA)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BAB {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 5)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C4C)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C12)
+    checkflag(FLAG_TEMP_2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BF6)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DC5)
+    callstd(3)
+    waitmessage
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C7F)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CE5)
+    playse(SE_M_ENCORE2)
+    setvar(VAR_TEMP_1, 0)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5A90)
+    delay(0x1E)
+    special(ShouldReadyContestArtist)
+    compare_var_to_value(VAR_0x8004, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C46)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5BF6 {
+    incrementgamestat(0x25)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
+    callstd(3)
+    delay(0x5A)
+    special(ShouldReadyContestArtist)
+    compare_var_to_value(VAR_0x8004, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C46)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C12 {
+    specialvar(VAR_RESULT, HasMonWonThisContestBefore)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C23)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C23 {
+    special(GetContestWinnerId)
+    compare_var_to_value(VAR_0x8005, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C32)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C32 {
+    compare_var_to_value(VAR_CONTEST_RANK, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C41)
+    setflag(FLAG_TEMP_2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C41 {
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C42 {
+    setflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_010E)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C46 {
+    setvar(VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_4, 1)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C4C {
+    delay(0x3C)
+    call(Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C6A)
+    special(ShouldReadyContestArtist)
+    compare_var_to_value(VAR_0x8004, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C64)
+    closemessage
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C64 {
+    setvar(VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_4, 2)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C6A {
+    special(GetContestPlayerId)
+    special(GetContestWinnerId)
+    compare_var_to_var(VAR_0x8004, VAR_0x8005)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C7C)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C7C {
+    incrementgamestat(0x23)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C7F {
+    copyvar(VAR_0x8000, VAR_0x8005)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CB1)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CBE)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CCB)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CD8)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CB1 {
+    lockall
+    applymovement(16387, Naranja_SinNombre_G25_M28_Movement_081A5DF6)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CBE {
+    lockall
+    applymovement(16387, Naranja_SinNombre_G25_M28_Movement_081A5DFA)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CCB {
+    lockall
+    applymovement(16387, Naranja_SinNombre_G25_M28_Movement_081A5DA5)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CD8 {
+    lockall
+    applymovement(16387, Naranja_SinNombre_G25_M28_Movement_081A5DA9)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CE5 {
+    special(GetContestWinnerId)
+    compare_var_to_value(VAR_0x8005, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CFC)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
+    callstd(3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5CFC {
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 2)
+    call_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5C42)
+    incrementgamestat(0x25)
+    specialvar(VAR_RESULT, HasMonWonThisContestBefore)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D5B)
+    compare_var_to_value(VAR_CONTEST_RANK, 3)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D3B)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
+    callstd(3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D2D {
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6E1F)
+    callstd(3)
+    setvar(VAR_NARANJA_ISLA_KUMQUAT_STORY_STATE, 4)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D3B {
+    setorcopyvar(VAR_0x8000, 0xB)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D2D)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DF1)
+    callstd(3)
+    return
+}
+
+script Naranja_SinNombre_G25_M28_EventScript_Sub_081A5D5B {
+    special(GiveMonContestRibbon)
+    incrementgamestat(0x2A)
+    setflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_083B)
+    lockall
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D6A)
+    callstd(4)
+    playfanfare(MUS_OBTAIN_ITEM)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6D96)
+    callstd(4)
+    waitfanfare
+    special(BufferContestWinnerMonName)
+    loadword(0, Naranja_SinNombre_G25_M28_Text_081A6DAC)
+    callstd(4)
+    releaseall
+    return
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D85 {
+    walk_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D87 {
+    lock_facing_direction
+    walk_up
+    unlock_facing_direction
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D8B {
+    walk_in_place_faster_right
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D8D {
+    emote_heart
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D8F {
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D91 {
+    walk_left
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D95 {
+    walk_right
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D99 {
+    walk_up
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D9C {
+    delay_16
+    delay_16
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5D9F {
+    walk_in_place_faster_right
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DA1 {
+    walk_in_place_faster_left
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DA3 {
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DA5 {
+    walk_left
+    walk_left
+    walk_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DA9 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DAF {
+    face_left
+    delay_16
+    face_original_direction
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DB3 {
+    face_up
+    delay_16
+    face_original_direction
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DB7 {
+    face_right
+    delay_16
+    face_original_direction
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DBB {
+    face_down
+    delay_16
+    face_original_direction
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DBF {
+    face_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DC1 {
+    face_up
+    delay_16
+    walk_in_place_faster_right
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DC5 {
+    walk_in_place_faster_left
+    delay_16
+    delay_16
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DCA {
+    delay_16
+    delay_16
+    walk_in_place_faster_down
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DCE {
+    walk_up
+    walk_right
+    walk_right
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DD4 {
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DDA {
+    walk_up
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DDE {
+    walk_fast_left
+    walk_fast_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DE2 {
+    walk_up
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DE6 {
+    walk_fast_right
+    walk_fast_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DEA {
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DF0 {
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DF6 {
+    walk_right
+    walk_right
+    walk_up
+}
+
+movement Naranja_SinNombre_G25_M28_Movement_081A5DFA {
+    walk_up
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A68F0 {
+    "MC: Hello! We’re just getting started\nwith a {STR_VAR_3} Rank POKéMON\l{STR_VAR_2} CONTEST!\pThe participating TRAINERS and their\nPOKéMON are as follows:"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6976 {
+    "MC: Hello! We’re just getting started\nwith a 4-player linked POKéMON\l{STR_VAR_2} CONTEST!\pThe participating TRAINERS and their\nPOKéMON are as follows:"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6A04 {
+    "MC: Entry No. {STR_VAR_2}!\n{STR_VAR_1}’s {STR_VAR_3}!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6A1F {
+    "MC: We’ve just seen the four POKéMON\ncontestants.\pNow it’s time for primary judging!\pThe audience will vote on their\nfavorite POKéMON contestants.\pWithout any further ado, let the\nvoting begin!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6AE1 {
+    "Voting under way..."
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6AF5 {
+    "Voting is now complete!\pWhile the votes are being tallied,\nlet’s move on to secondary judging!\pThe second stage of judging is the\nmuch anticipated appeal time!\pMay the contestants amaze us with\nsuperb appeals of dazzling moves!\pLet’s see a little enthusiasm!\nLet’s appeal!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6C06 {
+    "MC: That’s it for judging!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6C21 {
+    "Thank you all for a most wonderful\ndisplay of quality appeals!\pThis concludes all judging!\nThank you for your fine efforts!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6C9D {
+    "Now, all that remains is the pulse-\npounding proclamation of the winner.\pThe JUDGE looks ready to make the\nannouncement!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6D16 {
+    "JUDGE: I will now declare the winner!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6D3C {
+    "MC: Entry No. {STR_VAR_2}!\p{STR_VAR_3} and {STR_VAR_1},\ncongratulations!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6D6A {
+    "We confer on you this RIBBON as your\nprize!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6D96 {
+    "{PLAYER} received a RIBBON."
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6DAC {
+    "{PLAYER} put the RIBBON on\n{STR_VAR_1}."
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6DC5 {
+    "MC: Here you are!\nPlease accept your prize!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6DF1 {
+    "MC: Congratulations!\nPlease do compete again!"
+}
+
+text Naranja_SinNombre_G25_M28_Text_081A6E1F {
+    "Please pick up your prize at the\nreception counter later.\lPlease do compete again!"
+}

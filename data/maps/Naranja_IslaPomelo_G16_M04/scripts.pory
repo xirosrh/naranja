@@ -1,0 +1,305 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaPomelo_G16_M04_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaPomelo_G16_M04_OnTransition
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_1, 0: Naranja_IslaPomelo_G16_M04_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: Naranja_IslaPomelo_G16_M04_OnFrame_1
+    ]
+}
+
+script Naranja_IslaPomelo_G16_M04_OnTransition {
+    call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
+    end
+}
+
+script Naranja_IslaPomelo_G16_M04_OnWarp_1 {
+    turnobject(LOCALID_PLAYER, 2)
+    end
+}
+
+script Naranja_IslaPomelo_G16_M04_OnFrame_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M04_Movement_081A084E)
+    waitmovement(LOCALID_NONE)
+    delay(0x28)
+    applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M04_Movement_0815B802)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_TEMP_1, 1)
+    goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B805)
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B805 {
+    playbgm(MUS_ENCOUNTER_CHAMPION, 0)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08190F9C)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_335, LOCALID_NONE, Naranja_IslaPomelo_G16_M04_Text_081910A0)
+    goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B821)
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B821 {
+    playse(SE_DOOR)
+    setmetatile(6, 1, 0x346, 0)
+    setmetatile(6, 2, 0x347, 0)
+    special(DrawWholeMapView)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081910FE)
+    callstd(4)
+    closemessage
+    playse(SE_DOOR)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B87C)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B881)
+    addobject(LOCALID_ISLA_POMELO_G16_M04_VARS)
+    call(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9BD)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B886)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8BB)
+    end
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B87C {
+    playbgm(MUS_ENCOUNTER_MAY, 0)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B881 {
+    playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B886 {
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191225)
+    callstd(4)
+    delay(0x28)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9D2)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191268)
+    callstd(4)
+    goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0)
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8BB {
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081912B3)
+    callstd(4)
+    delay(0x28)
+    playse(SE_PIN)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9D2)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191305)
+    callstd(4)
+    goto(Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0)
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B8F0 {
+    closemessage
+    addobject(LOCALID_ISLA_POMELO_G16_M04_PROF_BIRCH)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_PROF_BIRCH, Naranja_IslaPomelo_G16_M04_Movement_0815BA03)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_0819134D)
+    callstd(4)
+    call(Naranja_RutaAzul_G00_M18_EventScript_Sub_081A03B0)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081914C6)
+    callstd(4)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191512)
+    callstd(4)
+    closemessage
+    delay(0x1E)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_IslaPomelo_G16_M04_Movement_0815B9FB)
+    applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M04_Movement_0815B9DD)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_PROF_BIRCH, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_IslaPomelo_G16_M04_Movement_0815B9F8)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191546)
+    callstd(4)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9AB)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9B4)
+    closemessage
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_STEVEN, Naranja_IslaPomelo_G16_M04_Movement_0815B9FF)
+    applymovement(LOCALID_PLAYER, Naranja_IslaPomelo_G16_M04_Movement_0815B9E0)
+    waitmovement(LOCALID_NONE)
+    setflag(FLAG_HIDE_INSIDE_OF_TRUCK_G08_M01_MAN_2)
+    warp(MAP_NARANJA_ISLA_POMELO_G16_M11, 0xFF, 7, 0x10)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9AB {
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_081915D7)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9B4 {
+    loadword(0, Naranja_IslaPomelo_G16_M04_Text_08191675)
+    callstd(4)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9BD {
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_IslaPomelo_G16_M04_Movement_0815B9E6)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaPomelo_G16_M04_EventScript_Sub_0815B9D2 {
+    applymovement(LOCALID_ISLA_POMELO_G16_M04_VARS, Naranja_IslaPomelo_G16_M04_Movement_0815B9EF)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B802 {
+    walk_up
+    walk_up
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9DD {
+    walk_up
+    walk_up
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9E0 {
+    walk_up
+    delay_16
+    walk_up
+    delay_8
+    set_invisible
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9E6 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_left
+    walk_up
+    walk_in_place_faster_right
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9EF {
+    walk_in_place_faster_up
+    delay_16
+    walk_in_place_faster_right
+    delay_16
+    walk_in_place_faster_up
+    delay_8
+    walk_in_place_faster_right
+    delay_16
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9F8 {
+    walk_right
+    walk_up
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9FB {
+    walk_up
+    walk_up
+    walk_in_place_faster_down
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815B9FF {
+    walk_up
+    delay_8
+    set_invisible
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_0815BA03 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_right
+    walk_up
+    walk_in_place_faster_left
+}
+
+movement Naranja_IslaPomelo_G16_M04_Movement_081A084E {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08190F9C {
+    "STEVEN: Welcome, {PLAYER}{KUN}.\pI was looking forward to seeing you\nhere one day.\pYou... What did you see on your\njourney with POKéMON?\pWhat did you feel, meeting so many\nother TRAINERS like you?\pWhat has awoken in you?\nI want you to hit me with it all!\pNow, bring it!"
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_081910A0 {
+    "I, the CHAMPION, fall in defeat...\pKudos to you, {PLAYER}{KUN}!\pYou are a truly noble POKéMON\nTRAINER!"
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_081910FE {
+    "STEVEN: Congratulations!\pThe feelings you have for your\nPOKéMON...\pAnd the POKéMON that responded to\nthose feelings with all their might...\pThey came together as one, and created\nan even greater power.\pAnd thus, you were able to grasp\nvictory today!\pYou are rightfully the HOENN region’s\nnew..."
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08191225 {
+    "MAY: {PLAYER}{KUN}!\pHere’s some advice before you challenge\nthe CHAMPION..."
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08191268 {
+    "MAY: Huh? What, what, what?\p{PLAYER}{KUN}...\nCould it be that...\lIt’s already over?"
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_081912B3 {
+    "BRENDAN: {PLAYER}!\pHow would you like some advice before\nyou challenge the CHAMPION?..."
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08191305 {
+    "BRENDAN: {PLAYER}...\pAre you trying to tell me...\nYou’ve beaten the CHAMPION?"
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_0819134D {
+    "PROF. BIRCH: See?\nWhat did I tell you, {RIVAL}?\pDidn’t I tell you that you don’t need\nto worry about {PLAYER}{KUN}?\p... ... ... ... ... ... ... ...\n{PLAYER}{KUN}, you’ve finally done it.\pWhen I heard that you defeated your\nown father at the PETALBURG GYM,\lI thought perhaps you had a chance...\pBut to think you’ve actually become\nthe CHAMPION!\pAh, yes!\pWhat became of your POKéDEX?\nHere, let me see."
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_081914C6 {
+    "PROF. BIRCH: Anyways,\ncongratulations!\pNow, go proudly into the final room!"
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08191512 {
+    "STEVEN: {PLAYER}{KUN}...\pNo, the new CHAMPION!\pCome with me."
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08191546 {
+    "STEVEN: I’m sorry, but...\pFrom here on, only those TRAINERS who\nhave become CHAMPIONS may enter.\pYou’ll have to wait outside with the\nPROFESSOR."
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_081915D7 {
+    "MAY: Groan...\p... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pI’m just joking! That’s okay!\nThat’s the rule!\p{PLAYER}{KUN}!\nHonestly, congratulations!"
+}
+
+text Naranja_IslaPomelo_G16_M04_Text_08191675 {
+    "BRENDAN: ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pIt can’t be helped if that’s the rule.\p{PLAYER}, way to go!\nCongratulations!"
+}

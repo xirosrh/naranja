@@ -13,7 +13,92 @@
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_GYM",
   "connections": [],
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_ISLA_SHAMOUTI_G12_M01_WINONA",
+      "graphics_id": "OBJ_EVENT_GFX_WINONA",
+      "x": 4,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_WINONA_LocalId1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_SHAMOUTI_G12_M01_MAN_6",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 12,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_SHAMOUTI_G12_M01_CAMPER",
+      "graphics_id": "OBJ_EVENT_GFX_CAMPER",
+      "x": 9,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_SHAMOUTI_G12_M01_PICNICKER",
+      "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
+      "x": 18,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId4",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_SHAMOUTI_G12_M01_MAN_6_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 18,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "1",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_ISLA_SHAMOUTI_G12_M01_MAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 2,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "0",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId6",
+      "flag": "0x0"
+    }
+  ],
   "warp_events": [
     {
       "x": 2,
@@ -31,5 +116,22 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_IslaShamouti_G12_M01_EventScript_Sign_2"
+    }
+  ]
 }

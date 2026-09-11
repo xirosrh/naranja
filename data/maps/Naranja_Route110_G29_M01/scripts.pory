@@ -1,0 +1,388 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route110_G29_M01_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_Route110_G29_M01_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route110_G29_M01_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_1, 0: Naranja_Route110_G29_M01_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_2, 0: Naranja_Route110_G29_M01_OnWarp_1
+    ]
+}
+
+script Naranja_Route110_G29_M01_OnResume {
+    compare_var_to_value(VAR_TEMP_1, 1)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161994)
+    end
+}
+
+script Naranja_Route110_G29_M01_OnTransition {
+    setvar(VAR_TEMP_1, 0)
+    setvar(VAR_TEMP_2, 0)
+    special(SetTrickHouseNuggetFlag)
+    end
+}
+
+script Naranja_Route110_G29_M01_OnWarp_1 {
+    addobject(LOCALID_ROUTE110_G29_M01_MAN_1_1)
+    showobjectat(LOCALID_ROUTE110_G29_M01_MAN_1_1, MAP_NARANJA_ROUTE_110_G29_M01)
+    turnobject(LOCALID_ROUTE110_G29_M01_MAN_1_1, 4)
+    end
+}
+
+script Naranja_Route110_G29_M01_OnFrame_1 {
+    setvar(VAR_TEMP_1, 1)
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161994)
+    special(DrawWholeMapView)
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161994 {
+    setmetatile(0xA, 1, 0x21B, 1)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId1 {
+    lock
+    faceplayer
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C281)
+    callstd(4)
+    setvar(VAR_TEMP_2, 1)
+    copyvar(VAR_0x8000, VAR_TRICK_HOUSE_LEVEL)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161A0B)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161A47)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161A83)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161ABF)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161AFB)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161B37)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161B73)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161BAF)
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161A0B {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C2B2)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0x44)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161A47 {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C333)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0xA)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161A83 {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C3A7)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0xCC)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161ABF {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C41F)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0xC2)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161AFB {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C491)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0x12C)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161B37 {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C515)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0xD0)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161B73 {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C567)
+    callstd(4)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C90B)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0x47)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C4E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C9BD)
+    callstd(4)
+    closemessage
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161BAF {
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C5AF)
+    callstd(4)
+    closemessage
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C74)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C7F)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C8A)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C95)
+    delay(0x1E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C602)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C691)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 0)
+    setorcopyvar(VAR_0x8000, 0x1F)
+    callstd(7)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_Route110_G29_M01_EventScript_Sub_08161C61)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C85C)
+    callstd(4)
+    call(Naranja_Route110_G29_M01_EventScript_Sub_08161C2E)
+    special(ResetTrickHouseNuggetFlag)
+    release
+    end
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C2E {
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_Route110_G29_M00_Movement_08161315)
+    waitmovement(LOCALID_NONE)
+    playse(SE_M_EXPLOSION)
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_Route110_G29_M00_Movement_0816131E)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE110_G29_M01_MAN_1_1)
+    addvar(VAR_TRICK_HOUSE_LEVEL, 1)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C4E {
+    call(Naranja_Route110_G29_M00_EventScript_Sub_081A02A5)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C92E)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 1)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C61 {
+    call(Naranja_Route110_G29_M00_EventScript_Sub_081A02B8)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819C7D7)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_15, 1)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C74 {
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C7F {
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C8A {
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Sub_08161C95 {
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_CaminoFrio_G20_M01_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_G29_M01_EventScript_Trigger_1 {
+    lockall
+    turnobject(LOCALID_ROUTE110_G29_M01_MAN_1_1, 3)
+    playse(SE_PIN)
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    applymovement(LOCALID_ROUTE110_G29_M01_MAN_1_1, Naranja_Route110_G29_M01_Movement_08161CEA)
+    waitmovement(LOCALID_NONE)
+    playse(SE_M_EXPLOSION)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_Route110_G29_M01_Text_0819CA8B)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_Route110_G29_M01_Movement_08161CE8)
+    waitmovement(LOCALID_NONE)
+    delay(4)
+    turnobject(LOCALID_ROUTE110_G29_M01_MAN_1_1, 4)
+    releaseall
+    end
+}
+
+movement Naranja_Route110_G29_M01_Movement_08161CE8 {
+    walk_down
+}
+
+movement Naranja_Route110_G29_M01_Movement_08161CEA {
+    jump_in_place_left
+}
+
+text Naranja_Route110_G29_M01_Text_0819C281 {
+    "Aak!\nYou’ve made it to me?\lHmmm... You’re sharp!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C2B2 {
+    "It took me all night to plant all those\ntrees...\pYou’re almost my equal in greatness by\none, two, three, four, five, six places!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C333 {
+    "It took me all night to make the maze...\pYou’re almost my equal in greatness by\none, two, three, four, five places!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C3A7 {
+    "It took me all night to bring in those\nboulders...\pYou’re almost my equal in greatness by\none, two, three, four places!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C41F {
+    "It took me all night to shove in those\nboulders...\pYou’re almost my equal in greatness by\none, two, three places!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C491 {
+    "It took me all night to make MECHADOLLS\nand another to think up the quiz...\pYou’re almost my equal in greatness by\none, two places!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C515 {
+    "It took me all night to install\nthe doors...\pYou’re almost my equal in greatness!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C567 {
+    "It took me all night setting up arrows...\pYou’re my equal in greatness!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C5AF {
+    "It took me all night polishing floors...\pYou’re above me in greatness!\nPossibly..."
+}
+
+text Naranja_Route110_G29_M01_Text_0819C602 {
+    "Wh-what should I do?\nMy fountain of ideas for tricks has\lrun dry...\pPerhaps it is time I toured the country\non a quest to devise new tricks..."
+}
+
+text Naranja_Route110_G29_M01_Text_0819C691 {
+    "I hate to admit defeat, but you have\nbested me!\pStill, you must have been reeled in by\nmy charisma for you to visit me again\land again. Yes, you must have!\pBut that has nothing to do with my\nlosing!\pIn recognition of the friendship\nbetween you, the driven, and the genius\lthat is myself, I demand that you take\lthis keepsake!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C7D7 {
+    "What? No room in your PC?\nWhat am I to make of that?\pI wish I could say that, but I am much\ntoo kind and caring, so come back later!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C85C {
+    "... ... ... ... ... ...\pI am leaving on a journey of discovery.\nA quest in search of new tricks.\pI wish that you will one day visit and\nentertain me again.\pAnd now, farewell!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C90B {
+    "Fine!\nYou have earned this reward!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819C92E {
+    "What? Have you no room for this?\nWhat manner of items do you carry?\pBut fine, since you’ve reached me,\nyour reward will be with me till later."
+}
+
+text Naranja_Route110_G29_M01_Text_0819C9BD {
+    "Scrub that smug smirk from your face!\nIt’s much too early to think you’ve won!\pI’ll make new tricks to stump you, I will.\nYou may mock me only when you’re done.\pCome back for the next exciting\ninstallment!"
+}
+
+text Naranja_Route110_G29_M01_Text_0819CA8B {
+    "Now, now! You’re ignoring me now?\nNow that, I consider heartbreaking!"
+}

@@ -1,0 +1,77 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMellsweet_G14_M02_MapScripts {
+}
+
+script Naranja_IslaMellsweet_G14_M02_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId1 {
+    loadword(0, Naranja_IslaMellsweet_G14_M02_Text_0818D536)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M02_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
+    loadword(0, Naranja_IslaMellsweet_G14_M02_Text_0818D596)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M02_EventScript_OBJ_EVENT_GFX_WINGULL_LocalId3 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    loadword(0, Naranja_IslaMellsweet_G14_M02_Text_0818D61E)
+    callstd(4)
+    waitmoncry
+    closemessage
+    setflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00E0)
+    clearflag(FLAG_HIDE_ISLA_SHAMOUTI_G12_M07_WINGULL)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M02_EventScript_Sub_0815A8AE)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_IslaMellsweet_G14_M02_EventScript_Sub_0815A8B9)
+    removeobject(LOCALID_ISLA_MELLSWEET_G14_M02_WINGULL)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M02_EventScript_Sub_0815A8AE {
+    applymovement(LOCALID_ISLA_MELLSWEET_G14_M02_WINGULL, Naranja_IslaMellsweet_G14_M02_Movement_0815A8C4)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaMellsweet_G14_M02_EventScript_Sub_0815A8B9 {
+    applymovement(LOCALID_ISLA_MELLSWEET_G14_M02_WINGULL, Naranja_IslaMellsweet_G14_M02_Movement_0815A8CB)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+movement Naranja_IslaMellsweet_G14_M02_Movement_0815A8C4 {
+    walk_fast_right
+    walk_fast_down
+    walk_fast_down
+    walk_fast_left
+    walk_fast_down
+    delay_8
+}
+
+movement Naranja_IslaMellsweet_G14_M02_Movement_0815A8CB {
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    delay_8
+}
+
+text Naranja_IslaMellsweet_G14_M02_Text_0818D536 {
+    "My little sister exchanges MAIL with\nher boyfriend in FORTREE.\pI don’t envy her one bit at all."
+}
+
+text Naranja_IslaMellsweet_G14_M02_Text_0818D596 {
+    "Even though I can’t see my friend in\nFORTREE, my POKéMON carries MAIL back\land forth for us.\pI’m not lonesome, even though we’re\napart."
+}
+
+text Naranja_IslaMellsweet_G14_M02_Text_0818D61E {
+    "WINGULL: Pihyoh!"
+}

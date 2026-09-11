@@ -1,0 +1,428 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Norte_G30_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Norte_G30_M00_OnTransition
+}
+
+script Naranja_Norte_G30_M00_OnTransition {
+    setflag(FLAG_NARANJA_NORTE_EVENT_COMPLETE_0844)
+    compare_var_to_value(VAR_NARANJA_NORTE_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816355F)
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_0816355F {
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 2)
+    return
+}
+
+script Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId1 {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_NORTE_STORY_STATE, 0xA)
+    goto_if(GREATER_THAN_OR_EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638D2)
+    compare_var_to_value(VAR_NARANJA_NORTE_STORY_STATE, 2)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635B5)
+    compare_var_to_value(VAR_NARANJA_NORTE_STORY_STATE, 1)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635AB)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E4E6)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x10E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 1)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E59B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081635AB {
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E59B)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081635B5 {
+    checkitem(ITEM_SOOT_SACK, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635E4)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E65B)
+    callstd(4)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0xFA)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163818)
+    message(Naranja_Norte_G30_M00_Text_0819E757)
+    waitmessage
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081635EE)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081635E4 {
+    loadword(0, Naranja_Norte_G30_M00_Text_0819EAC1)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081635EE {
+    setvar(VAR_0x8009, 0)
+    special(ShowGlassWorkshopMenu)
+    waitstate
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163660)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816369C)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081636D8)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163714)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163750)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816378C)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081637CD)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816380E)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816380E)
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163660 {
+    setvar(VAR_0x8008, 0x27)
+    bufferitemname(0, 0x8008)
+    setvar(VAR_0x800A, 0xFA)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0xFA)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xA)
+    subvar(VAR_ASH_GATHER_COUNT, 0xFA)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_0816369C {
+    setvar(VAR_0x8008, 0x28)
+    bufferitemname(0, 0x8008)
+    setvar(VAR_0x800A, 0x1F4)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1F4)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xB)
+    subvar(VAR_ASH_GATHER_COUNT, 0x1F4)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081636D8 {
+    setvar(VAR_0x8008, 0x29)
+    bufferitemname(0, 0x8008)
+    setvar(VAR_0x800A, 0x1F4)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1F4)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xC)
+    subvar(VAR_ASH_GATHER_COUNT, 0x1F4)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163714 {
+    setvar(VAR_0x8008, 0x2B)
+    bufferitemname(0, 0x8008)
+    setvar(VAR_0x800A, 0x3E8)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x3E8)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xD)
+    subvar(VAR_ASH_GATHER_COUNT, 0x3E8)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163750 {
+    setvar(VAR_0x8008, 0x2A)
+    bufferitemname(0, 0x8008)
+    setvar(VAR_0x800A, 0x3E8)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x3E8)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xE)
+    subvar(VAR_ASH_GATHER_COUNT, 0x3E8)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_0816378C {
+    setvar(VAR_0x8009, 1)
+    setvar(VAR_0x8008, 0xD)
+    bufferdecorationname(0, 0x8008)
+    setvar(VAR_0x800A, 0x1770)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1770)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0xF)
+    subvar(VAR_ASH_GATHER_COUNT, 0x1770)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081637CD {
+    setvar(VAR_0x8009, 1)
+    setvar(VAR_0x8008, 6)
+    bufferdecorationname(0, 0x8008)
+    setvar(VAR_0x800A, 0x1F40)
+    compare_var_to_value(VAR_ASH_GATHER_COUNT, 0x1F40)
+    goto_if(LESS_THAN, Naranja_Norte_G30_M00_EventScript_Sub_08163830)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E7CD)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 0x10)
+    subvar(VAR_ASH_GATHER_COUNT, 0x1F40)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_08163851)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_0816380E {
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E990)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163818 {
+    setvar(VAR_0x800A, 0xFA)
+    subvar(VAR_0x800A, 0x4048)
+    buffernumberstring(0, VAR_0x800A)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E697)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163830 {
+    subvar(VAR_0x800A, 0x4048)
+    buffernumberstring(1, VAR_0x800A)
+    message(Naranja_Norte_G30_M00_Text_0819E890)
+    waitmessage
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081635EE)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163845 {
+    message(Naranja_Norte_G30_M00_Text_0819E802)
+    waitmessage
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081635EE)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163851 {
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E827)
+    callstd(4)
+    closemessage
+    fadescreen(1)
+    playse(SE_SELECT)
+    delay(0x1E)
+    fadescreen(0)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E9D7)
+    callstd(4)
+    compare_var_to_value(VAR_0x8009, 0)
+    call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163889)
+    compare_var_to_value(VAR_0x8009, 1)
+    call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638A1)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 2)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163889 {
+    setorcopyvar(VAR_0x8000, VAR_0x8008)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638B4)
+    return
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081638A1 {
+    setorcopyvar(VAR_0x8000, VAR_0x8008)
+    callstd(7)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638C3)
+    return
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081638B4 {
+    call(Naranja_Route110_G29_M00_EventScript_Sub_081A02A5)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819EA06)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081638C3 {
+    call(Naranja_Route110_G29_M00_EventScript_Sub_081A02B8)
+    loadword(0, Naranja_Norte_G30_M00_Text_0819EA64)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081638D2 {
+    copyvar(VAR_0x8000, VAR_NARANJA_NORTE_STORY_STATE)
+    compare_var_to_value(VAR_0x8000, 0xA)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163925)
+    compare_var_to_value(VAR_0x8000, 0xB)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163939)
+    compare_var_to_value(VAR_0x8000, 0xC)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816394D)
+    compare_var_to_value(VAR_0x8000, 0xD)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163961)
+    compare_var_to_value(VAR_0x8000, 0xE)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163975)
+    compare_var_to_value(VAR_0x8000, 0xF)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163989)
+    compare_var_to_value(VAR_0x8000, 0x10)
+    goto_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816399D)
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163925 {
+    setvar(VAR_0x8009, 0)
+    setvar(VAR_0x8008, 0x27)
+    bufferitemname(0, 0x8008)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163939 {
+    setvar(VAR_0x8009, 0)
+    setvar(VAR_0x8008, 0x28)
+    bufferitemname(0, 0x8008)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_0816394D {
+    setvar(VAR_0x8009, 0)
+    setvar(VAR_0x8008, 0x29)
+    bufferitemname(0, 0x8008)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163961 {
+    setvar(VAR_0x8009, 0)
+    setvar(VAR_0x8008, 0x2B)
+    bufferitemname(0, 0x8008)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163975 {
+    setvar(VAR_0x8009, 0)
+    setvar(VAR_0x8008, 0x2A)
+    bufferitemname(0, 0x8008)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_08163989 {
+    setvar(VAR_0x8009, 1)
+    setvar(VAR_0x8008, 0xD)
+    bufferdecorationname(0, 0xD)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_0816399D {
+    setvar(VAR_0x8009, 1)
+    setvar(VAR_0x8008, 6)
+    bufferdecorationname(0, 6)
+    goto(Naranja_Norte_G30_M00_EventScript_Sub_081639B1)
+}
+
+script Naranja_Norte_G30_M00_EventScript_Sub_081639B1 {
+    loadword(0, Naranja_Norte_G30_M00_Text_0819E9D7)
+    callstd(4)
+    compare_var_to_value(VAR_0x8009, 0)
+    call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163889)
+    compare_var_to_value(VAR_0x8009, 1)
+    call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638A1)
+    setvar(VAR_NARANJA_NORTE_STORY_STATE, 2)
+    release
+    end
+}
+
+script Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId2 {
+    loadword(0, Naranja_Norte_G30_M00_Text_0819EB3B)
+    callstd(2)
+    end
+}
+
+text Naranja_Norte_G30_M00_Text_0819E4E6 {
+    "Nos ayudaste muchìsimo,  \nayudando a mi hermano.\p¿Cómo podrìa ayudarte?\p¡Ya sé!\pTen este saco y recoge el ampo,\nlos copos de nieve de las islas del norte.\pCon ampo haremos cristal."
+}
+
+text Naranja_Norte_G30_M00_Text_0819E59B {
+    "La blancura,\nel ampo\lquedará recogida en el saco.\py asì podré fabricarte\ndeslumbrantes regalos\p…deslumbrantes como el ampo.\pSolo camina bajo la nieve del norte\ny cuando tengas bastante… ¡Ven!"
+}
+
+text Naranja_Norte_G30_M00_Text_0819E65B {
+    "Have you collected ashes, huff-puff?\nLet me see, huff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819E697 {
+    "Hmmm...\nThere’s not enough ash here, huff-puff.\lI can’t make glass with this, huff-puff.\pLet’s see... {STR_VAR_1} is the number of steps\nyou’ll need to walk for me to make you\la BLUE FLUTE, huff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819E757 {
+    "Oh!\nYou’ve got a lot of ashes, huff-puff!\pI’ll make you a glass item, huff-puff!\nWhich one would you like, huff-puff?"
+}
+
+text Naranja_Norte_G30_M00_Text_0819E7CD {
+    "A {STR_VAR_1}, huff-puff?\nIs that the one for you, huff-puff?"
+}
+
+text Naranja_Norte_G30_M00_Text_0819E802 {
+    "Which one would you like, huff-puff?"
+}
+
+text Naranja_Norte_G30_M00_Text_0819E827 {
+    "A {STR_VAR_1} it is, then, huff-puff!\pOkay! I’ll make it for you, huff-puff.\nJust wait a little while, huff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819E890 {
+    "A {STR_VAR_1}, huff-puff?\pThere’s not enough ash here to make\nthat, though, huff-puff.\pLet’s see... {STR_VAR_2} is the number of steps\nyou’ll need to walk through volcanic ash\lfor me to make that item, huff-puff.\pWhich item would you rather have me\nmake instead, huff-puff?"
+}
+
+text Naranja_Norte_G30_M00_Text_0819E990 {
+    "You’ve collected all that ash, but you\ndon’t want anything, huff-puff?"
+}
+
+text Naranja_Norte_G30_M00_Text_0819E9D7 {
+    "Ah, I’ve finished your {STR_VAR_1}.\nTake it, huff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819EA06 {
+    "Oh?\nYou’ve no room in your BAG, huff-puff.\pI’ll hold on to it, so come back later,\nhuff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819EA64 {
+    "Oh?\nYou’ve no room in your PC, huff-puff?\pI’ll hold on to it, so come back later,\nhuff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819EAC1 {
+    "Hah? You haven’t got your AMPO SACO\nwith you, huff-puff.\pYou have to keep it with you to collect\nvolcanic ash, huff-puff."
+}
+
+text Naranja_Norte_G30_M00_Text_0819EB3B {
+    "It’s fun to blow a glass flute while my\nboss is talking.\pHuff-huff! Puff-puff!"
+}

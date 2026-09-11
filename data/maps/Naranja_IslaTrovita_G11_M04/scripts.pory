@@ -1,0 +1,263 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaTrovita_G11_M04_MapScripts {
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sign_1 {
+    lockall
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184321)
+    callstd(4)
+    goto(Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1)
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1 {
+    message(Naranja_IslaTrovita_G11_M04_Text_08184368)
+    waitmessage
+    multichoicegrid(8, 1, 0xD, 3, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A50)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A5E)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A6C)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A7A)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A88)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A96)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A96)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A50 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184389)
+    callstd(4)
+    goto(Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1)
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A5E {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184447)
+    callstd(4)
+    goto(Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1)
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A6C {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_081844EC)
+    callstd(4)
+    goto(Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1)
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A7A {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_081845A5)
+    callstd(4)
+    goto(Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1)
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A88 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184627)
+    callstd(4)
+    goto(Naranja_IslaTrovita_G11_M04_EventScript_Sub_081579F1)
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157A96 {
+    releaseall
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId1 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_0818480E)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId2 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_0818483C)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId3 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184873)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_OBJ_EVENT_GFX_LASS_LocalId4 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_081848D8)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId5 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184988)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sign_5 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184A17)
+    callstd(3)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId6 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0113)
+    goto_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157B34)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157B1E)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157B29)
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_081846A2)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xB7)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    closemessage
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0113)
+    release
+    end
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157B1E {
+    applymovement(32783, Naranja_IslaTrovita_G11_M04_Movement_08157B60)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157B29 {
+    applymovement(32783, Naranja_IslaTrovita_G11_M04_Movement_08157B49)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_IslaTrovita_G11_M04_EventScript_Sub_08157B34 {
+    loadword(0, Naranja_IslaTrovita_G11_M04_Text_08184737)
+    callstd(4)
+    closemessage
+    applymovement(32783, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+movement Naranja_IslaTrovita_G11_M04_Movement_08157B49 {
+    walk_left
+    walk_down
+    walk_down
+    walk_right
+    walk_in_place_faster_down
+    delay_16
+    delay_16
+    delay_16
+    walk_down
+    walk_in_place_faster_left
+    delay_16
+    delay_16
+    walk_right
+    delay_16
+    delay_16
+    delay_8
+    walk_up
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_right
+}
+
+movement Naranja_IslaTrovita_G11_M04_Movement_08157B60 {
+    walk_right
+    walk_right
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_in_place_faster_down
+    delay_16
+    delay_16
+    delay_16
+    walk_down
+    walk_in_place_faster_left
+    delay_16
+    delay_16
+    walk_right
+    delay_16
+    delay_16
+    delay_8
+    walk_up
+    walk_right
+    walk_up
+    walk_up
+    walk_left
+    walk_left
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184321 {
+    "The blackboard lists status changes\nthat may affect POKéMON in battle."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184368 {
+    "Which topic do you want to read?"
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184389 {
+    "If a POKéMON is poisoned, it will\nsteadily lose HP.\pThe effects of poison remain after\na battle.\pA poisoned POKéMON’s HP will drop\nwhile it is traveling.\pHeal a poisoning using an ANTIDOTE."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184447 {
+    "If a POKéMON becomes paralyzed,\nits SPEED drops.\pIt may also not be able to move while\nit is in battle.\pParalysis remains after battle.\nCure it using a PARLYZ HEAL."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_081844EC {
+    "If a POKéMON falls asleep, it will be\nunable to attack.\pA POKéMON may wake up on its own,\nbut if a battle ends while it is sleeping,\lit will stay asleep.\pWake it up using an AWAKENING."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_081845A5 {
+    "A burn reduces ATTACK power, and it\nsteadily reduces the victim’s HP.\pA burn lingers after battle.\nCure a burn using a BURN HEAL."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184627 {
+    "If a POKéMON is frozen, it becomes\ncompletely helpless.\pIt will remain frozen after battle.\nThaw it out using an ICE HEAL."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_081846A2 {
+    "Students who don’t study get a little\ntaste of my QUICK CLAW.\pWhether or not you are a good student \nwill be evident from the way you use\lthis item."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184737 {
+    "A POKéMON holding the QUICK CLAW will\noccasionally speed up and get to move\lbefore its opponent.\pThere are many other items that are\nmeant to be held by POKéMON.\pJust those alone will give you many\ntopics to study!"
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_0818480E {
+    "I’m trading POKéMON with my friend\nright now."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_0818483C {
+    "I always wanted a SEEDOT, and\nI’m finally getting one!"
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184873 {
+    "POKéMON can hold items, but they\ndon’t know what to do with man-made\litems like POTION and ANTIDOTE."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_081848D8 {
+    "You know how some POKéMON moves can\nconfuse a POKéMON?\pA confused POKéMON will sometimes\nattack itself without meaning to.\pBut once it leaves battle, it will\nreturn to normal."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184988 {
+    "A POKéMON holding a BERRY will heal\nitself...\pThere are many kinds of items that\nPOKéMON can hold...\pBoy, it sure is hard taking notes\ndown..."
+}
+
+text Naranja_IslaTrovita_G11_M04_Text_08184A17 {
+    "It’s this student’s notebook...\pPOKéMON are to be caught using\nPOKé BALLS.\pUp to six POKéMON can accompany\na TRAINER.\pA TRAINER is someone who catches\nPOKéMON, raises them, and battles\lwith them.\pA TRAINER’s mission is to defeat the\nstrong TRAINERS who await challengers\lin POKéMON GYMS."
+}

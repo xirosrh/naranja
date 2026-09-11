@@ -1,0 +1,322 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarin_G10_M01_MapScripts {
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_005A)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815686E)
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0059)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081567D1)
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08180F9F)
+    callstd(4)
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181016)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156824)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156817)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081567D1 {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181016)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156824)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156817)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081567F0 {
+    message(Naranja_IslaMandarin_G10_M01_Text_081810B1)
+    waitmessage
+    multichoice(0x15, 8, 0xC, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815682D)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156847)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156817 {
+    setflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0059)
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181067)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156824 {
+    setflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_005A)
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_081567F0)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815682D {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181332)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x103)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156861)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156847 {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_0818134A)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x110)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156861)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156861 {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181362)
+    callstd(4)
+    special(SwapRegisteredBike)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815686E {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_081813A0)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815688D)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081568BF)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815688D {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_081813D4)
+    callstd(4)
+    checkitem(ITEM_ACRO_BIKE, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081568C9)
+    checkitem(ITEM_MACH_BIKE, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081568EA)
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181498)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081568BF {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181469)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081568C9 {
+    incrementgamestat(4)
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181439)
+    callstd(4)
+    removeitem(ITEM_ACRO_BIKE, 1)
+    setorcopyvar(VAR_0x8000, 0x103)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156861)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081568EA {
+    incrementgamestat(4)
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181408)
+    callstd(4)
+    removeitem(ITEM_MACH_BIKE, 1)
+    setorcopyvar(VAR_0x8000, 0x110)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156861)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2 {
+    loadword(0, Naranja_IslaMandarin_G10_M01_Text_08181568)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sign_1 {
+    message(Naranja_IslaMandarin_G10_M01_Text_081815EA)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156920)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156920 {
+    multichoice(0, 0, 0x2B, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156962)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815696E)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815697A)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156986)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156986)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156962 {
+    message(Naranja_IslaMandarin_G10_M01_Text_0818162C)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156920)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815696E {
+    message(Naranja_IslaMandarin_G10_M01_Text_081816F5)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156920)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_0815697A {
+    message(Naranja_IslaMandarin_G10_M01_Text_081817BF)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156920)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156986 {
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sign_2 {
+    message(Naranja_IslaMandarin_G10_M01_Text_08181892)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156994)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156994 {
+    multichoice(0, 0, 0x2C, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569D6)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569E2)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569EE)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569FA)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569FA)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569D6 {
+    message(Naranja_IslaMandarin_G10_M01_Text_081818D4)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156994)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569E2 {
+    message(Naranja_IslaMandarin_G10_M01_Text_0818199A)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156994)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569EE {
+    message(Naranja_IslaMandarin_G10_M01_Text_08181A3D)
+    waitmessage
+    goto(Naranja_IslaMandarin_G10_M01_EventScript_Sub_08156994)
+}
+
+script Naranja_IslaMandarin_G10_M01_EventScript_Sub_081569FA {
+    release
+    end
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08180F9F {
+    "Well, well, what have we here?\nA most energetic customer!\pMe? You may call me RYDEL.\nI’m the owner of this cycle shop."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181016 {
+    "RYDEL: Your RUNNING SHOES...\nThey’re awfully filthy.\pDid you come from far away?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181067 {
+    "RYDEL: Is that right?\pThen, I guess you have no need for\nany of my BIKES."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081810B1 {
+    "RYDEL: Hm, hm... ... ... ... ...\n... ... ... ... ... ... ... ...\pYou’re saying that you came all this\nway from LITTLEROOT?\pMy goodness!\nThat’s ridiculously far!\pIf you had one of my BIKES, you could\ngo anywhere easily while feeling the\lgentle caress of the wind!\pI’ll tell you what!\nI’ll give you a BIKE!\pOh, wait a second!\pI forgot to tell you that there are\ntwo kinds of BIKES!\pThey are the MACH BIKE and the\nACRO BIKE!\pMACH BIKE is for cyclists who want\nto feel the wind with their bodies!\pAnd an ACRO BIKE is for those who\nprefer technical rides!\pI’m a real sweetheart, so you can\nhave whichever one you like!\pWhich one will you choose?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181332 {
+    "{PLAYER} chose the MACH BIKE."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_0818134A {
+    "{PLAYER} chose the ACRO BIKE."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181362 {
+    "RYDEL: If you get the urge to switch\nBIKES, just come see me!"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081813A0 {
+    "RYDEL: Oh? Were you thinking about\nswitching BIKES?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081813D4 {
+    "RYDEL: Okay, no problem!\nI’ll switch BIKES for you!"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181408 {
+    "{PLAYER} got the MACH BIKE exchanged\nfor an ACRO BIKE."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181439 {
+    "{PLAYER} got the ACRO BIKE exchanged\nfor a MACH BIKE."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181469 {
+    "RYDEL: Good, good!\nI’m happy that you like it!"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181498 {
+    "Oh? What happened to that BIKE I\ngave you?\pOh, I get it, you stored it using your PC.\pWell, take it out of PC storage,\nand I’ll be happy to exchange it!\pMay the wind always be at your back\non your adventure!"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181568 {
+    "I’m learning about BIKES while\nI work here.\pIf you need advice on how to ride your\nBIKE, there’re a couple handbooks in\lthe back."
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081815EA {
+    "It’s a handbook on the MACH BIKE.\pWhich page do you want to read?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_0818162C {
+    "A BIKE moves in the direction that\nthe + Control Pad is pressed.\pIt will speed up once it gets rolling.\pTo stop, release the + Control Pad.\nThe BIKE will slow to a stop.\pWant to read a different page?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081816F5 {
+    "A MACH BIKE is speedy, but it can’t\nstop very quickly.\pIt gets a little tricky to get around\na corner.\pRelease the + Control Pad a little\nbefore the corner and slow down.\pWant to read a different page?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081817BF {
+    "There are small sandy slopes throughout\nthe HOENN region.\pThe loose, crumbly sand makes it\nimpossible to climb normally.\pBut if you have a MACH BIKE, you can\nzip up a sandy slope.\pWant to read a different page?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181892 {
+    "It’s a handbook on the ACRO BIKE.\pWhich page do you want to read?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_081818D4 {
+    "Press the B Button while riding, and the\nfront wheel lifts up.\pYou can zip around with the front\nwheel up using the + Control Pad.\pThis technique is called a wheelie.\pWant to read a different page?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_0818199A {
+    "Keeping the B Button pressed, your\nBIKE can hop on the spot.\pThis technique is called a bunny hop.\pYou can ride while hopping, too.\pWant to read a different page?"
+}
+
+text Naranja_IslaMandarin_G10_M01_Text_08181A3D {
+    "Press the B Button and the + Control\nPad at the same time to jump.\pPress the + Control Pad to the side\nto jump sideways.\pPress it backwards to make the BIKE\nchange directions while jumping.\pWant to read a different page?"
+}

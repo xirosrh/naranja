@@ -1,0 +1,60 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMellsweet_G14_M06_MapScripts {
+}
+
+script Naranja_IslaMellsweet_G14_M06_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0098)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M06_EventScript_Sub_0815A9B1)
+    loadword(0, Naranja_IslaMellsweet_G14_M06_Text_0818D909)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaMellsweet_G14_M06_EventScript_Sub_0815A9BB)
+    loadword(0, Naranja_IslaMellsweet_G14_M06_Text_0818D9A9)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x108)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0098)
+    loadword(0, Naranja_IslaMellsweet_G14_M06_Text_0818D9E3)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M06_EventScript_Sub_0815A9B1 {
+    loadword(0, Naranja_IslaMellsweet_G14_M06_Text_0818DA44)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMellsweet_G14_M06_EventScript_Sub_0815A9BB {
+    loadword(0, Naranja_IslaMellsweet_G14_M06_Text_0818DA26)
+    callstd(4)
+    release
+    end
+}
+
+text Naranja_IslaMellsweet_G14_M06_Text_0818D909 {
+    "Hey there, TRAINER!\nA SUPER ROD really is super!\pSay all you want, but this baby can\ncatch POKéMON off the seafloor!\pWhat do you think?\nYou want it, don’t you?"
+}
+
+text Naranja_IslaMellsweet_G14_M06_Text_0818D9A9 {
+    "You bet, you bet!\nAfter all, a SUPER ROD is really super!"
+}
+
+text Naranja_IslaMellsweet_G14_M06_Text_0818D9E3 {
+    "If there’s any water, try dropping in\nyour ROD and see what bites!"
+}
+
+text Naranja_IslaMellsweet_G14_M06_Text_0818DA26 {
+    "Hunh?\nDon’t you like to fish?"
+}
+
+text Naranja_IslaMellsweet_G14_M06_Text_0818DA44 {
+    "Go after the seafloor POKéMON with\nyour SUPER ROD."
+}

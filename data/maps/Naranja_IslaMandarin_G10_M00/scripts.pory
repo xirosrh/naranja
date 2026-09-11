@@ -1,0 +1,280 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaMandarin_G10_M00_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_IslaMandarin_G10_M00_OnLoad
+}
+
+script Naranja_IslaMandarin_G10_M00_OnLoad {
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081565A7)
+    copyvar(VAR_0x8000, VAR_NARANJA_ISLA_MANDARIN_STORY_STATE)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156491)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815657D)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815658B)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156599)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156491 {
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0063)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815649B)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815649B {
+    setmetatile(4, 7, 0x230, 0)
+    setmetatile(4, 8, 0x238, 0)
+    setmetatile(5, 7, 0x231, 0)
+    setmetatile(5, 8, 0x239, 0)
+    setmetatile(3, 8, 0x242, 1)
+    setmetatile(3, 9, 0x21A, 0)
+    setmetatile(3, 0xA, 0x251, 0)
+    setmetatile(1, 0xA, 0x222, 0)
+    setmetatile(1, 0xB, 0x22A, 1)
+    setmetatile(2, 0xA, 0x223, 0)
+    setmetatile(2, 0xB, 0x22B, 1)
+    setmetatile(4, 0xA, 0x222, 0)
+    setmetatile(4, 0xB, 0x22A, 1)
+    setmetatile(5, 0xA, 0x223, 0)
+    setmetatile(5, 0xB, 0x22B, 1)
+    setmetatile(6, 0xB, 0x242, 1)
+    setmetatile(6, 0xC, 0x21A, 0)
+    setmetatile(6, 0xD, 0x251, 0)
+    setmetatile(3, 0xB, 0x241, 1)
+    setmetatile(3, 0xC, 0x249, 1)
+    setmetatile(3, 0xD, 0x250, 1)
+    setmetatile(4, 0xD, 0x230, 0)
+    setmetatile(4, 0xE, 0x238, 0)
+    setmetatile(5, 0xD, 0x231, 0)
+    setmetatile(5, 0xE, 0x239, 0)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815657D {
+    setvar(VAR_0x8004, 0)
+    special(MauvilleGymPressSwitch)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156491)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815658B {
+    setvar(VAR_0x8004, 1)
+    special(MauvilleGymPressSwitch)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156491)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156599 {
+    setvar(VAR_0x8004, 2)
+    special(MauvilleGymPressSwitch)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156491)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_081565A7 {
+    special(MauvilleGymDeactivatePuzzle)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Trigger_1 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA)
+    compare_var_to_value(VAR_NARANJA_ISLA_MANDARIN_STORY_STATE, 1)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA)
+    setvar(VAR_NARANJA_ISLA_MANDARIN_STORY_STATE, 1)
+    setvar(VAR_0x8004, 0)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566BA)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Trigger_2 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA)
+    compare_var_to_value(VAR_NARANJA_ISLA_MANDARIN_STORY_STATE, 2)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA)
+    setvar(VAR_NARANJA_ISLA_MANDARIN_STORY_STATE, 2)
+    setvar(VAR_0x8004, 1)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566BA)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Trigger_3 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA)
+    compare_var_to_value(VAR_NARANJA_ISLA_MANDARIN_STORY_STATE, 3)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA)
+    setvar(VAR_NARANJA_ISLA_MANDARIN_STORY_STATE, 3)
+    setvar(VAR_0x8004, 2)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566BA)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566BA {
+    special(MauvilleGymSetDefaultBarriers)
+    special(MauvilleGymPressSwitch)
+    special(DrawWholeMapView)
+    playse(SE_UNLOCK)
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0063)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566E1)
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0063)
+    goto_if(LESS_THAN, Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DC)
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DA {
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566DC {
+    setflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0063)
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566E1 {
+    clearflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0063)
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_191, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180956, Naranja_IslaMandarin_G10_M00_Text_08180997)
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_081809D1)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_194, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180A05, Naranja_IslaMandarin_G10_M00_Text_08180A42)
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_08180A5E)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_323, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180AE0, Naranja_IslaMandarin_G10_M00_Text_08180B06)
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_08180B1D)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_649, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180B5A, Naranja_IslaMandarin_G10_M00_Text_08180B93)
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_08180BAE)
+    callstd(6)
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_2_LocalId6 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156757)
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_08180815)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156757 {
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_0818091D)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sign_2 {
+    lockall
+    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781)
+    goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B)
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781 {
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_08180F64)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B {
+    loadword(0, Naranja_IslaMandarin_G10_M00_Text_08180F4A)
+    callstd(4)
+    releaseall
+    end
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180815 {
+    "Hey, how’s it going, the CHAMPION-\nbound {PLAYER}?\pWATTSON, the LEADER of MAUVILLE\nGYM, uses ELECTRIC-type POKéMON.\pIf you challenge him with WATER-type\nPOKéMON, he’ll zap them! Bzzt!\pAnd, he’s put in switch-controlled doors\nall over his GYM! Eccentric!\pHey, go for it!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_0818091D {
+    "Whoa, you’re electrifying!\nYou’ve powered the door open!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180956 {
+    "My electric soul, it’ll shatter your\ndreams whole, whoah-yeahah!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180997 {
+    "That was plugged in, amped up,\nover-driven electric, man!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_081809D1 {
+    "POKéMON and rock, it’s all about heart,\nwhoah yeah!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180A05 {
+    "I trained under WATTSON!\nThere ain’t no way I’d lose easily!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180A42 {
+    "Unplugged and turned off..."
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180A5E {
+    "WATTSON, our GYM LEADER, has been\naround for a long, long time.\pHe was battling even before your\ndaddy was born, that tough coot."
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180AE0 {
+    "This GYM’s got puzzles!\nIsn’t it fun?"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180B06 {
+    "It’s no fun to lose..."
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180B1D {
+    "WATTSON says he likes setting up\nlittle traps with switches."
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180B5A {
+    "With my charm and my POKéMON’s moves,\nyou’ll be shocked!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180B93 {
+    "I’m shocked by your power!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180BAE {
+    "I’ve heard that MAUVILLE was founded\nby WATTSON.\pHe was a TRAINER long before we\nbecame TRAINERS.\lHe must know all sorts of things!"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180F4A {
+    "MAUVILLE CITY POKéMON GYM"
+}
+
+text Naranja_IslaMandarin_G10_M00_Text_08180F64 {
+    "MAUVILLE CITY POKéMON GYM\pWATTSON’S CERTIFIED TRAINERS:\n{PLAYER}"
+}

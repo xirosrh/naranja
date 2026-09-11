@@ -1,0 +1,175 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route125_G00_M40_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route125_G00_M40_OnTransition
+}
+
+script Naranja_Route125_G00_M40_OnTransition {
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_IslaKumquat_G00_M05_EventScript_Sub_081A02C1)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_161, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C0FCF, Naranja_Route125_G00_M40_Text_081C1002)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C1013)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_162, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C104B, Naranja_Route125_G00_M40_Text_081C1073)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C1083)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_451, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C10C3, Naranja_Route125_G00_M40_Text_081C10FB)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C110C)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_452, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C1136, Naranja_Route125_G00_M40_Text_081C1175)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C117F)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId5 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_492, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C11AF, Naranja_Route125_G00_M40_Text_081C11ED)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route125_G00_M40_EventScript_Sub_08151FB1)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C1208)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_Sub_08151FB1 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE125_492, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C1282, Naranja_Route125_G00_M40_Text_081C12C5)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C12EE)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_LASS_LocalId6 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE125_678, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C13A1, Naranja_Route125_G00_M40_Text_081C13FF, Naranja_Route125_G00_M40_Text_081C146E)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C141C)
+    callstd(6)
+    end
+}
+
+script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_LASS_LocalId7 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE125_678, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C14AB, Naranja_Route125_G00_M40_Text_081C14E7, Naranja_Route125_G00_M40_Text_081C154F)
+    loadword(0, Naranja_Route125_G00_M40_Text_081C1508)
+    callstd(6)
+    end
+}
+
+text Naranja_Route125_G00_M40_Text_081C0FCF {
+    "I heard you approaching, so I hung\naround for you!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1002 {
+    "I beg for peace!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1013 {
+    "Sound travels faster in water than\nit does through air."
+}
+
+text Naranja_Route125_G00_M40_Text_081C104B {
+    "Hey, there!\nCheck out my sweet POKéMON!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1073 {
+    "I floundered..."
+}
+
+text Naranja_Route125_G00_M40_Text_081C1083 {
+    "I was blown away by HORSEA’s charm,\nso I started swimming, too."
+}
+
+text Naranja_Route125_G00_M40_Text_081C10C3 {
+    "I’m tired of swimming.\nAre you up for a battle with me?"
+}
+
+text Naranja_Route125_G00_M40_Text_081C10FB {
+    "You’re too much!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C110C {
+    "Whew...\nWhich way is it to MOSSDEEP CITY?"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1136 {
+    "How would you like to take on the\nWATER-type POKéMON I raised?"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1175 {
+    "I lost..."
+}
+
+text Naranja_Route125_G00_M40_Text_081C117F {
+    "Your power... You’re the real deal.\nI’m amazed!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C11AF {
+    "Ahoy! I’m a buff, tough SAILOR!\nI’ve braved the world’s seas!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C11ED {
+    "Gwrroooar!\nI couldn’t win!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1208 {
+    "The tide ebbs and flows inside the\nSHOAL CAVE.\pBy the way, it’s about six hours from\nhigh tide to low tide. Did you know?"
+}
+
+text Naranja_Route125_G00_M40_Text_081C1282 {
+    "It’s high time I get my payback\nfrom you! Come on, we’re battling!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C12C5 {
+    "I couldn’t win!\nI flat out couldn’t win!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C12EE {
+    "The SHOAL CAVE...\pThere are places you can and can’t\nget to depending on the rise and fall\lof the tide.\pBy the way, it’s about six hours from\nhigh tide to low tide. Don’t forget!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C13A1 {
+    "KIM: A funny old man lives in the\nSHOAL CAVE. Someone told me.\lAre you going to see him, too?"
+}
+
+text Naranja_Route125_G00_M40_Text_081C13FF {
+    "KIM: I thought we would win."
+}
+
+text Naranja_Route125_G00_M40_Text_081C141C {
+    "KIM: A funny old man lives in the\nSHOAL CAVE, doesn’t he?\pLet’s go see him, IRIS!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C146E {
+    "KIM: No, no, no! You need two POKéMON,\nor it’s just no good!"
+}
+
+text Naranja_Route125_G00_M40_Text_081C14AB {
+    "IRIS: KIM, can you tell me what we’re\nlooking for out here?"
+}
+
+text Naranja_Route125_G00_M40_Text_081C14E7 {
+    "IRIS: Oh, we came sort of close."
+}
+
+text Naranja_Route125_G00_M40_Text_081C1508 {
+    "IRIS: KIM, are we really going into\nthe SHOAL CAVE?\lWe’ll get all wet."
+}
+
+text Naranja_Route125_G00_M40_Text_081C154F {
+    "IRIS: Oh, we could never, ever do\nanything like a 2-on-1 battle."
+}

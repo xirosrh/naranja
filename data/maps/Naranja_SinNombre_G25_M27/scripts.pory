@@ -1,0 +1,57 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SinNombre_G25_M27_MapScripts {
+}
+
+script Naranja_SinNombre_G25_M27_EventScript_Trigger_1 {
+    fadescreen(1)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M27_EventScript_Sub_081A43EF)
+    setvar(VAR_0x8005, 0)
+    special(ColosseumPlayerSpotTriggered)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M27_EventScript_Trigger_3 {
+    fadescreen(1)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M27_EventScript_Sub_081A43EF)
+    setvar(VAR_0x8005, 1)
+    special(ColosseumPlayerSpotTriggered)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M27_EventScript_Trigger_2 {
+    fadescreen(1)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M27_EventScript_Sub_081A43EF)
+    setvar(VAR_0x8005, 2)
+    special(ColosseumPlayerSpotTriggered)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M27_EventScript_Trigger_4 {
+    fadescreen(1)
+    special(ChooseHalfPartyForBattle)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SinNombre_G25_M27_EventScript_Sub_081A43EF)
+    setvar(VAR_0x8005, 3)
+    special(ColosseumPlayerSpotTriggered)
+    waitstate
+    end
+}
+
+script Naranja_SinNombre_G25_M27_EventScript_Sub_081A43EF {
+    end
+}

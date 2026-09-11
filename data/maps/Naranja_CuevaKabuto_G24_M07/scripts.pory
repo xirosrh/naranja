@@ -1,0 +1,42 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_CuevaKabuto_G24_M07_MapScripts {
+}
+
+script Naranja_CuevaKabuto_G24_M07_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2 {
+    setorcopyvar(VAR_0x8000, 0x55)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_CuevaKabuto_G24_M07_EventScript_Sub_086B38F4 {
+    loadword(0, Naranja_CuevaKabuto_G24_M07_Text_086B39FB)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_CuevaKabuto_G24_M07_EventScript_OBJ_EVENT_GFX_KECLEON_1_LocalId1 {
+    loadword(0, Naranja_CuevaKabuto_G24_M07_Text_086B8B67)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_CuevaKabuto_G24_M07_EventScript_Sub_086B38F4)
+    delay(0x20)
+    message(Naranja_CuevaKabuto_G24_M07_Text_086B8B9B)
+    callstd(6)
+    end
+}
+
+text Naranja_CuevaKabuto_G24_M07_Text_086B39FB {
+    "Ehh…\nQuizás sea mejor dejarlo así."
+}
+
+text Naranja_CuevaKabuto_G24_M07_Text_086B8B67 {
+    "Hay un fósil incrustado.\n¿Quieres intentar sacarlo?"
+}
+
+text Naranja_CuevaKabuto_G24_M07_Text_086B8B9B {
+    "Se resiste. Es imposible.  "
+}

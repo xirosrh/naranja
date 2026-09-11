@@ -1,0 +1,170 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaKumquat_G13_M15_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_IslaKumquat_G13_M15_OnTransition
+}
+
+script Naranja_IslaKumquat_G13_M15_OnTransition {
+    random(4)
+    copyvar(VAR_TEMP_1, VAR_RESULT)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId2 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818B8CC)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159C1D)
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818BA2B)
+    callstd(4)
+    closemessage
+    applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159C1D {
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818B9DC)
+    callstd(4)
+    closemessage
+    applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId6 {
+    lock
+    faceplayer
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818BD64)
+    callstd(4)
+    closemessage
+    applymovement(32783, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId5 {
+    lock
+    faceplayer
+    copyvar(VAR_0x8000, VAR_TEMP_1)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D19)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D23)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D2D)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D37)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId3 {
+    lock
+    faceplayer
+    copyvar(VAR_0x8000, VAR_TEMP_1)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D19)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D23)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D2D)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D37)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId4 {
+    lock
+    faceplayer
+    copyvar(VAR_0x8000, VAR_TEMP_1)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D19)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D23)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D2D)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D37)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_OBJ_EVENT_GFX_BOY_5_LocalId1 {
+    lock
+    faceplayer
+    copyvar(VAR_0x8000, VAR_TEMP_1)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D19)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D23)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D2D)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D37)
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D19 {
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818BDDB)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D23 {
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818BE14)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D2D {
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818BE57)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_IslaKumquat_G13_M15_EventScript_Sub_08159D37 {
+    loadword(0, Naranja_IslaKumquat_G13_M15_Text_0818BE8E)
+    callstd(4)
+    release
+    end
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818B8CC {
+    "Oh, my, my! Are you traveling alone?\nBut you’re so young! Good for you!\pI’m sure my kids could learn a thing\nor two from you!\pMe? I’m a master of オカキクケS.\pIf I get serious just a little, why, I\ncan concoct great オカキクケS.\pWould you like to learn from me, a\nmaster of オカキクケS?"
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818B9DC {
+    "Oh? Are you sure?\pYou shouldn’t always try to do\neverything by yourself, dear!"
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818BA2B {
+    "Oh, good! You’re a smart soul!\nThis is a bit long, so listen up!\pAre you ready?\pIf you look at オカキクケS, you should see\nthat they are rated on how they feel.\pThe lower the feel rating,\nthe better it is. Don’t forget this!\pA good オカキクケ has a low feel\nrating and a high level.\pA POKéMON can eat more good\nオカキクケS than ordinary ones, too.\pAnd this is important.\pIf you want to make smooth オカキクケS,\nuse different kinds of BERRIES.\pDon’t be stingy - the kinds of BERRIES\naffect the smoothness of オカキクケS.\pAnd another thing.\pThe more people blending BERRIES, the\nsmoother the オカキクケS.\pThat’s why you should talk to other\npeople and make オカキクケS together.\pThat’s about all you need to know to\nmake good オカキクケS.\pIf everyone had POKéMON they love,\nsmooth オカキクケS, and a loving family,\lthe world would be a happier place.\pDon’t give up, dear!"
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818BD64 {
+    "When my wife gave birth to quadruplets,\nyou bet I was shocked.\pBut, now, seeing them play together,\nit makes me happy."
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818BDDB {
+    "We’re having MULTI BATTLES, but I know\nI’m going to win."
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818BE14 {
+    "We like mixing stuff at the RECORD\nCORNER.\pBut what gets mixed up?"
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818BE57 {
+    "We’re going to make super オカキクケS\nwith a BERRY BLENDER!"
+}
+
+text Naranja_IslaKumquat_G13_M15_Text_0818BE8E {
+    "I want to brag about how tough my\nPOKéMON is, so we’re going to enter a\lCONTEST together."
+}

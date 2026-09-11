@@ -1,0 +1,92 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AncientTomb_G24_M68_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_AncientTomb_G24_M68_OnResume
+    MAP_SCRIPT_ON_LOAD: Naranja_AncientTomb_G24_M68_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_AncientTomb_G24_M68_OnTransition
+}
+
+script Naranja_AncientTomb_G24_M68_OnResume {
+    checkflag(FLAG_SYS_POKEDEX_GET)
+    call_if(EQUAL, Naranja_AncientTomb_G24_M68_EventScript_Sub_0815EFD8)
+    end
+}
+
+script Naranja_AncientTomb_G24_M68_EventScript_Sub_0815EFD8 {
+    removeobject(32783)
+    return
+}
+
+script Naranja_AncientTomb_G24_M68_OnTransition {
+    setflag(FLAG_NARANJA_ANCIENT_TOMB_EVENT_COMPLETE_0859)
+    end
+}
+
+script Naranja_AncientTomb_G24_M68_OnLoad {
+    checkflag(FLAG_NARANJA_ANCIENT_TOMB_EVENT_COMPLETE_0852)
+    call_if(LESS_THAN, Naranja_AncientTomb_G24_M68_EventScript_Sub_0815EFEA)
+    end
+}
+
+script Naranja_AncientTomb_G24_M68_EventScript_Sub_0815EFEA {
+    setmetatile(7, 0x13, 0x229, 1)
+    setmetatile(8, 0x13, 0x229, 1)
+    setmetatile(9, 0x13, 0x229, 1)
+    setmetatile(7, 0x14, 0x235, 1)
+    setmetatile(8, 0x14, 0x235, 1)
+    setmetatile(9, 0x14, 0x235, 1)
+    return
+}
+
+script Naranja_AncientTomb_G24_M68_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_ANCIENT_TOMB_EVENT_COMPLETE_0852)
+    goto_if(EQUAL, Naranja_AncientTomb_G24_M68_EventScript_Sub_0815F038)
+    braillemessage(Naranja_AncientTomb_G24_M68_Text_081C552E)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_AncientTomb_G24_M68_EventScript_Sub_0815F038 {
+    loadword(0, Naranja_AncientTomb_G24_M68_Text_081A13BE)
+    callstd(4)
+    releaseall
+    end
+}
+
+script Naranja_AncientTomb_G24_M68_EventScript_Sign_2 {
+    lockall
+    braillemessage(Naranja_AncientTomb_G24_M68_Text_081C552E)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_AncientTomb_G24_M68_EventScript_OBJ_EVENT_GFX_REGISTEEL_LocalId1 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_REGISTEEL, 2)
+    delay(0x28)
+    waitmoncry
+    setwildbattle(SPECIES_REGISTEEL, 0x28, 0)
+    setflag(FLAG_HIDE_ANCIENT_TOMB_G24_M68_REGISTEEL)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(StartRegiBattle)
+    waitstate
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    release
+    end
+}
+
+text Naranja_AncientTomb_G24_M68_Text_081A13BE {
+    "There is a big hole in the wall."
+}
+
+text Naranja_AncientTomb_G24_M68_Text_081C552E {
+    "  ëÛÀÂ+ÉìÒ éÌ+ ìÉÛÌÇ\nÒçáÌ ÀéÎ ßç=ÌÇ\nÀÉÛ ìç ìÒÌ àÙご\nÉé ìÒÌ ÛÉÎÎßÌわ"
+}

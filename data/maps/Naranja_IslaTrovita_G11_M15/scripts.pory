@@ -1,0 +1,25 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_IslaTrovita_G11_M15_MapScripts {
+}
+
+script Naranja_IslaTrovita_G11_M15_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId1 {
+    loadword(0, Naranja_IslaTrovita_G11_M15_Text_0818551D)
+    callstd(2)
+    end
+}
+
+script Naranja_IslaTrovita_G11_M15_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId2 {
+    loadword(0, Naranja_IslaTrovita_G11_M15_Text_0818554D)
+    callstd(2)
+    end
+}
+
+text Naranja_IslaTrovita_G11_M15_Text_0818551D {
+    "DEVON’s PRESIDENT likes to collect\nrare stones."
+}
+
+text Naranja_IslaTrovita_G11_M15_Text_0818554D {
+    "I think the PRESIDENT’s son also\ncollects rare stones."
+}

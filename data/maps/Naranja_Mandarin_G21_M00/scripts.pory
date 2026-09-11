@@ -1,0 +1,88 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Mandarin_G21_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Mandarin_G21_M00_OnTransition
+}
+
+script Naranja_Mandarin_G21_M00_OnTransition {
+    setflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_085A)
+    end
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_Sub_0815C2E8 {
+    loadword(0, Naranja_Mandarin_G21_M00_Text_08193135)
+    callstd(2)
+    end
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId3 {
+    loadword(0, Naranja_Mandarin_G21_M00_Text_081931C1)
+    callstd(2)
+    end
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_Sub_0815C2FA {
+    lock
+    faceplayer
+    checkflag(FLAG_HIDE_MANDARIN_G21_M00_LITTLE_GIRL_1)
+    goto_if(LESS_THAN, Naranja_Mandarin_G21_M00_EventScript_Sub_086B3DD0)
+    loadword(0, Naranja_Mandarin_G21_M00_Text_08192F33)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_Sub_0815C30F {
+    loadword(0, Naranja_Mandarin_G21_M00_Text_086B3DB0)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_Sub_086B3DD0 {
+    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119)
+    goto_if(EQUAL, Naranja_Mandarin_G21_M00_EventScript_Sub_0815C30F)
+    nop
+    setflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119)
+    loadword(0, Naranja_Mandarin_G21_M00_Text_08193049)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0x158)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    loadword(0, Naranja_Mandarin_G21_M00_Text_086B3DB0)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId2 {
+    setflag(FLAG_HIDE_MANDARIN_G00_M31_LITTLE_GIRL_1)
+    goto(Naranja_Mandarin_G21_M00_EventScript_Sub_0815C2FA)
+}
+
+script Naranja_Mandarin_G21_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1 {
+    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119)
+    call_if(EQUAL, Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId1)
+    goto(Naranja_Mandarin_G21_M00_EventScript_Sub_0815C2E8)
+}
+
+text Naranja_Mandarin_G21_M00_Text_08192F33 {
+    "{COLOR 0x06}Mateo: {COLOR 0x01}Esculpo estatuas de cristal,  \ncomo nuestro padre y nuestro abuelo,\p…pero no consigo esculpir\nalgo realmente bueno.\pMi abuelo siempre decìa que se inspiraba\nrecordando las historias\lsobre el {COLOR 0x06}Onix de cristal.\p{COLOR 0x04}{PLAYER}: Yo lo encontraré\npara contarte cada detalle."
+}
+
+text Naranja_Mandarin_G21_M00_Text_08193049 {
+    "{COLOR 0x06}Mateo: {COLOR 0x01}¿Lo conseguiste?\p{COLOR 0x04}PLAYER : …\p…\p{COLOR 0x01}¡Guau!   \n¿Y lo has capturado?\pMe has ayudado a continuar mi camino…\pte daré algo para el tuyo.\pEnséñala a un pokémon fuerte\npara deshacer los remolinos marinos.\pY recuerda siemopre que…"
+}
+
+text Naranja_Mandarin_G21_M00_Text_08193135 {
+    "Nuestro hermano está desconsolado.\pÉl es escultor, pero yo solo me dedico\na hacer objetos de cristal.\p¡Al menos necesito menos inspiración!"
+}
+
+text Naranja_Mandarin_G21_M00_Text_081931C1 {
+    "Did you hear? The TUNNEL to VERDANTURF\nhas gone through!\pSometimes, if you hope strongly enough,\ndreams do come true."
+}
+
+text Naranja_Mandarin_G21_M00_Text_086B3DB0 {
+    "¡Aquí serás siempre bienvenido!"
+}

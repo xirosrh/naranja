@@ -1,0 +1,296 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SeafloorCavern_G24_M36_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SeafloorCavern_G24_M36_OnTransition
+}
+
+script Naranja_SeafloorCavern_G24_M36_OnTransition {
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
+    call(Naranja_CaveOfOrigin_G24_M42_EventScript_Sub_081A01B5)
+    setmaplayoutindex(0x147)
+    end
+}
+
+script Naranja_SeafloorCavern_G24_M36_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8004, 2)
+    setvar(VAR_0x8005, 3)
+    setvar(VAR_0x8006, 4)
+    setvar(VAR_0x8007, 5)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_SeafloorCavern_G24_M36_Movement_0815DD68)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4850)
+    callstd(4)
+    closemessage
+    addobject(32772)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    applymovement(32772, Naranja_SeafloorCavern_G24_M36_Movement_0815DD36)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B486C)
+    callstd(4)
+    applymovement(32772, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4897)
+    callstd(4)
+    applymovement(32772, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B491F)
+    callstd(4)
+    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_SEAFLOOR_CAVERN_601, LOCALID_NONE, Naranja_SeafloorCavern_G24_M36_Text_081B49AE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B49C1)
+    callstd(4)
+    setweather(0)
+    doweather
+    special(Script_FadeOutMapMusic)
+    waitstate
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4A5A)
+    callstd(4)
+    special(WaitWeather)
+    waitstate
+    setvar(VAR_RESULT, 0)
+    playse(SE_M_DETECT)
+    setfieldeffectargument(0, 0x10)
+    setfieldeffectargument(1, 0x2A)
+    setfieldeffectargument(2, 0)
+    dofieldeffect(0x36)
+    waitfieldeffect(0x36)
+    setvar(VAR_RESULT, 1)
+    playfanfare(MUS_AWAKEN_LEGEND)
+    playse(SE_ORB)
+    special(DoOrbEffect)
+    applymovement(32772, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    applymovement(LOCALID_PLAYER, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x96)
+    removeobject(LOCALID_SEAFLOOR_CAVERN_G24_M36_249)
+    addobject(LOCALID_SEAFLOOR_CAVERN_G24_M36_248)
+    waitstate
+    delay(0x3C)
+    applymovement(LOCALID_SEAFLOOR_CAVERN_G24_M36_248, Naranja_SeafloorCavern_G24_M36_Movement_0815DD4C)
+    waitmovement(LOCALID_NONE)
+    special(DoOrbEffect)
+    waitstate
+    setvar(VAR_0x8004, 1)
+    setvar(VAR_0x8005, 1)
+    special(ShakeCamera)
+    waitstate
+    applymovement(LOCALID_SEAFLOOR_CAVERN_G24_M36_248, Naranja_SeafloorCavern_G24_M36_Movement_0815DD57)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_SEAFLOOR_CAVERN_G24_M36_248)
+    delay(4)
+    setvar(VAR_0x8004, 2)
+    setvar(VAR_0x8005, 2)
+    special(ShakeCamera)
+    waitstate
+    delay(0x1E)
+    setvar(VAR_0x8004, 2)
+    setvar(VAR_0x8005, 3)
+    setvar(VAR_0x8006, 4)
+    setvar(VAR_0x8007, 5)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4A89)
+    callstd(4)
+    playse(SE_PC_LOGIN)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4ADB)
+    callstd(4)
+    closemessage
+    applymovement(32772, Naranja_SeafloorCavern_G24_M36_Movement_0815DD41)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4B11)
+    callstd(4)
+    closemessage
+    playse(SE_PC_OFF)
+    delay(0x14)
+    applymovement(32772, Naranja_GraniteCave_G24_M00_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4C79)
+    callstd(4)
+    closemessage
+    addobject(32773)
+    addobject(32774)
+    addobject(32775)
+    applymovement(32775, Naranja_SeafloorCavern_G24_M36_Movement_0815DD63)
+    applymovement(32774, Naranja_SeafloorCavern_G24_M36_Movement_0815DD63)
+    applymovement(32773, Naranja_SeafloorCavern_G24_M36_Movement_0815DD5A)
+    waitmovement(LOCALID_NONE)
+    applymovement(32772, Naranja_GraniteCave_G24_M00_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4D02)
+    callstd(4)
+    playse(SE_PIN)
+    applymovement(32772, Naranja_GraniteCave_G24_M00_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(32772, Naranja_GraniteCave_G24_M00_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4DD3)
+    callstd(4)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4E37)
+    callstd(4)
+    closemessage
+    applymovement(32773, Naranja_SeafloorCavern_G24_M36_Movement_0815DD60)
+    applymovement(32772, Naranja_SeafloorCavern_G24_M36_Movement_0815DD46)
+    waitmovement(LOCALID_NONE)
+    loadword(0, Naranja_SeafloorCavern_G24_M36_Text_081B4ECA)
+    callstd(4)
+    setvar(VAR_NARANJA_ROUTE128_STORY_STATE, 1)
+    clearflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY)
+    clearflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY_2)
+    clearflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_WALLACE)
+    clearflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_STEVEN)
+    setvar(VAR_NARANJA_ISLA_NUEVA_STORY_STATE, 1)
+    clearflag(FLAG_HIDE_ROUTE128_G00_M43_246)
+    clearflag(FLAG_HIDE_ROUTE128_G00_M43_247)
+    setflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    setflag(FLAG_HIDE_ISLA_NUEVA_G00_M07_OLD_MAN_1)
+    setflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081)
+    setflag(FLAG_HIDE_ISLA_MELLSWEET_G14_M07_STEVEN)
+    setvar(VAR_NARANJA_ISLA_MELLSWEET_EVENT_STATE_2, 1)
+    setvar(VAR_NARANJA_SEAFLOOR_CAVERN_STORY_STATE, 1)
+    setflag(FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_246)
+    setflag(FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_247)
+    setflag(FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_244)
+    setflag(FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_248)
+    setflag(FLAG_HIDE_SEAFLOOR_CAVERN_G24_M28_241)
+    warp(MAP_NARANJA_ROUTE_128_G00_M43, 0xFF, 0x26, 0x16)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_SeafloorCavern_G24_M36_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6 {
+    setorcopyvar(VAR_0x8000, 0x13A)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD36 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD41 {
+    walk_left
+    delay_16
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD46 {
+    face_up
+    lock_facing_direction
+    walk_down
+    unlock_facing_direction
+    walk_in_place_faster_right
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD4C {
+    delay_16
+    delay_16
+    walk_slow_down
+    delay_16
+    delay_16
+    delay_16
+    walk_slow_down
+    delay_16
+    delay_16
+    delay_16
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD57 {
+    slide_up
+    slide_up
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD5A {
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD60 {
+    walk_right
+    walk_right
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD63 {
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+}
+
+movement Naranja_SeafloorCavern_G24_M36_Movement_0815DD68 {
+    delay_16
+    delay_16
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4850 {
+    "MAXIE: Hold it right there."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B486C {
+    "MAXIE: Fufufu...\nSo it was you, after all."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4897 {
+    "MAXIE: Behold!\pSee how beautiful it is, the sleeping\nform of the ancient POKéMON GROUDON!\pI have waited so long for this day to\ncome..."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B491F {
+    "MAXIE: It surprises me, how you’ve\nmanaged to chase me here.\pBut that’s all over now.\pFor the realization of my dream,\nyou must disappear now!"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B49AE {
+    "I...\nI lost again?"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B49C1 {
+    "MAXIE: Fufufu...\pI commend you. I must recognize that\nyou are truly gifted.\pBut!\nI have this in my possession!\pWith this BLUE ORB, I can make\nGROUDON..."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4A5A {
+    "The BLUE ORB suddenly began shining\nby itself!"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4A89 {
+    "MAXIE: What?!\pI didn’t do anything.\nWhy did the BLUE ORB...\pWhere did GROUDON go?"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4ADB {
+    "MAXIE: Hm? It’s a message from our\nmembers outside..."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4B11 {
+    "MAXIE: Yes, what is it?\pHm...\nThe sun is burning brightly?\pGood... That should have happened.\nThat is why we awakened GROUDON,\lto realize TEAM MAGMA’s vision of\lexpanding the world’s landmass.\pWhat?!\pIt’s far hotter than we envisioned?\nIt’s so hot that it’s dangerous?\pThat can’t be...\nThat’s just not possible...\pHold your position and monitor the\nsituation!"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4C79 {
+    "MAXIE: There’s something wrong...\pThe BLUE ORB is supposed to awaken\nand control GROUDON...\pBut... Why?\nWhy did GROUDON disappear?\pWhy?!"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4D02 {
+    "ARCHIE: What have you wrought?\pMAXIE... You’ve finally awoken GROUDON,\nhaven’t you?\pWhat will happen to the world if this\nsunshine continues for all eternity?\pThe world’s seas will all dry up and\ndisappear..."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4DD3 {
+    "MAXIE: What are you saying?\pThe BLUE ORB should let me control\nGROUDON...\lThat can’t be possible..."
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4E37 {
+    "ARCHIE: We don’t have the time to\nargue about it here!\pGet outside and see for yourself!\pSee if what you’ve wrought is the\nworld that you desired!"
+}
+
+text Naranja_SeafloorCavern_G24_M36_Text_081B4ECA {
+    "ARCHIE: {PLAYER}{KUN}, come on, you have\nto get out of here, too!"
+}

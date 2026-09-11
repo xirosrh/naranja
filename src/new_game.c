@@ -126,7 +126,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_NARANJA_ISLA_VALENCIA_G00_M00), MAP_NUM(MAP_NARANJA_ISLA_VALENCIA_G00_M00), 0, -1, -1); //TODO Xiros: Change 0 to WARP_ID_NONE
+    SetWarpDestination(MAP_GROUP(MAP_NARANJA_INSIDE_OF_TRUCK_G25_M40), MAP_NUM(MAP_NARANJA_INSIDE_OF_TRUCK_G25_M40), WARP_ID_NONE, -1, -1);
     WarpIntoMap();
 }
 

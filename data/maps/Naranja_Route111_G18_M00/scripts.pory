@@ -1,0 +1,96 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route111_G18_M00_MapScripts {
+}
+
+script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId2 {
+    lock
+    faceplayer
+    setvar(VAR_0x8008, 2)
+    loadword(0, Naranja_Route111_G18_M00_Text_08191FCE)
+    callstd(4)
+    goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
+}
+
+script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3 {
+    lock
+    faceplayer
+    setvar(VAR_0x8008, 3)
+    checkflag(FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_0115)
+    goto_if(EQUAL, Naranja_Route111_G18_M00_EventScript_Sub_0815BF72)
+    loadword(0, Naranja_Route111_G18_M00_Text_0819208A)
+    callstd(4)
+    setorcopyvar(VAR_0x8000, 0xB5)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_0115)
+    goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
+}
+
+script Naranja_Route111_G18_M00_EventScript_Sub_0815BF72 {
+    loadword(0, Naranja_Route111_G18_M00_Text_0819214D)
+    callstd(4)
+    goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
+}
+
+script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId1 {
+    lock
+    faceplayer
+    setvar(VAR_0x8008, 1)
+    loadword(0, Naranja_Route111_G18_M00_Text_08192190)
+    callstd(4)
+    goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
+}
+
+script Naranja_Route111_G18_M00_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId4 {
+    lock
+    faceplayer
+    setvar(VAR_0x8008, 4)
+    checkflag(FLAG_TEMP_4)
+    goto_if(EQUAL, Naranja_Route111_G18_M00_EventScript_Sub_0815BFB6)
+    loadword(0, Naranja_Route111_G18_M00_Text_08192219)
+    callstd(4)
+    setflag(FLAG_TEMP_4)
+    goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
+}
+
+script Naranja_Route111_G18_M00_EventScript_Sub_0815BFB6 {
+    loadword(0, Naranja_Route111_G18_M00_Text_08192334)
+    callstd(4)
+    goto(Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4)
+}
+
+script Naranja_Route111_G18_M00_EventScript_Sub_0815BFC4 {
+    closemessage
+    applymovement(32776, Naranja_CuevaDeCristal_G24_M04_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+text Naranja_Route111_G18_M00_Text_08191FCE {
+    "You’re the first TRAINER I’ve seen who\ndeploys POKéMON so masterfully.\pBut, I should tell you - my son is\nstronger than you.\pHe even took the POKéMON LEAGUE\nchallenge, I’ll have you know."
+}
+
+text Naranja_Route111_G18_M00_Text_0819208A {
+    "We use this MACHO BRACE to more\neffectively strengthen our POKéMON\lin training.\pSince you’ve beaten our entire family,\nI don’t know if you need it, but we\lwould like you to have our MACHO BRACE."
+}
+
+text Naranja_Route111_G18_M00_Text_0819214D {
+    "When it comes to POKéMON battles,\nwe tend to be pretty passionate."
+}
+
+text Naranja_Route111_G18_M00_Text_08192190 {
+    "Mommy is stronger than Daddy.\pI’m stronger than Mommy.\pAnd Grandma’s stronger than me!\pBut my big brother is even stronger\nthan Grandma."
+}
+
+text Naranja_Route111_G18_M00_Text_08192219 {
+    "There’s no question that you’re strong.\pBut if you were to battle my grandson,\nyou’d end up crying in frustration.\pHe’s much stronger than any TRAINER\nour family knows.\pHe must be challenging the POKéMON\nLEAGUE CHAMPION by now.\pKnowing my grandson, he could be the\nCHAMPION already!"
+}
+
+text Naranja_Route111_G18_M00_Text_08192334 {
+    "My grandson must be challenging the\nPOKéMON LEAGUE CHAMPION by now.\pKnowing my grandson, he could be the\nCHAMPION already!"
+}

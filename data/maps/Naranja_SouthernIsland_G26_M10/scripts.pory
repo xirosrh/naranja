@@ -1,0 +1,125 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SouthernIsland_G26_M10_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_SouthernIsland_G26_M10_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SouthernIsland_G26_M10_OnTransition
+}
+
+script Naranja_SouthernIsland_G26_M10_OnResume {
+    checkflag(FLAG_SYS_POKEDEX_GET)
+    call_if(EQUAL, Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B68)
+    end
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B68 {
+    removeobject(LOCALID_SOUTHERN_ISLAND_G26_M10_241)
+    return
+}
+
+script Naranja_SouthernIsland_G26_M10_OnTransition {
+    setvar(VAR_OBJ_GFX_ID_1, 0xBB)
+    call(Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B77)
+    end
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B77 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B8F)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B95)
+    end
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B8F {
+    setvar(VAR_OBJ_GFX_ID_0, 0x64)
+    return
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160B95 {
+    setvar(VAR_OBJ_GFX_ID_0, 0x69)
+    return
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sign_1 {
+    lockall
+    setvar(VAR_0x8008, 0xC)
+    goto(Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160BA7)
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160BA7 {
+    checkflag(FLAG_NARANJA_SOUTHERN_ISLAND_EVENT_COMPLETE_00CE)
+    goto_if(EQUAL, Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160C08)
+    checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0853)
+    goto_if(LESS_THAN, Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160C08)
+    setflag(FLAG_NARANJA_SOUTHERN_ISLAND_EVENT_COMPLETE_00CE)
+    special(SpawnCameraObject)
+    applymovement(127, Naranja_SouthernIsland_G26_M10_Movement_08160C12)
+    waitmovement(LOCALID_NONE)
+    delay(0x32)
+    waitse
+    playmoncry(SPECIES_LATIAS, 0)
+    delay(0x1E)
+    waitmoncry
+    addobject(LOCALID_SOUTHERN_ISLAND_G26_M10_241)
+    delay(0x1E)
+    applymovement(127, Naranja_SouthernIsland_G26_M10_Movement_08160C16)
+    applymovement(LOCALID_SOUTHERN_ISLAND_G26_M10_241, Naranja_SouthernIsland_G26_M10_Movement_08160C22)
+    waitmovement(LOCALID_NONE)
+    delay(0x32)
+    special(RemoveCameraObject)
+    setwildbattle(SPECIES_LATIAS, 0x32, 0xBF)
+    setflag(FLAG_HIDE_SOUTHERN_ISLAND_G26_M10_241)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(BattleSetup_StartLatiBattle)
+    waitstate
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    releaseall
+    end
+}
+
+script Naranja_SouthernIsland_G26_M10_EventScript_Sub_08160C08 {
+    loadword(0, Naranja_SouthernIsland_G26_M10_Text_081C52C5)
+    callstd(4)
+    releaseall
+    end
+}
+
+movement Naranja_SouthernIsland_G26_M10_Movement_08160C12 {
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_SouthernIsland_G26_M10_Movement_08160C16 {
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    walk_down
+    walk_down
+    walk_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_SouthernIsland_G26_M10_Movement_08160C22 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    delay_16
+    delay_16
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+text Naranja_SouthernIsland_G26_M10_Text_081C52C5 {
+    "“All dreams are but another reality.\nNever forget...”"
+}

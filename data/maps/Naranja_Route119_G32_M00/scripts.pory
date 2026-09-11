@@ -1,0 +1,127 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route119_G32_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route119_G32_M00_OnTransition
+}
+
+script Naranja_Route119_G32_M00_OnTransition {
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
+    compare_var_to_value(VAR_NARANJA_ROUTE119_EVENT_STATE_2, 0)
+    call_if(EQUAL, Naranja_Route119_G32_M00_EventScript_Sub_08163C41)
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_Sub_08163C41 {
+    setobjectxyperm(LOCALID_ROUTE119_G32_M00_LITTLE_BOY_1, 0, 5)
+    setobjectmovementtype(LOCALID_ROUTE119_G32_M00_LITTLE_BOY_1, 0xA)
+    return
+}
+
+script Naranja_Route119_G32_M00_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId5 {
+    lock
+    faceplayer
+    special(GetPlayerBigGuyGirlString)
+    compare_var_to_value(VAR_NARANJA_ROUTE119_EVENT_STATE_2, 0)
+    goto_if(EQUAL, Naranja_Route119_G32_M00_EventScript_Sub_08163C67)
+    loadword(0, Naranja_Route119_G32_M00_Text_0819ED22)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_Sub_08163C67 {
+    loadword(0, Naranja_Route119_G32_M00_Text_0819ECF4)
+    callstd(4)
+    release
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId4 {
+    loadword(0, Naranja_Route119_G32_M00_Text_0819ED6B)
+    callstd(2)
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId3 {
+    loadword(0, Naranja_Route119_G32_M00_Text_0819EE25)
+    callstd(2)
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_Sign_1 {
+    lockall
+    loadword(0, Naranja_Route119_G32_M00_Text_0819EE8B)
+    callstd(4)
+    closemessage
+    call(Naranja_Route119_G32_M00_EventScript_Sub_081A02CA)
+    releaseall
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_OBJECT_1_LocalId1 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_582, LOCALID_NONE, Naranja_Route119_G32_M00_Text_0819EB8A, Naranja_Route119_G32_M00_Text_0819EBEE)
+    loadword(0, Naranja_Route119_G32_M00_Text_0819EC0E)
+    callstd(6)
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_OBJECT_2_LocalId2 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_591, LOCALID_NONE, Naranja_Route119_G32_M00_Text_0819EC6B, Naranja_Route119_G32_M00_Text_0819EC89)
+    loadword(0, Naranja_Route119_G32_M00_Text_0819EC97)
+    callstd(6)
+    end
+}
+
+script Naranja_Route119_G32_M00_EventScript_Sub_081A02CA {
+    fadescreen(1)
+    playfanfare(MUS_HEAL)
+    waitfanfare
+    special(HealPlayerParty)
+    fadescreen(0)
+    return
+}
+
+text Naranja_Route119_G32_M00_Text_0819EB8A {
+    "The BOSS got interested in the\nresearch they have going here, so he\lsent us out.\pYou quit meddling!"
+}
+
+text Naranja_Route119_G32_M00_Text_0819EBEE {
+    "Blast it...\nBlasted by a kid..."
+}
+
+text Naranja_Route119_G32_M00_Text_0819EC0E {
+    "Our BOSS knows everything.\pBut I’m just a GRUNT. What would I know\nabout what he’s thinking?"
+}
+
+text Naranja_Route119_G32_M00_Text_0819EC6B {
+    "Huh?\nWhat’s a kid doing here?"
+}
+
+text Naranja_Route119_G32_M00_Text_0819EC89 {
+    "Huh?\nI lost?!"
+}
+
+text Naranja_Route119_G32_M00_Text_0819EC97 {
+    "Oh, no...\nI’ll catch an earful for losing to a kid...\pI should just take a nap in the bed..."
+}
+
+text Naranja_Route119_G32_M00_Text_0819ECF4 {
+    "While I was sleeping, everyone went\nupstairs!"
+}
+
+text Naranja_Route119_G32_M00_Text_0819ED22 {
+    "Wow, you’re really strong!\pI wish I could be a POKéMON TRAINER\nlike you!"
+}
+
+text Naranja_Route119_G32_M00_Text_0819ED6B {
+    "The PROFESSOR loves rain.\nThat’s a fact.\pBut if it keeps raining, people will be in\ntrouble. That’s another fact.\pAnd thus, the PROFESSOR is studying\nif the rain can be put to good use."
+}
+
+text Naranja_Route119_G32_M00_Text_0819EE25 {
+    "Hello!\nWe’ve been saved by your actions!\pWhat I don’t understand is what on\nearth the {AQUA}S were up to."
+}
+
+text Naranja_Route119_G32_M00_Text_0819EE8B {
+    "There’s a bed...\nLet’s take a rest."
+}

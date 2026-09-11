@@ -1,0 +1,106 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route112_G19_M00_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route112_G19_M00_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_ROUTE112_STORY_STATE, 2: Naranja_Route112_G19_M00_OnFrame_1
+    ]
+}
+
+script Naranja_Route112_G19_M00_OnTransition {
+    setescapewarp(MAP_NARANJA_ROUTE_112_G00_M27, 0xFF, 0x1C, 0x1C)
+    compare_var_to_value(VAR_NARANJA_ROUTE112_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_Route112_G19_M00_EventScript_Sub_0815C052)
+    end
+}
+
+script Naranja_Route112_G19_M00_EventScript_Sub_0815C052 {
+    setobjectxyperm(LOCALID_ROUTE112_G19_M00_BEAUTY, 7, 4)
+    setobjectmovementtype(LOCALID_ROUTE112_G19_M00_BEAUTY, 9)
+    return
+}
+
+script Naranja_Route112_G19_M00_OnFrame_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_Route112_G19_M00_Movement_0815C0F5)
+    applymovement(LOCALID_ROUTE112_G19_M00_BEAUTY, Naranja_Route112_G19_M00_Movement_0815C0EB)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_NARANJA_ROUTE112_STORY_STATE, 0)
+    setobjectxyperm(LOCALID_ROUTE112_G19_M00_BEAUTY, 6, 7)
+    setobjectmovementtype(LOCALID_ROUTE112_G19_M00_BEAUTY, 8)
+    releaseall
+    end
+}
+
+script Naranja_Route112_G19_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1 {
+    lock
+    faceplayer
+    loadword(0, Naranja_Route112_G19_M00_Text_081924F5)
+    callstd(5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route112_G19_M00_EventScript_Sub_0815C0DC)
+    end
+}
+
+script Naranja_Route112_G19_M00_EventScript_Sub_0815C0AD {
+    loadword(0, Naranja_MtChimney_G19_M01_Text_081925A9)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE112_G19_M00_BEAUTY, Naranja_Route112_G19_M00_Movement_0815C0E6)
+    applymovement(LOCALID_PLAYER, Naranja_Route112_G19_M00_Movement_0815C0F0)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_0x8004, 0)
+    setvar(VAR_NARANJA_ROUTE112_STORY_STATE, 1)
+    incrementgamestat(0x30)
+    special(CableCarWarp)
+    special(CableCar)
+    waitstate
+    release
+    end
+}
+
+script Naranja_Route112_G19_M00_EventScript_Sub_0815C0DC {
+    loadword(0, Naranja_Route112_G19_M00_Text_08192548)
+    callstd(4)
+    release
+    end
+}
+
+movement Naranja_Route112_G19_M00_Movement_0815C0E6 {
+    walk_up
+    walk_up
+    walk_right
+    walk_in_place_faster_left
+}
+
+movement Naranja_Route112_G19_M00_Movement_0815C0EB {
+    delay_16
+    walk_left
+    walk_down
+    walk_down
+}
+
+movement Naranja_Route112_G19_M00_Movement_0815C0F0 {
+    walk_up
+    walk_up
+    walk_up
+    delay_16
+}
+
+movement Naranja_Route112_G19_M00_Movement_0815C0F5 {
+    walk_down
+    walk_down
+    walk_down
+    delay_16
+}
+
+text Naranja_Route112_G19_M00_Text_081924F5 {
+    "The CABLE CAR is ready to go up.\nWould you like to be on it?"
+}
+
+text Naranja_Route112_G19_M00_Text_08192548 {
+    "Please ride with us another time."
+}

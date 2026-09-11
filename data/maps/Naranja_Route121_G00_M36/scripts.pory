@@ -1,0 +1,268 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route121_G00_M36_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route121_G00_M36_OnTransition
+}
+
+script Naranja_Route121_G00_M36_OnTransition {
+    call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId1 {
+    loadword(0, Naranja_Route121_G00_M36_Text_08171CB4)
+    callstd(2)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_Sign_1 {
+    loadword(0, Naranja_Route121_G00_M36_Text_08171D0C)
+    callstd(3)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_Sign_6 {
+    loadword(0, Naranja_Route121_G00_M36_Text_08171D5B)
+    callstd(3)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_Trigger_1 {
+    lockall
+    loadword(0, Naranja_Route121_G00_M36_Text_08171C8F)
+    callstd(4)
+    closemessage
+    applymovement(LOCALID_ROUTE121_G00_M36_241, Naranja_Route121_G00_M36_Movement_08151B57)
+    applymovement(LOCALID_ROUTE121_G00_M36_241_2, Naranja_Route121_G00_M36_Movement_08151B60)
+    applymovement(LOCALID_ROUTE121_G00_M36_241_3, Naranja_Route121_G00_M36_Movement_08151B69)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_ROUTE121_G00_M36_241)
+    removeobject(LOCALID_ROUTE121_G00_M36_241_2)
+    removeobject(LOCALID_ROUTE121_G00_M36_241_3)
+    setvar(VAR_NARANJA_ROUTE121_STORY_STATE, 1)
+    releaseall
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId17 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE121_300, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BF96E, Naranja_Route121_G00_M36_Text_081BF9A1)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BF9BA)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId18 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE121_254, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFA1B, Naranja_Route121_G00_M36_Text_081BFA8C)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route121_G00_M36_EventScript_Sub_08151BB0)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFA9D)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_Sub_08151BB0 {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE121_254, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFADA, Naranja_Route121_G00_M36_Text_081BFB4B)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFB5C)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId19 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE121_107, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFBB4, Naranja_Route121_G00_M36_Text_081BFBEE)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFBFD)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_LASS_LocalId10 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE121_286, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFC36, Naranja_Route121_G00_M36_Text_081BFC7A, Naranja_Route121_G00_M36_Text_081BFD08)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFCB3)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_LASS_LocalId11 {
+    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE121_286, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFD60, Naranja_Route121_G00_M36_Text_081BFDA3, Naranja_Route121_G00_M36_Text_081BFE0D)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFDC1)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId20 {
+    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE121_127, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFE51, Naranja_Route121_G00_M36_Text_081BFE80)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route121_G00_M36_EventScript_Sub_08151C3B)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFEAE)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_Sub_08151C3B {
+    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE121_127, LOCALID_NONE, Naranja_Route121_G00_M36_Text_081BFEDE, Naranja_Route121_G00_M36_Text_081BFF0A)
+    loadword(0, Naranja_Route121_G00_M36_Text_081BFF3A)
+    callstd(6)
+    end
+}
+
+script Naranja_Route121_G00_M36_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId21 {
+    setorcopyvar(VAR_0x8000, 0x42)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+movement Naranja_Route121_G00_M36_Movement_08151B57 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_Route121_G00_M36_Movement_08151B60 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_Route121_G00_M36_Movement_08151B69 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+text Naranja_Route121_G00_M36_Text_08171C8F {
+    "Okay!\nWe’re to move out to MT. PYRE!"
+}
+
+text Naranja_Route121_G00_M36_Text_08171CB4 {
+    "Ahead looms MT. PYRE...\pIt is a natural monument to the spirits \nof departed POKéMON..."
+}
+
+text Naranja_Route121_G00_M36_Text_08171D0C {
+    "MT. PYRE PIER\p...The sign is old and worn out.\nThe words are barely legible..."
+}
+
+text Naranja_Route121_G00_M36_Text_08171D5B {
+    "“Filled with rare POKéMON!”\nSAFARI ZONE"
+}
+
+text Naranja_Route121_G00_M36_Text_081BF96E {
+    "Will you play with my delightfully\npretty POKéMON?"
+}
+
+text Naranja_Route121_G00_M36_Text_081BF9A1 {
+    "This isn’t what I meant!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BF9BA {
+    "I’m going to a CONTEST in LILYCOVE.\pMy POKéMON should have no problem\nsweeping the MASTER CLASS."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFA1B {
+    "With my POKéMON, I have traveled the\nworld’s four corners.\pYou might say I have some confidence\nin my abilities."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFA8C {
+    "Ah, well played."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFA9D {
+    "I would like to circle the globe once\nagain with my POKéMON."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFADA {
+    "With my POKéMON, I have traveled the\nworld’s four corners.\pYou might say I have some confidence\nin my abilities."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFB4B {
+    "Ah, well played."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFB5C {
+    "Your POKéMON and you...\pYour prowess together will be\nconsidered strong, even overseas."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFBB4 {
+    "There are powers beyond our\nunderstanding in the world..."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFBEE {
+    "I have lost..."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFBFD {
+    "MT. PYRE...\nThere is a mysterious power\lat work there..."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFC36 {
+    "KATE: Together, we’re fearless!\nWe’ll demonstrate how tough we are!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFC7A {
+    "KATE: I blew it in front of my junior\nstudent partner..."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFCB3 {
+    "KATE: When someone’s relying on me,\nI get this urge to look cool in front\lof them..."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFD08 {
+    "KATE: If you’ve only got one POKéMON,\nwe can’t battle with you.\pThat would be bullying."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFD60 {
+    "JOY: Together, we’re fearless!\nWe’ll demonstrate how tough we are!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFDA3 {
+    "JOY: Please forgive me, KATE!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFDC1 {
+    "JOY: Ehehe, I’ll have to train with KATE,\nmy senior student partner, again."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFE0D {
+    "JOY: You need at least two POKéMON\nif you’re going to challenge us!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFE51 {
+    "Stop! Have a good look at my precious\nPOKéMON!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFE80 {
+    "Oh, how dare you!\nDon’t take it so seriously!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFEAE {
+    "Maybe I’ll go catch more POKéMON at\nthe SAFARI."
+}
+
+text Naranja_Route121_G00_M36_Text_081BFEDE {
+    "My precious POKéMON grew!\nHave a good look!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFF0A {
+    "Oh, how dare you!\nYou still won’t take it easy!"
+}
+
+text Naranja_Route121_G00_M36_Text_081BFF3A {
+    "Maybe I’ll go catch more POKéMON at\nthe SAFARI."
+}
