@@ -53,6 +53,35 @@ SOURCE_PALETTE_TAGS_BY_SLOT = {
     9: 0x110A,
 }
 
+# These palettes are always resident in the ordinary NPC palette slots. Keep
+# their import explicit: imported sprites depend on the ROM's copies even when
+# those copies happen to be byte-identical to Expansion's current assets.
+GENERIC_PALETTE_PATHS = {
+    0x1103: "graphics/object_events/palettes/npc_1.pal",
+    0x1104: "graphics/object_events/palettes/npc_2.pal",
+    0x1105: "graphics/object_events/palettes/npc_3.pal",
+    0x1106: "graphics/object_events/palettes/npc_4.pal",
+    0x1107: "graphics/object_events/palettes/npc_1_reflection.pal",
+    0x1108: "graphics/object_events/palettes/npc_2_reflection.pal",
+    0x1109: "graphics/object_events/palettes/npc_3_reflection.pal",
+    0x110A: "graphics/object_events/palettes/npc_4_reflection.pal",
+}
+
+# pokeemerald-expansion chooses an object's initial palette by paletteTag.
+# Ruby instead forces ordinary NPCs into paletteSlot after sprite creation, so
+# for those slots the visible palette is determined by the slot, not by the
+# paletteTag stored in the source graphics-info struct.
+GENERIC_PALETTE_TAG_NAMES_BY_SLOT = {
+    2: "OBJ_EVENT_PAL_TAG_NPC_1",
+    3: "OBJ_EVENT_PAL_TAG_NPC_2",
+    4: "OBJ_EVENT_PAL_TAG_NPC_3",
+    5: "OBJ_EVENT_PAL_TAG_NPC_4",
+    6: "OBJ_EVENT_PAL_TAG_NPC_1_REFLECTION",
+    7: "OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION",
+    8: "OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION",
+    9: "OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION",
+}
+
 KNOWN_CONSTANT_RENAMES = {
     "OBJ_EVENT_GFX_BRENDAN_NORMAL": "OBJ_EVENT_GFX_ASH_NORMAL",
     "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE": "OBJ_EVENT_GFX_ASH_MACH_BIKE",
@@ -586,15 +615,21 @@ def sync_palette_metadata(data: bytes, repo: Path) -> None:
     _, tag_names = parse_palette_constants(repo)
     desired: dict[str, tuple[str, str, str]] = {}
     for graphics_id in range(NUM_RUBY_OBJECT_EVENT_GFX):
+        # Retain Expansion's item-ball and berry-tree graphics and metadata.
+        if graphics_id in (59, 60, 61, 62):
+            continue
         info_name = info_for_slot.get(graphics_id)
         if not info_name:
             continue
         source = read_graphics_info(data, graphics_id)
-        palette_tag = SOURCE_PALETTE_TAG_RENAMES.get(
-            source["palette_tag"], tag_names.get(source["palette_tag"])
-        )
+        source_palette_slot = source["flags"] & 0xF
+        palette_tag = GENERIC_PALETTE_TAG_NAMES_BY_SLOT.get(source_palette_slot)
+        if palette_tag is None:
+            palette_tag = SOURCE_PALETTE_TAG_RENAMES.get(
+                source["palette_tag"], tag_names.get(source["palette_tag"])
+            )
         reflection_tag = tag_names.get(source["reflection_palette_tag"])
-        palette_slot = PALETTE_SLOT_NAMES.get(source["flags"] & 0xF)
+        palette_slot = PALETTE_SLOT_NAMES.get(source_palette_slot)
         if not palette_tag or not reflection_tag or not palette_slot:
             raise SystemExit(f"unknown palette metadata in object-event slot {graphics_id}")
         value = (palette_tag, reflection_tag, palette_slot)
@@ -733,6 +768,7 @@ def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
         written += 1
 
     palette_paths = parse_palette_assets(repo, palette_assets)
+    palette_paths.update({tag: repo / path for tag, path in GENERIC_PALETTE_PATHS.items()})
     written_palettes = 0
     for tag, palette in palettes.items():
         path = palette_paths.get(tag)
@@ -740,7 +776,10 @@ def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
             write_palette(path, palette)
             written_palettes += 1
     sync_palette_metadata(data, repo)
-    print(f"Wrote {written} existing object-event sprite sheets and {written_palettes} palettes.")
+    print(
+        f"Wrote {written} existing object-event sprite sheets and {written_palettes} palettes "
+        f"(including {len(GENERIC_PALETTE_PATHS)} generic NPC palettes)."
+    )
     for graphics_id, reason in skipped:
         print(f"Skipped slot {graphics_id}: {reason}")
 
