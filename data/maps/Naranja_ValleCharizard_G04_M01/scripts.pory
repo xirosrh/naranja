@@ -11,7 +11,7 @@ script Naranja_ValleCharizard_G04_M01_EventScript_Sub_0815369F {
 }
 
 script Naranja_ValleCharizard_G04_M01_EventScript_OBJ_EVENT_GFX_FLANNERY_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_VALLE_CHARIZARD_266, LOCALID_NONE, Naranja_ValleCharizard_G04_M01_Text_08176801, Naranja_ValleCharizard_G04_M01_Text_08176960, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_08153766)
+    trainerbattle_single(TRAINER_NARANJA_VALLE_CHARIZARD_266, Naranja_ValleCharizard_G04_M01_Text_08176801, Naranja_ValleCharizard_G04_M01_Text_08176960, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_08153766, NO_MUSIC)
     checkflag(FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00A8)
     goto_if(LESS_THAN, Naranja_ValleCharizard_G04_M01_EventScript_Sub_081537A7)
     msgbox(Naranja_ValleCharizard_G04_M01_Text_08176C4A, MSGBOX_DEFAULT)
@@ -49,7 +49,7 @@ script Naranja_ValleCharizard_G04_M01_EventScript_Sub_081537A7 {
 }
 
 script Naranja_ValleCharizard_G04_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_VALLE_CHARIZARD_201, LOCALID_VALLE_CHARIZARD_G04_M01_MAN_6, Naranja_ValleCharizard_G04_M01_Text_08176432, Naranja_ValleCharizard_G04_M01_Text_0817644F, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6)
+    trainerbattle(LOCALID_VALLE_CHARIZARD_G04_M01_MAN_6, TRAINER_NARANJA_VALLE_CHARIZARD_201, Naranja_ValleCharizard_G04_M01_Text_08176432, Naranja_ValleCharizard_G04_M01_Text_0817644F, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE)
     msgbox(Naranja_ValleCharizard_G04_M01_Text_08176472, MSGBOX_AUTOCLOSE)
     end
 }
@@ -61,25 +61,25 @@ script Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6 {
 }
 
 script Naranja_ValleCharizard_G04_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_VALLE_CHARIZARD_203, LOCALID_VALLE_CHARIZARD_G04_M01_MAN_6_2, Naranja_ValleCharizard_G04_M01_Text_081764D1, Naranja_ValleCharizard_G04_M01_Text_08176516, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6)
+    trainerbattle(LOCALID_VALLE_CHARIZARD_G04_M01_MAN_6_2, TRAINER_NARANJA_VALLE_CHARIZARD_203, Naranja_ValleCharizard_G04_M01_Text_081764D1, Naranja_ValleCharizard_G04_M01_Text_08176516, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE)
     msgbox(Naranja_ValleCharizard_G04_M01_Text_08176537, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_ValleCharizard_G04_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId7 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_VALLE_CHARIZARD_205, LOCALID_VALLE_CHARIZARD_G04_M01_MAN_6_3, Naranja_ValleCharizard_G04_M01_Text_0817658D, Naranja_ValleCharizard_G04_M01_Text_0817663F, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6)
+    trainerbattle(LOCALID_VALLE_CHARIZARD_G04_M01_MAN_6_3, TRAINER_NARANJA_VALLE_CHARIZARD_205, Naranja_ValleCharizard_G04_M01_Text_0817658D, Naranja_ValleCharizard_G04_M01_Text_0817663F, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE)
     msgbox(Naranja_ValleCharizard_G04_M01_Text_08176660, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_ValleCharizard_G04_M01_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_VALLE_CHARIZARD_650, LOCALID_VALLE_CHARIZARD_G04_M01_GIRL_3, Naranja_ValleCharizard_G04_M01_Text_08176784, Naranja_ValleCharizard_G04_M01_Text_081767A6, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6)
+    trainerbattle(LOCALID_VALLE_CHARIZARD_G04_M01_GIRL_3, TRAINER_NARANJA_VALLE_CHARIZARD_650, Naranja_ValleCharizard_G04_M01_Text_08176784, Naranja_ValleCharizard_G04_M01_Text_081767A6, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE)
     msgbox(Naranja_ValleCharizard_G04_M01_Text_081767C1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_ValleCharizard_G04_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_VALLE_CHARIZARD_648, LOCALID_VALLE_CHARIZARD_G04_M01_MAN_4, Naranja_ValleCharizard_G04_M01_Text_081766D2, Naranja_ValleCharizard_G04_M01_Text_081766FE, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6)
+    trainerbattle(LOCALID_VALLE_CHARIZARD_G04_M01_MAN_4, TRAINER_NARANJA_VALLE_CHARIZARD_648, Naranja_ValleCharizard_G04_M01_Text_081766D2, Naranja_ValleCharizard_G04_M01_Text_081766FE, Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE)
     msgbox(Naranja_ValleCharizard_G04_M01_Text_0817671D, MSGBOX_AUTOCLOSE)
     end
 }

@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_UNDERWATER_G00_M50",
+  "region": "REGION_HOENN",
   "name": "Naranja_Underwater_G00_M50",
   "layout": "LAYOUT_NARANJA_UNDERWATER_G00_M50",
   "music": "MUS_DUMMY",

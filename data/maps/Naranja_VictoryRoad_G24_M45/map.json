@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_VICTORY_ROAD_G24_M45",
+  "region": "REGION_HOENN",
   "name": "Naranja_VictoryRoad_G24_M45",
   "layout": "LAYOUT_NARANJA_VICTORY_ROAD_G24_M45",
   "music": "MUS_DUMMY",

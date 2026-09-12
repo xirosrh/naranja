@@ -44,7 +44,7 @@ Naranja_IslaMurcott_G09_M06_EventScript_Trigger_2::
 
 Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B06::
 # 34 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
-	showmoneybox 0, 0, 0
+	showmoneybox 0, 0
 # 35 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
 	msgbox Naranja_IslaMurcott_G09_M06_Text_0817E18D, MSGBOX_YESNO
 # 36 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
@@ -66,15 +66,15 @@ Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B06::
 
 Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B2D::
 # 47 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
-	checkmoney 0x32, 0
+	checkmoney 0x32
 # 48 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 49 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B5A
 # 50 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
-	removemoney 0x32, 0
+	removemoney 0x32
 # 51 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
-	updatemoneybox 0
+	updatemoneybox
 # 52 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"
 	msgbox Naranja_IslaMurcott_G09_M06_Text_0817E1DE, MSGBOX_DEFAULT
 # 53 "data/maps/Naranja_IslaMurcott_G09_M06/scripts.pory"

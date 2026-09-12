@@ -116,19 +116,19 @@ Naranja_CaminoFrio_G00_M29_EventScript_Sign_2::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId3::
 # 80 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_CAMINO_FRIO_628, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC05B, Naranja_CaminoFrio_G00_M29_Text_081BC0B5, Naranja_CaminoFrio_G00_M29_EventScript_AfterBattle_0815CBA7
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_628, Naranja_CaminoFrio_G00_M29_Text_081BC05B, Naranja_CaminoFrio_G00_M29_Text_081BC0B5, Naranja_CaminoFrio_G00_M29_EventScript_AfterBattle_0815CBA7
 	end
 
 
 Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150808::
 # 85 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_CAMINO_FRIO_629, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC125, Naranja_CaminoFrio_G00_M29_Text_081BC163, Naranja_CaminoFrio_G00_M29_EventScript_AfterBattle_086B8212
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_629, Naranja_CaminoFrio_G00_M29_Text_081BC125, Naranja_CaminoFrio_G00_M29_Text_081BC163, Naranja_CaminoFrio_G00_M29_EventScript_AfterBattle_086B8212
 	end
 
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId6::
 # 90 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_472, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC289, Naranja_CaminoFrio_G00_M29_Text_081BC2BE
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_472, Naranja_CaminoFrio_G00_M29_Text_081BC289, Naranja_CaminoFrio_G00_M29_Text_081BC2BE
 # 91 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	msgbox Naranja_CaminoFrio_G00_M29_Text_081BC2C6, MSGBOX_AUTOCLOSE
 	end
@@ -136,7 +136,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId6::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId7::
 # 96 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_143, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC2F5, Naranja_CaminoFrio_G00_M29_Text_081BC327
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_143, Naranja_CaminoFrio_G00_M29_Text_081BC2F5, Naranja_CaminoFrio_G00_M29_Text_081BC327
 # 97 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 98 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
@@ -150,7 +150,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId7::
 
 Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150874::
 # 105 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_CAMINO_FRIO_143, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC3B3, Naranja_CaminoFrio_G00_M29_Text_081BC3E0
+	trainerbattle_rematch TRAINER_NARANJA_CAMINO_FRIO_143, Naranja_CaminoFrio_G00_M29_Text_081BC3B3, Naranja_CaminoFrio_G00_M29_Text_081BC3E0
 # 106 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	msgbox Naranja_CaminoFrio_G00_M29_Text_081BC40F, MSGBOX_AUTOCLOSE
 	end
@@ -158,7 +158,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_Sub_08150874::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId17::
 # 111 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_206, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC45A, Naranja_CaminoFrio_G00_M29_Text_081BC499
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_206, Naranja_CaminoFrio_G00_M29_Text_081BC45A, Naranja_CaminoFrio_G00_M29_Text_081BC499
 # 112 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 113 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
@@ -172,7 +172,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId17::
 
 Naranja_CaminoFrio_G00_M29_EventScript_Sub_081508B2::
 # 120 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_CAMINO_FRIO_206, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC525, Naranja_CaminoFrio_G00_M29_Text_081BC559
+	trainerbattle_rematch TRAINER_NARANJA_CAMINO_FRIO_206, Naranja_CaminoFrio_G00_M29_Text_081BC525, Naranja_CaminoFrio_G00_M29_Text_081BC559
 # 121 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	msgbox Naranja_CaminoFrio_G00_M29_Text_081BC58C, MSGBOX_AUTOCLOSE
 	end
@@ -180,7 +180,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_Sub_081508B2::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId16::
 # 126 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_338, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC5FC, Naranja_CaminoFrio_G00_M29_Text_081BC653
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_338, Naranja_CaminoFrio_G00_M29_Text_081BC5FC, Naranja_CaminoFrio_G00_M29_Text_081BC653
 # 127 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	msgbox Naranja_CaminoFrio_G00_M29_Text_081BC679, MSGBOX_AUTOCLOSE
 	end
@@ -188,7 +188,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId16::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId15::
 # 132 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CAMINO_FRIO_342, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC6EC, Naranja_CaminoFrio_G00_M29_Text_081BC750
+	trainerbattle_single TRAINER_NARANJA_CAMINO_FRIO_342, Naranja_CaminoFrio_G00_M29_Text_081BC6EC, Naranja_CaminoFrio_G00_M29_Text_081BC750
 # 133 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	msgbox Naranja_CaminoFrio_G00_M29_Text_081BC78A, MSGBOX_AUTOCLOSE
 	end
@@ -196,7 +196,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId15::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId23::
 # 138 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_CAMINO_FRIO_679, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC7E3, Naranja_CaminoFrio_G00_M29_Text_081BC834, Naranja_CaminoFrio_G00_M29_Text_081BC88A
+	trainerbattle_double TRAINER_NARANJA_CAMINO_FRIO_679, Naranja_CaminoFrio_G00_M29_Text_081BC7E3, Naranja_CaminoFrio_G00_M29_Text_081BC834, Naranja_CaminoFrio_G00_M29_Text_081BC88A
 # 139 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	goto Naranja_CaminoFrio_G00_M29_EventScript_Sub_08154030
 	return
@@ -204,7 +204,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId23::
 
 Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId22::
 # 143 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_CAMINO_FRIO_679, LOCALID_NONE, Naranja_CaminoFrio_G00_M29_Text_081BC8D8, Naranja_CaminoFrio_G00_M29_Text_081BC8FB, Naranja_CaminoFrio_G00_M29_Text_081BC96A
+	trainerbattle_double TRAINER_NARANJA_CAMINO_FRIO_679, Naranja_CaminoFrio_G00_M29_Text_081BC8D8, Naranja_CaminoFrio_G00_M29_Text_081BC8FB, Naranja_CaminoFrio_G00_M29_Text_081BC96A
 # 144 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	msgbox Naranja_CaminoFrio_G00_M29_Text_081BC91E, MSGBOX_AUTOCLOSE
 	end

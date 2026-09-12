@@ -36,7 +36,7 @@ script Naranja_SeafloorCavern_G24_M36_EventScript_Trigger_1 {
     applymovement(32772, Naranja_IslaKumquat_G00_M05_Movement_081A0839)
     waitmovement(LOCALID_NONE)
     msgbox(Naranja_SeafloorCavern_G24_M36_Text_081B491F, MSGBOX_DEFAULT)
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_SEAFLOOR_CAVERN_601, LOCALID_NONE, Naranja_SeafloorCavern_G24_M36_Text_081B49AE)
+    trainerbattle_no_intro(TRAINER_NARANJA_SEAFLOOR_CAVERN_601, Naranja_SeafloorCavern_G24_M36_Text_081B49AE)
     msgbox(Naranja_SeafloorCavern_G24_M36_Text_081B49C1, MSGBOX_DEFAULT)
     setweather(0)
     doweather

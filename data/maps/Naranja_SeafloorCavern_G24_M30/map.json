@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_SEAFLOOR_CAVERN_G24_M30",
+  "region": "REGION_HOENN",
   "name": "Naranja_SeafloorCavern_G24_M30",
   "layout": "LAYOUT_NARANJA_SEAFLOOR_CAVERN_G24_M30",
   "music": "MUS_DUMMY",

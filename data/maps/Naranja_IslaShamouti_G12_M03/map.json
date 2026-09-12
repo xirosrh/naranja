@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_SHAMOUTI_G12_M03",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaShamouti_G12_M03",
   "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M03",
   "music": "MUS_DUMMY",

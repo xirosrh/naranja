@@ -88,7 +88,7 @@ Naranja_IslaMandarina_G13_M22_EventScript_Sign_1::
 # 63 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	waitmessage
 # 64 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	showmoneybox 0, 0, 0
+	showmoneybox 0, 0
 # 65 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	goto Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1DE
 	return
@@ -146,37 +146,37 @@ Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A232::
 
 Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A23D::
 # 98 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	checkmoney 0xC8, 0
+	checkmoney 0xC8
 	return
 
 
 Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A244::
 # 103 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	checkmoney 0x12C, 0
+	checkmoney 0x12C
 	return
 
 
 Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A24B::
 # 108 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	checkmoney 0x15E, 0
+	checkmoney 0x15E
 	return
 
 
 Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A252::
 # 113 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	removemoney 0xC8, 0
+	removemoney 0xC8
 	return
 
 
 Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A259::
 # 118 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	removemoney 0x12C, 0
+	removemoney 0x12C
 	return
 
 
 Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A260::
 # 123 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	removemoney 0x15E, 0
+	removemoney 0x15E
 	return
 
 
@@ -216,7 +216,7 @@ Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267::
 # 144 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A260
 # 145 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	updatemoneybox 0
+	updatemoneybox
 # 146 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	bufferitemname 0, 0x4000
 # 147 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"

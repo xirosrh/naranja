@@ -17,37 +17,37 @@ script Naranja_Route131_G00_M46_EventScript_Sub_0815244E {
 }
 
 script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_166, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C25B3, Naranja_Route131_G00_M46_Text_081C25F8)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE131_166, Naranja_Route131_G00_M46_Text_081C25B3, Naranja_Route131_G00_M46_Text_081C25F8)
     msgbox(Naranja_Route131_G00_M46_Text_081C262A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_167, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C26B9, Naranja_Route131_G00_M46_Text_081C271F)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE131_167, Naranja_Route131_G00_M46_Text_081C26B9, Naranja_Route131_G00_M46_Text_081C271F)
     msgbox(Naranja_Route131_G00_M46_Text_081C2726, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_456, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C2774, Naranja_Route131_G00_M46_Text_081C27A4)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE131_456, Naranja_Route131_G00_M46_Text_081C2774, Naranja_Route131_G00_M46_Text_081C27A4)
     msgbox(Naranja_Route131_G00_M46_Text_081C27CF, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE131_457, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C284A, Naranja_Route131_G00_M46_Text_081C2883)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE131_457, Naranja_Route131_G00_M46_Text_081C284A, Naranja_Route131_G00_M46_Text_081C2883)
     msgbox(Naranja_Route131_G00_M46_Text_081C2898, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE131_686, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C28E2, Naranja_Route131_G00_M46_Text_081C2918, Naranja_Route131_G00_M46_Text_081C29B2)
+    trainerbattle_double(TRAINER_NARANJA_ROUTE131_686, Naranja_Route131_G00_M46_Text_081C28E2, Naranja_Route131_G00_M46_Text_081C2918, Naranja_Route131_G00_M46_Text_081C29B2)
     msgbox(Naranja_Route131_G00_M46_Text_081C2950, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route131_G00_M46_EventScript_OBJ_EVENT_GFX_TUBER_M_SWIMMING_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE131_686, LOCALID_NONE, Naranja_Route131_G00_M46_Text_081C29F3, Naranja_Route131_G00_M46_Text_081C2A20, Naranja_Route131_G00_M46_Text_081C2ACA)
+    trainerbattle_double(TRAINER_NARANJA_ROUTE131_686, Naranja_Route131_G00_M46_Text_081C29F3, Naranja_Route131_G00_M46_Text_081C2A20, Naranja_Route131_G00_M46_Text_081C2ACA)
     msgbox(Naranja_Route131_G00_M46_Text_081C2A5D, MSGBOX_AUTOCLOSE)
     end
 }

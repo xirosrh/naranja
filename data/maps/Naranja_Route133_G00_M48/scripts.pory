@@ -5,31 +5,31 @@ mapscripts Naranja_Route133_G00_M48_MapScripts {
 }
 
 script Naranja_Route133_G00_M48_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE133_170, LOCALID_NONE, Naranja_Route133_G00_M48_Text_081C2DA5, Naranja_Route133_G00_M48_Text_081C2DF4)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_170, Naranja_Route133_G00_M48_Text_081C2DA5, Naranja_Route133_G00_M48_Text_081C2DF4)
     msgbox(Naranja_Route133_G00_M48_Text_081C2E09, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route133_G00_M48_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE133_460, LOCALID_NONE, Naranja_Route133_G00_M48_Text_081C2E61, Naranja_Route133_G00_M48_Text_081C2EBD)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_460, Naranja_Route133_G00_M48_Text_081C2E61, Naranja_Route133_G00_M48_Text_081C2EBD)
     msgbox(Naranja_Route133_G00_M48_Text_081C2ECD, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route133_G00_M48_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE133_461, LOCALID_NONE, Naranja_Route133_G00_M48_Text_081C2EF7, Naranja_Route133_G00_M48_Text_081C2F19)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_461, Naranja_Route133_G00_M48_Text_081C2EF7, Naranja_Route133_G00_M48_Text_081C2F19)
     msgbox(Naranja_Route133_G00_M48_Text_081C2F25, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route133_G00_M48_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId7 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE133_088, LOCALID_NONE, Naranja_Route133_G00_M48_Text_081C2F53, Naranja_Route133_G00_M48_Text_081C2FA3)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_088, Naranja_Route133_G00_M48_Text_081C2F53, Naranja_Route133_G00_M48_Text_081C2FA3)
     msgbox(Naranja_Route133_G00_M48_Text_081C2FC7, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route133_G00_M48_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE133_414, LOCALID_NONE, Naranja_Route133_G00_M48_Text_081C302D, Naranja_Route133_G00_M48_Text_081C305F)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_414, Naranja_Route133_G00_M48_Text_081C302D, Naranja_Route133_G00_M48_Text_081C305F)
     msgbox(Naranja_Route133_G00_M48_Text_081C307E, MSGBOX_AUTOCLOSE)
     end
 }

@@ -80,7 +80,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Trigger_4::
 
 Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C::
 # 58 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARINA_182, LOCALID_NONE, Naranja_IslaMandarina_G06_M05_Text_086B3C33, Naranja_IslaMandarina_G06_M05_Text_081BCB2E
+	trainerbattle_single TRAINER_NARANJA_ISLA_MANDARINA_182, Naranja_IslaMandarina_G06_M05_Text_086B3C33, Naranja_IslaMandarina_G06_M05_Text_081BCB2E
 # 59 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	msgbox Naranja_IslaMandarina_G06_M05_Text_081BCB40, MSGBOX_AUTOCLOSE
 # 60 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"

@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_UNDERWATER_G00_M52",
+  "region": "REGION_HOENN",
   "name": "Naranja_Underwater_G00_M52",
   "layout": "LAYOUT_NARANJA_UNDERWATER_G00_M52",
   "music": "MUS_DUMMY",
@@ -286,7 +287,7 @@
       "x": 18,
       "y": 16,
       "elevation": 3,
-      "item": "ITEM_ROOM_2_KEY",
+      "item": "ITEM_KEY_TO_ROOM_2",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_G00_M52_ROOM_2_KEY_1"
     },
     {

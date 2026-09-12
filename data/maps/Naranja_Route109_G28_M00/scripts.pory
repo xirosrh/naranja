@@ -50,7 +50,7 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160E2C {
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160E36 {
-    showmoneybox(0, 0, 0)
+    showmoneybox(0, 0)
     msgbox(Naranja_Route109_G28_M00_Text_0819B702, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E5A)
@@ -61,15 +61,15 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160E36 {
 }
 
 script Naranja_Route109_G28_M00_EventScript_Sub_08160E5A {
-    checkmoney(0x12C, 0)
+    checkmoney(0x12C)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160E9E)
     checkitemspace(ITEM_SODA_POP, 1)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_Route109_G28_M00_EventScript_Sub_08160EAB)
     msgbox(Naranja_Route109_G28_M00_Text_0819B74C, MSGBOX_DEFAULT)
-    removemoney(0x12C, 0)
-    updatemoneybox(0)
+    removemoney(0x12C)
+    updatemoneybox
     setorcopyvar(VAR_0x8000, 0x1B)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
@@ -93,19 +93,19 @@ script Naranja_Route109_G28_M00_EventScript_Sub_08160EAB {
 }
 
 script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_493, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B809, Naranja_Route109_G28_M00_Text_0819B869, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE109_493, Naranja_Route109_G28_M00_Text_0819B809, Naranja_Route109_G28_M00_Text_0819B869, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
     msgbox(Naranja_Route109_G28_M00_Text_0819B89F, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_647, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B8E5, Naranja_Route109_G28_M00_Text_0819B949, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE109_647, Naranja_Route109_G28_M00_Text_0819B8E5, Naranja_Route109_G28_M00_Text_0819B949, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
     msgbox(Naranja_Route109_G28_M00_Text_0819B955, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route109_G28_M00_EventScript_OBJ_EVENT_GFX_TUBER_M_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ROUTE109_065, LOCALID_NONE, Naranja_Route109_G28_M00_Text_0819B988, Naranja_Route109_G28_M00_Text_0819B9C7, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE109_065, Naranja_Route109_G28_M00_Text_0819B988, Naranja_Route109_G28_M00_Text_0819B9C7, Naranja_Route109_G28_M00_EventScript_AfterBattle_08160F09)
     msgbox(Naranja_Route109_G28_M00_Text_0819B9E5, MSGBOX_AUTOCLOSE)
     end
 }

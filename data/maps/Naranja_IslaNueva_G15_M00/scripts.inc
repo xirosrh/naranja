@@ -151,7 +151,7 @@ Naranja_IslaNueva_G15_M00_OnFrame_4::
 
 Naranja_IslaNueva_G15_M00_EventScript_OBJ_EVENT_GFX_WALLACE_LocalId1::
 # 100 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_NUEVA_272, LOCALID_NONE, Naranja_IslaNueva_G15_M00_Text_0818F0CA, Naranja_IslaNueva_G15_M00_Text_0818F282, Naranja_IslaNueva_G15_M00_EventScript_AfterBattle_0815B02D
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_272, Naranja_IslaNueva_G15_M00_Text_0818F0CA, Naranja_IslaNueva_G15_M00_Text_0818F282, Naranja_IslaNueva_G15_M00_EventScript_AfterBattle_0815B02D, NO_MUSIC
 # 101 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_00AC
 # 102 "data/maps/Naranja_IslaNueva_G15_M00/scripts.pory"

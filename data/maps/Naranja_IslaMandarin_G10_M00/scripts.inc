@@ -234,7 +234,7 @@ Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566E1::
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5::
 # 145 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_191, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180956, Naranja_IslaMandarin_G10_M00_Text_08180997
+	trainerbattle_single TRAINER_NARANJA_ISLA_MANDARIN_191, Naranja_IslaMandarin_G10_M00_Text_08180956, Naranja_IslaMandarin_G10_M00_Text_08180997
 # 146 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	msgbox Naranja_IslaMandarin_G10_M00_Text_081809D1, MSGBOX_AUTOCLOSE
 	end
@@ -242,7 +242,7 @@ Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5::
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
 # 151 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_194, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180A05, Naranja_IslaMandarin_G10_M00_Text_08180A42
+	trainerbattle_single TRAINER_NARANJA_ISLA_MANDARIN_194, Naranja_IslaMandarin_G10_M00_Text_08180A05, Naranja_IslaMandarin_G10_M00_Text_08180A42
 # 152 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	msgbox Naranja_IslaMandarin_G10_M00_Text_08180A5E, MSGBOX_AUTOCLOSE
 	end
@@ -250,7 +250,7 @@ Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4::
 # 157 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_323, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180AE0, Naranja_IslaMandarin_G10_M00_Text_08180B06
+	trainerbattle_single TRAINER_NARANJA_ISLA_MANDARIN_323, Naranja_IslaMandarin_G10_M00_Text_08180AE0, Naranja_IslaMandarin_G10_M00_Text_08180B06
 # 158 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	msgbox Naranja_IslaMandarin_G10_M00_Text_08180B1D, MSGBOX_AUTOCLOSE
 	end
@@ -258,7 +258,7 @@ Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4::
 
 Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3::
 # 163 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_649, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180B5A, Naranja_IslaMandarin_G10_M00_Text_08180B93
+	trainerbattle_single TRAINER_NARANJA_ISLA_MANDARIN_649, Naranja_IslaMandarin_G10_M00_Text_08180B5A, Naranja_IslaMandarin_G10_M00_Text_08180B93
 # 164 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	msgbox Naranja_IslaMandarin_G10_M00_Text_08180BAE, MSGBOX_AUTOCLOSE
 	end

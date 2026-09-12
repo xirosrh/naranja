@@ -4,7 +4,7 @@ Naranja_Bementer_G24_M17_MapScripts::
 
 Naranja_Bementer_G24_M17_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId1::
 # 8 "data/maps/Naranja_Bementer_G24_M17/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_236, LOCALID_NONE, Naranja_Bementer_G24_M17_Text_0819672B, Naranja_Bementer_G24_M17_Text_0819679D
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_236, Naranja_Bementer_G24_M17_Text_0819672B, Naranja_Bementer_G24_M17_Text_0819679D
 # 9 "data/maps/Naranja_Bementer_G24_M17/scripts.pory"
 	msgbox Naranja_Bementer_G24_M17_Text_081967B5, MSGBOX_AUTOCLOSE
 	end
@@ -12,7 +12,7 @@ Naranja_Bementer_G24_M17_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId1::
 
 Naranja_Bementer_G24_M17_EventScript_OBJ_EVENT_GFX_LASS_LocalId2::
 # 14 "data/maps/Naranja_Bementer_G24_M17/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_247, LOCALID_NONE, Naranja_Bementer_G24_M17_Text_081967EF, Naranja_Bementer_G24_M17_Text_0819682B
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_247, Naranja_Bementer_G24_M17_Text_081967EF, Naranja_Bementer_G24_M17_Text_0819682B
 # 15 "data/maps/Naranja_Bementer_G24_M17/scripts.pory"
 	msgbox Naranja_Bementer_G24_M17_Text_08196842, MSGBOX_AUTOCLOSE
 	end

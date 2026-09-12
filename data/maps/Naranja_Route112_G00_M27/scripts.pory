@@ -42,13 +42,13 @@ script Naranja_Route112_G00_M27_EventScript_OBJ_EVENT_GFX_HIKER_LocalId11 {
 }
 
 script Naranja_Route112_G00_M27_EventScript_OBJ_EVENT_GFX_HIKER_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE112_626, LOCALID_NONE, Naranja_Route112_G00_M27_Text_081BB619, Naranja_Route112_G00_M27_Text_081BB655)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE112_626, Naranja_Route112_G00_M27_Text_081BB619, Naranja_Route112_G00_M27_Text_081BB655)
     msgbox(Naranja_Route112_G00_M27_Text_081BB667, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route112_G00_M27_EventScript_OBJ_EVENT_GFX_HIKER_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE112_627, LOCALID_NONE, Naranja_Route112_G00_M27_Text_081BB6A0, Naranja_Route112_G00_M27_Text_081BB707)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE112_627, Naranja_Route112_G00_M27_Text_081BB6A0, Naranja_Route112_G00_M27_Text_081BB707)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route112_G00_M27_EventScript_Sub_08150587)
@@ -57,19 +57,19 @@ script Naranja_Route112_G00_M27_EventScript_OBJ_EVENT_GFX_HIKER_LocalId5 {
 }
 
 script Naranja_Route112_G00_M27_EventScript_Sub_08150587 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE112_627, LOCALID_NONE, Naranja_Route112_G00_M27_Text_081BB7C7, Naranja_Route112_G00_M27_Text_081BB801)
+    trainerbattle_rematch(TRAINER_NARANJA_ROUTE112_627, Naranja_Route112_G00_M27_Text_081BB7C7, Naranja_Route112_G00_M27_Text_081BB801)
     msgbox(Naranja_Route112_G00_M27_Text_081BB819, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route112_G00_M27_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE112_213, LOCALID_NONE, Naranja_Route112_G00_M27_Text_081BB893, Naranja_Route112_G00_M27_Text_081BB8B6)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE112_213, Naranja_Route112_G00_M27_Text_081BB893, Naranja_Route112_G00_M27_Text_081BB8B6)
     msgbox(Naranja_Route112_G00_M27_Text_081BB8BE, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route112_G00_M27_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE112_471, LOCALID_NONE, Naranja_Route112_G00_M27_Text_081BB8F0, Naranja_Route112_G00_M27_Text_081BB942)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE112_471, Naranja_Route112_G00_M27_Text_081BB8F0, Naranja_Route112_G00_M27_Text_081BB942)
     msgbox(Naranja_Route112_G00_M27_Text_081BB958, MSGBOX_AUTOCLOSE)
     end
 }

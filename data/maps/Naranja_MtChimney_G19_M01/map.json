@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_MT_CHIMNEY_G19_M01",
+  "region": "REGION_HOENN",
   "name": "Naranja_MtChimney_G19_M01",
   "layout": "LAYOUT_NARANJA_ROUTE_112_G19_M00",
   "music": "MUS_DUMMY",

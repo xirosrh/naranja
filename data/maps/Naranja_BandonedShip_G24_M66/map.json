@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_BANDONED_SHIP_G24_M66",
+  "region": "REGION_HOENN",
   "name": "Naranja_BandonedShip_G24_M66",
   "layout": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M66",
   "music": "MUS_DUMMY",
@@ -143,7 +144,7 @@
       "x": 42,
       "y": 10,
       "elevation": 3,
-      "item": "ITEM_ROOM_1_KEY",
+      "item": "ITEM_KEY_TO_ROOM_1",
       "flag": "FLAG_HIDDEN_ITEM_BANDONED_SHIP_G24_M66_ROOM_1_KEY_1"
     },
     {
@@ -151,7 +152,7 @@
       "x": 20,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_ROOM_2_KEY",
+      "item": "ITEM_KEY_TO_ROOM_2",
       "flag": "FLAG_HIDDEN_ITEM_BANDONED_SHIP_G24_M66_ROOM_2_KEY_2"
     },
     {
@@ -159,7 +160,7 @@
       "x": 1,
       "y": 12,
       "elevation": 3,
-      "item": "ITEM_ROOM_4_KEY",
+      "item": "ITEM_KEY_TO_ROOM_4",
       "flag": "FLAG_HIDDEN_ITEM_BANDONED_SHIP_G24_M66_ROOM_4_KEY_3"
     },
     {
@@ -167,7 +168,7 @@
       "x": 1,
       "y": 2,
       "elevation": 0,
-      "item": "ITEM_ROOM_6_KEY",
+      "item": "ITEM_KEY_TO_ROOM_6",
       "flag": "FLAG_HIDDEN_ITEM_BANDONED_SHIP_G24_M66_ROOM_6_KEY_4"
     },
     {

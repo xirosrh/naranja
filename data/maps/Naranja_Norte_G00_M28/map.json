@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_NORTE_G00_M28",
+  "region": "REGION_HOENN",
   "name": "Naranja_Norte_G00_M28",
   "layout": "LAYOUT_NARANJA_NORTE_G00_M28",
   "music": "MUS_DUMMY",

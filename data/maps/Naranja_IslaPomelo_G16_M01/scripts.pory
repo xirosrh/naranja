@@ -49,7 +49,7 @@ script Naranja_IslaPomelo_G16_M01_EventScript_OBJ_EVENT_GFX_PHOEBE_LocalId1 {
     goto_if(EQUAL, Naranja_IslaPomelo_G16_M01_EventScript_Sub_0815B657)
     playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
     msgbox(Naranja_IslaPomelo_G16_M01_Text_081908F5, MSGBOX_DEFAULT)
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_262, LOCALID_NONE, Naranja_IslaPomelo_G16_M01_Text_08190A0C)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_POMELO_262, Naranja_IslaPomelo_G16_M01_Text_08190A0C)
     goto(Naranja_IslaPomelo_G16_M01_EventScript_Sub_0815B661)
 }
 

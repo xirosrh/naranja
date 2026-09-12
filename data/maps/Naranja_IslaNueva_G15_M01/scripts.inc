@@ -4,7 +4,7 @@ Naranja_IslaNueva_G15_M01_MapScripts::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId1::
 # 8 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_613, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EA87, Naranja_IslaNueva_G15_M01_Text_0818EACF
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_613, Naranja_IslaNueva_G15_M01_Text_0818EA87, Naranja_IslaNueva_G15_M01_Text_0818EACF
 # 9 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818EAED, MSGBOX_AUTOCLOSE
 	end
@@ -12,7 +12,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId1::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId7::
 # 14 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_614, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EB22, Naranja_IslaNueva_G15_M01_Text_0818EB81
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_614, Naranja_IslaNueva_G15_M01_Text_0818EB22, Naranja_IslaNueva_G15_M01_Text_0818EB81
 # 15 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818EBB1, MSGBOX_AUTOCLOSE
 	end
@@ -20,7 +20,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_LASS_LocalId7::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId3::
 # 20 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_118, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EBFA, Naranja_IslaNueva_G15_M01_Text_0818EC5E
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_118, Naranja_IslaNueva_G15_M01_Text_0818EBFA, Naranja_IslaNueva_G15_M01_Text_0818EC5E
 # 21 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818EC92, MSGBOX_AUTOCLOSE
 	end
@@ -28,7 +28,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId3::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2::
 # 26 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_128, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818ECEB, Naranja_IslaNueva_G15_M01_Text_0818ED18
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_128, Naranja_IslaNueva_G15_M01_Text_0818ECEB, Naranja_IslaNueva_G15_M01_Text_0818ED18
 # 27 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818ED2B, MSGBOX_AUTOCLOSE
 	end
@@ -36,7 +36,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4::
 # 32 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_129, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818ED91, Naranja_IslaNueva_G15_M01_Text_0818EDE8
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_129, Naranja_IslaNueva_G15_M01_Text_0818ED91, Naranja_IslaNueva_G15_M01_Text_0818EDE8
 # 33 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818EE03, MSGBOX_AUTOCLOSE
 	end
@@ -44,7 +44,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId4::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId8::
 # 38 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_130, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EE96, Naranja_IslaNueva_G15_M01_Text_0818EEDC
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_130, Naranja_IslaNueva_G15_M01_Text_0818EE96, Naranja_IslaNueva_G15_M01_Text_0818EEDC
 # 39 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818EEF7, MSGBOX_AUTOCLOSE
 	end
@@ -52,7 +52,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId8::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId5::
 # 44 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_131, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818EF39, Naranja_IslaNueva_G15_M01_Text_0818EFB8
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_131, Naranja_IslaNueva_G15_M01_Text_0818EF39, Naranja_IslaNueva_G15_M01_Text_0818EFB8
 # 45 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818EFCA, MSGBOX_AUTOCLOSE
 	end
@@ -60,7 +60,7 @@ Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId5::
 
 Naranja_IslaNueva_G15_M01_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId6::
 # 50 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_NUEVA_301, LOCALID_NONE, Naranja_IslaNueva_G15_M01_Text_0818F037, Naranja_IslaNueva_G15_M01_Text_0818F07F
+	trainerbattle_single TRAINER_NARANJA_ISLA_NUEVA_301, Naranja_IslaNueva_G15_M01_Text_0818F037, Naranja_IslaNueva_G15_M01_Text_0818F07F
 # 51 "data/maps/Naranja_IslaNueva_G15_M01/scripts.pory"
 	msgbox Naranja_IslaNueva_G15_M01_Text_0818F085, MSGBOX_AUTOCLOSE
 	end

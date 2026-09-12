@@ -17,19 +17,19 @@ script Naranja_Route110_G29_M06_EventScript_Sub_08162760 {
 }
 
 script Naranja_Route110_G29_M06_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_428, LOCALID_NONE, Naranja_Route110_G29_M06_Text_0819D1DE, Naranja_Route110_G29_M06_Text_0819D21F)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE110_428, Naranja_Route110_G29_M06_Text_0819D1DE, Naranja_Route110_G29_M06_Text_0819D21F)
     msgbox(Naranja_Route110_G29_M06_Text_0819D253, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route110_G29_M06_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_188, LOCALID_NONE, Naranja_Route110_G29_M06_Text_0819D295, Naranja_Route110_G29_M06_Text_0819D2D1)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE110_188, Naranja_Route110_G29_M06_Text_0819D295, Naranja_Route110_G29_M06_Text_0819D2D1)
     msgbox(Naranja_Route110_G29_M06_Text_0819D306, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route110_G29_M06_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE110_429, LOCALID_NONE, Naranja_Route110_G29_M06_Text_0819D351, Naranja_Route110_G29_M06_Text_0819D380)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE110_429, Naranja_Route110_G29_M06_Text_0819D351, Naranja_Route110_G29_M06_Text_0819D380)
     msgbox(Naranja_Route110_G29_M06_Text_0819D386, MSGBOX_AUTOCLOSE)
     end
 }

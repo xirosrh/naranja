@@ -82,7 +82,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_Sub_0815A558::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_TATE_LocalId1::
 # 57 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, TRAINER_NARANJA_ISLA_MELLSWEET_271, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818CF02, Naranja_IslaMellsweet_G14_M00_Text_0818D077, Naranja_IslaMellsweet_G14_M00_Text_0818D324, Naranja_IslaMellsweet_G14_M00_EventScript_AfterBattle_0815A594
+	trainerbattle_double TRAINER_NARANJA_ISLA_MELLSWEET_271, Naranja_IslaMellsweet_G14_M00_Text_0818CF02, Naranja_IslaMellsweet_G14_M00_Text_0818D077, Naranja_IslaMellsweet_G14_M00_Text_0818D324, Naranja_IslaMellsweet_G14_M00_EventScript_AfterBattle_0815A594, NO_MUSIC
 # 58 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_00AB
 # 59 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
@@ -318,7 +318,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_Trigger_1::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId2::
 # 192 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MELLSWEET_233, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818C96A, Naranja_IslaMellsweet_G14_M00_Text_0818C9BA
+	trainerbattle_single TRAINER_NARANJA_ISLA_MELLSWEET_233, Naranja_IslaMellsweet_G14_M00_Text_0818C96A, Naranja_IslaMellsweet_G14_M00_Text_0818C9BA
 # 193 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M00_Text_0818C9E1, MSGBOX_AUTOCLOSE
 	end
@@ -326,7 +326,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId2::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId6::
 # 198 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MELLSWEET_234, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818CA10, Naranja_IslaMellsweet_G14_M00_Text_0818CA28
+	trainerbattle_single TRAINER_NARANJA_ISLA_MELLSWEET_234, Naranja_IslaMellsweet_G14_M00_Text_0818CA10, Naranja_IslaMellsweet_G14_M00_Text_0818CA28
 # 199 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M00_Text_0818CA48, MSGBOX_AUTOCLOSE
 	end
@@ -334,7 +334,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId6::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId3::
 # 204 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MELLSWEET_235, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818CAC0, Naranja_IslaMellsweet_G14_M00_Text_0818CB46
+	trainerbattle_single TRAINER_NARANJA_ISLA_MELLSWEET_235, Naranja_IslaMellsweet_G14_M00_Text_0818CAC0, Naranja_IslaMellsweet_G14_M00_Text_0818CB46
 # 205 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M00_Text_0818CB77, MSGBOX_AUTOCLOSE
 	end
@@ -342,7 +342,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId3::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId7::
 # 210 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MELLSWEET_244, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818CC1E, Naranja_IslaMellsweet_G14_M00_Text_0818CC83
+	trainerbattle_single TRAINER_NARANJA_ISLA_MELLSWEET_244, Naranja_IslaMellsweet_G14_M00_Text_0818CC1E, Naranja_IslaMellsweet_G14_M00_Text_0818CC83
 # 211 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M00_Text_0818CC9B, MSGBOX_AUTOCLOSE
 	end
@@ -350,7 +350,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId7::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId5::
 # 216 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MELLSWEET_245, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818CD14, Naranja_IslaMellsweet_G14_M00_Text_0818CD66
+	trainerbattle_single TRAINER_NARANJA_ISLA_MELLSWEET_245, Naranja_IslaMellsweet_G14_M00_Text_0818CD14, Naranja_IslaMellsweet_G14_M00_Text_0818CD66
 # 217 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M00_Text_0818CD73, MSGBOX_AUTOCLOSE
 	end
@@ -358,7 +358,7 @@ Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId5::
 
 Naranja_IslaMellsweet_G14_M00_EventScript_OBJ_EVENT_GFX_LASS_LocalId4::
 # 222 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MELLSWEET_246, LOCALID_NONE, Naranja_IslaMellsweet_G14_M00_Text_0818CDE0, Naranja_IslaMellsweet_G14_M00_Text_0818CE47
+	trainerbattle_single TRAINER_NARANJA_ISLA_MELLSWEET_246, Naranja_IslaMellsweet_G14_M00_Text_0818CDE0, Naranja_IslaMellsweet_G14_M00_Text_0818CE47
 # 223 "data/maps/Naranja_IslaMellsweet_G14_M00/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M00_Text_0818CE6C, MSGBOX_AUTOCLOSE
 	end

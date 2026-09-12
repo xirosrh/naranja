@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_7ISLAS_POMELO_G00_M11",
+  "region": "REGION_HOENN",
   "name": "Naranja_7islasPomelo_G00_M11",
   "layout": "LAYOUT_NARANJA_7ISLAS_POMELO_G00_M11",
   "music": "MUS_DUMMY",
@@ -156,7 +157,7 @@
       "x": 7,
       "y": 13,
       "elevation": 0,
-      "item": "ITEM_0EA",
+      "item": "ITEM_NARANJA_UNUSED_0EA",
       "flag": "FLAG_HIDDEN_ITEM_7ISLAS_POMELO_G00_M11_0_EA_3"
     },
     {
@@ -164,7 +165,7 @@
       "x": 6,
       "y": 13,
       "elevation": 0,
-      "item": "ITEM_0EA",
+      "item": "ITEM_NARANJA_UNUSED_0EA",
       "flag": "FLAG_HIDDEN_ITEM_7ISLAS_POMELO_G00_M11_0_EA_4"
     },
     {

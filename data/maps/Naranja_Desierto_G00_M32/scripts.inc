@@ -4,7 +4,7 @@ Naranja_Desierto_G00_M32_MapScripts::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId9::
 # 8 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_136, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081B88D4, Naranja_Desierto_G00_M32_Text_081B8911
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_136, Naranja_Desierto_G00_M32_Text_081B88D4, Naranja_Desierto_G00_M32_Text_081B8911
 # 9 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 10 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -18,7 +18,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId9::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_0814F205::
 # 17 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_136, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081B895E, Naranja_Desierto_G00_M32_Text_081B899E
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_136, Naranja_Desierto_G00_M32_Text_081B895E, Naranja_Desierto_G00_M32_Text_081B899E
 # 18 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081B89C0, MSGBOX_AUTOCLOSE
 	end
@@ -26,7 +26,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_0814F205::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
 # 23 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_155, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081B933A, Naranja_Desierto_G00_M32_Text_081B9365
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_155, Naranja_Desierto_G00_M32_Text_081B933A, Naranja_Desierto_G00_M32_Text_081B9365
 # 24 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 25 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -40,7 +40,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_0814F3FA::
 # 32 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_155, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081B93EB, Naranja_Desierto_G00_M32_Text_081B9429
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_155, Naranja_Desierto_G00_M32_Text_081B93EB, Naranja_Desierto_G00_M32_Text_081B9429
 # 33 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081B9477, MSGBOX_AUTOCLOSE
 	end
@@ -66,7 +66,7 @@ Naranja_Desierto_G00_M32_EventScript_Sign_2::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId10::
 # 53 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_538, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD49E, Naranja_Desierto_G00_M32_Text_081BD4D9
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_538, Naranja_Desierto_G00_M32_Text_081BD49E, Naranja_Desierto_G00_M32_Text_081BD4D9
 # 54 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 55 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -80,7 +80,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId10::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_08150DB4::
 # 62 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_538, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD569, Naranja_Desierto_G00_M32_Text_081BD5AB
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_538, Naranja_Desierto_G00_M32_Text_081BD569, Naranja_Desierto_G00_M32_Text_081BD5AB
 # 63 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081BD5F2, MSGBOX_AUTOCLOSE
 	end
@@ -88,7 +88,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_08150DB4::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId8::
 # 68 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_364, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD79A, Naranja_Desierto_G00_M32_Text_081BD7E0
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_364, Naranja_Desierto_G00_M32_Text_081BD79A, Naranja_Desierto_G00_M32_Text_081BD7E0
 # 69 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 70 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -102,7 +102,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId8::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_08150E30::
 # 77 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_364, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD83F, Naranja_Desierto_G00_M32_Text_081BD8A2
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_364, Naranja_Desierto_G00_M32_Text_081BD83F, Naranja_Desierto_G00_M32_Text_081BD8A2
 # 78 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081BD8BD, MSGBOX_AUTOCLOSE
 	end
@@ -110,7 +110,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_08150E30::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F_LocalId17::
 # 83 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_369, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD914, Naranja_Desierto_G00_M32_Text_081BD965
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_369, Naranja_Desierto_G00_M32_Text_081BD914, Naranja_Desierto_G00_M32_Text_081BD965
 # 84 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 85 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -124,7 +124,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_RUNNING_TRIATHLETE_F_LocalId1
 
 Naranja_Desierto_G00_M32_EventScript_Sub_08150E6E::
 # 92 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_369, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BD9F1, Naranja_Desierto_G00_M32_Text_081BDA41
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_369, Naranja_Desierto_G00_M32_Text_081BD9F1, Naranja_Desierto_G00_M32_Text_081BDA41
 # 93 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081BDA6B, MSGBOX_AUTOCLOSE
 	end
@@ -132,7 +132,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_08150E6E::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_08150E85::
 # 98 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_553, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDAA7, Naranja_Desierto_G00_M32_Text_081BDAFC
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_553, Naranja_Desierto_G00_M32_Text_081BDAA7, Naranja_Desierto_G00_M32_Text_081BDAFC
 # 99 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	waitse
 # 100 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -142,7 +142,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_08150E85::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_LASS_LocalId20::
 # 105 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_DESIERTO_287, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDBC3, Naranja_Desierto_G00_M32_Text_081BDC07, Naranja_Desierto_G00_M32_Text_081BDC96
+	trainerbattle_double TRAINER_NARANJA_DESIERTO_287, Naranja_Desierto_G00_M32_Text_081BDBC3, Naranja_Desierto_G00_M32_Text_081BDC07, Naranja_Desierto_G00_M32_Text_081BDC96
 # 106 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 107 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -156,7 +156,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_LASS_LocalId20::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_08150EC7::
 # 114 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_DESIERTO_287, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDDEF, Naranja_Desierto_G00_M32_Text_081BDE2F, Naranja_Desierto_G00_M32_Text_081BDEA7
+	trainerbattle_rematch_double TRAINER_NARANJA_DESIERTO_287, Naranja_Desierto_G00_M32_Text_081BDDEF, Naranja_Desierto_G00_M32_Text_081BDE2F, Naranja_Desierto_G00_M32_Text_081BDEA7
 # 115 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081BDE55, MSGBOX_AUTOCLOSE
 	end
@@ -164,7 +164,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_08150EC7::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_LASS_LocalId19::
 # 120 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_DESIERTO_287, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDCD2, Naranja_Desierto_G00_M32_Text_081BDD1E, Naranja_Desierto_G00_M32_Text_081BDD8B
+	trainerbattle_double TRAINER_NARANJA_DESIERTO_287, Naranja_Desierto_G00_M32_Text_081BDCD2, Naranja_Desierto_G00_M32_Text_081BDD1E, Naranja_Desierto_G00_M32_Text_081BDD8B
 # 121 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 122 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -178,7 +178,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_LASS_LocalId19::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_08150F0D::
 # 129 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_DESIERTO_287, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDEE3, Naranja_Desierto_G00_M32_Text_081BDF26, Naranja_Desierto_G00_M32_Text_081BDF90
+	trainerbattle_rematch_double TRAINER_NARANJA_DESIERTO_287, Naranja_Desierto_G00_M32_Text_081BDEE3, Naranja_Desierto_G00_M32_Text_081BDF26, Naranja_Desierto_G00_M32_Text_081BDF90
 # 130 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081BDF37, MSGBOX_AUTOCLOSE
 	end
@@ -186,7 +186,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_08150F0D::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId21::
 # 135 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_037, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BDFF4, Naranja_Desierto_G00_M32_Text_081BE03C
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_037, Naranja_Desierto_G00_M32_Text_081BDFF4, Naranja_Desierto_G00_M32_Text_081BE03C
 # 136 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 137 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -200,7 +200,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId21::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_081510B6::
 # 144 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_037, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081BE0AB, Naranja_Desierto_G00_M32_Text_081BE0D3
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_037, Naranja_Desierto_G00_M32_Text_081BE0AB, Naranja_Desierto_G00_M32_Text_081BE0D3
 # 145 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081BE104, MSGBOX_AUTOCLOSE
 	end
@@ -208,7 +208,7 @@ Naranja_Desierto_G00_M32_EventScript_Sub_081510B6::
 
 Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId3::
 # 150 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_DESIERTO_376, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081C1C67, Naranja_Desierto_G00_M32_Text_081C1C95
+	trainerbattle_single TRAINER_NARANJA_DESIERTO_376, Naranja_Desierto_G00_M32_Text_081C1C67, Naranja_Desierto_G00_M32_Text_081C1C95
 # 151 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 152 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
@@ -222,7 +222,7 @@ Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId3::
 
 Naranja_Desierto_G00_M32_EventScript_Sub_081522CB::
 # 159 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_DESIERTO_376, LOCALID_NONE, Naranja_Desierto_G00_M32_Text_081C1D02, Naranja_Desierto_G00_M32_Text_081C1D45
+	trainerbattle_rematch TRAINER_NARANJA_DESIERTO_376, Naranja_Desierto_G00_M32_Text_081C1D02, Naranja_Desierto_G00_M32_Text_081C1D45
 # 160 "data/maps/Naranja_Desierto_G00_M32/scripts.pory"
 	msgbox Naranja_Desierto_G00_M32_Text_081C1D6B, MSGBOX_AUTOCLOSE
 	end

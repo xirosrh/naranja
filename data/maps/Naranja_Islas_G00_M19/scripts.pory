@@ -114,43 +114,43 @@ script Naranja_Islas_G00_M19_EventScript_Sub_0814F095 {
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId9 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_337, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B85EB, Naranja_Islas_G00_M19_Text_081B8637)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_337, Naranja_Islas_G00_M19_Text_081B85EB, Naranja_Islas_G00_M19_Text_081B8637)
     msgbox(Naranja_Islas_G00_M19_Text_081B8680, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId28 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_151, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8C28, Naranja_Islas_G00_M19_Text_081B8C99)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_151, Naranja_Islas_G00_M19_Text_081B8C28, Naranja_Islas_G00_M19_Text_081B8C99)
     msgbox(Naranja_Islas_G00_M19_Text_081B8CA9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_152, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8CEE, Naranja_Islas_G00_M19_Text_081B8D23)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_152, Naranja_Islas_G00_M19_Text_081B8CEE, Naranja_Islas_G00_M19_Text_081B8D23)
     msgbox(Naranja_Islas_G00_M19_Text_081B8D45, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_441, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8D99, Naranja_Islas_G00_M19_Text_081B8DDD)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_441, Naranja_Islas_G00_M19_Text_081B8D99, Naranja_Islas_G00_M19_Text_081B8DDD)
     msgbox(Naranja_Islas_G00_M19_Text_081B8DED, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_442, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081B8E66, Naranja_Islas_G00_M19_Text_081B8EA0)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_442, Naranja_Islas_G00_M19_Text_081B8E66, Naranja_Islas_G00_M19_Text_081B8EA0)
     msgbox(Naranja_Islas_G00_M19_Text_081B8EBD, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId23 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_322, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BD02B, Naranja_Islas_G00_M19_Text_081BD04C)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_322, Naranja_Islas_G00_M19_Text_081BD02B, Naranja_Islas_G00_M19_Text_081BD04C)
     msgbox(Naranja_Islas_G00_M19_Text_081BD078, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId24 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_273, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BD1C0, Naranja_Islas_G00_M19_Text_081BD21A)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_273, Naranja_Islas_G00_M19_Text_081BD1C0, Naranja_Islas_G00_M19_Text_081BD21A)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Islas_G00_M19_EventScript_Sub_08150CB7)
@@ -159,13 +159,13 @@ script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId24 {
 }
 
 script Naranja_Islas_G00_M19_EventScript_Sub_08150CB7 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLAS_273, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BD2A5, Naranja_Islas_G00_M19_Text_081BD2FE)
+    trainerbattle_rematch(TRAINER_NARANJA_ISLAS_273, Naranja_Islas_G00_M19_Text_081BD2A5, Naranja_Islas_G00_M19_Text_081BD2FE)
     msgbox(Naranja_Islas_G00_M19_Text_081BD31A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId25 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_075, LOCALID_NONE, Naranja_Islas_G00_M19_Text_081BFFF0, Naranja_Islas_G00_M19_Text_081C0057)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_075, Naranja_Islas_G00_M19_Text_081BFFF0, Naranja_Islas_G00_M19_Text_081C0057)
     msgbox(Naranja_Islas_G00_M19_Text_081C0075, MSGBOX_AUTOCLOSE)
     end
 }

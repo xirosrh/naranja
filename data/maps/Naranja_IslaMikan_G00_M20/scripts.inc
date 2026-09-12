@@ -154,7 +154,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId28::
 # 109 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_319, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B86BE, Naranja_IslaMikan_G00_M20_Text_081B86E8
+	trainerbattle_single TRAINER_NARANJA_ISLA_MIKAN_319, Naranja_IslaMikan_G00_M20_Text_081B86BE, Naranja_IslaMikan_G00_M20_Text_081B86E8
 # 110 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	msgbox Naranja_IslaMikan_G00_M20_Text_081B871C, MSGBOX_AUTOCLOSE
 	end
@@ -162,7 +162,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId28::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3::
 # 115 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8770, Naranja_IslaMikan_G00_M20_Text_081B87A7
+	trainerbattle_single TRAINER_NARANJA_ISLA_MIKAN_604, Naranja_IslaMikan_G00_M20_Text_081B8770, Naranja_IslaMikan_G00_M20_Text_081B87A7
 # 116 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 117 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
@@ -176,7 +176,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3::
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7::
 # 124 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852
+	trainerbattle_rematch TRAINER_NARANJA_ISLA_MIKAN_604, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852
 # 125 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	msgbox Naranja_IslaMikan_G00_M20_Text_081B8872, MSGBOX_AUTOCLOSE
 	end
@@ -184,7 +184,7 @@ Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26::
 # 130 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61
+	trainerbattle_single TRAINER_NARANJA_ISLA_MIKAN_114, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61
 # 131 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 132 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
@@ -198,7 +198,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26::
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243::
 # 139 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8AA7, Naranja_IslaMikan_G00_M20_Text_081B8AD9
+	trainerbattle_rematch TRAINER_NARANJA_ISLA_MIKAN_114, Naranja_IslaMikan_G00_M20_Text_081B8AA7, Naranja_IslaMikan_G00_M20_Text_081B8AD9
 # 140 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	msgbox Naranja_IslaMikan_G00_M20_Text_081B8B02, MSGBOX_AUTOCLOSE
 	end
@@ -206,7 +206,7 @@ Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId23::
 # 145 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B83E9, Naranja_IslaMikan_G00_M20_Text_081B8414, Naranja_IslaMikan_G00_M20_Text_081B845C
+	trainerbattle_double TRAINER_NARANJA_ISLA_MIKAN_483, Naranja_IslaMikan_G00_M20_Text_081B83E9, Naranja_IslaMikan_G00_M20_Text_081B8414, Naranja_IslaMikan_G00_M20_Text_081B845C
 # 146 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 147 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
@@ -218,7 +218,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId23::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId24::
 # 153 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B84DB, Naranja_IslaMikan_G00_M20_Text_081B850D, Naranja_IslaMikan_G00_M20_Text_081B8577
+	trainerbattle_double TRAINER_NARANJA_ISLA_MIKAN_483, Naranja_IslaMikan_G00_M20_Text_081B84DB, Naranja_IslaMikan_G00_M20_Text_081B850D, Naranja_IslaMikan_G00_M20_Text_081B8577
 # 154 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	special GetPlayerBigGuyGirlString
 # 155 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
@@ -246,7 +246,7 @@ Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F2A8::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId25::
 # 173 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD634, Naranja_IslaMikan_G00_M20_Text_081BD67B
+	trainerbattle_single TRAINER_NARANJA_ISLA_MIKAN_545, Naranja_IslaMikan_G00_M20_Text_081BD634, Naranja_IslaMikan_G00_M20_Text_081BD67B
 # 174 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 175 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
@@ -260,7 +260,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId25::
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2::
 # 181 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD6F2, Naranja_IslaMikan_G00_M20_Text_081BD733
+	trainerbattle_rematch TRAINER_NARANJA_ISLA_MIKAN_545, Naranja_IslaMikan_G00_M20_Text_081BD6F2, Naranja_IslaMikan_G00_M20_Text_081BD733
 # 182 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	msgbox Naranja_IslaMikan_G00_M20_Text_081BD74F, MSGBOX_AUTOCLOSE
 	end
@@ -268,7 +268,7 @@ Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId22::
 # 187 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE3E8, Naranja_IslaMikan_G00_M20_Text_081BE406
+	trainerbattle_single TRAINER_NARANJA_ISLA_MIKAN_196, Naranja_IslaMikan_G00_M20_Text_081BE3E8, Naranja_IslaMikan_G00_M20_Text_081BE406
 # 188 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 189 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
@@ -282,7 +282,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId22::
 
 Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122::
 # 196 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE489, Naranja_IslaMikan_G00_M20_Text_081BE4CC
+	trainerbattle_rematch TRAINER_NARANJA_ISLA_MIKAN_196, Naranja_IslaMikan_G00_M20_Text_081BE489, Naranja_IslaMikan_G00_M20_Text_081BE4CC
 # 197 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	msgbox Naranja_IslaMikan_G00_M20_Text_081BE4D9, MSGBOX_AUTOCLOSE
 	end
@@ -290,7 +290,7 @@ Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122::
 
 Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId9::
 # 202 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_405, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BEFC8, Naranja_IslaMikan_G00_M20_Text_081BF000
+	trainerbattle_single TRAINER_NARANJA_ISLA_MIKAN_405, Naranja_IslaMikan_G00_M20_Text_081BEFC8, Naranja_IslaMikan_G00_M20_Text_081BF000
 # 203 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	msgbox Naranja_IslaMikan_G00_M20_Text_081BF015, MSGBOX_AUTOCLOSE
 	end

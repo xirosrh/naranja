@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_NUEVA_G15_M04",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaNueva_G15_M04",
   "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M04",
   "music": "MUS_DUMMY",

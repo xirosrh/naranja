@@ -12,31 +12,31 @@ script Naranja_Route125_G00_M40_OnTransition {
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_161, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C0FCF, Naranja_Route125_G00_M40_Text_081C1002)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE125_161, Naranja_Route125_G00_M40_Text_081C0FCF, Naranja_Route125_G00_M40_Text_081C1002)
     msgbox(Naranja_Route125_G00_M40_Text_081C1013, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_162, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C104B, Naranja_Route125_G00_M40_Text_081C1073)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE125_162, Naranja_Route125_G00_M40_Text_081C104B, Naranja_Route125_G00_M40_Text_081C1073)
     msgbox(Naranja_Route125_G00_M40_Text_081C1083, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_451, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C10C3, Naranja_Route125_G00_M40_Text_081C10FB)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE125_451, Naranja_Route125_G00_M40_Text_081C10C3, Naranja_Route125_G00_M40_Text_081C10FB)
     msgbox(Naranja_Route125_G00_M40_Text_081C110C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_452, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C1136, Naranja_Route125_G00_M40_Text_081C1175)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE125_452, Naranja_Route125_G00_M40_Text_081C1136, Naranja_Route125_G00_M40_Text_081C1175)
     msgbox(Naranja_Route125_G00_M40_Text_081C117F, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE125_492, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C11AF, Naranja_Route125_G00_M40_Text_081C11ED)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE125_492, Naranja_Route125_G00_M40_Text_081C11AF, Naranja_Route125_G00_M40_Text_081C11ED)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route125_G00_M40_EventScript_Sub_08151FB1)
@@ -45,19 +45,19 @@ script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId5 {
 }
 
 script Naranja_Route125_G00_M40_EventScript_Sub_08151FB1 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE125_492, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C1282, Naranja_Route125_G00_M40_Text_081C12C5)
+    trainerbattle_rematch(TRAINER_NARANJA_ROUTE125_492, Naranja_Route125_G00_M40_Text_081C1282, Naranja_Route125_G00_M40_Text_081C12C5)
     msgbox(Naranja_Route125_G00_M40_Text_081C12EE, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_LASS_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE125_678, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C13A1, Naranja_Route125_G00_M40_Text_081C13FF, Naranja_Route125_G00_M40_Text_081C146E)
+    trainerbattle_double(TRAINER_NARANJA_ROUTE125_678, Naranja_Route125_G00_M40_Text_081C13A1, Naranja_Route125_G00_M40_Text_081C13FF, Naranja_Route125_G00_M40_Text_081C146E)
     msgbox(Naranja_Route125_G00_M40_Text_081C141C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route125_G00_M40_EventScript_OBJ_EVENT_GFX_LASS_LocalId7 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ROUTE125_678, LOCALID_NONE, Naranja_Route125_G00_M40_Text_081C14AB, Naranja_Route125_G00_M40_Text_081C14E7, Naranja_Route125_G00_M40_Text_081C154F)
+    trainerbattle_double(TRAINER_NARANJA_ROUTE125_678, Naranja_Route125_G00_M40_Text_081C14AB, Naranja_Route125_G00_M40_Text_081C14E7, Naranja_Route125_G00_M40_Text_081C154F)
     msgbox(Naranja_Route125_G00_M40_Text_081C1508, MSGBOX_AUTOCLOSE)
     end
 }

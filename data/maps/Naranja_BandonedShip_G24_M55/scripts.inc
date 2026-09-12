@@ -10,7 +10,7 @@ Naranja_BandonedShip_G24_M55_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId1::
 
 Naranja_BandonedShip_G24_M55_EventScript_OBJ_EVENT_GFX_TUBER_M_LocalId2::
 # 13 "data/maps/Naranja_BandonedShip_G24_M55/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BANDONED_SHIP_066, LOCALID_NONE, Naranja_BandonedShip_G24_M55_Text_0819843D, Naranja_BandonedShip_G24_M55_Text_08198479
+	trainerbattle_single TRAINER_NARANJA_BANDONED_SHIP_066, Naranja_BandonedShip_G24_M55_Text_0819843D, Naranja_BandonedShip_G24_M55_Text_08198479
 # 14 "data/maps/Naranja_BandonedShip_G24_M55/scripts.pory"
 	msgbox Naranja_BandonedShip_G24_M55_Text_08198493, MSGBOX_AUTOCLOSE
 	end

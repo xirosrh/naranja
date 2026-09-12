@@ -13,7 +13,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId3 {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B32)
     message(Naranja_IslaMandarin_G10_M03_Text_08181CB4)
     waitmessage
-    showmoneybox(0, 0, 0)
+    showmoneybox(0, 0)
     showcoinsbox(0, 5)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156A60)
 }
@@ -32,17 +32,17 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AAE {
     checkcoins(VAR_TEMP_1)
     compare_var_to_value(VAR_TEMP_1, 0x26DE)
     goto_if(GREATER_THAN_OR_EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B5C)
-    checkmoney(0x3E8, 0)
+    checkmoney(0x3E8)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B3C)
     addcoins(0x32)
-    removemoney(0x3E8, 0)
-    updatemoneybox(0)
-    updatecoinsbox(0, 5)
+    removemoney(0x3E8)
+    updatemoneybox
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181CFE, MSGBOX_DEFAULT)
     hidemoneybox
-    hidecoinsbox(0, 5)
+    hidecoinsbox
     release
     end
 }
@@ -51,17 +51,17 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AF0 {
     checkcoins(VAR_TEMP_1)
     compare_var_to_value(VAR_TEMP_1, 0x251C)
     goto_if(GREATER_THAN_OR_EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B5C)
-    checkmoney(0x2710, 0)
+    checkmoney(0x2710)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B3C)
     addcoins(0x1F4)
-    removemoney(0x2710, 0)
-    updatemoneybox(0)
-    updatecoinsbox(0, 5)
+    removemoney(0x2710)
+    updatemoneybox
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181CFE, MSGBOX_DEFAULT)
     hidemoneybox
-    hidecoinsbox(0, 5)
+    hidecoinsbox
     release
     end
 }
@@ -75,7 +75,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B32 {
 script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B3C {
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181D28, MSGBOX_DEFAULT)
     hidemoneybox
-    hidecoinsbox(0, 5)
+    hidecoinsbox
     release
     end
 }
@@ -83,7 +83,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B3C {
 script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B4C {
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181D73, MSGBOX_DEFAULT)
     hidemoneybox
-    hidecoinsbox(0, 5)
+    hidecoinsbox
     release
     end
 }
@@ -91,7 +91,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B4C {
 script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B5C {
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181D57, MSGBOX_DEFAULT)
     hidemoneybox
-    hidecoinsbox(0, 5)
+    hidecoinsbox
     release
     end
 }
@@ -177,7 +177,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156C46 {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D02)
     removecoins(0x3E8)
     adddecoration(0x58)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181E49, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B9B)
@@ -193,7 +193,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156C80 {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D02)
     removecoins(0x3E8)
     adddecoration(0x59)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181E49, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B9B)
@@ -209,7 +209,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156CBA {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D02)
     removecoins(0x3E8)
     adddecoration(0x5A)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181E49, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B9B)
@@ -227,7 +227,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D02 {
 
 script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D0D {
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181EC2, MSGBOX_DEFAULT)
-    hidecoinsbox(0, 0)
+    hidecoinsbox
     release
     end
 }
@@ -332,7 +332,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156E3C {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F6C)
     removecoins(0x5DC)
     additem(ITEM_TM32, 1)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181F08, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D49)
@@ -347,7 +347,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156E76 {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F6C)
     removecoins(0xDAC)
     additem(ITEM_TM29, 1)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181F08, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D49)
@@ -362,7 +362,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156EB0 {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F6C)
     removecoins(0xFA0)
     additem(ITEM_TM35, 1)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181F08, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D49)
@@ -377,7 +377,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156EEA {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F6C)
     removecoins(0xFA0)
     additem(ITEM_TM24, 1)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181F08, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D49)
@@ -392,7 +392,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F24 {
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F6C)
     removecoins(0xFA0)
     additem(ITEM_TM13, 1)
-    updatecoinsbox(0, 0)
+    updatecoinsbox
     playse(SE_SHOP)
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181F08, MSGBOX_DEFAULT)
     goto(Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D49)
@@ -410,7 +410,7 @@ script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F6C {
 
 script Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F77 {
     msgbox(Naranja_IslaMandarin_G10_M03_Text_08181EC2, MSGBOX_DEFAULT)
-    hidecoinsbox(0, 0)
+    hidecoinsbox
     release
     end
 }

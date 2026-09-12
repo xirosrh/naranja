@@ -94,37 +94,37 @@ script Naranja_Islas_G27_M00_EventScript_Sign_2 {
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_117, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AD9B, Naranja_Islas_G27_M00_Text_0819ADDA)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_117, Naranja_Islas_G27_M00_Text_0819AD9B, Naranja_Islas_G27_M00_Text_0819ADDA)
     msgbox(Naranja_Islas_G27_M00_Text_0819ADF7, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId9 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLAS_485, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AE3E, Naranja_Islas_G27_M00_Text_0819AE53, Naranja_Islas_G27_M00_Text_0819AEA9)
+    trainerbattle_double(TRAINER_NARANJA_ISLAS_485, Naranja_Islas_G27_M00_Text_0819AE3E, Naranja_Islas_G27_M00_Text_0819AE53, Naranja_Islas_G27_M00_Text_0819AEA9)
     msgbox(Naranja_Islas_G27_M00_Text_0819AE6A, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLAS_486, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819B148, Naranja_Islas_G27_M00_Text_0819B17D, Naranja_Islas_G27_M00_Text_0819B1DD)
+    trainerbattle_double(TRAINER_NARANJA_ISLAS_486, Naranja_Islas_G27_M00_Text_0819B148, Naranja_Islas_G27_M00_Text_0819B17D, Naranja_Islas_G27_M00_Text_0819B1DD)
     msgbox(Naranja_Islas_G27_M00_Text_0819B18D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_HIKER_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_634, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AEFB, Naranja_Islas_G27_M00_Text_0819AF3E)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_634, Naranja_Islas_G27_M00_Text_0819AEFB, Naranja_Islas_G27_M00_Text_0819AF3E)
     msgbox(Naranja_Islas_G27_M00_Text_0819AF56, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_116, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819AF8A, Naranja_Islas_G27_M00_Text_0819AFDB)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_116, Naranja_Islas_G27_M00_Text_0819AF8A, Naranja_Islas_G27_M00_Text_0819AFDB)
     msgbox(Naranja_Islas_G27_M00_Text_0819B00D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Islas_G27_M00_EventScript_OBJ_EVENT_GFX_HIKER_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLAS_633, LOCALID_NONE, Naranja_Islas_G27_M00_Text_0819B066, Naranja_Islas_G27_M00_Text_0819B0D7)
+    trainerbattle_single(TRAINER_NARANJA_ISLAS_633, Naranja_Islas_G27_M00_Text_0819B066, Naranja_Islas_G27_M00_Text_0819B0D7)
     msgbox(Naranja_Islas_G27_M00_Text_0819B0EF, MSGBOX_AUTOCLOSE)
     end
 }

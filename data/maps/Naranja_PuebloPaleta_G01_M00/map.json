@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_PUEBLO_PALETA_G01_M00",
+  "region": "REGION_HOENN",
   "name": "Naranja_PuebloPaleta_G01_M00",
   "layout": "LAYOUT_NARANJA_PUEBLO_PALETA_G01_M00",
   "music": "MUS_DUMMY",

@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_SEALED_CHAMBER_G24_M72",
+  "region": "REGION_HOENN",
   "name": "Naranja_SealedChamber_G24_M72",
   "layout": "LAYOUT_NARANJA_SEALED_CHAMBER_G24_M72",
   "music": "MUS_DUMMY",

@@ -104,7 +104,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_1::
 # 77 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7
 # 78 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	checkitem ITEM_ROOM_1_KEY, 1
+	checkitem ITEM_KEY_TO_ROOM_1, 1
 # 79 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 80 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -114,7 +114,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_1::
 # 82 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	playse SE_PIN
 # 83 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	removeitem ITEM_ROOM_1_KEY, 1
+	removeitem ITEM_KEY_TO_ROOM_1, 1
 # 84 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	setflag FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0
 # 85 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -134,7 +134,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_2::
 # 94 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7
 # 95 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	checkitem ITEM_ROOM_2_KEY, 1
+	checkitem ITEM_KEY_TO_ROOM_2, 1
 # 96 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 97 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -144,7 +144,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_2::
 # 99 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	playse SE_PIN
 # 100 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	removeitem ITEM_ROOM_2_KEY, 1
+	removeitem ITEM_KEY_TO_ROOM_2, 1
 # 101 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	setflag FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1
 # 102 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -164,7 +164,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_3::
 # 111 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7
 # 112 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	checkitem ITEM_ROOM_4_KEY, 1
+	checkitem ITEM_KEY_TO_ROOM_4, 1
 # 113 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 114 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -174,7 +174,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_3::
 # 116 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	playse SE_PIN
 # 117 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	removeitem ITEM_ROOM_4_KEY, 1
+	removeitem ITEM_KEY_TO_ROOM_4, 1
 # 118 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	setflag FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2
 # 119 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -194,7 +194,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_4::
 # 128 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	goto_if EQUAL, Naranja_BandonedShip_G24_M65_EventScript_Sub_0815ECF7
 # 129 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	checkitem ITEM_ROOM_6_KEY, 1
+	checkitem ITEM_KEY_TO_ROOM_6, 1
 # 130 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 131 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
@@ -204,7 +204,7 @@ Naranja_BandonedShip_G24_M65_EventScript_Sign_4::
 # 133 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	playse SE_PIN
 # 134 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
-	removeitem ITEM_ROOM_6_KEY, 1
+	removeitem ITEM_KEY_TO_ROOM_6, 1
 # 135 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"
 	setflag FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3
 # 136 "data/maps/Naranja_BandonedShip_G24_M65/scripts.pory"

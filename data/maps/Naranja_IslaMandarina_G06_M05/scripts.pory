@@ -55,7 +55,7 @@ script Naranja_IslaMandarina_G06_M05_EventScript_Trigger_4 {
 }
 
 script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARINA_182, LOCALID_NONE, Naranja_IslaMandarina_G06_M05_Text_086B3C33, Naranja_IslaMandarina_G06_M05_Text_081BCB2E)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MANDARINA_182, Naranja_IslaMandarina_G06_M05_Text_086B3C33, Naranja_IslaMandarina_G06_M05_Text_081BCB2E)
     msgbox(Naranja_IslaMandarina_G06_M05_Text_081BCB40, MSGBOX_AUTOCLOSE)
     delay(0x80)
     setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123)

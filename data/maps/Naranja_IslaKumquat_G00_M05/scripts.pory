@@ -345,32 +345,32 @@ script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE35 {
 }
 
 script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE46 {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_665, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_KUMQUAT_665, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
     goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6)
 }
 
 script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE56 {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_666, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_KUMQUAT_666, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
     goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6)
 }
 
 script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE66 {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_664, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_KUMQUAT_664, Naranja_IslaKumquat_G00_M05_Text_08167BD5)
     goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6)
 }
 
 script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE76 {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_662, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_KUMQUAT_662, Naranja_IslaKumquat_G00_M05_Text_081680E4)
     goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12)
 }
 
 script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE86 {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_663, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_KUMQUAT_663, Naranja_IslaKumquat_G00_M05_Text_081680E4)
     goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12)
 }
 
 script Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE96 {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_661, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4)
+    trainerbattle_no_intro(TRAINER_NARANJA_ISLA_KUMQUAT_661, Naranja_IslaKumquat_G00_M05_Text_081680E4)
     goto(Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12)
 }
 

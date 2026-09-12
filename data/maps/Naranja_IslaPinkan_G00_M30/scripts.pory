@@ -47,7 +47,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4 {
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_PINKAN_046, LOCALID_NONE, Naranja_IslaPinkan_G00_M30_Text_081B8B40, Naranja_IslaPinkan_G00_M30_Text_081B8B93)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_PINKAN_046, Naranja_IslaPinkan_G00_M30_Text_081B8B40, Naranja_IslaPinkan_G00_M30_Text_081B8B93)
     msgbox(Naranja_IslaPinkan_G00_M30_Text_081B8BDE, MSGBOX_AUTOCLOSE)
     end
 }
@@ -115,7 +115,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId16 
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4060 {
-    checkitem(ITEM_ROOM_1_KEY, 0)
+    checkitem(ITEM_KEY_TO_ROOM_1, 0)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(LESS_THAN, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4095)
     nop
@@ -147,14 +147,14 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4520 {
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4544 {
-    removeitem(ITEM_ROOM_1_KEY, 1)
+    removeitem(ITEM_KEY_TO_ROOM_1, 1)
     call(Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId14)
     end
 }
 
 script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4550 {
     faceplayer
-    checkitem(ITEM_ROOM_1_KEY, 0)
+    checkitem(ITEM_KEY_TO_ROOM_1, 0)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B456E)
     nop

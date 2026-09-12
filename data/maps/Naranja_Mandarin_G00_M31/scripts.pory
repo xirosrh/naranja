@@ -10,7 +10,7 @@ script Naranja_Mandarin_G00_M31_EventScript_Sign_4 {
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId9 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MANDARIN_434, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BBB27, Naranja_Mandarin_G00_M31_Text_081BBB7A)
+    trainerbattle_single(TRAINER_NARANJA_MANDARIN_434, Naranja_Mandarin_G00_M31_Text_081BBB27, Naranja_Mandarin_G00_M31_Text_081BBB7A)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150690)
@@ -19,7 +19,7 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId9 {
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150690 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_MANDARIN_434, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BBBCE, Naranja_Mandarin_G00_M31_Text_081BBC0D)
+    trainerbattle_rematch(TRAINER_NARANJA_MANDARIN_434, Naranja_Mandarin_G00_M31_Text_081BBBCE, Naranja_Mandarin_G00_M31_Text_081BBC0D)
     msgbox(Naranja_Mandarin_G00_M31_Text_081BBC1C, MSGBOX_AUTOCLOSE)
     end
 }
@@ -214,13 +214,13 @@ script Naranja_Mandarin_G00_M31_EventScript_Sub_08150C42 {
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_REPORTER_F_LocalId13 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MANDARIN_631, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BCF79, Naranja_Mandarin_G00_M31_Text_081BCFBB)
+    trainerbattle_single(TRAINER_NARANJA_MANDARIN_631, Naranja_Mandarin_G00_M31_Text_081BCF79, Naranja_Mandarin_G00_M31_Text_081BCFBB)
     msgbox(Naranja_Mandarin_G00_M31_Text_081BCFE3, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId17 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MANDARIN_280, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BD377, Naranja_Mandarin_G00_M31_Text_081BD3AC)
+    trainerbattle_single(TRAINER_NARANJA_MANDARIN_280, Naranja_Mandarin_G00_M31_Text_081BD377, Naranja_Mandarin_G00_M31_Text_081BD3AC)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150D23)
@@ -229,7 +229,7 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId17 {
 }
 
 script Naranja_Mandarin_G00_M31_EventScript_Sub_08150D23 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_MANDARIN_280, LOCALID_NONE, Naranja_Mandarin_G00_M31_Text_081BD405, Naranja_Mandarin_G00_M31_Text_081BD44A)
+    trainerbattle_rematch(TRAINER_NARANJA_MANDARIN_280, Naranja_Mandarin_G00_M31_Text_081BD405, Naranja_Mandarin_G00_M31_Text_081BD44A)
     msgbox(Naranja_Mandarin_G00_M31_Text_081BD466, MSGBOX_AUTOCLOSE)
     end
 }

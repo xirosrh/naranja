@@ -84,7 +84,7 @@ script Naranja_Route128_G00_M43_OnFrame_1 {
 }
 
 script Naranja_Route128_G00_M43_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE128_386, LOCALID_NONE, Naranja_Route128_G00_M43_Text_081C1DB0, Naranja_Route128_G00_M43_Text_081C1E25)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE128_386, Naranja_Route128_G00_M43_Text_081C1DB0, Naranja_Route128_G00_M43_Text_081C1E25)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route128_G00_M43_EventScript_Sub_08152309)
@@ -93,25 +93,25 @@ script Naranja_Route128_G00_M43_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId2 {
 }
 
 script Naranja_Route128_G00_M43_EventScript_Sub_08152309 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ROUTE128_386, LOCALID_NONE, Naranja_Route128_G00_M43_Text_081C1E90, Naranja_Route128_G00_M43_Text_081C1EFA)
+    trainerbattle_rematch(TRAINER_NARANJA_ROUTE128_386, Naranja_Route128_G00_M43_Text_081C1E90, Naranja_Route128_G00_M43_Text_081C1EFA)
     msgbox(Naranja_Route128_G00_M43_Text_081C1F2E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route128_G00_M43_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId8 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE128_670, LOCALID_NONE, Naranja_Route128_G00_M43_Text_081C1F6D, Naranja_Route128_G00_M43_Text_081C1FCC)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE128_670, Naranja_Route128_G00_M43_Text_081C1F6D, Naranja_Route128_G00_M43_Text_081C1FCC)
     msgbox(Naranja_Route128_G00_M43_Text_081C1FE8, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route128_G00_M43_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId7 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE128_671, LOCALID_NONE, Naranja_Route128_G00_M43_Text_081C202C, Naranja_Route128_G00_M43_Text_081C2051)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE128_671, Naranja_Route128_G00_M43_Text_081C202C, Naranja_Route128_G00_M43_Text_081C2051)
     msgbox(Naranja_Route128_G00_M43_Text_081C2060, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route128_G00_M43_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE128_673, LOCALID_NONE, Naranja_Route128_G00_M43_Text_081C2090, Naranja_Route128_G00_M43_Text_081C20FC)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE128_673, Naranja_Route128_G00_M43_Text_081C2090, Naranja_Route128_G00_M43_Text_081C20FC)
     msgbox(Naranja_Route128_G00_M43_Text_081C210D, MSGBOX_AUTOCLOSE)
     end
 }

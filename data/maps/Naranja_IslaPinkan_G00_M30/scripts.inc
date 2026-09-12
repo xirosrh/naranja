@@ -82,7 +82,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4::
 
 Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2::
 # 50 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_PINKAN_046, LOCALID_NONE, Naranja_IslaPinkan_G00_M30_Text_081B8B40, Naranja_IslaPinkan_G00_M30_Text_081B8B93
+	trainerbattle_single TRAINER_NARANJA_ISLA_PINKAN_046, Naranja_IslaPinkan_G00_M30_Text_081B8B40, Naranja_IslaPinkan_G00_M30_Text_081B8B93
 # 51 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	msgbox Naranja_IslaPinkan_G00_M30_Text_081B8BDE, MSGBOX_AUTOCLOSE
 	end
@@ -178,7 +178,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId16::
 
 Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4060::
 # 118 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkitem ITEM_ROOM_1_KEY, 0
+	checkitem ITEM_KEY_TO_ROOM_1, 0
 # 119 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
 # 120 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
@@ -230,7 +230,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4520::
 
 Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4544::
 # 150 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	removeitem ITEM_ROOM_1_KEY, 1
+	removeitem ITEM_KEY_TO_ROOM_1, 1
 # 151 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	call Naranja_Route111_G00_M26_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId14
 	end
@@ -240,7 +240,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4550::
 # 156 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	faceplayer
 # 157 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkitem ITEM_ROOM_1_KEY, 0
+	checkitem ITEM_KEY_TO_ROOM_1, 0
 # 158 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	compare_var_to_value VAR_RESULT, 1
 # 159 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"

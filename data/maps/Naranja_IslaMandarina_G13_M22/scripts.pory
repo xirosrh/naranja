@@ -61,7 +61,7 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sign_1 {
     lockall
     message(Naranja_IslaMandarina_G13_M22_Text_0818C72B)
     waitmessage
-    showmoneybox(0, 0, 0)
+    showmoneybox(0, 0)
     goto(Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A1DE)
 }
 
@@ -95,32 +95,32 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A232 {
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A23D {
-    checkmoney(0xC8, 0)
+    checkmoney(0xC8)
     return
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A244 {
-    checkmoney(0x12C, 0)
+    checkmoney(0x12C)
     return
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A24B {
-    checkmoney(0x15E, 0)
+    checkmoney(0x15E)
     return
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A252 {
-    removemoney(0xC8, 0)
+    removemoney(0xC8)
     return
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A259 {
-    removemoney(0x12C, 0)
+    removemoney(0x12C)
     return
 }
 
 script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A260 {
-    removemoney(0x15E, 0)
+    removemoney(0x15E)
     return
 }
 
@@ -142,7 +142,7 @@ script Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A267 {
     call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A259)
     compare_var_to_value(VAR_TEMP_1, 2)
     call_if(EQUAL, Naranja_IslaMandarina_G13_M22_EventScript_Sub_0815A260)
-    updatemoneybox(0)
+    updatemoneybox
     bufferitemname(0, 0x4000)
     playse(SE_VEND)
     msgbox(Naranja_IslaMandarina_G13_M22_Text_0818C75F, MSGBOX_DEFAULT)

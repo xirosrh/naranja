@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_CAVE_OF_ORIGIN_G24_M38",
+  "region": "REGION_HOENN",
   "name": "Naranja_CaveOfOrigin_G24_M38",
   "layout": "LAYOUT_NARANJA_CAVE_OF_ORIGIN_G24_M38",
   "music": "MUS_DUMMY",

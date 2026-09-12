@@ -90,7 +90,7 @@ Naranja_BandonedShip_G24_M57_EventScript_Sub_0815EA14::
 
 Naranja_BandonedShip_G24_M57_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId2::
 # 67 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BANDONED_SHIP_496, LOCALID_NONE, Naranja_BandonedShip_G24_M57_Text_0819856F, Naranja_BandonedShip_G24_M57_Text_081985C5
+	trainerbattle_single TRAINER_NARANJA_BANDONED_SHIP_496, Naranja_BandonedShip_G24_M57_Text_0819856F, Naranja_BandonedShip_G24_M57_Text_081985C5
 # 68 "data/maps/Naranja_BandonedShip_G24_M57/scripts.pory"
 	msgbox Naranja_BandonedShip_G24_M57_Text_081985D7, MSGBOX_AUTOCLOSE
 	end

@@ -4,7 +4,7 @@ Naranja_BandonedShip_G24_M62_MapScripts::
 
 Naranja_BandonedShip_G24_M62_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId1::
 # 8 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_BANDONED_SHIP_642, LOCALID_NONE, Naranja_BandonedShip_G24_M62_Text_081987C1, Naranja_BandonedShip_G24_M62_Text_081987FE, Naranja_BandonedShip_G24_M62_Text_0819887F
+	trainerbattle_double TRAINER_NARANJA_BANDONED_SHIP_642, Naranja_BandonedShip_G24_M62_Text_081987C1, Naranja_BandonedShip_G24_M62_Text_081987FE, Naranja_BandonedShip_G24_M62_Text_0819887F
 # 9 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 10 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
@@ -18,7 +18,7 @@ Naranja_BandonedShip_G24_M62_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId1::
 
 Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EA93::
 # 17 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_BANDONED_SHIP_642, LOCALID_NONE, Naranja_BandonedShip_G24_M62_Text_081989DF, Naranja_BandonedShip_G24_M62_Text_08198A53, Naranja_BandonedShip_G24_M62_Text_08198AEE
+	trainerbattle_rematch_double TRAINER_NARANJA_BANDONED_SHIP_642, Naranja_BandonedShip_G24_M62_Text_081989DF, Naranja_BandonedShip_G24_M62_Text_08198A53, Naranja_BandonedShip_G24_M62_Text_08198AEE
 # 18 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
 	msgbox Naranja_BandonedShip_G24_M62_Text_08198A70, MSGBOX_AUTOCLOSE
 	end
@@ -26,7 +26,7 @@ Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EA93::
 
 Naranja_BandonedShip_G24_M62_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId2::
 # 23 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_BANDONED_SHIP_642, LOCALID_NONE, Naranja_BandonedShip_G24_M62_Text_081988CC, Naranja_BandonedShip_G24_M62_Text_08198916, Naranja_BandonedShip_G24_M62_Text_0819899A
+	trainerbattle_double TRAINER_NARANJA_BANDONED_SHIP_642, Naranja_BandonedShip_G24_M62_Text_081988CC, Naranja_BandonedShip_G24_M62_Text_08198916, Naranja_BandonedShip_G24_M62_Text_0819899A
 # 24 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 25 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
@@ -40,7 +40,7 @@ Naranja_BandonedShip_G24_M62_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId2::
 
 Naranja_BandonedShip_G24_M62_EventScript_Sub_0815EAD9::
 # 32 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_BANDONED_SHIP_642, LOCALID_NONE, Naranja_BandonedShip_G24_M62_Text_08198B3B, Naranja_BandonedShip_G24_M62_Text_08198BCF, Naranja_BandonedShip_G24_M62_Text_08198C40
+	trainerbattle_rematch_double TRAINER_NARANJA_BANDONED_SHIP_642, Naranja_BandonedShip_G24_M62_Text_08198B3B, Naranja_BandonedShip_G24_M62_Text_08198BCF, Naranja_BandonedShip_G24_M62_Text_08198C40
 # 33 "data/maps/Naranja_BandonedShip_G24_M62/scripts.pory"
 	msgbox Naranja_BandonedShip_G24_M62_Text_08198BEA, MSGBOX_AUTOCLOSE
 	end

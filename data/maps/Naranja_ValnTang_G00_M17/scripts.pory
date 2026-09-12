@@ -15,13 +15,13 @@ script Naranja_ValnTang_G00_M17_EventScript_Sign_2 {
 }
 
 script Naranja_ValnTang_G00_M17_EventScript_OBJ_EVENT_GFX_BUG_CATCHER_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VALN_TANG_615, LOCALID_NONE, Naranja_ValnTang_G00_M17_Text_081B7C05, Naranja_ValnTang_G00_M17_Text_081B7C40)
+    trainerbattle_single(TRAINER_NARANJA_VALN_TANG_615, Naranja_ValnTang_G00_M17_Text_081B7C05, Naranja_ValnTang_G00_M17_Text_081B7C40)
     msgbox(Naranja_ValnTang_G00_M17_Text_081B7C52, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_ValnTang_G00_M17_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VALN_TANG_603, LOCALID_NONE, Naranja_ValnTang_G00_M17_Text_081B7C97, Naranja_ValnTang_G00_M17_Text_081B7CEC)
+    trainerbattle_single(TRAINER_NARANJA_VALN_TANG_603, Naranja_ValnTang_G00_M17_Text_081B7C97, Naranja_ValnTang_G00_M17_Text_081B7CEC)
     msgbox(Naranja_ValnTang_G00_M17_Text_081B7D11, MSGBOX_AUTOCLOSE)
     end
 }

@@ -116,7 +116,7 @@ script Naranja_IslaMikan_G03_M03_EventScript_Sub_08153151 {
 }
 
 script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ISLA_MIKAN_179, LOCALID_NONE, Naranja_IslaMikan_G03_M03_Text_08174F61, Naranja_IslaMikan_G03_M03_Text_08174F7A, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_081531F4)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_179, Naranja_IslaMikan_G03_M03_Text_08174F61, Naranja_IslaMikan_G03_M03_Text_08174F7A, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_081531F4)
     msgbox(Naranja_IslaMikan_G03_M03_Text_08174F8E, MSGBOX_AUTOCLOSE)
     end
 }
@@ -128,7 +128,7 @@ script Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_081531F4 {
 }
 
 script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ISLA_MIKAN_425, LOCALID_NONE, Naranja_IslaMikan_G03_M03_Text_08174FCE, Naranja_IslaMikan_G03_M03_Text_08175009, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153216)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_425, Naranja_IslaMikan_G03_M03_Text_08174FCE, Naranja_IslaMikan_G03_M03_Text_08175009, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153216)
     msgbox(Naranja_IslaMikan_G03_M03_Text_08175031, MSGBOX_AUTOCLOSE)
     end
 }
@@ -140,7 +140,7 @@ script Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153216 {
 }
 
 script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_ISLA_MIKAN_426, LOCALID_NONE, Naranja_IslaMikan_G03_M03_Text_081750C9, Naranja_IslaMikan_G03_M03_Text_08175104, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153238)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_426, Naranja_IslaMikan_G03_M03_Text_081750C9, Naranja_IslaMikan_G03_M03_Text_08175104, Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153238)
     msgbox(Naranja_IslaMikan_G03_M03_Text_08175117, MSGBOX_AUTOCLOSE)
     end
 }

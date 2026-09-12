@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_KUMQUAT_G13_M15",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaKumquat_G13_M15",
   "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M01",
   "music": "MUS_DUMMY",

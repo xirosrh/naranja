@@ -4,7 +4,7 @@ Naranja_GraniteCave_G24_M01_MapScripts::
 
 Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1::
 # 8 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_GRANITE_CAVE_392, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_081939C5, Naranja_GraniteCave_G24_M01_Text_08193A35
+	trainerbattle_single TRAINER_NARANJA_GRANITE_CAVE_392, Naranja_GraniteCave_G24_M01_Text_081939C5, Naranja_GraniteCave_G24_M01_Text_08193A35
 # 9 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 10 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
@@ -18,7 +18,7 @@ Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1::
 
 Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6A0::
 # 17 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_GRANITE_CAVE_392, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193AB3, Naranja_GraniteCave_G24_M01_Text_08193B21
+	trainerbattle_rematch TRAINER_NARANJA_GRANITE_CAVE_392, Naranja_GraniteCave_G24_M01_Text_08193AB3, Naranja_GraniteCave_G24_M01_Text_08193B21
 # 18 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
 	msgbox Naranja_GraniteCave_G24_M01_Text_08193B4C, MSGBOX_AUTOCLOSE
 	end
@@ -26,7 +26,7 @@ Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6A0::
 
 Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2::
 # 23 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_GRANITE_CAVE_681, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193BB7, Naranja_GraniteCave_G24_M01_Text_08193C10, Naranja_GraniteCave_G24_M01_Text_08193C9F
+	trainerbattle_double TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_GraniteCave_G24_M01_Text_08193BB7, Naranja_GraniteCave_G24_M01_Text_08193C10, Naranja_GraniteCave_G24_M01_Text_08193C9F
 # 24 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 25 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
@@ -40,7 +40,7 @@ Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId2::
 
 Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6E2::
 # 32 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_GRANITE_CAVE_681, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193E75, Naranja_GraniteCave_G24_M01_Text_08193ECE, Naranja_GraniteCave_G24_M01_Text_08193F59
+	trainerbattle_rematch_double TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_GraniteCave_G24_M01_Text_08193E75, Naranja_GraniteCave_G24_M01_Text_08193ECE, Naranja_GraniteCave_G24_M01_Text_08193F59
 # 33 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
 	msgbox Naranja_GraniteCave_G24_M01_Text_08193EF3, MSGBOX_AUTOCLOSE
 	end
@@ -48,7 +48,7 @@ Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C6E2::
 
 Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3::
 # 38 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_GRANITE_CAVE_681, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193D10, Naranja_GraniteCave_G24_M01_Text_08193D6E, Naranja_GraniteCave_G24_M01_Text_08193DFB
+	trainerbattle_double TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_GraniteCave_G24_M01_Text_08193D10, Naranja_GraniteCave_G24_M01_Text_08193D6E, Naranja_GraniteCave_G24_M01_Text_08193DFB
 # 39 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 40 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
@@ -62,7 +62,7 @@ Naranja_GraniteCave_G24_M01_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3::
 
 Naranja_GraniteCave_G24_M01_EventScript_Sub_0815C728::
 # 47 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, TRAINER_NARANJA_GRANITE_CAVE_681, LOCALID_NONE, Naranja_GraniteCave_G24_M01_Text_08193FCA, Naranja_GraniteCave_G24_M01_Text_0819403A, Naranja_GraniteCave_G24_M01_Text_081940DF
+	trainerbattle_rematch_double TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_GraniteCave_G24_M01_Text_08193FCA, Naranja_GraniteCave_G24_M01_Text_0819403A, Naranja_GraniteCave_G24_M01_Text_081940DF
 # 48 "data/maps/Naranja_GraniteCave_G24_M01/scripts.pory"
 	msgbox Naranja_GraniteCave_G24_M01_Text_08194066, MSGBOX_AUTOCLOSE
 	end

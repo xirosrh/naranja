@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_MANDARIN_G00_M02",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaMandarin_G00_M02",
   "layout": "LAYOUT_NARANJA_ISLA_MANDARIN_G00_M02",
   "music": "MUS_DUMMY",
@@ -220,7 +221,7 @@
       "x": 23,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_0EA",
+      "item": "ITEM_NARANJA_UNUSED_0EA",
       "flag": "FLAG_HIDDEN_ITEM_ISLA_MANDARIN_G00_M02_0_EA_1"
     },
     {

@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_HAMLIN_G07_M05",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaHamlin_G07_M05",
   "layout": "LAYOUT_NARANJA_ISLA_HAMLIN_G07_M03",
   "music": "MUS_DUMMY",

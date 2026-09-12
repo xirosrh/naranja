@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_VALLE_CHARIZARD_G04_M03",
+  "region": "REGION_HOENN",
   "name": "Naranja_ValleCharizard_G04_M03",
   "layout": "LAYOUT_NARANJA_7ISLAS_POMELO_G03_M00",
   "music": "MUS_DUMMY",

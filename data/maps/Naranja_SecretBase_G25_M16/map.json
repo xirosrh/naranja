@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_SECRET_BASE_G25_M16",
+  "region": "REGION_HOENN",
   "name": "Naranja_SecretBase_G25_M16",
   "layout": "LAYOUT_NARANJA_SECRET_BASE_G25_M16",
   "music": "MUS_DUMMY",

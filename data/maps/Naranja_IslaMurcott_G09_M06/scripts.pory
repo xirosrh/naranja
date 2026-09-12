@@ -31,7 +31,7 @@ script Naranja_IslaMurcott_G09_M06_EventScript_Trigger_2 {
 }
 
 script Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B06 {
-    showmoneybox(0, 0, 0)
+    showmoneybox(0, 0)
     msgbox(Naranja_IslaMurcott_G09_M06_Text_0817E18D, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B2D)
@@ -44,11 +44,11 @@ script Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B06 {
 }
 
 script Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B2D {
-    checkmoney(0x32, 0)
+    checkmoney(0x32)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMurcott_G09_M06_EventScript_Sub_08155B5A)
-    removemoney(0x32, 0)
-    updatemoneybox(0)
+    removemoney(0x32)
+    updatemoneybox
     msgbox(Naranja_IslaMurcott_G09_M06_Text_0817E1DE, MSGBOX_DEFAULT)
     setvar(VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_3, 1)
     hidemoneybox

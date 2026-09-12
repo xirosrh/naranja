@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_CAMINO_FRIO_G20_M01",
+  "region": "REGION_HOENN",
   "name": "Naranja_CaminoFrio_G20_M01",
   "layout": "LAYOUT_NARANJA_CAMINO_FRIO_G20_M01",
   "music": "MUS_DUMMY",

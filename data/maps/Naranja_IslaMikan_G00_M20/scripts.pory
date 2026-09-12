@@ -106,13 +106,13 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId28 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_319, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B86BE, Naranja_IslaMikan_G00_M20_Text_081B86E8)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_319, Naranja_IslaMikan_G00_M20_Text_081B86BE, Naranja_IslaMikan_G00_M20_Text_081B86E8)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081B871C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8770, Naranja_IslaMikan_G00_M20_Text_081B87A7)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_604, Naranja_IslaMikan_G00_M20_Text_081B8770, Naranja_IslaMikan_G00_M20_Text_081B87A7)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7)
@@ -121,13 +121,13 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F1C7 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_604, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852)
+    trainerbattle_rematch(TRAINER_NARANJA_ISLA_MIKAN_604, Naranja_IslaMikan_G00_M20_Text_081B8839, Naranja_IslaMikan_G00_M20_Text_081B8852)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081B8872, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_114, Naranja_IslaMikan_G00_M20_Text_081B8A24, Naranja_IslaMikan_G00_M20_Text_081B8A61)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243)
@@ -136,13 +136,13 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F243 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_114, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B8AA7, Naranja_IslaMikan_G00_M20_Text_081B8AD9)
+    trainerbattle_rematch(TRAINER_NARANJA_ISLA_MIKAN_114, Naranja_IslaMikan_G00_M20_Text_081B8AA7, Naranja_IslaMikan_G00_M20_Text_081B8AD9)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081B8B02, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId23 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B83E9, Naranja_IslaMikan_G00_M20_Text_081B8414, Naranja_IslaMikan_G00_M20_Text_081B845C)
+    trainerbattle_double(TRAINER_NARANJA_ISLA_MIKAN_483, Naranja_IslaMikan_G00_M20_Text_081B83E9, Naranja_IslaMikan_G00_M20_Text_081B8414, Naranja_IslaMikan_G00_M20_Text_081B845C)
     special(GetPlayerBigGuyGirlString)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081B842C, MSGBOX_DEFAULT)
     release
@@ -150,7 +150,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId24 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MIKAN_483, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081B84DB, Naranja_IslaMikan_G00_M20_Text_081B850D, Naranja_IslaMikan_G00_M20_Text_081B8577)
+    trainerbattle_double(TRAINER_NARANJA_ISLA_MIKAN_483, Naranja_IslaMikan_G00_M20_Text_081B84DB, Naranja_IslaMikan_G00_M20_Text_081B850D, Naranja_IslaMikan_G00_M20_Text_081B8577)
     special(GetPlayerBigGuyGirlString)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081B853B, MSGBOX_DEFAULT)
     release
@@ -170,7 +170,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814F2A8 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId25 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD634, Naranja_IslaMikan_G00_M20_Text_081BD67B)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_545, Naranja_IslaMikan_G00_M20_Text_081BD634, Naranja_IslaMikan_G00_M20_Text_081BD67B)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2)
@@ -178,13 +178,13 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId25 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_08150DF2 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_545, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BD6F2, Naranja_IslaMikan_G00_M20_Text_081BD733)
+    trainerbattle_rematch(TRAINER_NARANJA_ISLA_MIKAN_545, Naranja_IslaMikan_G00_M20_Text_081BD6F2, Naranja_IslaMikan_G00_M20_Text_081BD733)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081BD74F, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId22 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE3E8, Naranja_IslaMikan_G00_M20_Text_081BE406)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_196, Naranja_IslaMikan_G00_M20_Text_081BE3E8, Naranja_IslaMikan_G00_M20_Text_081BE406)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122)
@@ -193,13 +193,13 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId22 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_08151122 {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_ISLA_MIKAN_196, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BE489, Naranja_IslaMikan_G00_M20_Text_081BE4CC)
+    trainerbattle_rematch(TRAINER_NARANJA_ISLA_MIKAN_196, Naranja_IslaMikan_G00_M20_Text_081BE489, Naranja_IslaMikan_G00_M20_Text_081BE4CC)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081BE4D9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId9 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MIKAN_405, LOCALID_NONE, Naranja_IslaMikan_G00_M20_Text_081BEFC8, Naranja_IslaMikan_G00_M20_Text_081BF000)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MIKAN_405, Naranja_IslaMikan_G00_M20_Text_081BEFC8, Naranja_IslaMikan_G00_M20_Text_081BF000)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081BF015, MSGBOX_AUTOCLOSE)
     end
 }

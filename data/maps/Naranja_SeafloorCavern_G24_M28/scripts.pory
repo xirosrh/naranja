@@ -11,13 +11,13 @@ script Naranja_SeafloorCavern_G24_M28_OnTransition {
 }
 
 script Naranja_SeafloorCavern_G24_M28_EventScript_OBJECT_4_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SEAFLOOR_CAVERN_571, LOCALID_NONE, Naranja_SeafloorCavern_G24_M28_Text_081974BA, Naranja_SeafloorCavern_G24_M28_Text_081974EA)
+    trainerbattle_single(TRAINER_NARANJA_SEAFLOOR_CAVERN_571, Naranja_SeafloorCavern_G24_M28_Text_081974BA, Naranja_SeafloorCavern_G24_M28_Text_081974EA)
     msgbox(Naranja_SeafloorCavern_G24_M28_Text_081974FF, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SeafloorCavern_G24_M28_EventScript_OBJECT_5_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SEAFLOOR_CAVERN_572, LOCALID_NONE, Naranja_SeafloorCavern_G24_M28_Text_0819753C, Naranja_SeafloorCavern_G24_M28_Text_08197573)
+    trainerbattle_single(TRAINER_NARANJA_SEAFLOOR_CAVERN_572, Naranja_SeafloorCavern_G24_M28_Text_0819753C, Naranja_SeafloorCavern_G24_M28_Text_08197573)
     msgbox(Naranja_SeafloorCavern_G24_M28_Text_08197589, MSGBOX_AUTOCLOSE)
     end
 }

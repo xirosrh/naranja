@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_POMELO_G16_M10",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaPomelo_G16_M10",
   "layout": "LAYOUT_NARANJA_ISLA_POMELO_G16_M10",
   "music": "MUS_DUMMY",

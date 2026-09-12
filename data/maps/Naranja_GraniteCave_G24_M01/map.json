@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_GRANITE_CAVE_G24_M01",
+  "region": "REGION_HOENN",
   "name": "Naranja_GraniteCave_G24_M01",
   "layout": "LAYOUT_NARANJA_GRANITE_CAVE_G24_M01",
   "music": "MUS_DUMMY",

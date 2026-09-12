@@ -321,7 +321,7 @@ Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6::
 # 204 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	msgbox Naranja_CuevaDeCristal_G24_M04_Text_086C081B, MSGBOX_DEFAULT
 # 205 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_CUEVA_DE_CRISTAL_581, LOCALID_NONE, Naranja_CuevaDeCristal_G24_M04_Text_08194243
+	trainerbattle_no_intro TRAINER_NARANJA_CUEVA_DE_CRISTAL_581, Naranja_CuevaDeCristal_G24_M04_Text_08194243
 # 206 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	msgbox Naranja_CuevaDeCristal_G24_M04_Text_08194274, MSGBOX_DEFAULT
 # 207 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
@@ -391,7 +391,7 @@ Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6::
 
 Naranja_CuevaDeCristal_G24_M04_EventScript_OBJ_EVENT_GFX_HIKER_LocalId9::
 # 241 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_CUEVA_DE_CRISTAL_635, LOCALID_NONE, Naranja_CuevaDeCristal_G24_M04_Text_08194814, Naranja_CuevaDeCristal_G24_M04_Text_081948A2
+	trainerbattle_single TRAINER_NARANJA_CUEVA_DE_CRISTAL_635, Naranja_CuevaDeCristal_G24_M04_Text_08194814, Naranja_CuevaDeCristal_G24_M04_Text_081948A2
 # 242 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	msgbox Naranja_CuevaDeCristal_G24_M04_Text_081948C4, MSGBOX_AUTOCLOSE
 	end

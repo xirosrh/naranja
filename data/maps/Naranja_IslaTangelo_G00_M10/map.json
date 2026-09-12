@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_TANGELO_G00_M10",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaTangelo_G00_M10",
   "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G00_M10",
   "music": "MUS_DUMMY",
@@ -211,7 +212,7 @@
       "x": 5,
       "y": 16,
       "elevation": 0,
-      "item": "ITEM_0EA",
+      "item": "ITEM_NARANJA_UNUSED_0EA",
       "flag": "FLAG_HIDDEN_ITEM_ISLA_TANGELO_G00_M10_0_EA_2"
     },
     {

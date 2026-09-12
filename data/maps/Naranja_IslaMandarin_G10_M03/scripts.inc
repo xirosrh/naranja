@@ -20,7 +20,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId3::
 # 15 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	waitmessage
 # 16 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	showmoneybox 0, 0, 0
+	showmoneybox 0, 0
 # 17 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	showcoinsbox 0, 5
 # 18 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -54,7 +54,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AAE::
 # 34 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	goto_if GREATER_THAN_OR_EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B5C
 # 35 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	checkmoney 0x3E8, 0
+	checkmoney 0x3E8
 # 36 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 37 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -62,11 +62,11 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AAE::
 # 38 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	addcoins 0x32
 # 39 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	removemoney 0x3E8, 0
+	removemoney 0x3E8
 # 40 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatemoneybox 0
+	updatemoneybox
 # 41 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 5
+	updatecoinsbox
 # 42 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 43 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -74,7 +74,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AAE::
 # 44 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	hidemoneybox
 # 45 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 5
+	hidecoinsbox
 # 46 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end
@@ -88,7 +88,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AF0::
 # 53 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	goto_if GREATER_THAN_OR_EQUAL, Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B5C
 # 54 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	checkmoney 0x2710, 0
+	checkmoney 0x2710
 # 55 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	compare_var_to_value VAR_RESULT, 0
 # 56 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -96,11 +96,11 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AF0::
 # 57 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	addcoins 0x1F4
 # 58 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	removemoney 0x2710, 0
+	removemoney 0x2710
 # 59 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatemoneybox 0
+	updatemoneybox
 # 60 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 5
+	updatecoinsbox
 # 61 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 62 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -108,7 +108,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156AF0::
 # 63 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	hidemoneybox
 # 64 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 5
+	hidecoinsbox
 # 65 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end
@@ -128,7 +128,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B3C::
 # 77 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	hidemoneybox
 # 78 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 5
+	hidecoinsbox
 # 79 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end
@@ -140,7 +140,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B4C::
 # 85 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	hidemoneybox
 # 86 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 5
+	hidecoinsbox
 # 87 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end
@@ -152,7 +152,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156B5C::
 # 93 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	hidemoneybox
 # 94 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 5
+	hidecoinsbox
 # 95 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end
@@ -300,7 +300,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156C46::
 # 179 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	adddecoration 0x58
 # 180 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 181 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 182 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -330,7 +330,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156C80::
 # 195 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	adddecoration 0x59
 # 196 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 197 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 198 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -360,7 +360,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156CBA::
 # 211 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	adddecoration 0x5A
 # 212 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 213 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 214 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -390,7 +390,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156D0D::
 # 229 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	msgbox Naranja_IslaMandarin_G10_M03_Text_08181EC2, MSGBOX_DEFAULT
 # 230 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 0
+	hidecoinsbox
 # 231 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end
@@ -572,7 +572,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156E3C::
 # 334 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	additem ITEM_TM32, 1
 # 335 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 336 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 337 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -600,7 +600,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156E76::
 # 349 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	additem ITEM_TM29, 1
 # 350 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 351 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 352 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -628,7 +628,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156EB0::
 # 364 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	additem ITEM_TM35, 1
 # 365 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 366 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 367 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -656,7 +656,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156EEA::
 # 379 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	additem ITEM_TM24, 1
 # 380 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 381 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 382 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -684,7 +684,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F24::
 # 394 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	additem ITEM_TM13, 1
 # 395 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	updatecoinsbox 0, 0
+	updatecoinsbox
 # 396 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	playse SE_SHOP
 # 397 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
@@ -714,7 +714,7 @@ Naranja_IslaMandarin_G10_M03_EventScript_Sub_08156F77::
 # 412 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	msgbox Naranja_IslaMandarin_G10_M03_Text_08181EC2, MSGBOX_DEFAULT
 # 413 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
-	hidecoinsbox 0, 0
+	hidecoinsbox
 # 414 "data/maps/Naranja_IslaMandarin_G10_M03/scripts.pory"
 	release
 	end

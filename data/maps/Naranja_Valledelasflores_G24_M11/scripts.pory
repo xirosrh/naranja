@@ -6,7 +6,7 @@ mapscripts Naranja_Valledelasflores_G24_M11_MapScripts {
 }
 
 script Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_BUG_CATCHER_LocalId9 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VALLEDELASFLORES_617, LOCALID_NONE, Naranja_Valledelasflores_G24_M11_Text_081BD0AF, Naranja_Valledelasflores_G24_M11_Text_081BD0D7)
+    trainerbattle_single(TRAINER_NARANJA_VALLEDELASFLORES_617, Naranja_Valledelasflores_G24_M11_Text_081BD0AF, Naranja_Valledelasflores_G24_M11_Text_081BD0D7)
     msgbox(Naranja_Valledelasflores_G24_M11_Text_081BD0F4, MSGBOX_AUTOCLOSE)
     end
 }

@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ISLA_MURCOTT_G09_M04",
+  "region": "REGION_HOENN",
   "name": "Naranja_IslaMurcott_G09_M04",
   "layout": "LAYOUT_NARANJA_ISLA_VALENCIA_G08_M03",
   "music": "MUS_DUMMY",

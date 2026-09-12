@@ -43,7 +43,7 @@ script Naranja_TeamHideshoalCave_G24_M23_EventScript_Sub_0815D802 {
 }
 
 script Naranja_TeamHideshoalCave_G24_M23_EventScript_OBJECT_3_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_567, LOCALID_NONE, Naranja_TeamHideshoalCave_G24_M23_Text_08196E01, Naranja_TeamHideshoalCave_G24_M23_Text_08196E28, Naranja_TeamHideshoalCave_G24_M23_EventScript_AfterBattle_0815D827)
+    trainerbattle_single(TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_567, Naranja_TeamHideshoalCave_G24_M23_Text_08196E01, Naranja_TeamHideshoalCave_G24_M23_Text_08196E28, Naranja_TeamHideshoalCave_G24_M23_EventScript_AfterBattle_0815D827)
     msgbox(Naranja_TeamHideshoalCave_G24_M23_Text_08196E3D, MSGBOX_AUTOCLOSE)
     end
 }

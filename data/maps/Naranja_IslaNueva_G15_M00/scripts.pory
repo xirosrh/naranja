@@ -97,7 +97,7 @@ script Naranja_IslaNueva_G15_M00_OnFrame_4 {
 }
 
 script Naranja_IslaNueva_G15_M00_EventScript_OBJ_EVENT_GFX_WALLACE_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_NUEVA_272, LOCALID_NONE, Naranja_IslaNueva_G15_M00_Text_0818F0CA, Naranja_IslaNueva_G15_M00_Text_0818F282, Naranja_IslaNueva_G15_M00_EventScript_AfterBattle_0815B02D)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_NUEVA_272, Naranja_IslaNueva_G15_M00_Text_0818F0CA, Naranja_IslaNueva_G15_M00_Text_0818F282, Naranja_IslaNueva_G15_M00_EventScript_AfterBattle_0815B02D, NO_MUSIC)
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_00AC)
     goto_if(LESS_THAN, Naranja_IslaNueva_G15_M00_EventScript_Sub_0815B056)
     checkflag(FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_080C)

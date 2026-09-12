@@ -4,7 +4,7 @@ Naranja_IslaTrovita_G11_M03_MapScripts::
 
 Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId1::
 # 8 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_TROVITA_265, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183EE5, Naranja_IslaTrovita_G11_M03_Text_08183FC4, Naranja_IslaTrovita_G11_M03_EventScript_AfterBattle_081578FE
+	trainerbattle_single TRAINER_NARANJA_ISLA_TROVITA_265, Naranja_IslaTrovita_G11_M03_Text_08183EE5, Naranja_IslaTrovita_G11_M03_Text_08183FC4, Naranja_IslaTrovita_G11_M03_EventScript_AfterBattle_081578FE, NO_MUSIC
 # 9 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_00A5
 # 10 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
@@ -68,7 +68,7 @@ Naranja_IslaTrovita_G11_M03_EventScript_Sub_0815793C::
 
 Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2::
 # 45 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_TROVITA_320, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183D99, Naranja_IslaTrovita_G11_M03_Text_08183DDD
+	trainerbattle_single TRAINER_NARANJA_ISLA_TROVITA_320, Naranja_IslaTrovita_G11_M03_Text_08183D99, Naranja_IslaTrovita_G11_M03_Text_08183DDD
 # 46 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	msgbox Naranja_IslaTrovita_G11_M03_Text_08183DF9, MSGBOX_AUTOCLOSE
 	end
@@ -76,7 +76,7 @@ Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2::
 
 Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId3::
 # 51 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_TROVITA_321, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183E38, Naranja_IslaTrovita_G11_M03_Text_08183E78
+	trainerbattle_single TRAINER_NARANJA_ISLA_TROVITA_321, Naranja_IslaTrovita_G11_M03_Text_08183E38, Naranja_IslaTrovita_G11_M03_Text_08183E78
 # 52 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	msgbox Naranja_IslaTrovita_G11_M03_Text_08183E98, MSGBOX_AUTOCLOSE
 	end

@@ -5,24 +5,24 @@ mapscripts Naranja_Route108_G00_M23_MapScripts {
 }
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, TRAINER_NARANJA_ROUTE108_156, LOCALID_NONE, Naranja_Route108_G00_M23_Text_086B88F0, Naranja_Route108_G00_M23_Text_081B97EF, Naranja_Route108_G00_M23_Text_086B8AA9, Naranja_Route108_G00_M23_EventScript_AfterBattle_086B8820)
+    trainerbattle_double(TRAINER_NARANJA_ROUTE108_156, Naranja_Route108_G00_M23_Text_086B88F0, Naranja_Route108_G00_M23_Text_081B97EF, Naranja_Route108_G00_M23_Text_086B8AA9, Naranja_Route108_G00_M23_EventScript_AfterBattle_086B8820, NO_MUSIC)
     end
 }
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE108_157, LOCALID_NONE, Naranja_Route108_G00_M23_Text_081B9864, Naranja_Route108_G00_M23_Text_081B989F)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE108_157, Naranja_Route108_G00_M23_Text_081B9864, Naranja_Route108_G00_M23_Text_081B989F)
     msgbox(Naranja_Route108_G00_M23_Text_081B98BC, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE108_447, LOCALID_NONE, Naranja_Route108_G00_M23_Text_081B9986, Naranja_Route108_G00_M23_Text_081B99BB)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE108_447, Naranja_Route108_G00_M23_Text_081B9986, Naranja_Route108_G00_M23_Text_081B99BB)
     msgbox(Naranja_Route108_G00_M23_Text_081B99E9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route108_G00_M23_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE108_214, LOCALID_NONE, Naranja_Route108_G00_M23_Text_081BC1C8, Naranja_Route108_G00_M23_Text_081BC23F)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE108_214, Naranja_Route108_G00_M23_Text_081BC1C8, Naranja_Route108_G00_M23_Text_081BC23F)
     msgbox(Naranja_Route108_G00_M23_Text_081BC24F, MSGBOX_AUTOCLOSE)
     end
 }

@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_PUERTO_DE_TANGELO_G01_M03",
+  "region": "REGION_HOENN",
   "name": "Naranja_PuertoDeTangelo_G01_M03",
   "layout": "LAYOUT_NARANJA_PUERTO_DE_TANGELO_G01_M03",
   "music": "MUS_DUMMY",

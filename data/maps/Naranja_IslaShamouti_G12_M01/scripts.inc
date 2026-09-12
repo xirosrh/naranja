@@ -25,7 +25,7 @@ Naranja_IslaShamouti_G12_M01_OnWarp_1::
 
 Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_WINONA_LocalId1::
 # 22 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_SHAMOUTI_270, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185CCB, Naranja_IslaShamouti_G12_M01_Text_08185DBA, Naranja_IslaShamouti_G12_M01_EventScript_AfterBattle_08157F15
+	trainerbattle_single TRAINER_NARANJA_ISLA_SHAMOUTI_270, Naranja_IslaShamouti_G12_M01_Text_08185CCB, Naranja_IslaShamouti_G12_M01_Text_08185DBA, Naranja_IslaShamouti_G12_M01_EventScript_AfterBattle_08157F15, NO_MUSIC
 # 23 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
 	checkflag FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00AA
 # 24 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
@@ -81,7 +81,7 @@ Naranja_IslaShamouti_G12_M01_EventScript_Sub_08157F3E::
 
 Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
 # 55 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_401, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_081859B9, Naranja_IslaShamouti_G12_M01_Text_081859EA
+	trainerbattle_single TRAINER_NARANJA_ISLA_SHAMOUTI_401, Naranja_IslaShamouti_G12_M01_Text_081859B9, Naranja_IslaShamouti_G12_M01_Text_081859EA
 # 56 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
 	msgbox Naranja_IslaShamouti_G12_M01_Text_08185A02, MSGBOX_AUTOCLOSE
 	end
@@ -89,7 +89,7 @@ Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2::
 
 Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5::
 # 61 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_404, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185A7F, Naranja_IslaShamouti_G12_M01_Text_08185AEC
+	trainerbattle_single TRAINER_NARANJA_ISLA_SHAMOUTI_404, Naranja_IslaShamouti_G12_M01_Text_08185A7F, Naranja_IslaShamouti_G12_M01_Text_08185AEC
 # 62 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
 	msgbox Naranja_IslaShamouti_G12_M01_Text_08185B18, MSGBOX_AUTOCLOSE
 	end
@@ -97,7 +97,7 @@ Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5::
 
 Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId3::
 # 67 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_654, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185B8D, Naranja_IslaShamouti_G12_M01_Text_08185BEB
+	trainerbattle_single TRAINER_NARANJA_ISLA_SHAMOUTI_654, Naranja_IslaShamouti_G12_M01_Text_08185B8D, Naranja_IslaShamouti_G12_M01_Text_08185BEB
 # 68 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
 	msgbox Naranja_IslaShamouti_G12_M01_Text_08185C00, MSGBOX_AUTOCLOSE
 	end
@@ -105,7 +105,7 @@ Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId3::
 
 Naranja_IslaShamouti_G12_M01_EventScript_OBJ_EVENT_GFX_PICNICKER_LocalId4::
 # 73 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_SHAMOUTI_655, LOCALID_NONE, Naranja_IslaShamouti_G12_M01_Text_08185C45, Naranja_IslaShamouti_G12_M01_Text_08185C7C
+	trainerbattle_single TRAINER_NARANJA_ISLA_SHAMOUTI_655, Naranja_IslaShamouti_G12_M01_Text_08185C45, Naranja_IslaShamouti_G12_M01_Text_08185C7C
 # 74 "data/maps/Naranja_IslaShamouti_G12_M01/scripts.pory"
 	msgbox Naranja_IslaShamouti_G12_M01_Text_08185C8C, MSGBOX_AUTOCLOSE
 	end

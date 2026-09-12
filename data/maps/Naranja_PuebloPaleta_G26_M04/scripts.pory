@@ -76,32 +76,32 @@ script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814EC04 {
 }
 
 script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814EC5D {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_PUEBLO_PALETA_532, LOCALID_NONE, Naranja_PuebloPaleta_G26_M04_Text_086BEFC7)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUEBLO_PALETA_532, Naranja_PuebloPaleta_G26_M04_Text_086BEFC7)
     goto(Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECBD)
 }
 
 script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814EC6D {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_PUEBLO_PALETA_535, LOCALID_NONE, Naranja_PuebloPaleta_G26_M04_Text_086BEFC7)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUEBLO_PALETA_535, Naranja_PuebloPaleta_G26_M04_Text_086BEFC7)
     goto(Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECBD)
 }
 
 script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814EC7D {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_PUEBLO_PALETA_529, LOCALID_NONE, Naranja_PuebloPaleta_G26_M04_Text_086BEFC7)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUEBLO_PALETA_529, Naranja_PuebloPaleta_G26_M04_Text_086BEFC7)
     goto(Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECBD)
 }
 
 script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814EC8D {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_PUEBLO_PALETA_523, LOCALID_NONE, Naranja_PuebloPaleta_G26_M04_Text_0816D836)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUEBLO_PALETA_523, Naranja_PuebloPaleta_G26_M04_Text_0816D836)
     goto(Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECCB)
 }
 
 script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814EC9D {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_PUEBLO_PALETA_526, LOCALID_NONE, Naranja_PuebloPaleta_G26_M04_Text_0816D836)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUEBLO_PALETA_526, Naranja_PuebloPaleta_G26_M04_Text_0816D836)
     goto(Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECCB)
 }
 
 script Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECAD {
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_PUEBLO_PALETA_520, LOCALID_NONE, Naranja_PuebloPaleta_G26_M04_Text_0816D836)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUEBLO_PALETA_520, Naranja_PuebloPaleta_G26_M04_Text_0816D836)
     goto(Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ECCB)
 }
 

@@ -75,43 +75,43 @@ script Naranja_SinNombre_G25_M43_EventScript_Sign_1 {
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_294, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_0819958A, Naranja_SinNombre_G25_M43_Text_08199613)
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_294, Naranja_SinNombre_G25_M43_Text_0819958A, Naranja_SinNombre_G25_M43_Text_08199613)
     msgbox(Naranja_SinNombre_G25_M43_Text_08199630, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_255, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081996A6, Naranja_SinNombre_G25_M43_Text_081996BF)
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_255, Naranja_SinNombre_G25_M43_Text_081996A6, Naranja_SinNombre_G25_M43_Text_081996BF)
     msgbox(Naranja_SinNombre_G25_M43_Text_081996E1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_256, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_08199723, Naranja_SinNombre_G25_M43_Text_08199747)
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_256, Naranja_SinNombre_G25_M43_Text_08199723, Naranja_SinNombre_G25_M43_Text_08199747)
     msgbox(Naranja_SinNombre_G25_M43_Text_08199778, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_SIN_NOMBRE_641, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081997C1, Naranja_SinNombre_G25_M43_Text_08199813, Naranja_SinNombre_G25_M43_Text_08199887)
+    trainerbattle_double(TRAINER_NARANJA_SIN_NOMBRE_641, Naranja_SinNombre_G25_M43_Text_081997C1, Naranja_SinNombre_G25_M43_Text_08199813, Naranja_SinNombre_G25_M43_Text_08199887)
     msgbox(Naranja_SinNombre_G25_M43_Text_08199820, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_SIN_NOMBRE_641, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081998C5, Naranja_SinNombre_G25_M43_Text_0819990E, Naranja_SinNombre_G25_M43_Text_08199975)
+    trainerbattle_double(TRAINER_NARANJA_SIN_NOMBRE_641, Naranja_SinNombre_G25_M43_Text_081998C5, Naranja_SinNombre_G25_M43_Text_0819990E, Naranja_SinNombre_G25_M43_Text_08199975)
     msgbox(Naranja_SinNombre_G25_M43_Text_0819991C, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_138, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_081999B7, Naranja_SinNombre_G25_M43_Text_081999FF)
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_138, Naranja_SinNombre_G25_M43_Text_081999B7, Naranja_SinNombre_G25_M43_Text_081999FF)
     msgbox(Naranja_SinNombre_G25_M43_Text_08199A10, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_SinNombre_G25_M43_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId7 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SIN_NOMBRE_119, LOCALID_NONE, Naranja_SinNombre_G25_M43_Text_08199A62, Naranja_SinNombre_G25_M43_Text_08199ABF)
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_119, Naranja_SinNombre_G25_M43_Text_08199A62, Naranja_SinNombre_G25_M43_Text_08199ABF)
     msgbox(Naranja_SinNombre_G25_M43_Text_08199ADE, MSGBOX_AUTOCLOSE)
     end
 }

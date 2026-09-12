@@ -520,7 +520,7 @@ Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE35::
 
 Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE46::
 # 348 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_665, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_KUMQUAT_665, Naranja_IslaKumquat_G00_M05_Text_08167BD5
 # 349 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
 	goto Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6
 	return
@@ -528,7 +528,7 @@ Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE46::
 
 Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE56::
 # 353 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_666, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_KUMQUAT_666, Naranja_IslaKumquat_G00_M05_Text_08167BD5
 # 354 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
 	goto Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6
 	return
@@ -536,7 +536,7 @@ Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE56::
 
 Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE66::
 # 358 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_664, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_08167BD5
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_KUMQUAT_664, Naranja_IslaKumquat_G00_M05_Text_08167BD5
 # 359 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
 	goto Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CEA6
 	return
@@ -544,7 +544,7 @@ Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE66::
 
 Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE76::
 # 363 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_662, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_KUMQUAT_662, Naranja_IslaKumquat_G00_M05_Text_081680E4
 # 364 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
 	goto Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12
 	return
@@ -552,7 +552,7 @@ Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE76::
 
 Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE86::
 # 368 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_663, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_KUMQUAT_663, Naranja_IslaKumquat_G00_M05_Text_081680E4
 # 369 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
 	goto Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12
 	return
@@ -560,7 +560,7 @@ Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE86::
 
 Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CE96::
 # 373 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_KUMQUAT_661, LOCALID_NONE, Naranja_IslaKumquat_G00_M05_Text_081680E4
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_KUMQUAT_661, Naranja_IslaKumquat_G00_M05_Text_081680E4
 # 374 "data/maps/Naranja_IslaKumquat_G00_M05/scripts.pory"
 	goto Naranja_IslaKumquat_G00_M05_EventScript_Sub_0814CF12
 	return

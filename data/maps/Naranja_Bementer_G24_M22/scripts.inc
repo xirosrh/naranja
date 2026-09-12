@@ -454,7 +454,7 @@ Naranja_Bementer_G24_M22_EventScript_Sub_081A0196::
 
 Naranja_Bementer_G24_M22_EventScript_OBJECT_4_LocalId4::
 # 291 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_588, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5CFD, Naranja_Bementer_G24_M22_Text_081B5D30
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_588, Naranja_Bementer_G24_M22_Text_081B5CFD, Naranja_Bementer_G24_M22_Text_081B5D30
 # 292 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	msgbox Naranja_Bementer_G24_M22_Text_081B5D6D, MSGBOX_AUTOCLOSE
 	end
@@ -462,7 +462,7 @@ Naranja_Bementer_G24_M22_EventScript_OBJECT_4_LocalId4::
 
 Naranja_Bementer_G24_M22_EventScript_OBJECT_5_LocalId5::
 # 297 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_589, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5DA2, Naranja_Bementer_G24_M22_Text_081B5DDB
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_589, Naranja_Bementer_G24_M22_Text_081B5DA2, Naranja_Bementer_G24_M22_Text_081B5DDB
 # 298 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	msgbox Naranja_Bementer_G24_M22_Text_081B5DF1, MSGBOX_AUTOCLOSE
 	end
@@ -470,7 +470,7 @@ Naranja_Bementer_G24_M22_EventScript_OBJECT_5_LocalId5::
 
 Naranja_Bementer_G24_M22_EventScript_OBJECT_6_LocalId6::
 # 303 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_590, LOCALID_NONE, Naranja_Bementer_G24_M22_Text_081B5E27, Naranja_Bementer_G24_M22_Text_081B5E60
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_590, Naranja_Bementer_G24_M22_Text_081B5E27, Naranja_Bementer_G24_M22_Text_081B5E60
 # 304 "data/maps/Naranja_Bementer_G24_M22/scripts.pory"
 	msgbox Naranja_Bementer_G24_M22_Text_081B5E84, MSGBOX_AUTOCLOSE
 	end

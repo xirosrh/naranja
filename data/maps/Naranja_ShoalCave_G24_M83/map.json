@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_SHOAL_CAVE_G24_M83",
+  "region": "REGION_HOENN",
   "name": "Naranja_ShoalCave_G24_M83",
   "layout": "LAYOUT_NARANJA_SHOAL_CAVE_G24_M83",
   "music": "MUS_DUMMY",

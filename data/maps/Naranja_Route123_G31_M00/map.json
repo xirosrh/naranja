@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ROUTE_123_G31_M00",
+  "region": "REGION_HOENN",
   "name": "Naranja_Route123_G31_M00",
   "layout": "LAYOUT_NARANJA_ISLA_TANGELO_G02_M01",
   "music": "MUS_DUMMY",

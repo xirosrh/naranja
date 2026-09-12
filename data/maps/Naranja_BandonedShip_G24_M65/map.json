@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_BANDONED_SHIP_G24_M65",
+  "region": "REGION_HOENN",
   "name": "Naranja_BandonedShip_G24_M65",
   "layout": "LAYOUT_NARANJA_BANDONED_SHIP_G24_M65",
   "music": "MUS_DUMMY",

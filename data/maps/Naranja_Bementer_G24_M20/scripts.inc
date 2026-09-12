@@ -4,7 +4,7 @@ Naranja_Bementer_G24_M20_MapScripts::
 
 Naranja_Bementer_G24_M20_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1::
 # 8 "data/maps/Naranja_Bementer_G24_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_108, LOCALID_NONE, Naranja_Bementer_G24_M20_Text_081969FE, Naranja_Bementer_G24_M20_Text_08196A30
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_108, Naranja_Bementer_G24_M20_Text_081969FE, Naranja_Bementer_G24_M20_Text_08196A30
 # 9 "data/maps/Naranja_Bementer_G24_M20/scripts.pory"
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 # 10 "data/maps/Naranja_Bementer_G24_M20/scripts.pory"
@@ -18,7 +18,7 @@ Naranja_Bementer_G24_M20_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1::
 
 Naranja_Bementer_G24_M20_EventScript_Sub_0815D46F::
 # 17 "data/maps/Naranja_Bementer_G24_M20/scripts.pory"
-	trainerbattle TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_BEMENTER_108, LOCALID_NONE, Naranja_Bementer_G24_M20_Text_08196A95, Naranja_Bementer_G24_M20_Text_08196AB1
+	trainerbattle_rematch TRAINER_NARANJA_BEMENTER_108, Naranja_Bementer_G24_M20_Text_08196A95, Naranja_Bementer_G24_M20_Text_08196AB1
 # 18 "data/maps/Naranja_Bementer_G24_M20/scripts.pory"
 	msgbox Naranja_Bementer_G24_M20_Text_08196AC9, MSGBOX_AUTOCLOSE
 	end

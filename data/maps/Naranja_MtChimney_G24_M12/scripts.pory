@@ -20,11 +20,11 @@ script Naranja_MtChimney_G24_M12_OnResume {
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId9 {
     lock
     faceplayer
-    showmoneybox(0, 0, 0)
+    showmoneybox(0, 0)
     msgbox(Naranja_MtChimney_G24_M12_Text_08195760, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D00B)
-    checkmoney(0xC8, 0)
+    checkmoney(0xC8)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D018)
     msgbox(Naranja_MtChimney_G24_M12_Text_081957A9, MSGBOX_DEFAULT)
@@ -49,8 +49,8 @@ script Naranja_MtChimney_G24_M12_EventScript_Sub_0815CFF3 {
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D000 {
-    removemoney(0xC8, 0)
-    updatemoneybox(0)
+    removemoney(0xC8)
+    updatemoneybox
     return
 }
 
@@ -84,13 +84,13 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJECT_8_LocalId8 {
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_3_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_597, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_081B3B36, Naranja_MtChimney_G24_M12_Text_081B3BB8)
+    trainerbattle_single(TRAINER_NARANJA_MT_CHIMNEY_597, Naranja_MtChimney_G24_M12_Text_081B3B36, Naranja_MtChimney_G24_M12_Text_081B3BB8)
     msgbox(Naranja_MtChimney_G24_M12_Text_081B3C07, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJECT_22_LocalId22 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_579, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_081B3C96, Naranja_MtChimney_G24_M12_Text_081B3D1E)
+    trainerbattle_single(TRAINER_NARANJA_MT_CHIMNEY_579, Naranja_MtChimney_G24_M12_Text_081B3C96, Naranja_MtChimney_G24_M12_Text_081B3D1E)
     msgbox(Naranja_MtChimney_G24_M12_Text_081B3D3D, MSGBOX_AUTOCLOSE)
     end
 }
@@ -167,7 +167,7 @@ script Naranja_MtChimney_G24_M12_EventScript_Sign_2 {
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId25 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_313, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_0819597F, Naranja_MtChimney_G24_M12_Text_081959D8)
+    trainerbattle_single(TRAINER_NARANJA_MT_CHIMNEY_313, Naranja_MtChimney_G24_M12_Text_0819597F, Naranja_MtChimney_G24_M12_Text_081959D8)
     specialvar(VAR_RESULT, ShouldTryRematchBattle)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_MtChimney_G24_M12_EventScript_Sub_0815D20A)
@@ -176,25 +176,25 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId25
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_Sub_0815D20A {
-    trainerbattle(TRAINER_BATTLE_REMATCH, TRAINER_NARANJA_MT_CHIMNEY_313, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195A45, Naranja_MtChimney_G24_M12_Text_08195AAD)
+    trainerbattle_rematch(TRAINER_NARANJA_MT_CHIMNEY_313, Naranja_MtChimney_G24_M12_Text_08195A45, Naranja_MtChimney_G24_M12_Text_08195AAD)
     msgbox(Naranja_MtChimney_G24_M12_Text_08195AD9, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId26 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_124, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195B1C, Naranja_MtChimney_G24_M12_Text_08195B5F)
+    trainerbattle_single(TRAINER_NARANJA_MT_CHIMNEY_124, Naranja_MtChimney_G24_M12_Text_08195B1C, Naranja_MtChimney_G24_M12_Text_08195B5F)
     msgbox(Naranja_MtChimney_G24_M12_Text_08195B84, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId27 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_125, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195BB2, Naranja_MtChimney_G24_M12_Text_08195BF9)
+    trainerbattle_single(TRAINER_NARANJA_MT_CHIMNEY_125, Naranja_MtChimney_G24_M12_Text_08195BB2, Naranja_MtChimney_G24_M12_Text_08195BF9)
     msgbox(Naranja_MtChimney_G24_M12_Text_08195C31, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId28 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_MT_CHIMNEY_126, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_08195CD8, Naranja_MtChimney_G24_M12_Text_08195D2F)
+    trainerbattle_single(TRAINER_NARANJA_MT_CHIMNEY_126, Naranja_MtChimney_G24_M12_Text_08195CD8, Naranja_MtChimney_G24_M12_Text_08195D2F)
     msgbox(Naranja_MtChimney_G24_M12_Text_08195D5C, MSGBOX_AUTOCLOSE)
     end
 }
@@ -235,7 +235,7 @@ script Naranja_MtChimney_G24_M12_EventScript_OBJECT_2_LocalId2 {
     applymovement(LOCALID_MT_CHIMNEY_G24_M12_246, Naranja_GraniteCave_G24_M00_Movement_081A0835)
     waitmovement(LOCALID_NONE)
     msgbox(Naranja_MtChimney_G24_M12_Text_081B38B3, MSGBOX_DEFAULT)
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_MT_CHIMNEY_602, LOCALID_NONE, Naranja_MtChimney_G24_M12_Text_081B3A68)
+    trainerbattle_no_intro(TRAINER_NARANJA_MT_CHIMNEY_602, Naranja_MtChimney_G24_M12_Text_081B3A68)
     msgbox(Naranja_MtChimney_G24_M12_Text_081B3A90, MSGBOX_DEFAULT)
     closemessage
     delay(0x1E)

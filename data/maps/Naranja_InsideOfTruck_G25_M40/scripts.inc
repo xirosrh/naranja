@@ -64,7 +64,7 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_3::
 # 39 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	msgbox Naranja_InsideOfTruck_G25_M40_Text_08194EE8, MSGBOX_DEFAULT
 # 40 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_INSIDE_OF_TRUCK_575, LOCALID_NONE, Naranja_InsideOfTruck_G25_M40_Text_08194F83
+	trainerbattle_no_intro TRAINER_NARANJA_INSIDE_OF_TRUCK_575, Naranja_InsideOfTruck_G25_M40_Text_08194F83
 # 41 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	applymovement LOCALID_INSIDE_OF_TRUCK_G25_M40_PIKACHU, Naranja_InsideOfTruck_G25_M40_Movement_0815CEB3
 # 42 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"

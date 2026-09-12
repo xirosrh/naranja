@@ -1,5 +1,6 @@
 {
   "id": "MAP_NARANJA_ROUTE_110_G29_M11",
+  "region": "REGION_HOENN",
   "name": "Naranja_Route110_G29_M11",
   "layout": "LAYOUT_NARANJA_ROUTE_110_G29_M11",
   "music": "MUS_DUMMY",

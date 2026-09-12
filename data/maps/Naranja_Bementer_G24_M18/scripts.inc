@@ -4,7 +4,7 @@ Naranja_Bementer_G24_M18_MapScripts::
 
 Naranja_Bementer_G24_M18_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId1::
 # 8 "data/maps/Naranja_Bementer_G24_M18/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_190, LOCALID_NONE, Naranja_Bementer_G24_M18_Text_081968A6, Naranja_Bementer_G24_M18_Text_081968D0
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_190, Naranja_Bementer_G24_M18_Text_081968A6, Naranja_Bementer_G24_M18_Text_081968D0
 # 9 "data/maps/Naranja_Bementer_G24_M18/scripts.pory"
 	msgbox Naranja_Bementer_G24_M18_Text_081968EE, MSGBOX_AUTOCLOSE
 	end

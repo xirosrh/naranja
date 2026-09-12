@@ -142,25 +142,25 @@ script Naranja_IslaMandarin_G10_M00_EventScript_Sub_081566E1 {
 }
 
 script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_191, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180956, Naranja_IslaMandarin_G10_M00_Text_08180997)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MANDARIN_191, Naranja_IslaMandarin_G10_M00_Text_08180956, Naranja_IslaMandarin_G10_M00_Text_08180997)
     msgbox(Naranja_IslaMandarin_G10_M00_Text_081809D1, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_MAN_6_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_194, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180A05, Naranja_IslaMandarin_G10_M00_Text_08180A42)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MANDARIN_194, Naranja_IslaMandarin_G10_M00_Text_08180A05, Naranja_IslaMandarin_G10_M00_Text_08180A42)
     msgbox(Naranja_IslaMandarin_G10_M00_Text_08180A5E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_323, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180AE0, Naranja_IslaMandarin_G10_M00_Text_08180B06)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MANDARIN_323, Naranja_IslaMandarin_G10_M00_Text_08180AE0, Naranja_IslaMandarin_G10_M00_Text_08180B06)
     msgbox(Naranja_IslaMandarin_G10_M00_Text_08180B1D, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMandarin_G10_M00_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MANDARIN_649, LOCALID_NONE, Naranja_IslaMandarin_G10_M00_Text_08180B5A, Naranja_IslaMandarin_G10_M00_Text_08180B93)
+    trainerbattle_single(TRAINER_NARANJA_ISLA_MANDARIN_649, Naranja_IslaMandarin_G10_M00_Text_08180B5A, Naranja_IslaMandarin_G10_M00_Text_08180B93)
     msgbox(Naranja_IslaMandarin_G10_M00_Text_08180BAE, MSGBOX_AUTOCLOSE)
     end
 }

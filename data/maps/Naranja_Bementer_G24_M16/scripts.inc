@@ -35,7 +35,7 @@ Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId4::
 
 Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId1::
 # 29 "data/maps/Naranja_Bementer_G24_M16/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_BEMENTER_145, LOCALID_NONE, Naranja_Bementer_G24_M16_Text_08196674, Naranja_Bementer_G24_M16_Text_081966BE
+	trainerbattle_single TRAINER_NARANJA_BEMENTER_145, Naranja_Bementer_G24_M16_Text_08196674, Naranja_Bementer_G24_M16_Text_081966BE
 # 30 "data/maps/Naranja_Bementer_G24_M16/scripts.pory"
 	msgbox Naranja_Bementer_G24_M16_Text_081966E7, MSGBOX_AUTOCLOSE
 	end
@@ -43,7 +43,7 @@ Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId1::
 
 Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId6::
 # 35 "data/maps/Naranja_Bementer_G24_M16/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_BEMENTER_640, LOCALID_NONE, Naranja_Bementer_G24_M16_Text_081962C6, Naranja_Bementer_G24_M16_Text_08196358, Naranja_Bementer_G24_M16_Text_081963CB
+	trainerbattle_double TRAINER_NARANJA_BEMENTER_640, Naranja_Bementer_G24_M16_Text_081962C6, Naranja_Bementer_G24_M16_Text_08196358, Naranja_Bementer_G24_M16_Text_081963CB
 # 36 "data/maps/Naranja_Bementer_G24_M16/scripts.pory"
 	msgbox Naranja_Bementer_G24_M16_Text_08196368, MSGBOX_AUTOCLOSE
 	end
@@ -51,7 +51,7 @@ Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId6::
 
 Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId5::
 # 41 "data/maps/Naranja_Bementer_G24_M16/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_BEMENTER_640, LOCALID_NONE, Naranja_Bementer_G24_M16_Text_08196449, Naranja_Bementer_G24_M16_Text_081964EB, Naranja_Bementer_G24_M16_Text_08196539
+	trainerbattle_double TRAINER_NARANJA_BEMENTER_640, Naranja_Bementer_G24_M16_Text_08196449, Naranja_Bementer_G24_M16_Text_081964EB, Naranja_Bementer_G24_M16_Text_08196539
 # 42 "data/maps/Naranja_Bementer_G24_M16/scripts.pory"
 	msgbox Naranja_Bementer_G24_M16_Text_08196504, MSGBOX_AUTOCLOSE
 	end

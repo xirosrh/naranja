@@ -11,7 +11,7 @@ script Naranja_SeafloorCavern_G24_M31_OnTransition {
 }
 
 script Naranja_SeafloorCavern_G24_M31_EventScript_OBJECT_1_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_SEAFLOOR_CAVERN_573, LOCALID_NONE, Naranja_SeafloorCavern_G24_M31_Text_081977B9, Naranja_SeafloorCavern_G24_M31_Text_081977E2)
+    trainerbattle_single(TRAINER_NARANJA_SEAFLOOR_CAVERN_573, Naranja_SeafloorCavern_G24_M31_Text_081977B9, Naranja_SeafloorCavern_G24_M31_Text_081977E2)
     msgbox(Naranja_SeafloorCavern_G24_M31_Text_081977ED, MSGBOX_AUTOCLOSE)
     end
 }

@@ -55,13 +55,13 @@ script Naranja_Route119_G32_M00_EventScript_Sign_1 {
 }
 
 script Naranja_Route119_G32_M00_EventScript_OBJECT_1_LocalId1 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_582, LOCALID_NONE, Naranja_Route119_G32_M00_Text_0819EB8A, Naranja_Route119_G32_M00_Text_0819EBEE)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE119_582, Naranja_Route119_G32_M00_Text_0819EB8A, Naranja_Route119_G32_M00_Text_0819EBEE)
     msgbox(Naranja_Route119_G32_M00_Text_0819EC0E, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_Route119_G32_M00_EventScript_OBJECT_2_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ROUTE119_591, LOCALID_NONE, Naranja_Route119_G32_M00_Text_0819EC6B, Naranja_Route119_G32_M00_Text_0819EC89)
+    trainerbattle_single(TRAINER_NARANJA_ROUTE119_591, Naranja_Route119_G32_M00_Text_0819EC6B, Naranja_Route119_G32_M00_Text_0819EC89)
     msgbox(Naranja_Route119_G32_M00_Text_0819EC97, MSGBOX_AUTOCLOSE)
     end
 }

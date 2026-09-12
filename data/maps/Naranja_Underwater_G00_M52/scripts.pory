@@ -6,7 +6,7 @@ mapscripts Naranja_Underwater_G00_M52_MapScripts {
 
 script Naranja_Underwater_G00_M52_EventScript_OBJ_EVENT_GFX_NURSE_LocalId3 {
     faceplayer
-    checkitem(ITEM_ROOM_2_KEY, 0)
+    checkitem(ITEM_KEY_TO_ROOM_2, 0)
     compare_var_to_value(VAR_RESULT, 1)
     call_if(EQUAL, 0x086B703F)
     msgbox(Naranja_Underwater_G00_M52_Text_086B72C0, MSGBOX_AUTOCLOSE)

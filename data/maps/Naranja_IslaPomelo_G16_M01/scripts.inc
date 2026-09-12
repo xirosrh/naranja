@@ -74,7 +74,7 @@ Naranja_IslaPomelo_G16_M01_EventScript_OBJ_EVENT_GFX_PHOEBE_LocalId1::
 # 51 "data/maps/Naranja_IslaPomelo_G16_M01/scripts.pory"
 	msgbox Naranja_IslaPomelo_G16_M01_Text_081908F5, MSGBOX_DEFAULT
 # 52 "data/maps/Naranja_IslaPomelo_G16_M01/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_262, LOCALID_NONE, Naranja_IslaPomelo_G16_M01_Text_08190A0C
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_POMELO_262, Naranja_IslaPomelo_G16_M01_Text_08190A0C
 # 53 "data/maps/Naranja_IslaPomelo_G16_M01/scripts.pory"
 	goto Naranja_IslaPomelo_G16_M01_EventScript_Sub_0815B661
 	return

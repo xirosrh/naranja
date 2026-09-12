@@ -67,7 +67,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08153103 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_DANNY_LocalId8 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_INSIDE_OF_TRUCK_268, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_08175182, Naranja_InsideOfTruck_G08_M01_Text_08175246, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_268, Naranja_InsideOfTruck_G08_M01_Text_08175182, Naranja_InsideOfTruck_G08_M01_Text_08175246, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB, NO_MUSIC)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6)
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081531B5)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_08175412, MSGBOX_DEFAULT)
@@ -449,7 +449,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549B8 {
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549D6 {
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817A653, MSGBOX_DEFAULT)
-    trainerbattle(TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_INSIDE_OF_TRUCK_269, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817A77A)
+    trainerbattle_no_intro(TRAINER_NARANJA_INSIDE_OF_TRUCK_269, Naranja_InsideOfTruck_G08_M01_Text_0817A77A)
     message(Naranja_InsideOfTruck_G08_M01_Text_0817A7DD)
     waitmessage
     call(Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A02C5)
@@ -687,7 +687,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sign_10 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_071, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817ADA5, Naranja_InsideOfTruck_G08_M01_Text_0817AE11, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E1A)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_071, Naranja_InsideOfTruck_G08_M01_Text_0817ADA5, Naranja_InsideOfTruck_G08_M01_Text_0817AE11, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E1A)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E29)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AE30, MSGBOX_AUTOCLOSE)
@@ -708,7 +708,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E29 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId4 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_072, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817AF5A, Naranja_InsideOfTruck_G08_M01_Text_0817AF98, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E56)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_072, Naranja_InsideOfTruck_G08_M01_Text_0817AF5A, Naranja_InsideOfTruck_G08_M01_Text_0817AF98, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E56)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E65)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817AFD3, MSGBOX_AUTOCLOSE)
@@ -729,7 +729,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154E65 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId6 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_073, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B058, Naranja_InsideOfTruck_G08_M01_Text_0817B0F7, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E92)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_073, Naranja_InsideOfTruck_G08_M01_Text_0817B058, Naranja_InsideOfTruck_G08_M01_Text_0817B0F7, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154E92)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154EA1)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B12C, MSGBOX_AUTOCLOSE)
@@ -750,7 +750,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154EA1 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_089, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B3F7, Naranja_InsideOfTruck_G08_M01_Text_0817B454, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F0A)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_089, Naranja_InsideOfTruck_G08_M01_Text_0817B3F7, Naranja_InsideOfTruck_G08_M01_Text_0817B454, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F0A)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F19)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B46F, MSGBOX_AUTOCLOSE)
@@ -771,7 +771,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F19 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId5 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_090, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B58D, Naranja_InsideOfTruck_G08_M01_Text_0817B5CB, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F46)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_090, Naranja_InsideOfTruck_G08_M01_Text_0817B58D, Naranja_InsideOfTruck_G08_M01_Text_0817B5CB, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F46)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F55)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B5EA, MSGBOX_AUTOCLOSE)
@@ -792,7 +792,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F55 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId7 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_INSIDE_OF_TRUCK_091, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_0817B6D4, Naranja_InsideOfTruck_G08_M01_Text_0817B732, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F82)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_091, Naranja_InsideOfTruck_G08_M01_Text_0817B6D4, Naranja_InsideOfTruck_G08_M01_Text_0817B732, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08154F82)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154F91)
     msgbox(Naranja_InsideOfTruck_G08_M01_Text_0817B749, MSGBOX_AUTOCLOSE)
@@ -1002,7 +1002,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081551D4 {
 }
 
 script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN_LocalId19 {
-    trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_INSIDE_OF_TRUCK_267, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_08180C32, Naranja_InsideOfTruck_G08_M01_Text_08180D64, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08153177)
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_267, Naranja_InsideOfTruck_G08_M01_Text_08180C32, Naranja_InsideOfTruck_G08_M01_Text_08180D64, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08153177, NO_MUSIC)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A7)
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815661D)
     compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)

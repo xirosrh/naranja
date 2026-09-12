@@ -4,7 +4,7 @@ Naranja_IslaMoro_G00_M22_MapScripts::
 
 Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1::
 # 8 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MORO_154, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B926B, Naranja_IslaMoro_G00_M22_Text_081B92B7
+	trainerbattle_single TRAINER_NARANJA_ISLA_MORO_154, Naranja_IslaMoro_G00_M22_Text_081B926B, Naranja_IslaMoro_G00_M22_Text_081B92B7
 # 9 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
 	msgbox Naranja_IslaMoro_G00_M22_Text_081B92E7, MSGBOX_AUTOCLOSE
 	end
@@ -12,7 +12,7 @@ Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId1::
 
 Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3::
 # 14 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MORO_444, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B94C8, Naranja_IslaMoro_G00_M22_Text_081B94F2
+	trainerbattle_single TRAINER_NARANJA_ISLA_MORO_444, Naranja_IslaMoro_G00_M22_Text_081B94C8, Naranja_IslaMoro_G00_M22_Text_081B94F2
 # 15 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
 	msgbox Naranja_IslaMoro_G00_M22_Text_081B94FF, MSGBOX_AUTOCLOSE
 	end
@@ -20,7 +20,7 @@ Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3::
 
 Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4::
 # 20 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_ISLA_MORO_445, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B9538, Naranja_IslaMoro_G00_M22_Text_081B956B
+	trainerbattle_single TRAINER_NARANJA_ISLA_MORO_445, Naranja_IslaMoro_G00_M22_Text_081B9538, Naranja_IslaMoro_G00_M22_Text_081B956B
 # 21 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
 	msgbox Naranja_IslaMoro_G00_M22_Text_081B9589, MSGBOX_AUTOCLOSE
 	end
@@ -28,7 +28,7 @@ Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId4::
 
 Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5::
 # 26 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MORO_692, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B95CB, Naranja_IslaMoro_G00_M22_Text_081B95FB, Naranja_IslaMoro_G00_M22_Text_081B9672
+	trainerbattle_double TRAINER_NARANJA_ISLA_MORO_692, Naranja_IslaMoro_G00_M22_Text_081B95CB, Naranja_IslaMoro_G00_M22_Text_081B95FB, Naranja_IslaMoro_G00_M22_Text_081B9672
 # 27 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
 	msgbox Naranja_IslaMoro_G00_M22_Text_081B9630, MSGBOX_AUTOCLOSE
 	end
@@ -36,7 +36,7 @@ Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId5::
 
 Naranja_IslaMoro_G00_M22_EventScript_OBJ_EVENT_GFX_TUBER_M_SWIMMING_LocalId6::
 # 32 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
-	trainerbattle TRAINER_BATTLE_DOUBLE, TRAINER_NARANJA_ISLA_MORO_692, LOCALID_NONE, Naranja_IslaMoro_G00_M22_Text_081B96AB, Naranja_IslaMoro_G00_M22_Text_081B9707, Naranja_IslaMoro_G00_M22_Text_081B9788
+	trainerbattle_double TRAINER_NARANJA_ISLA_MORO_692, Naranja_IslaMoro_G00_M22_Text_081B96AB, Naranja_IslaMoro_G00_M22_Text_081B9707, Naranja_IslaMoro_G00_M22_Text_081B9788
 # 33 "data/maps/Naranja_IslaMoro_G00_M22/scripts.pory"
 	msgbox Naranja_IslaMoro_G00_M22_Text_081B9735, MSGBOX_AUTOCLOSE
 	end

@@ -74,7 +74,7 @@ Naranja_IslaPomelo_G16_M00_EventScript_OBJ_EVENT_GFX_SIDNEY_LocalId1::
 # 51 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	msgbox Naranja_IslaPomelo_G16_M00_Text_08190728, MSGBOX_DEFAULT
 # 52 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_POMELO_261, LOCALID_NONE, Naranja_IslaPomelo_G16_M00_Text_08190823
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_POMELO_261, Naranja_IslaPomelo_G16_M00_Text_08190823
 # 53 "data/maps/Naranja_IslaPomelo_G16_M00/scripts.pory"
 	goto Naranja_IslaPomelo_G16_M00_EventScript_Sub_0815B5C7
 	return

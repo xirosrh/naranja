@@ -72,7 +72,7 @@ Naranja_IslaMurcott_G09_M07_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId1::
 # 43 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
 	call_if EQUAL, Naranja_IslaMurcott_G09_M07_EventScript_Sub_08155E83
 # 44 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_MURCOTT_585, LOCALID_NONE, Naranja_IslaMurcott_G09_M07_Text_0817EE4E
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_MURCOTT_585, Naranja_IslaMurcott_G09_M07_Text_0817EE4E
 # 45 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
 	msgbox Naranja_IslaMurcott_G09_M07_Text_0817EE66, MSGBOX_DEFAULT
 # 46 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
@@ -90,7 +90,7 @@ Naranja_IslaMurcott_G09_M07_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId1::
 # 52 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
 	savebgm MUS_DUMMY
 # 53 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, TRAINER_NARANJA_ISLA_MURCOTT_586, LOCALID_NONE, Naranja_IslaMurcott_G09_M07_Text_0817EED6
+	trainerbattle_no_intro TRAINER_NARANJA_ISLA_MURCOTT_586, Naranja_IslaMurcott_G09_M07_Text_0817EED6
 # 54 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
 	applymovement LOCALID_ISLA_MURCOTT_G09_M07_241, Naranja_IslaMurcott_G09_M07_Movement_08155EBF
 # 55 "data/maps/Naranja_IslaMurcott_G09_M07/scripts.pory"
