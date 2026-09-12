@@ -28,7 +28,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_0814CC0E {
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId16 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6)
+    checkflag(FLAG_NARANJA_RECEIVED_POKE_DRINKER_SUPPLIES)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EEFF)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081C55B9, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x1D)
@@ -36,7 +36,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId16
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6)
+    setflag(FLAG_NARANJA_RECEIVED_POKE_DRINKER_SUPPLIES)
     msgbox(Naranja_IslaMikan_G00_M20_Text_081C5665, MSGBOX_DEFAULT)
     release
     end
@@ -81,7 +81,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId4 {
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId32 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106)
+    checkflag(FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MIKAN)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_0814EFC2)
     msgbox(Naranja_IslaMikan_G00_M20_Text_0816DC5F, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0xBB)
@@ -89,7 +89,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId32 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106)
+    setflag(FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MIKAN)
     release
     end
 }
@@ -211,7 +211,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId11 {
     message(Naranja_IslaMikan_G00_M20_Text_08183422)
     waitfanfare
     waitmessage
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0802)
+    setflag(FLAG_NARANJA_RECEIVED_POKENAV_FROM_TRACEY)
     setflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY)
     applymovement(LOCALID_PLAYER, Naranja_IslaMikan_G00_M20_Movement_08157812)
     applymovement(LOCALID_ISLA_MIKAN_G00_M20_WALLY, Naranja_IslaMikan_G00_M20_Movement_08157835)
@@ -265,9 +265,9 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C3D {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C47 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     call_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8C3D)
-    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    checkflag(FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA)
     goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E)
     msgbox(Naranja_IslaMikan_G00_M20_Text_086B8CCA, MSGBOX_DEFAULT)
     checkpartymove(MOVE_THUNDER_SHOCK)
@@ -327,7 +327,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8ED0 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    checkflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
     call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43)
     checkitem(ITEM_MOOMOO_MILK, 0)
     compare_var_to_value(VAR_RESULT, 1)
@@ -344,11 +344,11 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    checkflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
     msgbox(Naranja_IslaMikan_G00_M20_Text_086B8FEF, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
@@ -368,8 +368,8 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F7E {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     removeitem(ITEM_FRESH_WATER, 1)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    setflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
     msgbox(Naranja_IslaMikan_G00_M20_Text_086B90F8, MSGBOX_AUTOCLOSE)
     end
 }
@@ -379,30 +379,30 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8FA6 {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F29)
     removeitem(ITEM_MOOMOO_MILK, 1)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    setflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
     msgbox(Naranja_IslaMikan_G00_M20_Text_086B907B, MSGBOX_AUTOCLOSE)
     end
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_PICHU_DOLL_LocalId15 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
+    checkflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
     call_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10)
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    checkflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73)
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142)
+    checkflag(FLAG_NARANJA_POKE_DRINKERS_UNLOCKED)
     goto_if(LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43)
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B92C0)
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240)
     goto(Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A)
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A {
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
     message(Naranja_IslaMikan_G00_M20_Text_086B917F)
     delay(0x90)
     waitmessage
@@ -420,12 +420,12 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135)
+    checkflag(FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_KECLEON)
     call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
+    setflag(FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_KECLEON)
     message(Naranja_IslaMikan_G00_M20_Text_086B917F)
     delay(0x90)
     waitmessage
@@ -440,12 +440,12 @@ script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B9240 {
 }
 
 script Naranja_IslaMikan_G00_M20_EventScript_Sub_086B92C0 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137)
+    checkflag(FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_TREECKO)
     call_if(EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133)
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134)
-    setflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
+    setflag(FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_TREECKO)
     message(Naranja_IslaMikan_G00_M20_Text_086B917F)
     delay(0x90)
     waitmessage

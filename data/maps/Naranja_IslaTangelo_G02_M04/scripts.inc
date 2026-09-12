@@ -8,7 +8,7 @@ Naranja_IslaTangelo_G02_M04_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2::
 # 9 "data/maps/Naranja_IslaTangelo_G02_M04/scripts.pory"
 	faceplayer
 # 10 "data/maps/Naranja_IslaTangelo_G02_M04/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	checkflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 11 "data/maps/Naranja_IslaTangelo_G02_M04/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTangelo_G02_M04_EventScript_Sub_08152FDB
 # 12 "data/maps/Naranja_IslaTangelo_G02_M04/scripts.pory"

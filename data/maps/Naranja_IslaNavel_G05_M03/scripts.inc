@@ -160,7 +160,7 @@ Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDEA::
 
 Naranja_IslaNavel_G05_M03_EventScript_Sub_086B8F00::
 # 104 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
+	clearflag FLAG_NARANJA_POKE_DRINKER_EMPTY
 # 105 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
 	call Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FD7C
 	return

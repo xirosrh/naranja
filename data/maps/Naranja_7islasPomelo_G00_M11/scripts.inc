@@ -276,7 +276,7 @@ Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E151::
 # 176 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	warp MAP_NARANJA_ISLAS_G17_M00, 0xFF, 5, 4
 # 177 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
-	copyvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008
+	copyvar VAR_NARANJA_FERRY_DESTINATION, VAR_0x8008
 # 178 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	waitstate
 # 179 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
@@ -350,7 +350,7 @@ Naranja_7islasPomelo_G00_M11_EventScript_Sub_0814E1D8::
 # 215 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	closemessage
 # 216 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
-	copyvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008
+	copyvar VAR_NARANJA_FERRY_DESTINATION, VAR_0x8008
 # 217 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	resetobjectsubpriority LOCALID_PLAYER, MAP_NARANJA_7ISLAS_POMELO_G00_M11
 # 218 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
@@ -466,9 +466,9 @@ Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A0102::
 
 Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C::
 # 294 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
-	copyvar VAR_0x8008, VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2
+	copyvar VAR_0x8008, VAR_NARANJA_FERRY_DESTINATION
 # 295 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
-	setvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 0
+	setvar VAR_NARANJA_FERRY_DESTINATION, 0
 	return
 
 

@@ -24,7 +24,7 @@ Naranja_CuevaKabuto_G24_M09_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2::
 
 Naranja_CuevaKabuto_G24_M09_EventScript_Trigger_1::
 # 22 "data/maps/Naranja_CuevaKabuto_G24_M09/scripts.pory"
-	checkflag FLAG_NARANJA_CUEVA_KABUTO_EVENT_COMPLETE_2128
+	checkflag FLAG_NARANJA_DEFEATED_CUEVA_KABUTO_MAWILE
 # 23 "data/maps/Naranja_CuevaKabuto_G24_M09/scripts.pory"
 	goto_if LESS_THAN, Naranja_CuevaKabuto_G24_M09_EventScript_Sub_086B513B
 # 24 "data/maps/Naranja_CuevaKabuto_G24_M09/scripts.pory"
@@ -96,7 +96,7 @@ Naranja_CuevaKabuto_G24_M09_EventScript_Sub_086B5170::
 # 61 "data/maps/Naranja_CuevaKabuto_G24_M09/scripts.pory"
 	delay 0x80
 # 62 "data/maps/Naranja_CuevaKabuto_G24_M09/scripts.pory"
-	setflag FLAG_NARANJA_CUEVA_KABUTO_EVENT_COMPLETE_2128
+	setflag FLAG_NARANJA_DEFEATED_CUEVA_KABUTO_MAWILE
 # 63 "data/maps/Naranja_CuevaKabuto_G24_M09/scripts.pory"
 	nop
 	end

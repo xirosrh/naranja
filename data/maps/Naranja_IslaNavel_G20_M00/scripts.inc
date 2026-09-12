@@ -360,7 +360,7 @@ Naranja_IslaNavel_G20_M00_EventScript_Sub_086B7920::
 # 201 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
 	nop
 # 202 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_02EE
+	clearflag FLAG_NARANJA_NAVEL_GYM_CHALLENGE_ACTIVE
 # 203 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
 	nop
 # 204 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"

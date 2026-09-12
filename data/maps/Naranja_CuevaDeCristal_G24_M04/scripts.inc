@@ -7,9 +7,9 @@ Naranja_CuevaDeCristal_G24_M04_MapScripts::
 
 Naranja_CuevaDeCristal_G24_M04_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 7 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	map_script_2 VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 4, Naranja_CuevaDeCristal_G24_M04_OnFrame_1
+	map_script_2 VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 4, Naranja_CuevaDeCristal_G24_M04_OnFrame_1
 # 8 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	map_script_2 VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 5, Naranja_CuevaDeCristal_G24_M04_OnFrame_1
+	map_script_2 VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 5, Naranja_CuevaDeCristal_G24_M04_OnFrame_1
 	.2byte 0
 
 
@@ -27,7 +27,7 @@ Naranja_CuevaDeCristal_G24_M04_OnTransition::
 # 19 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	call Naranja_Bementer_G24_M22_EventScript_Sub_081A0196
 # 20 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	compare_var_to_value VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 2
 # 21 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	call_if EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C773
 	end
@@ -407,7 +407,7 @@ Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_081A0442::
 # 250 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	clearflag FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_03D8
 # 251 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	setvar VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 6
+	setvar VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 6
 # 252 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00C7
 	return
@@ -537,7 +537,7 @@ Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_086B93B0::
 # 326 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	setflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
 # 327 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 4
+	setvar VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 4
 # 328 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	setvar VAR_NARANJA_ISLAS_EVENT_STATE_2, 1
 # 329 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"

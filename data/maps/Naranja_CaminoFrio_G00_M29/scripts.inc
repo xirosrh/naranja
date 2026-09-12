@@ -694,7 +694,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18::
 # 444 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	lockall
 # 445 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 446 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	goto_if LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081B0F3E
 # 447 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
@@ -812,7 +812,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6630::
 
 Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6658::
 # 519 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	checkflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C
+	checkflag FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO
 # 520 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
 # 521 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
@@ -830,7 +830,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_Trigger_1::
 # 529 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
 # 530 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	checkflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C
+	checkflag FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO
 # 531 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B66BF
 # 532 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
@@ -948,7 +948,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_TOTODILE_DOLL_LocalId13::
 # 594 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	delay 0xB0
 # 595 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C
+	setflag FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO
 # 596 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	release
 	end
@@ -1070,7 +1070,7 @@ Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6D80::
 # 663 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	delay 0x60
 # 664 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
-	clearflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C
+	clearflag FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO
 # 665 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	warp MAP_NARANJA_UNDERWATER_G00_M52, 0, 0, 0
 	end

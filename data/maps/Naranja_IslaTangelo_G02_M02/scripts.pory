@@ -33,14 +33,14 @@ script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 
 script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B)
+    checkflag(FLAG_NARANJA_TRACEY_RETURNED_TO_TANGELO)
     call_if(LESS_THAN, Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5CF0)
     nop
     goto(Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5D20)
 }
 
 script Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5CF0 {
-    setflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B)
+    setflag(FLAG_NARANJA_TRACEY_RETURNED_TO_TANGELO)
     nop
     msgbox(Naranja_IslaTangelo_G02_M02_Text_086B5580, MSGBOX_AUTOCLOSE)
     nop

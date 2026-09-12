@@ -7,11 +7,11 @@ Naranja_PuertoDeTangelo_G00_M09_MapScripts::
 
 Naranja_PuertoDeTangelo_G00_M09_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 7 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 1, Naranja_PuertoDeTangelo_G00_M09_OnFrame_1
+	map_script_2 VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 1, Naranja_PuertoDeTangelo_G00_M09_OnFrame_1
 # 8 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 2, Naranja_PuertoDeTangelo_G00_M09_OnFrame_2
+	map_script_2 VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2, Naranja_PuertoDeTangelo_G00_M09_OnFrame_2
 # 9 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 7, Naranja_PuertoDeTangelo_G00_M09_OnFrame_3
+	map_script_2 VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7, Naranja_PuertoDeTangelo_G00_M09_OnFrame_3
 	.2byte 0
 
 
@@ -19,7 +19,7 @@ Naranja_PuertoDeTangelo_G00_M09_OnTransition::
 # 14 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	setflag FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_080F
 # 15 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 2
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2
 # 16 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	call_if EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D57B
 # 17 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
@@ -31,7 +31,7 @@ Naranja_PuertoDeTangelo_G00_M09_OnTransition::
 # 20 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	call_if EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D5A6
 # 21 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 4
+	compare_var_to_value VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4
 # 22 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	call_if EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D570
 # 23 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
@@ -65,7 +65,7 @@ Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D567::
 
 Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D570::
 # 44 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 5
+	setvar VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 5
 # 45 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	setvar VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 5
 	return
@@ -219,7 +219,7 @@ Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D62B::
 # 138 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	setflag FLAG_HIDE_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1_2
 # 139 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3
 # 140 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	hideobjectat LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00
 # 141 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
@@ -237,7 +237,7 @@ Naranja_PuertoDeTangelo_G00_M09_OnFrame_3::
 # 149 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	lockall
 # 150 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 8
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 8
 # 151 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	releaseall
 	end
@@ -261,7 +261,7 @@ Naranja_PuertoDeTangelo_G00_M09_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId4::
 # 167 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	faceplayer
 # 168 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	checkflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 169 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"
 	goto_if EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D72F
 # 170 "data/maps/Naranja_PuertoDeTangelo_G00_M09/scripts.pory"

@@ -148,7 +148,7 @@ Naranja_Route110_G29_M00_EventScript_Sub_08160FDE::
 
 Naranja_Route110_G29_M00_EventScript_Sub_0816103C::
 # 89 "data/maps/Naranja_Route110_G29_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 90 "data/maps/Naranja_Route110_G29_M00/scripts.pory"
 	call_if LESS_THAN, Naranja_Route110_G29_M00_EventScript_Sub_08161088
 	return

@@ -45,11 +45,11 @@ script Naranja_Route106_G00_M21_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5 {
 }
 
 script Naranja_Route106_G00_M21_EventScript_Sign_4 {
-    checkflag(FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A)
+    checkflag(FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
-    checkflag(FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A)
+    checkflag(FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
-    setflag(FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A)
+    setflag(FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE)
     setwildbattle(SPECIES_SQUIRTLE, 5, 0)
     special(BattleSetup_StartLatiBattle)
     release

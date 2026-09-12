@@ -5,16 +5,16 @@ mapscripts Naranja_PuertoDeTangelo_G01_M02_MapScripts {
     MAP_SCRIPT_ON_LOAD: Naranja_PuertoDeTangelo_G01_M02_OnLoad
     MAP_SCRIPT_ON_TRANSITION: Naranja_PuertoDeTangelo_G01_M02_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3: Naranja_PuertoDeTangelo_G01_M02_OnFrame_1
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5: Naranja_PuertoDeTangelo_G01_M02_OnFrame_2
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6: Naranja_PuertoDeTangelo_G01_M02_OnFrame_3
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3: Naranja_PuertoDeTangelo_G01_M02_OnFrame_1
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5: Naranja_PuertoDeTangelo_G01_M02_OnFrame_2
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6: Naranja_PuertoDeTangelo_G01_M02_OnFrame_3
         VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 1: Naranja_PuertoDeTangelo_G01_M02_OnFrame_4
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 3: Naranja_PuebloPaleta_G01_M00_OnFrame_5
+        VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 3: Naranja_PuebloPaleta_G01_M00_OnFrame_5
     ]
 }
 
 script Naranja_PuertoDeTangelo_G01_M02_OnLoad {
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
     call_if(LESS_THAN, Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_0815289E)
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0112)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081528B1)
@@ -40,11 +40,11 @@ script Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081528BE {
 }
 
 script Naranja_PuertoDeTangelo_G01_M02_OnTransition {
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_08152902)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081528EA)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M02_EventScript_Sub_081528F6)
     end
 }

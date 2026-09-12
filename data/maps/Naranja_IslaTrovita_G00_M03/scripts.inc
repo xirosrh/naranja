@@ -312,7 +312,7 @@ Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650::
 # 209 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_009F
 # 210 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 3
+	setvar VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 3
 # 211 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
 	copyobjectxytoperm LOCALID_ISLA_TROVITA_G00_M03_MAN_2
 # 212 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
@@ -496,7 +496,7 @@ Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D::
 # 315 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
 	setflag FLAG_HIDE_ISLA_TROVITA_G00_M03_MAN_2
 # 316 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 5
+	setvar VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 5
 # 317 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"
 	delay 0x1E
 # 318 "data/maps/Naranja_IslaTrovita_G00_M03/scripts.pory"

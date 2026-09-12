@@ -442,7 +442,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_081A16A9 {
 
 script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18 {
     lockall
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_081B0F3E)
     checkpartymove(MOVE_ROCK_SMASH)
     compare_var_to_value(VAR_RESULT, 6)
@@ -516,7 +516,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6630 {
 }
 
 script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6658 {
-    checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C)
+    checkflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_086B6674)
     msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6965, MSGBOX_AUTOCLOSE)
@@ -527,7 +527,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6658 {
 script Naranja_CaminoFrio_G00_M29_EventScript_Trigger_1 {
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_SWIMMER_F)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
-    checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C)
+    checkflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B66BF)
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE)
     call_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
@@ -592,7 +592,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_TOTODILE_DOLL_LocalI
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_TOTODILE_DOLL, Naranja_CaminoFrio_G00_M29_Movement_086B67C1)
     applymovement(LOCALID_CAMINO_FRIO_G00_M29_BARD, Naranja_CaminoFrio_G00_M29_Movement_086B67D1)
     delay(0xB0)
-    setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C)
+    setflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
     release
     end
 }
@@ -661,7 +661,7 @@ script Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B6D80 {
     msgbox(Naranja_CaminoFrio_G00_M29_Text_086B6FBA, MSGBOX_AUTOCLOSE)
     applymovement(LOCALID_PLAYER, Naranja_CaminoFrio_G00_M29_Movement_086B67C2)
     delay(0x60)
-    clearflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C)
+    clearflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
     warp(MAP_NARANJA_UNDERWATER_G00_M52, 0, 0, 0)
     end
 }

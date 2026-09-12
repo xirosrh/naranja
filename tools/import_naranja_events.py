@@ -529,6 +529,67 @@ SYSTEM_FLAG_NAMES = {
     0x896: "FLAG_SYS_NATIONAL_DEX", 0x8C0: "FLAG_SYS_B_DASH",
 }
 
+# Naranja Beta 2 was built on top of Ruby and consequently reuses many of
+# Ruby's flag and variable slots.  Prefer the meaning of the Spanish Naranja
+# scripts when a slot has two unrelated meanings.  These names are curated
+# from the dialogue and the surrounding event flow; keeping them here makes
+# regenerating the imported maps deterministic.
+NARANJA_FLAG_NAMES = {
+    0x0058: "FLAG_NARANJA_MET_OAKS_AIDE_IN_PALLET_LAB",
+    0x0074: "FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX",
+    0x0083: "FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY",
+    0x0084: "FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR",
+    0x0087: "FLAG_NARANJA_MET_OAK_IN_PALLET_TOWN",
+    0x0094: "FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY",
+    0x00A6: "FLAG_NARANJA_RECEIVED_CARBOS_FROM_DANNY",
+    0x00A7: "FLAG_NARANJA_RECEIVED_IRON_FROM_SISSY",
+    0x00F6: "FLAG_NARANJA_RECEIVED_POKE_DRINKER_SUPPLIES",
+    0x0106: "FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MIKAN",
+    0x010A: "FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA",
+    0x02EE: "FLAG_NARANJA_NAVEL_GYM_CHALLENGE_ACTIVE",
+    0x04B4: "FLAG_NARANJA_DEFEATED_SISSY",
+    0x0800: "FLAG_NARANJA_RECEIVED_STARTER_PIKACHU",
+    0x0801: "FLAG_NARANJA_RECEIVED_POKEDEX",
+    0x0802: "FLAG_NARANJA_RECEIVED_POKENAV_FROM_TRACEY",
+    0x0809: "FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE",
+    0x200D: "FLAG_NARANJA_RESCUED_IVY_FROM_VILEPLUME",
+    0x200F: "FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED",
+    0x2114: "FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS",
+    0x2119: "FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO",
+    0x211B: "FLAG_NARANJA_TRACEY_RETURNED_TO_TANGELO",
+    0x2121: "FLAG_NARANJA_MANDARINA_GENERATOR_BATTERY_INSTALLED",
+    0x2122: "FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF",
+    0x2123: "FLAG_NARANJA_DEFEATED_BUTCH_AND_CASSIDY",
+    0x2128: "FLAG_NARANJA_DEFEATED_CUEVA_KABUTO_MAWILE",
+    0x212C: "FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO",
+    0x2132: "FLAG_NARANJA_POKE_DRINKER_EMPTY",
+    0x2133: "FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK",
+    0x2134: "FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER",
+    0x2135: "FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_KECLEON",
+    0x2136: "FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_AIPOM",
+    0x2137: "FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_TREECKO",
+    0x2138: "FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_SLAKOTH",
+    0x213A: "FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE",
+    0x2142: "FLAG_NARANJA_POKE_DRINKERS_UNLOCKED",
+    0x4001: "FLAG_NARANJA_SAILING_MUSIC_ACTIVE",
+}
+
+NARANJA_VAR_NAMES = {
+    0x4051: "VAR_NARANJA_POKEDEX_UPGRADE_STATE",
+    0x4057: "VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE",
+    0x405A: "VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE",
+    0x4071: "VAR_NARANJA_MIKAN_GYM_INTRO_STATE",
+    0x4082: "VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE",
+    0x4084: "VAR_NARANJA_OAK_LAB_STORY_STATE",
+    0x4085: "VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT",
+    0x408F: "VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE",
+    0x4092: "VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE",
+    0x4096: "VAR_NARANJA_FERRY_DESTINATION",
+    0x409A: "VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE",
+    0x40BA: "VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE",
+    0x40BE: "VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE",
+}
+
 
 class SemanticNames:
     def __init__(
@@ -649,7 +710,9 @@ class SemanticNames:
             if 0 < source <= 0x1F:
                 self._set_flag(source, self.target_flags.get(source, f"FLAG_TEMP_{source:X}"), source)
                 continue
-            if source not in self.flag_names:
+            if source in NARANJA_FLAG_NAMES:
+                self.flag_names[source] = self._unique(NARANJA_FLAG_NAMES[source])
+            elif source not in self.flag_names:
                 owner = self.best_owner(flag_scores[source])
                 self.flag_names[source] = self._unique(
                     f"FLAG_NARANJA_{self.area(owner)}_EVENT_COMPLETE_{source:04X}"
@@ -669,7 +732,9 @@ class SemanticNames:
             area = self.area(self.best_owner(var_scores[source]))
             area_counts[area] += 1
             suffix = "STORY_STATE" if area_counts[area] == 1 else f"EVENT_STATE_{area_counts[area]}"
-            self.var_names[source] = self._unique(f"VAR_NARANJA_{area}_{suffix}")
+            self.var_names[source] = self._unique(
+                NARANJA_VAR_NAMES.get(source, f"VAR_NARANJA_{area}_{suffix}")
+            )
             self.var_target_values[source] = source if 0x4050 <= source <= 0x40FF else next(free_story_targets)
 
         for trainer, scores in trainer_scores.items():
@@ -693,7 +758,9 @@ class SemanticNames:
             target = value if 0x4050 <= value <= 0x40FF else next(
                 candidate for candidate in range(0x4050, 0x4100) if candidate not in used
             )
-            self.var_names[value] = self._unique(f"VAR_NARANJA_{self.area(owner)}_STORY_STATE")
+            self.var_names[value] = self._unique(
+                NARANJA_VAR_NAMES.get(value, f"VAR_NARANJA_{self.area(owner)}_STORY_STATE")
+            )
             self.var_target_values[value] = target
         return self.var_names[value]
 

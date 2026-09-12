@@ -115,7 +115,7 @@
       "x": 8,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5",
+      "var": "VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE",
       "var_value": "4",
       "script": "Naranja_PuebloPaleta_G01_M00_EventScript_Trigger_1"
     }

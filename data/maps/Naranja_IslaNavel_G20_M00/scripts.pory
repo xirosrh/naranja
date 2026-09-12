@@ -199,7 +199,7 @@ script Naranja_IslaNavel_G20_M00_EventScript_Sub_086B7920 {
     fadescreen(0)
     msgbox(Naranja_IslaNavel_G20_M00_Text_086B7904, MSGBOX_AUTOCLOSE)
     nop
-    clearflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_02EE)
+    clearflag(FLAG_NARANJA_NAVEL_GYM_CHALLENGE_ACTIVE)
     nop
     msgbox(Naranja_IslaNavel_G20_M00_Text_086B79B3, MSGBOX_AUTOCLOSE)
     goto(Naranja_IslaNavel_G20_M00_EventScript_Sub_086B60B0)

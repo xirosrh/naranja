@@ -240,7 +240,7 @@ Naranja_7islasPomelo_G03_M02_OnFrame_1::
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EA6::
 # 156 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	checkflag FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801
+	checkflag FLAG_NARANJA_RECEIVED_POKEDEX
 # 157 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4342
 # 158 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
@@ -576,7 +576,7 @@ Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40C0::
 
 Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40CC::
 # 348 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
-	checkflag FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801
+	checkflag FLAG_NARANJA_RECEIVED_POKEDEX
 # 349 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"
 	goto_if LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4339
 # 350 "data/maps/Naranja_7islasPomelo_G03_M02/scripts.pory"

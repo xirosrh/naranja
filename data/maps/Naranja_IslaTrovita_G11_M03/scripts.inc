@@ -30,15 +30,15 @@ Naranja_IslaTrovita_G11_M03_EventScript_AfterBattle_081578FE::
 # 22 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0807
 # 23 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 1
+	setvar VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 1
 # 24 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
-	addvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1
+	addvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
 # 25 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	setvar VAR_0x8008, 1
 # 26 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	call Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A01C0
 # 27 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 6
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
 # 28 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	call_if EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A00FB
 # 29 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"

@@ -136,7 +136,7 @@
       "x": 3,
       "y": 1,
       "elevation": 3,
-      "var": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5",
+      "var": "VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE",
       "var_value": "0",
       "script": "Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_1"
     },
@@ -145,7 +145,7 @@
       "x": 4,
       "y": 3,
       "elevation": 3,
-      "var": "VAR_NARANJA_ISLA_VALENCIA_STORY_STATE",
+      "var": "VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE",
       "var_value": "0",
       "script": "Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_2"
     },

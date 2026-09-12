@@ -19,7 +19,7 @@ script Naranja_ValnTang_G09_M01_EventScript_Trigger_1 {
     checkflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER_2)
     nop
     call_if(EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E)
-    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
+    setflag(FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED)
     setweather(0xA)
     doweather
     msgbox(Naranja_ValnTang_G09_M01_Text_086B3370, MSGBOX_DEFAULT)

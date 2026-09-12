@@ -98,7 +98,7 @@ Naranja_IslaNavel_G00_M13_EventScript_Sub_086B5466::
 # 66 "data/maps/Naranja_IslaNavel_G00_M13/scripts.pory"
 	nop
 # 67 "data/maps/Naranja_IslaNavel_G00_M13/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_02EE
+	setflag FLAG_NARANJA_NAVEL_GYM_CHALLENGE_ACTIVE
 # 68 "data/maps/Naranja_IslaNavel_G00_M13/scripts.pory"
 	nop
 # 69 "data/maps/Naranja_IslaNavel_G00_M13/scripts.pory"

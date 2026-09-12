@@ -20,7 +20,7 @@ Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2::
 # 17 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"
 	faceplayer
 # 18 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 19 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B6560
 # 20 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"
@@ -104,7 +104,7 @@ Naranja_IslaMandarina_G00_M14_EventScript_Trigger_1::
 
 Naranja_IslaMandarina_G00_M14_EventScript_Trigger_2::
 # 80 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 81 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B5D6E
 # 82 "data/maps/Naranja_IslaMandarina_G00_M14/scripts.pory"

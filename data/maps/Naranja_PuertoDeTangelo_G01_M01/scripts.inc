@@ -17,7 +17,7 @@ Naranja_PuertoDeTangelo_G01_M01_OnTransition::
 # 13 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
 	call_if LESS_THAN, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081527CE
 # 14 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 4
 # 15 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
 	call_if EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950
 # 16 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
@@ -333,7 +333,7 @@ Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D::
 
 Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950::
 # 216 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5
 	return
 
 
@@ -359,7 +359,7 @@ Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB::
 # 231 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
 	delay 0x1E
 # 232 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6
 # 233 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
 	setflag FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0051
 # 234 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"

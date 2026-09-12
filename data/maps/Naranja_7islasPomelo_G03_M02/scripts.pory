@@ -153,7 +153,7 @@ script Naranja_7islasPomelo_G03_M02_OnFrame_1 {
 }
 
 script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A3EA6 {
-    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801)
+    checkflag(FLAG_NARANJA_RECEIVED_POKEDEX)
     goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4342)
     copyvar(VAR_0x8007, VAR_LAST_TALKED)
     lock
@@ -345,7 +345,7 @@ script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40C0 {
 }
 
 script Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A40CC {
-    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801)
+    checkflag(FLAG_NARANJA_RECEIVED_POKEDEX)
     goto_if(LESS_THAN, Naranja_7islasPomelo_G03_M02_EventScript_Sub_081A4339)
     copyvar(VAR_0x8007, VAR_LAST_TALKED)
     lock

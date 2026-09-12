@@ -389,7 +389,7 @@ Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId9::
 # 257 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
 	faceplayer
 # 258 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
-	checkflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A
+	checkflag FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA
 # 259 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
 	goto_if EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E
 # 260 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
@@ -407,7 +407,7 @@ Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId9::
 # 266 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
 	msgbox Naranja_ValleCharizard_G00_M12_Text_0816C2B6, MSGBOX_DEFAULT
 # 267 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
-	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A
+	setflag FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA
 # 268 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"
 	playfanfare MUS_OBTAIN_ITEM
 # 269 "data/maps/Naranja_ValleCharizard_G00_M12/scripts.pory"

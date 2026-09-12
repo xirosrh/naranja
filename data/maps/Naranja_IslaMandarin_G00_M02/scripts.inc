@@ -124,7 +124,7 @@ Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_WATTSON_LocalId8::
 # 95 "data/maps/Naranja_IslaMandarin_G00_M02/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G00_M02_EventScript_Sub_0814C368
 # 96 "data/maps/Naranja_IslaMandarin_G00_M02/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
 # 97 "data/maps/Naranja_IslaMandarin_G00_M02/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G00_M02_EventScript_Sub_0814C33C
 # 98 "data/maps/Naranja_IslaMandarin_G00_M02/scripts.pory"

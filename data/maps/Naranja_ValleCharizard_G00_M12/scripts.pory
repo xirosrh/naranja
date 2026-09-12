@@ -255,7 +255,7 @@ script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_Loca
 script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId9 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    checkflag(FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA)
     goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E79E)
     msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C174, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
@@ -264,7 +264,7 @@ script Naranja_ValleCharizard_G00_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_Loca
     compare_var_to_value(VAR_RESULT, 6)
     goto_if(EQUAL, Naranja_ValleCharizard_G00_M12_EventScript_Sub_0814E7A8)
     msgbox(Naranja_ValleCharizard_G00_M12_Text_0816C2B6, MSGBOX_DEFAULT)
-    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    setflag(FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA)
     playfanfare(MUS_OBTAIN_ITEM)
     message(Naranja_ValleCharizard_G00_M12_Text_0816C2EA)
     waitfanfare

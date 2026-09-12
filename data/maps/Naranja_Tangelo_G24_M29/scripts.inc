@@ -44,7 +44,7 @@ Naranja_Tangelo_G24_M29_EventScript_AfterBattle_086B5CD4::
 # 33 "data/maps/Naranja_Tangelo_G24_M29/scripts.pory"
 	nop
 # 34 "data/maps/Naranja_Tangelo_G24_M29/scripts.pory"
-	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B
+	setflag FLAG_BADGE05_GET
 # 35 "data/maps/Naranja_Tangelo_G24_M29/scripts.pory"
 	msgbox Naranja_Tangelo_G24_M29_Text_081B7BD0, MSGBOX_AUTOCLOSE
 	end

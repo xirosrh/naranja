@@ -21,7 +21,7 @@ script Naranja_Islas_G00_M19_OnTransition {
 script Naranja_Islas_G00_M19_EventScript_Sub_0814EEAE {
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_007F)
     goto_if(LESS_THAN, Naranja_Islas_G00_M19_EventScript_Sub_0814EEC4)
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(LESS_THAN, Naranja_Islas_G00_M19_EventScript_Sub_0814EEC4)
     clearflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_038A)
     return
@@ -89,7 +89,7 @@ script Naranja_Islas_G00_M19_EventScript_Sub_0814EFD5 {
     call(Naranja_Islas_G00_M19_EventScript_Sub_081A02EF)
     setflag(FLAG_HIDE_ISLAS_G00_M19_SPIN_CUSHION)
     hideobjectat(LOCALID_ISLAS_G00_M19_SPIN_CUSHION, MAP_NARANJA_ISLAS_G00_M19)
-    copyvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008)
+    copyvar(VAR_NARANJA_FERRY_DESTINATION, VAR_0x8008)
     resetobjectsubpriority(LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19)
     resetobjectsubpriority(LOCALID_ISLAS_G00_M19_GIRL_2, MAP_NARANJA_7ISLAS_POMELO_G00_M11)
     copyobjectxytoperm(LOCALID_ISLAS_G00_M19_GIRL_2)
@@ -171,13 +171,13 @@ script Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId25 {
 }
 
 script Naranja_Islas_G00_M19_EventScript_Sub_081A02E7 {
-    setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001)
+    setflag(FLAG_NARANJA_SAILING_MUSIC_ACTIVE)
     playbgm(MUS_SAILING, 0)
     return
 }
 
 script Naranja_Islas_G00_M19_EventScript_Sub_081A02EF {
-    clearflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001)
+    clearflag(FLAG_NARANJA_SAILING_MUSIC_ACTIVE)
     fadedefaultbgm
     return
 }

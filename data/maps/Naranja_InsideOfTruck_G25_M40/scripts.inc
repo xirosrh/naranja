@@ -8,7 +8,7 @@ Naranja_InsideOfTruck_G25_M40_MapScripts::
 
 Naranja_InsideOfTruck_G25_M40_EventScript_Trigger_2::
 # 10 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	checkflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A
+	checkflag FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA
 # 11 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	call_if LESS_THAN, Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650
 # 12 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
@@ -194,7 +194,7 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC45::
 # 119 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setrespawn 1
 # 120 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 1
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 1
 # 121 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MOM
 # 122 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
@@ -216,7 +216,7 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC68::
 # 132 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setrespawn 2
 # 133 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 2
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2
 # 134 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_HIDE_PUEBLO_PALETA_G01_M00_MOM
 # 135 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
@@ -226,7 +226,7 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_0815FC68::
 # 137 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_HIDE_PUERTO_DE_TANGELO_G01_M03_RIVAL_MAY_NORMAL
 # 138 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 1
 # 139 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setdynamicwarp MAP_NARANJA_PUERTO_DE_TANGELO_G00_M09, 0xFF, 0xC, 0xA
 # 140 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
@@ -250,7 +250,7 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650::
 # 153 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3
 # 154 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	clearflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114
+	clearflag FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS
 # 155 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	clearflag FLAG_HIDE_TANGELO_G00_M16_WALLY
 # 156 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
@@ -258,9 +258,9 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650::
 # 157 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B
 # 158 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142
+	setflag FLAG_NARANJA_POKE_DRINKERS_UNLOCKED
 # 159 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	clearflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119
+	clearflag FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO
 # 160 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	nop
 # 161 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
@@ -272,9 +272,9 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650::
 
 Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B5E60::
 # 167 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A
+	setflag FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA
 # 168 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_0800
+	setflag FLAG_NARANJA_RECEIVED_STARTER_PIKACHU
 # 169 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	msgbox Naranja_InsideOfTruck_G25_M40_Text_086B0C20, MSGBOX_NPC
 # 170 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"

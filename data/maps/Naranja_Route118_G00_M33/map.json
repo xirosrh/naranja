@@ -319,7 +319,7 @@
       "x": 43,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_NARANJA_INSIDE_OF_TRUCK_STORY_STATE",
+      "var": "VAR_NARANJA_MIKAN_GYM_INTRO_STATE",
       "var_value": "0",
       "script": "Naranja_Route118_G00_M33_EventScript_Trigger_1"
     },
@@ -328,7 +328,7 @@
       "x": 44,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_NARANJA_INSIDE_OF_TRUCK_STORY_STATE",
+      "var": "VAR_NARANJA_MIKAN_GYM_INTRO_STATE",
       "var_value": "0",
       "script": "Naranja_InsideOfTruck_G08_M01_EventScript_Trigger_2"
     },
@@ -337,7 +337,7 @@
       "x": 45,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_NARANJA_INSIDE_OF_TRUCK_STORY_STATE",
+      "var": "VAR_NARANJA_MIKAN_GYM_INTRO_STATE",
       "var_value": "0",
       "script": "Naranja_InsideOfTruck_G08_M01_EventScript_Trigger_1"
     }

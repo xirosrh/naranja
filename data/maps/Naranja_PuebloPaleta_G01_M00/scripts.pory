@@ -5,16 +5,16 @@ mapscripts Naranja_PuebloPaleta_G01_M00_MapScripts {
     MAP_SCRIPT_ON_LOAD: Naranja_PuebloPaleta_G01_M00_OnLoad
     MAP_SCRIPT_ON_TRANSITION: Naranja_PuebloPaleta_G01_M00_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3: Naranja_PuebloPaleta_G01_M00_OnFrame_1
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5: Naranja_PuebloPaleta_G01_M00_OnFrame_2
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6: Naranja_PuebloPaleta_G01_M00_OnFrame_3
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 1: Naranja_PuebloPaleta_G01_M00_OnFrame_4
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 3: Naranja_PuebloPaleta_G01_M00_OnFrame_5
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3: Naranja_PuebloPaleta_G01_M00_OnFrame_1
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5: Naranja_PuebloPaleta_G01_M00_OnFrame_2
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6: Naranja_PuebloPaleta_G01_M00_OnFrame_3
+        VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 1: Naranja_PuebloPaleta_G01_M00_OnFrame_4
+        VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 3: Naranja_PuebloPaleta_G01_M00_OnFrame_5
     ]
 }
 
 script Naranja_PuebloPaleta_G01_M00_OnLoad {
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
     call_if(LESS_THAN, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152660)
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0112)
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152673)
@@ -40,11 +40,11 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152680 {
 }
 
 script Naranja_PuebloPaleta_G01_M00_OnTransition {
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3)
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081526C4)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5)
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081526AC)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081526B8)
     end
 }
@@ -107,7 +107,7 @@ script Naranja_PuebloPaleta_G01_M00_OnFrame_4 {
     special(GetRivalSonDaughterString)
     msgbox(Naranja_PuebloPaleta_G01_M00_Text_081730C2, MSGBOX_DEFAULT)
     setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0057)
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 2)
+    setvar(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 2)
     releaseall
     end
 }
@@ -163,10 +163,10 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_OAK_LocalId3 {
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08154427)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08154406)
-    checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0087)
+    checkflag(FLAG_NARANJA_MET_OAK_IN_PALLET_TOWN)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_0815443B)
     msgbox(Naranja_PuebloPaleta_G01_M00_Text_08179805, MSGBOX_DEFAULT)
-    setflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0087)
+    setflag(FLAG_NARANJA_MET_OAK_IN_PALLET_TOWN)
     release
     end
 }
@@ -216,7 +216,7 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6956 {
     call_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B69AA)
     msgbox(Naranja_PuebloPaleta_G01_M00_Text_08172453, MSGBOX_DEFAULT)
     closemessage
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 4)
     applymovement(LOCALID_PLAYER, Naranja_PuebloPaleta_G01_M00_Movement_081B69B5)
     applymovement(32772, Naranja_7islasPomelo_G03_M04_Movement_081A0841)
     waitmovement(LOCALID_NONE)
@@ -247,7 +247,7 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B69B7 {
 }
 
 script Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6AB8 {
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 7)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7)
     releaseall
     end
 }
@@ -302,7 +302,7 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6BBE {
 script Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_MOM_LocalId1 {
     lock
     faceplayer
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 4)
+    compare_var_to_value(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C33)
     compare_var_to_value(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 4)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C33)
@@ -312,7 +312,7 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_MOM_LocalId1 {
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C72)
     compare_var_to_value(VAR_TEMP_1, 1)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C80)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 7)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7)
     goto_if(GREATER_THAN_OR_EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C9C)
     msgbox(Naranja_PuebloPaleta_G01_M00_Text_086BEBCF, MSGBOX_DEFAULT)
     release
@@ -419,7 +419,7 @@ script Naranja_PuebloPaleta_G01_M00_OnFrame_5 {
     playse(SE_DOOR)
     removeobject(32777)
     setflag(FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_0123)
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 4)
+    setvar(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4)
     setvar(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 4)
     releaseall
     end

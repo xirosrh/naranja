@@ -4,21 +4,21 @@
 mapscripts Naranja_PuertoDeTangelo_G00_M09_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Naranja_PuertoDeTangelo_G00_M09_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 1: Naranja_PuertoDeTangelo_G00_M09_OnFrame_1
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 2: Naranja_PuertoDeTangelo_G00_M09_OnFrame_2
-        VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 7: Naranja_PuertoDeTangelo_G00_M09_OnFrame_3
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 1: Naranja_PuertoDeTangelo_G00_M09_OnFrame_1
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2: Naranja_PuertoDeTangelo_G00_M09_OnFrame_2
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7: Naranja_PuertoDeTangelo_G00_M09_OnFrame_3
     ]
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_OnTransition {
     setflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_080F)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 2)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D57B)
     checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0052)
     call_if(LESS_THAN, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D583)
     compare_var_to_value(VAR_NARANJA_PUERTO_DE_TANGELO_STORY_STATE, 3)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D5A6)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 4)
+    compare_var_to_value(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D570)
     compare_var_to_value(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 4)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D570)
@@ -41,7 +41,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D567 {
 }
 
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D570 {
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 5)
+    setvar(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 5)
     setvar(VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 5)
     return
 }
@@ -136,7 +136,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D62B {
     applymovement(LOCALID_PLAYER, Naranja_PuertoDeTangelo_G00_M09_Movement_0814D6BD)
     waitmovement(LOCALID_NONE)
     setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1_2)
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3)
     hideobjectat(LOCALID_PLAYER, MAP_NARANJA_ISLA_VALENCIA_G00_M00)
     closedoor(0x8004, 0x8005)
     waitdooranim
@@ -147,7 +147,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D62B {
 
 script Naranja_PuertoDeTangelo_G00_M09_OnFrame_3 {
     lockall
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 8)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 8)
     releaseall
     end
 }
@@ -165,7 +165,7 @@ script Naranja_PuertoDeTangelo_G00_M09_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_Loc
 script Naranja_PuertoDeTangelo_G00_M09_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId4 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D72F)
     checkflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0052)
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G00_M09_EventScript_Sub_0814D722)

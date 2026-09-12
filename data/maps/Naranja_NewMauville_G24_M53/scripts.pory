@@ -29,7 +29,7 @@ script Naranja_NewMauville_G24_M53_OnTransition {
 }
 
 script Naranja_NewMauville_G24_M53_OnLoad {
-    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    compare_var_to_value(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2)
     call_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B)
     end
 }
@@ -142,7 +142,7 @@ script Naranja_NewMauville_G24_M53_EventScript_Trigger_10 {
     lockall
     msgbox(Naranja_NewMauville_G24_M53_Text_081983B1, MSGBOX_DEFAULT)
     call(Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B)
-    setvar(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    setvar(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2)
     releaseall
     end
 }
@@ -163,7 +163,7 @@ script Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B {
 
 script Naranja_NewMauville_G24_M53_EventScript_Sign_1 {
     lockall
-    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    compare_var_to_value(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2)
     goto_if(EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E8F6)
     msgbox(Naranja_NewMauville_G24_M53_Text_08198315, MSGBOX_DEFAULT)
     releaseall

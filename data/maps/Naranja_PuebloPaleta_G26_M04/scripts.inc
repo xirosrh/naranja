@@ -242,7 +242,7 @@ Naranja_PuebloPaleta_G26_M04_EventScript_Sub_0814ED46::
 # 152 "data/maps/Naranja_PuebloPaleta_G26_M04/scripts.pory"
 	setvar VAR_NARANJA_PUEBLO_PALETA_STORY_STATE, 1
 # 153 "data/maps/Naranja_PuebloPaleta_G26_M04/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 4
+	setvar VAR_NARANJA_OAK_LAB_STORY_STATE, 4
 # 154 "data/maps/Naranja_PuebloPaleta_G26_M04/scripts.pory"
 	clearflag FLAG_HIDE_PUEBLO_PALETA_G01_M04_PROF_BIRCH_2
 # 155 "data/maps/Naranja_PuebloPaleta_G26_M04/scripts.pory"

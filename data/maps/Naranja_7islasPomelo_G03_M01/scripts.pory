@@ -45,17 +45,17 @@ script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD1B {
 }
 
 script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD49 {
-    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 1)
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 1)
     return
 }
 
 script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD4F {
-    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 2)
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 2)
     return
 }
 
 script Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD55 {
-    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 3)
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 3)
     return
 }
 

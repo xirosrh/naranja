@@ -183,14 +183,14 @@ script Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156757 {
 
 script Naranja_IslaMandarin_G10_M00_EventScript_Sign_1 {
     lockall
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781)
     goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B)
 }
 
 script Naranja_IslaMandarin_G10_M00_EventScript_Sign_2 {
     lockall
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781)
     goto(Naranja_IslaMandarin_G10_M00_EventScript_Sub_0815678B)
 }

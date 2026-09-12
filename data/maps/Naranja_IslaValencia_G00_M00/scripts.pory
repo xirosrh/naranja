@@ -4,15 +4,15 @@
 mapscripts Naranja_IslaValencia_G00_M00_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Naranja_IslaValencia_G00_M00_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 2: Naranja_IslaValencia_G00_M00_OnFrame_1
+        VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 2: Naranja_IslaValencia_G00_M00_OnFrame_1
     ]
 }
 
 script Naranja_IslaValencia_G00_M00_OnTransition {
     setflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0816)
-    compare_var_to_value(VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 0)
+    compare_var_to_value(VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 0)
     call_if(EQUAL, Naranja_IslaValencia_G00_M00_EventScript_Sub_0814B731)
-    compare_var_to_value(VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 2)
+    compare_var_to_value(VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 2)
     call_if(EQUAL, Naranja_IslaValencia_G00_M00_EventScript_Sub_0814B739)
     end
 }
@@ -44,11 +44,11 @@ script Naranja_IslaValencia_G00_M00_OnFrame_1 {
     msgbox(Naranja_IslaValencia_G00_M00_Text_0816D408, MSGBOX_DEFAULT)
     closemessage
     clearflag(FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_4000)
-    setvar(VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 3)
+    setvar(VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 3)
     fadedefaultbgm
-    clearflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001)
+    clearflag(FLAG_NARANJA_SAILING_MUSIC_ACTIVE)
     special(LoadPlayerParty)
-    setvar(VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1)
+    setvar(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1)
     warp(MAP_NARANJA_INSIDE_OF_TRUCK_G08_M01, 0xFF, 4, 0x6C)
     waitstate
     releaseall

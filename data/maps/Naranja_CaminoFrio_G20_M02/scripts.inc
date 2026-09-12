@@ -16,7 +16,7 @@ Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262::
 # 15 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
 	faceplayer
 # 16 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
-	checkflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0083
+	checkflag FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY
 # 17 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
 	goto_if EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C28F
 # 18 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
@@ -42,7 +42,7 @@ Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262::
 # 28 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
 	nop
 # 29 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0083
+	setflag FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY
 # 30 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
 	release
 	end

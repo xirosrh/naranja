@@ -31,7 +31,7 @@ script Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_BIG_WAILMER_DOLL_LocalI
 
 script Naranja_Tangelo_G24_M29_EventScript_AfterBattle_086B5CD4 {
     nop
-    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
+    setflag(FLAG_BADGE05_GET)
     msgbox(Naranja_Tangelo_G24_M29_Text_081B7BD0, MSGBOX_AUTOCLOSE)
     end
 }

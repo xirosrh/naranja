@@ -224,7 +224,7 @@ Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5::
 # 156 "data/maps/Naranja_IslaMikan_G03_M03/scripts.pory"
 	faceplayer
 # 157 "data/maps/Naranja_IslaMikan_G03_M03/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_04B4
+	checkflag FLAG_NARANJA_DEFEATED_SISSY
 # 158 "data/maps/Naranja_IslaMikan_G03_M03/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153254
 # 159 "data/maps/Naranja_IslaMikan_G03_M03/scripts.pory"

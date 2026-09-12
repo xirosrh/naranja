@@ -17,7 +17,7 @@ Naranja_PuertoDeTangelo_G01_M03_OnTransition::
 # 13 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	call_if LESS_THAN, Naranja_PuertoDeTangelo_G01_M03_EventScript_Sub_08152A7A
 # 14 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 4
 # 15 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"
 	call_if EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950
 # 16 "data/maps/Naranja_PuertoDeTangelo_G01_M03/scripts.pory"

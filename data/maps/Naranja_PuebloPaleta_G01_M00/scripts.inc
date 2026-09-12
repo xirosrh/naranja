@@ -9,21 +9,21 @@ Naranja_PuebloPaleta_G01_M00_MapScripts::
 
 Naranja_PuebloPaleta_G01_M00_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 8 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3, Naranja_PuebloPaleta_G01_M00_OnFrame_1
+	map_script_2 VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3, Naranja_PuebloPaleta_G01_M00_OnFrame_1
 # 9 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5, Naranja_PuebloPaleta_G01_M00_OnFrame_2
+	map_script_2 VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5, Naranja_PuebloPaleta_G01_M00_OnFrame_2
 # 10 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6, Naranja_PuebloPaleta_G01_M00_OnFrame_3
+	map_script_2 VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6, Naranja_PuebloPaleta_G01_M00_OnFrame_3
 # 11 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 1, Naranja_PuebloPaleta_G01_M00_OnFrame_4
+	map_script_2 VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 1, Naranja_PuebloPaleta_G01_M00_OnFrame_4
 # 12 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 3, Naranja_PuebloPaleta_G01_M00_OnFrame_5
+	map_script_2 VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 3, Naranja_PuebloPaleta_G01_M00_OnFrame_5
 	.2byte 0
 
 
 Naranja_PuebloPaleta_G01_M00_OnLoad::
 # 17 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6
 # 18 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	call_if LESS_THAN, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152660
 # 19 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
@@ -59,15 +59,15 @@ Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152680::
 
 Naranja_PuebloPaleta_G01_M00_OnTransition::
 # 43 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 3
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3
 # 44 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	call_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081526C4
 # 45 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5
 # 46 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	call_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081526AC
 # 47 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6
 # 48 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	call_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081526B8
 	end
@@ -169,7 +169,7 @@ Naranja_PuebloPaleta_G01_M00_OnFrame_4::
 # 109 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	setflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0057
 # 110 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 2
+	setvar VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 2
 # 111 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	releaseall
 	end
@@ -259,13 +259,13 @@ Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_OAK_LocalId3::
 # 165 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	goto_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08154406
 # 166 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	checkflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0087
+	checkflag FLAG_NARANJA_MET_OAK_IN_PALLET_TOWN
 # 167 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	goto_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_0815443B
 # 168 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	msgbox Naranja_PuebloPaleta_G01_M00_Text_08179805, MSGBOX_DEFAULT
 # 169 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	setflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0087
+	setflag FLAG_NARANJA_MET_OAK_IN_PALLET_TOWN
 # 170 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	release
 	end
@@ -343,7 +343,7 @@ Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6956::
 # 218 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	closemessage
 # 219 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 4
 # 220 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	applymovement LOCALID_PLAYER, Naranja_PuebloPaleta_G01_M00_Movement_081B69B5
 # 221 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
@@ -389,7 +389,7 @@ Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B69B7::
 
 Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6AB8::
 # 250 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 7
+	setvar VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7
 # 251 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	releaseall
 	end
@@ -485,7 +485,7 @@ Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_MOM_LocalId1::
 # 304 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	faceplayer
 # 305 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 4
+	compare_var_to_value VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4
 # 306 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	goto_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C33
 # 307 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
@@ -505,7 +505,7 @@ Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_MOM_LocalId1::
 # 314 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	goto_if EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C80
 # 315 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 7
+	compare_var_to_value VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7
 # 316 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	goto_if GREATER_THAN_OR_EQUAL, Naranja_PuebloPaleta_G01_M00_EventScript_Sub_081B6C9C
 # 317 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
@@ -689,7 +689,7 @@ Naranja_PuebloPaleta_G01_M00_OnFrame_5::
 # 421 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_0123
 # 422 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 4
+	setvar VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4
 # 423 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	setvar VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 4
 # 424 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"

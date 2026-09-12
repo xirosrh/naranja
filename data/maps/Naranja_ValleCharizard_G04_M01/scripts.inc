@@ -38,9 +38,9 @@ Naranja_ValleCharizard_G04_M01_EventScript_AfterBattle_08153766::
 # 28 "data/maps/Naranja_ValleCharizard_G04_M01/scripts.pory"
 	setflag FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_080A
 # 29 "data/maps/Naranja_ValleCharizard_G04_M01/scripts.pory"
-	addvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1
+	addvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
 # 30 "data/maps/Naranja_ValleCharizard_G04_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 6
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
 # 31 "data/maps/Naranja_ValleCharizard_G04_M01/scripts.pory"
 	call_if EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A00FB
 # 32 "data/maps/Naranja_ValleCharizard_G04_M01/scripts.pory"

@@ -292,7 +292,7 @@ Naranja_IslaMandarin_G10_M00_EventScript_Sign_1::
 # 185 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	lockall
 # 186 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 187 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781
 # 188 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
@@ -304,7 +304,7 @@ Naranja_IslaMandarin_G10_M00_EventScript_Sign_2::
 # 192 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	lockall
 # 193 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 194 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarin_G10_M00_EventScript_Sub_08156781
 # 195 "data/maps/Naranja_IslaMandarin_G10_M00/scripts.pory"

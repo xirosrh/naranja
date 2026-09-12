@@ -60,7 +60,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08151004::
 # 37 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	call_if EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815105E
 # 38 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setvar VAR_NARANJA_INSIDE_OF_TRUCK_STORY_STATE, 1
+	setvar VAR_NARANJA_MIKAN_GYM_INTRO_STATE, 1
 # 39 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	removeobject LOCALID_INSIDE_OF_TRUCK_G08_M01_HOT_SPRINGS_OLD_WOMAN
 # 40 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -106,7 +106,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_DANNY_LocalId8::
 # 70 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	trainerbattle_single TRAINER_NARANJA_INSIDE_OF_TRUCK_268, Naranja_InsideOfTruck_G08_M01_Text_08175182, Naranja_InsideOfTruck_G08_M01_Text_08175246, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB, NO_MUSIC
 # 71 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	checkflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6
+	checkflag FLAG_NARANJA_RECEIVED_CARBOS_FROM_DANNY
 # 72 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	goto_if LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081531B5
 # 73 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -128,13 +128,13 @@ Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08153177::
 # 83 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	msgbox Naranja_InsideOfTruck_G08_M01_Text_08180DDA, MSGBOX_DEFAULT
 # 84 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_04B4
+	setflag FLAG_NARANJA_DEFEATED_SISSY
 # 85 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	setflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 86 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	addvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1
+	addvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
 # 87 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 6
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
 # 88 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	call_if EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A00FB
 # 89 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -160,7 +160,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081531B5::
 # 100 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	msgbox Naranja_InsideOfTruck_G08_M01_Text_086BFB30, MSGBOX_DEFAULT
 # 101 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A7
+	setflag FLAG_NARANJA_RECEIVED_IRON_FROM_SISSY
 # 102 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	release
 	end
@@ -194,7 +194,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_NORMAN_LocalId1::
 # 121 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	faceplayer
 # 122 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	copyvar VAR_0x8000, VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2
+	copyvar VAR_0x8000, VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT
 # 123 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	compare_var_to_value VAR_0x8000, 2
 # 124 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -382,7 +382,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154669::
 # 221 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	closemessage
 # 222 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001
+	setflag FLAG_NARANJA_SAILING_MUSIC_ACTIVE
 # 223 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	playbgm MUS_FOLLOW_ME, 0
 # 224 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -406,9 +406,9 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154669::
 # 233 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02D8
 # 234 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
 # 235 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setvar VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 2
+	setvar VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 2
 # 236 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	clearflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02D6
 # 237 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -734,7 +734,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081549D6::
 # 457 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1
 # 458 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 7
+	setvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 7
 # 459 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B
 # 460 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -894,7 +894,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sign_1::
 # 558 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	lockall
 # 559 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 6
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
 # 560 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	goto_if LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9
 # 561 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -946,7 +946,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sign_2::
 # 592 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	lockall
 # 593 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 6
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
 # 594 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	goto_if LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08154BB9
 # 595 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -1580,11 +1580,11 @@ Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_HOT_SPRINGS_OLD_WOMAN_Lo
 # 1005 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	trainerbattle_single TRAINER_NARANJA_INSIDE_OF_TRUCK_267, Naranja_InsideOfTruck_G08_M01_Text_08180C32, Naranja_InsideOfTruck_G08_M01_Text_08180D64, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_08153177, NO_MUSIC
 # 1006 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	checkflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A7
+	checkflag FLAG_NARANJA_RECEIVED_IRON_FROM_SISSY
 # 1007 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	goto_if LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815661D
 # 1008 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
 # 1009 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	goto_if EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08156641
 # 1010 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -1612,9 +1612,9 @@ Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB::
 # 1023 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	setflag FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY
 # 1024 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	addvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1
+	addvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
 # 1025 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 6
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
 # 1026 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	call_if EQUAL, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A00FB
 # 1027 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
@@ -1670,7 +1670,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_0815661D::
 # 1053 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	msgbox Naranja_InsideOfTruck_G08_M01_Text_0817A2A4, MSGBOX_DEFAULT
 # 1054 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6
+	setflag FLAG_NARANJA_RECEIVED_CARBOS_FROM_DANNY
 # 1055 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	release
 	end
@@ -1866,7 +1866,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081A0424::
 # 1177 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	setflag FLAG_HIDE_ISLAS_G17_M00_WINGULL
 # 1178 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
-	setvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 0
+	setvar VAR_NARANJA_FERRY_DESTINATION, 0
 	return
 
 

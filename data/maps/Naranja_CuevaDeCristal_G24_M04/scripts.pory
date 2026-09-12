@@ -4,8 +4,8 @@
 mapscripts Naranja_CuevaDeCristal_G24_M04_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Naranja_CuevaDeCristal_G24_M04_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 4: Naranja_CuevaDeCristal_G24_M04_OnFrame_1
-        VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 5: Naranja_CuevaDeCristal_G24_M04_OnFrame_1
+        VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 4: Naranja_CuevaDeCristal_G24_M04_OnFrame_1
+        VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 5: Naranja_CuevaDeCristal_G24_M04_OnFrame_1
     ]
 }
 
@@ -17,7 +17,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0814C614 {
 
 script Naranja_CuevaDeCristal_G24_M04_OnTransition {
     call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
-    compare_var_to_value(VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 2)
+    compare_var_to_value(VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 2)
     call_if(EQUAL, Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0815C773)
     end
 }
@@ -248,7 +248,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_081A0442 {
     removeobject(LOCALID_CUEVA_DE_CRISTAL_G24_M04_WOMAN_3)
     clearflag(FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_0328)
     clearflag(FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_03D8)
-    setvar(VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 6)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 6)
     setflag(FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00C7)
     return
 }
@@ -324,7 +324,7 @@ script Naranja_CuevaDeCristal_G24_M04_EventScript_Trigger_1 {
 script Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_086B93B0 {
     setflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
     setflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
-    setvar(VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 4)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 4)
     setvar(VAR_NARANJA_ISLAS_EVENT_STATE_2, 1)
     setflag(FLAG_HIDE_MANDARIN_G00_M31_OLD_MAN_1)
     goto(Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_0814C614)

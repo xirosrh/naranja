@@ -86,7 +86,7 @@ script Naranja_Route110_G29_M00_EventScript_Sub_08160FDE {
 }
 
 script Naranja_Route110_G29_M00_EventScript_Sub_0816103C {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     call_if(LESS_THAN, Naranja_Route110_G29_M00_EventScript_Sub_08161088)
     return
 }

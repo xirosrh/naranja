@@ -24,7 +24,7 @@ Naranja_ValnTang_G09_M01_EventScript_Trigger_1::
 # 21 "data/maps/Naranja_ValnTang_G09_M01/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
 # 22 "data/maps/Naranja_ValnTang_G09_M01/scripts.pory"
-	setflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F
+	setflag FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED
 # 23 "data/maps/Naranja_ValnTang_G09_M01/scripts.pory"
 	setweather 0xA
 # 24 "data/maps/Naranja_ValnTang_G09_M01/scripts.pory"

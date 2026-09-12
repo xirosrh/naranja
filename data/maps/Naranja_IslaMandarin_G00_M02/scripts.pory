@@ -93,7 +93,7 @@ script Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_WATTSON_LocalId8 {
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_00D1)
     goto_if(EQUAL, Naranja_IslaMandarin_G00_M02_EventScript_Sub_0814C368)
-    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2)
+    compare_var_to_value(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2)
     goto_if(EQUAL, Naranja_IslaMandarin_G00_M02_EventScript_Sub_0814C33C)
     checkflag(FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_00D0)
     goto_if(EQUAL, Naranja_IslaMandarin_G00_M02_EventScript_Sub_0814C332)

@@ -274,7 +274,7 @@ Naranja_IslaMurcott_G00_M01_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId4::
 # 178 "data/maps/Naranja_IslaMurcott_G00_M01/scripts.pory"
 	faceplayer
 # 179 "data/maps/Naranja_IslaMurcott_G00_M01/scripts.pory"
-	checkflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094
+	checkflag FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY
 # 180 "data/maps/Naranja_IslaMurcott_G00_M01/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMurcott_G00_M01_EventScript_Sub_0814BC29
 # 181 "data/maps/Naranja_IslaMurcott_G00_M01/scripts.pory"

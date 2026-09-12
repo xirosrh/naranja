@@ -64,19 +64,19 @@ Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD1B::
 
 Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD49::
 # 48 "data/maps/Naranja_7islasPomelo_G03_M01/scripts.pory"
-	setvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_FERRY_DESTINATION, 1
 	return
 
 
 Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD4F::
 # 53 "data/maps/Naranja_7islasPomelo_G03_M01/scripts.pory"
-	setvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 2
+	setvar VAR_NARANJA_FERRY_DESTINATION, 2
 	return
 
 
 Naranja_7islasPomelo_G03_M01_EventScript_Sub_0819FD55::
 # 58 "data/maps/Naranja_7islasPomelo_G03_M01/scripts.pory"
-	setvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 3
+	setvar VAR_NARANJA_FERRY_DESTINATION, 3
 	return
 
 

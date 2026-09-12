@@ -340,7 +340,7 @@
       "x": 17,
       "y": 58,
       "elevation": 3,
-      "var": "VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE",
+      "var": "VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE",
       "var_value": "2",
       "script": "Naranja_IslaPinkan_G00_M30_EventScript_Trigger_2"
     },
@@ -349,7 +349,7 @@
       "x": 16,
       "y": 57,
       "elevation": 3,
-      "var": "VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE",
+      "var": "VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE",
       "var_value": "2",
       "script": "Naranja_IslaPinkan_G00_M30_EventScript_Trigger_2"
     }

@@ -15,7 +15,7 @@ script Naranja_IslaMandarina_G00_M14_OnTransition {
 script Naranja_IslaMandarina_G00_M14_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId2 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     call_if(EQUAL, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B6560)
     applymovement(LOCALID_PLAYER, Naranja_IslaMandarina_G00_M14_Movement_08645ED1)
     msgbox(Naranja_IslaMandarina_G00_M14_Text_0816CBCE, MSGBOX_DEFAULT)
@@ -77,7 +77,7 @@ script Naranja_IslaMandarina_G00_M14_EventScript_Trigger_1 {
 }
 
 script Naranja_IslaMandarina_G00_M14_EventScript_Trigger_2 {
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(LESS_THAN, Naranja_IslaMandarina_G00_M14_EventScript_Sub_086B5D6E)
     release
     end

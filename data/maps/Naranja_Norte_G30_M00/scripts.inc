@@ -8,7 +8,7 @@ Naranja_Norte_G30_M00_OnTransition::
 # 9 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	setflag FLAG_NARANJA_NORTE_EVENT_COMPLETE_0844
 # 10 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NORTE_STORY_STATE, 1
+	compare_var_to_value VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 1
 # 11 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	call_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_0816355F
 	end
@@ -16,7 +16,7 @@ Naranja_Norte_G30_M00_OnTransition::
 
 Naranja_Norte_G30_M00_EventScript_Sub_0816355F::
 # 16 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 2
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 2
 	return
 
 
@@ -26,15 +26,15 @@ Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId1::
 # 22 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	faceplayer
 # 23 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NORTE_STORY_STATE, 0xA
+	compare_var_to_value VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xA
 # 24 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if GREATER_THAN_OR_EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638D2
 # 25 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NORTE_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 2
 # 26 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635B5
 # 27 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NORTE_STORY_STATE, 1
+	compare_var_to_value VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 1
 # 28 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081635AB
 # 29 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -46,7 +46,7 @@ Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId1::
 # 32 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	callstd 0
 # 33 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 1
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 1
 # 34 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	msgbox Naranja_Norte_G30_M00_Text_0819E59B, MSGBOX_DEFAULT
 # 35 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -158,7 +158,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_08163660::
 # 97 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 98 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0xA
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xA
 # 99 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0xFA
 # 100 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -184,7 +184,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_0816369C::
 # 111 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 112 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0xB
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xB
 # 113 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0x1F4
 # 114 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -210,7 +210,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_081636D8::
 # 125 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 126 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0xC
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xC
 # 127 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0x1F4
 # 128 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -236,7 +236,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_08163714::
 # 139 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 140 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0xD
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xD
 # 141 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0x3E8
 # 142 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -262,7 +262,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_08163750::
 # 153 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 154 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0xE
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xE
 # 155 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0x3E8
 # 156 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -290,7 +290,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_0816378C::
 # 168 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 169 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0xF
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0xF
 # 170 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0x1770
 # 171 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -318,7 +318,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_081637CD::
 # 183 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_08163845
 # 184 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 0x10
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 0x10
 # 185 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	subvar VAR_ASH_GATHER_COUNT, 0x1F40
 # 186 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -396,7 +396,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_08163851::
 # 229 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	call_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638A1
 # 230 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 2
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 2
 # 231 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	release
 	end
@@ -450,7 +450,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_081638C3::
 
 Naranja_Norte_G30_M00_EventScript_Sub_081638D2::
 # 267 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	copyvar VAR_0x8000, VAR_NARANJA_NORTE_STORY_STATE
+	copyvar VAR_0x8000, VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE
 # 268 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	compare_var_to_value VAR_0x8000, 0xA
 # 269 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
@@ -578,7 +578,7 @@ Naranja_Norte_G30_M00_EventScript_Sub_081639B1::
 # 339 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	call_if EQUAL, Naranja_Norte_G30_M00_EventScript_Sub_081638A1
 # 340 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
-	setvar VAR_NARANJA_NORTE_STORY_STATE, 2
+	setvar VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE, 2
 # 341 "data/maps/Naranja_Norte_G30_M00/scripts.pory"
 	release
 	end

@@ -12,7 +12,7 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1 {
     call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_0815539C)
     checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095)
     call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553CF)
-    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094)
+    checkflag(FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY)
     call_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0)
     faceplayer
     msgbox(Naranja_ValnTang_G09_M00_Text_0817C14B, MSGBOX_DEFAULT)
@@ -21,7 +21,7 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1 {
     setorcopyvar(VAR_0x8000, 0x114)
     setorcopyvar(VAR_0x8001, 1)
     callstd(0)
-    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094)
+    setflag(FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY)
     setflag(FLAG_HIDE_ISLA_MURCOTT_G00_M01_VARS)
     releaseall
     end
@@ -73,7 +73,7 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId4 {
 }
 
 script Naranja_ValnTang_G09_M00_EventScript_Trigger_1 {
-    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
+    checkflag(FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED)
     goto_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5)
     applymovement(LOCALID_PLAYER, Naranja_ValnTang_G09_M00_Movement_086B31C2)
     msgbox(Naranja_ValnTang_G09_M00_Text_086B321B, MSGBOX_AUTOCLOSE)
@@ -105,8 +105,8 @@ script Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5 {
 }
 
 script Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531 {
-    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F)
-    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200D)
+    setflag(FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED)
+    setflag(FLAG_NARANJA_RESCUED_IVY_FROM_VILEPLUME)
     setflag(FLAG_HIDE_VALN_TANG_G09_M00_HEX_MANIAC)
     setflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER)
     setflag(FLAG_HIDE_VALN_TANG_G09_M01_TRADER)
@@ -116,7 +116,7 @@ script Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531 {
     clearflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER_2)
     clearflag(FLAG_HIDE_MANDARIN_G00_M31_LITTLE_GIRL_1)
     clearflag(FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1)
-    clearflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A)
+    clearflag(FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA)
     release
     end
 }
@@ -125,9 +125,9 @@ script Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_BARD_LocalId2 {
     faceplayer
     checkflag(FLAG_HIDE_VALN_TANG_G07_M02_TRADER_2)
     goto_if(LESS_THAN, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC)
-    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
+    checkflag(FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS)
     goto_if(EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC)
-    setflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
+    setflag(FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS)
     nop
     msgbox(Naranja_ValnTang_G09_M00_Text_086B36B1, MSGBOX_NPC)
     end

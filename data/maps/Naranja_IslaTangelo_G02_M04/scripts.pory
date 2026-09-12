@@ -7,7 +7,7 @@ mapscripts Naranja_IslaTangelo_G02_M04_MapScripts {
 script Naranja_IslaTangelo_G02_M04_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
     goto_if(EQUAL, Naranja_IslaTangelo_G02_M04_EventScript_Sub_08152FDB)
     msgbox(Naranja_IslaTangelo_G02_M04_Text_08174A8A, MSGBOX_DEFAULT)
     release

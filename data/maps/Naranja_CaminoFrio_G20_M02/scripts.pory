@@ -13,7 +13,7 @@ script Naranja_CaminoFrio_G20_M02_OnTransition {
 script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0083)
+    checkflag(FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C28F)
     setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B)
     msgbox(Naranja_CaminoFrio_G20_M02_Text_08192A0D, MSGBOX_DEFAULT)
@@ -26,7 +26,7 @@ script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262 {
     nop
     nop
     nop
-    setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0083)
+    setflag(FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY)
     release
     end
 }

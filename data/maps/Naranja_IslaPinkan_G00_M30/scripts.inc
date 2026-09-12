@@ -58,9 +58,9 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4::
 # 36 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	setflag FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS
 # 37 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TROVITA_STORY_STATE, 2
+	setvar VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 2
 # 38 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setvar VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 2
+	setvar VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 2
 # 39 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	setvar VAR_NARANJA_MANDARIN_STORY_STATE, 1
 # 40 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
@@ -130,7 +130,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_Trigger_2::
 # 83 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	copyobjectxytoperm LOCALID_ISLA_PINKAN_G00_M30_NURSE
 # 84 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setvar VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE, 3
+	setvar VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 3
 # 85 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	releaseall
 	end
@@ -436,17 +436,17 @@ Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_NURSE_LocalId7::
 
 Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B9280::
 # 278 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_2136
+	checkflag FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_AIPOM
 # 279 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A
 # 280 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
+	setflag FLAG_NARANJA_POKE_DRINKER_EMPTY
 # 281 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
+	clearflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK
 # 282 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
+	clearflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER
 # 283 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_2136
+	setflag FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_AIPOM
 # 284 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B917F
 # 285 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
@@ -472,17 +472,17 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B9280::
 
 Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B9300::
 # 298 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_2138
+	checkflag FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_SLAKOTH
 # 299 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	call_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B920A
 # 300 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
+	setflag FLAG_NARANJA_POKE_DRINKER_EMPTY
 # 301 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
+	clearflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK
 # 302 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
+	clearflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER
 # 303 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_2138
+	setflag FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_SLAKOTH
 # 304 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B917F
 # 305 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
@@ -508,15 +508,15 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B9300::
 
 Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_PICHU_DOLL_LocalId12::
 # 318 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
+	checkflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK
 # 319 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F10
 # 320 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
+	checkflag FLAG_NARANJA_POKE_DRINKER_EMPTY
 # 321 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F73
 # 322 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142
+	checkflag FLAG_NARANJA_POKE_DRINKERS_UNLOCKED
 # 323 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaMikan_G00_M20_EventScript_Sub_086B8F43
 # 324 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
@@ -528,11 +528,11 @@ Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_PICHU_DOLL_LocalId12::
 # 327 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	goto_if EQUAL, Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B9280
 # 328 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132
+	setflag FLAG_NARANJA_POKE_DRINKER_EMPTY
 # 329 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133
+	clearflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK
 # 330 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134
+	clearflag FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER
 # 331 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	message Naranja_IslaMikan_G00_M20_Text_086B917F
 # 332 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"

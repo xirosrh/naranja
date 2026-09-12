@@ -9,7 +9,7 @@ script Naranja_Islas_G17_M01_OnTransition {
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_083C)
     checkflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_007F)
     goto_if(LESS_THAN, Naranja_Islas_G17_M01_EventScript_Sub_0815BE03)
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
     goto_if(LESS_THAN, Naranja_Islas_G17_M01_EventScript_Sub_0815BE03)
     setflag(FLAG_TEMP_1)
     end

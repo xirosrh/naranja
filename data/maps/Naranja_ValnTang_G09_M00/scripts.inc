@@ -18,7 +18,7 @@ Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1::
 # 14 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	call_if EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553CF
 # 15 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	checkflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094
+	checkflag FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY
 # 16 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	call_if EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553B0
 # 17 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
@@ -36,7 +36,7 @@ Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_HEX_MANIAC_LocalId1::
 # 23 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	callstd 0
 # 24 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	setflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094
+	setflag FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY
 # 25 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	setflag FLAG_HIDE_ISLA_MURCOTT_G00_M01_VARS
 # 26 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
@@ -112,7 +112,7 @@ Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId4::
 
 Naranja_ValnTang_G09_M00_EventScript_Trigger_1::
 # 76 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	checkflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F
+	checkflag FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED
 # 77 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	goto_if EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5
 # 78 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
@@ -170,9 +170,9 @@ Naranja_ValnTang_G09_M00_EventScript_Sub_086B31B5::
 
 Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531::
 # 108 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	setflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F
+	setflag FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED
 # 109 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	setflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200D
+	setflag FLAG_NARANJA_RESCUED_IVY_FROM_VILEPLUME
 # 110 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	setflag FLAG_HIDE_VALN_TANG_G09_M00_HEX_MANIAC
 # 111 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
@@ -192,7 +192,7 @@ Naranja_ValnTang_G09_M00_EventScript_Sub_086B3531::
 # 118 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1
 # 119 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	clearflag FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A
+	clearflag FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA
 # 120 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	release
 	end
@@ -206,11 +206,11 @@ Naranja_ValnTang_G09_M00_EventScript_OBJ_EVENT_GFX_BARD_LocalId2::
 # 127 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	goto_if LESS_THAN, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC
 # 128 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	checkflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114
+	checkflag FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS
 # 129 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	goto_if EQUAL, Naranja_ValnTang_G09_M00_EventScript_Sub_081553EC
 # 130 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
-	setflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114
+	setflag FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS
 # 131 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"
 	nop
 # 132 "data/maps/Naranja_ValnTang_G09_M00/scripts.pory"

@@ -44,7 +44,7 @@ Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4::
 # 35 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
 	faceplayer
 # 36 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B
+	checkflag FLAG_NARANJA_TRACEY_RETURNED_TO_TANGELO
 # 37 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5CF0
 # 38 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
@@ -56,7 +56,7 @@ Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4::
 
 Naranja_IslaTangelo_G02_M02_EventScript_Sub_086B5CF0::
 # 43 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B
+	setflag FLAG_NARANJA_TRACEY_RETURNED_TO_TANGELO
 # 44 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
 	nop
 # 45 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"

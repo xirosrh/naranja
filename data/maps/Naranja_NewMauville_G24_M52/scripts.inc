@@ -8,7 +8,7 @@ Naranja_NewMauville_G24_M52_MapScripts::
 
 Naranja_NewMauville_G24_M52_OnLoad::
 # 10 "data/maps/Naranja_NewMauville_G24_M52/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 0
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 0
 # 11 "data/maps/Naranja_NewMauville_G24_M52/scripts.pory"
 	call_if EQUAL, Naranja_NewMauville_G24_M52_EventScript_Sub_0815E4A1
 	end
@@ -76,7 +76,7 @@ Naranja_NewMauville_G24_M52_EventScript_Trigger_1::
 # 49 "data/maps/Naranja_NewMauville_G24_M52/scripts.pory"
 	playse SE_BANG
 # 50 "data/maps/Naranja_NewMauville_G24_M52/scripts.pory"
-	setvar VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 1
+	setvar VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 1
 # 51 "data/maps/Naranja_NewMauville_G24_M52/scripts.pory"
 	releaseall
 	end

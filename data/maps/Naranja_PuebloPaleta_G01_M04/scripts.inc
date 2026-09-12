@@ -9,14 +9,14 @@ Naranja_PuebloPaleta_G01_M04_MapScripts::
 
 Naranja_PuebloPaleta_G01_M04_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
 # 7 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 2, Naranja_PuebloPaleta_G01_M04_OnWarp_1
+	map_script_2 VAR_NARANJA_OAK_LAB_STORY_STATE, 2, Naranja_PuebloPaleta_G01_M04_OnWarp_1
 	.2byte 0
 
 Naranja_PuebloPaleta_G01_M04_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 10 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 2, Naranja_PuebloPaleta_G01_M04_OnFrame_1
+	map_script_2 VAR_NARANJA_OAK_LAB_STORY_STATE, 2, Naranja_PuebloPaleta_G01_M04_OnFrame_1
 # 11 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	map_script_2 VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 4, Naranja_PuebloPaleta_G01_M04_OnFrame_2
+	map_script_2 VAR_NARANJA_OAK_LAB_STORY_STATE, 4, Naranja_PuebloPaleta_G01_M04_OnFrame_2
 	.2byte 0
 
 
@@ -106,7 +106,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D19::
 # 68 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	clearflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_03DF
 # 69 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 3
+	setvar VAR_NARANJA_OAK_LAB_STORY_STATE, 3
 # 70 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	releaseall
 	end
@@ -144,17 +144,17 @@ Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_SCIENTIST_1_LocalId1::
 # 92 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	faceplayer
 # 93 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 3
+	compare_var_to_value VAR_NARANJA_OAK_LAB_STORY_STATE, 3
 # 94 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	goto_if GREATER_THAN_OR_EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D90
 # 95 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	checkflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0058
+	checkflag FLAG_NARANJA_MET_OAKS_AIDE_IN_PALLET_LAB
 # 96 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	goto_if EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D86
 # 97 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	msgbox Naranja_PuebloPaleta_G01_M04_Text_08173B29, MSGBOX_DEFAULT
 # 98 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	setflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0058
+	setflag FLAG_NARANJA_MET_OAKS_AIDE_IN_PALLET_LAB
 # 99 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	release
 	end
@@ -186,7 +186,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_OAK_LocalId2::
 # 119 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	goto_if LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_OAK_LocalId11
 # 120 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 5
+	compare_var_to_value VAR_NARANJA_OAK_LAB_STORY_STATE, 5
 # 121 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	goto_if EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E7B
 # 122 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
@@ -222,11 +222,11 @@ Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152DBA::
 # 139 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	call_if EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E40
 # 140 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 5
+	setvar VAR_NARANJA_OAK_LAB_STORY_STATE, 5
 # 141 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	setflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 142 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TANGELO_STORY_STATE, 1
+	setvar VAR_NARANJA_POKEDEX_UPGRADE_STATE, 1
 # 143 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_4, 4
 # 144 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
@@ -286,7 +286,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E6D::
 # 177 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	waitmessage
 # 178 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	setflag FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801
+	setflag FLAG_NARANJA_RECEIVED_POKEDEX
 	return
 
 
@@ -368,7 +368,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_Sign_4::
 
 Naranja_PuebloPaleta_G01_M04_EventScript_Sub_081A02F4::
 # 241 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	compare_var_to_value VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 0
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 0
 # 242 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	goto_if EQUAL, Naranja_IslaHamlin_G07_M03_EventScript_Sub_081A14DC
 # 243 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"

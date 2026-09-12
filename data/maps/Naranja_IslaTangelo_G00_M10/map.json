@@ -166,7 +166,7 @@
       "x": 0,
       "y": 7,
       "elevation": 3,
-      "var": "VAR_NARANJA_ISLA_TANGELO_STORY_STATE",
+      "var": "VAR_NARANJA_POKEDEX_UPGRADE_STATE",
       "var_value": "0",
       "script": "Naranja_IslaTangelo_G00_M10_EventScript_Trigger_1"
     },

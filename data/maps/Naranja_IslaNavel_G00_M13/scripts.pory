@@ -64,7 +64,7 @@ script Naranja_IslaNavel_G00_M13_EventScript_Sub_086B5466 {
     applymovement(LOCALID_PLAYER, Naranja_IslaNavel_G00_M13_Movement_086B5571)
     delay(0x60)
     nop
-    setflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_02EE)
+    setflag(FLAG_NARANJA_NAVEL_GYM_CHALLENGE_ACTIVE)
     nop
     warp(MAP_NARANJA_ISLA_NAVEL_G20_M00, 0, 0, 0)
     end

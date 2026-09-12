@@ -172,7 +172,7 @@ Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC5E::
 
 Naranja_IslaPomelo_G16_M11_EventScript_Sub_0819FC62::
 # 105 "data/maps/Naranja_IslaPomelo_G16_M11/scripts.pory"
-	setvar VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2, 3
+	setvar VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 3
 # 106 "data/maps/Naranja_IslaPomelo_G16_M11/scripts.pory"
 	setvar VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2, 3
 # 107 "data/maps/Naranja_IslaPomelo_G16_M11/scripts.pory"

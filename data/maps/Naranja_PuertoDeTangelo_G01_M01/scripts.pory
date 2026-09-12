@@ -11,7 +11,7 @@ mapscripts Naranja_PuertoDeTangelo_G01_M01_MapScripts {
 script Naranja_PuertoDeTangelo_G01_M01_OnTransition {
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0082)
     call_if(LESS_THAN, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081527CE)
-    compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 4)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 4)
     call_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950)
     call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D)
     setvar(VAR_NARANJA_SECRET_BASE_STORY_STATE, 0)
@@ -213,7 +213,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081A2F3D {
 }
 
 script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6950 {
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 5)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5)
     return
 }
 
@@ -229,7 +229,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B69EB {
     msgbox(Naranja_PuertoDeTangelo_G01_M01_Text_08172E18, MSGBOX_DEFAULT)
     call(Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_081B6A9B)
     delay(0x1E)
-    setvar(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5, 6)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
     setflag(FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0051)
     setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MACHOKE_FACING_AWAY)
     setflag(FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MACHOKE_CARRYING_BOX)

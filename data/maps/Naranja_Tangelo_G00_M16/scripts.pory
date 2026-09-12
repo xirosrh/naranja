@@ -129,7 +129,7 @@ script Naranja_Tangelo_G00_M16_EventScript_Sub_081B22FE {
 
 script Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId2 {
     faceplayer
-    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114)
+    checkflag(FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS)
     call_if(LESS_THAN, Naranja_Tangelo_G00_M16_EventScript_Sub_086B4595)
     checkflag(FLAG_HIDE_TANGELO_G00_M16_WALLY)
     goto_if(LESS_THAN, Naranja_Tangelo_G00_M16_EventScript_Sub_086B45A7)

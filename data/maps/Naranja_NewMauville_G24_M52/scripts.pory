@@ -7,7 +7,7 @@ mapscripts Naranja_NewMauville_G24_M52_MapScripts {
 }
 
 script Naranja_NewMauville_G24_M52_OnLoad {
-    compare_var_to_value(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 0)
+    compare_var_to_value(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 0)
     call_if(EQUAL, Naranja_NewMauville_G24_M52_EventScript_Sub_0815E4A1)
     end
 }
@@ -47,7 +47,7 @@ script Naranja_NewMauville_G24_M52_EventScript_Trigger_1 {
     setmetatile(5, 1, 0x2CD, 1)
     special(DrawWholeMapView)
     playse(SE_BANG)
-    setvar(VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 1)
+    setvar(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 1)
     releaseall
     end
 }

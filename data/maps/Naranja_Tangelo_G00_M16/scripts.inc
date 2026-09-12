@@ -201,7 +201,7 @@ Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId2::
 # 131 "data/maps/Naranja_Tangelo_G00_M16/scripts.pory"
 	faceplayer
 # 132 "data/maps/Naranja_Tangelo_G00_M16/scripts.pory"
-	checkflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114
+	checkflag FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS
 # 133 "data/maps/Naranja_Tangelo_G00_M16/scripts.pory"
 	call_if LESS_THAN, Naranja_Tangelo_G00_M16_EventScript_Sub_086B4595
 # 134 "data/maps/Naranja_Tangelo_G00_M16/scripts.pory"

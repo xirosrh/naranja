@@ -48,13 +48,13 @@ Naranja_Mandarin_G21_M00_EventScript_Sub_0815C30F::
 
 Naranja_Mandarin_G21_M00_EventScript_Sub_086B3DD0::
 # 40 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119
+	checkflag FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO
 # 41 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
 	goto_if EQUAL, Naranja_Mandarin_G21_M00_EventScript_Sub_0815C30F
 # 42 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
 	nop
 # 43 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
-	setflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119
+	setflag FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO
 # 44 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
 	msgbox Naranja_Mandarin_G21_M00_Text_08193049, MSGBOX_DEFAULT
 # 45 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
@@ -80,7 +80,7 @@ Naranja_Mandarin_G21_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId2::
 
 Naranja_Mandarin_G21_M00_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId1::
 # 59 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119
+	checkflag FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO
 # 60 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"
 	call_if EQUAL, Naranja_Norte_G30_M00_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId1
 # 61 "data/maps/Naranja_Mandarin_G21_M00/scripts.pory"

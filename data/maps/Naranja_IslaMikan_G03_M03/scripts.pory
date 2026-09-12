@@ -154,7 +154,7 @@ script Naranja_IslaMikan_G03_M03_EventScript_AfterBattle_08153238 {
 script Naranja_IslaMikan_G03_M03_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_04B4)
+    checkflag(FLAG_NARANJA_DEFEATED_SISSY)
     goto_if(EQUAL, Naranja_IslaMikan_G03_M03_EventScript_Sub_08153254)
     msgbox(Naranja_IslaMikan_G03_M03_Text_08174D98, MSGBOX_DEFAULT)
     release

@@ -60,15 +60,15 @@ Naranja_Route106_G00_M21_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5::
 
 Naranja_Route106_G00_M21_EventScript_Sign_4::
 # 48 "data/maps/Naranja_Route106_G00_M21/scripts.pory"
-	checkflag FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A
+	checkflag FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE
 # 49 "data/maps/Naranja_Route106_G00_M21/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
 # 50 "data/maps/Naranja_Route106_G00_M21/scripts.pory"
-	checkflag FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A
+	checkflag FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE
 # 51 "data/maps/Naranja_Route106_G00_M21/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
 # 52 "data/maps/Naranja_Route106_G00_M21/scripts.pory"
-	setflag FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A
+	setflag FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE
 # 53 "data/maps/Naranja_Route106_G00_M21/scripts.pory"
 	setwildbattle SPECIES_SQUIRTLE, 5, 0
 # 54 "data/maps/Naranja_Route106_G00_M21/scripts.pory"

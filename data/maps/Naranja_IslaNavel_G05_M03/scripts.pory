@@ -101,7 +101,7 @@ script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDEA {
 }
 
 script Naranja_IslaNavel_G05_M03_EventScript_Sub_086B8F00 {
-    clearflag(FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
     call(Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FD7C)
     return
 }

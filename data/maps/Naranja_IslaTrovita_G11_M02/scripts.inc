@@ -9,18 +9,18 @@ Naranja_IslaTrovita_G11_M02_MapScripts::
 
 Naranja_IslaTrovita_G11_M02_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
 # 7 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
-	map_script_2 VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 0, Naranja_IslaTrovita_G11_M02_OnWarp_1
+	map_script_2 VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0, Naranja_IslaTrovita_G11_M02_OnWarp_1
 	.2byte 0
 
 Naranja_IslaTrovita_G11_M02_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 10 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
-	map_script_2 VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 0, Naranja_IslaTrovita_G11_M02_OnFrame_1
+	map_script_2 VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0, Naranja_IslaTrovita_G11_M02_OnFrame_1
 	.2byte 0
 
 
 Naranja_IslaTrovita_G11_M02_OnTransition::
 # 15 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
-	compare_var_to_value VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 0
+	compare_var_to_value VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0
 # 16 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
 	call_if EQUAL, Naranja_IslaTrovita_G11_M02_EventScript_Sub_0815772D
 	end
@@ -100,11 +100,11 @@ Naranja_IslaTrovita_G11_M02_EventScript_Sub_081577D8::
 # 61 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
 	clearflag FLAG_HIDE_ISLAS_G17_M00_WINGULL
 # 62 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
-	setvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_FERRY_DESTINATION, 1
 # 63 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
 	clearflag FLAG_HIDE_ISLA_TROVITA_G00_M03_VARS
 # 64 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 1
 # 65 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
 	releaseall
 	end

@@ -12,7 +12,7 @@ Naranja_Islas_G17_M01_OnTransition::
 # 11 "data/maps/Naranja_Islas_G17_M01/scripts.pory"
 	goto_if LESS_THAN, Naranja_Islas_G17_M01_EventScript_Sub_0815BE03
 # 12 "data/maps/Naranja_Islas_G17_M01/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 13 "data/maps/Naranja_Islas_G17_M01/scripts.pory"
 	goto_if LESS_THAN, Naranja_Islas_G17_M01_EventScript_Sub_0815BE03
 # 14 "data/maps/Naranja_Islas_G17_M01/scripts.pory"

@@ -4,15 +4,15 @@
 mapscripts Naranja_IslaTrovita_G11_M02_MapScripts {
     MAP_SCRIPT_ON_TRANSITION: Naranja_IslaTrovita_G11_M02_OnTransition
     MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
-        VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 0: Naranja_IslaTrovita_G11_M02_OnWarp_1
+        VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0: Naranja_IslaTrovita_G11_M02_OnWarp_1
     ]
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 0: Naranja_IslaTrovita_G11_M02_OnFrame_1
+        VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0: Naranja_IslaTrovita_G11_M02_OnFrame_1
     ]
 }
 
 script Naranja_IslaTrovita_G11_M02_OnTransition {
-    compare_var_to_value(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 0)
+    compare_var_to_value(VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0)
     call_if(EQUAL, Naranja_IslaTrovita_G11_M02_EventScript_Sub_0815772D)
     end
 }
@@ -59,9 +59,9 @@ script Naranja_IslaTrovita_G11_M02_EventScript_Sub_081577D8 {
     clearflag(FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WOMAN_3)
     clearflag(FLAG_HIDE_ISLAS_G17_M00_OLD_MAN_1)
     clearflag(FLAG_HIDE_ISLAS_G17_M00_WINGULL)
-    setvar(VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, 1)
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 1)
     clearflag(FLAG_HIDE_ISLA_TROVITA_G00_M03_VARS)
-    setvar(VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2, 1)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 1)
     releaseall
     end
 }

@@ -6,7 +6,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_MARILL_DOLL_LocalId1::
 # 8 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	lock
 # 9 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	checkflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 # 10 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3B90
 # 11 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -70,7 +70,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Trigger_4::
 # 50 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920
 # 51 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	checkflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 # 52 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3FFD
 # 53 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -86,9 +86,9 @@ Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C::
 # 60 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	delay 0x80
 # 61 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123
+	setflag FLAG_NARANJA_DEFEATED_BUTCH_AND_CASSIDY
 # 62 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	clearflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 # 63 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	msgbox Naranja_IslaMandarina_G06_M05_Text_0817886A, MSGBOX_NPC
 # 64 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -98,7 +98,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C::
 
 Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId4::
 # 69 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2121
+	checkflag FLAG_NARANJA_MANDARINA_GENERATOR_BATTERY_INSTALLED
 # 70 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3902
 # 71 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -106,11 +106,11 @@ Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId4::
 # 72 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3932
 # 73 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123
+	checkflag FLAG_NARANJA_DEFEATED_BUTCH_AND_CASSIDY
 # 74 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3922
 # 75 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	checkflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 # 76 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3912
 # 77 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -140,7 +140,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B38E4::
 # 93 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	msgbox Naranja_IslaMandarina_G06_M05_Text_086B39E2, MSGBOX_AUTOCLOSE
 # 94 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	setflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 	end
 
 
@@ -180,7 +180,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3932::
 
 Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3954::
 # 124 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	clearflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2121
+	clearflag FLAG_NARANJA_MANDARINA_GENERATOR_BATTERY_INSTALLED
 # 125 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	setorcopyvar VAR_0x8000, 0x119
 # 126 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -194,7 +194,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3954::
 
 Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B3B90::
 # 133 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123
+	checkflag FLAG_NARANJA_DEFEATED_BUTCH_AND_CASSIDY
 # 134 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	goto_if EQUAL, Naranja_CaminoFrio_G00_M29_EventScript_Sub_086B7E7E
 # 135 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
@@ -246,7 +246,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Trigger_5::
 # 161 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920
 # 162 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	checkflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 # 163 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4040
 	end
@@ -254,7 +254,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Trigger_5::
 
 Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920::
 # 168 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122
+	checkflag FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF
 # 169 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	call_if EQUAL, Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B383C
 # 170 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"

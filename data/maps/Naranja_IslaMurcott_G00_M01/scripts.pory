@@ -176,7 +176,7 @@ script Naranja_IslaMurcott_G00_M01_EventScript_Sub_0814BC0A {
 script Naranja_IslaMurcott_G00_M01_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId4 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094)
+    checkflag(FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY)
     goto_if(EQUAL, Naranja_IslaMurcott_G00_M01_EventScript_Sub_0814BC29)
     msgbox(Naranja_IslaMurcott_G00_M01_Text_08164BBF, MSGBOX_DEFAULT)
     release

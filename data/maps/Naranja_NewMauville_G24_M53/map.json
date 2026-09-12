@@ -224,7 +224,7 @@
       "x": 33,
       "y": 6,
       "elevation": 3,
-      "var": "VAR_NARANJA_NEW_MAUVILLE_STORY_STATE",
+      "var": "VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE",
       "var_value": "1",
       "script": "Naranja_NewMauville_G24_M53_EventScript_Trigger_10"
     }

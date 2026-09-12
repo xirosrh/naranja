@@ -316,7 +316,7 @@ Naranja_IslaValencia_G08_M04_EventScript_Sub_086B3F85::
 # 206 "data/maps/Naranja_IslaValencia_G08_M04/scripts.pory"
 	faceplayer
 # 207 "data/maps/Naranja_IslaValencia_G08_M04/scripts.pory"
-	checkflag FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F
+	checkflag FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED
 # 208 "data/maps/Naranja_IslaValencia_G08_M04/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaValencia_G08_M04_EventScript_Sub_08155213
 # 209 "data/maps/Naranja_IslaValencia_G08_M04/scripts.pory"

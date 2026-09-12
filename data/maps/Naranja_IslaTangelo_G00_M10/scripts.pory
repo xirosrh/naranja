@@ -8,17 +8,17 @@ mapscripts Naranja_IslaTangelo_G00_M10_MapScripts {
 script Naranja_IslaTangelo_G00_M10_OnTransition {
     call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
     setflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0810)
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
     call_if(LESS_THAN, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD92)
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084)
+    checkflag(FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR)
     call_if(LESS_THAN, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD9E)
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
     call_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD8C)
     end
 }
 
 script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD8C {
-    setvar(VAR_NARANJA_ISLA_TANGELO_STORY_STATE, 1)
+    setvar(VAR_NARANJA_POKEDEX_UPGRADE_STATE, 1)
     return
 }
 
@@ -37,7 +37,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD9E {
 script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId3 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084)
+    checkflag(FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE79)
     checkflag(FLAG_TEMP_1)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE79)
@@ -84,7 +84,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE4C {
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE83)
     msgbox(Naranja_IslaTangelo_G00_M10_Text_0816AFE1, MSGBOX_DEFAULT)
-    setflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084)
+    setflag(FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR)
     fadedefaultbgm
     release
     end
@@ -106,7 +106,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE83 {
 script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId2 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DF26)
     msgbox(Naranja_IslaTangelo_G00_M10_Text_0816B0CC, MSGBOX_DEFAULT)
     closemessage
@@ -218,7 +218,7 @@ script Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_Local
     faceplayer
     message(Naranja_CaminoFrio_G00_M29_Text_081A0BE4)
     waitmessage
-    checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074)
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
     goto_if(EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_08152FA8)
     pokemart(Naranja_IslaTangelo_G00_M10_Mart_08152F9C)
     msgbox(Naranja_CaminoFrio_G00_M29_Text_081A0C02, MSGBOX_DEFAULT)

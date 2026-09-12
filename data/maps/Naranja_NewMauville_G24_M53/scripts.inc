@@ -40,7 +40,7 @@ Naranja_NewMauville_G24_M53_OnTransition::
 
 Naranja_NewMauville_G24_M53_OnLoad::
 # 32 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
 # 33 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	call_if EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B
 	end
@@ -246,7 +246,7 @@ Naranja_NewMauville_G24_M53_EventScript_Trigger_10::
 # 144 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	call Naranja_NewMauville_G24_M53_EventScript_Sub_0815E88B
 # 145 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	setvar VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
+	setvar VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
 # 146 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	releaseall
 	end
@@ -280,7 +280,7 @@ Naranja_NewMauville_G24_M53_EventScript_Sign_1::
 # 165 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	lockall
 # 166 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
-	compare_var_to_value VAR_NARANJA_NEW_MAUVILLE_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
 # 167 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"
 	goto_if EQUAL, Naranja_NewMauville_G24_M53_EventScript_Sub_0815E8F6
 # 168 "data/maps/Naranja_NewMauville_G24_M53/scripts.pory"

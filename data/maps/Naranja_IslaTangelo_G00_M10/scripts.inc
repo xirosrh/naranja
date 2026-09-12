@@ -10,15 +10,15 @@ Naranja_IslaTangelo_G00_M10_OnTransition::
 # 10 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0810
 # 11 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	checkflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 12 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD92
 # 13 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084
+	checkflag FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR
 # 14 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD9E
 # 15 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	checkflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 16 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	call_if EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD8C
 	end
@@ -26,7 +26,7 @@ Naranja_IslaTangelo_G00_M10_OnTransition::
 
 Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DD8C::
 # 21 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	setvar VAR_NARANJA_ISLA_TANGELO_STORY_STATE, 1
+	setvar VAR_NARANJA_POKEDEX_UPGRADE_STATE, 1
 	return
 
 
@@ -52,7 +52,7 @@ Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId3::
 # 39 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	faceplayer
 # 40 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084
+	checkflag FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR
 # 41 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE79
 # 42 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
@@ -136,7 +136,7 @@ Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DE4C::
 # 86 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	msgbox Naranja_IslaTangelo_G00_M10_Text_0816AFE1, MSGBOX_DEFAULT
 # 87 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084
+	setflag FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR
 # 88 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	fadedefaultbgm
 # 89 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
@@ -168,7 +168,7 @@ Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId2::
 # 108 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	faceplayer
 # 109 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	checkflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 110 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_0814DF26
 # 111 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
@@ -352,7 +352,7 @@ Naranja_IslaTangelo_G00_M10_EventScript_OBJ_EVENT_GFX_MART_EMPLOYEE_LocalId1::
 # 220 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	waitmessage
 # 221 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074
+	checkflag FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX
 # 222 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTangelo_G00_M10_EventScript_Sub_08152FA8
 # 223 "data/maps/Naranja_IslaTangelo_G00_M10/scripts.pory"

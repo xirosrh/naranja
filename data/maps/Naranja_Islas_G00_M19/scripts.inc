@@ -31,7 +31,7 @@ Naranja_Islas_G00_M19_EventScript_Sub_0814EEAE::
 # 23 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if LESS_THAN, Naranja_Islas_G00_M19_EventScript_Sub_0814EEC4
 # 24 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809
+	checkflag FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE
 # 25 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	goto_if LESS_THAN, Naranja_Islas_G00_M19_EventScript_Sub_0814EEC4
 # 26 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
@@ -147,7 +147,7 @@ Naranja_Islas_G00_M19_EventScript_Sub_0814EFD5::
 # 91 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	hideobjectat LOCALID_ISLAS_G00_M19_SPIN_CUSHION, MAP_NARANJA_ISLAS_G00_M19
 # 92 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	copyvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008
+	copyvar VAR_NARANJA_FERRY_DESTINATION, VAR_0x8008
 # 93 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	resetobjectsubpriority LOCALID_PLAYER, MAP_NARANJA_ISLAS_G00_M19
 # 94 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
@@ -263,7 +263,7 @@ Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId25::
 
 Naranja_Islas_G00_M19_EventScript_Sub_081A02E7::
 # 174 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	setflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001
+	setflag FLAG_NARANJA_SAILING_MUSIC_ACTIVE
 # 175 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	playbgm MUS_SAILING, 0
 	return
@@ -271,7 +271,7 @@ Naranja_Islas_G00_M19_EventScript_Sub_081A02E7::
 
 Naranja_Islas_G00_M19_EventScript_Sub_081A02EF::
 # 180 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
-	clearflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001
+	clearflag FLAG_NARANJA_SAILING_MUSIC_ACTIVE
 # 181 "data/maps/Naranja_Islas_G00_M19/scripts.pory"
 	fadedefaultbgm
 	return

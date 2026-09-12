@@ -106,7 +106,7 @@ Naranja_Route109_G00_M24_EventScript_Sub_0814F548::
 # 63 "data/maps/Naranja_Route109_G00_M24/scripts.pory"
 	closemessage
 # 64 "data/maps/Naranja_Route109_G00_M24/scripts.pory"
-	copyvar VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2, VAR_0x8008
+	copyvar VAR_NARANJA_FERRY_DESTINATION, VAR_0x8008
 # 65 "data/maps/Naranja_Route109_G00_M24/scripts.pory"
 	resetobjectsubpriority LOCALID_PLAYER, MAP_NARANJA_ROUTE_109_G00_M24
 # 66 "data/maps/Naranja_Route109_G00_M24/scripts.pory"

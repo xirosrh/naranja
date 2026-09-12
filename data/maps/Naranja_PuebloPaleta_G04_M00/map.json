@@ -94,7 +94,7 @@
       "x": 1,
       "y": 4,
       "elevation": 3,
-      "var": "VAR_NARANJA_ISLA_TANGELO_STORY_STATE",
+      "var": "VAR_NARANJA_POKEDEX_UPGRADE_STATE",
       "var_value": "0",
       "script": "Naranja_PuebloPaleta_G04_M00_EventScript_Trigger_1"
     }

@@ -109,7 +109,7 @@
       "target": "0x24"
     },
     "0x58": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0058",
+      "name": "FLAG_NARANJA_MET_OAKS_AIDE_IN_PALLET_LAB",
       "target": "0x25"
     },
     "0x59": {
@@ -193,7 +193,7 @@
       "target": "0x39"
     },
     "0x74": {
-      "name": "FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0074",
+      "name": "FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX",
       "target": "0x3A"
     },
     "0x76": {
@@ -229,11 +229,11 @@
       "target": "0x42"
     },
     "0x83": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0083",
+      "name": "FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY",
       "target": "0x43"
     },
     "0x84": {
-      "name": "FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0084",
+      "name": "FLAG_NARANJA_COMPLETED_TANGELO_POKE_STAND_TOUR",
       "target": "0x44"
     },
     "0x85": {
@@ -245,7 +245,7 @@
       "target": "0x46"
     },
     "0x87": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0087",
+      "name": "FLAG_NARANJA_MET_OAK_IN_PALLET_TOWN",
       "target": "0x47"
     },
     "0x89": {
@@ -281,7 +281,7 @@
       "target": "0x4F"
     },
     "0x94": {
-      "name": "FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_0094",
+      "name": "FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY",
       "target": "0x50"
     },
     "0x95": {
@@ -341,11 +341,11 @@
       "target": "0x5E"
     },
     "0xA6": {
-      "name": "FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6",
+      "name": "FLAG_NARANJA_RECEIVED_CARBOS_FROM_DANNY",
       "target": "0x5F"
     },
     "0xA7": {
-      "name": "FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A7",
+      "name": "FLAG_NARANJA_RECEIVED_IRON_FROM_SISSY",
       "target": "0x60"
     },
     "0xA8": {
@@ -621,7 +621,7 @@
       "target": "0xA4"
     },
     "0xF6": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_00F6",
+      "name": "FLAG_NARANJA_RECEIVED_POKE_DRINKER_SUPPLIES",
       "target": "0xA5"
     },
     "0xF7": {
@@ -677,7 +677,7 @@
       "target": "0xB2"
     },
     "0x106": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0106",
+      "name": "FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MIKAN",
       "target": "0xB3"
     },
     "0x107": {
@@ -693,7 +693,7 @@
       "target": "0xB6"
     },
     "0x10A": {
-      "name": "FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_010A",
+      "name": "FLAG_NARANJA_RECEIVED_EGG_FROM_MIMA",
       "target": "0xB7"
     },
     "0x10B": {
@@ -905,7 +905,7 @@
       "target": "0xEB"
     },
     "0x2EE": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_02EE",
+      "name": "FLAG_NARANJA_NAVEL_GYM_CHALLENGE_ACTIVE",
       "target": "0xEC"
     },
     "0x2EF": {
@@ -2213,7 +2213,7 @@
       "target": "0x232"
     },
     "0x4B4": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_04B4",
+      "name": "FLAG_NARANJA_DEFEATED_SISSY",
       "target": "0x233"
     },
     "0x4B8": {
@@ -2257,15 +2257,15 @@
       "target": "0x23D"
     },
     "0x800": {
-      "name": "FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_0800",
+      "name": "FLAG_NARANJA_RECEIVED_STARTER_PIKACHU",
       "target": "0x23E"
     },
     "0x801": {
-      "name": "FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0801",
+      "name": "FLAG_NARANJA_RECEIVED_POKEDEX",
       "target": "0x23F"
     },
     "0x802": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0802",
+      "name": "FLAG_NARANJA_RECEIVED_POKENAV_FROM_TRACEY",
       "target": "0x240"
     },
     "0x804": {
@@ -2289,7 +2289,7 @@
       "target": "0x245"
     },
     "0x809": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0809",
+      "name": "FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE",
       "target": "0x246"
     },
     "0x80A": {
@@ -2593,7 +2593,7 @@
       "target": "0x28F"
     },
     "0x200D": {
-      "name": "FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200D",
+      "name": "FLAG_NARANJA_RESCUED_IVY_FROM_VILEPLUME",
       "target": "0x290"
     },
     "0x200E": {
@@ -2601,7 +2601,7 @@
       "target": "0x291"
     },
     "0x200F": {
-      "name": "FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_200F",
+      "name": "FLAG_NARANJA_IVY_VILEPLUME_EVENT_STARTED",
       "target": "0x292"
     },
     "0x2110": {
@@ -2621,7 +2621,7 @@
       "target": "0x296"
     },
     "0x2114": {
-      "name": "FLAG_NARANJA_VALN_TANG_EVENT_COMPLETE_2114",
+      "name": "FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS",
       "target": "0x297"
     },
     "0x2116": {
@@ -2637,7 +2637,7 @@
       "target": "0x29A"
     },
     "0x2119": {
-      "name": "FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_2119",
+      "name": "FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO",
       "target": "0x29B"
     },
     "0x211A": {
@@ -2645,7 +2645,7 @@
       "target": "0x29C"
     },
     "0x211B": {
-      "name": "FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B",
+      "name": "FLAG_NARANJA_TRACEY_RETURNED_TO_TANGELO",
       "target": "0x29D"
     },
     "0x211C": {
@@ -2653,15 +2653,15 @@
       "target": "0x29E"
     },
     "0x2121": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2121",
+      "name": "FLAG_NARANJA_MANDARINA_GENERATOR_BATTERY_INSTALLED",
       "target": "0x29F"
     },
     "0x2122": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2122",
+      "name": "FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF",
       "target": "0x2A0"
     },
     "0x2123": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_2123",
+      "name": "FLAG_NARANJA_DEFEATED_BUTCH_AND_CASSIDY",
       "target": "0x2A1"
     },
     "0x2124": {
@@ -2677,7 +2677,7 @@
       "target": "0x2A4"
     },
     "0x2128": {
-      "name": "FLAG_NARANJA_CUEVA_KABUTO_EVENT_COMPLETE_2128",
+      "name": "FLAG_NARANJA_DEFEATED_CUEVA_KABUTO_MAWILE",
       "target": "0x2A5"
     },
     "0x2129": {
@@ -2693,7 +2693,7 @@
       "target": "0x2A8"
     },
     "0x212C": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_212C",
+      "name": "FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO",
       "target": "0x2A9"
     },
     "0x212D": {
@@ -2709,31 +2709,31 @@
       "target": "0x2AC"
     },
     "0x2132": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2132",
+      "name": "FLAG_NARANJA_POKE_DRINKER_EMPTY",
       "target": "0x2AD"
     },
     "0x2133": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2133",
+      "name": "FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK",
       "target": "0x2AE"
     },
     "0x2134": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2134",
+      "name": "FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER",
       "target": "0x2AF"
     },
     "0x2135": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2135",
+      "name": "FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_KECLEON",
       "target": "0x2B0"
     },
     "0x2136": {
-      "name": "FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_2136",
+      "name": "FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_AIPOM",
       "target": "0x2B1"
     },
     "0x2137": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2137",
+      "name": "FLAG_NARANJA_ENCOUNTERED_MIKAN_POKE_DRINKER_TREECKO",
       "target": "0x2B2"
     },
     "0x2138": {
-      "name": "FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_2138",
+      "name": "FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_SLAKOTH",
       "target": "0x2B3"
     },
     "0x2139": {
@@ -2741,7 +2741,7 @@
       "target": "0x2B4"
     },
     "0x213A": {
-      "name": "FLAG_NARANJA_ROUTE106_EVENT_COMPLETE_213A",
+      "name": "FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE",
       "target": "0x2B5"
     },
     "0x213F": {
@@ -2749,7 +2749,7 @@
       "target": "0x2B6"
     },
     "0x2142": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_2142",
+      "name": "FLAG_NARANJA_POKE_DRINKERS_UNLOCKED",
       "target": "0x2B7"
     },
     "0x2150": {
@@ -2761,7 +2761,7 @@
       "target": "0x2B9"
     },
     "0x4001": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001",
+      "name": "FLAG_NARANJA_SAILING_MUSIC_ACTIVE",
       "target": "0x2BA"
     },
     "0x400C": {
@@ -2919,7 +2919,7 @@
       "target": "0x4050"
     },
     "0x4051": {
-      "name": "VAR_NARANJA_ISLA_TANGELO_STORY_STATE",
+      "name": "VAR_NARANJA_POKEDEX_UPGRADE_STATE",
       "target": "0x4051"
     },
     "0x4053": {
@@ -2927,7 +2927,7 @@
       "target": "0x4053"
     },
     "0x4057": {
-      "name": "VAR_NARANJA_ISLA_VALENCIA_STORY_STATE",
+      "name": "VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE",
       "target": "0x4057"
     },
     "0x4058": {
@@ -2935,7 +2935,7 @@
       "target": "0x4058"
     },
     "0x405A": {
-      "name": "VAR_NARANJA_ISLA_TROVITA_STORY_STATE",
+      "name": "VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE",
       "target": "0x405A"
     },
     "0x405E": {
@@ -2959,7 +2959,7 @@
       "target": "0x406F"
     },
     "0x4071": {
-      "name": "VAR_NARANJA_INSIDE_OF_TRUCK_STORY_STATE",
+      "name": "VAR_NARANJA_MIKAN_GYM_INTRO_STATE",
       "target": "0x4071"
     },
     "0x4072": {
@@ -2975,15 +2975,15 @@
       "target": "0x407B"
     },
     "0x4082": {
-      "name": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_2",
+      "name": "VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE",
       "target": "0x4082"
     },
     "0x4084": {
-      "name": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3",
+      "name": "VAR_NARANJA_OAK_LAB_STORY_STATE",
       "target": "0x4084"
     },
     "0x4085": {
-      "name": "VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2",
+      "name": "VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT",
       "target": "0x4085"
     },
     "0x4086": {
@@ -3019,7 +3019,7 @@
       "target": "0x408E"
     },
     "0x408F": {
-      "name": "VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_2",
+      "name": "VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE",
       "target": "0x408F"
     },
     "0x4090": {
@@ -3027,7 +3027,7 @@
       "target": "0x4090"
     },
     "0x4092": {
-      "name": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_5",
+      "name": "VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE",
       "target": "0x4092"
     },
     "0x4093": {
@@ -3043,7 +3043,7 @@
       "target": "0x4095"
     },
     "0x4096": {
-      "name": "VAR_NARANJA_7ISLAS_POMELO_EVENT_STATE_2",
+      "name": "VAR_NARANJA_FERRY_DESTINATION",
       "target": "0x4096"
     },
     "0x4097": {
@@ -3059,7 +3059,7 @@
       "target": "0x4099"
     },
     "0x409A": {
-      "name": "VAR_NARANJA_CUEVA_DE_CRISTAL_STORY_STATE",
+      "name": "VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE",
       "target": "0x409A"
     },
     "0x409B": {
@@ -3163,7 +3163,7 @@
       "target": "0x40B9"
     },
     "0x40BA": {
-      "name": "VAR_NARANJA_NEW_MAUVILLE_STORY_STATE",
+      "name": "VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE",
       "target": "0x40BA"
     },
     "0x40BC": {
@@ -3175,7 +3175,7 @@
       "target": "0x40BD"
     },
     "0x40BE": {
-      "name": "VAR_NARANJA_NORTE_STORY_STATE",
+      "name": "VAR_NARANJA_AMPO_WORKSHOP_REWARD_STATE",
       "target": "0x40BE"
     },
     "0x40BF": {

@@ -7,7 +7,7 @@ Naranja_IslaValencia_G00_M00_MapScripts::
 
 Naranja_IslaValencia_G00_M00_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 7 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
-	map_script_2 VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 2, Naranja_IslaValencia_G00_M00_OnFrame_1
+	map_script_2 VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 2, Naranja_IslaValencia_G00_M00_OnFrame_1
 	.2byte 0
 
 
@@ -15,11 +15,11 @@ Naranja_IslaValencia_G00_M00_OnTransition::
 # 12 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0816
 # 13 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 0
+	compare_var_to_value VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 0
 # 14 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	call_if EQUAL, Naranja_IslaValencia_G00_M00_EventScript_Sub_0814B731
 # 15 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 2
 # 16 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	call_if EQUAL, Naranja_IslaValencia_G00_M00_EventScript_Sub_0814B739
 	end
@@ -71,15 +71,15 @@ Naranja_IslaValencia_G00_M00_OnFrame_1::
 # 46 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	clearflag FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_4000
 # 47 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
-	setvar VAR_NARANJA_ISLA_VALENCIA_STORY_STATE, 3
+	setvar VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE, 3
 # 48 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	fadedefaultbgm
 # 49 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
-	clearflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_4001
+	clearflag FLAG_NARANJA_SAILING_MUSIC_ACTIVE
 # 50 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	special LoadPlayerParty
 # 51 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
-	setvar VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
 # 52 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
 	warp MAP_NARANJA_INSIDE_OF_TRUCK_G08_M01, 0xFF, 4, 0x6C
 # 53 "data/maps/Naranja_IslaValencia_G00_M00/scripts.pory"
