@@ -25,7 +25,7 @@ script Naranja_PuebloPaleta_G26_M04_EventScript_Sign_4 {
     end
 }
 
-script Naranja_PuebloPaleta_G26_M04_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId2 {
+script Naranja_PuebloPaleta_G26_M04_EventScript_OBJ_EVENT_GFX_GARY_LocalId2 {
     lockall
     checkplayergender
     compare_var_to_value(VAR_RESULT, 0)

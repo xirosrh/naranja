@@ -308,7 +308,7 @@ script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_WALLACE_LocalId5 {
     end
 }
 
-script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId10 {
+script Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_GARY_LocalId10 {
     lock
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071)

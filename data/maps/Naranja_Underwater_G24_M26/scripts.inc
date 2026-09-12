@@ -66,7 +66,7 @@ Naranja_Underwater_G24_M26_OnResume::
 	end
 
 
-Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalId1::
+Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1::
 # 50 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"
 	lockall
 # 51 "data/maps/Naranja_Underwater_G24_M26/scripts.pory"

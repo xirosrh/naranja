@@ -4,7 +4,7 @@
 mapscripts Naranja_CuevaKabuto_G24_M10_MapScripts {
 }
 
-script Naranja_CuevaKabuto_G24_M10_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId1 {
+script Naranja_CuevaKabuto_G24_M10_EventScript_OBJ_EVENT_GFX_GARY_LocalId1 {
     lock
     faceplayer
     msgbox(Naranja_CuevaKabuto_G24_M10_Text_08194AE5, MSGBOX_DEFAULT)

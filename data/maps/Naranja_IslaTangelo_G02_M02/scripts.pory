@@ -30,7 +30,7 @@ script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2 
     end
 }
 
-script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_WALLY_LocalId4 {
+script Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4 {
     lock
     faceplayer
     checkflag(FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_211B)

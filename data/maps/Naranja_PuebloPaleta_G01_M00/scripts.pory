@@ -154,7 +154,7 @@ script Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152A2B {
     end
 }
 
-script Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId3 {
+script Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_OAK_LocalId3 {
     lock
     faceplayer
     checkflag(FLAG_NARANJA_VICTORY_ROAD_EVENT_COMPLETE_007E)

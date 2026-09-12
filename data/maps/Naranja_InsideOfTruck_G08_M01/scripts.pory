@@ -66,7 +66,7 @@ script Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08153103 {
     return
 }
 
-script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_BRAWLY_LocalId8 {
+script Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_DANNY_LocalId8 {
     trainerbattle(TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_INSIDE_OF_TRUCK_268, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_08175182, Naranja_InsideOfTruck_G08_M01_Text_08175246, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB)
     checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A6)
     goto_if(LESS_THAN, Naranja_InsideOfTruck_G08_M01_EventScript_Sub_081531B5)

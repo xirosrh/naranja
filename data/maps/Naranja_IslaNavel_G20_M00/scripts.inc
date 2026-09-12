@@ -34,7 +34,7 @@ Naranja_IslaNavel_G20_M00_OnTransition::
 	end
 
 
-Naranja_IslaNavel_G20_M00_EventScript_OBJ_EVENT_GFX_BRAWLY_LocalId1::
+Naranja_IslaNavel_G20_M00_EventScript_OBJ_EVENT_GFX_DANNY_LocalId1::
 # 30 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
 	lockall
 # 31 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"

@@ -106,7 +106,7 @@ Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE75::
 	end
 
 
-Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11::
+Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_OAK_LocalId11::
 # 82 "data/maps/Naranja_RutaAzul_G00_M18/scripts.pory"
 	lock
 # 83 "data/maps/Naranja_RutaAzul_G00_M18/scripts.pory"

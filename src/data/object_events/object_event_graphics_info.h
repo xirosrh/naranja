@@ -796,22 +796,22 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HexManiac = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RayquazaStill = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman8 = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 2048,
-    .width = 64,
-    .height = 64,
+    .size = 256,
+    .width = 16,
+    .height = 32,
     .paletteSlot = PALSLOT_NPC_3,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = TRUE,
+    .disableReflectionPaletteLoad = FALSE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_64x64,
-    .subspriteTables = sOamTables_64x64,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_RayquazaStill,
+    .images = sPicTable_Woman8,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -1803,7 +1803,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Truck = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothCarryingBox = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MachokeCarryingBox = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_VIGOROTH,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -1818,11 +1818,11 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothCarryingBo
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_VigorothCarryingBox,
+    .images = sPicTable_MachokeCarryingBox,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothFacingAway = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MachokeFacingAway = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_VIGOROTH,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
@@ -1837,7 +1837,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VigorothFacingAway
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_VigorothFacingAway,
+    .images = sPicTable_MachokeFacingAway,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -3992,17 +3992,17 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rayquaza = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
-    .size = 2048,
-    .width = 64,
-    .height = 64,
+    .size = 512,
+    .width = 32,
+    .height = 32,
     .paletteSlot = PALSLOT_NPC_3,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
-    .disableReflectionPaletteLoad = TRUE,
+    .disableReflectionPaletteLoad = FALSE,
     .tracks = TRACKS_FOOT,
-    .oam = &gObjectEventBaseOam_64x64,
-    .subspriteTables = sOamTables_64x64,
-    .anims = sAnimTable_Rayquaza,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Standard,
     .images = sPicTable_Rayquaza,
     .affineAnims = gDummySpriteAffineAnimTable,
 };

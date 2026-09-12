@@ -72,7 +72,7 @@
     },
     {
       "local_id": "LOCALID_TANGELO_G24_M29_WALLY",
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
       "x": 12,
       "y": 11,
       "elevation": 3,
@@ -81,7 +81,7 @@
       "movement_range_y": 0,
       "trainer_type": "1",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId5",
+      "script": "Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId5",
       "flag": "FLAG_HIDE_TANGELO_G24_M29_BIG_LAPRAS_DOLL"
     },
     {

@@ -32,22 +32,22 @@ script Naranja_Safari_G26_M03_EventScript_Sub_0816007F {
     return
 }
 
-script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId2 {
+script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId2 {
     msgbox(Naranja_Safari_G26_M03_Text_081C3B71, MSGBOX_NPC)
     end
 }
 
-script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId3 {
+script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId3 {
     msgbox(Naranja_Safari_G26_M03_Text_081C3BBD, MSGBOX_NPC)
     end
 }
 
-script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId4 {
+script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId4 {
     msgbox(Naranja_Safari_G26_M03_Text_081C3DCE, MSGBOX_NPC)
     end
 }
 
-script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId1 {
+script Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId1 {
     lock
     faceplayer
     compare_var_to_value(VAR_TEMP_1, 0)

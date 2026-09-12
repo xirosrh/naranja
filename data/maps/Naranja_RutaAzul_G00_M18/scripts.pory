@@ -78,7 +78,7 @@ script Naranja_RutaAzul_G00_M18_EventScript_Sub_0814EE75 {
     end
 }
 
-script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11 {
+script Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_OAK_LocalId11 {
     lock
     faceplayer
     msgbox(Naranja_RutaAzul_G00_M18_Text_081C4449, MSGBOX_YESNO)

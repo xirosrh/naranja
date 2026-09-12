@@ -494,7 +494,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_QuintyPlump,           OBJ_EVENT_PAL_TAG_QUINTY_PLUMP},
     {gObjectEventPal_QuintyPlumpReflection, OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION},
     {gObjectEventPal_Truck,                 OBJ_EVENT_PAL_TAG_TRUCK},
-    {gObjectEventPal_Vigoroth,              OBJ_EVENT_PAL_TAG_VIGOROTH},
+    {gObjectEventPal_Machoke,               OBJ_EVENT_PAL_TAG_VIGOROTH},
     {gObjectEventPal_EnemyZigzagoon,        OBJ_EVENT_PAL_TAG_ZIGZAGOON},
     {gObjectEventPal_May,                   OBJ_EVENT_PAL_TAG_MAY},
     {gObjectEventPal_MayReflection,         OBJ_EVENT_PAL_TAG_MAY_REFLECTION},

@@ -26,7 +26,7 @@ script Naranja_IslaNavel_G20_M00_OnTransition {
     end
 }
 
-script Naranja_IslaNavel_G20_M00_EventScript_OBJ_EVENT_GFX_BRAWLY_LocalId1 {
+script Naranja_IslaNavel_G20_M00_EventScript_OBJ_EVENT_GFX_DANNY_LocalId1 {
     lockall
     setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0)
     clearflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B)

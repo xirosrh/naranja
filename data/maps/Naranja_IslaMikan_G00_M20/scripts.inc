@@ -296,7 +296,7 @@ Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId9::
 	end
 
 
-Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WALLY_LocalId11::
+Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId11::
 # 208 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"
 	faceplayer
 # 209 "data/maps/Naranja_IslaMikan_G00_M20/scripts.pory"

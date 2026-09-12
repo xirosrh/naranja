@@ -161,7 +161,7 @@ Naranja_IslaMellsweet_G14_M07_EventScript_Sign_1::
 	end
 
 
-Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId1::
+Naranja_IslaMellsweet_G14_M07_EventScript_OBJ_EVENT_GFX_GARY_LocalId1::
 # 105 "data/maps/Naranja_IslaMellsweet_G14_M07/scripts.pory"
 	msgbox Naranja_IslaMellsweet_G14_M07_Text_0818DC25, MSGBOX_NPC
 	end

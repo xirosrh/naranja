@@ -4,7 +4,7 @@
 mapscripts Naranja_CaminoFrio_G00_M29_MapScripts {
 }
 
-script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId20 {
+script Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId20 {
     compare_var_to_value(0x212C, 1)
     goto_if(LESS_THAN, Naranja_CaminoFrio_G00_M29_EventScript_Sub_0814BBEA)
     msgbox(Naranja_CaminoFrio_G00_M29_Text_08164AA9, MSGBOX_NPC)

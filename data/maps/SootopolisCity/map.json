@@ -99,7 +99,7 @@
     },
     {
       "local_id": "LOCALID_SOOTOPOLIS_STEVEN",
-      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_GARY",
       "x": 20,
       "y": 36,
       "elevation": 3,
@@ -155,7 +155,7 @@
     },
     {
       "local_id": "LOCALID_SOOTOPOLIS_RAYQUAZA",
-      "graphics_id": "OBJ_EVENT_GFX_RAYQUAZA",
+      "graphics_id": "OBJ_EVENT_GFX_DRAGONITE",
       "x": 31,
       "y": 41,
       "elevation": 1,

@@ -88,7 +88,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2::
 	end
 
 
-Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_WALLY_LocalId1::
+Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId1::
 # 56 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	msgbox Naranja_IslaPinkan_G00_M30_Text_08170273, MSGBOX_NPC
 	end
@@ -376,7 +376,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4FB0::
 	end
 
 
-Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_MAGMA_MEMBER_M_LocalId6::
+Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_JAMES_LocalId6::
 # 242 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	setflag FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WINGULL
 # 243 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"

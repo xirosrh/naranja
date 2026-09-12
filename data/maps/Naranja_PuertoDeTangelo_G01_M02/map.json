@@ -30,7 +30,7 @@
     },
     {
       "local_id": "LOCALID_PUERTO_DE_TANGELO_G01_M02_MACHOKE_FACING_AWAY",
-      "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+      "graphics_id": "OBJ_EVENT_GFX_MACHOKE_FACING_AWAY",
       "x": 6,
       "y": 5,
       "elevation": 3,
@@ -44,7 +44,7 @@
     },
     {
       "local_id": "LOCALID_PUERTO_DE_TANGELO_G01_M02_MACHOKE_CARRYING_BOX",
-      "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_CARRYING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_MACHOKE_CARRYING_BOX",
       "x": 9,
       "y": 3,
       "elevation": 3,

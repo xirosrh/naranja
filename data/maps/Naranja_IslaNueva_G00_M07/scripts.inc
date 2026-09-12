@@ -486,7 +486,7 @@ Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_WALLACE_LocalId5::
 	end
 
 
-Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId10::
+Naranja_IslaNueva_G00_M07_EventScript_OBJ_EVENT_GFX_GARY_LocalId10::
 # 312 "data/maps/Naranja_IslaNueva_G00_M07/scripts.pory"
 	lock
 # 313 "data/maps/Naranja_IslaNueva_G00_M07/scripts.pory"

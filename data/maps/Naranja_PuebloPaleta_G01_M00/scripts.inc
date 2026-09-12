@@ -241,7 +241,7 @@ Naranja_PuebloPaleta_G01_M00_EventScript_Sub_08152A2B::
 	end
 
 
-Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId3::
+Naranja_PuebloPaleta_G01_M00_EventScript_OBJ_EVENT_GFX_OAK_LocalId3::
 # 158 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"
 	lock
 # 159 "data/maps/Naranja_PuebloPaleta_G01_M00/scripts.pory"

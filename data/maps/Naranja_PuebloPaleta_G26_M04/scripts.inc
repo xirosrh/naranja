@@ -28,7 +28,7 @@ Naranja_PuebloPaleta_G26_M04_EventScript_Sign_4::
 	end
 
 
-Naranja_PuebloPaleta_G26_M04_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId2::
+Naranja_PuebloPaleta_G26_M04_EventScript_OBJ_EVENT_GFX_GARY_LocalId2::
 # 29 "data/maps/Naranja_PuebloPaleta_G26_M04/scripts.pory"
 	lockall
 # 30 "data/maps/Naranja_PuebloPaleta_G26_M04/scripts.pory"

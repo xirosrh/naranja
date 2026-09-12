@@ -58,7 +58,7 @@
     },
     {
       "local_id": "LOCALID_CUEVA_DE_CRISTAL_G24_M04_MACHOKE_FACING_AWAY",
-      "graphics_id": "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY",
+      "graphics_id": "OBJ_EVENT_GFX_MACHOKE_FACING_AWAY",
       "x": 15,
       "y": 4,
       "elevation": 3,

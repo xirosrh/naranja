@@ -197,7 +197,7 @@ Naranja_Tangelo_G00_M16_EventScript_Sub_081B22FE::
 	end
 
 
-Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_WALLY_LocalId2::
+Naranja_Tangelo_G00_M16_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId2::
 # 131 "data/maps/Naranja_Tangelo_G00_M16/scripts.pory"
 	faceplayer
 # 132 "data/maps/Naranja_Tangelo_G00_M16/scripts.pory"

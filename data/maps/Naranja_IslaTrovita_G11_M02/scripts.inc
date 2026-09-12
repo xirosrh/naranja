@@ -110,7 +110,7 @@ Naranja_IslaTrovita_G11_M02_EventScript_Sub_081577D8::
 	end
 
 
-Naranja_IslaTrovita_G11_M02_EventScript_OBJ_EVENT_GFX_MAGMA_MEMBER_F_LocalId1::
+Naranja_IslaTrovita_G11_M02_EventScript_OBJ_EVENT_GFX_JESSIE_LocalId1::
 # 70 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"
 	lock
 # 71 "data/maps/Naranja_IslaTrovita_G11_M02/scripts.pory"

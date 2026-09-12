@@ -2,7 +2,7 @@ Naranja_Tangelo_G24_M29_MapScripts::
 	.byte 0
 
 
-Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId5::
+Naranja_Tangelo_G24_M29_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId5::
 # 8 "data/maps/Naranja_Tangelo_G24_M29/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, TRAINER_NARANJA_TANGELO_333, LOCALID_NONE, Naranja_Tangelo_G24_M29_Text_081B7B68, Naranja_Tangelo_G24_M29_Text_081B7B9D, Naranja_Tangelo_G24_M29_EventScript_AfterBattle_086B5CD4
 	end

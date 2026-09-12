@@ -112,11 +112,11 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D90 {
     end
 }
 
-script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId2 {
+script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_OAK_LocalId2 {
     lock
     faceplayer
     checkflag(FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0380)
-    goto_if(LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11)
+    goto_if(LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_OAK_LocalId11)
     compare_var_to_value(VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 5)
     goto_if(EQUAL, Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152E7B)
     msgbox(Naranja_PuebloPaleta_G01_M04_Text_081740B4, MSGBOX_DEFAULT)
@@ -200,7 +200,7 @@ script Naranja_PuebloPaleta_G01_M04_EventScript_Sign_1 {
     end
 }
 
-script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId3 {
+script Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_OAK_LocalId3 {
     lock
     faceplayer
     checkplayergender

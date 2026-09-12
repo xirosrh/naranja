@@ -2,7 +2,7 @@ Naranja_CaminoFrio_G00_M29_MapScripts::
 	.byte 0
 
 
-Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_WALLY_LocalId20::
+Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId20::
 # 8 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"
 	compare_var_to_value 0x212C, 1
 # 9 "data/maps/Naranja_CaminoFrio_G00_M29/scripts.pory"

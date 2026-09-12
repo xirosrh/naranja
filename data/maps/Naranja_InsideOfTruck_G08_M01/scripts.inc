@@ -102,7 +102,7 @@ Naranja_InsideOfTruck_G08_M01_EventScript_Sub_08153103::
 	return
 
 
-Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_BRAWLY_LocalId8::
+Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_DANNY_LocalId8::
 # 70 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_INSIDE_OF_TRUCK_268, LOCALID_NONE, Naranja_InsideOfTruck_G08_M01_Text_08175182, Naranja_InsideOfTruck_G08_M01_Text_08175246, Naranja_InsideOfTruck_G08_M01_EventScript_AfterBattle_081565DB
 # 71 "data/maps/Naranja_InsideOfTruck_G08_M01/scripts.pory"

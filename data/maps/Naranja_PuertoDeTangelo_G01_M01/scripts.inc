@@ -99,7 +99,7 @@ Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_4::
 	end
 
 
-Naranja_PuertoDeTangelo_G01_M01_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalId1::
+Naranja_PuertoDeTangelo_G01_M01_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1::
 # 72 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"
 	lockall
 # 73 "data/maps/Naranja_PuertoDeTangelo_G01_M01/scripts.pory"

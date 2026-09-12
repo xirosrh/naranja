@@ -52,7 +52,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2 {
     end
 }
 
-script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_WALLY_LocalId1 {
+script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId1 {
     msgbox(Naranja_IslaPinkan_G00_M30_Text_08170273, MSGBOX_NPC)
     end
 }
@@ -238,7 +238,7 @@ script Naranja_IslaPinkan_G00_M30_EventScript_Sub_086B4FB0 {
     end
 }
 
-script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_MAGMA_MEMBER_M_LocalId6 {
+script Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_JAMES_LocalId6 {
     setflag(FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WINGULL)
     nop
     goto(Naranja_CuevaDeCristal_G24_M04_EventScript_OBJECT_6_LocalId6)

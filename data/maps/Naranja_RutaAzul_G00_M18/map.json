@@ -55,7 +55,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Naranja_PuebloPaleta_G26_M04_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId2",
+      "script": "Naranja_PuebloPaleta_G26_M04_EventScript_OBJ_EVENT_GFX_GARY_LocalId2",
       "flag": "FLAG_HIDE_PUEBLO_PALETA_G01_M00_PROF_BIRCH"
     },
     {
@@ -172,7 +172,7 @@
     },
     {
       "local_id": "LOCALID_RUTA_AZUL_G00_M18_PROF_BIRCH",
-      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "graphics_id": "OBJ_EVENT_GFX_OAK",
       "x": 6,
       "y": 6,
       "elevation": 3,
@@ -181,7 +181,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11",
+      "script": "Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_OAK_LocalId11",
       "flag": "FLAG_HIDE_RUTA_AZUL_G00_M18_PROF_BIRCH"
     },
     {

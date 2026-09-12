@@ -68,7 +68,7 @@ script Naranja_PuertoDeTangelo_G01_M01_EventScript_Sign_4 {
     end
 }
 
-script Naranja_PuertoDeTangelo_G01_M01_EventScript_OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL_LocalId1 {
+script Naranja_PuertoDeTangelo_G01_M01_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1 {
     lockall
     checkflag(FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0124)
     goto_if(EQUAL, Naranja_PuertoDeTangelo_G01_M01_EventScript_Sub_08152BB5)

@@ -2,7 +2,7 @@ Naranja_Safari_G26_M02_MapScripts::
 	.byte 0
 
 
-Naranja_Safari_G26_M02_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId1::
+Naranja_Safari_G26_M02_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId1::
 # 8 "data/maps/Naranja_Safari_G26_M02/scripts.pory"
 	msgbox Naranja_Safari_G26_M02_Text_081C3C39, MSGBOX_NPC
 	end

@@ -55,11 +55,11 @@ Route111_EventScript_SetFallingPlayerGfx::
 	return
 
 Route111_EventScript_SetFallingPlayerGfxMale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_ASH_NORMAL
 	return
 
 Route111_EventScript_SetFallingPlayerGfxFemale::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_RIVAL_MISTY_NORMAL
 	return
 
 Route111_EventScript_CheckSetSandstorm::

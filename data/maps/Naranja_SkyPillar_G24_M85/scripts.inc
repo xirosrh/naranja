@@ -18,7 +18,7 @@ Naranja_SkyPillar_G24_M85_EventScript_Sub_0815F312::
 	return
 
 
-Naranja_SkyPillar_G24_M85_EventScript_OBJ_EVENT_GFX_RAYQUAZA_LocalId1::
+Naranja_SkyPillar_G24_M85_EventScript_OBJ_EVENT_GFX_DRAGONITE_LocalId1::
 # 20 "data/maps/Naranja_SkyPillar_G24_M85/scripts.pory"
 	lock
 # 21 "data/maps/Naranja_SkyPillar_G24_M85/scripts.pory"

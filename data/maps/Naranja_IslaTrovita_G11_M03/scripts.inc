@@ -2,7 +2,7 @@ Naranja_IslaTrovita_G11_M03_MapScripts::
 	.byte 0
 
 
-Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_ROXANNE_LocalId1::
+Naranja_IslaTrovita_G11_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId1::
 # 8 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"
 	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, TRAINER_NARANJA_ISLA_TROVITA_265, LOCALID_NONE, Naranja_IslaTrovita_G11_M03_Text_08183EE5, Naranja_IslaTrovita_G11_M03_Text_08183FC4, Naranja_IslaTrovita_G11_M03_EventScript_AfterBattle_081578FE
 # 9 "data/maps/Naranja_IslaTrovita_G11_M03/scripts.pory"

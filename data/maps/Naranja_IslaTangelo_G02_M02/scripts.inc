@@ -38,7 +38,7 @@ Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_GENTLEMAN_LocalId2::
 	end
 
 
-Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_WALLY_LocalId4::
+Naranja_IslaTangelo_G02_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4::
 # 34 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"
 	lock
 # 35 "data/maps/Naranja_IslaTangelo_G02_M02/scripts.pory"

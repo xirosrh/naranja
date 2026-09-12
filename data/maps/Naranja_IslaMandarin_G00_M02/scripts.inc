@@ -110,7 +110,7 @@ Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId7::
 	return
 
 
-Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_WALLY_LocalId6::
+Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId6::
 	return
 
 

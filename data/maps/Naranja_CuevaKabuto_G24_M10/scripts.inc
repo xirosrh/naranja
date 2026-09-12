@@ -2,7 +2,7 @@ Naranja_CuevaKabuto_G24_M10_MapScripts::
 	.byte 0
 
 
-Naranja_CuevaKabuto_G24_M10_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId1::
+Naranja_CuevaKabuto_G24_M10_EventScript_OBJ_EVENT_GFX_GARY_LocalId1::
 # 8 "data/maps/Naranja_CuevaKabuto_G24_M10/scripts.pory"
 	lock
 # 9 "data/maps/Naranja_CuevaKabuto_G24_M10/scripts.pory"

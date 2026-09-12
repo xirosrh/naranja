@@ -171,7 +171,7 @@ script Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920 {
     end
 }
 
-script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_AQUA_MEMBER_F_LocalId2 {
+script Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_CASSIDY_LocalId2 {
     msgbox(Naranja_IslaMandarina_G06_M05_Text_086B4940, MSGBOX_DEFAULT)
     call(0x086B3B80)
     end

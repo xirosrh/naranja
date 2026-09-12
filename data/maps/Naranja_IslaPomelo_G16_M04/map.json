@@ -16,7 +16,7 @@
   "object_events": [
     {
       "local_id": "LOCALID_ISLA_POMELO_G16_M04_STEVEN",
-      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_GARY",
       "x": 6,
       "y": 5,
       "elevation": 3,
@@ -44,7 +44,7 @@
     },
     {
       "local_id": "LOCALID_ISLA_POMELO_G16_M04_PROF_BIRCH",
-      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "graphics_id": "OBJ_EVENT_GFX_OAK",
       "x": 6,
       "y": 12,
       "elevation": 3,

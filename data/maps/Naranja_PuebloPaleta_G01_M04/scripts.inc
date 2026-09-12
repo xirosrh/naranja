@@ -176,7 +176,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_Sub_08152D90::
 	end
 
 
-Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId2::
+Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_OAK_LocalId2::
 # 116 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	lock
 # 117 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
@@ -184,7 +184,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId2::
 # 118 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	checkflag FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0380
 # 119 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
-	goto_if LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId11
+	goto_if LESS_THAN, Naranja_RutaAzul_G00_M18_EventScript_OBJ_EVENT_GFX_OAK_LocalId11
 # 120 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	compare_var_to_value VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_3, 5
 # 121 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
@@ -316,7 +316,7 @@ Naranja_PuebloPaleta_G01_M04_EventScript_Sign_1::
 	end
 
 
-Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_PROF_BIRCH_LocalId3::
+Naranja_PuebloPaleta_G01_M04_EventScript_OBJ_EVENT_GFX_OAK_LocalId3::
 # 204 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"
 	lock
 # 205 "data/maps/Naranja_PuebloPaleta_G01_M04/scripts.pory"

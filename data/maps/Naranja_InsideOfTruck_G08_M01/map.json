@@ -114,7 +114,7 @@
     },
     {
       "local_id": "LOCALID_INSIDE_OF_TRUCK_G08_M01_BRAWLY",
-      "graphics_id": "OBJ_EVENT_GFX_BRAWLY",
+      "graphics_id": "OBJ_EVENT_GFX_DANNY",
       "x": 4,
       "y": 29,
       "elevation": 3,
@@ -123,7 +123,7 @@
       "movement_range_y": 0,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_BRAWLY_LocalId8",
+      "script": "Naranja_InsideOfTruck_G08_M01_EventScript_OBJ_EVENT_GFX_DANNY_LocalId8",
       "flag": "0x0"
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "local_id": "LOCALID_INSIDE_OF_TRUCK_G08_M01_WALLY",
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
       "x": 4,
       "y": 111,
       "elevation": 3,

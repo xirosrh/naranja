@@ -87,7 +87,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_1",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_CASSIDY",
       "x": 31,
       "y": 27,
       "elevation": 3,
@@ -263,7 +263,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_2",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 30,
       "y": 27,
       "elevation": 3,
@@ -277,7 +277,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_3",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 29,
       "y": 27,
       "elevation": 3,
@@ -370,7 +370,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_4",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 22,
       "y": 27,
       "elevation": 3,
@@ -384,7 +384,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_5",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 23,
       "y": 27,
       "elevation": 3,
@@ -398,7 +398,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_6",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 24,
       "y": 27,
       "elevation": 3,
@@ -412,7 +412,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_7",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 21,
       "y": 26,
       "elevation": 3,
@@ -426,7 +426,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_8",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 20,
       "y": 26,
       "elevation": 3,
@@ -440,7 +440,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_9",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 26,
       "y": 27,
       "elevation": 3,
@@ -453,7 +453,7 @@
       "flag": "FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 28,
       "y": 27,
       "elevation": 3,
@@ -467,7 +467,7 @@
     },
     {
       "local_id": "LOCALID_SLATEPORT_GRUNT_11",
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_BUTCH",
       "x": 25,
       "y": 27,
       "elevation": 3,

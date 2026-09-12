@@ -58,7 +58,7 @@
     },
     {
       "local_id": "LOCALID_VICTORY_ROAD_G24_M43_WALLY",
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
       "x": 31,
       "y": 12,
       "elevation": 3,
@@ -67,7 +67,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_WALLY_LocalId4",
+      "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY"
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "local_id": "LOCALID_VICTORY_ROAD_G24_M43_WALLY_2",
-      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
       "x": 31,
       "y": 9,
       "elevation": 3,
@@ -109,7 +109,7 @@
       "movement_range_y": 1,
       "trainer_type": "0",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_WALLY_LocalId7",
+      "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId7",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY_2"
     }
   ],

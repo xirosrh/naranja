@@ -262,7 +262,7 @@ Naranja_IslaMandarina_G06_M05_EventScript_Sub_086B4920::
 	end
 
 
-Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_AQUA_MEMBER_F_LocalId2::
+Naranja_IslaMandarina_G06_M05_EventScript_OBJ_EVENT_GFX_CASSIDY_LocalId2::
 # 175 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"
 	msgbox Naranja_IslaMandarina_G06_M05_Text_086B4940, MSGBOX_DEFAULT
 # 176 "data/maps/Naranja_IslaMandarina_G06_M05/scripts.pory"

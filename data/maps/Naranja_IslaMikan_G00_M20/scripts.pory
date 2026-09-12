@@ -204,7 +204,7 @@ script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId9 {
     end
 }
 
-script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_WALLY_LocalId11 {
+script Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId11 {
     faceplayer
     msgbox(Naranja_IslaMikan_G00_M20_Text_0818337E, MSGBOX_DEFAULT)
     playfanfare(MUS_OBTAIN_ITEM)

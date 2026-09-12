@@ -330,7 +330,7 @@ Naranja_Route120_G00_M35_EventScript_Sub_0815184A::
 	return
 
 
-Naranja_Route120_G00_M35_EventScript_OBJ_EVENT_GFX_STEVEN_LocalId31::
+Naranja_Route120_G00_M35_EventScript_OBJ_EVENT_GFX_GARY_LocalId31::
 # 222 "data/maps/Naranja_Route120_G00_M35/scripts.pory"
 	lock
 # 223 "data/maps/Naranja_Route120_G00_M35/scripts.pory"

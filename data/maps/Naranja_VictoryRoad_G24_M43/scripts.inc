@@ -84,13 +84,13 @@ Naranja_VictoryRoad_G24_M43_EventScript_Sub_0815DED3::
 	end
 
 
-Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_WALLY_LocalId4::
+Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4::
 # 58 "data/maps/Naranja_VictoryRoad_G24_M43/scripts.pory"
 	msgbox Naranja_VictoryRoad_G24_M43_Text_08197967, MSGBOX_NPC
 	end
 
 
-Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_WALLY_LocalId7::
+Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId7::
 # 63 "data/maps/Naranja_VictoryRoad_G24_M43/scripts.pory"
 	trainerbattle TRAINER_BATTLE_SINGLE, TRAINER_NARANJA_VICTORY_ROAD_657, LOCALID_NONE, Naranja_VictoryRoad_G24_M43_Text_081979BA, Naranja_VictoryRoad_G24_M43_Text_08197A23
 # 64 "data/maps/Naranja_VictoryRoad_G24_M43/scripts.pory"
