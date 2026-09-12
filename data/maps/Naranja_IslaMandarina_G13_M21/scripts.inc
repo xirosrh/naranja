@@ -104,102 +104,82 @@ Naranja_IslaMandarina_G13_M21_Mart_0815A078:
 # 70 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_SUPER_REPEL
 # 71 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_05B
-# 72 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_05C
-# 73 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_SUN_STONE
-# 74 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 72 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_MOON_STONE
-# 75 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 73 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_FIRE_STONE
-# 76 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 74 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_THUNDER_STONE
-# 77 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 75 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_WATER_STONE
-# 78 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 76 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_LEAF_STONE
 	.2byte ITEM_NONE
 
 	.align 2
-# 81 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 79 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 Naranja_IslaMandarina_G13_M21_Mart_0815A0AC:
-# 82 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_065
-# 83 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_066
-# 84 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 80 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_BIG_MUSHROOM
-# 85 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_069
-# 86 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 81 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_PEARL
-# 87 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 82 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_BIG_PEARL
-# 88 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 83 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_STARDUST
-# 89 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 84 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_STAR_PIECE
-# 90 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 85 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_NUGGET
 	.2byte ITEM_NONE
 
 	.align 2
-# 93 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 88 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 Naranja_IslaMandarina_G13_M21_Mart_0815A0DC:
-# 94 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 89 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_CARBOS
-# 95 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 90 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_CALCIUM
-# 96 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 91 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_RARE_CANDY
-# 97 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 92 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_PP_UP
-# 98 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 93 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_ZINC
-# 99 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 94 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_PP_MAX
-# 100 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_048
-# 101 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 95 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_GUARD_SPEC
-# 102 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 96 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_NONE
 
 	.align 2
-# 105 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 99 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 Naranja_IslaMandarina_G13_M21_Mart_0815A10C:
-# 106 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_03B
-# 107 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_03C
-# 108 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_03D
-# 109 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
-	.2byte ITEM_03E
-# 110 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 100 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_HP_UP
-# 111 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 101 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_PROTEIN
-# 112 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 102 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_IRON
-# 113 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 103 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_RED_SHARD
-# 114 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 104 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_BLUE_SHARD
-# 115 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 105 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.2byte ITEM_YELLOW_SHARD
 	.2byte ITEM_NONE
 
 Naranja_IslaMandarina_G13_M21_Text_0818C4F9::
-# 118 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 108 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.string "This place is full of cute DOLLS.\pI should buy some for me, instead of\njust for my children.$"
 
 Naranja_IslaMandarina_G13_M21_Text_0818C556::
-# 122 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 112 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.string "I’m not big enough to raise POKéMON,\nso I’m getting a cute DOLL instead.$"
 
 Naranja_IslaMandarina_G13_M21_Text_0818C59F::
-# 126 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
+# 116 "data/maps/Naranja_IslaMandarina_G13_M21/scripts.pory"
 	.string "They sell many cute MATS here.\pI wonder which one I should get?\nMaybe I’ll buy them all...$"

@@ -345,48 +345,44 @@ Naranja_IslaMandarina_G13_M22_Mart_0815A180:
 	.2byte ITEM_SHOAL_SALT
 # 214 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.2byte ITEM_SHOAL_SHELL
-# 215 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	.2byte ITEM_075
-# 216 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
-	.2byte ITEM_070
 	.2byte ITEM_NONE
 
 Naranja_IslaMandarina_G13_M22_Text_0818C61F::
-# 219 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 217 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Don’t they have set dates for their\nclear-out sales?\pI watch TV, but they never show any\ncommercials.$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C685::
-# 223 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 221 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Yes! I’ve been waiting a long time for\nthis clear-out sale.\pThey have items that you can only get\nhere. I’m going to load up, that I am!$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C70E::
-# 227 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 225 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Ohh... I’m bone-dry thirsty!$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C72B::
-# 231 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 229 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "It’s a VENDING MACHINE.\nWhich drink would you like?$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C75F::
-# 235 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 233 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Clang!\pA can of {STR_VAR_1} dropped down.$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C780::
-# 239 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 237 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Clang!\pScore! An extra can of {STR_VAR_1}\ndropped down!$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C7AF::
-# 243 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 241 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Not enough money...$"
 
 Naranja_IslaMandarina_G13_M22_Text_0818C7C3::
-# 247 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 245 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "Decided against buying a drink.$"
 
 Naranja_IslaMandarina_G13_M22_Text_081A0C79::
-# 251 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 249 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "The BAG is full...$"
 
 Naranja_IslaMandarina_G13_M22_Text_081A0C8C::
-# 255 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
+# 253 "data/maps/Naranja_IslaMandarina_G13_M22/scripts.pory"
 	.string "{PLAYER} colocó {STR_VAR_2}\nen la sección de {STR_VAR_3}.$"

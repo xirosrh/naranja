@@ -2523,14 +2523,14 @@ static const struct SpriteFrameImage sPicTable_MachokeFacingAway[] = {
     overworld_frame(gObjectEventPic_MachokeFacingAway, 4, 4, 1),
 };
 
-static const struct SpriteFrameImage sPicTable_Rayquaza[] = {
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Rayquaza, 4, 4, 1),
+static const struct SpriteFrameImage sPicTable_RayquazaOld[] = {
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RayquazaOld, 4, 4, 1),
 };

@@ -3781,7 +3781,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rayquaza = {
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Rayquaza,
+    .images = sPicTable_RayquazaOld,
 };
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Zigzagoon = {

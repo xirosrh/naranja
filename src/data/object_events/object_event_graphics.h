@@ -637,4 +637,4 @@ const u16 gObjectEventPic_ClefairyOld[] = INCGFX_U16("graphics/object_events/pic
 const u32 gObjectEventPic_Woman8[] = INCGFX_U32("graphics/object_events/pics/people/unused_woman.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_MachokeCarryingBox[] = INCGFX_U32("graphics/object_events/pics/pokemon_old/machoke_carrying_box.png", ".4bpp", "-mwidth 4 -mheight 4");
 const u32 gObjectEventPic_MachokeFacingAway[] = INCGFX_U32("graphics/object_events/pics/pokemon_old/machoke_facing_away.png", ".4bpp", "-mwidth 4 -mheight 4");
-const u32 gObjectEventPic_Rayquaza[] = INCGFX_U32("graphics/object_events/pics/pokemon_old/rayquaza.png", ".4bpp", "-mwidth 4 -mheight 4");
+const u32 gObjectEventPic_RayquazaOld[] = INCGFX_U32("graphics/object_events/pics/pokemon_old/rayquaza.png", ".4bpp", "-mwidth 4 -mheight 4");
