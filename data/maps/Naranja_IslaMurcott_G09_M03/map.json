@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,
       "movement_range_y": 3,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_LITTLE_BOY_1_LocalId2",
       "flag": "0x0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3",
       "flag": "0x0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId4",
       "flag": "0x0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_GIRL_1_LocalId5",
       "flag": "0x0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId6",
       "flag": "0x0"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId7",
       "flag": "0x0"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_FAT_MAN_LocalId8",
       "flag": "0x0"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId9",
       "flag": "0x0"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_HIKER_LocalId10",
       "flag": "0x0"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId11",
       "flag": "0x0"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId12",
       "flag": "0x0"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 4,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M03_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId13",
       "flag": "0x0"

@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJECT_2_LocalId2",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJECT_3_LocalId3",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJECT_4_LocalId4",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_VARS_LocalId5",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJECT_6_LocalId6",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1",
       "flag": "0x0"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJECT_8_LocalId8",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId9",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_WOMAN_7"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId10",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_WOMAN_7"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId11",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_WOMAN_7"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId12",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_WOMAN_7"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJECT_13_LocalId13",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241_2"
@@ -206,7 +206,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMurcott_G09_M06_EventScript_OBJ_EVENT_GFX_REPORTER_M_LocalId14",
       "flag": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_WOMAN_7"

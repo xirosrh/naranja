@@ -18,6 +18,41 @@ GRAPHICS_INFO_TABLE = 0x0836DC58
 PALETTE_TABLE = 0x0837377C
 NUM_OBJECT_EVENT_PALETTES = 27
 
+# Ruby uses 0x111A for the submarine shadow palette. Emerald reserves that
+# value and gives the submarine its own tag instead, so translate it by name
+# rather than accidentally overwriting Emerald's unused palette.
+SOURCE_PALETTE_TAG_RENAMES = {
+    0x111A: "OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW",
+}
+
+PALETTE_SLOT_NAMES = {
+    0: "PALSLOT_PLAYER",
+    1: "PALSLOT_PLAYER_REFLECTION",
+    2: "PALSLOT_NPC_1",
+    3: "PALSLOT_NPC_2",
+    4: "PALSLOT_NPC_3",
+    5: "PALSLOT_NPC_4",
+    6: "PALSLOT_NPC_1_REFLECTION",
+    7: "PALSLOT_NPC_2_REFLECTION",
+    8: "PALSLOT_NPC_3_REFLECTION",
+    9: "PALSLOT_NPC_4_REFLECTION",
+    10: "PALSLOT_NPC_SPECIAL",
+    11: "PALSLOT_NPC_SPECIAL_REFLECTION",
+}
+
+SOURCE_PALETTE_TAGS_BY_SLOT = {
+    0: 0x1100,
+    1: 0x1101,
+    2: 0x1103,
+    3: 0x1104,
+    4: 0x1105,
+    5: 0x1106,
+    6: 0x1107,
+    7: 0x1108,
+    8: 0x1109,
+    9: 0x110A,
+}
+
 KNOWN_CONSTANT_RENAMES = {
     "OBJ_EVENT_GFX_BRENDAN_NORMAL": "OBJ_EVENT_GFX_ASH_NORMAL",
     "OBJ_EVENT_GFX_BRENDAN_MACH_BIKE": "OBJ_EVENT_GFX_ASH_MACH_BIKE",
@@ -55,7 +90,7 @@ KNOWN_CONSTANT_RENAMES = {
     "OBJ_EVENT_GFX_AQUA_MEMBER_F": "OBJ_EVENT_GFX_CASSIDY",
     "OBJ_EVENT_GFX_MAGMA_MEMBER_M": "OBJ_EVENT_GFX_JAMES",
     "OBJ_EVENT_GFX_MAGMA_MEMBER_F": "OBJ_EVENT_GFX_JESSIE",
-    "OBJ_EVENT_GFX_ROXANNE": "OBJ_EVENT_GFX_HERACROSS",
+    "OBJ_EVENT_GFX_ROXANNE": "OBJ_EVENT_GFX_SCYTHER",
     "OBJ_EVENT_GFX_BRAWLY": "OBJ_EVENT_GFX_DANNY",
     "OBJ_EVENT_GFX_STEVEN": "OBJ_EVENT_GFX_GARY",
     "OBJ_EVENT_GFX_WALLY": "OBJ_EVENT_GFX_TRACEY",
@@ -63,6 +98,99 @@ KNOWN_CONSTANT_RENAMES = {
     "OBJ_EVENT_GFX_VIGOROTH_FACING_AWAY": "OBJ_EVENT_GFX_MACHOKE_FACING_AWAY",
     "OBJ_EVENT_GFX_RAYQUAZA": "OBJ_EVENT_GFX_DRAGONITE",
     "OBJ_EVENT_GFX_ZIGZAGOON_2": "OBJ_EVENT_GFX_MEOWTH",
+}
+
+PLAYER_GRAPHICS_SUFFIXES = (
+    "Normal",
+    "MachBike",
+    "AcroBike",
+    "Surfing",
+    "FieldMove",
+    "Underwater",
+    "Fishing",
+    "Watering",
+    "Decorating",
+)
+
+KNOWN_INTERNAL_RENAMES = {
+    "gObjectEventPic_BrendanNormalRunning": "gObjectEventPic_AshNormalRunning",
+    "gObjectEventPic_MayNormalRunning": "gObjectEventPic_MistyNormalRunning",
+    "gObjectEventPal_Brendan": "gObjectEventPal_Ash",
+    "gObjectEventPal_BrendanReflection": "gObjectEventPal_AshReflection",
+    "gObjectEventPal_May": "gObjectEventPal_Misty",
+    "gObjectEventPal_MayReflection": "gObjectEventPal_MistyReflection",
+    "gObjectEventPal_Vigoroth": "gObjectEventPal_Machoke",
+    "OBJ_EVENT_PAL_TAG_BRENDAN": "OBJ_EVENT_PAL_TAG_ASH",
+    "OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION": "OBJ_EVENT_PAL_TAG_ASH_REFLECTION",
+    "OBJ_EVENT_PAL_TAG_MAY": "OBJ_EVENT_PAL_TAG_MISTY",
+    "OBJ_EVENT_PAL_TAG_MAY_REFLECTION": "OBJ_EVENT_PAL_TAG_MISTY_REFLECTION",
+    "OBJ_EVENT_PAL_TAG_VIGOROTH": "OBJ_EVENT_PAL_TAG_MACHOKE",
+    "gObjectEventGraphicsInfo_RivalBrendanNormal": "gObjectEventGraphicsInfo_RivalAshNormal",
+    "gObjectEventGraphicsInfo_RivalBrendanMachBike": "gObjectEventGraphicsInfo_RivalAshMachBike",
+    "gObjectEventGraphicsInfo_RivalBrendanAcroBike": "gObjectEventGraphicsInfo_RivalAshAcroBike",
+    "gObjectEventGraphicsInfo_RivalBrendanSurfing": "gObjectEventGraphicsInfo_RivalAshSurfing",
+    "gObjectEventGraphicsInfo_RivalBrendanFieldMove": "gObjectEventGraphicsInfo_RivalAshFieldMove",
+    "gObjectEventGraphicsInfo_RivalMayNormal": "gObjectEventGraphicsInfo_RivalMistyNormal",
+    "gObjectEventGraphicsInfo_RivalMayMachBike": "gObjectEventGraphicsInfo_RivalMistyMachBike",
+    "gObjectEventGraphicsInfo_RivalMayAcroBike": "gObjectEventGraphicsInfo_RivalMistyAcroBike",
+    "gObjectEventGraphicsInfo_RivalMaySurfing": "gObjectEventGraphicsInfo_RivalMistySurfing",
+    "gObjectEventGraphicsInfo_RivalMayFieldMove": "gObjectEventGraphicsInfo_RivalMistyFieldMove",
+    "gObjectEventGraphicsInfo_LinkBrendan": "gObjectEventGraphicsInfo_LinkAsh",
+    "gObjectEventGraphicsInfo_LinkMay": "gObjectEventGraphicsInfo_LinkMisty",
+}
+
+for old_player, new_player in (("Brendan", "Ash"), ("May", "Misty")):
+    for suffix in PLAYER_GRAPHICS_SUFFIXES:
+        for prefix in ("gObjectEventPic_", "gObjectEventGraphicsInfo_", "sPicTable_"):
+            KNOWN_INTERNAL_RENAMES[f"{prefix}{old_player}{suffix}"] = f"{prefix}{new_player}{suffix}"
+
+for old_name, new_name in (
+    ("ProfBirch", "Oak"),
+    ("AquaMemberM", "Butch"),
+    ("AquaMemberF", "Cassidy"),
+    ("MagmaMemberM", "James"),
+    ("MagmaMemberF", "Jessie"),
+    ("Brawly", "Danny"),
+    ("Steven", "Gary"),
+    ("Wally", "Tracey"),
+):
+    for prefix in ("gObjectEventPic_", "gObjectEventGraphicsInfo_", "sPicTable_"):
+        KNOWN_INTERNAL_RENAMES[f"{prefix}{old_name}"] = f"{prefix}{new_name}"
+
+KNOWN_INTERNAL_RENAMES.update(
+    {
+        "gObjectEventPic_Roxanne": "gObjectEventPic_ScytherOld",
+        "gObjectEventGraphicsInfo_Roxanne": "gObjectEventGraphicsInfo_Scyther",
+        "sPicTable_Roxanne": "sPicTable_ScytherOld",
+        "gObjectEventPic_RayquazaOld": "gObjectEventPic_DragoniteOld",
+        "gObjectEventGraphicsInfo_Rayquaza": "gObjectEventGraphicsInfo_Dragonite",
+        "sPicTable_RayquazaOld": "sPicTable_DragoniteOld",
+        "gObjectEventPic_ZigzagoonOld": "gObjectEventPic_MeowthOld",
+        "gObjectEventGraphicsInfo_Zigzagoon": "gObjectEventGraphicsInfo_Meowth",
+        "sPicTable_ZigzagoonOld": "sPicTable_MeowthOld",
+    }
+)
+
+KNOWN_PATH_RENAMES = {
+    "graphics/object_events/pics/people/brendan": "graphics/object_events/pics/people/ash",
+    "graphics/object_events/pics/people/may": "graphics/object_events/pics/people/misty",
+    "graphics/object_events/pics/people/unused_woman.png": "graphics/object_events/pics/people/woman_8.png",
+    "graphics/object_events/pics/people/prof_birch.png": "graphics/object_events/pics/people/oak.png",
+    "graphics/object_events/pics/people/team_aqua/aqua_member_m.png": "graphics/object_events/pics/people/butch.png",
+    "graphics/object_events/pics/people/team_aqua/aqua_member_f.png": "graphics/object_events/pics/people/cassidy.png",
+    "graphics/object_events/pics/people/team_magma/magma_member_m.png": "graphics/object_events/pics/people/james.png",
+    "graphics/object_events/pics/people/team_magma/magma_member_f.png": "graphics/object_events/pics/people/jessie.png",
+    "graphics/object_events/pics/people/gym_leaders/roxanne.png": "graphics/object_events/pics/pokemon_old/scyther.png",
+    "graphics/object_events/pics/people/gym_leaders/brawly.png": "graphics/object_events/pics/people/danny.png",
+    "graphics/object_events/pics/people/steven.png": "graphics/object_events/pics/people/gary.png",
+    "graphics/object_events/pics/people/wally.png": "graphics/object_events/pics/people/tracey.png",
+    "graphics/object_events/pics/pokemon_old/rayquaza.png": "graphics/object_events/pics/pokemon_old/dragonite.png",
+    "graphics/object_events/pics/pokemon_old/zigzagoon.png": "graphics/object_events/pics/pokemon_old/meowth.png",
+    "graphics/object_events/palettes/brendan.pal": "graphics/object_events/palettes/ash.pal",
+    "graphics/object_events/palettes/brendan_reflection.pal": "graphics/object_events/palettes/ash_reflection.pal",
+    "graphics/object_events/palettes/may.pal": "graphics/object_events/palettes/misty.pal",
+    "graphics/object_events/palettes/may_reflection.pal": "graphics/object_events/palettes/misty_reflection.pal",
+    "graphics/object_events/palettes/vigoroth.pal": "graphics/object_events/palettes/machoke.pal",
 }
 
 
@@ -286,7 +414,8 @@ def write_indexed_png(path: Path, width: int, height: int, pixels: bytes, palett
     png += png_chunk(b"IDAT", zlib.compress(rows, 9))
     png += png_chunk(b"IEND", b"")
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(png)
+    if not path.exists() or path.read_bytes() != png:
+        path.write_bytes(png)
 
 
 def write_palette(path: Path, palette: bytes) -> None:
@@ -299,7 +428,9 @@ def write_palette(path: Path, palette: bytes) -> None:
             f"{((value >> 10) & 31) * 255 // 31}"
         )
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines) + "\n", encoding="ascii")
+    contents = "\n".join(lines) + "\n"
+    if not path.exists() or path.read_text(encoding="ascii") != contents:
+        path.write_text(contents, encoding="ascii")
 
 
 def parse_constants(path: Path) -> tuple[dict[str, int], dict[int, str]]:
@@ -308,6 +439,35 @@ def parse_constants(path: Path) -> tuple[dict[str, int], dict[int, str]]:
         name: int(value)
         for name, value in re.findall(r"^#define\s+(OBJ_EVENT_GFX_\w+)\s+(\d+)\b", text, re.M)
     }
+
+    # pokeemerald-expansion declares these IDs as an enum, while pokeruby and
+    # older expansion revisions use numeric defines.
+    enum = re.search(r"enum\s*\{(.*?)\bNUM_OBJ_EVENT_GFX\b", text, re.S)
+    if enum:
+        next_value = 0
+        for entry in enum.group(1).split(","):
+            match = re.search(r"\b(OBJ_EVENT_GFX_\w+)\b(?:\s*=\s*(\d+))?", entry)
+            if not match:
+                continue
+            if match.group(2):
+                next_value = int(match.group(2))
+            by_name[match.group(1)] = next_value
+            next_value += 1
+    return by_name, {value: name for name, value in by_name.items()}
+
+
+def parse_palette_constants(repo: Path) -> tuple[dict[str, int], dict[int, str]]:
+    by_name: dict[str, int] = {}
+    for relative in ("include/constants/event_objects.h", "src/event_object_movement.c"):
+        text = (repo / relative).read_text(encoding="utf-8")
+        by_name.update(
+            {
+                name: int(value, 16)
+                for name, value in re.findall(
+                    r"^#define\s+(OBJ_EVENT_PAL_TAG_\w+)\s+(0x[0-9A-Fa-f]+)", text, re.M
+                )
+            }
+        )
     return by_name, {value: name for name, value in by_name.items()}
 
 
@@ -354,6 +514,13 @@ def parse_pic_tables(repo: Path) -> dict[str, list[tuple[str, int, int, int]]]:
         ):
             rows.append((symbol, int(frame), int(tiles_wide) * 8, int(tiles_high) * 8))
         if not rows:
+            for symbol, tiles_wide, tiles_high in re.findall(
+                r"overworld_ascending_frames\((\w+),\s*(\d+),\s*(\d+)\)", match.group(2)
+            ):
+                # Relative-frame tables contain one C entry, but the backing
+                # asset still contains every frame listed by the source ROM.
+                rows.append((symbol, 0, int(tiles_wide) * 8, int(tiles_high) * 8))
+        if not rows:
             for symbol in re.findall(r"obj_frame_tiles\((\w+)\)", match.group(2)):
                 rows.append((symbol, 0, 0, 0))
         result[match.group(1)] = rows
@@ -381,22 +548,82 @@ def parse_graphics_assets(repo: Path) -> tuple[dict[str, Path], dict[str, Path]]
 
 def parse_palette_assets(repo: Path, palette_assets: dict[str, Path]) -> dict[int, Path]:
     text = (repo / "src/event_object_movement.c").read_text(encoding="utf-8")
-    tag_values = {
-        name: int(value, 16)
-        for name, value in re.findall(r"^#define\s+(OBJ_EVENT_PAL_TAG_\w+)\s+(0x[0-9A-Fa-f]+)", text, re.M)
-    }
-    result: dict[int, Path] = {}
+    tag_values, _ = parse_palette_constants(repo)
+    assets_by_tag_name: dict[str, Path] = {}
     palette_table = re.search(
         r"sObjectEventSpritePalettes\[\]\s*=\s*\{(.*?)\n\};", text, re.S
     )
     if not palette_table:
-        return result
+        return {}
     for symbol, tag_name in re.findall(
         r"\{\s*(gObjectEventPal_\w+),\s*(OBJ_EVENT_PAL_TAG_\w+)\s*\}", palette_table.group(1)
     ):
         if symbol in palette_assets and tag_name in tag_values:
-            result[tag_values[tag_name]] = palette_assets[symbol]
+            assets_by_tag_name[tag_name] = palette_assets[symbol]
+
+    _, tag_names = parse_palette_constants(repo)
+    result: dict[int, Path] = {}
+    for source_tag in range(0x1100, 0x1200):
+        target_name = SOURCE_PALETTE_TAG_RENAMES.get(source_tag, tag_names.get(source_tag))
+        if target_name in assets_by_tag_name:
+            result[source_tag] = assets_by_tag_name[target_name]
     return result
+
+
+def sync_palette_metadata(data: bytes, repo: Path) -> None:
+    """Copy the ROM palette tag/slot assignments into existing graphics infos."""
+    by_name, _ = parse_constants(repo / "include/constants/event_objects.h")
+    pointers_path = repo / "src/data/object_events/object_event_graphics_info_pointers.h"
+    pointers = pointers_path.read_text(encoding="utf-8")
+    info_for_slot = {
+        by_name[constant]: info
+        for constant, info in re.findall(
+            r"\[(OBJ_EVENT_GFX_\w+)\]\s*=\s*&gObjectEventGraphicsInfo_(\w+)", pointers
+        )
+        if constant in by_name and by_name[constant] < NUM_RUBY_OBJECT_EVENT_GFX
+    }
+
+    _, tag_names = parse_palette_constants(repo)
+    desired: dict[str, tuple[str, str, str]] = {}
+    for graphics_id in range(NUM_RUBY_OBJECT_EVENT_GFX):
+        info_name = info_for_slot.get(graphics_id)
+        if not info_name:
+            continue
+        source = read_graphics_info(data, graphics_id)
+        palette_tag = SOURCE_PALETTE_TAG_RENAMES.get(
+            source["palette_tag"], tag_names.get(source["palette_tag"])
+        )
+        reflection_tag = tag_names.get(source["reflection_palette_tag"])
+        palette_slot = PALETTE_SLOT_NAMES.get(source["flags"] & 0xF)
+        if not palette_tag or not reflection_tag or not palette_slot:
+            raise SystemExit(f"unknown palette metadata in object-event slot {graphics_id}")
+        value = (palette_tag, reflection_tag, palette_slot)
+        if info_name in desired and desired[info_name] != value:
+            raise SystemExit(f"conflicting palette metadata for gObjectEventGraphicsInfo_{info_name}")
+        desired[info_name] = value
+
+    path = repo / "src/data/object_events/object_event_graphics_info.h"
+    text = path.read_text(encoding="utf-8")
+    changed = 0
+    for info_name, (palette_tag, reflection_tag, palette_slot) in desired.items():
+        pattern = re.compile(
+            rf"(const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_{re.escape(info_name)}\s*=\s*\{{)(.*?)(\n\}};)",
+            re.S,
+        )
+        match = pattern.search(text)
+        if not match:
+            raise SystemExit(f"missing gObjectEventGraphicsInfo_{info_name}")
+        body = match.group(2)
+        updated = re.sub(r"(\.paletteTag\s*=\s*)\w+", rf"\g<1>{palette_tag}", body, count=1)
+        updated = re.sub(
+            r"(\.reflectionPaletteTag\s*=\s*)\w+", rf"\g<1>{reflection_tag}", updated, count=1
+        )
+        updated = re.sub(r"(\.paletteSlot\s*=\s*)\w+", rf"\g<1>{palette_slot}", updated, count=1)
+        if updated != body:
+            text = text[: match.start(2)] + updated + text[match.end(2) :]
+            changed += 1
+    path.write_text(text, encoding="utf-8", newline="")
+    print(f"Synchronized palette metadata for {changed} object-event graphics infos.")
 
 
 def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
@@ -413,6 +640,11 @@ def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
     def unique_symbols(rows: list[tuple[str, int, int, int]]) -> list[str]:
         return list(dict.fromkeys(row[0] for row in rows))
 
+    def display_palette(info: dict[str, int]) -> bytes:
+        palette_slot = info["flags"] & 0xF
+        palette_tag = SOURCE_PALETTE_TAGS_BY_SLOT.get(palette_slot, info["palette_tag"])
+        return palettes.get(palette_tag, bytes(32))
+
     for graphics_id in range(NUM_RUBY_OBJECT_EVENT_GFX):
         source_table = source_slot_tables.get(graphics_id)
         target_table = target_slot_tables.get(graphics_id)
@@ -421,10 +653,14 @@ def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
         if not source_rows or not target_rows:
             # Berry-tree images are selected dynamically and do not represent a
             # conventional object-event sprite sheet.
-            if graphics_id not in (60, 61, 62):
+            if graphics_id not in (59, 60, 61, 62):
                 skipped.append(
                     (graphics_id, f"missing source/target table {source_table!r} -> {target_table!r}")
                 )
+            continue
+        # Expansion's item-ball asset contains the animations and palettes for
+        # every ball type, so it cannot be replaced by Ruby's single frame.
+        if graphics_id == 59:
             continue
         source_symbols = unique_symbols(source_rows)
         target_symbols = unique_symbols(target_rows)
@@ -448,7 +684,7 @@ def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
             continue
         info = read_graphics_info(data, graphics_id)
         image_table = info["images"] - ROM_BASE
-        palette = palettes.get(info["palette_tag"], bytes(32))
+        palette = display_palette(info)
         for row_index, (source_symbol, frame_index, row_width, row_height) in enumerate(source_rows):
             entry = image_table + row_index * 8
             image_pointer = u32(data, entry)
@@ -503,6 +739,7 @@ def import_assets(data: bytes, repo: Path, pokeruby: Path) -> None:
         if path:
             write_palette(path, palette)
             written_palettes += 1
+    sync_palette_metadata(data, repo)
     print(f"Wrote {written} existing object-event sprite sheets and {written_palettes} palettes.")
     for graphics_id, reason in skipped:
         print(f"Skipped slot {graphics_id}: {reason}")
@@ -580,8 +817,84 @@ def sync_pic_tables(repo: Path, pokeruby: Path) -> None:
 
 def rename_known_constants(repo: Path) -> None:
     changed = 0
+    moved = 0
+
+    # Expansion already has an FRLG Meowth. Reserve its identifiers and asset
+    # before turning Naranja's former Zigzagoon slot into the imported Meowth.
+    # The guards make this migration safe to run repeatedly.
+    graphics_path = repo / "src/data/object_events/object_event_graphics.h"
+    graphics_text = graphics_path.read_text(encoding="utf-8")
+    if "gObjectEventPic_MeowthFrlg" not in graphics_text:
+        updated = re.sub(
+            r"(const u16 )gObjectEventPic_MeowthOld(\[\].*?pokemon_old/)meowth(\.png)",
+            r"\1gObjectEventPic_MeowthFrlg\2meowth_frlg\3",
+            graphics_text,
+            count=1,
+        )
+        if updated != graphics_text:
+            graphics_path.write_text(updated, encoding="utf-8", newline="")
+            changed += 1
+
+    tables_path = repo / "src/data/object_events/object_event_pic_tables.h"
+    tables_text = tables_path.read_text(encoding="utf-8")
+    if "sPicTable_MeowthFrlg" not in tables_text:
+        table_pattern = re.compile(
+            r"static const struct SpriteFrameImage sPicTable_Meowth\[\] = \{.*?\n\};",
+            re.S,
+        )
+        match = table_pattern.search(tables_text)
+        if match:
+            replacement = match.group(0).replace("Meowth", "MeowthFrlg")
+            tables_text = tables_text[:match.start()] + replacement + tables_text[match.end():]
+            tables_path.write_text(tables_text, encoding="utf-8", newline="")
+            changed += 1
+
+    info_path = repo / "src/data/object_events/object_event_graphics_info.h"
+    info_text = info_path.read_text(encoding="utf-8")
+    if "gObjectEventGraphicsInfo_MeowthFrlg" not in info_text:
+        info_pattern = re.compile(
+            r"const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Meowth = \{.*?\n\};",
+            re.S,
+        )
+        for match in info_pattern.finditer(info_text):
+            if ".images = sPicTable_Meowth," not in match.group(0):
+                continue
+            replacement = match.group(0).replace("Meowth", "MeowthFrlg")
+            info_text = info_text[:match.start()] + replacement + info_text[match.end():]
+            info_path.write_text(info_text, encoding="utf-8", newline="")
+            changed += 1
+            break
+
+    pointers_path = repo / "src/data/object_events/object_event_graphics_info_pointers.h"
+    pointers_text = pointers_path.read_text(encoding="utf-8")
+    if "gObjectEventGraphicsInfo_MeowthFrlg" not in pointers_text:
+        pointers_text = pointers_text.replace(
+            "extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Meowth;",
+            "extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MeowthFrlg;",
+            1,
+        )
+        pointers_text = re.sub(
+            r"(\[OBJ_EVENT_GFX_MEOWTH_FRLG\]\s*=\s*&gObjectEventGraphicsInfo_)Meowth\b",
+            r"\1MeowthFrlg",
+            pointers_text,
+            count=1,
+        )
+        pointers_path.write_text(pointers_text, encoding="utf-8", newline="")
+        changed += 1
+
+    old_meowth_path = repo / "graphics/object_events/pics/pokemon_old/meowth.png"
+    frlg_meowth_path = repo / "graphics/object_events/pics/pokemon_old/meowth_frlg.png"
+    if old_meowth_path.exists() and not frlg_meowth_path.exists():
+        old_meowth_path.rename(frlg_meowth_path)
+        moved += 1
+
     roots = [repo / name for name in ("include", "src", "data", "tools")]
     suffixes = {".c", ".h", ".inc", ".json", ".pory", ".py", ".s"}
+    identifier_renames = KNOWN_CONSTANT_RENAMES | KNOWN_INTERNAL_RENAMES
+    identifier_pattern = re.compile(
+        r"\b(?:" + "|".join(map(re.escape, identifier_renames)) + r")\b"
+    )
+    path_pattern = re.compile("|".join(map(re.escape, KNOWN_PATH_RENAMES)))
     for root in roots:
         for path in root.rglob("*"):
             if not path.is_file() or path.suffix not in suffixes:
@@ -592,13 +905,22 @@ def rename_known_constants(repo: Path) -> None:
                 original = path.read_text(encoding="utf-8")
             except UnicodeDecodeError:
                 continue
-            updated = original
-            for old, new in KNOWN_CONSTANT_RENAMES.items():
-                updated = updated.replace(old, new)
+            updated = identifier_pattern.sub(lambda match: identifier_renames[match.group(0)], original)
+            updated = path_pattern.sub(lambda match: KNOWN_PATH_RENAMES[match.group(0)], updated)
             if updated != original:
                 path.write_text(updated, encoding="utf-8", newline="")
                 changed += 1
-    print(f"Renamed known Naranja object-event constants in {changed} files.")
+    for old, new in KNOWN_PATH_RENAMES.items():
+        old_path = repo / old
+        new_path = repo / new
+        if not old_path.exists():
+            continue
+        if new_path.exists():
+            raise SystemExit(f"cannot rename {old}: {new} already exists")
+        new_path.parent.mkdir(parents=True, exist_ok=True)
+        old_path.rename(new_path)
+        moved += 1
+    print(f"Renamed known Naranja object-event identifiers in {changed} files and {moved} paths.")
 
 
 def extract_previews(data: bytes, output: Path) -> None:
@@ -611,7 +933,9 @@ def extract_previews(data: bytes, output: Path) -> None:
         raw_offset = image_pointer - ROM_BASE
         raw = data[raw_offset : raw_offset + image_size]
         pixels = decode_4bpp_frame(raw, info["width"], info["height"])
-        palette = palettes.get(info["palette_tag"], bytes(32))
+        palette_slot = info["flags"] & 0xF
+        palette_tag = SOURCE_PALETTE_TAGS_BY_SLOT.get(palette_slot, info["palette_tag"])
+        palette = palettes.get(palette_tag, bytes(32))
         write_indexed_png(output / f"{graphics_id:03d}.png", info["width"], info["height"], pixels, palette)
 
 

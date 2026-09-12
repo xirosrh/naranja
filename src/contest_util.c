@@ -2426,9 +2426,9 @@ void LoadLinkContestPlayerPalettes(void)
             else
             {
                 if (gLinkPlayers[i].gender == MALE)
-                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_BRENDAN);
+                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_ASH);
                 else
-                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_MAY);
+                    sprite->oam.paletteNum = LoadObjectEventPalette(OBJ_EVENT_PAL_TAG_MISTY);
             }
         }
     }

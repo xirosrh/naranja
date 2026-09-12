@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId2",
       "flag": "0x0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId3",
       "flag": "0x0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId4",
       "flag": "0x0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId5",
       "flag": "0x0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarina_G13_M17_EventScript_OBJ_EVENT_GFX_AZUMARILL_LocalId6",
       "flag": "0x0"

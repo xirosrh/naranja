@@ -344,7 +344,7 @@ def merge_object_info(mapping):
             "images": "sPicTable_MachokeFacingAway",
             "anims": "sAnimTable_Standard",
         },
-        "gObjectEventGraphicsInfo_Rayquaza": {
+        "gObjectEventGraphicsInfo_Dragonite": {
             "size": "512",
             "width": "32",
             "height": "32",

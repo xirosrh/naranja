@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId2",
       "flag": "0x0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId3",
       "flag": "0x0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId4",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M43_ITEM_BALL"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M43_ITEM_BALL_2"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_VictoryRoad_G24_M43_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId7",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY_2"

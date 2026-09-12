@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId2",
       "flag": "FLAG_HIDE_BEMENTER_G24_M16_ITEM_BALL"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId3",
       "flag": "0x0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId4",
       "flag": "0x0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId5",
       "flag": "0x0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Bementer_G24_M16_EventScript_OBJ_EVENT_GFX_MAN_5_LocalId6",
       "flag": "0x0"

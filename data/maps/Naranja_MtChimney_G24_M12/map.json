@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_1_LocalId1",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_2_LocalId2",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_3_LocalId3",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_4_LocalId4",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_5_LocalId5",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_6_LocalId6",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_7_LocalId7",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_8_LocalId8",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId9",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_4_LocalId4",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_RUN_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId11",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_13_LocalId13",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -206,7 +206,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -220,7 +220,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -234,7 +234,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_16_LocalId16",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -248,7 +248,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_13_LocalId13",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -262,7 +262,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId11",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -276,7 +276,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -290,7 +290,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId11",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -304,7 +304,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -318,7 +318,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJECT_22_LocalId22",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -332,7 +332,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId11",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247"
@@ -346,7 +346,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId12",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246"
@@ -360,7 +360,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId25",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2"
@@ -374,7 +374,7 @@
       "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId26",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2"
@@ -388,7 +388,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId27",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2"
@@ -402,7 +402,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_MtChimney_G24_M12_EventScript_OBJ_EVENT_GFX_BEAUTY_LocalId28",
       "flag": "FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2"

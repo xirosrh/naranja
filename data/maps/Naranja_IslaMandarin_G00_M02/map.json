@@ -45,7 +45,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId1",
       "flag": "0x0"
@@ -59,7 +59,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_BOY_4_LocalId2",
       "flag": "0x0"
@@ -73,7 +73,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId3",
       "flag": "0x0"
@@ -87,7 +87,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId4",
       "flag": "0x0"
@@ -101,7 +101,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_SCHOOL_KID_M_LocalId5",
       "flag": "0x0"
@@ -115,7 +115,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_TRACEY_LocalId6",
       "flag": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_WALLY"
@@ -129,7 +129,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_MAN_3_LocalId7",
       "flag": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_MAN_3"
@@ -143,7 +143,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_WATTSON_LocalId8",
       "flag": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_WATTSON"
@@ -157,7 +157,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMandarin_G00_M02_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId9",
       "flag": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_ITEM_BALL"

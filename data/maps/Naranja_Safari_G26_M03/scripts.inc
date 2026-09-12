@@ -47,25 +47,25 @@ Naranja_Safari_G26_M03_EventScript_Sub_0816007F::
 	return
 
 
-Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId2::
+Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_SCYTHER_LocalId2::
 # 36 "data/maps/Naranja_Safari_G26_M03/scripts.pory"
 	msgbox Naranja_Safari_G26_M03_Text_081C3B71, MSGBOX_NPC
 	end
 
 
-Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId3::
+Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_SCYTHER_LocalId3::
 # 41 "data/maps/Naranja_Safari_G26_M03/scripts.pory"
 	msgbox Naranja_Safari_G26_M03_Text_081C3BBD, MSGBOX_NPC
 	end
 
 
-Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId4::
+Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_SCYTHER_LocalId4::
 # 46 "data/maps/Naranja_Safari_G26_M03/scripts.pory"
 	msgbox Naranja_Safari_G26_M03_Text_081C3DCE, MSGBOX_NPC
 	end
 
 
-Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_HERACROSS_LocalId1::
+Naranja_Safari_G26_M03_EventScript_OBJ_EVENT_GFX_SCYTHER_LocalId1::
 # 51 "data/maps/Naranja_Safari_G26_M03/scripts.pory"
 	lock
 # 52 "data/maps/Naranja_Safari_G26_M03/scripts.pory"

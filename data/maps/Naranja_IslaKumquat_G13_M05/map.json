@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 3,
       "movement_range_y": 3,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId2",
       "flag": "0x0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 2,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId3",
       "flag": "0x0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId4",
       "flag": "0x0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId5",
       "flag": "0x0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BLACK_BELT_LocalId6",
       "flag": "0x0"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId7",
       "flag": "0x0"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId8",
       "flag": "0x0"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_6_LocalId9",
       "flag": "0x0"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId10",
       "flag": "0x0"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId11",
       "flag": "0x0"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId12",
       "flag": "0x0"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId13",
       "flag": "0x0"
@@ -206,7 +206,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId14",
       "flag": "0x0"
@@ -220,7 +220,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_5_LocalId15",
       "flag": "0x0"
@@ -234,7 +234,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_1_LocalId16",
       "flag": "0x0"
@@ -248,7 +248,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId17",
       "flag": "0x0"
@@ -262,7 +262,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId18",
       "flag": "0x0"
@@ -276,7 +276,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId19",
       "flag": "0x0"
@@ -290,7 +290,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_1_LocalId20",
       "flag": "0x0"
@@ -304,7 +304,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId21",
       "flag": "0x0"
@@ -318,7 +318,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId22",
       "flag": "0x0"
@@ -332,7 +332,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId23",
       "flag": "0x0"
@@ -346,7 +346,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_CONTEST_JUDGE_LocalId24",
       "flag": "0x0"
@@ -360,7 +360,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId25",
       "flag": "0x0"
@@ -374,7 +374,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId26",
       "flag": "0x0"
@@ -388,7 +388,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId27",
       "flag": "0x0"
@@ -402,7 +402,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId28",
       "flag": "0x0"
@@ -416,7 +416,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_WOMAN_3_LocalId29",
       "flag": "0x0"
@@ -430,7 +430,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId30",
       "flag": "0x0"
@@ -444,7 +444,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_LITTLE_GIRL_2_LocalId31",
       "flag": "0x0"
@@ -458,7 +458,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaKumquat_G13_M05_EventScript_OBJ_EVENT_GFX_SAILOR_LocalId32",
       "flag": "0x0"

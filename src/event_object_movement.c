@@ -504,17 +504,17 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Npc2Reflection,        OBJ_EVENT_PAL_TAG_NPC_2_REFLECTION},
     {gObjectEventPal_Npc3Reflection,        OBJ_EVENT_PAL_TAG_NPC_3_REFLECTION},
     {gObjectEventPal_Npc4Reflection,        OBJ_EVENT_PAL_TAG_NPC_4_REFLECTION},
-    {gObjectEventPal_Brendan,               OBJ_EVENT_PAL_TAG_BRENDAN},
-    {gObjectEventPal_BrendanReflection,     OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION},
+    {gObjectEventPal_Ash,               OBJ_EVENT_PAL_TAG_ASH},
+    {gObjectEventPal_AshReflection,     OBJ_EVENT_PAL_TAG_ASH_REFLECTION},
     {gObjectEventPal_BridgeReflection,      OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION},
     {gObjectEventPal_PlayerUnderwater,      OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER},
     {gObjectEventPal_QuintyPlump,           OBJ_EVENT_PAL_TAG_QUINTY_PLUMP},
     {gObjectEventPal_QuintyPlumpReflection, OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION},
     {gObjectEventPal_Truck,                 OBJ_EVENT_PAL_TAG_TRUCK},
-    {gObjectEventPal_Vigoroth,              OBJ_EVENT_PAL_TAG_VIGOROTH},
+    {gObjectEventPal_Machoke,              OBJ_EVENT_PAL_TAG_MACHOKE},
     {gObjectEventPal_EnemyZigzagoon,        OBJ_EVENT_PAL_TAG_ZIGZAGOON},
-    {gObjectEventPal_May,                   OBJ_EVENT_PAL_TAG_MAY},
-    {gObjectEventPal_MayReflection,         OBJ_EVENT_PAL_TAG_MAY_REFLECTION},
+    {gObjectEventPal_Misty,                   OBJ_EVENT_PAL_TAG_MISTY},
+    {gObjectEventPal_MistyReflection,         OBJ_EVENT_PAL_TAG_MISTY_REFLECTION},
     {gObjectEventPal_MovingBox,             OBJ_EVENT_PAL_TAG_MOVING_BOX},
     {gObjectEventPal_CableCar,              OBJ_EVENT_PAL_TAG_CABLE_CAR},
     {gObjectEventPal_SSTidal,               OBJ_EVENT_PAL_TAG_SSTIDAL},
@@ -592,17 +592,17 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
 };
 
 static const u16 sReflectionPaletteTags_Brendan[] = {
-    OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
-    OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
-    OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
-    OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
+    OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
+    OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
+    OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
+    OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
 };
 
 static const u16 sReflectionPaletteTags_May[] = {
-    OBJ_EVENT_PAL_TAG_MAY_REFLECTION,
-    OBJ_EVENT_PAL_TAG_MAY_REFLECTION,
-    OBJ_EVENT_PAL_TAG_MAY_REFLECTION,
-    OBJ_EVENT_PAL_TAG_MAY_REFLECTION,
+    OBJ_EVENT_PAL_TAG_MISTY_REFLECTION,
+    OBJ_EVENT_PAL_TAG_MISTY_REFLECTION,
+    OBJ_EVENT_PAL_TAG_MISTY_REFLECTION,
+    OBJ_EVENT_PAL_TAG_MISTY_REFLECTION,
 };
 
 static const u16 sReflectionPaletteTags_PlayerUnderwater[] = {
@@ -613,8 +613,8 @@ static const u16 sReflectionPaletteTags_PlayerUnderwater[] = {
 };
 
 static const struct PairedPalettes sPlayerReflectionPaletteSets[] = {
-    {OBJ_EVENT_PAL_TAG_BRENDAN,           sReflectionPaletteTags_Brendan},
-    {OBJ_EVENT_PAL_TAG_MAY,               sReflectionPaletteTags_May},
+    {OBJ_EVENT_PAL_TAG_ASH,           sReflectionPaletteTags_Brendan},
+    {OBJ_EVENT_PAL_TAG_MISTY,               sReflectionPaletteTags_May},
     {OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER, sReflectionPaletteTags_PlayerUnderwater},
     {OBJ_EVENT_PAL_TAG_NONE,              NULL},
 };
@@ -634,10 +634,10 @@ static const u16 sReflectionPaletteTags_Truck[] = {
 };
 
 static const u16 sReflectionPaletteTags_VigorothMover[] = {
-    OBJ_EVENT_PAL_TAG_VIGOROTH,
-    OBJ_EVENT_PAL_TAG_VIGOROTH,
-    OBJ_EVENT_PAL_TAG_VIGOROTH,
-    OBJ_EVENT_PAL_TAG_VIGOROTH,
+    OBJ_EVENT_PAL_TAG_MACHOKE,
+    OBJ_EVENT_PAL_TAG_MACHOKE,
+    OBJ_EVENT_PAL_TAG_MACHOKE,
+    OBJ_EVENT_PAL_TAG_MACHOKE,
 };
 
 static const u16 sReflectionPaletteTags_MovingBox[] = {
@@ -697,11 +697,11 @@ static const u16 sReflectionPaletteTags_RedLeaf[] = {
 };
 
 static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
-    {OBJ_EVENT_PAL_TAG_BRENDAN,          sReflectionPaletteTags_Brendan},
-    {OBJ_EVENT_PAL_TAG_MAY,              sReflectionPaletteTags_May},
+    {OBJ_EVENT_PAL_TAG_ASH,          sReflectionPaletteTags_Brendan},
+    {OBJ_EVENT_PAL_TAG_MISTY,              sReflectionPaletteTags_May},
     {OBJ_EVENT_PAL_TAG_QUINTY_PLUMP,     sReflectionPaletteTags_QuintyPlump},
     {OBJ_EVENT_PAL_TAG_TRUCK,            sReflectionPaletteTags_Truck},
-    {OBJ_EVENT_PAL_TAG_VIGOROTH,         sReflectionPaletteTags_VigorothMover},
+    {OBJ_EVENT_PAL_TAG_MACHOKE,         sReflectionPaletteTags_VigorothMover},
     {OBJ_EVENT_PAL_TAG_MOVING_BOX,       sReflectionPaletteTags_MovingBox},
     {OBJ_EVENT_PAL_TAG_CABLE_CAR,        sReflectionPaletteTags_CableCar},
     {OBJ_EVENT_PAL_TAG_SSTIDAL,          sReflectionPaletteTags_SSTidal},
@@ -714,8 +714,8 @@ static const struct PairedPalettes sSpecialObjectReflectionPaletteSets[] = {
 };
 
 static const u16 sObjectPaletteTags0[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
-    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
+    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
@@ -727,8 +727,8 @@ static const u16 sObjectPaletteTags0[] = {
 };
 
 static const u16 sObjectPaletteTags1[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
-    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
+    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
@@ -740,8 +740,8 @@ static const u16 sObjectPaletteTags1[] = {
 };
 
 static const u16 sObjectPaletteTags2[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
-    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
+    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
@@ -753,8 +753,8 @@ static const u16 sObjectPaletteTags2[] = {
 };
 
 static const u16 sObjectPaletteTags3[] = {
-    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_BRENDAN,
-    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION,
+    [PALSLOT_PLAYER]            = OBJ_EVENT_PAL_TAG_ASH,
+    [PALSLOT_PLAYER_REFLECTION] = OBJ_EVENT_PAL_TAG_ASH_REFLECTION,
     [PALSLOT_NPC_1]             = OBJ_EVENT_PAL_TAG_NPC_1,
     [PALSLOT_NPC_2]             = OBJ_EVENT_PAL_TAG_NPC_2,
     [PALSLOT_NPC_3]             = OBJ_EVENT_PAL_TAG_NPC_3,
@@ -3316,10 +3316,10 @@ u8 LoadPlayerObjectEventPalette(enum Gender gender)
     {
     default:
     case MALE:
-        paletteTag = OBJ_EVENT_PAL_TAG_BRENDAN;
+        paletteTag = OBJ_EVENT_PAL_TAG_ASH;
         break;
     case FEMALE:
-        paletteTag = OBJ_EVENT_PAL_TAG_MAY;
+        paletteTag = OBJ_EVENT_PAL_TAG_MISTY;
         break;
     }
     return LoadObjectEventPalette(paletteTag);

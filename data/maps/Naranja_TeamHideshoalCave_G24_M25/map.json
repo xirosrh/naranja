@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJECT_1_LocalId1",
       "flag": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M23_241_3"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 3,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJECT_2_LocalId2",
       "flag": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M23_241_3"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId3",
       "flag": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M25_ITEM_BALL"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M25_SUBMARINE_SHADOW"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_TeamHideshoalCave_G24_M25_EventScript_OBJECT_5_LocalId5",
       "flag": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M23_241_3"

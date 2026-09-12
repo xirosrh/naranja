@@ -150,7 +150,7 @@ enum
     OBJ_EVENT_GFX_PHOEBE,
     OBJ_EVENT_GFX_GLACIA,
     OBJ_EVENT_GFX_DRAKE,
-    OBJ_EVENT_GFX_HERACROSS,
+    OBJ_EVENT_GFX_SCYTHER,
     OBJ_EVENT_GFX_DANNY,
     OBJ_EVENT_GFX_WATTSON,
     OBJ_EVENT_GFX_FLANNERY,
@@ -516,8 +516,8 @@ enum
 #define OBJ_EVENT_ID_DYNAMIC_BASE 0xF0
 
 // Moved from src/event_object_movement.c so that they're accesible from other files.
-#define OBJ_EVENT_PAL_TAG_BRENDAN                 0x1100
-#define OBJ_EVENT_PAL_TAG_BRENDAN_REFLECTION      0x1101
+#define OBJ_EVENT_PAL_TAG_ASH                 0x1100
+#define OBJ_EVENT_PAL_TAG_ASH_REFLECTION      0x1101
 #define OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION       0x1102
 #define OBJ_EVENT_PAL_TAG_NPC_1                   0x1103
 #define OBJ_EVENT_PAL_TAG_NPC_2                   0x1104
@@ -530,10 +530,10 @@ enum
 #define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP            0x110B
 #define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION 0x110C
 #define OBJ_EVENT_PAL_TAG_TRUCK                   0x110D
-#define OBJ_EVENT_PAL_TAG_VIGOROTH                0x110E
+#define OBJ_EVENT_PAL_TAG_MACHOKE                0x110E
 #define OBJ_EVENT_PAL_TAG_ZIGZAGOON               0x110F
-#define OBJ_EVENT_PAL_TAG_MAY                     0x1110
-#define OBJ_EVENT_PAL_TAG_MAY_REFLECTION          0x1111
+#define OBJ_EVENT_PAL_TAG_MISTY                     0x1110
+#define OBJ_EVENT_PAL_TAG_MISTY_REFLECTION          0x1111
 #define OBJ_EVENT_PAL_TAG_MOVING_BOX              0x1112
 #define OBJ_EVENT_PAL_TAG_CABLE_CAR               0x1113
 #define OBJ_EVENT_PAL_TAG_SSTIDAL                 0x1114

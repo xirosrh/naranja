@@ -40,7 +40,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CAMPER_LocalId1",
       "flag": "0x0"
@@ -54,7 +54,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId2",
       "flag": "0x0"
@@ -68,7 +68,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_1_LocalId3",
       "flag": "0x0"
@@ -82,7 +82,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId4",
       "flag": "0x0"
@@ -96,7 +96,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId5",
       "flag": "0x0"
@@ -110,7 +110,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 3,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F_LocalId6",
       "flag": "0x0"
@@ -124,7 +124,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId7",
       "flag": "0x0"
@@ -138,7 +138,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
       "movement_range_x": 2,
       "movement_range_y": 14,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F_LocalId8",
       "flag": "0x0"
@@ -152,7 +152,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN",
       "movement_range_x": 10,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId9",
       "flag": "0x0"
@@ -166,7 +166,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F_LocalId10",
       "flag": "0x0"
@@ -180,7 +180,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_LEFT_DOWN_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId11",
       "flag": "0x0"
@@ -194,7 +194,7 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId12",
       "flag": "0x0"
@@ -208,7 +208,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_LASS_LocalId13",
       "flag": "0x0"
@@ -222,7 +222,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_MANIAC_LocalId14",
       "flag": "0x0"
@@ -236,7 +236,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId15",
       "flag": "0x0"
@@ -250,7 +250,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "16",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -264,7 +264,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "17",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -278,7 +278,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "18",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -292,7 +292,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId19",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_ITEM_BALL"
@@ -306,7 +306,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId20",
       "flag": "FLAG_HIDE_ISLA_MIKAN_G03_M03_MR_BRINEYS_BOAT"
@@ -320,7 +320,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId21",
       "flag": "0x0"
@@ -334,7 +334,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJECT_22_LocalId22",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_241"
@@ -348,7 +348,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJECT_23_LocalId23",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_241"
@@ -362,7 +362,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJECT_24_LocalId24",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_241"
@@ -376,7 +376,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJECT_25_LocalId25",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_241"
@@ -390,7 +390,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_241"
@@ -404,7 +404,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_RIGHT_DOWN",
       "movement_range_x": 7,
       "movement_range_y": 1,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId27",
       "flag": "0x0"
@@ -418,7 +418,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_VARS"
@@ -432,7 +432,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_ROUTE110_G00_M25_243"
@@ -446,7 +446,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId30",
       "flag": "0x0"
@@ -460,7 +460,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId31",
       "flag": "0x0"

@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1",
       "flag": "FLAG_HIDE_UNDERWATER_G24_M26_RIVAL_BRENDAN_NORMAL"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1",
       "flag": "FLAG_HIDE_UNDERWATER_G24_M26_RIVAL_BRENDAN_NORMAL"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1",
       "flag": "FLAG_HIDE_UNDERWATER_G24_M26_RIVAL_BRENDAN_NORMAL"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Underwater_G24_M26_EventScript_OBJ_EVENT_GFX_RIVAL_ASH_NORMAL_LocalId1",
       "flag": "FLAG_HIDE_UNDERWATER_G24_M26_RIVAL_BRENDAN_NORMAL"

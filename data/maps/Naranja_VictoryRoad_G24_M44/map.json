@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_13"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_14"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_11"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_12"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_17"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_16"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_1E"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
       "flag": "FLAG_TEMP_19"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
       "flag": "FLAG_TEMP_1A"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
       "flag": "FLAG_TEMP_1B"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
       "flag": "FLAG_TEMP_1C"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
       "flag": "FLAG_TEMP_1D"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_FieryPath_G24_M14_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId2",
       "flag": "FLAG_TEMP_1F"
@@ -206,7 +206,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_VictoryRoad_G24_M44_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId14",
       "flag": "0x0"
@@ -220,7 +220,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_VictoryRoad_G24_M44_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId15",
       "flag": "0x0"
@@ -234,7 +234,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_VictoryRoad_G24_M44_EventScript_OBJ_EVENT_GFX_WOMAN_7_LocalId16",
       "flag": "0x0"
@@ -248,7 +248,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_BREAKABLE_ROCK_LocalId18",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M44_BREAKABLE_ROCK"
@@ -262,7 +262,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_VictoryRoad_G24_M44_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId18",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M44_ITEM_BALL"
@@ -276,7 +276,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_VictoryRoad_G24_M44_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId19",
       "flag": "FLAG_HIDE_VICTORY_ROAD_G24_M44_ITEM_BALL_2"

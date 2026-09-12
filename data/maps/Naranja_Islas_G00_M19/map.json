@@ -40,7 +40,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_IslaPinkan_G00_M30_EventScript_OBJ_EVENT_GFX_LASS_LocalId2",
       "flag": "0x0"
@@ -54,7 +54,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_GIRL_2_LocalId2",
       "flag": "0x0"
@@ -68,7 +68,7 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 5,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId3",
       "flag": "0x0"
@@ -82,7 +82,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_BOY_1_LocalId4",
       "flag": "0x0"
@@ -96,7 +96,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 7,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId5",
       "flag": "0x0"
@@ -110,7 +110,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 7,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_GIRL_3_LocalId6",
       "flag": "0x0"
@@ -124,7 +124,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId7",
       "flag": "FLAG_HIDE_ISLAS_G00_M19_SPIN_CUSHION"
@@ -138,7 +138,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_ISLA_MIKAN_G00_M20_OLD_MAN_1"
@@ -152,7 +152,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_FISHERMAN_LocalId9",
       "flag": "0x0"
@@ -166,7 +166,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "14",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -180,7 +180,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "10",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -194,7 +194,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "11",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -208,7 +208,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "13",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -222,7 +222,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "15",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -236,7 +236,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "16",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -250,7 +250,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_OLD_WOMAN_2_LocalId16",
       "flag": "0x0"
@@ -264,7 +264,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -278,7 +278,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -292,7 +292,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -306,7 +306,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "7",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -320,7 +320,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId21",
       "flag": "FLAG_HIDE_ISLA_MIKAN_G00_M20_SPIN_CUSHION"
@@ -334,7 +334,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "9",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -348,7 +348,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId23",
       "flag": "0x0"
@@ -362,7 +362,7 @@
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_PSYCHIC_M_LocalId24",
       "flag": "0x0"
@@ -376,7 +376,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_MAN_4_LocalId25",
       "flag": "0x0"
@@ -390,7 +390,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "12",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"
@@ -404,7 +404,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_IslaMikan_G00_M20_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId27",
       "flag": "FLAG_HIDE_ISLA_MIKAN_G00_M20_ITEM_BALL_2"
@@ -418,7 +418,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_UP_LEFT",
       "movement_range_x": 5,
       "movement_range_y": 6,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "6",
       "script": "Naranja_Islas_G00_M19_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId28",
       "flag": "0x0"
@@ -432,7 +432,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "17",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "FLAG_TEMP_18"
@@ -446,7 +446,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_11"
@@ -460,7 +460,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "0x0"
@@ -474,7 +474,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "8",
       "script": "Naranja_CaminoFrio_G00_M29_EventScript_OBJ_EVENT_GFX_SWIMMER_F_LocalId1",
       "flag": "0x0"

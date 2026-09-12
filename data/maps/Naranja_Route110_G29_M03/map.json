@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_LASS_LocalId1",
       "flag": "0x0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_YOUNGSTER_LocalId2",
       "flag": "0x0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_LASS_LocalId3",
       "flag": "0x0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_13"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_11"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_12"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_14"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_17"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_16"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_15"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_19"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_18"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_1A"
@@ -206,7 +206,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_1C"
@@ -220,7 +220,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_1B"
@@ -234,7 +234,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_1D"
@@ -248,7 +248,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_1E"
@@ -262,7 +262,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Route110_G29_M03_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId18",
       "flag": "FLAG_HIDE_ROUTE110_G29_M03_ITEM_BALL"
@@ -276,7 +276,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_1F"

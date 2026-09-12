@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_PUSHABLE_BOULDER_LocalId1",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_PUSHABLE_BOULDER"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_CUTTABLE_TREE_LocalId15",
       "flag": "FLAG_TEMP_12"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_MAGMA_MEMBER_F"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ZIGZAGOON"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId5",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId6",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_2"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId7",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_3"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_FIRE_CUSHION_LocalId8",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_FIRE_CUSHION"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_BUG_CATCHER_LocalId9",
       "flag": "0x0"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_UP_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "1",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "Naranja_Desierto_G00_M32_EventScript_OBJ_EVENT_GFX_DITTO_DOLL_LocalId10",
       "flag": "0x0"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_BOY_3_LocalId11",
       "flag": "0x0"
@@ -178,7 +178,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_ITEM_BALL_LocalId12",
       "flag": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_4"
@@ -192,7 +192,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "0",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Naranja_Valledelasflores_G24_M11_EventScript_OBJ_EVENT_GFX_LASS_LocalId13",
       "flag": "0x0"
