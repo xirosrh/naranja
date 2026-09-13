@@ -1,0 +1,849 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route110_TrickHousePuzzle5_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route110_TrickHousePuzzle5_OnTransition
+}
+
+script Naranja_Route110_TrickHousePuzzle5_OnTransition {
+    setvar(VAR_TEMP_1, 0)
+    setvar(VAR_TEMP_2, 0)
+    setvar(VAR_TEMP_3, 0)
+    setvar(VAR_TEMP_4, 0)
+    setvar(VAR_TEMP_5, 0)
+    setvar(VAR_TEMP_8, 0)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sign_1 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_ROUTE110_EVENT_STATE_9, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_081627E7)
+    goto(Naranja_Route110_TrickHousePuzzle1_EventScript_Sub_08161892)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_081627E7 {
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_9, 1)
+    goto(Naranja_Route110_TrickHousePuzzle1_EventScript_Sub_0816189C)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Man1 {
+    lockall
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_1, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9)
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816293F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Man1_2 {
+    lockall
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_2, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9)
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_081629B3)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Man1_3 {
+    lockall
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_3, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9)
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A27)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Man1_4 {
+    lockall
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_4, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9)
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A9B)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Man1_5 {
+    lockall
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_5, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9)
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B0F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816293F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_2 {
+    lockall
+    setvar(VAR_TEMP_9, 1)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816293F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_3 {
+    lockall
+    setvar(VAR_TEMP_9, 2)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816293F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_4 {
+    lockall
+    setvar(VAR_TEMP_9, 3)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816293F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_5 {
+    lockall
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_081629B3)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_6 {
+    lockall
+    setvar(VAR_TEMP_9, 1)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_081629B3)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_7 {
+    lockall
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A27)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_8 {
+    lockall
+    setvar(VAR_TEMP_9, 1)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A27)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_9 {
+    lockall
+    setvar(VAR_TEMP_9, 2)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A27)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_10 {
+    lockall
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A9B)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_11 {
+    lockall
+    setvar(VAR_TEMP_9, 1)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A9B)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_12 {
+    lockall
+    setvar(VAR_TEMP_9, 0)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B0F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_13 {
+    lockall
+    setvar(VAR_TEMP_9, 1)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B0F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Trigger_14 {
+    lockall
+    setvar(VAR_TEMP_9, 2)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B0F)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816293F {
+    setvar(VAR_TEMP_1, 1)
+    setvar(VAR_TEMP_8, 1)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_9, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DF3)
+    compare_var_to_value(VAR_TEMP_9, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E2B)
+    compare_var_to_value(VAR_TEMP_9, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E63)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D423, MSGBOX_DEFAULT)
+    random(3)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B83)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162BA6)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162BC9)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_081629B3 {
+    setvar(VAR_TEMP_2, 1)
+    setvar(VAR_TEMP_8, 2)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_9, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E9B)
+    compare_var_to_value(VAR_TEMP_9, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162ED3)
+    compare_var_to_value(VAR_TEMP_9, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F0B)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D636, MSGBOX_DEFAULT)
+    random(3)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162BEC)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C0F)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C32)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A27 {
+    setvar(VAR_TEMP_3, 1)
+    setvar(VAR_TEMP_8, 3)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_9, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DF3)
+    compare_var_to_value(VAR_TEMP_9, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E2B)
+    compare_var_to_value(VAR_TEMP_9, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E63)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D7D3, MSGBOX_DEFAULT)
+    random(3)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C55)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C78)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C9B)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162A9B {
+    setvar(VAR_TEMP_4, 1)
+    setvar(VAR_TEMP_8, 4)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_9, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DF3)
+    compare_var_to_value(VAR_TEMP_9, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E2B)
+    compare_var_to_value(VAR_TEMP_9, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E63)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D93D, MSGBOX_DEFAULT)
+    random(3)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162CBE)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162CE1)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D04)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B0F {
+    setvar(VAR_TEMP_5, 1)
+    setvar(VAR_TEMP_8, 5)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_TEMP_9, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E9B)
+    compare_var_to_value(VAR_TEMP_9, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162ED3)
+    compare_var_to_value(VAR_TEMP_9, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F0B)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819DA9A, MSGBOX_DEFAULT)
+    random(3)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D27)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D4A)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D6D)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162B83 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D4AE, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x19, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162BA6 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D501, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x1A, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162BC9 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D553, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x1B, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162BEC {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D68E, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x1C, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C0F {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D6EC, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x1D, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C32 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D745, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x1E, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C55 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D81B, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x1F, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C78 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D865, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x20, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162C9B {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D8BA, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x21, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162CBE {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D987, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x22, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162CE1 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D9DC, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x23, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D04 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819DA1D, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x24, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D27 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819DAEF, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x25, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D4A {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819DB43, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x26, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D6D {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819DB97, MSGBOX_DEFAULT)
+    multichoice(0, 0, 0x27, 1)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162D90 {
+    waitse
+    playse(SE_FAILURE)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D5CF, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHouseEntrance_Movement_0816309F)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHouseEntrance_Movement_0816309F)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHouseEntrance_Movement_0816309F)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHouseEntrance_Movement_0816309F)
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHouseEntrance_Movement_0816309F)
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D5ED, MSGBOX_DEFAULT)
+    waitmovement(LOCALID_NONE)
+    closemessage
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D615, MSGBOX_DEFAULT)
+    closemessage
+    warp(MAP_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5, 0xFF, 0, 0x15)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DDF {
+    waitse
+    playse(SE_SUCCESS)
+    goto(Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9)
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DE9 {
+    msgbox(Naranja_Route110_TrickHousePuzzle5_Text_0819D599, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162DF3 {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F43)
+    compare_var_to_value(VAR_TEMP_8, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F4E)
+    compare_var_to_value(VAR_TEMP_8, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F59)
+    compare_var_to_value(VAR_TEMP_8, 4)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F64)
+    compare_var_to_value(VAR_TEMP_8, 5)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F6F)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E2B {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F7A)
+    compare_var_to_value(VAR_TEMP_8, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F85)
+    compare_var_to_value(VAR_TEMP_8, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F90)
+    compare_var_to_value(VAR_TEMP_8, 4)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F9B)
+    compare_var_to_value(VAR_TEMP_8, 5)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FA6)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E63 {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FB1)
+    compare_var_to_value(VAR_TEMP_8, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FBC)
+    compare_var_to_value(VAR_TEMP_8, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FC7)
+    compare_var_to_value(VAR_TEMP_9, 4)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FD2)
+    compare_var_to_value(VAR_TEMP_9, 5)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FDD)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162E9B {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FE8)
+    compare_var_to_value(VAR_TEMP_8, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FF3)
+    compare_var_to_value(VAR_TEMP_8, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FFE)
+    compare_var_to_value(VAR_TEMP_8, 4)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163009)
+    compare_var_to_value(VAR_TEMP_8, 5)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163014)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162ED3 {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816301F)
+    compare_var_to_value(VAR_TEMP_8, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816302A)
+    compare_var_to_value(VAR_TEMP_8, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163035)
+    compare_var_to_value(VAR_TEMP_8, 4)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163040)
+    compare_var_to_value(VAR_TEMP_8, 5)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816304B)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F0B {
+    compare_var_to_value(VAR_TEMP_8, 1)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163056)
+    compare_var_to_value(VAR_TEMP_8, 2)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163061)
+    compare_var_to_value(VAR_TEMP_8, 3)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816306C)
+    compare_var_to_value(VAR_TEMP_8, 4)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163077)
+    compare_var_to_value(VAR_TEMP_8, 5)
+    call_if(EQUAL, Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163082)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F43 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHousePuzzle5_Movement_0816308D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F4E {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHousePuzzle5_Movement_0816308D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F59 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHousePuzzle5_Movement_0816308D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F64 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHousePuzzle5_Movement_0816308D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F6F {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHousePuzzle5_Movement_0816308D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F7A {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHousePuzzle5_Movement_0816308F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F85 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHousePuzzle5_Movement_0816308F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F90 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHousePuzzle5_Movement_0816308F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162F9B {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHousePuzzle5_Movement_0816308F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FA6 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHousePuzzle5_Movement_0816308F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FB1 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHousePuzzle5_Movement_08163092)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FBC {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHousePuzzle5_Movement_08163092)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FC7 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHousePuzzle5_Movement_08163092)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FD2 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHousePuzzle5_Movement_08163092)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FDD {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHousePuzzle5_Movement_08163092)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FE8 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHousePuzzle5_Movement_08163096)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FF3 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHousePuzzle5_Movement_08163096)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08162FFE {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHousePuzzle5_Movement_08163096)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163009 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHousePuzzle5_Movement_08163096)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163014 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHousePuzzle5_Movement_08163096)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816301F {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHousePuzzle5_Movement_08163098)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816302A {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHousePuzzle5_Movement_08163098)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163035 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHousePuzzle5_Movement_08163098)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163040 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHousePuzzle5_Movement_08163098)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816304B {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHousePuzzle5_Movement_08163098)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163056 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_1, Naranja_Route110_TrickHousePuzzle5_Movement_0816309B)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163061 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_2, Naranja_Route110_TrickHousePuzzle5_Movement_0816309B)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_0816306C {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_3, Naranja_Route110_TrickHousePuzzle5_Movement_0816309B)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163077 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_4, Naranja_Route110_TrickHousePuzzle5_Movement_0816309B)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_Route110_TrickHousePuzzle5_EventScript_Sub_08163082 {
+    applymovement(LOCALID_NARANJA_ROUTE110_TRICK_HOUSE_PUZZLE5_MAN_1_5, Naranja_Route110_TrickHousePuzzle5_Movement_0816309B)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+movement Naranja_Route110_TrickHousePuzzle5_Movement_0816308D {
+    walk_left
+}
+
+movement Naranja_Route110_TrickHousePuzzle5_Movement_0816308F {
+    walk_left
+    walk_left
+}
+
+movement Naranja_Route110_TrickHousePuzzle5_Movement_08163092 {
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_Route110_TrickHousePuzzle5_Movement_08163096 {
+    walk_right
+}
+
+movement Naranja_Route110_TrickHousePuzzle5_Movement_08163098 {
+    walk_right
+    walk_right
+}
+
+movement Naranja_Route110_TrickHousePuzzle5_Movement_0816309B {
+    walk_right
+    walk_right
+    walk_right
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D423 {
+    "CLICKETY-CLACK...\nMECHADOLL 1 AM I!\pIF YOU ANSWER QUIZZES CORRECTLY,\nTHEN YOU WILL GO TO MECHADOLL 5.\lTHEN YOU CAN OBTAIN THE SECRET CODE."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D4AE {
+    "MECHADOLL 1 QUIZ.\pOne of these POKéMON is not found\non ROUTE 103. Which one is it?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D501 {
+    "MECHADOLL 1 QUIZ.\pOne of these POKéMON is not of the\nGRASS type. Which one is it?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D553 {
+    "MECHADOLL 1 QUIZ.\pOne of these POKéMON uses SCRATCH.\nWhich one is it?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D599 {
+    "CONGRATULATIONS. CORRECT YOU ARE.\nGO THROUGH. PLEASE."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D5CF {
+    "BZZZT. DISAPPOINTMENT.\nERROR."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D5ED {
+    "WAHAHAHAHA! WAHAHAHAHA!\nCLICKETY-CLACK!"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D615 {
+    "YOUR NEXT CHALLENGE WE WAIT FOR."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D636 {
+    "CLICKETY-CLACK...\nMECHADOLL 2 AM I!\pMECHADOLL 1’S QUIZ DIFFICULTY LEVEL\nIS SET TOO LOW."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D68E {
+    "MECHADOLL 2 QUIZ.\pIn PROF. BIRCH’s bag, there were three\nPOKéMON. Which one was at the right?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D6EC {
+    "MECHADOLL 2 QUIZ.\pWhich POKéMON was offered for a trade\nat the POKéMON TRAINER’S SCHOOL?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D745 {
+    "MECHADOLL 2 QUIZ.\pThe DEVON RESEARCHER was looking for\nwhat POKéMON in PETALBURG WOODS?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D7D3 {
+    "CLICKETY-CLACK...\nMECHADOLL 3 AM I!\pMATTERS OF MONEY ARE MY SOLE FOCUS."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D81B {
+    "MECHADOLL 3 QUIZ.\pWhich costs more?\nThree POKé BALLS or one SUPER POTION?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D865 {
+    "MECHADOLL 3 QUIZ.\pSell one ESCAPE ROPE and buy\none ANTIDOTE. How much money remains?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D8BA {
+    "MECHADOLL 3 QUIZ.\pDo one FULL HEAL and GREAT BALL\ncost more than one REVIVE?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D93D {
+    "CLICKETY-CLACK...\nMECHADOLL 4 THAT IS ME!\pMY QUIZ IS AN OBJECT OF BEAUTY."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D987 {
+    "MECHADOLL 4 QUIZ.\pRUSTBORO GYM LEADER ROXANNE used a\nGEODUDE. Was it male or female?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819D9DC {
+    "MECHADOLL 4 QUIZ.\pIn DEWFORD HALL, were there more men\nor women?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819DA1D {
+    "MECHADOLL 4 QUIZ.\pThe first TRAINER in DEWFORD GYM was\nmale or female?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819DA9A {
+    "CLICKETY-CLACK...\nMECHADOLL 5 AM I!\pTHE MASTER’S BEST AND PROUDEST\nACHIEVEMENT AM I."
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819DAEF {
+    "MECHADOLL 5 QUIZ.\pHow many BIKES does RYDEL have on\ndisplay outside his cycle shop?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819DB43 {
+    "MECHADOLL 5 QUIZ.\pHow many people give you BERRIES at the\nPRETTY PETAL flower shop?"
+}
+
+text Naranja_Route110_TrickHousePuzzle5_Text_0819DB97 {
+    "MECHADOLL 5 QUIZ.\pHow many signs are there in\nLILYCOVE CITY?"
+}

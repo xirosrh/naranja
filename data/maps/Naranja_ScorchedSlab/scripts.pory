@@ -1,0 +1,18 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ScorchedSlab_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ScorchedSlab_OnTransition
+}
+
+script Naranja_ScorchedSlab_OnTransition {
+    setflag(FLAG_NARANJA_SCORCHED_SLAB_EVENT_COMPLETE_0858)
+    end
+}
+
+script Naranja_ScorchedSlab_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x12B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}

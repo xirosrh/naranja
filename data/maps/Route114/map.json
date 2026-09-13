@@ -4,7 +4,7 @@
   "layout": "LAYOUT_ROUTE114",
   "music": "MUS_ROUTE110",
   "region": "REGION_HOENN",
-  "region_map_section": "MAPSEC_CAMINO_FRIO",
+  "region_map_section": "MAPSEC_COLD_PATH",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_ROUTE",

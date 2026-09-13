@@ -1,0 +1,134 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_OrangeIslands_MrBrineysHouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_OrangeIslands_MrBrineysHouse_OnTransition
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_OnTransition {
+    setflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_083D)
+    compare_var_to_value(VAR_NARANJA_CRYSTAL_ONIX_GUIDE_POSITION_STATE, 1)
+    call_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BCD4)
+    checkflag(FLAG_HIDE_NARANJA_MIKAN_ISLAND_G00_M20_WALLY)
+    call_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BCD0)
+    end
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BCD0 {
+    setflag(FLAG_HIDE_NARANJA_TROVITA_ISLAND_G00_M03_VARS)
+    return
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BCD4 {
+    setobjectxyperm(LOCALID_NARANJA_ORANGE_ISLANDS_MR_BRINEYS_HOUSE_OLD_MAN_1, 9, 3)
+    setobjectmovementtype(LOCALID_NARANJA_ORANGE_ISLANDS_MR_BRINEYS_HOUSE_OLD_MAN_1, 0x32)
+    setobjectxyperm(LOCALID_NARANJA_ORANGE_ISLANDS_MR_BRINEYS_HOUSE_WINGULL, 9, 6)
+    setobjectmovementtype(LOCALID_NARANJA_ORANGE_ISLANDS_MR_BRINEYS_HOUSE_WINGULL, 0x33)
+    return
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_OldMan1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_0093)
+    call_if(LESS_THAN, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD0E)
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_00BD)
+    goto_if(LESS_THAN, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD65)
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095)
+    goto_if(LESS_THAN, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD7E)
+    goto(Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD32)
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD0E {
+    setflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_0093)
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191A82, MSGBOX_DEFAULT)
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191AAD, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD97)
+    goto(Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDAB)
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD32 {
+    message(Naranja_OrangeIslands_MrBrineysHouse_Text_08191E80)
+    waitmessage
+    multichoicedefault(0x15, 8, 0xE, 1, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDAB)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDA1)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDA1)
+    end
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD65 {
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191CC3, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD97)
+    goto(Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDAB)
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD7E {
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191DA6, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD97)
+    goto(Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDAB)
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BD97 {
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191C57, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDA1 {
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191EDB, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_MrBrineysHouse_EventScript_Sub_0815BDAB {
+    msgbox(Naranja_OrangeIslands_MrBrineysHouse_Text_08191BFD, MSGBOX_DEFAULT)
+    call(Naranja_SevenGrapefruitIslands_EventScript_Sub_081A010C)
+    setvar(VAR_NARANJA_ORANGE_ISLANDS_STORY_STATE, 1)
+    clearflag(FLAG_HIDE_NARANJA_MIKAN_ISLAND_G00_M20_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_WINGULL)
+    warp(MAP_NARANJA_ORANGE_ISLANDS, 0xFF, 0xD, 0x33)
+    waitstate
+    releaseall
+    end
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191A82 {
+    "MR. BRINEY: Hold on, lass!\nWait up, PEEKO!"
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191AAD {
+    "Hm? You’re {PLAYER}{KUN}!\nYou saved my darling PEEKO!\lWe owe so much to you!\pWhat’s that?\nYou want to sail with me?\pHmhm...\pYou have a LETTER bound for DEWFORD\nand a package for SLATEPORT, then?\pQuite the busy life you must lead!\pBut, certainly, what you’re asking is\nno problem at all.\pYou’ve come to the right man!\nWe’ll set sail for DEWFORD."
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191BFD {
+    "MR. BRINEY: DEWFORD, here we come!\pAnchors aweigh!\nPEEKO, we’re setting sail, my darling!"
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191C57 {
+    "MR. BRINEY: Is that so?\nYour deliveries can wait?\pYou just go on and tell me whenever\nyou want to set sail!"
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191CC3 {
+    "MR. BRINEY: Ahoy!\nI know exactly what you want to say!\pYou’re to deliver a LETTER to DEWFORD\nand a package to SLATEPORT.\pWhat you need me to do is no problem\nat all - I’m the man for the job!\pFirst, we’ll set sail for DEWFORD."
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191DA6 {
+    "MR. BRINEY: Ahoy!\nI know exactly what you want to say!\pYou’re to deliver a package to\nCAPT. STERN in SLATEPORT.\pWhat you need me to do is no problem\nat all - I’m the man for the job!\pFirst, we’ll set sail for DEWFORD."
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191E80 {
+    "MR. BRINEY: Ahoy!\nFor you, I’ll go out to sea anytime!\pNow, my friend, where are we bound?"
+}
+
+text Naranja_OrangeIslands_MrBrineysHouse_Text_08191EDB {
+    "MR. BRINEY: Is that so?\nWell, PEEKO owes her life to you.\pYou just go on and tell me whenever\nyou want to set sail!"
+}

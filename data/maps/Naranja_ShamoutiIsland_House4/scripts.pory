@@ -1,0 +1,102 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ShamoutiIsland_House4_MapScripts {
+}
+
+script Naranja_ShamoutiIsland_House4_EventScript_Woman5 {
+    msgbox(Naranja_ShamoutiIsland_House4_Text_081867AF, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ShamoutiIsland_House4_EventScript_Boy3 {
+    lockall
+    checkflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00DF)
+    goto_if(EQUAL, Naranja_ShamoutiIsland_House4_EventScript_Sub_08158204)
+    checkflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00E0)
+    goto_if(EQUAL, Naranja_ShamoutiIsland_House4_EventScript_Sub_081581D6)
+    checkflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00DE)
+    goto_if(EQUAL, Naranja_ShamoutiIsland_House4_EventScript_Sub_081581C2)
+    msgbox(Naranja_ShamoutiIsland_House4_Text_08186835, MSGBOX_DEFAULT)
+    closemessage
+    setflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00DE)
+    clearflag(FLAG_HIDE_NARANJA_MELLSWEET_ISLAND_G14_M02_WINGULL)
+    applymovement(LOCALID_NARANJA_SHAMOUTI_ISLAND_HOUSE4_WINGULL, Naranja_ShamoutiIsland_House4_Movement_08158218)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_NARANJA_SHAMOUTI_ISLAND_HOUSE4_WINGULL)
+    releaseall
+    end
+}
+
+script Naranja_ShamoutiIsland_House4_EventScript_Sub_081581C2 {
+    applymovement(32783, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_ShamoutiIsland_House4_Text_0818684E, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ShamoutiIsland_House4_EventScript_Sub_081581D6 {
+    applymovement(32783, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_ShamoutiIsland_House4_Text_08186881, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0xB9)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00DF)
+    releaseall
+    end
+}
+
+script Naranja_ShamoutiIsland_House4_EventScript_Sub_08158204 {
+    applymovement(32783, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_ShamoutiIsland_House4_Text_08186924, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ShamoutiIsland_House4_EventScript_Wingull {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    msgbox(Naranja_ShamoutiIsland_House4_Text_0818695C, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+movement Naranja_ShamoutiIsland_House4_Movement_08158218 {
+    walk_fast_down
+    walk_fast_down
+    walk_fast_right
+    walk_in_place_faster_down
+    delay_8
+}
+
+text Naranja_ShamoutiIsland_House4_Text_081867AF {
+    "By being together with POKéMON,\npeople make more and more friends.\pAnd that brings the world closer\ntogether. I think it’s wonderful!"
+}
+
+text Naranja_ShamoutiIsland_House4_Text_08186835 {
+    "There!\nGo, BIRD POKéMON!"
+}
+
+text Naranja_ShamoutiIsland_House4_Text_0818684E {
+    "Heheh, I asked my WINGULL to run an\nerrand for me."
+}
+
+text Naranja_ShamoutiIsland_House4_Text_08186881 {
+    "Good!\nWelcome back, WINGULL!\pHuh? What is this?\nWhat is it holding?\pA MENTAL HERB?\nIt must have picked it up somewhere.\pBut I’m not a TRAINER, so you can\nhave it."
+}
+
+text Naranja_ShamoutiIsland_House4_Text_08186924 {
+    "Thanks to my WINGULL, I have friends\nwho live far away."
+}
+
+text Naranja_ShamoutiIsland_House4_Text_0818695C {
+    "WINGULL: Pihyoh!"
+}

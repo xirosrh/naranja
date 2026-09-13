@@ -1,0 +1,39 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_GraniteCave_1F_MapScripts {
+}
+
+script Naranja_GraniteCave_1F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x55)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_GraniteCave_1F_EventScript_Sub_086B38F4 {
+    msgbox(Naranja_GraniteCave_1F_Text_086B39FB, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_GraniteCave_1F_EventScript_Kecleon1 {
+    msgbox(Naranja_GraniteCave_1F_Text_086B8B67, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_GraniteCave_1F_EventScript_Sub_086B38F4)
+    delay(0x20)
+    msgbox(Naranja_GraniteCave_1F_Text_086B8B9B, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_GraniteCave_1F_Text_086B39FB {
+    "Ehh…\nQuizás sea mejor dejarlo así."
+}
+
+text Naranja_GraniteCave_1F_Text_086B8B67 {
+    "Hay un fósil incrustado.\n¿Quieres intentar sacarlo?"
+}
+
+text Naranja_GraniteCave_1F_Text_086B8B9B {
+    "Se resiste. Es imposible.  "
+}

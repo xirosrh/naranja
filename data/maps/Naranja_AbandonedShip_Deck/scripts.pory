@@ -1,0 +1,11 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_Deck_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_AbandonedShip_Deck_OnTransition
+}
+
+script Naranja_AbandonedShip_Deck_OnTransition {
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_083E)
+    end
+}

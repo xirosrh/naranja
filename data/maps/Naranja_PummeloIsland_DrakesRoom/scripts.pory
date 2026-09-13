@@ -1,0 +1,77 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PummeloIsland_DrakesRoom_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE, 3: Naranja_PummeloIsland_DrakesRoom_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_LOAD: Naranja_PummeloIsland_DrakesRoom_OnLoad
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_1, 0: Naranja_PummeloIsland_SidneysRoom_OnWarp_1
+    ]
+}
+
+script Naranja_PummeloIsland_DrakesRoom_OnFrame_1 {
+    lockall
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A0710)
+    setvar(VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE, 4)
+    releaseall
+    end
+}
+
+script Naranja_PummeloIsland_DrakesRoom_OnLoad {
+    checkflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04E0)
+    call_if(EQUAL, Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B758)
+    compare_var_to_value(VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE, 4)
+    call_if(EQUAL, Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B75E)
+    end
+}
+
+script Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B758 {
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A0757)
+    return
+}
+
+script Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B75E {
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A07FA)
+    return
+}
+
+script Naranja_PummeloIsland_DrakesRoom_EventScript_Drake {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04E0)
+    goto_if(EQUAL, Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B78B)
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+    msgbox(Naranja_PummeloIsland_DrakesRoom_Text_08190CEB, MSGBOX_DEFAULT)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUMMELO_ISLAND_264, Naranja_PummeloIsland_DrakesRoom_Text_08190E42)
+    goto(Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B795)
+}
+
+script Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B78B {
+    msgbox(Naranja_PummeloIsland_DrakesRoom_Text_08190E5D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_PummeloIsland_DrakesRoom_EventScript_Sub_0815B795 {
+    setvar(VAR_0x8004, 0)
+    special(Script_TryGainNewFanFromCounter)
+    setflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04E0)
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A0693)
+    msgbox(Naranja_PummeloIsland_DrakesRoom_Text_08190E5D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_PummeloIsland_DrakesRoom_Text_08190CEB {
+    "I am the last of the POKéMON LEAGUE\nELITE FOUR, DRAKE the DRAGON master!\pIn their natural state, POKéMON are\nwild living things. They are free.\pAt times, they hinder us.\nAt times, they help us.\pFor us to battle with POKéMON as\npartners, do you know what it takes?\pDo you know what is needed?\pIf you don’t, then you will never\nprevail over me!"
+}
+
+text Naranja_PummeloIsland_DrakesRoom_Text_08190E42 {
+    "Superb, it should be said."
+}
+
+text Naranja_PummeloIsland_DrakesRoom_Text_08190E5D {
+    "You deserve every credit for coming\nthis far as a TRAINER of POKéMON.\pYou do seem to know what is needed.\pYes, what a TRAINER needs is a\nvirtuous heart.\pPOKéMON touch the good hearts of\nTRAINERS and learn good from wrong.\pThey touch the good hearts of\nTRAINERS and grow strong.\pGo! Go onwards!\nThe CHAMPION is waiting!"
+}

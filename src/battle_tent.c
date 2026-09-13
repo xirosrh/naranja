@@ -285,7 +285,7 @@ static void SwapRentalMons(void)
 
 bool8 InSlateportBattleTent(void)
 {
-    return gMapHeader.regionMapSectionId == MAPSEC_ISLA_MURCOTT
+    return gMapHeader.regionMapSectionId == MAPSEC_MURCOTT_ISLAND
            && (gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_CORRIDOR || gMapHeader.mapLayoutId == LAYOUT_BATTLE_TENT_BATTLE_ROOM);
 }
 

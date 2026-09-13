@@ -1,7 +1,7 @@
 {
   "map_sections": [
     {
-      "id": "MAPSEC_PUERTO_DE_TANGELO",
+      "id": "MAPSEC_TANGELO_TOWN_PORT",
       "name": "Puerto de TANGELO",
       "x": 4,
       "y": 11,
@@ -9,7 +9,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_TANGELO",
+      "id": "MAPSEC_TANGELO_TOWN_ISLAND",
       "name": "Isla TANGELO",
       "x": 4,
       "y": 9,
@@ -17,31 +17,31 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_7_ISLAS_POMELO",
-      "name": "7 Islas POMELO",
+      "id": "MAPSEC_SEVEN_GRAPEFRUIT_ISLANDS",
+      "name": "Seven Grapefruit Islands",
       "x": 2,
       "y": 14,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_VALLE_CHARIZARD",
-      "name": "Valle Charizard",
+      "id": "MAPSEC_CHARICIFIC_VALLEY",
+      "name": "Charicific Valley",
       "x": 5,
       "y": 3,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_NAVEL",
-      "name": "Isla NAVEL",
+      "id": "MAPSEC_NAVEL_ISLAND",
+      "name": "Navel Island",
       "x": 3,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_MANDARINA",
+      "id": "MAPSEC_MANDARIN_ROUTE_ISLAND_SOUTH",
       "name": "Isla MANDARINA",
       "x": 4,
       "y": 6,
@@ -49,31 +49,31 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_HAMLIN",
-      "name": "Isla HAMLIN",
+      "id": "MAPSEC_HAMLIN_ISLAND",
+      "name": "Hamlin Island",
       "x": 17,
       "y": 10,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_VALENCIA",
-      "name": "Isla VALENCIA",
+      "id": "MAPSEC_VALENCIA_ISLAND",
+      "name": "Valencia Island",
       "x": 1,
       "y": 9,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_MURCOTT",
-      "name": "Isla MURCOTT",
+      "id": "MAPSEC_MURCOTT_ISLAND",
+      "name": "Murcott Island",
       "x": 8,
       "y": 10,
       "width": 1,
       "height": 2
     },
     {
-      "id": "MAPSEC_ISLA_MANDARIN",
+      "id": "MAPSEC_MANDARIN_ROUTE_ISLAND_NORTH",
       "name": "Isla MANDARIN",
       "x": 8,
       "y": 6,
@@ -81,55 +81,55 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_TROVITA",
-      "name": "Isla TROVITA",
+      "id": "MAPSEC_TROVITA_ISLAND",
+      "name": "Trovita Island",
       "x": 0,
       "y": 5,
       "width": 1,
       "height": 2
     },
     {
-      "id": "MAPSEC_ISLA_SHAMOUTI",
-      "name": "Isla SHAMOUTI",
+      "id": "MAPSEC_SHAMOUTI_ISLAND",
+      "name": "Shamouti Island",
       "x": 12,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_KUMQUAT",
-      "name": "Isla KUMQUAT",
+      "id": "MAPSEC_KUMQUAT_ISLAND",
+      "name": "Kumquat Island",
       "x": 18,
       "y": 3,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_MELLSWEET",
-      "name": "Isla MELLSWEET",
+      "id": "MAPSEC_MELLSWEET_ISLAND",
+      "name": "Mellsweet Island",
       "x": 24,
       "y": 5,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_NUEVA",
-      "name": "Isla NUEVA",
+      "id": "MAPSEC_NEW_ISLAND",
+      "name": "New Island",
       "x": 21,
       "y": 7,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_POMELO",
-      "name": "Isla POMELO",
+      "id": "MAPSEC_PUMMELO_ISLAND",
+      "name": "Pummelo Island",
       "x": 27,
       "y": 8,
       "width": 1,
       "height": 2
     },
     {
-      "id": "MAPSEC_TANGELO",
+      "id": "MAPSEC_TANGELO_TOWN_TOWN",
       "name": "Tangelo",
       "x": 4,
       "y": 10,
@@ -137,32 +137,32 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_VALN_TANG",
-      "name": "Valn-Tang",
+      "id": "MAPSEC_VALENCIA_TANGELO_ROUTE",
+      "name": "Valencia-Tangelo Route",
       "x": 2,
       "y": 9,
       "width": 2,
       "height": 1
     },
     {
-      "id": "MAPSEC_RUTA_AZUL",
-      "name": "Ruta AZUL",
+      "id": "MAPSEC_BLUE_ROUTE",
+      "name": "Blue Route",
       "x": 4,
       "y": 8,
       "width": 4,
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLAS",
-      "name": "Islas",
+      "id": "MAPSEC_ORANGE_ISLANDS",
+      "name": "Orange Islands",
       "x": 0,
       "y": 7,
       "width": 1,
       "height": 3
     },
     {
-      "id": "MAPSEC_ISLA_MIKAN",
-      "name": "Isla MIKAN",
+      "id": "MAPSEC_MIKAN_ISLAND",
+      "name": "Mikan Island",
       "x": 0,
       "y": 10,
       "width": 1,
@@ -177,8 +177,8 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_ISLA_MORO",
-      "name": "Isla MORO",
+      "id": "MAPSEC_MORO_ISLAND",
+      "name": "Moro Island",
       "x": 3,
       "y": 14,
       "width": 3,
@@ -225,31 +225,31 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_NORTE",
-      "name": "Norte",
+      "id": "MAPSEC_NORTH",
+      "name": "North",
       "x": 4,
       "y": 0,
       "width": 4,
       "height": 1
     },
     {
-      "id": "MAPSEC_CAMINO_FRIO",
-      "name": "Camino FRIO",
+      "id": "MAPSEC_COLD_PATH",
+      "name": "Cold Path",
       "x": 1,
       "y": 0,
       "width": 2,
       "height": 3
     },
     {
-      "id": "MAPSEC_ISLA_PINKAN",
-      "name": "Isla PINKAN",
+      "id": "MAPSEC_PINKAN_ISLAND",
+      "name": "Pinkan Island",
       "x": 0,
       "y": 2,
       "width": 1,
       "height": 3
     },
     {
-      "id": "MAPSEC_MANDARIN",
+      "id": "MAPSEC_MANDARIN_ROUTE_ROUTE",
       "name": "Mandarin",
       "x": 1,
       "y": 5,
@@ -257,7 +257,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_DESIERTO",
+      "id": "MAPSEC_MANDARIN_ROUTE_DESERT",
       "name": "Desierto",
       "x": 5,
       "y": 6,
@@ -465,24 +465,24 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_PUEBLO_PALETA",
-      "name": "Pueblo PALETA",
+      "id": "MAPSEC_NARANJA_PALLET_TOWN",
+      "name": "Pallet Town",
       "x": 22,
       "y": 12,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_VALLE_DE_LAS_FLORES",
-      "name": "VALLE DE LAS FLORES",
+      "id": "MAPSEC_FLOWER_VALLEY",
+      "name": "Flower Valley",
       "x": 0,
       "y": 11,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_CUEVA_DE_CRISTAL",
-      "name": "Cueva de CRISTAL",
+      "id": "MAPSEC_CRYSTAL_CAVE",
+      "name": "Crystal Cave",
       "x": 3,
       "y": 5,
       "width": 1,
@@ -505,16 +505,16 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_CUEVA_KABUTO",
-      "name": "Cueva KABUTO",
+      "id": "MAPSEC_KABUTO_CAVE",
+      "name": "Kabuto Cave",
       "x": 0,
       "y": 2,
       "width": 1,
       "height": 1
     },
     {
-      "id": "MAPSEC_CUEVA_KABUTO_2",
-      "name": "Cueva KABUTO",
+      "id": "MAPSEC_KABUTO_CAVE_2",
+      "name": "Kabuto Cave",
       "x": 1,
       "y": 2,
       "width": 1,
@@ -1069,7 +1069,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_MANSION",
-      "name": "POKéMON MANSION",
+      "name": "POK\u00e9MON MANSION",
       "x": 4,
       "y": 14,
       "width": 1,
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_LEAGUE",
-      "name": "POKéMON LEAGUE",
+      "name": "POK\u00e9MON LEAGUE",
       "x": 2,
       "y": 3,
       "width": 1,
@@ -1109,7 +1109,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_TOWER",
-      "name": "POKéMON TOWER",
+      "name": "POK\u00e9MON TOWER",
       "x": 18,
       "y": 6,
       "width": 1,

@@ -1,0 +1,21 @@
+{
+  "id": "MAP_NARANJA_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM",
+  "region": "REGION_HOENN",
+  "name": "Naranja_ShoalCave_HighTideEntranceRoom",
+  "layout": "LAYOUT_NARANJA_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_SHOAL_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

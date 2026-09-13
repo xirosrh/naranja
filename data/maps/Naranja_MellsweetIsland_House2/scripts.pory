@@ -1,0 +1,74 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MellsweetIsland_House2_MapScripts {
+}
+
+script Naranja_MellsweetIsland_House2_EventScript_Man5 {
+    msgbox(Naranja_MellsweetIsland_House2_Text_0818D536, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_House2_EventScript_LittleGirl1 {
+    msgbox(Naranja_MellsweetIsland_House2_Text_0818D596, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_House2_EventScript_Wingull {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    msgbox(Naranja_MellsweetIsland_House2_Text_0818D61E, MSGBOX_DEFAULT)
+    waitmoncry
+    closemessage
+    setflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00E0)
+    clearflag(FLAG_HIDE_NARANJA_SHAMOUTI_ISLAND_G12_M07_WINGULL)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_MellsweetIsland_House2_EventScript_Sub_0815A8AE)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_MellsweetIsland_House2_EventScript_Sub_0815A8B9)
+    removeobject(LOCALID_NARANJA_MELLSWEET_ISLAND_HOUSE2_WINGULL)
+    release
+    end
+}
+
+script Naranja_MellsweetIsland_House2_EventScript_Sub_0815A8AE {
+    applymovement(LOCALID_NARANJA_MELLSWEET_ISLAND_HOUSE2_WINGULL, Naranja_MellsweetIsland_House2_Movement_0815A8C4)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MellsweetIsland_House2_EventScript_Sub_0815A8B9 {
+    applymovement(LOCALID_NARANJA_MELLSWEET_ISLAND_HOUSE2_WINGULL, Naranja_MellsweetIsland_House2_Movement_0815A8CB)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+movement Naranja_MellsweetIsland_House2_Movement_0815A8C4 {
+    walk_fast_right
+    walk_fast_down
+    walk_fast_down
+    walk_fast_left
+    walk_fast_down
+    delay_8
+}
+
+movement Naranja_MellsweetIsland_House2_Movement_0815A8CB {
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    delay_8
+}
+
+text Naranja_MellsweetIsland_House2_Text_0818D536 {
+    "My little sister exchanges MAIL with\nher boyfriend in FORTREE.\pI don’t envy her one bit at all."
+}
+
+text Naranja_MellsweetIsland_House2_Text_0818D596 {
+    "Even though I can’t see my friend in\nFORTREE, my POKéMON carries MAIL back\land forth for us.\pI’m not lonesome, even though we’re\napart."
+}
+
+text Naranja_MellsweetIsland_House2_Text_0818D61E {
+    "WINGULL: Pihyoh!"
+}

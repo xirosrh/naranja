@@ -875,7 +875,7 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     SetWarpDestination(mapGroup, mapNum, WARP_ID_NONE, -1, -1);
 
     // Dont transition map music between BF Outside West/East
-    if (gMapHeader.regionMapSectionId != MAPSEC_PUEBLO_PALETA)
+    if (gMapHeader.regionMapSectionId != MAPSEC_NARANJA_PALLET_TOWN)
         TransitionMapMusic();
 
     ApplyCurrentWarp();
@@ -919,7 +919,7 @@ void LoadMapFromCameraTransition(u8 mapGroup, u8 mapNum)
     }
     else
     {
-        if (gMapHeader.regionMapSectionId != MAPSEC_PUEBLO_PALETA
+        if (gMapHeader.regionMapSectionId != MAPSEC_NARANJA_PALLET_TOWN
          || gMapHeader.regionMapSectionId != sLastMapSectionId)
             ShowMapNamePopup();
     }

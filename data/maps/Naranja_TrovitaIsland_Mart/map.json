@@ -1,0 +1,93 @@
+{
+  "id": "MAP_NARANJA_TROVITA_ISLAND_MART",
+  "region": "REGION_HOENN",
+  "name": "Naranja_TrovitaIsland_Mart",
+  "layout": "LAYOUT_NARANJA_TANGELO_ISLAND_MART",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_TROVITA_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_TROVITA_ISLAND_MART_MART_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TrovitaIsland_Mart_EventScript_MartEmployee",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TROVITA_ISLAND_MART_BOY_1_2",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TrovitaIsland_Mart_EventScript_Boy1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TROVITA_ISLAND_MART_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "x": 8,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_UP_AND_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TrovitaIsland_Mart_EventScript_Woman2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TROVITA_ISLAND_MART_BUG_CATCHER",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 8,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TrovitaIsland_Mart_EventScript_BugCatcher",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TROVITA_ISLAND",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TROVITA_ISLAND",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

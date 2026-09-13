@@ -1,0 +1,256 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_KumquatIsland_Harbor_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_KumquatIsland_Harbor_OnTransition
+}
+
+script Naranja_KumquatIsland_Harbor_OnTransition {
+    setescapewarp(MAP_NARANJA_KUMQUAT_ISLAND, 0xFF, 0xC, 0x21)
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Beauty {
+    lock
+    faceplayer
+    checkitem(ITEM_EON_TICKET, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599EE)
+    goto(Naranja_KumquatIsland_Harbor_EventScript_Sub_081598BA)
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081598BA {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081598CD)
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B306, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081598CD {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B36F, MSGBOX_DEFAULT)
+    checkitem(ITEM_SS_TICKET, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_08159929)
+    message(Naranja_KumquatIsland_Harbor_Text_0818B406)
+    waitmessage
+    goto(Naranja_KumquatIsland_Harbor_EventScript_Sub_081598F1)
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081598F1 {
+    multichoicedefault(0x12, 6, 0x38, 2, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_08159933)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_0815995B)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599E4)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599E4)
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_08159929 {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B3A9, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_08159933 {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B47D, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_0815997E)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 5)
+    call(Naranja_KumquatIsland_Harbor_EventScript_Sub_0815998A)
+    warp(MAP_NARANJA_SSTIDAL_CORRIDOR, 0xFF, 1, 0xA)
+    waitstate
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_0815995B {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B499, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_0815997E)
+    call(Naranja_KumquatIsland_Harbor_EventScript_Sub_0815998A)
+    warp(MAP_NARANJA_BATTLE_TOWER_OUTSIDE, 0xFF, 0x13, 0x17)
+    waitstate
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_0815997E {
+    message(Naranja_KumquatIsland_Harbor_Text_0818B4E2)
+    waitmessage
+    goto(Naranja_KumquatIsland_Harbor_EventScript_Sub_081598F1)
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_0815998A {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B4B3, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    hideobjectat(32783, MAP_NARANJA_KUMQUAT_ISLAND_HARBOR)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599D9)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599CE)
+    delay(0x1E)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_VALENCIA_ISLAND)
+    setvar(VAR_0x8004, 2)
+    call(Naranja_KumquatIsland_Harbor_EventScript_Sub_081A040E)
+    return
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081599CE {
+    applymovement(LOCALID_PLAYER, Naranja_KumquatIsland_Harbor_Movement_08159A86)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081599D9 {
+    applymovement(LOCALID_PLAYER, Naranja_KumquatIsland_Harbor_Movement_08159A89)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081599E4 {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B45B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081599EE {
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(LESS_THAN, Naranja_KumquatIsland_Harbor_EventScript_Sub_081598BA)
+    checkflag(FLAG_NARANJA_SOUTHERN_ISLAND_EVENT_COMPLETE_00CE)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081598BA)
+    checkflag(FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0853)
+    goto_if(LESS_THAN, Naranja_KumquatIsland_Harbor_EventScript_Sub_081598BA)
+    msgbox(Naranja_KumquatIsland_Harbor_Text_081C50F2, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    hideobjectat(32783, MAP_NARANJA_KUMQUAT_ISLAND_HARBOR)
+    delay(0x3C)
+    addobject(LOCALID_NARANJA_KUMQUAT_ISLAND_HARBOR_SAILOR_2)
+    delay(0x1E)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_HARBOR_SAILOR_2, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_KumquatIsland_Harbor_Text_081C5120, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_HARBOR_SAILOR_2, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    removeobject(LOCALID_NARANJA_KUMQUAT_ISLAND_HARBOR_SAILOR_2)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599D9)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_081599CE)
+    delay(0x1E)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_VALENCIA_ISLAND)
+    special(HealPlayerParty)
+    setvar(VAR_0x8004, 2)
+    call(Naranja_KumquatIsland_Harbor_EventScript_Sub_081A040E)
+    warp(MAP_NARANJA_SOUTHERN_ISLAND_EXTERIOR, 0xFF, 0xD, 0x16)
+    waitstate
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sailor {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_KumquatIsland_Harbor_EventScript_Sub_08159AA2)
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B504, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_08159AA2 {
+    msgbox(Naranja_KumquatIsland_Harbor_Text_0818B58E, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_Harbor_EventScript_Sub_081A040E {
+    delay(0x3C)
+    applymovement(32772, Naranja_KumquatIsland_Harbor_Movement_081A041C)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+movement Naranja_KumquatIsland_Harbor_Movement_08159A86 {
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_KumquatIsland_Harbor_Movement_08159A89 {
+    walk_up
+}
+
+movement Naranja_KumquatIsland_Harbor_Movement_081A041C {
+    walk_slow_right
+    walk_slow_right
+    walk_slow_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B306 {
+    "I beg your pardon?\nYou’re looking for a ship?\pI’m sorry, the ferry service isn’t\navailable at present..."
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B36F {
+    "Hello, are you here for the ferry?\nMay I see your TICKET?"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B3A9 {
+    "{PLAYER} no tiene reserva…\pLo sentimos…                 \psin reserva no puedes viajar por ahora."
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B406 {
+    "{PLAYER} flashed the TICKET.\pPerfect! That’s all you need!\pAnd where would you like to go?"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B45B {
+    "Please sail with us another time!"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B47D {
+    "SLATEPORT CITY it is, then!"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B499 {
+    "BATTLE TOWER it is, then!"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B4B3 {
+    "Please board the ferry and wait for\ndeparture."
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B4E2 {
+    "Then, where would you like to go?"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B504 {
+    "Until they finish making the ferry, we\nsailors have nothing to do...\pI wish they’d get a move on, the folks\nat the SHIPYARD in SLATEPORT."
+}
+
+text Naranja_KumquatIsland_Harbor_Text_0818B58E {
+    "The ferry S.S. TIDAL is finally in\noperation.\pThe folks at the SHIPYARD in SLATEPORT\nmust’ve worked extra hard.\pWell, it’s my turn to get busy now!"
+}
+
+text Naranja_KumquatIsland_Harbor_Text_081C50F2 {
+    "The ferry to SLATEPORT is...\pOh?\nThat PASS..."
+}
+
+text Naranja_KumquatIsland_Harbor_Text_081C5120 {
+    "Aye, mate, are you the one who brought\nthat mighty odd PASS?\pI’ll tell you, you’re trying to reach a\ntiny spit of an island far in the south.\pThere’s no telling what we’ll encounter\nonce we reach there, aye.\lThat shivers my timbers!\pAll aboard!"
+}

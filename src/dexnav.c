@@ -2652,7 +2652,7 @@ u32 CalculateDexNavShinyRolls(void)
 void TryIncrementSpeciesSearchLevel()
 {
 #if USE_DEXNAV_SEARCH_LEVELS == TRUE
-    if (gMapHeader.regionMapSectionId != MAPSEC_PUEBLO_PALETA && gSaveBlock3Ptr->dexNavSearchLevels[gDexNavSpecies] < 255)
+    if (gMapHeader.regionMapSectionId != MAPSEC_NARANJA_PALLET_TOWN && gSaveBlock3Ptr->dexNavSearchLevels[gDexNavSpecies] < 255)
         gSaveBlock3Ptr->dexNavSearchLevels[gDexNavSpecies]++;
 #endif
 }

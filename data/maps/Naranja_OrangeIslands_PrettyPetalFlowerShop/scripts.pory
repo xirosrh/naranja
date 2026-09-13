@@ -1,0 +1,164 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_OrangeIslands_PrettyPetalFlowerShop_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_OrangeIslands_PrettyPetalFlowerShop_OnTransition
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_OnTransition {
+    setflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_083C)
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_007F)
+    goto_if(LESS_THAN, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE03)
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
+    goto_if(LESS_THAN, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE03)
+    setflag(FLAG_TEMP_1)
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE03 {
+    setobjectxyperm(LOCALID_NARANJA_ORANGE_ISLANDS_PRETTY_PETAL_FLOWER_SHOP_WOMAN_3, 4, 6)
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Woman3 {
+    lock
+    faceplayer
+    checkflag(FLAG_TEMP_1)
+    goto_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE7C)
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5EC6, MSGBOX_DEFAULT)
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_007F)
+    goto_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE4A)
+    setflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_007F)
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5F48, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE6A)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE73)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE4A {
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5F1B, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE6A)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE73)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE6A {
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5F9D, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE73 {
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6121, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BE7C {
+    message(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081A0C42)
+    waitmessage
+    pokemartdecoration2(Naranja_OrangeIslands_PrettyPetalFlowerShop_Mart_0815BE94)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Girl3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_005E)
+    goto_if(LESS_THAN, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BEB9)
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C61E8, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BEB9 {
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6158, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x10C)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C61E8, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_005E)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Girl1 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_08D0)
+    goto_if(EQUAL, Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BF1A)
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C62DA, MSGBOX_DEFAULT)
+    random(8)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_08D0)
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6335, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_OrangeIslands_PrettyPetalFlowerShop_EventScript_Sub_0815BF1A {
+    msgbox(Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6335, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+mart Naranja_OrangeIslands_PrettyPetalFlowerShop_Mart_0815BE94 {
+    ITEM_FULL_RESTORE
+    ITEM_MAX_POTION
+    ITEM_HYPER_POTION
+    ITEM_SUPER_POTION
+    ITEM_FULL_HEAL
+    ITEM_REVIVE
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081A0C42 {
+    "{PLAYER}{KUN}, welcome!\pWhat can I do for you?"
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5EC6 {
+    "Hello!\pThis is the PRETTY PETAL flower shop.\nSpreading flowers throughout the world!"
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5F1B {
+    "{PLAYER}{KUN}, would you like to learn about\nBERRIES?"
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5F48 {
+    "Your name is?\p{PLAYER}{KUN}.\nThat’s a nice name.\p{PLAYER}{KUN}, would you like to learn about\nBERRIES?"
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C5F9D {
+    "BERRIES grow on trees that thrive\nonly in dark, loamy soil.\pIf you take some BERRIES, be sure to\nplant one in the loamy soil again.\pA planted BERRY will soon sprout,\ngrow into a plant, flower beautifully,\lthen grow BERRIES again.\pI want to see the whole wide world\nfilled with beautiful flowers.\lThat’s my dream.\pPlease help me, {PLAYER}{KUN}. Plant BERRIES\nand bring more flowers into the world."
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6121 {
+    "Flowers bring so much happiness to\npeople, don’t they?"
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6158 {
+    "Hello!\pThe more attention you give to flowers,\nthe more beautifully they bloom.\pYou’ll like tending flowers. I’m sure\nof it. You can have this."
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C61E8 {
+    "While BERRY plants are growing,\nwater them with the WAILMER PAIL.\pOh, another thing.\pIf you don’t pick BERRIES for a while,\nthey’ll drop off onto the ground.\lBut they’ll sprout again.\pIsn’t that awesome?\nIt’s like they have the will to live."
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C62DA {
+    "I’m trying to be like my big sisters.\nI’m growing flowers, too!\pHere you go! It’s for you!"
+}
+
+text Naranja_OrangeIslands_PrettyPetalFlowerShop_Text_081C6335 {
+    "You can plant a BERRY and grow it big,\nor you can make a POKéMON hold it.\pBut now they have a machine that mixes\nup different BERRIES and makes candies\lfor POKéMON.\pI want some candy, too."
+}

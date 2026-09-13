@@ -1,0 +1,23 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_House5_MapScripts {
+}
+
+script Naranja_NewIsland_House5_EventScript_Maniac {
+    msgbox(Naranja_NewIsland_House5_Text_0818FDEC, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_House5_EventScript_Girl3 {
+    msgbox(Naranja_NewIsland_House5_Text_0818FE7B, MSGBOX_NPC)
+    end
+}
+
+text Naranja_NewIsland_House5_Text_0818FDEC {
+    "There appears to be some connection\nbetween SOOTOPOLIS and MT. PYRE.\pMy friends and I did some research on\nit at the lab where I used to work."
+}
+
+text Naranja_NewIsland_House5_Text_0818FE7B {
+    "My big brother used to study the sea."
+}

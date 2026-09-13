@@ -1,0 +1,124 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_2F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ICE_STEP_COUNT, 0: Naranja_MtPyre_2F_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MtPyre_2F_OnTransition
+    MAP_SCRIPT_ON_RESUME: Naranja_MtPyre_2F_OnResume
+}
+
+script Naranja_MtPyre_2F_OnResume {
+    setstepcallback(7)
+    setholewarp(MAP_NARANJA_MT_PYRE_1F, 0xFF, 0, 0)
+    end
+}
+
+script Naranja_MtPyre_2F_EventScript_Woman1 {
+    msgbox(Naranja_MtPyre_2F_Text_081965BB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MtPyre_2F_EventScript_Man3 {
+    msgbox(Naranja_MtPyre_2F_Text_08196600, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MtPyre_2F_EventScript_Maniac {
+    trainerbattle_single(TRAINER_NARANJA_BEMENTER_145, Naranja_MtPyre_2F_Text_08196674, Naranja_MtPyre_2F_Text_081966BE)
+    msgbox(Naranja_MtPyre_2F_Text_081966E7, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_2F_EventScript_Man5 {
+    trainerbattle_double(TRAINER_NARANJA_BEMENTER_640, Naranja_MtPyre_2F_Text_081962C6, Naranja_MtPyre_2F_Text_08196358, Naranja_MtPyre_2F_Text_081963CB)
+    msgbox(Naranja_MtPyre_2F_Text_08196368, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_2F_EventScript_Woman5 {
+    trainerbattle_double(TRAINER_NARANJA_BEMENTER_640, Naranja_MtPyre_2F_Text_08196449, Naranja_MtPyre_2F_Text_081964EB, Naranja_MtPyre_2F_Text_08196539)
+    msgbox(Naranja_MtPyre_2F_Text_08196504, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_2F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 2)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_MtPyre_2F_OnTransition {
+    setvar(VAR_ICE_STEP_COUNT, 1)
+    end
+}
+
+script Naranja_MtPyre_2F_OnFrame_1 {
+    lockall
+    delay(0x14)
+    applymovement(LOCALID_PLAYER, Naranja_MtPyre_2F_Movement_081C6BF7)
+    waitmovement(LOCALID_NONE)
+    playse(SE_FALL)
+    delay(0x3C)
+    warphole(MAP_UNDEFINED)
+    waitstate
+    end
+}
+
+movement Naranja_MtPyre_2F_Movement_081C6BF7 {
+    set_invisible
+}
+
+text Naranja_MtPyre_2F_Text_081962C6 {
+    "LUKE: We’re here on a dare.\pHeheh, if I show her how cool I am,\nshe’ll fall for me. I know it!\pI know! I’ll cream you and show her\nhow cool I am!"
+}
+
+text Naranja_MtPyre_2F_Text_08196358 {
+    "LUKE: Whoopsie!"
+}
+
+text Naranja_MtPyre_2F_Text_08196368 {
+    "LUKE: Well, we lost but that’s okay!\nI’m right here by your side.\lWe’ll make it through this dare!"
+}
+
+text Naranja_MtPyre_2F_Text_081963CB {
+    "LUKE: If you want to take me on, bring\nsome more POKéMON.\pIf you don’t, I won’t be able to show\noff how cool I am to my girl!"
+}
+
+text Naranja_MtPyre_2F_Text_08196449 {
+    "DEZ: I came here on a dare with my\nboyfriend.\pIt’s really scary, but I’m with my\nboyfriend. It’s okay.\pI know! I’ll get my boyfriend to look\ncool by beating you!"
+}
+
+text Naranja_MtPyre_2F_Text_081964EB {
+    "DEZ: Waaaah! I’m scared!"
+}
+
+text Naranja_MtPyre_2F_Text_08196504 {
+    "DEZ: We’re lovey-dovey, so we don’t\ncare if we lose!"
+}
+
+text Naranja_MtPyre_2F_Text_08196539 {
+    "DEZ: If you want to challenge us, you\nshould bring at least two POKéMON.\pMy boyfriend’s strong.\nJust one POKéMON won’t do at all."
+}
+
+text Naranja_MtPyre_2F_Text_081965BB {
+    "Memories of my darling SKITTY...\nMy eyes overflow thinking about it."
+}
+
+text Naranja_MtPyre_2F_Text_08196600 {
+    "Ooch, ouch... There are holes in the\nground here and there.\pI didn’t notice and took a tumble from\nthe floor above."
+}
+
+text Naranja_MtPyre_2F_Text_08196674 {
+    "Hey! Are you searching for POKéMON?\nYou came along after me! You’re rude!"
+}
+
+text Naranja_MtPyre_2F_Text_081966BE {
+    "Ayieeeeh!\nI’m sorry, forgive me, please!"
+}
+
+text Naranja_MtPyre_2F_Text_081966E7 {
+    "People don’t come here often, so\nI thought there’d be rare POKéMON."
+}

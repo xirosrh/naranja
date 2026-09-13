@@ -1,0 +1,12 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MeteorFalls_B1F_2R_MapScripts {
+}
+
+script Naranja_MeteorFalls_B1F_2R_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x122)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}

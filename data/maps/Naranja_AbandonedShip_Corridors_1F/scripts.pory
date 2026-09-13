@@ -1,0 +1,32 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_Corridors_1F_MapScripts {
+}
+
+script Naranja_AbandonedShip_Corridors_1F_EventScript_Youngster {
+    msgbox(Naranja_AbandonedShip_Corridors_1F_Text_081984D8, MSGBOX_NPC)
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_1F_EventScript_TuberM {
+    trainerbattle_single(TRAINER_NARANJA_BANDONED_SHIP_066, Naranja_AbandonedShip_Corridors_1F_Text_0819843D, Naranja_AbandonedShip_Corridors_1F_Text_08198479)
+    msgbox(Naranja_AbandonedShip_Corridors_1F_Text_08198493, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_AbandonedShip_Corridors_1F_Text_0819843D {
+    "What’s so funny about having my inner\ntube aboard the ship?"
+}
+
+text Naranja_AbandonedShip_Corridors_1F_Text_08198479 {
+    "Whoa, you overwhelmed me!"
+}
+
+text Naranja_AbandonedShip_Corridors_1F_Text_08198493 {
+    "It’s not easy throwing POKé BALLS\nwhile hanging on to an inner tube!"
+}
+
+text Naranja_AbandonedShip_Corridors_1F_Text_081984D8 {
+    "Isn’t it fun here?\nI get excited just being here!"
+}

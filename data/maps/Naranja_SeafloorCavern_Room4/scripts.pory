@@ -1,0 +1,29 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SeafloorCavern_Room4_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SeafloorCavern_Room4_OnTransition
+}
+
+script Naranja_SeafloorCavern_Room4_OnTransition {
+    call(Naranja_MtPyre_Summit_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_SeafloorCavern_Room4_EventScript_Object1 {
+    trainerbattle_single(TRAINER_NARANJA_SEAFLOOR_CAVERN_573, Naranja_SeafloorCavern_Room4_Text_081977B9, Naranja_SeafloorCavern_Room4_Text_081977E2)
+    msgbox(Naranja_SeafloorCavern_Room4_Text_081977ED, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_SeafloorCavern_Room4_Text_081977B9 {
+    "Who are you?\nWhere did you come in from?"
+}
+
+text Naranja_SeafloorCavern_Room4_Text_081977E2 {
+    "Lost it..."
+}
+
+text Naranja_SeafloorCavern_Room4_Text_081977ED {
+    "I can’t find the way out!\pI’m not afraid. Don’t get me wrong!"
+}

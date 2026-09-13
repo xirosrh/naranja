@@ -1,0 +1,27 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_Rooms_B1F_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_AbandonedShip_Rooms_B1F_OnResume
+}
+
+script Naranja_AbandonedShip_Rooms_B1F_OnResume {
+    setdivewarp(MAP_NARANJA_ABANDONED_SHIP_UNDERWATER2, 0xFF, 0x11, 4)
+    end
+}
+
+script Naranja_AbandonedShip_Rooms_B1F_EventScript_FatMan {
+    msgbox(Naranja_AbandonedShip_Rooms_B1F_Text_081986FE, MSGBOX_NPC)
+    end
+}
+
+script Naranja_AbandonedShip_Rooms_B1F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x55)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_AbandonedShip_Rooms_B1F_Text_081986FE {
+    "Urrrrppp...\pI’m getting queasy just being aboard\nthis ship...\pIt’s not even moving, but..."
+}

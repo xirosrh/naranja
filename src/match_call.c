@@ -1071,7 +1071,7 @@ static bool32 MapAllowsMatchCall(void)
     if (!Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) || gMapHeader.regionMapSectionId == MAPSEC_SAFARI)
         return FALSE;
 
-    if (gMapHeader.regionMapSectionId == MAPSEC_ISLA_NUEVA
+    if (gMapHeader.regionMapSectionId == MAPSEC_NEW_ISLAND
      && FlagGet(FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA) == TRUE
      && FlagGet(FLAG_NEVER_SET_0x0DC) == FALSE)
         return FALSE;

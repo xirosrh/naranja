@@ -1,0 +1,131 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SealedChamber_InnerRoom_MapScripts {
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_1 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C53C1)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    checkflag(FLAG_NARANJA_SEALED_CHAMBER_EVENT_COMPLETE_00E4)
+    goto_if(EQUAL, Naranja_SealedChamber_InnerRoom_EventScript_Sub_0815F247)
+    specialvar(VAR_RESULT, CheckRelicanthWailord)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SealedChamber_InnerRoom_EventScript_Sub_0815F247)
+    fadeoutbgm(0)
+    playse(SE_TRUCK_MOVE)
+    special(DoSealedChamberShakingEffect_Long)
+    waitstate
+    delay(0x28)
+    special(DoSealedChamberShakingEffect_Short)
+    waitstate
+    playse(SE_DOOR)
+    delay(0x28)
+    special(DoSealedChamberShakingEffect_Short)
+    waitstate
+    playse(SE_DOOR)
+    delay(0x28)
+    special(DoSealedChamberShakingEffect_Short)
+    waitstate
+    playse(SE_DOOR)
+    delay(0x28)
+    msgbox(Naranja_SealedChamber_InnerRoom_Text_081A138B, MSGBOX_DEFAULT)
+    closemessage
+    fadeinbgm(0)
+    setflag(FLAG_NARANJA_SEALED_CHAMBER_EVENT_COMPLETE_00E4)
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sub_0815F247 {
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_2 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C53F2)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_3 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C5414)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_4 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C5435)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_5 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C545C)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_6 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C5470)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_SealedChamber_InnerRoom_EventScript_Sign_7 {
+    lockall
+    braillemessage(Naranja_SealedChamber_InnerRoom_Text_081C549B)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081A138B {
+    "It sounded as if a door opened\nsomewhere far away."
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C53C1 {
+    "Â éÛÈÂÊÉëàì ÂçÛÌà\nëÌßÉÂÀéìÒわ\nßÀàì ÂçÛÌà\n+ÀÉßçëÎわ"
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C53F2 {
+    "É àÛËÂÉé ìÒÉà\nÂÀ=Ì +Ì\nÒÀ=Ì\nßÉ=ÌÎわ"
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C5414 {
+    "ÇÁèÙÉÈ+Ì ç+Ì Àßß\nìç ìÒÌ\náçÙÌÛçéわ"
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C5435 {
+    "Â çÛÈÂÈぅìÇ +Ì\nàÌÀßÌÎ ìÒÌ\náçÙÌÛçé\nÀ+Àごわ"
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C545C {
+    "ÀÉëÒÂÌ+Ì ÊÌÀëÌÎ Éìわ"
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C5470 {
+    "Ç èÛÉÂìÒçàÌ +ÉìÒ\nÂçぅëÀÔÌÇ\nìÒçàÌ +ÉìÒ\nÒçáÌわ"
+}
+
+text Naranja_SealedChamber_InnerRoom_Text_081C549B {
+    "Á êÛÇÂçáÌé À Îççëわ\nÀé ÌìÌëéÀß\náçÙÌÛçé\n+ÀÉìàわ"
+}

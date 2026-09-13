@@ -1,0 +1,57 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SeafloorCavern_Room2_MapScripts {
+}
+
+script Naranja_SeafloorCavern_Room2_EventScript_Tracey {
+    trainerbattle_single(TRAINER_NARANJA_TANGELO_TOWN_TOWN_333, Naranja_SeafloorCavern_Room2_Text_081B7B68, Naranja_SeafloorCavern_Room2_Text_081B7B9D, Naranja_SeafloorCavern_Room2_EventScript_AfterBattle_086B5CD4)
+    end
+}
+
+script Naranja_SeafloorCavern_Room2_EventScript_BigLaprasDoll {
+    lock
+    faceplayer
+    msgbox(Naranja_SeafloorCavern_Room2_Text_081955B0, MSGBOX_AUTOCLOSE)
+    setflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_TOWN_G24_M29_BIG_LAPRAS_DOLL)
+    clearflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G02_M02_WALLY)
+    clearflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G02_M02_BOY_1_3)
+    givemon(SPECIES_LAPRAS, 5, 0)
+    warp(MAP_NARANJA_TANGELO_ISLAND_POKEMON_CENTER_1F, 1, 0, 0)
+    end
+}
+
+script Naranja_SeafloorCavern_Room2_EventScript_BigWailmerDoll {
+    lock
+    nop
+    msgbox(Naranja_SeafloorCavern_Room2_Text_086B5340, MSGBOX_AUTOCLOSE)
+    release
+    end
+}
+
+script Naranja_SeafloorCavern_Room2_EventScript_AfterBattle_086B5CD4 {
+    nop
+    setflag(FLAG_BADGE05_GET)
+    msgbox(Naranja_SeafloorCavern_Room2_Text_081B7BD0, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_SeafloorCavern_Room2_Text_081955B0 {
+    "{COLOR 0x06}Hiii hiii\p{COLOR 0x04}{PLAYER}: ¡Pobre lapras!\nLe han atacado, pero sus heridas\lya han mejorado mejor.\pNecesita ayuda de un experto.\n¿No crees Tacey?\p{COLOR 0x03}Tracey: Quizás sì.\pLo mejor será llevarlo al centro pokemon.\n¡Vamos!"
+}
+
+text Naranja_SeafloorCavern_Room2_Text_081B7B68 {
+    "{COLOR 0x03}Tracey: ¿Conoces al Prf. OAK?\n¡¡ Demuéstramelo !!"
+}
+
+text Naranja_SeafloorCavern_Room2_Text_081B7B9D {
+    "{COLOR 0x0D}¡Te llevas de maravilla\ncon tus pokemon !"
+}
+
+text Naranja_SeafloorCavern_Room2_Text_081B7BD0 {
+    "{COLOR 0x03}Este Lapras te ayudará a moverte \npor el mar."
+}
+
+text Naranja_SeafloorCavern_Room2_Text_086B5340 {
+    "No sé porque estára\neste wailmer en el centro\pDesde luego no parece\nque sea por depresión."
+}

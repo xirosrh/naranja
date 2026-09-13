@@ -223,7 +223,7 @@ def merge_simple_sources(mapping):
     new_game = replace_tokens(blob(3, "src/new_game.c"), mapping)
     new_game = new_game.replace(
         "SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);",
-        "SetWarpDestination(MAP_GROUP(MAP_NARANJA_INSIDE_OF_TRUCK_G25_M40), MAP_NUM(MAP_NARANJA_INSIDE_OF_TRUCK_G25_M40), WARP_ID_NONE, -1, -1);",
+        "SetWarpDestination(MAP_GROUP(MAP_NARANJA_INSIDE_OF_TRUCK), MAP_NUM(MAP_NARANJA_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);",
     )
     write("src/new_game.c", new_game)
 

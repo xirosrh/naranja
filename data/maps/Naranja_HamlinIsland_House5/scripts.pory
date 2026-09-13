@@ -1,0 +1,39 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_HamlinIsland_House5_MapScripts {
+}
+
+script Naranja_HamlinIsland_House5_EventScript_OldMan1 {
+    lock
+    faceplayer
+    specialvar(VAR_RESULT, IsMirageIslandPresent)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_HamlinIsland_House5_EventScript_Sub_081543B0)
+    msgbox(Naranja_HamlinIsland_House5_Text_08179718, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House5_EventScript_Sub_081543B0 {
+    msgbox(Naranja_HamlinIsland_House5_Text_0817973B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House5_EventScript_Gentleman {
+    msgbox(Naranja_HamlinIsland_House5_Text_08179765, MSGBOX_NPC)
+    end
+}
+
+text Naranja_HamlinIsland_House5_Text_08179718 {
+    "I can’t see MIRAGE ISLAND today..."
+}
+
+text Naranja_HamlinIsland_House5_Text_0817973B {
+    "Oh! Oh my!\nI can see MIRAGE ISLAND today!"
+}
+
+text Naranja_HamlinIsland_House5_Text_08179765 {
+    "MIRAGE ISLAND...\pIt must become visible and invisible\ndepending on the weather conditions\lthat make mirages appear.\pOr is it really appearing and\ndisappearing?"
+}

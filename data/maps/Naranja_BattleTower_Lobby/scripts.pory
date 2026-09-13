@@ -1,0 +1,757 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_BattleTower_Lobby_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_BattleTower_Lobby_OnResume
+    MAP_SCRIPT_ON_TRANSITION: Naranja_BattleTower_Lobby_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_TEMP_0, 0: Naranja_BattleTower_Lobby_OnFrame_1
+        VAR_TEMP_0, 1: Naranja_BattleTower_Lobby_OnFrame_2
+        VAR_TEMP_0, 2: Naranja_BattleTower_Lobby_OnFrame_3
+        VAR_TEMP_0, 3: Naranja_BattleTower_Lobby_OnFrame_4
+        VAR_TEMP_0, 4: Naranja_BattleTower_Lobby_OnFrame_5
+    ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_1, 0: Naranja_BattleTower_Lobby_OnWarp_1
+    ]
+}
+
+script Naranja_BattleTower_Lobby_OnResume {
+    special(TryHideBattleTowerReporter)
+    call(Naranja_BattleTower_Lobby_EventScript_Sub_0816029C)
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_0816029C {
+    setvar(VAR_0x8004, 0xA)
+    special(CallBattleArenaFunction)
+    checkflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00EE)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081602E4)
+    checkflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00ED)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081602CD)
+    specialvar(VAR_0x8007, GetBattleTowerSinglesStreak)
+    compare_var_to_value(VAR_0x8007, 0x32)
+    goto_if(LESS_THAN, Naranja_BattleTower_Lobby_EventScript_Sub_081602E4)
+    clearflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_MAN_2)
+    special(TryInitBattleTowerAwardManObjectEvent)
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081602CD {
+    specialvar(VAR_0x8007, GetBattleTowerSinglesStreak)
+    compare_var_to_value(VAR_0x8007, 0x64)
+    goto_if(LESS_THAN, Naranja_BattleTower_Lobby_EventScript_Sub_081602E4)
+    clearflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_MAN_2)
+    special(TryInitBattleTowerAwardManObjectEvent)
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081602E4 {
+    setflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_MAN_2)
+    return
+}
+
+script Naranja_BattleTower_Lobby_OnTransition {
+    call(Naranja_BattleTower_Lobby_EventScript_Sub_081AE2ED)
+    end
+}
+
+script Naranja_BattleTower_Lobby_OnWarp_1 {
+    setvar(VAR_TEMP_1, 1)
+    turnobject(LOCALID_PLAYER, 2)
+    end
+}
+
+script Naranja_BattleTower_Lobby_OnFrame_1 {
+    special(CallFrontierUtilFunc)
+    end
+}
+
+script Naranja_BattleTower_Lobby_OnFrame_2 {
+    lock
+    faceplayer
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A3FD, MSGBOX_DEFAULT)
+    closemessage
+    setvar(VAR_TEMP_0, 5)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_OnFrame_3 {
+    lock
+    faceplayer
+    message(Naranja_BattleTower_Lobby_Text_0819A487)
+    waitmessage
+    setvar(VAR_0x8004, 0)
+    special(CallBattleFactoryFunction)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816037D)
+    special(CallSlateportTentFunction)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816037D)
+    message(Naranja_BattleTower_Lobby_Text_0819A6BE)
+    waitmessage
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A719, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_0816037D)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_0816037D {
+    setvar(VAR_0x8004, 8)
+    special(CallBattleFactoryFunction)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081603AD)
+    message(Naranja_BattleTower_Lobby_Text_0819A589)
+    waitmessage
+    setvar(VAR_0x8004, 0xD)
+    special(CallBattleArenaFunction)
+    special(CallVerdanturfTentFunction)
+    setvar(VAR_0x8004, 3)
+    special(CallBattlePyramidFunction)
+    playse(SE_SAVE)
+    waitse
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_081603AD)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081603AD {
+    setvar(VAR_0x8004, 0)
+    setvar(VAR_0x8005, 3)
+    special(CallBattleArenaFunction)
+    message(Naranja_BattleTower_Lobby_Text_0819A4BB)
+    waitmessage
+    special(CallFallarborTentFunction)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160408)
+    message(Naranja_BattleTower_Lobby_Text_0819A506)
+    waitmessage
+    playfanfare(MUS_OBTAIN_ITEM)
+    waitfanfare
+    setvar(VAR_0x8004, 9)
+    special(CallBattleFactoryFunction)
+    compare_var_to_value(VAR_RESULT, 0x31)
+    goto_if(NOT_EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081603F8)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A617, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_081603F8)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081603F8 {
+    msgbox(Naranja_BattleTower_Lobby_Text_08199FA9, MSGBOX_DEFAULT)
+    closemessage
+    setvar(VAR_TEMP_0, 5)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160408 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A520, MSGBOX_DEFAULT)
+    waitmessage
+    closemessage
+    setvar(VAR_TEMP_0, 5)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_OnFrame_4 {
+    lock
+    faceplayer
+    message(Naranja_BattleTower_Lobby_Text_0819A571)
+    waitmessage
+    message(Naranja_BattleTower_Lobby_Text_0819A589)
+    waitmessage
+    setvar(VAR_0x8004, 0xD)
+    special(CallBattleArenaFunction)
+    setvar(VAR_0x8004, 0)
+    special(CallBattlePyramidFunction)
+    playse(SE_SAVE)
+    waitse
+    msgbox(Naranja_BattleTower_Lobby_Text_08199FA9, MSGBOX_DEFAULT)
+    closemessage
+    setvar(VAR_TEMP_0, 5)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_OnFrame_5 {
+    lock
+    faceplayer
+    setvar(VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_6, 1)
+    message(Naranja_BattleTower_Lobby_Text_0819A5B1)
+    waitmessage
+    message(Naranja_BattleTower_Lobby_Text_0819A5CE)
+    waitmessage
+    setvar(VAR_0x8004, 1)
+    special(CallBattlePyramidFunction)
+    playse(SE_SAVE)
+    waitse
+    setvar(VAR_0x8004, 8)
+    setvar(VAR_0x8005, 0)
+    special(CallBattleArenaFunction)
+    setvar(VAR_TEMP_0, 5)
+    special(SavePlayerParty)
+    special(CallBattlePikeFunction)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A0A8, MSGBOX_DEFAULT)
+    closemessage
+    call(Naranja_BattleTower_Lobby_EventScript_Sub_08160664)
+    warp(MAP_NARANJA_BATTLE_TOWER_ELEVATOR, 0xFF, 1, 6)
+    setvar(VAR_TEMP_0, 0)
+    waitstate
+    goto(Naranja_BattleTower_Lobby_EventScript_Teala)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Teala {
+    lock
+    faceplayer
+    setvar(VAR_0x8004, 0)
+    special(CallBattleFactoryFunction)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_OnFrame_3)
+    special(SavePlayerParty)
+    msgbox(Naranja_BattleTower_Lobby_Text_08199F2C, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_081604BE)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081604BE {
+    message(Naranja_BattleTower_Lobby_Text_08199F79)
+    waitmessage
+    multichoice(0xF, 6, 0x17, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081604FA)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160600)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160652)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160652)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_081604FA)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081604FA {
+    message(Naranja_BattleTower_Lobby_Text_0819A024)
+    waitmessage
+    multichoice(0x12, 6, 0x18, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160652)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160652)
+    special(CallBattleDomeFunction)
+    compare_var_to_value(VAR_0x8004, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816060D)
+    setvar(VAR_0x8004, 1)
+    copyvar(VAR_0x8005, VAR_RESULT)
+    copyvar(VAR_0x8006, VAR_RESULT)
+    special(CallBattleArenaFunction)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A07B, MSGBOX_DEFAULT)
+    fadescreen(1)
+    special(ChoosePartyForBattleFrontier)
+    waitstate
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816064F)
+    msgbox(Naranja_BattleTower_Lobby_Text_08199FDA, MSGBOX_YESNO)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816064F)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160587)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816064F)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160587)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160587 {
+    setvar(VAR_0x8004, 5)
+    special(CallBattleArenaFunction)
+    setvar(VAR_TEMP_0, 0)
+    setvar(VAR_0x8004, 0xB)
+    special(CallBattleArenaFunction)
+    setvar(VAR_0x8004, 0)
+    setvar(VAR_0x8005, 1)
+    special(CallBattleArenaFunction)
+    setvar(VAR_0x8004, 8)
+    setvar(VAR_0x8005, 0)
+    special(CallBattleArenaFunction)
+    special(LoadPlayerParty)
+    closemessage
+    delay(2)
+    call(Naranja_BattleTower_Lobby_EventScript_Sub_0819F806)
+    setvar(VAR_TEMP_0, 5)
+    erasebox(0, 0, 0xF, 0xA)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160642)
+    incrementgamestat(0x1E)
+    special(SavePlayerParty)
+    special(CallBattlePikeFunction)
+    setvar(VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_6, 1)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A0A8, MSGBOX_DEFAULT)
+    closemessage
+    call(Naranja_BattleTower_Lobby_EventScript_Sub_08160664)
+    warp(MAP_NARANJA_BATTLE_TOWER_ELEVATOR, 0xFF, 1, 6)
+    setvar(VAR_TEMP_0, 0)
+    waitstate
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160600)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160600 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A0D1, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_081604BE)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_0816060D {
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160628)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160635)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160628)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160628 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A249, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160662)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160635 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A32D, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160662)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160642 {
+    setvar(VAR_0x8004, 0xC)
+    special(CallBattleArenaFunction)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160652)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_0816064F {
+    special(LoadPlayerParty)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160652)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160652 {
+    msgbox(Naranja_BattleTower_Lobby_Text_08199FA9, MSGBOX_DEFAULT)
+    setvar(VAR_0x8004, 0xB)
+    special(CallBattleArenaFunction)
+    goto(Naranja_BattleTower_Lobby_EventScript_Sub_08160662)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160662 {
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160664 {
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_LOBBY_TEALA, Naranja_BattleTower_Lobby_Movement_08160693)
+    applymovement(LOCALID_PLAYER, Naranja_BattleTower_Lobby_Movement_08160693)
+    waitmovement(LOCALID_NONE)
+    opendoor(6, 1)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_LOBBY_TEALA, Naranja_BattleTower_Lobby_Movement_08160697)
+    applymovement(LOCALID_PLAYER, Naranja_BattleTower_Lobby_Movement_0816069A)
+    waitmovement(LOCALID_NONE)
+    closedoor(6, 1)
+    waitdooranim
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Man5 {
+    lock
+    faceplayer
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A747, MSGBOX_YESNO)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081606CC)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081606F7)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081606CC {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A7C3, MSGBOX_DEFAULT)
+    setvar(VAR_0x8004, 1)
+    call(Naranja_Route123_BerryMastersHouse_EventScript_Sub_081A00F3)
+    lock
+    faceplayer
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160701)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_0816070B)
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081606F7 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A7FD, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160701 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A83D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_0816070B {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A871, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Woman7 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A8AE, MSGBOX_NPC)
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Boy1 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A946, MSGBOX_NPC)
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sign_1 {
+    lockall
+    special(FadeOutOrbEffect)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Man2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00EE)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081607C5)
+    checkflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00ED)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_08160773)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819A9EE, MSGBOX_DEFAULT)
+    setvar(VAR_0x8008, 0x2A)
+    setorcopyvar(VAR_0x8000, 0x2A)
+    callstd(7)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081607AF)
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00ED)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819ABAA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_08160773 {
+    specialvar(VAR_RESULT, GetBattleTowerSinglesStreak)
+    compare_var_to_value(VAR_RESULT, 0x64)
+    goto_if(LESS_THAN, Naranja_BattleTower_Lobby_EventScript_Sub_081607C5)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819AAC4, MSGBOX_DEFAULT)
+    setvar(VAR_0x8008, 0x2B)
+    setorcopyvar(VAR_0x8000, 0x2B)
+    callstd(7)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081607AF)
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00EE)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819ABAA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081607AF {
+    bufferdecorationname(1, 0x8008)
+    msgbox(Naranja_NewIsland_House6_Text_081A0CEF, MSGBOX_DEFAULT)
+    msgbox(Naranja_BattleTower_Lobby_Text_0819ABED, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081607C5 {
+    msgbox(Naranja_BattleTower_Lobby_Text_0819AC55, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_0819F806 {
+    special(SaveGame)
+    waitstate
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_ReporterF {
+    lock
+    faceplayer
+    checkflag(FLAG_TEMP_2)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2E3)
+    setvar(VAR_0x8005, 7)
+    special(InterviewBefore)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2E3)
+    copyvar(VAR_0x8009, VAR_0x8006)
+    msgbox(Naranja_BattleTower_Lobby_Text_081A776D, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE241)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE297)
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE241 {
+    message(Naranja_BattleTower_Lobby_Text_081A7823)
+    waitmessage
+    multichoice(0x13, 8, 0x2D, 1)
+    copyvar(VAR_0x8008, VAR_RESULT)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2A1)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2AA)
+    msgbox(Naranja_BattleTower_Lobby_Text_081A79EB, MSGBOX_DEFAULT)
+    setvar(VAR_0x8004, 0xC)
+    copyvar(VAR_0x8005, VAR_0x8009)
+    call(Naranja_Route123_BerryMastersHouse_EventScript_Sub_081A00F3)
+    lock
+    faceplayer
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2B3)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2D9)
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE297 {
+    msgbox(Naranja_BattleTower_Lobby_Text_081A78B7, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE2A1 {
+    msgbox(Naranja_BattleTower_Lobby_Text_081A791B, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE2AA {
+    msgbox(Naranja_BattleTower_Lobby_Text_081A7990, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE2B3 {
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE2D9)
+    msgbox(Naranja_BattleTower_Lobby_Text_081A7A6E, MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_2)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    setvar(VAR_0x8005, 7)
+    goto(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_081ADE46)
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE2D9 {
+    msgbox(Naranja_BattleTower_Lobby_Text_081A7AE0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE2E3 {
+    msgbox(Naranja_BattleTower_Lobby_Text_081A7B66, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE2ED {
+    compare_var_to_value(VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_6, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE30F)
+    setvar(VAR_0x8005, 7)
+    special(InterviewBefore)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Lobby_EventScript_Sub_081AE30F)
+    clearflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_REPORTER_F)
+    return
+}
+
+script Naranja_BattleTower_Lobby_EventScript_Sub_081AE30F {
+    setflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_REPORTER_F)
+    return
+}
+
+movement Naranja_BattleTower_Lobby_Movement_08160693 {
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_BattleTower_Lobby_Movement_08160697 {
+    walk_up
+    set_invisible
+}
+
+movement Naranja_BattleTower_Lobby_Movement_0816069A {
+    walk_up
+    walk_up
+    set_invisible
+}
+
+text Naranja_BattleTower_Lobby_Text_08199F2C {
+    "Welcome to the BATTLE TOWER!\pPlease register with me to enter\na BATTLE ROOM."
+}
+
+text Naranja_BattleTower_Lobby_Text_08199F79 {
+    "Would you like to make a BATTLE ROOM\nchallenge?"
+}
+
+text Naranja_BattleTower_Lobby_Text_08199FA9 {
+    "We’ll be looking forward to your\nnext challenge."
+}
+
+text Naranja_BattleTower_Lobby_Text_08199FDA {
+    "Before entering a BATTLE ROOM, your\nprogress must be saved. Is that okay?"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A024 {
+    "There are two BATTLE ROOMS,\nLevel 50 and Level 100.\lWhich would you like to challenge?"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A07B {
+    "Please select the POKéMON you wish\nto enter."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A0A8 {
+    "I’ll direct you to your BATTLE ROOM now."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A0D1 {
+    "The BATTLE TOWER is a facility made\nespecially for POKéMON battles.\pWithin the TOWER are many BATTLE ROOMS.\pIn each BATTLE ROOM, seven TRAINERS\nawait your challenge.\pBeat all seven, and you will be rewarded\nwith a fabulous prize.\pYou may also take a break from your\nchallenge by saving your progress.\pMake sure you save properly or you\nwon’t be able to resume your challenge."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A249 {
+    "Excuse me!\pYou don’t have three eligible POKéMON.\pYou must have three different POKéMON\nof Level 50 or less to enter.\pThey also must be holding different\nkinds of items.\pEGGS{STR_VAR_1} ineligible.\pPlease come see me when you are ready."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A32D {
+    "Excuse me!\pYou don’t have three eligible POKéMON.\pYou must have three different POKéMON\nto enter.\pThey also must be holding different\nkinds of items.\pEGGS{STR_VAR_1} ineligible.\pPlease come see me when you are ready."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A3FD {
+    "Excuse me!\pYou didn’t save before you quit your\nchallenge last time.\pBecause of that, your challenge so far\nhas been disqualified. Sorry!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A487 {
+    "Congratulations!\nYou’ve beaten all seven TRAINERS!\p"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A4BB {
+    "For beating seven TRAINERS in a row,\nyou have earned this fabulous prize!\p"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A506 {
+    "{PLAYER} received the prize\n{STR_VAR_1}."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A520 {
+    "Oh, your BAG appears to be full.\pPlease make room in your BAG, then come\nsee me."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A571 {
+    "Thank you for playing!\p"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A589 {
+    "Your record will be saved.\nPlease wait."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A5B1 {
+    "We’ve been waiting for you!\p"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A5CE {
+    "Before entering a BATTLE ROOM, your\nprogress will be saved. Please wait."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A617 {
+    "You’re finally about to face the\n50th TRAINER.\pFrom here on, every time you beat seven\nTRAINERS in a row, your POKéMON will\lreceive a commemorative RIBBON.\pGood luck!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A6BE {
+    "Here are some RIBBONS for beating\nseven tough TRAINERS in a row.\p{PLAYER} received some RIBBONS!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A719 {
+    "{PLAYER} put the RIBBONS on the\nchallenger POKéMON."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A747 {
+    "Hello, hello!\nYou’re going to battle here, right?\pCan you tell me what’s going through\nyour mind as you prepare for battle?"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A7C3 {
+    "Oh, wow, you’ll tell me?\nGreat! Then, what’s your answer?"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A7FD {
+    "Oh, so you don’t think much about it?\nYou’re one cool customer."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A83D {
+    "Hunh? You changed your mind?\nI guess you’re fickle."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A871 {
+    "Okay, so that’s how you feel?\nThat’s quite original.\pThanks!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A8AE {
+    "The number of matches you win in a row\nis recorded.\pThe record is posted beside the\nregistration counter.\pIt’s also on the back of your\nTRAINER’S CARD."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A946 {
+    "Once you’ve entered the BATTLE TOWER,\nyou can’t leave until you either lose\lor you beat seven TRAINERS in a row.\pYou’d best be certain that you’re up\nto the challenge."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819A9EE {
+    "Hahahaha! Pure magnificence!\nPure magnificence indeed!\pDo you realize what you’ve achieved?\nYou’ve beaten 50 TRAINERS in a row!\pYes, purely magnificent!\pAs the OWNER of the BATTLE TOWER,\nlet me give you a memento!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819AAC4 {
+    "Wahahaha! Pure magnificence!\nAbsolutely pure magnificence indeed!\pDo you realize what you’ve achieved?\nYou’ve beaten 100 TRAINERS in a row!\pYes, absolutely magnificent!\pAs the OWNER of the BATTLE TOWER,\nlet me give you a memento!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819ABAA {
+    "I suggest you keep it displayed.\nIt will surely attract attention."
+}
+
+text Naranja_BattleTower_Lobby_Text_0819ABED {
+    "Oh?\nYour PC has no room for this...\pBut it would be a shame to waste this...\nPlease come back for this!"
+}
+
+text Naranja_BattleTower_Lobby_Text_0819AC55 {
+    "I’m overwhelmed with satisfaction after\nseeing your magnificent performance.\pIt makes the building of the BATTLE\nTOWER all worthwhile!"
+}
+
+text Naranja_BattleTower_Lobby_Text_081A776D {
+    "Hello! You’re the TRAINER who just had\na battle, right?\pI’m gathering interviews with TRAINERS\nall over the place.\pMay I get a few words from you about\nyour impressions on battling?"
+}
+
+text Naranja_BattleTower_Lobby_Text_081A7823 {
+    "You will? Really?\nThank you!\lThen, uh...\pHow did things turn out in the BATTLE\nTOWER today?\pWere you satisfied with the battle?\nOr are you unhappy?"
+}
+
+text Naranja_BattleTower_Lobby_Text_081A78B7 {
+    "Oh...\nSorry we disturbed you.\pPlease give us an interview the next\ntime you visit the BATTLE TOWER."
+}
+
+text Naranja_BattleTower_Lobby_Text_081A791B {
+    "Well, of course!\pThat unmistakable look of satisfaction\non your face...\pIt’s obvious that you’ve had a great\nbattle."
+}
+
+text Naranja_BattleTower_Lobby_Text_081A7990 {
+    "Oh, I see...\pWell, it certainly is difficult to make a\nbattle turn out exactly as planned."
+}
+
+text Naranja_BattleTower_Lobby_Text_081A79EB {
+    "Oh, oh, may I ask one more question?\pIf you were to describe your\nimpressions about this battle with one\lsaying, what would it be?"
+}
+
+text Naranja_BattleTower_Lobby_Text_081A7A6E {
+    "Oh, that is stunningly cool!\pThat’s a great line!\nI hope you’ll do great next time, too.\pI hope to see you again!"
+}
+
+text Naranja_BattleTower_Lobby_Text_081A7AE0 {
+    "Oh, I see...\pStill, being the silent type is also cool,\nisn’t it?\pI hope you’ll give me the opportunity to\nshare your thoughts again!"
+}
+
+text Naranja_BattleTower_Lobby_Text_081A7B66 {
+    "I’ll be looking forward to your next\nbattle!"
+}

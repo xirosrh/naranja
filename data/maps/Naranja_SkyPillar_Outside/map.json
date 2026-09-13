@@ -1,0 +1,36 @@
+{
+  "id": "MAP_NARANJA_SKY_PILLAR_OUTSIDE",
+  "region": "REGION_HOENN",
+  "name": "Naranja_SkyPillar_Outside",
+  "layout": "LAYOUT_NARANJA_SKY_PILLAR_OUTSIDE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_SKY_PILLAR",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SKY_PILLAR_ENTRANCE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SKY_PILLAR_1F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

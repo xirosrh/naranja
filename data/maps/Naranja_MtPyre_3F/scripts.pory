@@ -1,0 +1,48 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_3F_MapScripts {
+}
+
+script Naranja_MtPyre_3F_EventScript_PsychicM {
+    trainerbattle_single(TRAINER_NARANJA_BEMENTER_236, Naranja_MtPyre_3F_Text_0819672B, Naranja_MtPyre_3F_Text_0819679D)
+    msgbox(Naranja_MtPyre_3F_Text_081967B5, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_3F_EventScript_Lass {
+    trainerbattle_single(TRAINER_NARANJA_BEMENTER_247, Naranja_MtPyre_3F_Text_081967EF, Naranja_MtPyre_3F_Text_0819682B)
+    msgbox(Naranja_MtPyre_3F_Text_08196842, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_3F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x53)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_MtPyre_3F_Text_0819672B {
+    "The rich atmosphere of the mountain\nhas elevated my psychic power!\pA mere child like you...\nYou dream of winning?"
+}
+
+text Naranja_MtPyre_3F_Text_0819679D {
+    "I drown in self-pity..."
+}
+
+text Naranja_MtPyre_3F_Text_081967B5 {
+    "My psychic powers have surely\ngrown several times, but..."
+}
+
+text Naranja_MtPyre_3F_Text_081967EF {
+    "Ahahahaha!\pThis is no place for children, least\nof all you!"
+}
+
+text Naranja_MtPyre_3F_Text_0819682B {
+    "I lost that cleanly..."
+}
+
+text Naranja_MtPyre_3F_Text_08196842 {
+    "This means my training is still not\nenough...\pI’ve got to keep working toward the\nsummit...\pGo, me!"
+}

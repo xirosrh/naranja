@@ -1,0 +1,1608 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValenciaIsland_Gym_MapScripts {
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Trigger_2 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    applymovement(LOCALID_PLAYER, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08151004)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    applymovement(LOCALID_PLAYER, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN, Naranja_ValenciaIsland_Gym_Movement_08151069)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08151004)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08151004 {
+    playse(SE_LEDGE)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN, Naranja_ValenciaIsland_Gym_Movement_0815106D)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_086BF602, MSGBOX_DEFAULT)
+    closemessage
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08151048)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08151053)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815105E)
+    setvar(VAR_NARANJA_MIKAN_GYM_INTRO_STATE, 1)
+    removeobject(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN)
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08151048 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN, Naranja_ValenciaIsland_Gym_Movement_08151071)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08151053 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN, Naranja_ValenciaIsland_Gym_Movement_0815107C)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815105E {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN, Naranja_ValenciaIsland_Gym_Movement_08151086)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08153103 {
+    nop
+    animateflash(2)
+    call(Naranja_MikanIsland_Gym_EventScript_Sub_08153071)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Danny {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_268, Naranja_ValenciaIsland_Gym_Text_08175182, Naranja_ValenciaIsland_Gym_Text_08175246, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_081565DB, NO_MUSIC)
+    checkflag(FLAG_NARANJA_RECEIVED_CARBOS_FROM_DANNY)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_081531B5)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08175412, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08153177 {
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08153103)
+    message(Naranja_ValenciaIsland_Gym_Text_086BEDB0)
+    waitmessage
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081A02C5)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08180DDA, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_DEFEATED_SISSY)
+    setflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
+    addvar(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1)
+    compare_var_to_value(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A00FB)
+    setvar(VAR_0x8008, 2)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081A01C0)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_081531B5)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081531B5 {
+    setorcopyvar(VAR_0x8000, 0x41)
+    setorcopyvar(VAR_0x8001, 5)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_086BFB30, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_RECEIVED_IRON_FROM_SISSY)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081544ED {
+    setvar(VAR_0x8005, 1)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F9A)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FBB)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FDC)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FFD)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815501E)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815503F)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08155060)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08155081)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Norman {
+    lock
+    faceplayer
+    copyvar(VAR_0x8000, VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154907)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154911)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815491B)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154925)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081549D6)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815493D)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08179DF6, MSGBOX_DEFAULT)
+    closemessage
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815463D)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154648)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154653)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815465E)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815463D {
+    setvar(VAR_0x8008, 0)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154669)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154648 {
+    setvar(VAR_0x8008, 1)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154669)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154653 {
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154669)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815465E {
+    setvar(VAR_0x8008, 3)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154669)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154669 {
+    addobject(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY)
+    playse(SE_DOOR)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081547EE)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154800)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815481C)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815481C)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08179F07, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08179F37, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08179F70, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A03A, MSGBOX_DEFAULT)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154884)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815488F)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548A1)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548B3)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A04A, MSGBOX_DEFAULT)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548C5)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548D0)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548DB)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548E6)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A0A8, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A0EB, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A156, MSGBOX_DEFAULT)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815492F)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154930)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815493B)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815493C)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548F1)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548FC)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548F1)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081548F1)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A171, MSGBOX_DEFAULT)
+    closemessage
+    setflag(FLAG_NARANJA_SAILING_MUSIC_ACTIVE)
+    playbgm(MUS_FOLLOW_ME, 0)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154835)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815484E)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154860)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154872)
+    removeobject(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02D8)
+    setvar(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1)
+    setvar(VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE, 2)
+    clearflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02D6)
+    clearflag(FLAG_HIDE_NARANJA_VALENCIA_ISLAND_GYM_WALLY)
+    setflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M04_PROF_BIRCH_2)
+    special(InitBirchState)
+    warp(MAP_NARANJA_VALENCIA_ISLAND, 0xFF, 0xF, 8)
+    waitstate
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081547EE {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B27)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154800 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B1D)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815481C {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B27)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154835 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B3E)
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Gym_Movement_08154B4D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815484E {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B2E)
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Gym_Movement_08154B45)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154860 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B3E)
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Gym_Movement_08154B57)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154872 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_ValenciaIsland_Gym_Movement_08154B36)
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Gym_Movement_08154B5F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154884 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815488F {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    applymovement(LOCALID_PLAYER, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548A1 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548B3 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548C5 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548D0 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548DB {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548E6 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548F1 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081548FC {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_WALLY, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154907 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A41E, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154911 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A518, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815491B {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A5F3, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154925 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A5F3, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815492F {
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154930 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815493B {
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815493C {
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815493D {
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154969)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B8)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A9)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154A2C)
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154B69)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AA6B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154969 {
+    specialvar(VAR_RESULT, IsEnigmaBerryValid)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B2)
+    checkitem(ITEM_ENIGMA_BERRY, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B2)
+    checkpcitem(ITEM_ENIGMA_BERRY, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B2)
+    compare_var_to_value(VAR_ENIGMA_BERRY_AVAILABLE, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B2)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_081C5570, MSGBOX_DEFAULT)
+    setvar(VAR_RESULT, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B2 {
+    setvar(VAR_RESULT, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081549B8 {
+    setorcopyvar(VAR_0x8000, 0xAF)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setvar(VAR_ENIGMA_BERRY_AVAILABLE, 0)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081549D6 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A653, MSGBOX_DEFAULT)
+    trainerbattle_no_intro(TRAINER_NARANJA_INSIDE_OF_TRUCK_269, Naranja_ValenciaIsland_Gym_Text_0817A77A)
+    message(Naranja_ValenciaIsland_Gym_Text_0817A7DD)
+    waitmessage
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081A02C5)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A805, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    setvar(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 7)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0424)
+    setflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_G10_M00_WATTSON)
+    clearflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_G00_M02_WATTSON)
+    setvar(VAR_0x8008, 5)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081A01C0)
+    clearflag(FLAG_HIDE_NARANJA_SEVEN_GRAPEFRUIT_ISLANDS_HALL_MANIAC)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081544ED)
+    special(DrawWholeMapView)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154A2C)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154A2C {
+    setorcopyvar(VAR_0x8000, 0x14A)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_00A9)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A8CF, MSGBOX_DEFAULT)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A976, MSGBOX_DEFAULT)
+    closemessage
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154ABC)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AC7)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AD2)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154ADD)
+    delay(0x46)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AE8)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AF3)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AFE)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154B09)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A9F6, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154ABC {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AC7 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AD2 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154ADD {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AE8 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AF3 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154AFE {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154B09 {
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GYM_NORMAN, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154B69 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AB17, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_1 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 7)
+    setvar(VAR_0x8009, 0x55)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B870, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8 {
+    closemessage
+    delay(0x1E)
+    warpdoor(MAP_NARANJA_VALENCIA_ISLAND_GYM, 0xFF, 0x8008, 0x8009)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7 {
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B844, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_2 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 1)
+    setvar(VAR_0x8009, 0x62)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B8D4, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_3 {
+    lockall
+    checktrainerflag(0x47)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 7)
+    setvar(VAR_0x8009, 0x2E)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B90F, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_4 {
+    lockall
+    checktrainerflag(0x47)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 1)
+    setvar(VAR_0x8009, 0x3B)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B950, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_5 {
+    lockall
+    checktrainerflag(0x59)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 7)
+    setvar(VAR_0x8009, 0x3B)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B950, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_6 {
+    lockall
+    checktrainerflag(0x59)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 1)
+    setvar(VAR_0x8009, 0x48)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B98A, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_9 {
+    lockall
+    checktrainerflag(0x5A)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 1)
+    setvar(VAR_0x8009, 0x21)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817BA00, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_10 {
+    lockall
+    checktrainerflag(0x49)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB9)
+    setvar(VAR_0x8008, 7)
+    setvar(VAR_0x8009, 0x21)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817BA00, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BA8)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154BB7)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_071, Naranja_ValenciaIsland_Gym_Text_0817ADA5, Naranja_ValenciaIsland_Gym_Text_0817AE11, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154E1A)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154E29)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AE30, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154E1A {
+    setvar(VAR_0x8005, 0)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FBB)
+    special(DrawWholeMapView)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154E29 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AEBB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Man4_2 {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_072, Naranja_ValenciaIsland_Gym_Text_0817AF5A, Naranja_ValenciaIsland_Gym_Text_0817AF98, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154E56)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154E65)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AFD3, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154E56 {
+    setvar(VAR_0x8005, 0)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FFD)
+    special(DrawWholeMapView)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154E65 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B016, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Man4_3 {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_073, Naranja_ValenciaIsland_Gym_Text_0817B058, Naranja_ValenciaIsland_Gym_Text_0817B0F7, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154E92)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154EA1)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B12C, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154E92 {
+    setvar(VAR_0x8005, 0)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815503F)
+    special(DrawWholeMapView)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154EA1 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B1F4, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Woman7 {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_089, Naranja_ValenciaIsland_Gym_Text_0817B3F7, Naranja_ValenciaIsland_Gym_Text_0817B454, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154F0A)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F19)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B46F, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154F0A {
+    setvar(VAR_0x8005, 0)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FDC)
+    special(DrawWholeMapView)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F19 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B521, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Woman7_2 {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_090, Naranja_ValenciaIsland_Gym_Text_0817B58D, Naranja_ValenciaIsland_Gym_Text_0817B5CB, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154F46)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F55)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B5EA, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154F46 {
+    setvar(VAR_0x8005, 0)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815501E)
+    special(DrawWholeMapView)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F55 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B6B5, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Woman7_3 {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_091, Naranja_ValenciaIsland_Gym_Text_0817B6D4, Naranja_ValenciaIsland_Gym_Text_0817B732, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154F82)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F91)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B749, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08154F82 {
+    setvar(VAR_0x8005, 0)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08155060)
+    special(DrawWholeMapView)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F91 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817B7C0, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154F9A {
+    setvar(VAR_0x8004, 1)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081550A2)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FBB {
+    setvar(VAR_0x8004, 2)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081550C7)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FDC {
+    setvar(VAR_0x8004, 3)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081550EC)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08154FFD {
+    setvar(VAR_0x8004, 4)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08155111)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815501E {
+    setvar(VAR_0x8004, 5)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08155124)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815503F {
+    setvar(VAR_0x8004, 6)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_08155149)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155060 {
+    setvar(VAR_0x8004, 7)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815515C)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155081 {
+    setvar(VAR_0x8004, 8)
+    compare_var_to_value(VAR_0x8005, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182)
+    compare_var_to_value(VAR_0x8005, 1)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187)
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815516F)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081550A2 {
+    setmetatile(6, 0x55, 0x210, 0)
+    setmetatile(7, 0x55, 0x211, 0)
+    setmetatile(1, 0x62, 0x210, 0)
+    setmetatile(2, 0x62, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081550C7 {
+    setmetatile(6, 0x2E, 0x210, 0)
+    setmetatile(7, 0x2E, 0x211, 0)
+    setmetatile(1, 0x3B, 0x210, 0)
+    setmetatile(2, 0x3B, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081550EC {
+    setmetatile(6, 0x3B, 0x210, 0)
+    setmetatile(7, 0x3B, 0x211, 0)
+    setmetatile(1, 0x48, 0x210, 0)
+    setmetatile(2, 0x48, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155111 {
+    setmetatile(1, 0x14, 0x210, 0)
+    setmetatile(2, 0x14, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155124 {
+    setmetatile(6, 0x14, 0x210, 0)
+    setmetatile(7, 0x14, 0x211, 0)
+    setmetatile(1, 0x21, 0x210, 0)
+    setmetatile(2, 0x21, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155149 {
+    setmetatile(6, 0x21, 0x210, 0)
+    setmetatile(7, 0x21, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815515C {
+    setmetatile(1, 7, 0x210, 0)
+    setmetatile(2, 7, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815516F {
+    setmetatile(6, 7, 0x210, 0)
+    setmetatile(7, 7, 0x211, 0)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155182 {
+    special(PetalburgGymSlideOpenRoomDoors)
+    waitstate
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08155187 {
+    special(PetalburgGymUnlockRoomDoors)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Man2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081551A0)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AB96, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081551A0 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817AD49, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_13 {
+    lockall
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081551CA)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_081551D4)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sign_14 {
+    lockall
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_080B)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081551CA)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_081551D4)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081551CA {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817BAC0, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081551D4 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817BAA5, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_HotSpringsOldWoman {
+    trainerbattle_single(TRAINER_NARANJA_INSIDE_OF_TRUCK_267, Naranja_ValenciaIsland_Gym_Text_08180C32, Naranja_ValenciaIsland_Gym_Text_08180D64, Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_08153177, NO_MUSIC)
+    checkflag(FLAG_NARANJA_RECEIVED_IRON_FROM_SISSY)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_Gym_EventScript_Sub_0815661D)
+    compare_var_to_value(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_08156641)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08180EDB, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_AfterBattle_081565DB {
+    message(Naranja_ValenciaIsland_Gym_Text_086BFCE3)
+    waitmessage
+    call(Naranja_ValenciaIsland_Gym_EventScript_Sub_081A02C5)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_081752E6, MSGBOX_DEFAULT)
+    nop
+    nop
+    nop
+    setflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_WALLY)
+    addvar(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1)
+    compare_var_to_value(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6)
+    call_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A00FB)
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    playse(SE_UNLOCK)
+    goto(Naranja_ValenciaIsland_Gym_EventScript_Sub_0815661D)
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_0815661D {
+    setorcopyvar(VAR_0x8000, 0x42)
+    setorcopyvar(VAR_0x8001, 5)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    msgbox(Naranja_ValenciaIsland_Gym_Text_0817A2A4, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_RECEIVED_CARBOS_FROM_DANNY)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_08156641 {
+    msgbox(Naranja_ValenciaIsland_Gym_Text_08180F1D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A00FB {
+    clearflag(FLAG_HIDE_NARANJA_VALENCIA_ISLAND_GYM_MAN_2)
+    setflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_0128)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A01C0 {
+    copyvar(VAR_0x8000, VAR_0x8008)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A021E)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0225)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A022F)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A023C)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A024C)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0262)
+    compare_var_to_value(VAR_0x8000, 7)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A026F)
+    compare_var_to_value(VAR_0x8000, 8)
+    goto_if(EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0282)
+    end
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A021E {
+    settrainerflag(0x140)
+    settrainerflag(0x141)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0225 {
+    settrainerflag(0xB3)
+    settrainerflag(0x1A9)
+    settrainerflag(0x1AA)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A022F {
+    settrainerflag(0xBF)
+    settrainerflag(0xC2)
+    settrainerflag(0x143)
+    settrainerflag(0x289)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A023C {
+    settrainerflag(0xC9)
+    settrainerflag(0xCB)
+    settrainerflag(0xCD)
+    settrainerflag(0x288)
+    settrainerflag(0x28A)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A024C {
+    settrainerflag(0x47)
+    settrainerflag(0x48)
+    settrainerflag(0x49)
+    settrainerflag(0x4A)
+    settrainerflag(0x59)
+    settrainerflag(0x5A)
+    settrainerflag(0x5B)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0262 {
+    settrainerflag(0x191)
+    settrainerflag(0x28E)
+    settrainerflag(0x28F)
+    settrainerflag(0x194)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A026F {
+    settrainerflag(0xE9)
+    settrainerflag(0xEA)
+    settrainerflag(0xEB)
+    settrainerflag(0xF4)
+    settrainerflag(0xF5)
+    settrainerflag(0xF6)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0282 {
+    settrainerflag(0x265)
+    settrainerflag(0x266)
+    settrainerflag(0x76)
+    settrainerflag(0x80)
+    settrainerflag(0x81)
+    settrainerflag(0x82)
+    settrainerflag(0x83)
+    settrainerflag(0x12D)
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A02C5 {
+    playfanfare(MUS_OBTAIN_BADGE)
+    waitfanfare
+    return
+}
+
+script Naranja_ValenciaIsland_Gym_EventScript_Sub_081A0424 {
+    setflag(FLAG_HIDE_NARANJA_SEVEN_GRAPEFRUIT_ISLANDS_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_SEVEN_GRAPEFRUIT_ISLANDS_MR_BRINEYS_BOAT)
+    setflag(FLAG_HIDE_NARANJA_ROUTE109_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_ROUTE109_MR_BRINEYS_BOAT)
+    setflag(FLAG_HIDE_NARANJA_MIKAN_ISLAND_G00_M20_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G00_M19_SPIN_CUSHION)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_WINGULL)
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 0)
+    return
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08151069 {
+    walk_left
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_0815106D {
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08151071 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_0815107C {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08151086 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B1D {
+    delay_16
+    walk_up
+    delay_16
+    delay_8
+    walk_up
+    walk_right
+    walk_up
+    walk_up
+    walk_in_place_faster_left
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B27 {
+    delay_16
+    walk_up
+    delay_16
+    delay_8
+    walk_up
+    walk_up
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B2E {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_in_place_faster_up
+    delay_16
+    walk_in_place_down
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B36 {
+    walk_down
+    walk_down
+    walk_right
+    walk_down
+    walk_in_place_faster_up
+    delay_16
+    walk_in_place_down
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B3E {
+    walk_down
+    walk_down
+    walk_down
+    walk_in_place_faster_up
+    delay_16
+    walk_in_place_down
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B45 {
+    delay_16
+    delay_16
+    delay_16
+    walk_down
+    walk_down
+    walk_down
+    delay_8
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B4D {
+    delay_16
+    delay_16
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    delay_8
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B57 {
+    delay_16
+    delay_16
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    delay_8
+}
+
+movement Naranja_ValenciaIsland_Gym_Movement_08154B5F {
+    walk_in_place_faster_down
+    delay_16
+    delay_16
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_down
+    delay_8
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08175182 {
+    "¡Éste es el final {PLAYER}!\pHemos congelado agua hirviendo\ny arrojado de una ladera nevada.\pPerdiste al principio  \ny te costó ganar ganar después.\p¿Sigues dispuest{RIVAL} a luchar?\n¡Empecemos el desempate!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08175246 {
+    "Sin prisa pero sin pausa   \nmantuviste un ritmo constante.\pEsa es la clave de la velocidad.\p¡Esta medalla será tuya!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_081752E6 {
+    "Con esa medalla te obedecerán   \nPOKéMON de nivel superior a 30,\lpodrás iluminar la oscuridad \lusando DESTELLO\ly recibirás también algo.\pEstas cinco dósis de CARBURANTE\nacelerarán tus POKéMON\la niveles insospechados."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08175412 {
+    "Por cierto, si traes algo que me guste\nte dejo pasar cuando quieras\lecharte una carrera nevada, ¿va?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08179DF6 {
+    "DAD: Hm?\pWell, if it isn’t {PLAYER}!\nSo you’re all finished moving in?\pI’m surprised that you managed to\nget here by yourself.\pOh, I see.\nYou’re with your POKéMON.\pHm... Then I guess you’re going to\nbecome a TRAINER like me, {PLAYER}.\pThat’s great news!\nI’ll be looking forward to it!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08179F07 {
+    "Um... I... I’d like to get a\nPOKéMON, please..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08179F37 {
+    "DAD: Hm? You’re... Uh... Oh, right.\nYou’re WALLY, right?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08179F70 {
+    "WALLY: I’m going to go stay with my\nrelatives in VERDANTURF TOWN.\pI thought I would be lonely by myself,\nso I wanted to take a POKéMON along.\pBut I’ve never caught a POKéMON before.\nI don’t know how..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A03A {
+    "DAD: Hm. I see."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A04A {
+    "DAD: {PLAYER}, you heard that,\nright?\pGo with WALLY and make sure that he\nsafely catches a POKéMON."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A0A8 {
+    "WALLY, here, I’ll loan you my POKéMON.\pWALLY received a ZIGZAGOON!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A0EB {
+    "WALLY: Oh, wow!\nA POKéMON!\pDAD: Hm. I’ll give you a POKé BALL, too.\nGo for it!\pWALLY received a POKé BALL!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A156 {
+    "WALLY: Oh, wow!\nThank you!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A171 {
+    "{PLAYER}... Would you really come\nwith me?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A2A4 {
+    "{COLOR 0x04}{PLAYER}: ¿Este es el fin de la BETA 2\nde POKéMON NARANJA?\p¿Que me recomiendas ahora Danny?\p{COLOR 0x01}Lo es oficialmente, {PLAYER}.\nLa 2ª medalla, la 2ª beta.\pSin embargo ve al Sur\nque quedan muchas aventuras:\pJOY buscaba ayuda,\nen KABUTO hay problemas.\pY en esta beta puedes\nconseguir hasta 100 pokémon.\pEspera…\n…con paciencia…\l…a este juego le queda mucha historia\lpor continuar…"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A41E {
+    "DAD: Hm? Aren’t you going to the\nPOKéMON GYM in RUSTBORO CITY?\pThere’s no challenge for me to\nbattle a greenhorn TRAINER.\p{PLAYER}, I want you to challenge me\nwhen you become a lot stronger.\pI’ll battle you, {PLAYER}, when you\ncan show me four GYM BADGES, okay?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A518 {
+    "DAD: I see... So, you’ve beaten the\nGYM LEADER in RUSTBORO CITY.\pBut there are many more TRAINERS\nwho are stronger than you, {PLAYER}.\pAcross the sea in DEWFORD TOWN is a\nGYM LEADER named BRAWLY.\pYou should go challenge him."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A5F3 {
+    "DAD: Hm... {PLAYER}, you have gotten\nstronger.\pI can tell by the number of BADGES\nthat you’ve earned."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A653 {
+    "DAD: Hm...\nSo, you did get four GYM BADGES.\pFine, as I promised, we will have a\nPOKéMON battle.\p{PLAYER}...\pI’m so happy that I can have a \nreal battle with my own child.\pBut, a battle is a battle!\pI will do everything in my power as\na GYM LEADER to win.\p{PLAYER}, you’d better give it your\nbest shot, too!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A77A {
+    "...\pI... I can’t...\pI can’t believe it. {PLAYER}...\pI lost to {PLAYER}?\pBut, rules are rules!\nHere, take this."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A7DD {
+    "{PLAYER} received the BALANCE BADGE\nfrom DAD!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A805 {
+    "DAD: With that BADGE, the DEFENSE\nof all your POKéMON will increase.\pPOKéMON that know the HM move SURF\nwill be able to travel over water.\pThis is my gift to you. {PLAYER}, I’m\nsure you can use it correctly."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A8CF {
+    "DAD: TM42 contains FACADE.\pIt doubles the power of moves if\nthe POKéMON is poisoned, paralyzed,\lor burned.\pIt might be able to turn a bad\nsituation into an advantage."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A976 {
+    "DAD: As the GYM LEADER, I can’t\nexpress how upset I am...\pBut as a father, it makes me both\nhappy and a little sad. It’s odd..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817A9F6 {
+    "DAD: Oh, yes...\pWALLY’s parents came calling\nearlier.\pThey said that they had something\nthey wanted to give you, {PLAYER}."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AA6B {
+    "DAD: {PLAYER}, you should go visit\nyour mother every so often.\pI’m going to stay here and redouble\nmy training.\pIt would bother me as a TRAINER to\nnot avenge my loss to you, {PLAYER}!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AB17 {
+    "DAD: {PLAYER}, how are things going?\pThe world of POKéMON is deep.\pI honestly think that no amount of\ntraining would ever be enough."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AB96 {
+    "Hey, how’s it going, CHAMPION-\nbound {PLAYER}?\pThe doors in this GYM open when you\nbeat the awaiting TRAINERS.\pWhoops! The doors in this room are\nalready open, so don’t attack me!\pThe TRAINERS of PETALBURG GYM use\nall kinds of items.\pThe door at the left leads to the\nSPEED ROOM.\pThe door at the right leads to the\nACCURACY ROOM.\pThe room’s name will be on the\ndoor, so choose carefully.\pOnce you’ve chosen the door...\nWell, hey, go for it!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AD49 {
+    "{PLAYER}! Whoa! You’ve overcome even\nyour own father!\pLike, whoa!\nWhat a stunning turn of events!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817ADA5 {
+    "The ability to attack before the\nopponent...\pJust that alone puts me at a great\nadvantage, don’t you agree?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AE11 {
+    "That was a magnificent battle!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AE30 {
+    "Go on to the next room where a new\nchallenge awaits you.\pAt the left is the ZERO REDUCTION\nROOM.\pThe right door leads to the DEFENSE\nROOM."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AEBB {
+    "Whomever you beat, and whomever you\nmay lose to, you never shirk from\ltraining yourself and your POKéMON.\pThat’s what I think being a\nGYM LEADER is all about."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AF5A {
+    "Don’t waste your time trying to\nlower my POKéMON’s abilities!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AF98 {
+    "My POKéMON’s abilities weren’t\nharmed, but I still lost..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817AFD3 {
+    "The next room is the STRENGTH ROOM.\nCan you withstand brute force?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B016 {
+    "After you beat our LEADER, the\ntraining has become a lot tougher."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B058 {
+    "Just when you think you’re going to\nwin, your opponent restores HP...\pCan you just imagine how awful that\nmust feel?\pI’ll show you exactly how awful it\nfeels!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B0F7 {
+    "I couldn’t restore HP enough...\nWhat ATTACK power..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B12C {
+    "I should have expected no less from\nour LEADER’s kid.\pNo, wait! A TRAINER’s abilities are\nearned only through effort.\pI lost because my own efforts\nweren’t enough.\pGo on! The ONE-HIT KO ROOM is next."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B1F4 {
+    "I’m going to keep training at GYMS.\nOne day, I’ll become a LEADER."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B3F7 {
+    "Giggle...\nThis is the ACCURACY ROOM.\pIt’s pretty nasty when every attack\nlands without fail."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B454 {
+    "You were a cut above me..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B46F {
+    "There are some even stronger\nTRAINERS waiting for you.\pThe left is the DEFENSE ROOM, and\nthe right is the RECOVERY ROOM.\pYour POKéMON’s ATTACK power will be\non trial either way."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B521 {
+    "Do you know what we’re trying to\nachieve as TRAINERS?\pWe’re striving to become soul mates\nwith our POKéMON."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B58D {
+    "The higher the DEFENSE, the more\nreckless I can be in attack."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B5CB {
+    "Our defenses weren’t enough..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B5EA {
+    "I think you’ve taught me a valuable\nlesson here.\pNow, go on! The left door goes to\nthe STRENGTH ROOM.\pThe right door opens to the\nONE-HIT KO ROOM.\pBoth of them have TRAINERS who are\noffensively skilled."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B6B5 {
+    "Hi! Have you tried using SURF?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B6D4 {
+    "Our GYM LEADER told us to go all out\nand beat you.\pEven if you happen to be the\nLEADER’s kid!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B732 {
+    "But... I went all out!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B749 {
+    "The way you use your POKéMON...\nIt’s like your father’s style.\pGo on through! The GYM LEADER, your\nfather, is waiting!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B7C0 {
+    "Sure, it’s fine to make your POKéMON\nstronger.\pBut what decides the winner?\pWhy, it’s the feelings TRAINERS have for\ntheir POKéMON."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B844 {
+    "This door appears to be locked\nright now..."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B870 {
+    "“SPEED ROOM,” the sign says.\pDo you want to go through?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B8D4 {
+    "“ACCURACY ROOM,” the sign says.\pDo you want to go through?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B90F {
+    "“ZERO REDUCTION ROOM,” the sign\nsays.\pDo you want to go through?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B950 {
+    "“DEFENSE ROOM,” the sign says.\pDo you want to go through?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817B98A {
+    "“RECOVERY ROOM,” the sign says.\pDo you want to go through?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817BA00 {
+    "“ONE-HIT KO ROOM,” the sign says.\pDo you want to go through?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817BAA5 {
+    "PETALBURG CITY POKéMON GYM"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_0817BAC0 {
+    "PETALBURG CITY POKéMON GYM\pNORMAN’S CERTIFIED TRAINERS:\n{PLAYER}"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08180C32 {
+    "Superaste muy bien la prueba.\pAsí que ahora te mereces un combate\ncontra mí.\pNo será fácil.\pAsí que preparate.\p¡En guardia!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08180D64 {
+    "No me lo esperaba.\pEres buen{RIVAL} {PLAYER}…\p…y  llegarás lejos.\p¡Toma esta medalla!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08180DDA {
+    "Has empezado con muy buen pie \nla Liga Naranja consiguiendo\lla medalla de la Isla MIKAN.\pHiciste una gran carrera y también\nuna gran batalla.\p¡Ten  esto!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08180EDB {
+    "¡Disfruta cada instante y cada lugar!   \nY recuerda ser el mejor."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_08180F1D {
+    "Wahahahah!\nGo forth and endeavor, youngster!"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_081C5570 {
+    "DAD: Hi, {PLAYER}!\pI just received a very rare BERRY.\nI’d like you to have it."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_086BEDB0 {
+    "{PLAYER} recibió la medalla\nOJO de CORAL de SISSY."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_086BF602 {
+    "¡Hola foraster{RIVAL}!    \nSoy SISSY, la lìder de isla MIKAN.\p{COLOR 0x04}{PLAYER}: Yo soy {PLAYER},\ny vine para desafiarte a un combate.\p{COLOR 0x01}SISSY: Me parece que no conoces\nel mecanismo de la ÉLITE NARANJA.\pPara desafiar a un lìder tienes que\naceptar la prueba que él decida.\pSi tienes éxito podrás\ndesafiarle a un combate.\p{COLOR 0x04}{PLAYER}: Ahh… \n¿Entonces ahora?\p{COLOR 0x01}SISSY: Deberás ganarme en una\n“Carrera sobre las olas” con tu\lPOKéMON acuatico.\p¿Aceptas?"
+}
+
+text Naranja_ValenciaIsland_Gym_Text_086BFB30 {
+    "Eran cinco dósis de HIERRO \nque aumenta la defensa POKéMON,\lbásica para que resistan\lcualquier situación.\pCon la medalla que te di\npodrás deshacer los remolinos\lmarinos que verás."
+}
+
+text Naranja_ValenciaIsland_Gym_Text_086BFCE3 {
+    "{PLAYER} recibió la medalla\nRUBÍ ESPINOSO de DANNY."
+}

@@ -1,0 +1,80 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PummeloIsland_PhoebesRoom_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_PummeloIsland_PhoebesRoom_OnLoad
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_TEMP_1, 0: Naranja_PummeloIsland_PhoebesRoom_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE, 1: Naranja_PummeloIsland_PhoebesRoom_OnFrame_1
+    ]
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_OnWarp_1 {
+    turnobject(LOCALID_PLAYER, 2)
+    end
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_OnFrame_1 {
+    lockall
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A0710)
+    setvar(VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE, 2)
+    releaseall
+    end
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_OnLoad {
+    checkflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04DE)
+    call_if(EQUAL, Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B624)
+    compare_var_to_value(VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B62A)
+    end
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B624 {
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A0757)
+    return
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B62A {
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A07FA)
+    return
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_EventScript_Phoebe {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04DE)
+    goto_if(EQUAL, Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B657)
+    playbgm(MUS_ENCOUNTER_ELITE_FOUR, 0)
+    msgbox(Naranja_PummeloIsland_PhoebesRoom_Text_081908F5, MSGBOX_DEFAULT)
+    trainerbattle_no_intro(TRAINER_NARANJA_PUMMELO_ISLAND_262, Naranja_PummeloIsland_PhoebesRoom_Text_08190A0C)
+    goto(Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B661)
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B657 {
+    msgbox(Naranja_PummeloIsland_PhoebesRoom_Text_08190A2A, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_PummeloIsland_PhoebesRoom_EventScript_Sub_0815B661 {
+    setflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04DE)
+    call(Naranja_PummeloIsland_SidneysRoom_EventScript_Sub_081A0693)
+    msgbox(Naranja_PummeloIsland_PhoebesRoom_Text_08190A2A, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_PummeloIsland_PhoebesRoom_Text_081908F5 {
+    "Ahahaha!\pI’m PHOEBE of the ELITE FOUR.\nI did my training on MT. PYRE.\pWhile I trained, I gained the ability\nto commune with GHOST-type POKéMON.\pYes, the bond I developed with POKéMON\nis extremely tight.\pSo, come on, just try and see if you can\neven inflict damage on my POKéMON!"
+}
+
+text Naranja_PummeloIsland_PhoebesRoom_Text_08190A0C {
+    "Oh, darn.\nI’ve gone and lost."
+}
+
+text Naranja_PummeloIsland_PhoebesRoom_Text_08190A2A {
+    "There’s a definite bond between you\nand your POKéMON, too.\pI didn’t recognize it, so it’s only\nnatural that I lost.\pYup, I’d like to see how far your bond\nwill carry you.\pGo ahead, move on to the next room."
+}

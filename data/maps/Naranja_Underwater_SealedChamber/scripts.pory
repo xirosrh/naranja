@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Underwater_SealedChamber_MapScripts {
+    MAP_SCRIPT_ON_DIVE_WARP: Naranja_Underwater_SealedChamber_OnDiveWarp
+}
+
+script Naranja_Underwater_SealedChamber_OnDiveWarp {
+    getplayerxy(VAR_0x8004, VAR_0x8005)
+    compare_var_to_value(VAR_0x8004, 0xC)
+    goto_if(NOT_EQUAL, Naranja_Underwater_SealedChamber_EventScript_Sub_0815F0A6)
+    compare_var_to_value(VAR_0x8005, 0x2C)
+    goto_if(NOT_EQUAL, Naranja_Underwater_SealedChamber_EventScript_Sub_0815F0A6)
+    goto(Naranja_Underwater_SealedChamber_EventScript_Sub_0815F0AF)
+}
+
+script Naranja_Underwater_SealedChamber_EventScript_Sub_0815F0A6 {
+    setdivewarp(MAP_NARANJA_ROUTE134, 0xFF, 0x3C, 0x1F)
+    end
+}
+
+script Naranja_Underwater_SealedChamber_EventScript_Sub_0815F0AF {
+    setdivewarp(MAP_NARANJA_SEALED_CHAMBER_OUTER_ROOM, 0xFF, 0xA, 0x13)
+    end
+}
+
+script Naranja_Underwater_SealedChamber_EventScript_Sign_1 {
+    lockall
+    braillemessage(Naranja_Underwater_SealedChamber_Text_081C533D)
+    waitbuttonpress
+    erasebox(0, 0, 0x1D, 0x13)
+    releaseall
+    end
+}
+
+text Naranja_Underwater_SealedChamber_Text_081C533D {
+    "ÂÉéÒÈÌÔç ぅá ÒÌëÌわ"
+}

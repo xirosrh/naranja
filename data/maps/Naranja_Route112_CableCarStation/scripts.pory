@@ -1,0 +1,103 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route112_CableCarStation_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route112_CableCarStation_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_ROUTE112_STORY_STATE, 2: Naranja_Route112_CableCarStation_OnFrame_1
+    ]
+}
+
+script Naranja_Route112_CableCarStation_OnTransition {
+    setescapewarp(MAP_NARANJA_ROUTE112, 0xFF, 0x1C, 0x1C)
+    compare_var_to_value(VAR_NARANJA_ROUTE112_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_Route112_CableCarStation_EventScript_Sub_0815C052)
+    end
+}
+
+script Naranja_Route112_CableCarStation_EventScript_Sub_0815C052 {
+    setobjectxyperm(LOCALID_NARANJA_ROUTE112_CABLE_CAR_STATION_BEAUTY, 7, 4)
+    setobjectmovementtype(LOCALID_NARANJA_ROUTE112_CABLE_CAR_STATION_BEAUTY, 9)
+    return
+}
+
+script Naranja_Route112_CableCarStation_OnFrame_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_Route112_CableCarStation_Movement_0815C0F5)
+    applymovement(LOCALID_NARANJA_ROUTE112_CABLE_CAR_STATION_BEAUTY, Naranja_Route112_CableCarStation_Movement_0815C0EB)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_NARANJA_ROUTE112_STORY_STATE, 0)
+    setobjectxyperm(LOCALID_NARANJA_ROUTE112_CABLE_CAR_STATION_BEAUTY, 6, 7)
+    setobjectmovementtype(LOCALID_NARANJA_ROUTE112_CABLE_CAR_STATION_BEAUTY, 8)
+    releaseall
+    end
+}
+
+script Naranja_Route112_CableCarStation_EventScript_Beauty {
+    lock
+    faceplayer
+    msgbox(Naranja_Route112_CableCarStation_Text_081924F5, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route112_CableCarStation_EventScript_Sub_0815C0AD)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route112_CableCarStation_EventScript_Sub_0815C0DC)
+    end
+}
+
+script Naranja_Route112_CableCarStation_EventScript_Sub_0815C0AD {
+    msgbox(Naranja_MtChimney_CableCarStation_Text_081925A9, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_ROUTE112_CABLE_CAR_STATION_BEAUTY, Naranja_Route112_CableCarStation_Movement_0815C0E6)
+    applymovement(LOCALID_PLAYER, Naranja_Route112_CableCarStation_Movement_0815C0F0)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_0x8004, 0)
+    setvar(VAR_NARANJA_ROUTE112_STORY_STATE, 1)
+    incrementgamestat(0x30)
+    special(CableCarWarp)
+    special(CableCar)
+    waitstate
+    release
+    end
+}
+
+script Naranja_Route112_CableCarStation_EventScript_Sub_0815C0DC {
+    msgbox(Naranja_Route112_CableCarStation_Text_08192548, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+movement Naranja_Route112_CableCarStation_Movement_0815C0E6 {
+    walk_up
+    walk_up
+    walk_right
+    walk_in_place_faster_left
+}
+
+movement Naranja_Route112_CableCarStation_Movement_0815C0EB {
+    delay_16
+    walk_left
+    walk_down
+    walk_down
+}
+
+movement Naranja_Route112_CableCarStation_Movement_0815C0F0 {
+    walk_up
+    walk_up
+    walk_up
+    delay_16
+}
+
+movement Naranja_Route112_CableCarStation_Movement_0815C0F5 {
+    walk_down
+    walk_down
+    walk_down
+    delay_16
+}
+
+text Naranja_Route112_CableCarStation_Text_081924F5 {
+    "The CABLE CAR is ready to go up.\nWould you like to be on it?"
+}
+
+text Naranja_Route112_CableCarStation_Text_08192548 {
+    "Please ride with us another time."
+}

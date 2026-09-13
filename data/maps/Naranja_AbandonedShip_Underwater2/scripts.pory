@@ -1,0 +1,11 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_Underwater2_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_AbandonedShip_Underwater2_OnResume
+}
+
+script Naranja_AbandonedShip_Underwater2_OnResume {
+    setdivewarp(MAP_NARANJA_ABANDONED_SHIP_ROOMS_B1F, 0xFF, 0xD, 7)
+    end
+}

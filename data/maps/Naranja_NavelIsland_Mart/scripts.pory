@@ -1,0 +1,47 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NavelIsland_Mart_MapScripts {
+}
+
+script Naranja_NavelIsland_Mart_EventScript_LittleBoy1 {
+    msgbox(Naranja_NavelIsland_Mart_Text_08170CEB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NavelIsland_Mart_EventScript_Woman3 {
+    msgbox(Naranja_NavelIsland_Mart_Text_08176FF0, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NavelIsland_Mart_EventScript_Man3 {
+    msgbox(Naranja_NavelIsland_Mart_Text_081770E2, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NavelIsland_Mart_EventScript_Skitty {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_SKITTY, 0)
+    msgbox(Naranja_NavelIsland_Mart_Text_081770D3, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_NavelIsland_Mart_Text_08170CEB {
+    "The air is tasty here!"
+}
+
+text Naranja_NavelIsland_Mart_Text_08176FF0 {
+    "I’m having a hard time deciding if I\nshould make my SKITTY evolve or not.\pI only have to use this MOON STONE,\nbut it’s so hard to decide...\pIf I make it evolve, it will become\nmuch stronger.\pBut it will look so different, too."
+}
+
+text Naranja_NavelIsland_Mart_Text_081770D3 {
+    "SKITTY: Miyao?"
+}
+
+text Naranja_NavelIsland_Mart_Text_081770E2 {
+    "This NUGGET I found here...\nI suppose I’ll have to sell it, seeing\las how it has no other use."
+}

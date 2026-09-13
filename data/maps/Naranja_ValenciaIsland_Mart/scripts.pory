@@ -1,0 +1,32 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValenciaIsland_Mart_MapScripts {
+}
+
+script Naranja_ValenciaIsland_Mart_EventScript_Woman3 {
+    msgbox(Naranja_ValenciaIsland_Mart_Text_0817BFFD, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Mart_EventScript_Boy1 {
+    msgbox(Naranja_ValenciaIsland_Mart_Text_0817C06C, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaIsland_Mart_EventScript_Man1 {
+    msgbox(Naranja_ValenciaIsland_Mart_Text_0817C0BC, MSGBOX_NPC)
+    end
+}
+
+text Naranja_ValenciaIsland_Mart_Text_0817BFFD {
+    "Even if a POKéMON is weak now,\nit will grow stronger.\pThe most important thing is love!\nLove for your POKéMON!"
+}
+
+text Naranja_ValenciaIsland_Mart_Text_0817C06C {
+    "Do you use REPEL?\nIt keeps POKéMON away, so it’s\luseful when you’re in a hurry."
+}
+
+text Naranja_ValenciaIsland_Mart_Text_0817C0BC {
+    "Do you have any ANTIDOTES with\nyou?\pIf you walk around with a poisoned\nPOKéMON, it will lose HP until it faints.\lTake some ANTIDOTES with you."
+}

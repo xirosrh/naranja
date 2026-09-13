@@ -1,0 +1,16 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SkyPillar_4F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_ICE_STEP_COUNT, 0: Naranja_MtPyre_2F_OnFrame_1
+    ]
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MtPyre_2F_OnTransition
+    MAP_SCRIPT_ON_RESUME: Naranja_SkyPillar_4F_OnResume
+}
+
+script Naranja_SkyPillar_4F_OnResume {
+    setstepcallback(7)
+    setholewarp(MAP_NARANJA_SKY_PILLAR_3F, 0xFF, 0, 0)
+    end
+}

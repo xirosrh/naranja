@@ -1,0 +1,93 @@
+{
+  "id": "MAP_NARANJA_NAVEL_ISLAND_MART",
+  "region": "REGION_HOENN",
+  "name": "Naranja_NavelIsland_Mart",
+  "layout": "LAYOUT_NARANJA_TANGELO_ISLAND_MART",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NAVEL_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_NAVEL_ISLAND_MART_LITTLE_BOY_1",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_NavelIsland_Mart_EventScript_LittleBoy1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_NAVEL_ISLAND_MART_WOMAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 5,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_NavelIsland_Mart_EventScript_Woman3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_NAVEL_ISLAND_MART_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "x": 9,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_NavelIsland_Mart_EventScript_Man3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_NAVEL_ISLAND_MART_SKITTY",
+      "graphics_id": "OBJ_EVENT_GFX_SKITTY",
+      "x": 2,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_NavelIsland_Mart_EventScript_Skitty",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_NAVEL_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_NAVEL_ISLAND",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

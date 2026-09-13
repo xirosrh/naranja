@@ -4,7 +4,7 @@
   "layout": "LAYOUT_RUSTURF_TUNNEL",
   "music": "MUS_PETALBURG_WOODS",
   "region": "REGION_HOENN",
-  "region_map_section": "MAPSEC_CUEVA_DE_CRISTAL",
+  "region_map_section": "MAPSEC_CRYSTAL_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_FOG_HORIZONTAL",
   "map_type": "MAP_TYPE_UNDERGROUND",

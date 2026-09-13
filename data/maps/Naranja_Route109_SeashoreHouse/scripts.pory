@@ -1,0 +1,196 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route109_SeashoreHouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route109_SeashoreHouse_OnTransition
+}
+
+script Naranja_Route109_SeashoreHouse_OnTransition {
+    setflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_083F)
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Man3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008C)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E36)
+    checkflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008D)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E08)
+    checkflag(FLAG_TEMP_2)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160DFE)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B4D9, MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_2)
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160DFE {
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B5B9, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E08 {
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B609, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x1B)
+    setorcopyvar(VAR_0x8001, 6)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E2C)
+    setflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008C)
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E2C {
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B6BE, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E36 {
+    showmoneybox(0, 0)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B702, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E5A)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B773, MSGBOX_DEFAULT)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E5A {
+    checkmoney(0x12C)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E9E)
+    checkitemspace(ITEM_SODA_POP, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160EAB)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B74C, MSGBOX_DEFAULT)
+    removemoney(0x12C)
+    updatemoneybox
+    setorcopyvar(VAR_0x8000, 0x1B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160E9E {
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B759, MSGBOX_DEFAULT)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160EAB {
+    msgbox(Naranja_SevenGrapefruitIslands_Hall_Text_081A0CC2, MSGBOX_DEFAULT)
+    hidemoneybox
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sailor {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE109_493, Naranja_Route109_SeashoreHouse_Text_0819B809, Naranja_Route109_SeashoreHouse_Text_0819B869, Naranja_Route109_SeashoreHouse_EventScript_AfterBattle_08160F09)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B89F, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Beauty {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE109_647, Naranja_Route109_SeashoreHouse_Text_0819B8E5, Naranja_Route109_SeashoreHouse_Text_0819B949, Naranja_Route109_SeashoreHouse_EventScript_AfterBattle_08160F09)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B955, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_TuberM {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE109_065, Naranja_Route109_SeashoreHouse_Text_0819B988, Naranja_Route109_SeashoreHouse_Text_0819B9C7, Naranja_Route109_SeashoreHouse_EventScript_AfterBattle_08160F09)
+    msgbox(Naranja_Route109_SeashoreHouse_Text_0819B9E5, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_AfterBattle_08160F09 {
+    checktrainerflag(0x1ED)
+    goto_if(LESS_THAN, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160F29)
+    checktrainerflag(0x287)
+    goto_if(LESS_THAN, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160F29)
+    checktrainerflag(0x41)
+    goto_if(LESS_THAN, Naranja_Route109_SeashoreHouse_EventScript_Sub_08160F29)
+    setflag(FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008D)
+    release
+    end
+}
+
+script Naranja_Route109_SeashoreHouse_EventScript_Sub_08160F29 {
+    release
+    end
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B4D9 {
+    "I’m the owner of the SEASHORE HOUSE.\nBut you can call me MR. SEA!\pWhat I love above all is to see hot\nPOKéMON battles.\pLet me see that your heart burns hot!\pIf you can defeat all the TRAINERS\nhere, I’ll reward your efforts."
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B5B9 {
+    "Show me some hot matches!\pI run this SEASHORE HOUSE just for\nthat reason alone!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B609 {
+    "You’re scorching hot!\nThose battles blazed!\lI’m more than just satisfied!\pAs thanks for showing me your hot\nstreak, I want you to take these.\pIt’s half a dozen bottles of SODA POP!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B6BE {
+    "Oh, but hey, your BAG’s jammed full.\nI’ll hang on to these for you."
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B702 {
+    "Want to buy some SODA POP?\nPOKéMON love it!\pJust ¥300 a bottle!\nBuy some!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B74C {
+    "Here you go!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B759 {
+    "You don’t have the money."
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B773 {
+    "No?\nThat’s too bad."
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B809 {
+    "If you’re looking for a battle on the\nhigh seas, you’ll find no hotter \lTRAINER than me, matey!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B869 {
+    "That was a hot battle!\nI can accept that loss, matey!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B89F {
+    "Whenever I’m in SLATEPORT, I enjoy\nhot battles and ice-cold SODA POP!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B8E5 {
+    "Boring battles aren’t worth the effort.\pFiery hot battles are what toughen up\nTRAINERS and POKéMON!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B949 {
+    "That’s hot!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B955 {
+    "Whew, I’m all thirsty.\nMaybe I’ll have a SODA POP."
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B988 {
+    "I’m going to show you how great my\nPOKéMON are, but don’t cry!"
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B9C7 {
+    "...I lost, but I won’t cry..."
+}
+
+text Naranja_Route109_SeashoreHouse_Text_0819B9E5 {
+    "If one of my POKéMON knew the move\nfor carrying me across water on its\lback, I could get rid of this inner tube."
+}

@@ -1,0 +1,84 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_VictoryRoad_B2F_MapScripts {
+}
+
+script Naranja_VictoryRoad_B2F_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_082, Naranja_VictoryRoad_B2F_Text_08197EF2, Naranja_VictoryRoad_B2F_Text_08197F46)
+    msgbox(Naranja_VictoryRoad_B2F_Text_08197F71, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B2F_EventScript_Man4_2 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_083, Naranja_VictoryRoad_B2F_Text_08197FE5, Naranja_VictoryRoad_B2F_Text_0819802B)
+    msgbox(Naranja_VictoryRoad_B2F_Text_08198047, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B2F_EventScript_Woman7 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_099, Naranja_VictoryRoad_B2F_Text_08198089, Naranja_VictoryRoad_B2F_Text_081980AD)
+    msgbox(Naranja_VictoryRoad_B2F_Text_081980C8, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B2F_EventScript_Woman7_2 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_100, Naranja_VictoryRoad_B2F_Text_08198121, Naranja_VictoryRoad_B2F_Text_081981A3)
+    msgbox(Naranja_VictoryRoad_B2F_Text_081981BA, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B2F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x17)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_VictoryRoad_B2F_Text_08197EF2 {
+    "I trained together with my whole family,\nevery one of us!\lI’m not losing to anyone!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_08197F46 {
+    "Better than my family?!\nIs that possible?!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_08197F71 {
+    "I was better than everyone in my\nfamily. I’ve never lost before...\pI’ve lost my confidence...\nMaybe I’ll go home..."
+}
+
+text Naranja_VictoryRoad_B2F_Text_08197FE5 {
+    "I’d heard that there was a tough\nlittle kid around. Do they mean you?"
+}
+
+text Naranja_VictoryRoad_B2F_Text_0819802B {
+    "The little shrimp is tough!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_08198047 {
+    "The rumors I heard, that tough little\nkid is from PETALBURG CITY."
+}
+
+text Naranja_VictoryRoad_B2F_Text_08198089 {
+    "You must be getting a little tired."
+}
+
+text Naranja_VictoryRoad_B2F_Text_081980AD {
+    "No signs of tiring at all!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_081980C8 {
+    "VICTORY ROAD and the POKéMON LEAGUE\nare long and grueling challenges.\lBeware of fatigue!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_08198121 {
+    "You shouldn’t get complacent just\nbecause you have a lot of GYM BADGES.\pThere’s always going to be someone\nwho’s better than you!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_081981A3 {
+    "You’re better than me!"
+}
+
+text Naranja_VictoryRoad_B2F_Text_081981BA {
+    "Gaze on your collected BADGES and\nremember the TRAINERS you’ve faced."
+}

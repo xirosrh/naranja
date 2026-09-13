@@ -1,0 +1,111 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_KumquatIsland_CoveLilyMotel_1F_MapScripts {
+}
+
+script Naranja_KumquatIsland_CoveLilyMotel_1F_EventScript_Man1 {
+    lockall
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_KumquatIsland_CoveLilyMotel_1F_EventScript_Sub_08158326)
+    checkflag(FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_080D)
+    goto_if(EQUAL, Naranja_KumquatIsland_CoveLilyMotel_1F_EventScript_Sub_081582FF)
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186B71, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186C2B, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_KumquatIsland_CoveLilyMotel_1F_EventScript_Sub_081582FF {
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186CCE, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186D7F, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_KumquatIsland_CoveLilyMotel_1F_EventScript_Sub_08158326 {
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186E57, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186F09, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_KumquatIsland_CoveLilyMotel_1F_EventScript_Trigger_1 {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186CA6, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_KumquatIsland_CoveLilyMotel_1F_Movement_08158395)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_KumquatIsland_CoveLilyMotel_1F_Movement_0815839A)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_COVE_LILY_MOTEL_1F_MAN_1_1, Naranja_KumquatIsland_CoveLilyMotel_1F_Movement_0815839C)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+movement Naranja_KumquatIsland_CoveLilyMotel_1F_Movement_08158395 {
+    face_right
+    lock_facing_direction
+    walk_left
+    unlock_facing_direction
+}
+
+movement Naranja_KumquatIsland_CoveLilyMotel_1F_Movement_0815839A {
+    walk_up
+}
+
+movement Naranja_KumquatIsland_CoveLilyMotel_1F_Movement_0815839C {
+    face_down
+    walk_down
+    face_up
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186B71 {
+    "Hm, so they doubled the guests by\nusing POKéMON as attractions?\pHm, well, maybe I should make a cute\nPOKéMON our inn’s mascot.\pI wonder if that will attract more\nguests to stay with us?"
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186C2B {
+    "Oh, sorry, sorry!\nI was too involved in watching TV!\pSince that TEAM {AQUA} came to town,\nthe tourists have been staying away."
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186CA6 {
+    "Hey, down in front!\nI can’t see the TV!"
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186CCE {
+    "Amazing! You’re telling me a POKéMON\nfound someone’s lost item?\pThat’s something. If we had some smart\nPOKéMON like that...\pWe could recover anything that our\nguests mislaid..."
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186D7F {
+    "Oh, sorry, sorry!\nI was too involved in watching TV!\pI heard that someone busted the\nTEAM {AQUA} HIDEOUT.\pThanks to that, we just booked a\nreservation from a big group.\pIt was a company called... Uh...\nGAME something..."
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186E57 {
+    "Amazing! A house-sitting POKéMON\ncaught a burglar?\pThat’s something. If we had a tough\nPOKéMON as a security guard...\pWe would be able to provide our guests\nwith greater safety."
+}
+
+text Naranja_KumquatIsland_CoveLilyMotel_1F_Text_08186F09 {
+    "Oh, sorry, sorry!\nI was too involved in watching TV.\pOh, yes. A big group of guests arrived\na little while ago.\pThey booked in as GAME FREAK, so I\nguess they must make games.\pUh-oh, I’d better get working on\ntheir dinner!"
+}

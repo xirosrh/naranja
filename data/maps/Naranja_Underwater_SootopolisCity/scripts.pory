@@ -1,0 +1,11 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Underwater_SootopolisCity_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_Underwater_SootopolisCity_OnResume
+}
+
+script Naranja_Underwater_SootopolisCity_OnResume {
+    setdivewarp(MAP_NARANJA_NEW_ISLAND, 0xFF, 0x1D, 0x35)
+    end
+}

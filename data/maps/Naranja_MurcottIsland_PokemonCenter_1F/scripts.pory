@@ -1,0 +1,39 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MurcottIsland_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_MurcottIsland_PokemonCenter_1F_OnTransition {
+    setrespawn(4)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD1B)
+    end
+}
+
+script Naranja_MurcottIsland_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_MurcottIsland_PokemonCenter_1F_EventScript_Sailor {
+    msgbox(Naranja_MurcottIsland_PokemonCenter_1F_Text_08180602, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_PokemonCenter_1F_EventScript_Woman7 {
+    msgbox(Naranja_MurcottIsland_PokemonCenter_1F_Text_081806CB, MSGBOX_NPC)
+    end
+}
+
+text Naranja_MurcottIsland_PokemonCenter_1F_Text_08180602 {
+    "Want a tip for battling?\pI’d say it’s raising different kinds\nof POKéMON in a balanced manner.\pIt’s no good to make just one\nPOKéMON strong.\pIf it has a type disadvantage, it\nmight not stand a chance."
+}
+
+text Naranja_MurcottIsland_PokemonCenter_1F_Text_081806CB {
+    "I trade POKéMON with my friends.\pIf a traded POKéMON is holding an\nitem, it makes me twice as happy!"
+}

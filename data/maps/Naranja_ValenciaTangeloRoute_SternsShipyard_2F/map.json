@@ -1,0 +1,126 @@
+{
+  "id": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_ValenciaTangeloRoute_SternsShipyard_2F",
+  "layout": "LAYOUT_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_VALENCIA_TANGELO_ROUTE",
+  "requires_flash": false,
+  "weather": "WEATHER_ABNORMAL",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F_MAN_7",
+      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "x": 0,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G07_M02_TRADER_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F_HEX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 1,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_2F_EventScript_HexManiac",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G07_M02_TRADER_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F_FIRE_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "x": 0,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_2F_EventScript_FireCushion",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G09_M01_FIRE_CUSHION"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F_MAN_7_2",
+      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "x": 3,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G07_M02_TRADER"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F_TRADER",
+      "graphics_id": "OBJ_EVENT_GFX_TUCKER",
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G09_M01_TRADER"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 14,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_HOUSE1",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_2F_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 8,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_2F_EventScript_Trigger_1"
+    }
+  ],
+  "bg_events": []
+}

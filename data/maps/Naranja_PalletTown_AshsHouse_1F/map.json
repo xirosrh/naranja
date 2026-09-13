@@ -1,0 +1,124 @@
+{
+  "id": "MAP_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_PalletTown_AshsHouse_1F",
+  "layout": "LAYOUT_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NARANJA_PALLET_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F_MOM",
+      "graphics_id": "OBJ_EVENT_GFX_MOM",
+      "x": 2,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PalletTown_AshsHouse_1F_EventScript_Mom",
+      "flag": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_MOM"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F_CHIKORITA_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_CHIKORITA_DOLL",
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PalletTown_AshsHouse_1F_EventScript_ChikoritaDoll",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F_PROF_BIRCH",
+      "graphics_id": "OBJ_EVENT_GFX_OAK",
+      "x": 5,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PalletTown_AshsHouse_1F_EventScript_Oak",
+      "flag": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_PROF_BIRCH"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F_BARD",
+      "graphics_id": "OBJ_EVENT_GFX_BARD",
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PalletTown_AshsHouse_1F_EventScript_Bard",
+      "flag": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_BARD"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F_NORMAN",
+      "graphics_id": "OBJ_EVENT_GFX_NORMAN",
+      "x": 2,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_NORMAN"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_BATTLE_TOWER_OUTSIDE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_BATTLE_TOWER_OUTSIDE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TANGELO_PORT_BRENDANS_HOUSE_2F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE",
+      "var_value": "4",
+      "script": "Naranja_PalletTown_AshsHouse_1F_EventScript_Trigger_1"
+    }
+  ],
+  "bg_events": []
+}

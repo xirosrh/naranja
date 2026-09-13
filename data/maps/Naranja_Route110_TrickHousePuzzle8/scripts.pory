@@ -1,0 +1,78 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route110_TrickHousePuzzle8_MapScripts {
+}
+
+script Naranja_Route110_TrickHousePuzzle8_EventScript_Sign_1 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_ROUTE110_EVENT_STATE_12, 0)
+    goto_if(EQUAL, Naranja_Route110_TrickHousePuzzle8_EventScript_Sub_0816342E)
+    goto(Naranja_Route110_TrickHousePuzzle1_EventScript_Sub_08161892)
+}
+
+script Naranja_Route110_TrickHousePuzzle8_EventScript_Sub_0816342E {
+    setvar(VAR_NARANJA_ROUTE110_EVENT_STATE_12, 1)
+    goto(Naranja_Route110_TrickHousePuzzle1_EventScript_Sub_0816189C)
+}
+
+script Naranja_Route110_TrickHousePuzzle8_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE110_076, Naranja_Route110_TrickHousePuzzle8_Text_0819E178, Naranja_Route110_TrickHousePuzzle8_Text_0819E1A1)
+    msgbox(Naranja_Route110_TrickHousePuzzle8_Text_0819E1C5, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle8_EventScript_Woman7 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE110_093, Naranja_Route110_TrickHousePuzzle8_Text_0819E201, Naranja_Route110_TrickHousePuzzle8_Text_0819E22C)
+    msgbox(Naranja_Route110_TrickHousePuzzle8_Text_0819E24C, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle8_EventScript_Man4_2 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE110_077, Naranja_Route110_TrickHousePuzzle8_Text_0819E284, Naranja_Route110_TrickHousePuzzle8_Text_0819E2C1)
+    msgbox(Naranja_Route110_TrickHousePuzzle8_Text_0819E2EE, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route110_TrickHousePuzzle8_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x7F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E178 {
+    "Not many TRAINERS have made it\nthis far."
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E1A1 {
+    "That must mean you’re tough, too..."
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E1C5 {
+    "You’ve beaten the POKéMON LEAGUE\nCHAMPION? That’s too much!"
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E201 {
+    "Consider yourself lucky to be\nbattling me!"
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E22C {
+    "This isn’t right!\nI can’t lose!"
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E24C {
+    "It’s a miracle that you beat me.\nYou can brag about it."
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E284 {
+    "You’ve been slugging through the TRICK\nHOUSE challenge, too."
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E2C1 {
+    "I see...\nYou possess an extraordinary style."
+}
+
+text Naranja_Route110_TrickHousePuzzle8_Text_0819E2EE {
+    "Seeing someone like you should please\nthe TRICK MASTER."
+}

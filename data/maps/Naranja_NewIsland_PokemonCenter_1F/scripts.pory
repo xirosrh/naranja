@@ -1,0 +1,72 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_NewIsland_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_NewIsland_PokemonCenter_1F_OnTransition {
+    setrespawn(0xA)
+    end
+}
+
+script Naranja_NewIsland_PokemonCenter_1F_EventScript_Gentleman {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_PokemonCenter_1F_EventScript_Sub_0815B1C6)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081)
+    goto_if(LESS_THAN, Naranja_NewIsland_PokemonCenter_1F_EventScript_Sub_0815B1C6)
+    msgbox(Naranja_NewIsland_PokemonCenter_1F_Text_0818F770, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_PokemonCenter_1F_EventScript_Sub_0815B1C6 {
+    msgbox(Naranja_NewIsland_PokemonCenter_1F_Text_0818F6A2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_PokemonCenter_1F_EventScript_Woman7 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_PokemonCenter_1F_EventScript_Sub_0815B1EE)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081)
+    goto_if(LESS_THAN, Naranja_NewIsland_PokemonCenter_1F_EventScript_Sub_0815B1EE)
+    msgbox(Naranja_NewIsland_PokemonCenter_1F_Text_0818F860, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_PokemonCenter_1F_EventScript_Sub_0815B1EE {
+    msgbox(Naranja_NewIsland_PokemonCenter_1F_Text_0818F7EA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+text Naranja_NewIsland_PokemonCenter_1F_Text_0818F6A2 {
+    "WALLACE, this town’s GYM LEADER, is a\npowerful TRAINER.\pHe’s rumored to be the best in the\nwhole HOENN region.\pBut the ELITE FOUR...\pThey’re said to be even stronger than\nWALLACE. How strong could they be?"
+}
+
+text Naranja_NewIsland_PokemonCenter_1F_Text_0818F770 {
+    "Everyone in town has taken refuge\nand won’t come out of their homes.\pThis weather..\nCould it be the prelude to something?"
+}
+
+text Naranja_NewIsland_PokemonCenter_1F_Text_0818F7EA {
+    "Whenever, wherever, and whatever\nhappens, I will always be friends with\lPOKéMON.\pBecause it’s fun to be with POKéMON!"
+}
+
+text Naranja_NewIsland_PokemonCenter_1F_Text_0818F860 {
+    "I don’t know why...\nBut... I’m really scared..."
+}

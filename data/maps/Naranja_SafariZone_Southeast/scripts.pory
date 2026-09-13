@@ -1,0 +1,159 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SafariZone_Southeast_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SafariZone_Southeast_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_SAFARI_STORY_STATE, 2: Naranja_SafariZone_Southeast_OnFrame_1
+    ]
+}
+
+script Naranja_SafariZone_Southeast_OnFrame_1 {
+    lockall
+    setvar(VAR_TEMP_1, 0)
+    applymovement(LOCALID_PLAYER, Naranja_SafariZone_Southeast_Movement_08160087)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_SAFARI_ZONE_SOUTHEAST_ROXANNE, Naranja_SafariZone_Southeast_Movement_08160089)
+    waitmovement(LOCALID_NONE)
+    setobjectxyperm(LOCALID_NARANJA_SAFARI_ZONE_SOUTHEAST_ROXANNE, 0x20, 0x22)
+    setvar(VAR_NARANJA_SAFARI_STORY_STATE, 0)
+    releaseall
+    end
+}
+
+script Naranja_SafariZone_Southeast_OnTransition {
+    compare_var_to_value(VAR_NARANJA_SAFARI_STORY_STATE, 2)
+    call_if(EQUAL, Naranja_SafariZone_Southeast_EventScript_Sub_0816007F)
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Sub_0816007F {
+    setobjectxyperm(LOCALID_NARANJA_SAFARI_ZONE_SOUTHEAST_ROXANNE, 0x1F, 0x22)
+    return
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Scyther_2 {
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3B71, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Scyther_3 {
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3BBD, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Scyther_4 {
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3DCE, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Scyther {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_TEMP_1, 0)
+    goto_if(EQUAL, Naranja_SafariZone_Southeast_EventScript_Sub_081600D1)
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3A56, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SafariZone_Southeast_EventScript_Sub_081600E0)
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3A9C, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Sub_081600D1 {
+    setvar(VAR_TEMP_1, 1)
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3B2D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Sub_081600E0 {
+    msgbox(Naranja_SafariZone_Southeast_Text_081C3ACA, MSGBOX_DEFAULT)
+    closemessage
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_SafariZone_Southeast_EventScript_Sub_08160105)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_SafariZone_Southeast_EventScript_Sub_0816011F)
+    end
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Sub_08160105 {
+    applymovement(LOCALID_NARANJA_SAFARI_ZONE_SOUTHEAST_ROXANNE, Naranja_SafariZone_Southeast_Movement_08160150)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_SafariZone_Southeast_Movement_0816014B)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_SafariZone_Southeast_EventScript_Sub_08160139)
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Sub_0816011F {
+    applymovement(LOCALID_NARANJA_SAFARI_ZONE_SOUTHEAST_ROXANNE, Naranja_SafariZone_Southeast_Movement_08160153)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_SafariZone_Southeast_Movement_0816014D)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_SafariZone_Southeast_EventScript_Sub_08160139)
+}
+
+script Naranja_SafariZone_Southeast_EventScript_Sub_08160139 {
+    setvar(VAR_NARANJA_SAFARI_STORY_STATE, 1)
+    special(ExitSafariMode)
+    warpdoor(MAP_NARANJA_ROUTE121_SAFARI_ZONE_ENTRANCE, 0xFF, 2, 5)
+    waitstate
+    end
+}
+
+movement Naranja_SafariZone_Southeast_Movement_08160087 {
+    walk_down
+}
+
+movement Naranja_SafariZone_Southeast_Movement_08160089 {
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement Naranja_SafariZone_Southeast_Movement_0816014B {
+    walk_up
+}
+
+movement Naranja_SafariZone_Southeast_Movement_0816014D {
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_SafariZone_Southeast_Movement_08160150 {
+    walk_left
+    walk_in_place_faster_right
+}
+
+movement Naranja_SafariZone_Southeast_Movement_08160153 {
+    walk_down
+    walk_in_place_faster_up
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3A56 {
+    "You still have time left. Would you like\nto exit the SAFARI ZONE now?"
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3A9C {
+    "Please enjoy the rest of your wild\nadventure!"
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3ACA {
+    "Okay.\pI’ll take back your remaining SAFARI\nBALLS.\pThank you for playing.\nWe hope to see you again."
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3B2D {
+    "Good luck!\pIf you need anything, don’t hesitate\nto tell me, please!"
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3B71 {
+    "Did you know?\pIf you put a オカキクケ in that square box,\nPOKéMON gather around."
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3BBD {
+    "I want to keep going deeper, but I\nforgot to bring a BIKE.\pSomething tells me that rare POKéMON\nlive in the outlying areas."
+}
+
+text Naranja_SafariZone_Southeast_Text_081C3DCE {
+    "I put a オカキクケ on the オカキクケ FEEDER.\nBut it seems to have disappeared.\pI guess POKéMON must have eaten it\nwithout me noticing."
+}

@@ -1,0 +1,55 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MellsweetIsland_Mart_MapScripts {
+}
+
+script Naranja_MellsweetIsland_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MellsweetIsland_Mart_Mart_0815A940)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MellsweetIsland_Mart_EventScript_Woman7 {
+    msgbox(Naranja_MellsweetIsland_Mart_Text_0818D758, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_Mart_EventScript_Boy2 {
+    msgbox(Naranja_MellsweetIsland_Mart_Text_0818D7E7, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_Mart_EventScript_Sailor {
+    msgbox(Naranja_MellsweetIsland_Mart_Text_0818D841, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_MellsweetIsland_Mart_Mart_0815A940 {
+    ITEM_ULTRA_BALL
+    ITEM_NET_BALL
+    ITEM_DIVE_BALL
+    ITEM_HYPER_POTION
+    ITEM_FULL_HEAL
+    ITEM_REVIVE
+    ITEM_MAX_REPEL
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+}
+
+text Naranja_MellsweetIsland_Mart_Text_0818D758 {
+    "REVIVE is fantastic!\pGive it to a fainted POKéMON, and the\nPOKéMON will arise.\pBut be careful, REVIVE doesn’t restore\nthe used-up PP of moves."
+}
+
+text Naranja_MellsweetIsland_Mart_Text_0818D7E7 {
+    "MAX REPEL keeps all weak POKéMON away.\pOut of all the REPEL sprays, it lasts\nthe longest."
+}
+
+text Naranja_MellsweetIsland_Mart_Text_0818D841 {
+    "The NET and DIVE BALLS are rare POKé\nBALLS that are only made in MOSSDEEP.\pA NET BALL is effective against\nBUG-type and WATER-type POKéMON.\pA DIVE BALL works best on POKéMON at\nthe bottom of the sea."
+}

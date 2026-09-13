@@ -1,0 +1,254 @@
+{
+  "id": "MAP_NARANJA_GRANITE_CAVE_B2F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_GraniteCave_B2F",
+  "layout": "LAYOUT_NARANJA_GRANITE_CAVE_B2F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_KABUTO_CAVE",
+  "requires_flash": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_KECLEON_1",
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "x": 30,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Kecleon1",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M09_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 1,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M09_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_KECLEON_1_2",
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "x": 3,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_1F_EventScript_Kecleon1",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_ZIGZAGOON",
+      "graphics_id": "OBJ_EVENT_GFX_MEOWTH",
+      "x": 26,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Zigzagoon",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 25,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Beauty",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_JAMES",
+      "x": 25,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Zigzagoon",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_JESSIE",
+      "x": 24,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Zigzagoon",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_KECLEON_1_3",
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "x": 9,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_GraniteCave_1F_EventScript_Kecleon1",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_GRANITE_CAVE_B2F_CAMERAMAN",
+      "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
+      "x": 25,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_BreakableRock",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_GRANITE_CAVE_STEVENS_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 27,
+      "y": 22,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_GRANITE_CAVE_B1F",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_COLD_PATH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 2,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_GRANITE_CAVE_1F",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 15,
+      "y": 24,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_GRANITE_CAVE_1F",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_GRANITE_CAVE_B1F",
+      "dest_warp_id": "5"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 21,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Trigger_4"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_GraniteCave_B2F_EventScript_Trigger_4"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 28,
+      "y": 6,
+      "elevation": 3,
+      "item": "ITEM_EVERSTONE",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_GRANITE_CAVE_B2F_EVERSTONE_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 4,
+      "y": 19,
+      "elevation": 3,
+      "item": "ITEM_EVERSTONE",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_GRANITE_CAVE_B2F_EVERSTONE_2"
+    }
+  ]
+}

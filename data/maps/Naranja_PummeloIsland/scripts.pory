@@ -1,0 +1,45 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PummeloIsland_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_PummeloIsland_OnTransition
+}
+
+script Naranja_PummeloIsland_OnTransition {
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_KumquatIsland_EventScript_Sub_081A02C1)
+    end
+}
+
+script Naranja_PummeloIsland_EventScript_Sign_1 {
+    msgbox(Naranja_PummeloIsland_Text_0816A74D, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_PummeloIsland_EventScript_Sign_3 {
+    msgbox(Naranja_PummeloIsland_Text_0816A787, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_PummeloIsland_EventScript_Sign_4 {
+    msgbox(Naranja_PummeloIsland_Text_0816A763, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_PummeloIsland_EventScript_Trigger_1 {
+    setflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_081E)
+    setvar(VAR_TEMP_1, 1)
+    end
+}
+
+text Naranja_PummeloIsland_Text_0816A74D {
+    "ENTERING VICTORY ROAD"
+}
+
+text Naranja_PummeloIsland_Text_0816A763 {
+    "ENTERING POKéMON LEAGUE\nCENTER GATE"
+}
+
+text Naranja_PummeloIsland_Text_0816A787 {
+    "EVER GRANDE CITY\p“The paradise of flowers, the sea,\nand POKéMON.”"
+}

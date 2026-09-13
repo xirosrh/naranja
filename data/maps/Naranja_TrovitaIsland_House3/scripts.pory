@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_House3_MapScripts {
+}
+
+script Naranja_TrovitaIsland_House3_EventScript_OldMan2 {
+    msgbox(Naranja_TrovitaIsland_House3_Text_08185584, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_House3_EventScript_OldWoman2 {
+    msgbox(Naranja_TrovitaIsland_House3_Text_081855FA, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_House3_EventScript_Pikachu {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_PIKACHU, 0)
+    msgbox(Naranja_TrovitaIsland_House3_Text_0818567D, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_TrovitaIsland_House3_Text_08185584 {
+    "For my own POKéMON, I give them\nperfectly suited nicknames!\pIt’s my expression of, uh...\noriginality, yes, that’s it!"
+}
+
+text Naranja_TrovitaIsland_House3_Text_081855FA {
+    "But giving the name PEKACHU to a\nPIKACHU? It seems pointless.\pI suppose it is good to use a name\nthat’s easy to understand, but..."
+}
+
+text Naranja_TrovitaIsland_House3_Text_0818567D {
+    "PEKACHU: Peka!"
+}

@@ -1,0 +1,46 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_CharicificValley_Mart_MapScripts {
+}
+
+script Naranja_CharicificValley_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_CharicificValley_Mart_Mart_081538E4)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_CharicificValley_Mart_EventScript_OldMan1 {
+    msgbox(Naranja_CharicificValley_Mart_Text_08176DA6, MSGBOX_NPC)
+    end
+}
+
+script Naranja_CharicificValley_Mart_EventScript_OldWoman2 {
+    msgbox(Naranja_CharicificValley_Mart_Text_08176E1A, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_CharicificValley_Mart_Mart_081538E4 {
+    ITEM_GREAT_BALL
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_REVIVE
+    ITEM_SUPER_REPEL
+    ITEM_X_SPEED
+}
+
+text Naranja_CharicificValley_Mart_Text_08176DA6 {
+    "Use X SPEED to add to a POKéMON’s\nSPEED in battle.\pThat will help it get in the first\nstrike - a decided advantage!"
+}
+
+text Naranja_CharicificValley_Mart_Text_08176E1A {
+    "On MT. CHIMNEY’s peak, there’s a local\nspecialty that you can buy only there.\pGive it to a POKéMON - it will be elated."
+}

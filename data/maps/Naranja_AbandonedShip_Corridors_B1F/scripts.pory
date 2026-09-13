@@ -1,0 +1,98 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_Corridors_B1F_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_AbandonedShip_Corridors_B1F_OnResume
+    MAP_SCRIPT_ON_LOAD: Naranja_AbandonedShip_Corridors_B1F_OnLoad
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_OnResume {
+    setdivewarp(MAP_NARANJA_ABANDONED_SHIP_UNDERWATER1, 0xFF, 5, 4)
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_OnLoad {
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00EF)
+    call_if(LESS_THAN, Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815E9B6)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00EF)
+    call_if(EQUAL, Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815E9C0)
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815E9B6 {
+    setmetatile(0xB, 4, 0x233, 1)
+    return
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815E9C0 {
+    setmetatile(0xB, 4, 0x22B, 1)
+    return
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_TuberM {
+    msgbox(Naranja_AbandonedShip_Corridors_B1F_Text_0819864A, MSGBOX_NPC)
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00EF)
+    goto_if(EQUAL, Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815EA14)
+    checkitem(ITEM_STORAGE_KEY, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815EA0A)
+    msgbox(Naranja_AbandonedShip_Corridors_B1F_Text_08198692, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    removeitem(ITEM_STORAGE_KEY, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00EF)
+    call(Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815E9C0)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815EA0A {
+    msgbox(Naranja_AbandonedShip_Corridors_B1F_Text_0819865C, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_Sub_0815EA14 {
+    msgbox(Naranja_AbandonedShip_Corridors_B1F_Text_081986EC, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_Corridors_B1F_EventScript_Sailor {
+    trainerbattle_single(TRAINER_NARANJA_BANDONED_SHIP_496, Naranja_AbandonedShip_Corridors_B1F_Text_0819856F, Naranja_AbandonedShip_Corridors_B1F_Text_081985C5)
+    msgbox(Naranja_AbandonedShip_Corridors_B1F_Text_081985D7, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_0819856F {
+    "When we go out to sea, we SAILORS\nalways bring our POKéMON.\lHow about a quick battle?"
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_081985C5 {
+    "Whoops, I’m sunk!"
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_081985D7 {
+    "The ship’s bottom has sunk into the\ndepths.\pIf a POKéMON knew how to go underwater,\nwe might make some progress..."
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_0819864A {
+    "Yay!\nIt’s a ship!"
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_0819865C {
+    "The door is locked.\p“STORAGE” is painted on the door."
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_08198692 {
+    "{PLAYER} inserted and turned the\nSTORAGE KEY.\pThe inserted KEY stuck fast, but the\ndoor opened."
+}
+
+text Naranja_AbandonedShip_Corridors_B1F_Text_081986EC {
+    "The door is open."
+}

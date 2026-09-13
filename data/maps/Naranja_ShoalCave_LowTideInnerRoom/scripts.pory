@@ -1,0 +1,201 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ShoalCave_LowTideInnerRoom_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_ShoalCave_LowTideInnerRoom_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ShoalCave_LowTideInnerRoom_OnTransition
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_OnTransition {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_083A)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1AB)
+    goto(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1AF)
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1AB {
+    setmaplayoutindex(0xAA)
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1AF {
+    setmaplayoutindex(0xA6)
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_OnLoad {
+    call(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1B9)
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1B9 {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B8)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1DA)
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_083A)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1DA)
+    setmetatile(0x1F, 8, 0x358, 1)
+    goto(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1DA)
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1DA {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B9)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1FB)
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_083A)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1FB)
+    setmetatile(0xE, 0x1A, 0x358, 1)
+    goto(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1FB)
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E1FB {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BC)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E213)
+    setmetatile(0x29, 0x14, 0x359, 1)
+    goto(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E213)
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E213 {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BD)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E22B)
+    setmetatile(0x29, 0xA, 0x359, 1)
+    goto(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E22B)
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E22B {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BE)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E243)
+    setmetatile(6, 9, 0x359, 1)
+    goto(Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E243)
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E243 {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BF)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E256)
+    setmetatile(0x10, 0xD, 0x359, 1)
+    return
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E256 {
+    return
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sign_3 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BC)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E289)
+    setorcopyvar(VAR_0x8000, 0x2F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(0x29, 0x14, 0x35B, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BC)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E289 {
+    msgbox(Naranja_ShoalCave_LowTideInnerRoom_Text_081C69B8, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sign_4 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BD)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E289)
+    setorcopyvar(VAR_0x8000, 0x2F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(0x29, 0xA, 0x35B, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BD)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sign_5 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BE)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E289)
+    setorcopyvar(VAR_0x8000, 0x2F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(6, 9, 0x35B, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BE)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sign_6 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BF)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E289)
+    setorcopyvar(VAR_0x8000, 0x2F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(0x10, 0xD, 0x35B, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BF)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B8)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E35B)
+    setorcopyvar(VAR_0x8000, 0x2E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(0x1F, 8, 0x35A, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B8)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E35B {
+    msgbox(Naranja_ShoalCave_LowTideInnerRoom_Text_081C6979, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sign_2 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B9)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideInnerRoom_EventScript_Sub_0815E35B)
+    setorcopyvar(VAR_0x8000, 0x2E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(0xE, 0x1A, 0x35A, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B9)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideInnerRoom_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x44)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_ShoalCave_LowTideInnerRoom_Text_081C6979 {
+    "There was some SHOAL SALT here.\nBut, there’s nothing here now."
+}
+
+text Naranja_ShoalCave_LowTideInnerRoom_Text_081C69B8 {
+    "There was a SHOAL SHELL here.\nBut, there’s nothing here now."
+}

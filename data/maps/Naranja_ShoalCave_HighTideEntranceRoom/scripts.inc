@@ -1,0 +1,3 @@
+Naranja_ShoalCave_HighTideEntranceRoom_MapScripts::
+	.byte 0
+

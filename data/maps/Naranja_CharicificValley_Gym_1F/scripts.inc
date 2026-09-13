@@ -1,0 +1,289 @@
+Naranja_CharicificValley_Gym_1F_MapScripts::
+	.byte 0
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sub_0815369F::
+# 8 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	callstd 4
+# 9 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	release
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Flannery::
+# 14 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	trainerbattle_single TRAINER_NARANJA_CHARICIFIC_VALLEY_266, Naranja_CharicificValley_Gym_1F_Text_08176801, Naranja_CharicificValley_Gym_1F_Text_08176960, Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_08153766, NO_MUSIC
+# 15 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	checkflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_00A8
+# 16 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto_if LESS_THAN, Naranja_CharicificValley_Gym_1F_EventScript_Sub_081537A7
+# 17 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176C4A, MSGBOX_DEFAULT
+# 18 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	release
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_08153766::
+# 23 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	message Naranja_CharicificValley_Gym_1F_Text_08176A62
+# 24 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	waitmessage
+# 25 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	call Naranja_ValenciaIsland_Gym_EventScript_Sub_081A02C5
+# 26 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176A8C, MSGBOX_DEFAULT
+# 27 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_04BD
+# 28 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_080A
+# 29 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	addvar VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1
+# 30 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	compare_var_to_value VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 6
+# 31 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	call_if EQUAL, Naranja_ValenciaIsland_Gym_EventScript_Sub_081A00FB
+# 32 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setvar VAR_0x8008, 4
+# 33 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	call Naranja_ValenciaIsland_Gym_EventScript_Sub_081A01C0
+# 34 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_0326
+# 35 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setvar VAR_NARANJA_CHARICIFIC_VALLEY_STORY_STATE, 1
+# 36 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto Naranja_CharicificValley_Gym_1F_EventScript_Sub_081537A7
+	return
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sub_081537A7::
+# 40 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setorcopyvar VAR_0x8000, 0x152
+# 41 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setorcopyvar VAR_0x8001, 1
+# 42 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	callstd 0
+# 43 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	compare_var_to_value VAR_RESULT, 0
+# 44 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto_if EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B
+# 45 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176B8F, MSGBOX_DEFAULT
+# 46 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	setflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_00A8
+# 47 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	release
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Man6::
+# 52 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	trainerbattle LOCALID_NARANJA_CHARICIFIC_VALLEY_GYM_1F_MAN_6, TRAINER_NARANJA_CHARICIFIC_VALLEY_201, Naranja_CharicificValley_Gym_1F_Text_08176432, Naranja_CharicificValley_Gym_1F_Text_0817644F, Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE
+# 53 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176472, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_081537E6::
+# 58 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	call Naranja_CharicificValley_Gym_1F_EventScript_Sub_0815369F
+# 59 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	release
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Man6_2::
+# 64 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	trainerbattle LOCALID_NARANJA_CHARICIFIC_VALLEY_GYM_1F_MAN_6_2, TRAINER_NARANJA_CHARICIFIC_VALLEY_203, Naranja_CharicificValley_Gym_1F_Text_081764D1, Naranja_CharicificValley_Gym_1F_Text_08176516, Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE
+# 65 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176537, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Man6_3::
+# 70 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	trainerbattle LOCALID_NARANJA_CHARICIFIC_VALLEY_GYM_1F_MAN_6_3, TRAINER_NARANJA_CHARICIFIC_VALLEY_205, Naranja_CharicificValley_Gym_1F_Text_0817658D, Naranja_CharicificValley_Gym_1F_Text_0817663F, Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE
+# 71 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176660, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Girl3::
+# 76 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	trainerbattle LOCALID_NARANJA_CHARICIFIC_VALLEY_GYM_1F_GIRL_3, TRAINER_NARANJA_CHARICIFIC_VALLEY_650, Naranja_CharicificValley_Gym_1F_Text_08176784, Naranja_CharicificValley_Gym_1F_Text_081767A6, Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE
+# 77 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_081767C1, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Man4::
+# 82 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	trainerbattle LOCALID_NARANJA_CHARICIFIC_VALLEY_GYM_1F_MAN_4, TRAINER_NARANJA_CHARICIFIC_VALLEY_648, Naranja_CharicificValley_Gym_1F_Text_081766D2, Naranja_CharicificValley_Gym_1F_Text_081766FE, Naranja_CharicificValley_Gym_1F_EventScript_AfterBattle_081537E6, LOCALID_NONE, TRAINER_NONE, NULL, NULL, NULL, NULL, NULL, FALSE, TRUE, FALSE, FALSE, FALSE, TRUE, FALSE, FALSE
+# 83 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_0817671D, MSGBOX_AUTOCLOSE
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Man2::
+# 88 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	lock
+# 89 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	faceplayer
+# 90 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	checkflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_04BD
+# 91 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto_if EQUAL, Naranja_CharicificValley_Gym_1F_EventScript_Sub_0815386E
+# 92 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176312, MSGBOX_DEFAULT
+# 93 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	release
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sub_0815386E::
+# 98 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_0817640C, MSGBOX_DEFAULT
+# 99 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	release
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sign_1::
+# 104 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	lockall
+# 105 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	checkflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_080A
+# 106 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto_if EQUAL, Naranja_CharicificValley_Gym_1F_EventScript_Sub_08153898
+# 107 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto Naranja_CharicificValley_Gym_1F_EventScript_Sub_081538A2
+	return
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sign_2::
+# 111 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	lockall
+# 112 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	checkflag FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_080A
+# 113 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto_if EQUAL, Naranja_CharicificValley_Gym_1F_EventScript_Sub_08153898
+# 114 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	goto Naranja_CharicificValley_Gym_1F_EventScript_Sub_081538A2
+	return
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sub_08153898::
+# 118 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176CCA, MSGBOX_DEFAULT
+# 119 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_CharicificValley_Gym_1F_EventScript_Sub_081538A2::
+# 124 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	msgbox Naranja_CharicificValley_Gym_1F_Text_08176CAF, MSGBOX_DEFAULT
+# 125 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_CharicificValley_Gym_1F_Text_08176312::
+# 129 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Hey, how’s it going, CHAMPION-\nbound {PLAYER}?\pLAVARIDGE’s GYM LEADER FLANNERY\nuses FIRE-type POKéMON.\pHer passion for POKéMON burns stronger\nand hotter than a volcano.\pDon’t get too close to her - you’ll burn!\nHose her down with water and then\lgo for it!$"
+
+Naranja_CharicificValley_Gym_1F_Text_0817640C::
+# 133 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Yow! That was a scorching hot battle!$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176432::
+# 137 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Owowowowow!\nYikes, it’s hot!$"
+
+Naranja_CharicificValley_Gym_1F_Text_0817644F::
+# 141 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "I’m blinded by sweat in my eyes...$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176472::
+# 145 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Being buried in hot sand promotes\ncirculation.\pIt’s effective for healing pain in\nyour joints.$"
+
+Naranja_CharicificValley_Gym_1F_Text_081764D1::
+# 149 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "I’m trying to relieve my stress.\nDon’t come along and stress me out!$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176516::
+# 153 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "I hope FLANNERY flames you good!$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176537::
+# 157 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Haaah... Whew...\pIf you spend too much time buried in\nhot sand, it tuckers you out...$"
+
+Naranja_CharicificValley_Gym_1F_Text_0817658D::
+# 161 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "You must be getting tired by now.\nYou’d like to rest in the hot sand,\lwouldn’t you?\pBut you should know that maintaining\nyour willpower is an important ability\lfor all TRAINERS.$"
+
+Naranja_CharicificValley_Gym_1F_Text_0817663F::
+# 165 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Play with fire, and be burned...$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176660::
+# 169 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Your skill is real...\nBut our LEADER FLANNERY is strong.\pIf you don’t watch yourself, you’ll be\nburned seriously.$"
+
+Naranja_CharicificValley_Gym_1F_Text_081766D2::
+# 173 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Can your POKéMON withstand\n392-degree heat?$"
+
+Naranja_CharicificValley_Gym_1F_Text_081766FE::
+# 177 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "It didn’t burn hotly enough...$"
+
+Naranja_CharicificValley_Gym_1F_Text_0817671D::
+# 181 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "The temperature of magma is\n392 degrees.\pYour POKéMON beat me, so they should\neasily survive in magma.$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176784::
+# 185 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Um...\nOkay, I’ll battle with you.$"
+
+Naranja_CharicificValley_Gym_1F_Text_081767A6::
+# 189 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Oh, but you’re too strong.$"
+
+Naranja_CharicificValley_Gym_1F_Text_081767C1::
+# 193 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "I’m going to be a pretty and strong\nTRAINER just like FLANNERY.$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176801::
+# 197 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Welcome... No, wait.\pPuny TRAINER, how good to see you’ve\nmade it here!\pI have been entrusted with the...\nNo, wait.\pI am FLANNERY, and I’m the GYM\nLEADER here!\pUh...\nDare not underestimate me, though\lI have been LEADER only a short time!\pWith skills inherited from my grand-\nfather, I shall, uh...demonstrate the\lhot moves we have honed on this land!$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176960::
+# 201 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Oh...\nI guess I was trying too hard...\pI... I’ve only recently become a GYM\nLEADER.\pI tried too hard to be someone I’m not.\pI have to do things my natural way.\nIf I don’t, my POKéMON will be confused.\pThanks for teaching me that.\nFor that, you deserve this.$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176A62::
+# 205 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "{PLAYER} received the HEAT BADGE\nfrom FLANNERY.$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176A8C::
+# 209 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "If you have a HEAT BADGE, all POKéMON\nup to Level 50, even those you get in\ltrades from other people, will obey\lyou completely.\pAnd, it lets POKéMON use the HM move\nSTRENGTH outside of battle.\pThis is a token of my appreciation.\nDon’t be shy about taking it!$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176B8F::
+# 213 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "That TM50 contains OVERHEAT.\pThat move inflicts serious damage on\nthe opponent.\pBut it also sharply cuts the SP. ATK\nof the POKéMON using it. It might not\lbe suitable for longer battles.$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176C4A::
+# 217 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "Your power reminds me of someone...\pOh! I know! You battle like NORMAN,\nthe GYM LEADER of PETALBURG.$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176CAF::
+# 221 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "LAVARIDGE TOWN POKéMON GYM$"
+
+Naranja_CharicificValley_Gym_1F_Text_08176CCA::
+# 225 "data/maps/Naranja_CharicificValley_Gym_1F/scripts.pory"
+	.string "LAVARIDGE TOWN POKéMON GYM\pFLANNERY’S CERTIFIED TRAINERS:\n{PLAYER}$"

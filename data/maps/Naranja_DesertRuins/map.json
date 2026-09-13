@@ -1,0 +1,83 @@
+{
+  "id": "MAP_NARANJA_DESERT_RUINS",
+  "region": "REGION_HOENN",
+  "name": "Naranja_DesertRuins",
+  "layout": "LAYOUT_NARANJA_DESERT_RUINS",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_MIKAN_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_DESERT_RUINS_REGIROCK",
+      "graphics_id": "OBJ_EVENT_GFX_REGIROCK",
+      "x": 5,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_DesertRuins_EventScript_Regirock",
+      "flag": "FLAG_HIDE_NARANJA_MIKAN_ISLAND_G24_M06_REGIROCK"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_MIKAN_ISLAND",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 5,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SEAFLOOR_CAVERN_ROOM6",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 31,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_DESERT_RUINS",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 11,
+      "y": 22,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_DesertRuins_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 21,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_DesertRuins_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 14,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_DesertRuins_EventScript_Sign_2"
+    }
+  ]
+}

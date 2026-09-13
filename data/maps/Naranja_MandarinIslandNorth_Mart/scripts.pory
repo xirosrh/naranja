@@ -1,0 +1,49 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandNorth_Mart_MapScripts {
+}
+
+script Naranja_MandarinIslandNorth_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MandarinIslandNorth_Mart_Mart_081573D8)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_Mart_EventScript_OldMan1 {
+    msgbox(Naranja_MandarinIslandNorth_Mart_Text_081827D3, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandNorth_Mart_EventScript_Man4 {
+    msgbox(Naranja_MandarinIslandNorth_Mart_Text_0818287F, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_MandarinIslandNorth_Mart_Mart_081573D8 {
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+    ITEM_GUARD_SPEC
+    ITEM_DIRE_HIT
+    ITEM_X_ACCURACY
+}
+
+text Naranja_MandarinIslandNorth_Mart_Text_081827D3 {
+    "There are items that temporarily\nelevate the stats of POKéMON.\pThe ones I know you use in battle\nare X ATTACK and X DEFEND...\pI do believe that there are others\nlike them."
+}
+
+text Naranja_MandarinIslandNorth_Mart_Text_0818287F {
+    "Use a certain move, or use an item\ninstead...\pThe TRAINER’s decisions determine how\nbattles turn out, I think."
+}

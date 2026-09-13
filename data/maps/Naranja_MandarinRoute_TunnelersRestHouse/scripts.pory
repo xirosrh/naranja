@@ -1,0 +1,82 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinRoute_TunnelersRestHouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MandarinRoute_TunnelersRestHouse_OnTransition
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_OnTransition {
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_085A)
+    end
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_0815C2E8 {
+    msgbox(Naranja_MandarinRoute_TunnelersRestHouse_Text_08193135, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_LittleGirl1 {
+    msgbox(Naranja_MandarinRoute_TunnelersRestHouse_Text_081931C1, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_0815C2FA {
+    lock
+    faceplayer
+    checkflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ROUTE_G21_M00_LITTLE_GIRL_1)
+    goto_if(LESS_THAN, Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_086B3DD0)
+    msgbox(Naranja_MandarinRoute_TunnelersRestHouse_Text_08192F33, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_0815C30F {
+    msgbox(Naranja_MandarinRoute_TunnelersRestHouse_Text_086B3DB0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_086B3DD0 {
+    checkflag(FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO)
+    goto_if(EQUAL, Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_0815C30F)
+    nop
+    setflag(FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO)
+    msgbox(Naranja_MandarinRoute_TunnelersRestHouse_Text_08193049, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x158)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    msgbox(Naranja_MandarinRoute_TunnelersRestHouse_Text_086B3DB0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Man3_2 {
+    setflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ROUTE_G00_M31_LITTLE_GIRL_1)
+    goto(Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_0815C2FA)
+}
+
+script Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Man3 {
+    checkflag(FLAG_NARANJA_RECEIVED_HM_WHIRLPOOL_FROM_MATEO)
+    call_if(EQUAL, Naranja_Route113_GlassWorkshop_EventScript_DittoDoll)
+    goto(Naranja_MandarinRoute_TunnelersRestHouse_EventScript_Sub_0815C2E8)
+}
+
+text Naranja_MandarinRoute_TunnelersRestHouse_Text_08192F33 {
+    "{COLOR 0x06}Mateo: {COLOR 0x01}Esculpo estatuas de cristal,  \ncomo nuestro padre y nuestro abuelo,\p…pero no consigo esculpir\nalgo realmente bueno.\pMi abuelo siempre decìa que se inspiraba\nrecordando las historias\lsobre el {COLOR 0x06}Onix de cristal.\p{COLOR 0x04}{PLAYER}: Yo lo encontraré\npara contarte cada detalle."
+}
+
+text Naranja_MandarinRoute_TunnelersRestHouse_Text_08193049 {
+    "{COLOR 0x06}Mateo: {COLOR 0x01}¿Lo conseguiste?\p{COLOR 0x04}PLAYER : …\p…\p{COLOR 0x01}¡Guau!   \n¿Y lo has capturado?\pMe has ayudado a continuar mi camino…\pte daré algo para el tuyo.\pEnséñala a un pokémon fuerte\npara deshacer los remolinos marinos.\pY recuerda siemopre que…"
+}
+
+text Naranja_MandarinRoute_TunnelersRestHouse_Text_08193135 {
+    "Nuestro hermano está desconsolado.\pÉl es escultor, pero yo solo me dedico\na hacer objetos de cristal.\p¡Al menos necesito menos inspiración!"
+}
+
+text Naranja_MandarinRoute_TunnelersRestHouse_Text_081931C1 {
+    "Did you hear? The TUNNEL to VERDANTURF\nhas gone through!\pSometimes, if you hope strongly enough,\ndreams do come true."
+}
+
+text Naranja_MandarinRoute_TunnelersRestHouse_Text_086B3DB0 {
+    "¡Aquí serás siempre bienvenido!"
+}

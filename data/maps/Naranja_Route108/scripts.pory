@@ -1,0 +1,153 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route108_MapScripts {
+}
+
+script Naranja_Route108_EventScript_DittoDoll {
+    trainerbattle_double(TRAINER_NARANJA_ROUTE108_156, Naranja_Route108_Text_086B88F0, Naranja_Route108_Text_081B97EF, Naranja_Route108_Text_086B8AA9, Naranja_Route108_EventScript_AfterBattle_086B8820, NO_MUSIC)
+    end
+}
+
+script Naranja_Route108_EventScript_Man6 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE108_157, Naranja_Route108_Text_081B9864, Naranja_Route108_Text_081B989F)
+    msgbox(Naranja_Route108_Text_081B98BC, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route108_EventScript_SwimmerF {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE108_447, Naranja_Route108_Text_081B9986, Naranja_Route108_Text_081B99BB)
+    msgbox(Naranja_Route108_Text_081B99E9, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route108_EventScript_BlackBelt {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE108_214, Naranja_Route108_Text_081BC1C8, Naranja_Route108_Text_081BC23F)
+    msgbox(Naranja_Route108_Text_081BC24F, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route108_EventScript_AfterBattle_086B8820 {
+    setflag(FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1)
+    delay(0x30)
+    applymovement(LOCALID_NARANJA_ROUTE108_SWIMMER_F, Naranja_Route108_Movement_086B88C0)
+    applymovement(6, Naranja_Route108_Movement_086B88C0)
+    applymovement(7, Naranja_Route108_Movement_086B88C0)
+    message(Naranja_Route108_Text_086B8AC9)
+    delay(0x40)
+    waitmessage
+    delay(0x80)
+    removeobject(LOCALID_NARANJA_ROUTE108_SWIMMER_F)
+    removeobject(6)
+    removeobject(7)
+    delay(0x10)
+    applymovement(9, Naranja_Route108_Movement_086B88D5)
+    applymovement(5, Naranja_Route108_Movement_086B88D5)
+    applymovement(LOCALID_PLAYER, Naranja_Route108_Movement_086B88EB)
+    msgbox(Naranja_Route108_Text_081B97C3, MSGBOX_DEFAULT)
+    closemessage
+    call(Naranja_CaveOfOrigin_1F_EventScript_Sub_081A04D3)
+    delay(0x40)
+    nop
+    message(Naranja_Route108_Text_086B8AEC)
+    waitmessage
+    fadescreen(1)
+    removeobject(9)
+    removeobject(5)
+    delay(0x10)
+    fadescreen(0)
+    releaseall
+    end
+}
+
+movement Naranja_Route108_Movement_086B88C0 {
+    face_down
+    delay_1
+    face_left
+    delay_1
+    face_up
+    delay_1
+    face_left
+    walk_in_place_faster_left
+    lock_facing_direction
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    walk_faster_up
+    set_visible
+}
+
+movement Naranja_Route108_Movement_086B88D5 {
+    set_visible
+    emote_exclamation_mark
+}
+
+movement Naranja_Route108_Movement_086B88EB {
+    face_up
+}
+
+text Naranja_Route108_Text_081B97C3 {
+    "¡El reportaje\nestá quedando espectacular!"
+}
+
+text Naranja_Route108_Text_081B97EF {
+    "¿Otra vez?   \n¿Qué hemos hecho para merecer esto?"
+}
+
+text Naranja_Route108_Text_081B9864 {
+    "Ahoy, there! Are you going out to the\nABANDONED SHIP, too?"
+}
+
+text Naranja_Route108_Text_081B989F {
+    "I’m sinking!\nGlub... Glub..."
+}
+
+text Naranja_Route108_Text_081B98BC {
+    "Some people even go inside that\nABANDONED SHIP."
+}
+
+text Naranja_Route108_Text_081B9986 {
+    "I love the sea!\nI forget all my worries when I swim!"
+}
+
+text Naranja_Route108_Text_081B99BB {
+    "When I lose a battle, I get all\nstressed out!"
+}
+
+text Naranja_Route108_Text_081B99E9 {
+    "Work off your stress by swimming!\nIt’s so healthy!"
+}
+
+text Naranja_Route108_Text_081BC1C8 {
+    "カ\nÉ \nエÑこここここここオíÑÒ\nœ\nn fish, roast\nmarshmallows, and tell spooky stories!\pBut the best of all are the POKéMON\nbattles!"
+}
+
+text Naranja_Route108_Text_081BC23F {
+    "Way too strong!"
+}
+
+text Naranja_Route108_Text_081BC24F {
+    "I think it’s great that I can go\ncamping with my POKéMON."
+}
+
+text Naranja_Route108_Text_086B88F0 {
+    "JESSIE: {COLOR 0x07}Jaja,\n¿Quieres problemas?\l{COLOR 0x01}JAMES:{COLOR 0x07} ¡Pues escucha nuestro lema!\p{COLOR 0x07}Para proteger al mundo\nde la devastación.\pPara unir a todos los pueblos\nen una sola nación.\pPara derrotar a los enemigos\nde la verdad y el amor.\pPara extender nuestro poder\nmás allá del espacio exterior.\p¡Jessie!\p¡James!\pEl team Rocket despega\na la velocidad de la luz.\pRendìos ahora\no preparaos para luchar.\p{COLOR 0x09}Reportera:{COLOR 0x01}¡Espectacular!\n¡Bravo! ¡Bravìsimo!"
+}
+
+text Naranja_Route108_Text_086B8AA9 {
+    "¡Necesitas dos POKéMON mocos{RIVAL}!"
+}
+
+text Naranja_Route108_Text_086B8AC9 {
+    "¡El TEAM ROCKET despega de nuevoo…"
+}
+
+text Naranja_Route108_Text_086B8AEC {
+    "¿Que…\p¿Qué fue eso?\pEsto se cae a pedazos.\p¡Trae la CUERDA HUÍDA, cari!"
+}

@@ -1,0 +1,43 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_House3_MapScripts {
+}
+
+script Naranja_NewIsland_House3_EventScript_Woman5 {
+    lock
+    faceplayer
+    msgbox(Naranja_NewIsland_House3_Text_0818FB36, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_NewIsland_House3_EventScript_Sub_0815B339)
+    msgbox(Naranja_NewIsland_House3_Text_0818FBC0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_House3_EventScript_Sub_0815B339 {
+    msgbox(Naranja_NewIsland_House3_Text_0818FB9C, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_House3_EventScript_Girl2 {
+    msgbox(Naranja_NewIsland_House3_Text_0818FC1A, MSGBOX_NPC)
+    end
+}
+
+text Naranja_NewIsland_House3_Text_0818FB36 {
+    "You’re a POKéMON TRAINER, aren’t you?\pSOOTOPOLIS’s GYM LEADER WALLACE has\nmany fans.\lDo you have any?"
+}
+
+text Naranja_NewIsland_House3_Text_0818FB9C {
+    "Oh, then you must be pretty strong."
+}
+
+text Naranja_NewIsland_House3_Text_0818FBC0 {
+    "Oh, dear...\nThat’s a little lonesome.\pTry working a little harder to get a\nfan following."
+}
+
+text Naranja_NewIsland_House3_Text_0818FC1A {
+    "Dedicated fans come over from even\nKANTO and JOHTO.\pIt was really wild when I went to the\nTRAINER FAN CLUB in LILYCOVE."
+}

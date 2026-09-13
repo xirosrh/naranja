@@ -1,0 +1,33 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TradeCenter_MapScripts {
+}
+
+script Naranja_TradeCenter_EventScript_Trigger_1 {
+    setvar(VAR_0x8005, 0)
+    special(PlayerEnteredTradeSeat)
+    waitstate
+    end
+}
+
+script Naranja_TradeCenter_EventScript_Trigger_2 {
+    setvar(VAR_0x8005, 1)
+    special(PlayerEnteredTradeSeat)
+    waitstate
+    end
+}
+
+script Naranja_TradeCenter_EventScript_Woman6 {
+    special(Script_FacePlayer)
+    message(Naranja_TradeCenter_Text_081A4DAB)
+    waitmessage
+    waitbuttonpress
+    special(Script_ClearHeldMovement)
+    closemessage
+    end
+}
+
+text Naranja_TradeCenter_Text_081A4DAB {
+    "Please take your seat and start\nyour trade."
+}

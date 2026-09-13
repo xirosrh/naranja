@@ -1,0 +1,249 @@
+{
+  "id": "MAP_NARANJA_TANGELO_PORT",
+  "region": "REGION_HOENN",
+  "name": "Naranja_TangeloPort",
+  "layout": "LAYOUT_NARANJA_TANGELO_PORT",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_TANGELO_TOWN_PORT",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_TANGELO_TOWN",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloPort_EventScript_Scientist1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_2",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 14,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloPort_EventScript_Scientist1_2",
+      "flag": "FLAG_HIDE_NARANJA_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_3",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 16,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 2,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloPort_EventScript_Scientist1_3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4",
+      "graphics_id": "OBJ_EVENT_GFX_SCIENTIST_1",
+      "x": 15,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloPort_EventScript_Scientist1_4",
+      "flag": "FLAG_HIDE_NARANJA_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_PORT_AZURILL_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_AZURILL_DOLL",
+      "x": 6,
+      "y": 7,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_PORT_AZURILL_DOLL_2",
+      "graphics_id": "OBJ_EVENT_GFX_AZURILL_DOLL",
+      "x": 7,
+      "y": 9,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 15,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TANGELO_PORT_MAYS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_PALLET_TOWN_PROFESSOR_OAKS_LAB",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "0",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "0",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "1",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "3",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_4"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "3",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_5"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "3",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_6"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "3",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_7"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "3",
+      "script": "Naranja_TangeloPort_EventScript_Scientist1_4"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
+      "var_value": "3",
+      "script": "Naranja_TangeloPort_EventScript_Trigger_9"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloPort_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloPort_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloPort_EventScript_Sign_3"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 8,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloPort_EventScript_Sign_4"
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "id": "MAP_NARANJA_BLUE_ROUTE",
+  "region": "REGION_HOENN",
+  "name": "Naranja_BlueRoute",
+  "layout": "LAYOUT_NARANJA_BLUE_ROUTE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_BLUE_ROUTE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_TANGELO_ISLAND",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE110",
+      "offset": -60,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_MANDARIN_ISLAND_SOUTH",
+      "offset": 0,
+      "direction": "up"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_BOY_5",
+      "graphics_id": "OBJ_EVENT_GFX_GAMEBOY_KID",
+      "x": 52,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BlueRoute_EventScript_Boy5",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_OLD_WOMAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "x": 18,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BattleTower_Outside_EventScript_Gary",
+      "flag": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_PROF_BIRCH"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 70,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_BlueRoute_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_SWIMMER_F_2",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 63,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BlueRoute_EventScript_SwimmerF_2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_SWIMMER_F_3",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 62,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BlueRoute_EventScript_SwimmerF_3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_SWIMMER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 57,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_BlueRoute_EventScript_SwimmerM",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_FIRE_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "x": 62,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_FIRE_CUSHION_2",
+      "graphics_id": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "x": 63,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_FIRE_CUSHION_3",
+      "graphics_id": "OBJ_EVENT_GFX_FIRE_CUSHION",
+      "x": 64,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_BOY_1_10",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 21,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BlueRoute_EventScript_Boy1",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_PROF_BIRCH",
+      "graphics_id": "OBJ_EVENT_GFX_OAK",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BlueRoute_EventScript_Oak",
+      "flag": "FLAG_HIDE_NARANJA_BLUE_ROUTE_G00_M18_PROF_BIRCH"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_SWIMMER_M_2",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 60,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Naranja_BlueRoute_EventScript_SwimmerM_2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 67,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_BlueRoute_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_BLUE_ROUTE_G00_M18_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_CUTTABLE_TREE",
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 15,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MandarinDesert_EventScript_CuttableTree",
+      "flag": "FLAG_TEMP_12"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_BLUE_ROUTE_CUTTABLE_TREE_2",
+      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
+      "x": 55,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MandarinDesert_EventScript_CuttableTree",
+      "flag": "FLAG_TEMP_13"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 47,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_BlueRoute_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 48,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_BlueRoute_EventScript_Trigger_1"
+    },
+    {
+      "type": "weather",
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "weather": "0"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 13,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloIsland_EventScript_Sign_1"
+    }
+  ]
+}

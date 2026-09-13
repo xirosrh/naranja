@@ -1,0 +1,101 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route134_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_Route134_OnResume
+}
+
+script Naranja_Route134_OnResume {
+    setdivewarp(MAP_NARANJA_UNDERWATER_ROUTE134, 0xFF, 8, 6)
+    end
+}
+
+script Naranja_Route134_EventScript_SwimmerM {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE134_172, Naranja_Route134_Text_081C30C6, Naranja_Route134_Text_081C3110)
+    msgbox(Naranja_Route134_Text_081C311A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route134_EventScript_SwimmerF {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE134_463, Naranja_Route134_Text_081C315E, Naranja_Route134_Text_081C3198)
+    msgbox(Naranja_Route134_Text_081C31A0, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route134_EventScript_Man6 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE134_413, Naranja_Route134_Text_081C31D7, Naranja_Route134_Text_081C3213)
+    msgbox(Naranja_Route134_Text_081C3229, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route134_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE134_397, Naranja_Route134_Text_081C3319, Naranja_Route134_Text_081C335C)
+    msgbox(Naranja_Route134_Text_081C336E, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route134_EventScript_BlackBelt {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE134_180, Naranja_Route134_Text_081C3262, Naranja_Route134_Text_081C329E)
+    msgbox(Naranja_Route134_Text_081C32D6, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_Route134_Text_081C30C6 {
+    "Even those POKéMON that can swim are\ncarried along by the rapid currents."
+}
+
+text Naranja_Route134_Text_081C3110 {
+    "Aiyeeeeh!"
+}
+
+text Naranja_Route134_Text_081C311A {
+    "I think POKéMON enjoy the fast-running\ncurrents around these parts."
+}
+
+text Naranja_Route134_Text_081C315E {
+    "My LUVDISC are looking for a fun\nmatch. Will you join us?"
+}
+
+text Naranja_Route134_Text_081C3198 {
+    "Oopsie!"
+}
+
+text Naranja_Route134_Text_081C31A0 {
+    "There’s a collector who’s after the\nSCALES of LUVDISC."
+}
+
+text Naranja_Route134_Text_081C31D7 {
+    "Okeydokey! That’s enough rest, gang!\nIt’s time for a match!"
+}
+
+text Naranja_Route134_Text_081C3213 {
+    "Tuckered out again..."
+}
+
+text Naranja_Route134_Text_081C3229 {
+    "My BIRD POKéMON get tired quickly after\na long flight..."
+}
+
+text Naranja_Route134_Text_081C3262 {
+    "You’re a POKéMON TRAINER.\nNo need for words. We battle now."
+}
+
+text Naranja_Route134_Text_081C329E {
+    "... ... ... ... ... ... ...\n... ... ... ... ... ... ..."
+}
+
+text Naranja_Route134_Text_081C32D6 {
+    "It was I who challenged you, and yet\nI lost. I am deeply shamed..."
+}
+
+text Naranja_Route134_Text_081C3319 {
+    "The savage tide in this area serves to\nmake us stronger than ever."
+}
+
+text Naranja_Route134_Text_081C335C {
+    "I concede defeat."
+}
+
+text Naranja_Route134_Text_081C336E {
+    "We will return for more training at\nMETEOR FALLS.\pIf you’d like, you should go, too.\nIt will definitely toughen you up!"
+}

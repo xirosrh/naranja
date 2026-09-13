@@ -1,0 +1,1243 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ColdPath_MapScripts {
+}
+
+script Naranja_ColdPath_EventScript_Tracey {
+    compare_var_to_value(0x212C, 1)
+    goto_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_0814BBEA)
+    msgbox(Naranja_ColdPath_Text_08164AA9, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_0814BBEA {
+    msgbox(Naranja_ColdPath_Text_081653D1, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_08150733 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_08CB)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_08150778)
+    msgbox(Naranja_ColdPath_Text_081C5803, MSGBOX_DEFAULT)
+    random(5)
+    addvar(VAR_RESULT, 0xF)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_08CB)
+    msgbox(Naranja_ColdPath_Text_081C5861, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_08150778 {
+    msgbox(Naranja_ColdPath_Text_081C5878, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Gentleman {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_00E7)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081507B9)
+    msgbox(Naranja_ColdPath_Text_08170154, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x125)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_00E7)
+    msgbox(Naranja_ColdPath_Text_081701C5, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081507B9 {
+    msgbox(Naranja_ColdPath_Text_081701C5, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sign_1 {
+    msgbox(Naranja_ColdPath_Text_08170206, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sign_2 {
+    msgbox(Naranja_ColdPath_Text_0817022E, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Boy3 {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_628, Naranja_ColdPath_Text_081BC05B, Naranja_ColdPath_Text_081BC0B5, Naranja_ColdPath_EventScript_AfterBattle_0815CBA7)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_08150808 {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_629, Naranja_ColdPath_Text_081BC125, Naranja_ColdPath_Text_081BC163, Naranja_ColdPath_EventScript_AfterBattle_086B8212)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Picnicker {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_472, Naranja_ColdPath_Text_081BC289, Naranja_ColdPath_Text_081BC2BE)
+    msgbox(Naranja_ColdPath_Text_081BC2C6, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Man3 {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_143, Naranja_ColdPath_Text_081BC2F5, Naranja_ColdPath_Text_081BC327)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_08150874)
+    msgbox(Naranja_ColdPath_Text_081BC337, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_08150874 {
+    trainerbattle_rematch(TRAINER_NARANJA_COLD_PATH_143, Naranja_ColdPath_Text_081BC3B3, Naranja_ColdPath_Text_081BC3E0)
+    msgbox(Naranja_ColdPath_Text_081BC40F, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_SwimmerM_2 {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_206, Naranja_ColdPath_Text_081BC45A, Naranja_ColdPath_Text_081BC499)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081508B2)
+    msgbox(Naranja_ColdPath_Text_081BC4B5, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081508B2 {
+    trainerbattle_rematch(TRAINER_NARANJA_COLD_PATH_206, Naranja_ColdPath_Text_081BC525, Naranja_ColdPath_Text_081BC559)
+    msgbox(Naranja_ColdPath_Text_081BC58C, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Man3_3 {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_338, Naranja_ColdPath_Text_081BC5FC, Naranja_ColdPath_Text_081BC653)
+    msgbox(Naranja_ColdPath_Text_081BC679, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Man3_2 {
+    trainerbattle_single(TRAINER_NARANJA_COLD_PATH_342, Naranja_ColdPath_Text_081BC6EC, Naranja_ColdPath_Text_081BC750)
+    msgbox(Naranja_ColdPath_Text_081BC78A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Camper {
+    trainerbattle_double(TRAINER_NARANJA_COLD_PATH_679, Naranja_ColdPath_Text_081BC7E3, Naranja_ColdPath_Text_081BC834, Naranja_ColdPath_Text_081BC88A)
+    goto(Naranja_ColdPath_EventScript_Sub_08154030)
+}
+
+script Naranja_ColdPath_EventScript_Picnicker_2 {
+    trainerbattle_double(TRAINER_NARANJA_COLD_PATH_679, Naranja_ColdPath_Text_081BC8D8, Naranja_ColdPath_Text_081BC8FB, Naranja_ColdPath_Text_081BC96A)
+    msgbox(Naranja_ColdPath_Text_081BC91E, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_ColdPath_Mart_08153980)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_08154030 {
+    lock
+    faceplayer
+    msgbox(Naranja_ColdPath_Text_08178A9C, MSGBOX_DEFAULT)
+    specialvar(VAR_RESULT, GetLeadMonFriendshipScore)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_08154093)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_0815409D)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081540A7)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081540B1)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081540BB)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081540C5)
+    compare_var_to_value(VAR_0x8000, 6)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081540CF)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_08154093 {
+    msgbox(Naranja_ColdPath_Text_08178C90, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_0815409D {
+    msgbox(Naranja_ColdPath_Text_08178C39, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081540A7 {
+    msgbox(Naranja_ColdPath_Text_08178BFA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081540B1 {
+    msgbox(Naranja_ColdPath_Text_08178BC4, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081540BB {
+    msgbox(Naranja_ColdPath_Text_08178B82, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081540C5 {
+    msgbox(Naranja_ColdPath_Text_08178B43, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081540CF {
+    msgbox(Naranja_ColdPath_Text_08178AF2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_AfterBattle_0815CBA7 {
+    msgbox(Naranja_ColdPath_Text_08194917, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x157)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_BOY_3)
+    msgbox(Naranja_ColdPath_Text_08194A3E, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_COLD_PATH_BOY_3, Naranja_ColdPath_Movement_086B8200)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_SwimmerF {
+    special(ObjectEventInteractionGetBerryTreeData)
+    copyvar(VAR_0x8000, VAR_0x8004)
+    compare_var_to_value(VAR_0x8000, 0xFF)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1533)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A153D)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1595)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A15A2)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A15AF)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A15BC)
+    compare_var_to_value(VAR_0x8000, 5)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A15F9)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1533 {
+    lockall
+    message(Naranja_ColdPath_Text_081A1946)
+    waitmessage
+    waitbuttonpress
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A153D {
+    lock
+    faceplayer
+    specialvar(VAR_RESULT, PlayerHasBerries)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1558)
+    message(Naranja_ColdPath_Text_081A16B6)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1558 {
+    msgbox(Naranja_ColdPath_Text_081A16CD, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1577)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1593)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1577 {
+    fadescreen(1)
+    closemessage
+    special(ObjectEventInteractionGetBerryCountString)
+    waitstate
+    compare_var_to_value(VAR_ITEM_ID, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1593)
+    removeitem(0x800E, 1)
+    call(Naranja_ColdPath_EventScript_Sub_081A16A9)
+    goto(Naranja_ColdPath_EventScript_Sub_081A1593)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1593 {
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1595 {
+    lockall
+    message(Naranja_ColdPath_Text_081A172C)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_ColdPath_EventScript_Sub_081A165F)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15A2 {
+    lockall
+    message(Naranja_ColdPath_Text_081A174B)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_ColdPath_EventScript_Sub_081A165F)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15AF {
+    lockall
+    message(Naranja_ColdPath_Text_081A175C)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_ColdPath_EventScript_Sub_081A165F)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15BC {
+    call(Naranja_ColdPath_EventScript_Sub_081A15CE)
+    lockall
+    message(Naranja_ColdPath_Text_081A177D)
+    waitmessage
+    waitbuttonpress
+    goto(Naranja_ColdPath_EventScript_Sub_081A165F)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15CE {
+    compare_var_to_value(VAR_0x8005, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A15F2)
+    compare_var_to_value(VAR_0x8005, 4)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A15EB)
+    bufferstring(1, Naranja_ColdPath_Text_081A17B7)
+    return
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15EB {
+    bufferstring(1, Naranja_ColdPath_Text_081A179F)
+    return
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15F2 {
+    bufferstring(1, Naranja_ColdPath_Text_081A17B0)
+    return
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A15F9 {
+    buffernumberstring(1, VAR_0x8006)
+    lock
+    faceplayer
+    msgbox(Naranja_ColdPath_Text_081A17C0, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A161D)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A164B)
+    goto(Naranja_ColdPath_EventScript_Sub_081A161D)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A161D {
+    special(ObjectEventInteractionPickBerryTree)
+    compare_var_to_value(VAR_0x8004, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1642)
+    special(ObjectEventInteractionRemoveBerryTree)
+    message(Naranja_ColdPath_Text_081A17FD)
+    playfanfare(MUS_OBTAIN_BERRY)
+    waitmessage
+    waitfanfare
+    waitbuttonpress
+    message(Naranja_ColdPath_Text_081A181A)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1642 {
+    message(Naranja_ColdPath_Text_081A1881)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A164B {
+    message(Naranja_ColdPath_Text_081A18C5)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A165F {
+    checkitem(ITEM_WAILMER_PAIL, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A168D)
+    msgbox(Naranja_ColdPath_Text_081A18E6, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A1693)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081A168D)
+    goto(Naranja_ColdPath_EventScript_Sub_081A168D)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A168D {
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A1693 {
+    message(Naranja_ColdPath_Text_081A1912)
+    waitmessage
+    special(ObjectEventInteractionWaterBerryTree)
+    special(DoWateringBerryTreeAnim)
+    waitstate
+    message(Naranja_ColdPath_Text_081A1925)
+    waitmessage
+    waitbuttonpress
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081A16A9 {
+    special(ObjectEventInteractionPlantBerryTree)
+    incrementgamestat(3)
+    message(Naranja_ColdPath_Text_081A16FB)
+    waitmessage
+    waitbuttonpress
+    return
+}
+
+script Naranja_ColdPath_EventScript_BreakableRock {
+    lockall
+    checkflag(FLAG_NARANJA_RECEIVED_CORAL_EYE_BADGE)
+    goto_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_081B0F3E)
+    checkpartymove(MOVE_ROCK_SMASH)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081B0F3E)
+    setfieldeffectargument(0, 0x800D)
+    bufferpartymonnick(0, 0x800D)
+    buffermovename(1, MOVE_ROCK_SMASH)
+    msgbox(Naranja_ColdPath_Text_081B0F4B, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_081B0F48)
+    msgbox(Naranja_ColdPath_Text_081B0E82, MSGBOX_DEFAULT)
+    closemessage
+    dofieldeffect(0x25)
+    waitstate
+    goto(Naranja_ColdPath_EventScript_Sub_081B0F0C)
+}
+
+script Naranja_ColdPath_EventScript_Sub_081B0F0C {
+    applymovement(32783, Naranja_ColdPath_Movement_081B0F3C)
+    waitmovement(LOCALID_NONE)
+    removeobject(32783)
+    specialvar(VAR_RESULT, TryUpdateRusturfTunnelState)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MikanIsland_EventScript_Sub_081B0F3A)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081B0F3E {
+    msgbox(Naranja_ColdPath_Text_081B0F90, MSGBOX_SIGN)
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_081B0F48 {
+    closemessage
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x44)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_ColdPath_EventScript_ItemBall_2 {
+    setorcopyvar(VAR_0x8000, 0x40)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_ColdPath_EventScript_ItemBall_3 {
+    setorcopyvar(VAR_0x8000, 0x142)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_086B6630 {
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    call_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_086B6658)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_083272FC)
+    msgbox(Naranja_ColdPath_Text_086B6855, MSGBOX_AUTOCLOSE)
+    nop
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_0802DE50)
+    delay(0x10)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_086B6658 {
+    checkflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_086B6674)
+    msgbox(Naranja_ColdPath_Text_086B6965, MSGBOX_AUTOCLOSE)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Trigger_1 {
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_SWIMMER_F)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    checkflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B66BF)
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    call_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_0803DEB2)
+    msgbox(Naranja_ColdPath_Text_086B68A8, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_081536F3)
+    delay(0x10)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_086B66BF {
+    lock
+    setflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_SWIMMER_F)
+    givemon(SPECIES_GOLDUCK, 0x1E, 0x118)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_0803DEB2)
+    msgbox(Naranja_ColdPath_Text_086B6A5B, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_081788C2)
+    delay(0x10)
+    msgbox(Naranja_ColdPath_Text_086B6A87, MSGBOX_AUTOCLOSE)
+    setobjectxy(LOCALID_NARANJA_COLD_PATH_TOTODILE_DOLL, 0x11, 0x26)
+    delay(0x10)
+    applymovement(LOCALID_NARANJA_COLD_PATH_TOTODILE_DOLL, Naranja_ColdPath_Movement_086B6ACA)
+    delay(0xFF)
+    removeobject(LOCALID_NARANJA_COLD_PATH_TOTODILE_DOLL)
+    call(Naranja_ColdPath_EventScript_Sub_08150808)
+    nop
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Trigger_3 {
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_SWIMMER_F)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    call_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    clearflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_08229547)
+    msgbox(Naranja_ColdPath_Text_086B68DD, MSGBOX_AUTOCLOSE)
+    nop
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_085061EC)
+    delay(0x40)
+    msgbox(Naranja_ColdPath_Text_086B691D, MSGBOX_DEFAULT)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_086B6771)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_086B6779)
+    delay(0x90)
+    applymovement(LOCALID_NARANJA_COLD_PATH_TOTODILE_DOLL, Naranja_ColdPath_Movement_086B677D)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_080239AB)
+    delay(0x40)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_TotodileDoll {
+    lock
+    waitse
+    playmoncry(SPECIES_MAWILE, 0x2800)
+    waitse
+    nop
+    delay(0x30)
+    msgbox(Naranja_ColdPath_Text_086B6989, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_NARANJA_COLD_PATH_TOTODILE_DOLL, Naranja_ColdPath_Movement_086B67C1)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_086B67D1)
+    delay(0xB0)
+    setflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Trigger_2 {
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_SWIMMER_F)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    getpartysize
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_086B6630)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_08229547)
+    msgbox(Naranja_ColdPath_Text_086B67E0, MSGBOX_AUTOCLOSE)
+    nop
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_086B5425)
+    delay(0x10)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Bard {
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    call_if(LESS_THAN, Naranja_ColdPath_EventScript_Sub_086B6B23)
+    msgbox(Naranja_ColdPath_Text_086B6BB0, MSGBOX_DEFAULT)
+    faceplayer
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_0802DE50)
+    msgbox(Naranja_ColdPath_Text_086B6BB5, MSGBOX_AUTOCLOSE)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_086B6B23 {
+    lock
+    faceplayer
+    msgbox(Naranja_ColdPath_Text_086B6BCB, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_080008A0)
+    msgbox(Naranja_ColdPath_Text_086B6BDA, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_PinkanIsland_Movement_0800A854)
+    msgbox(Naranja_ColdPath_Text_086B6C1A, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_NARANJA_COLD_PATH_BARD, Naranja_ColdPath_Movement_086B67C1)
+    delay(0x30)
+    removeobject(LOCALID_NARANJA_COLD_PATH_BARD)
+    delay(0x10)
+    setobjectxy(LOCALID_NARANJA_COLD_PATH_SWIMMER_F, 0x11, 0x28)
+    delay(2)
+    applymovement(LOCALID_NARANJA_COLD_PATH_SWIMMER_F, Naranja_ColdPath_Movement_086B6B9A)
+    delay(0x60)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_08003246)
+    delay(0xA0)
+    applymovement(LOCALID_PLAYER, Naranja_PinkanIsland_Movement_0800A854)
+    delay(0x40)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_080008A0)
+    clearflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    removeobject(LOCALID_NARANJA_COLD_PATH_SWIMMER_F)
+    delay(0x10)
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_Sub_086B6D80 {
+    faceplayer
+    msgbox(Naranja_ColdPath_Text_086B6F0D, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_NARANJA_COLD_PATH_NURSE, Naranja_ColdPath_Movement_086B67C2)
+    delay(5)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_080008A0)
+    delay(0x20)
+    removeitem(ITEM_POTION, 1)
+    msgbox(Naranja_ColdPath_Text_086B6FBA, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_086B67C2)
+    delay(0x60)
+    clearflag(FLAG_NARANJA_GOLDUCK_HELPING_ON_CAMINO_FRIO)
+    warp(MAP_NARANJA_UNDERWATER3, 0, 0, 0)
+    end
+}
+
+script Naranja_ColdPath_EventScript_Nurse {
+    faceplayer
+    msgbox(Naranja_ColdPath_Text_086B6DC0, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    nop
+    nop
+    nop
+    checkitem(ITEM_POTION, 0)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B6D80)
+    msgbox(Naranja_ColdPath_Text_086B6EC9, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ColdPath_EventScript_SwimmerM {
+    setflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_NURSE)
+    nop
+    goto(Naranja_ColdPath_EventScript_Sub_08150733)
+}
+
+script Naranja_ColdPath_EventScript_Sub_086B7E7E {
+    release
+    end
+}
+
+script Naranja_ColdPath_EventScript_AfterBattle_086B8212 {
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_Movement_086B8210)
+    delay(0x30)
+    goto(Naranja_ColdPath_EventScript_Sub_086B6B23)
+}
+
+movement Naranja_ColdPath_Movement_080008A0 {
+    face_down
+}
+
+movement Naranja_ColdPath_Movement_08003246 {
+    face_left
+}
+
+movement Naranja_ColdPath_Movement_080239AB {
+    face_right
+}
+
+movement Naranja_ColdPath_Movement_0802DE50 {
+    walk_right
+}
+
+movement Naranja_ColdPath_Movement_0803DEB2 {
+    emote_exclamation_mark
+}
+
+movement Naranja_ColdPath_Movement_081536F3 {
+    walk_slow_left
+    face_up
+}
+
+movement Naranja_ColdPath_Movement_081788C2 {
+    walk_slow_left
+    face_down
+}
+
+movement Naranja_ColdPath_Movement_081B0F3C {
+    rock_smash_break
+}
+
+movement Naranja_ColdPath_Movement_08229547 {
+    face_right
+    emote_exclamation_mark
+}
+
+movement Naranja_ColdPath_Movement_083272FC {
+    face_down
+    emote_exclamation_mark
+}
+
+movement Naranja_ColdPath_Movement_085061EC {
+    walk_slow_down
+    walk_slow_left
+}
+
+movement Naranja_ColdPath_Movement_086B5425 {
+    walk_slow_down
+}
+
+movement Naranja_ColdPath_Movement_086B6674 {
+    emote_exclamation_mark
+    jump_in_place_up
+    walk_up
+    walk_up
+    face_right
+}
+
+movement Naranja_ColdPath_Movement_086B6771 {
+    slide_left
+    walk_in_place_faster_left
+    lock_facing_direction
+    walk_right
+    unlock_facing_direction
+}
+
+movement Naranja_ColdPath_Movement_086B6779 {
+    jump_2_left
+    set_invisible
+}
+
+movement Naranja_ColdPath_Movement_086B677D {
+    set_visible
+    jump_2_up
+}
+
+movement Naranja_ColdPath_Movement_086B67C1 {
+    jump_down
+    jump_2_down
+    delay_16
+    set_invisible
+}
+
+movement Naranja_ColdPath_Movement_086B67C2 {
+    jump_2_down
+    delay_16
+    set_invisible
+}
+
+movement Naranja_ColdPath_Movement_086B67D1 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    set_visible
+    jump_2_up
+}
+
+movement Naranja_ColdPath_Movement_086B6ACA {
+    set_visible
+    acro_end_wheelie_face_right
+    delay_16
+    jump_2_up
+}
+
+movement Naranja_ColdPath_Movement_086B6B9A {
+    delay_16
+    face_right
+    delay_16
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_ColdPath_Movement_086B8200 {
+    walk_right
+    emote_exclamation_mark
+    face_left
+    delay_16
+    delay_16
+    jump_2_right
+    walk_faster_right
+    walk_fast_right
+    walk_down
+    walk_fast_down
+    walk_fast_right
+    walk_fast_right
+    walk_faster_up
+    jump_2_up
+    set_invisible
+}
+
+movement Naranja_ColdPath_Movement_086B8210 {
+    walk_slow_down
+}
+
+mart Naranja_ColdPath_Mart_08153980 {
+    ITEM_GREAT_BALL
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_ESCAPE_ROPE
+    ITEM_SUPER_REPEL
+    ITEM_X_SPECIAL
+    ITEM_MOOMOO_MILK
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+    ITEM_DIRE_HIT
+    ITEM_GUARD_SPEC
+}
+
+text Naranja_ColdPath_Text_08164AA9 {
+    "{COLOR 0x03}Ahora hay que vencer al\nlìder de Isla NAVEL, DANNY.\pCuando compitas con él recuerda\nla continuidad y la estabilidad\lpara ser efectiv{RIVAL}."
+}
+
+text Naranja_ColdPath_Text_081653D1 {
+    "{COLOR 0x03}¡Vamos {PLAYER}! \nJOY está esperando."
+}
+
+text Naranja_ColdPath_Text_08170154 {
+    "All my POKéMON does is ROAR...\nNo one dares to come near me...\pSigh... If you would, please take\nthis TM away..."
+}
+
+text Naranja_ColdPath_Text_081701C5 {
+    "TM05 contains ROAR.\nA ROAR sends POKéMON scurrying."
+}
+
+text Naranja_ColdPath_Text_08170206 {
+    "METEOR FALLS\nRUSTBORO CITY THROUGH HERE"
+}
+
+text Naranja_ColdPath_Text_0817022E {
+    "FOSSIL MANIAC’S HOUSE\n“Fossils gratefully accepted!”"
+}
+
+text Naranja_ColdPath_Text_08178A9C {
+    "Let me see your POKéMON.\nI’ll check to see how much it likes you.\pOh.\nYour POKéMON..."
+}
+
+text Naranja_ColdPath_Text_08178AF2 {
+    "It adores you.\nIt can’t possibly love you any more.\lI even feel happy seeing it."
+}
+
+text Naranja_ColdPath_Text_08178B43 {
+    "It seems to be very happy.\nIt obviously likes you a whole lot."
+}
+
+text Naranja_ColdPath_Text_08178B82 {
+    "It likes you quite a lot.\nIt seems to want to be babied a little."
+}
+
+text Naranja_ColdPath_Text_08178BC4 {
+    "It’s getting used to you.\nIt seems to believe in you."
+}
+
+text Naranja_ColdPath_Text_08178BFA {
+    "It’s not very used to you yet.\nIt neither loves nor hates you."
+}
+
+text Naranja_ColdPath_Text_08178C39 {
+    "It’s very wary.\nIt has scary viciousness in its eyes.\lIt doesn’t like you much at all."
+}
+
+text Naranja_ColdPath_Text_08178C90 {
+    "This is a little hard for me to say...\pYour POKéMON simply detests you.\nDoesn’t that make you uncomfortable?"
+}
+
+text Naranja_ColdPath_Text_08194917 {
+    "¿Sabes?\pEres bueno y es difìcil ver,\naquì y en todos lados,\la alguien con un estilo\ltan impactante como 2.000 vatios.\p¡Es arrojar la POKéBALL\ny haces saltar los fusibles!\pRápido como un rayo\nahora podrás iluminar las cuevas\lcon la potente luz\lque despedirán tus POKéMON.\p¡Ten esta HM DESTELLO!"
+}
+
+text Naranja_ColdPath_Text_08194A3E {
+    "Enséñala a quienes elijas\ne iluminarán tu camino.\p¡Y sin necesidad de enchufarlos!\p{COLOR 0x04}¿Ah no?\p¡Menuda tragedia me estás ahorrando!\p{COLOR 0x01}Ja. Ja.\p¡Espero verte pronto {PLAYER}!"
+}
+
+text Naranja_ColdPath_Text_081A0BE4 {
+    "¡Bienvenido!\p¿Puedo ayudarte?"
+}
+
+text Naranja_ColdPath_Text_081A0C02 {
+    "¡Vuelve otra vez !"
+}
+
+text Naranja_ColdPath_Text_081A16B6 {
+    "It’s soft, loamy soil."
+}
+
+text Naranja_ColdPath_Text_081A16CD {
+    "It’s soft, loamy soil.\nWant to plant a BERRY?"
+}
+
+text Naranja_ColdPath_Text_081A16FB {
+    "{PLAYER} planted one {STR_VAR_1} BERRY in\nthe soft, loamy soil."
+}
+
+text Naranja_ColdPath_Text_081A172C {
+    "One {STR_VAR_1} BERRY was planted here."
+}
+
+text Naranja_ColdPath_Text_081A174B {
+    "{STR_VAR_1} has sprouted."
+}
+
+text Naranja_ColdPath_Text_081A175C {
+    "This {STR_VAR_1} plant is growing taller."
+}
+
+text Naranja_ColdPath_Text_081A177D {
+    "These {STR_VAR_1} flowers are blooming\n{STR_VAR_2}."
+}
+
+text Naranja_ColdPath_Text_081A179F {
+    "very beautifully"
+}
+
+text Naranja_ColdPath_Text_081A17B0 {
+    "cutely"
+}
+
+text Naranja_ColdPath_Text_081A17B7 {
+    "prettily"
+}
+
+text Naranja_ColdPath_Text_081A17C0 {
+    "There are {STR_VAR_2} {STR_VAR_1} BERRIES!\pDo you want to pick the\n{STR_VAR_1} BERRIES?"
+}
+
+text Naranja_ColdPath_Text_081A17FD {
+    "{PLAYER} picked the {STR_VAR_2} {STR_VAR_1} BERRIES."
+}
+
+text Naranja_ColdPath_Text_081A181A {
+    "{PLAYER} put away the {STR_VAR_1} BERRIES\nin the BAG’s BERRIES POCKET.\pThe soil returned to its soft and\nloamy state."
+}
+
+text Naranja_ColdPath_Text_081A1881 {
+    "The BAG’s BERRIES POCKET is full.\pThe {STR_VAR_1} BERRIES couldn’t be taken."
+}
+
+text Naranja_ColdPath_Text_081A18C5 {
+    "{PLAYER} left the {STR_VAR_1} BERRIES\nunpicked."
+}
+
+text Naranja_ColdPath_Text_081A18E6 {
+    "Want to water the {STR_VAR_1} with the\nWAILMER PAIL?"
+}
+
+text Naranja_ColdPath_Text_081A1912 {
+    "{PLAYER} watered the {STR_VAR_1}."
+}
+
+text Naranja_ColdPath_Text_081A1925 {
+    "The plant seems to be delighted."
+}
+
+text Naranja_ColdPath_Text_081A1946 {
+    "!"
+}
+
+text Naranja_ColdPath_Text_081B0E82 {
+    "{STR_VAR_1} used {STR_VAR_2}."
+}
+
+text Naranja_ColdPath_Text_081B0F4B {
+    "This rock appears to be breakable.\nWould you like to use WHIRPOOL?"
+}
+
+text Naranja_ColdPath_Text_081B0F90 {
+    "It’s a rugged rock, but a POKéMON\nmay be able to smash it."
+}
+
+text Naranja_ColdPath_Text_081BC05B {
+    "¡Oye!\p¡Hola!\n¡Me llamo Lectro!\py… ¡O te dejo paralizado \nde un chispazo o te regalo algo!"
+}
+
+text Naranja_ColdPath_Text_081BC0B5 {
+    "¡Bravo!"
+}
+
+text Naranja_ColdPath_Text_081BC125 {
+    "¿Un GOLDUCK? \p¿Crees que eso te fortalece? \p¡Pues empecemos!\n"
+}
+
+text Naranja_ColdPath_Text_081BC163 {
+    "Esto le hace a una pensar.      "
+}
+
+text Naranja_ColdPath_Text_081BC289 {
+    "I need to exercise after a meal.\nLet’s have a match!"
+}
+
+text Naranja_ColdPath_Text_081BC2BE {
+    "Oh, no!"
+}
+
+text Naranja_ColdPath_Text_081BC2C6 {
+    "I just had a tasty meal.\nI’m getting drowsy..."
+}
+
+text Naranja_ColdPath_Text_081BC2F5 {
+    "Ufufufufufu...\nWant to battle against my POKéMON?"
+}
+
+text Naranja_ColdPath_Text_081BC327 {
+    "M-My POKéMON..."
+}
+
+text Naranja_ColdPath_Text_081BC337 {
+    "A big body that’s all lumpy and hard,\nenormous horns, and vicious fangs...\pUfufufufu...\nI wish I had a POKéMON like that..."
+}
+
+text Naranja_ColdPath_Text_081BC3B3 {
+    "Ufufufufufu...\nCome on, battle my POKéMON..."
+}
+
+text Naranja_ColdPath_Text_081BC3E0 {
+    "I feel so lucky getting to see your\nPOKéMON..."
+}
+
+text Naranja_ColdPath_Text_081BC40F {
+    "Ufufufufufu...\pWhen I see POKéMON battling, I get all\nshivery and shaky..."
+}
+
+text Naranja_ColdPath_Text_081BC45A {
+    "If you’re lighting a campfire, make\nsure you have water handy."
+}
+
+text Naranja_ColdPath_Text_081BC499 {
+    "Thanks for dousing my fire!"
+}
+
+text Naranja_ColdPath_Text_081BC4B5 {
+    "You really do have to be careful with\nany sort of fire in a forest.\pDon’t ever underestimate the power\nof fire."
+}
+
+text Naranja_ColdPath_Text_081BC525 {
+    "Have you learned to keep water handy\nfor campfires?"
+}
+
+text Naranja_ColdPath_Text_081BC559 {
+    "I got hosed down before I could flare\nup, I guess."
+}
+
+text Naranja_ColdPath_Text_081BC58C {
+    "You really do have to be careful with\nany sort of fire in a forest.\pDon’t ever underestimate the power\nof fire."
+}
+
+text Naranja_ColdPath_Text_081BC5FC {
+    "If we were fishing, you wouldn’t stand\na chance against me.\lSo, bring on your POKéMON!"
+}
+
+text Naranja_ColdPath_Text_081BC653 {
+    "If we were fishing, I would’ve won..."
+}
+
+text Naranja_ColdPath_Text_081BC679 {
+    "I think I’ll try my luck at landing\na big one at METEOR FALLS.\pThere has to be something in there.\nI just know it."
+}
+
+text Naranja_ColdPath_Text_081BC6EC {
+    "I like to fish. But I also like to\nbattle!\pIf anyone challenges me, I’m there,\neven if I’m fishing."
+}
+
+text Naranja_ColdPath_Text_081BC750 {
+    "I like to battle, but that doesn’t\nmean I’m good at it..."
+}
+
+text Naranja_ColdPath_Text_081BC78A {
+    "This time I’ll do it!\pI always think that, so I can’t walk\naway from fishing or POKéMON."
+}
+
+text Naranja_ColdPath_Text_081BC7E3 {
+    "TYRA: Well, sure.\nI’m in the mood for it.\lI’ll teach you a little about POKéMON."
+}
+
+text Naranja_ColdPath_Text_081BC834 {
+    "TYRA: What an amazing battle style!"
+}
+
+text Naranja_ColdPath_Text_081BC88A {
+    "TYRA: Giggle...\nIf you want to battle with us, just one\lPOKéMON isn’t enough!"
+}
+
+text Naranja_ColdPath_Text_081BC8D8 {
+    "IVY: Who taught you about POKéMON?"
+}
+
+text Naranja_ColdPath_Text_081BC8FB {
+    "IVY: What an amazing battle style!"
+}
+
+text Naranja_ColdPath_Text_081BC91E {
+    "IVY: I started training POKéMON\nbecause TYRA, my student mentor,\ltaught me!"
+}
+
+text Naranja_ColdPath_Text_081BC96A {
+    "IVY: Do you only have one POKéMON?\nI think it must feel lonesome."
+}
+
+text Naranja_ColdPath_Text_081C5803 {
+    "I’m gathering BERRIES so I can win a\nPOKéMON CONTEST.\pIf you’d like, I’ll share one with you."
+}
+
+text Naranja_ColdPath_Text_081C5861 {
+    "Good luck to you, too!"
+}
+
+text Naranja_ColdPath_Text_081C5878 {
+    "What BERRIES should I plant today?\nWhat color オカキクケS should I make?\pFretting over stuff like that is fun\nin its own way."
+}
+
+text Naranja_ColdPath_Text_086B67E0 {
+    "No subas, este es mi peñón\nY no te dejo subir porque…\p…ehh …\p…tienes demasiados POKéMON.\nVuelve con un equipo menor."
+}
+
+text Naranja_ColdPath_Text_086B6855 {
+    "Soy MARINA\ly este es mi Peñón.\p¡Oye!\n¡Qu tate de las escaleras!"
+}
+
+text Naranja_ColdPath_Text_086B68A8 {
+    "Aquì se hace mi Real voluntad.\p¡No te acerques allì!"
+}
+
+text Naranja_ColdPath_Text_086B68DD {
+    "¡Eh! No te acerques a allì\pporque esa parte…\p…ehh…\pes sólo mía."
+}
+
+text Naranja_ColdPath_Text_086B691D {
+    " {COLOR 0x01}MARINA:Q quieres ahora?\p{COLOR 0x04}¡Mojarte!\nA ver si se te va la laca maja"
+}
+
+text Naranja_ColdPath_Text_086B6965 {
+    "{COLOR 0x04}Me pareció ver un lindo GOLDUCK…"
+}
+
+text Naranja_ColdPath_Text_086B6989 {
+    "GOLDUCK parece querer unirse al equipo.\p{COLOR 0x04}¡De acuerdo GOLDUCK!\nJuntos derrotaremos a esa harpìa.\pLe bajaremos los humos en una batalla\npara que entienda que no puede ir por\lahì reinando en peñones ni isletas."
+}
+
+text Naranja_ColdPath_Text_086B6A5B {
+    "MARINA: ¡Eh! ¡Tú!\n¿Porqué no me haces caso?"
+}
+
+text Naranja_ColdPath_Text_086B6A87 {
+    "{COLOR 0x04}{PLAYER}:¿A quién le importa\nlo que tu digas?\p¡Sube GOLDUCK!"
+}
+
+text Naranja_ColdPath_Text_086B6BB0 {
+    "¡Eh!"
+}
+
+text Naranja_ColdPath_Text_086B6BB5 {
+    "No te acerques tanto."
+}
+
+text Naranja_ColdPath_Text_086B6BCB {
+    "¿Sabes?"
+}
+
+text Naranja_ColdPath_Text_086B6BDA {
+    "Quizás…\pEsta isleta no sea mìa,\nsólo porque intenté quedármela."
+}
+
+text Naranja_ColdPath_Text_086B6C1A {
+    "MARINA: ¡Gracias!\p{COLOR 0x04}{PLAYER}: ¿Porqué?\p{COLOR 0x01}MARINA: Porque me di cuenta\nque no soy nadie para llegar aquì la\lúltima y decir que me quedo la isleta.\pNo tengo ninguna soberanìa aquì.\pMe iré a mi casa y dejaré de molestar\na toda la gente que podrìa utilizarlo.\pSolo fui una oportunista por aprovechar\nun momento que estaba vacìo\lpara quedarme la isleta.\p¡Adiós {PLAYER}!"
+}
+
+text Naranja_ColdPath_Text_086B6DC0 {
+    "Hummm…\ntu Lapras se ve feliz,\ppero deberìa descansar\ndespués de tan largos viajes.\p¡Buenas! \nSoy la ENFERMERA JOY.\pComo muchas islas son muy pequeñas\npara tener su propio CENTRO POKéMON,\lyo voy donde me necesite la salud\lde un POKéMON, esté donde esté.\p¿Me ayudas?"
+}
+
+text Naranja_ColdPath_Text_086B6EC9 {
+    "¡De acuerdo!\pAunque necesitaremos una POCIÓN.\n¿Podrìas conseguirla?"
+}
+
+text Naranja_ColdPath_Text_086B6F0D {
+    "¡Perfecto!\pHay que curar y alimentar\na un SHELLDER enfermo.\p¿No te importa\nque usemos esa POCIÓN no?\p¡Pues ahora mismo marcharemos!\p{COLOR 0x04} ¿A dónde?\p{COLOR 0x01}Dónde están las llaves…"
+}
+
+text Naranja_ColdPath_Text_086B6FBA {
+    "{COLOR 0x04}¡Ay!\n¡Hoy debe ser San Zambullida!"
+}

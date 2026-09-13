@@ -1,0 +1,208 @@
+{
+  "id": "MAP_NARANJA_TANGELO_TOWN",
+  "region": "REGION_HOENN",
+  "name": "Naranja_TangeloTown",
+  "layout": "LAYOUT_NARANJA_TANGELO_TOWN",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_TANGELO_TOWN_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_TANGELO_ISLAND",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_TANGELO_PORT",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_TOWN_YOUNGSTER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 26,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloTown_EventScript_Youngster",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_TOWN_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
+      "x": 12,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloTown_EventScript_Tracey",
+      "flag": "FLAG_HIDE_NARANJA_TANGELO_TOWN_TOWN_G00_M16_WALLY"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_TOWN_AZUMARILL",
+      "graphics_id": "OBJ_EVENT_GFX_AZUMARILL",
+      "x": 28,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloTown_EventScript_Azumarill",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_TOWN_UNUSED_PIKACHU_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL",
+      "x": 24,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloTown_EventScript_UnusedPikachuDoll",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_TOWN_WOMAN_7",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 22,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloTown_EventScript_Woman7",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_TOWN_KECLEON_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON_DOLL",
+      "x": 28,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": -21527,
+      "y": -17410,
+      "elevation": 228,
+      "dest_map": "MAP_UNDEFINED",
+      "dest_warp_id": "233"
+    },
+    {
+      "x": 13,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SEAFLOOR_CAVERN_ROOM2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SEAFLOOR_CAVERN_ROOM2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 13,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 23,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": -21529,
+      "y": 255,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE",
+      "var_value": "2",
+      "script": "Naranja_PalletTown_ProfessorOaksLab_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 13,
+      "elevation": 3,
+      "var": "VAR_NARANJA_MELLSWEET_ISLAND_STORY_STATE",
+      "var_value": "0",
+      "script": "Naranja_TangeloTown_EventScript_Tracey"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE",
+      "var_value": "2",
+      "script": "Naranja_PalletTown_ProfessorOaksLab_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE",
+      "var_value": "2",
+      "script": "Naranja_PalletTown_ProfessorOaksLab_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE",
+      "var_value": "2",
+      "script": "Naranja_TangeloTown_EventScript_Trigger_9"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloTown_EventScript_Sign_1"
+    }
+  ]
+}

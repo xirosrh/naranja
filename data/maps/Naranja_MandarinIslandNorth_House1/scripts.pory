@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandNorth_House1_MapScripts {
+}
+
+script Naranja_MandarinIslandNorth_House1_EventScript_Scientist1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_006B)
+    goto_if(EQUAL, Naranja_MandarinIslandNorth_House1_EventScript_Sub_08156A29)
+    msgbox(Naranja_MandarinIslandNorth_House1_Text_08181B1A, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x158)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_006B)
+    msgbox(Naranja_MandarinIslandNorth_House1_Text_08181B64, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_House1_EventScript_Sub_08156A29 {
+    msgbox(Naranja_MandarinIslandNorth_House1_Text_08181BF6, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_MandarinIslandNorth_House1_Text_08181B1A {
+    "Woohoo, your POKéMON look pretty\nstrong.\pI like that!\nHere, take this HM!"
+}
+
+text Naranja_MandarinIslandNorth_House1_Text_08181B64 {
+    "That HM contains ROCK SMASH.\pIf you come across large boulders\nthat block your path...\pWell, use that HM move and smash\nit right out of your way!"
+}
+
+text Naranja_MandarinIslandNorth_House1_Text_08181BF6 {
+    "Oh, yes, if you smash a rock, a POKéMON\ncould come flying out."
+}

@@ -1,0 +1,445 @@
+Naranja_NewMauville_Inside_MapScripts::
+# 5 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	map_script MAP_SCRIPT_ON_RESUME, Naranja_NewMauville_Inside_OnResume
+# 6 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, Naranja_NewMauville_Inside_OnTransition
+# 7 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	map_script MAP_SCRIPT_ON_LOAD, Naranja_NewMauville_Inside_OnLoad
+	.byte 0
+
+
+Naranja_NewMauville_Inside_OnResume::
+# 11 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	compare_var_to_value VAR_TEMP_1, 1
+# 12 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call_if EQUAL, Naranja_NewMauville_Inside_EventScript_Sub_0815E5DA
+# 13 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	compare_var_to_value VAR_TEMP_2, 1
+# 14 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call_if EQUAL, Naranja_NewMauville_Inside_EventScript_Sub_0815E728
+# 15 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	checkflag FLAG_SYS_POKEDEX_GET
+# 16 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call_if EQUAL, Naranja_NewMauville_Inside_EventScript_Sub_0815E58F
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_Sub_0815E58F::
+# 21 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	removeobject 32783
+	return
+
+
+Naranja_NewMauville_Inside_OnTransition::
+# 26 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_TEMP_1, 0
+# 27 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_TEMP_2, 0
+	end
+
+
+Naranja_NewMauville_Inside_OnLoad::
+# 32 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
+# 33 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call_if EQUAL, Naranja_NewMauville_Inside_EventScript_Sub_0815E88B
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_Trigger_1::
+# 38 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lockall
+# 39 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 40 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_TEMP_2, 0
+# 41 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	playse SE_PIN
+# 42 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call Naranja_NewMauville_Inside_EventScript_Sub_0815E5DA
+# 43 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	special DrawWholeMapView
+# 44 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_Trigger_2::
+# 49 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lockall
+# 50 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_TEMP_1, 0
+# 51 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_TEMP_2, 1
+# 52 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	playse SE_PIN
+# 53 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call Naranja_NewMauville_Inside_EventScript_Sub_0815E728
+# 54 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	special DrawWholeMapView
+# 55 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_Sub_0815E5DA::
+# 60 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x22, 0x269, 1
+# 61 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x23, 0x271, 1
+# 62 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x24, 0x26D, 0
+# 63 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x25, 0x281, 0
+# 64 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x10, 0x269, 1
+# 65 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x11, 0x271, 1
+# 66 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x12, 0x26D, 0
+# 67 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x13, 0x281, 0
+# 68 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0, 0x269, 1
+# 69 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 1, 0x271, 1
+# 70 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 2, 0x26D, 0
+# 71 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 3, 0x281, 0
+# 72 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x21, 0x2B6, 1
+# 73 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x22, 0x2BE, 1
+# 74 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x23, 0x2C6, 1
+# 75 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x24, 0x2CE, 1
+# 76 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x16, 0x2B6, 1
+# 77 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x17, 0x2BE, 1
+# 78 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x18, 0x2C6, 1
+# 79 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x19, 0x2CE, 1
+# 80 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x18, 0x2B6, 1
+# 81 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x19, 0x2BE, 1
+# 82 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x1A, 0x2C6, 1
+# 83 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x1B, 0x2CE, 1
+# 84 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 2, 0x2B6, 1
+# 85 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 3, 0x2BE, 1
+# 86 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 4, 0x2C6, 1
+# 87 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 5, 0x2CE, 1
+# 88 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 6, 0xB, 0x24F, 0
+# 89 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xD, 0xA, 0x24F, 0
+# 90 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x10, 0x16, 0x24F, 0
+# 91 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 4, 0x1A, 0x24F, 0
+# 92 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1E, 0x26, 0x24F, 0
+# 93 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 2, 0xB, 0x22E, 0
+# 94 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x11, 0xA, 0x22E, 0
+# 95 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x19, 0x12, 0x22E, 0
+# 96 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x12, 0x24, 0x22E, 0
+	return
+
+
+Naranja_NewMauville_Inside_EventScript_Sub_0815E728::
+# 101 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x22, 0x2B7, 1
+# 102 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x23, 0x2BF, 1
+# 103 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x24, 0x2C7, 1
+# 104 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x17, 0x25, 0x2CF, 1
+# 105 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x10, 0x2B7, 1
+# 106 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x11, 0x2BF, 1
+# 107 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x12, 0x2C7, 1
+# 108 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x13, 0x2CF, 1
+# 109 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0, 0x2B7, 1
+# 110 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 1, 0x2BF, 1
+# 111 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 2, 0x2C7, 1
+# 112 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 3, 0x2CF, 1
+# 113 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x21, 0x269, 1
+# 114 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x22, 0x271, 1
+# 115 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x23, 0x26D, 0
+# 116 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x25, 0x24, 0x281, 0
+# 117 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x16, 0x269, 1
+# 118 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x17, 0x271, 1
+# 119 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x18, 0x26D, 0
+# 120 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1C, 0x19, 0x281, 0
+# 121 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x18, 0x269, 1
+# 122 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x19, 0x271, 1
+# 123 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x1A, 0x26D, 0
+# 124 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xA, 0x1B, 0x281, 0
+# 125 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 2, 0x269, 1
+# 126 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 3, 0x271, 1
+# 127 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 4, 0x26D, 0
+# 128 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x15, 5, 0x281, 0
+# 129 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 2, 0xB, 0x24F, 0
+# 130 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x11, 0xA, 0x24F, 0
+# 131 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x19, 0x12, 0x24F, 0
+# 132 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x12, 0x24, 0x24F, 0
+# 133 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 6, 0xB, 0x236, 0
+# 134 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0xD, 0xA, 0x236, 0
+# 135 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x10, 0x16, 0x236, 0
+# 136 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 4, 0x1A, 0x236, 0
+# 137 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x1E, 0x26, 0x236, 0
+	return
+
+
+Naranja_NewMauville_Inside_EventScript_Trigger_10::
+# 142 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lockall
+# 143 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	msgbox Naranja_NewMauville_Inside_Text_081983B1, MSGBOX_DEFAULT
+# 144 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	call Naranja_NewMauville_Inside_EventScript_Sub_0815E88B
+# 145 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setvar VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
+# 146 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_Sub_0815E88B::
+# 151 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x21, 6, 0x24F, 0
+# 152 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x20, 2, 0x2F0, 1
+# 153 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x21, 2, 0x2F1, 1
+# 154 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x22, 2, 0x2F2, 1
+# 155 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x23, 2, 0x2F3, 1
+# 156 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x20, 3, 0x2F4, 1
+# 157 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x21, 3, 0x2F5, 1
+# 158 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x22, 3, 0x2F6, 1
+# 159 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setmetatile 0x23, 3, 0x2F7, 1
+# 160 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	special DrawWholeMapView
+	return
+
+
+Naranja_NewMauville_Inside_EventScript_Sign_1::
+# 165 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lockall
+# 166 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	compare_var_to_value VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2
+# 167 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	goto_if EQUAL, Naranja_NewMauville_Inside_EventScript_Sub_0815E8F6
+# 168 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	msgbox Naranja_NewMauville_Inside_Text_08198315, MSGBOX_DEFAULT
+# 169 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_Sub_0815E8F6::
+# 174 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	msgbox Naranja_NewMauville_Inside_Text_08198395, MSGBOX_DEFAULT
+# 175 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	releaseall
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_6::
+# 180 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lock
+# 181 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	faceplayer
+# 182 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setwildbattle SPECIES_VOLTORB, 0x19, 0
+# 183 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	waitse
+# 184 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	playmoncry SPECIES_VOLTORB, 2
+# 185 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	delay 0x28
+# 186 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	waitmoncry
+# 187 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setflag FLAG_HIDE_NARANJA_NEW_MAUVILLE_INSIDE_ITEM_BALL_6
+# 188 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setflag FLAG_SYS_POKEDEX_GET
+# 189 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	dowildbattle
+# 190 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	clearflag FLAG_SYS_POKEDEX_GET
+# 191 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	release
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_7::
+# 196 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lock
+# 197 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	faceplayer
+# 198 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setwildbattle SPECIES_VOLTORB, 0x19, 0
+# 199 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	waitse
+# 200 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	playmoncry SPECIES_VOLTORB, 2
+# 201 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	delay 0x28
+# 202 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	waitmoncry
+# 203 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setflag FLAG_HIDE_NARANJA_NEW_MAUVILLE_INSIDE_ITEM_BALL_7
+# 204 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setflag FLAG_SYS_POKEDEX_GET
+# 205 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	dowildbattle
+# 206 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	clearflag FLAG_SYS_POKEDEX_GET
+# 207 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	release
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_8::
+# 212 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	lock
+# 213 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	faceplayer
+# 214 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setwildbattle SPECIES_VOLTORB, 0x19, 0
+# 215 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	waitse
+# 216 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	playmoncry SPECIES_VOLTORB, 2
+# 217 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	delay 0x28
+# 218 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	waitmoncry
+# 219 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setflag FLAG_HIDE_NARANJA_NEW_MAUVILLE_INSIDE_ITEM_BALL_8
+# 220 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setflag FLAG_SYS_POKEDEX_GET
+# 221 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	dowildbattle
+# 222 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	clearflag FLAG_SYS_POKEDEX_GET
+# 223 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	release
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall::
+# 228 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8000, 2
+# 229 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8001, 1
+# 230 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	callstd 1
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_2::
+# 235 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8000, 0x55
+# 236 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8001, 1
+# 237 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	callstd 1
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_3::
+# 242 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8000, 0x60
+# 243 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8001, 1
+# 244 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	callstd 1
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_4::
+# 249 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8000, 0x17
+# 250 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8001, 1
+# 251 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	callstd 1
+	end
+
+
+Naranja_NewMauville_Inside_EventScript_ItemBall_5::
+# 256 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8000, 0x12
+# 257 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	setorcopyvar VAR_0x8001, 1
+# 258 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	callstd 1
+	end
+
+
+Naranja_NewMauville_Inside_Text_08198315::
+# 262 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	.string "The generator is radiating heat that\ncan be felt even at a distance.\pIt looks like it should be turned off\nas soon as possible.$"
+
+Naranja_NewMauville_Inside_Text_08198395::
+# 266 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	.string "The generator quieted down.$"
+
+Naranja_NewMauville_Inside_Text_081983B1::
+# 270 "data/maps/Naranja_NewMauville_Inside/scripts.pory"
+	.string "{PLAYER} stepped on the switch.\pClick...\p... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pThe generator appears to have\nstopped...$"

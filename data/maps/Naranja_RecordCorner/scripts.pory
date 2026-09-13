@@ -1,0 +1,84 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_RecordCorner_MapScripts {
+}
+
+script Naranja_RecordCorner_EventScript_Trigger_1 {
+    setvar(VAR_0x8005, 0)
+    special(RecordMixingPlayerSpotTriggered)
+    waitstate
+    compare_var_to_value(VAR_TEMP_1, 0)
+    goto_if(NOT_EQUAL, Naranja_RecordCorner_EventScript_Sub_081A446C)
+    end
+}
+
+script Naranja_RecordCorner_EventScript_Trigger_3 {
+    setvar(VAR_0x8005, 1)
+    special(RecordMixingPlayerSpotTriggered)
+    waitstate
+    compare_var_to_value(VAR_TEMP_1, 0)
+    goto_if(NOT_EQUAL, Naranja_RecordCorner_EventScript_Sub_081A446C)
+    end
+}
+
+script Naranja_RecordCorner_EventScript_Trigger_2 {
+    setvar(VAR_0x8005, 2)
+    special(RecordMixingPlayerSpotTriggered)
+    waitstate
+    compare_var_to_value(VAR_TEMP_1, 0)
+    goto_if(NOT_EQUAL, Naranja_RecordCorner_EventScript_Sub_081A446C)
+    end
+}
+
+script Naranja_RecordCorner_EventScript_Trigger_4 {
+    setvar(VAR_0x8005, 3)
+    special(RecordMixingPlayerSpotTriggered)
+    waitstate
+    compare_var_to_value(VAR_TEMP_1, 0)
+    goto_if(NOT_EQUAL, Naranja_RecordCorner_EventScript_Sub_081A446C)
+    end
+}
+
+script Naranja_RecordCorner_EventScript_Sub_081A446C {
+    bufferitemname(1, 0x4001)
+    message(Naranja_RecordCorner_Text_081A4E3B)
+    waitmessage
+    waitbuttonpress
+    releaseall
+    end
+}
+
+script Naranja_RecordCorner_EventScript_Woman6 {
+    compare_var_to_value(VAR_TEMP_0, 0)
+    goto_if(NOT_EQUAL, Naranja_RecordCorner_EventScript_Sub_081A44D6)
+    special(Script_FacePlayer)
+    message(Naranja_RecordCorner_Text_081A4DD7)
+    waitmessage
+    waitbuttonpress
+    special(Script_ClearHeldMovement)
+    closemessage
+    end
+}
+
+script Naranja_RecordCorner_EventScript_Sub_081A44D6 {
+    special(Script_FacePlayer)
+    message(Naranja_RecordCorner_Text_081A4DF7)
+    waitmessage
+    waitbuttonpress
+    special(Script_ClearHeldMovement)
+    closemessage
+    end
+}
+
+text Naranja_RecordCorner_Text_081A4DD7 {
+    "Please take your seat and wait."
+}
+
+text Naranja_RecordCorner_Text_081A4DF7 {
+    "Thanks for coming."
+}
+
+text Naranja_RecordCorner_Text_081A4E3B {
+    "{STR_VAR_1} sent over one\n{STR_VAR_2}."
+}

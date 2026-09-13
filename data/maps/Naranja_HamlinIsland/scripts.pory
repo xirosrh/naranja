@@ -1,0 +1,62 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_HamlinIsland_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_HamlinIsland_OnTransition
+    MAP_SCRIPT_ON_RESUME: Naranja_HamlinIsland_OnResume
+}
+
+script Naranja_HamlinIsland_OnTransition {
+    setflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_0815)
+    end
+}
+
+script Naranja_HamlinIsland_OnResume {
+    setstepcallback(3)
+    end
+}
+
+script Naranja_HamlinIsland_EventScript_LittleBoy1 {
+    msgbox(Naranja_HamlinIsland_Text_0816D04A, MSGBOX_NPC)
+    end
+}
+
+script Naranja_HamlinIsland_EventScript_Girl1 {
+    msgbox(Naranja_HamlinIsland_Text_0816CFC5, MSGBOX_NPC)
+    end
+}
+
+script Naranja_HamlinIsland_EventScript_Fisherman {
+    msgbox(Naranja_HamlinIsland_Text_0816D08A, MSGBOX_NPC)
+    end
+}
+
+script Naranja_HamlinIsland_EventScript_Sign_2 {
+    msgbox(Naranja_HamlinIsland_Text_0816D0CE, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_HamlinIsland_EventScript_Sign_1 {
+    msgbox(Naranja_HamlinIsland_Text_081A0D75, MSGBOX_SIGN)
+    end
+}
+
+text Naranja_HamlinIsland_Text_0816CFC5 {
+    "The sea between PACIFIDLOG and\nSLATEPORT has a fast-running tide.\pIf you decide to SURF, you could end\nup swept away somewhere else."
+}
+
+text Naranja_HamlinIsland_Text_0816D04A {
+    "See, isn’t it neat?\nThese houses are on water!\pI was born here!"
+}
+
+text Naranja_HamlinIsland_Text_0816D08A {
+    "The folks of PACIFIDLOG all fish and\ndive as part of the lifestyle."
+}
+
+text Naranja_HamlinIsland_Text_0816D0CE {
+    "PACIFIDLOG TOWN\p“Where the morning sun smiles upon\nthe waters.”"
+}
+
+text Naranja_HamlinIsland_Text_081A0D75 {
+    "“Rejuvenate your tired partners!”\nPOKéMON CENTER"
+}

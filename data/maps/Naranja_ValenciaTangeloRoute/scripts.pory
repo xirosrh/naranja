@@ -1,0 +1,75 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValenciaTangeloRoute_MapScripts {
+}
+
+script Naranja_ValenciaTangeloRoute_EventScript_LittleBoy2 {
+    msgbox(Naranja_ValenciaTangeloRoute_Text_0816D431, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaTangeloRoute_EventScript_Sign_2 {
+    msgbox(Naranja_ValenciaTangeloRoute_Text_086BF453, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_ValenciaTangeloRoute_EventScript_BugCatcher {
+    trainerbattle_single(TRAINER_NARANJA_VALENCIA_TANGELO_ROUTE_615, Naranja_ValenciaTangeloRoute_Text_081B7C05, Naranja_ValenciaTangeloRoute_Text_081B7C40)
+    msgbox(Naranja_ValenciaTangeloRoute_Text_081B7C52, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaTangeloRoute_EventScript_Girl2 {
+    trainerbattle_single(TRAINER_NARANJA_VALENCIA_TANGELO_ROUTE_603, Naranja_ValenciaTangeloRoute_Text_081B7C97, Naranja_ValenciaTangeloRoute_Text_081B7CEC)
+    msgbox(Naranja_ValenciaTangeloRoute_Text_081B7D11, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_ValenciaTangeloRoute_EventScript_Youngster {
+    msgbox(Naranja_ValenciaTangeloRoute_Text_081953AC, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ValenciaTangeloRoute_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0xD)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_ValenciaTangeloRoute_Text_0816D431 {
+    "Odio las plantas altas,\nse me meten entre los ojos…\p{COLOR 0x04}{PLAYER}: ¿Plantas altas?\p{COLOR 0x01}Sí, es lo que tiene ser bajito…"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081953AC {
+    "Pareces un buen entrenador…\n¿Quieres luchar?\p¡Pues no!\pLo siento no soy entrenador.\npero tu sí…\p¡Hazte con todos los \nPOKéMON!"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081B7C05 {
+    "¡Mira mis bichos! \n¡Son del SAFARI de {COLOR 0x0E}Isla MURCOTT!"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081B7C40 {
+    "Ay… ¡Qué hiciste!"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081B7C52 {
+    "Aplastaste mis bichos, no es justo."
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081B7C97 {
+    "¿Acabas de llegar?\n¡Siente el poder de las flores!\p¡Te voy a machacar!"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081B7CEC {
+    "¡ Has dañado mis bonitas flores !!"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_081B7D11 {
+    "Quizá tenga que fortalecer mi equipo…\ncon otros tipos… ya veré…"
+}
+
+text Naranja_ValenciaTangeloRoute_Text_086BF453 {
+    "Está entrando en\n{COLOR 0x0D}Isla TANGELO"
+}

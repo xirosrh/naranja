@@ -1,0 +1,68 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandSouth_DepartmentStore_4F_MapScripts {
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_4F_EventScript_Gentleman {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_4F_Text_0818C39C, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_4F_EventScript_Woman3 {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_4F_Text_0818C41B, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_4F_EventScript_Youngster {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_4F_Text_0818C481, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_4F_EventScript_Woman4 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MandarinIslandSouth_DepartmentStore_4F_Mart_0815A030)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_4F_EventScript_Woman4_2 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MandarinIslandSouth_DepartmentStore_4F_Mart_0815A054)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_4F_Mart_0815A030 {
+    ITEM_TM38
+    ITEM_TM25
+    ITEM_TM14
+    ITEM_TM15
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_4F_Mart_0815A054 {
+    ITEM_TM17
+    ITEM_TM20
+    ITEM_TM33
+    ITEM_TM16
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_4F_Text_0818C39C {
+    "Hmm...\pAn attacking move...\nOr a defensive move...\pIt’s no easy matter to decide which TM\nmoves should be taught to POKéMON..."
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_4F_Text_0818C41B {
+    "There are so many different kinds of\nTM moves.\pA catalog I read said there are fifty\ndifferent kinds."
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_4F_Text_0818C481 {
+    "I’d like to get all the different TM, \nbut a POKéMON learns only four moves."
+}

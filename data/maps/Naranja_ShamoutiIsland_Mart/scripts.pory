@@ -1,0 +1,56 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ShamoutiIsland_Mart_MapScripts {
+}
+
+script Naranja_ShamoutiIsland_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_ShamoutiIsland_Mart_Mart_08158080)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ShamoutiIsland_Mart_EventScript_Woman3 {
+    msgbox(Naranja_ShamoutiIsland_Mart_Text_081861EF, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ShamoutiIsland_Mart_EventScript_Girl3 {
+    msgbox(Naranja_ShamoutiIsland_Mart_Text_08186251, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ShamoutiIsland_Mart_EventScript_Boy2 {
+    msgbox(Naranja_ShamoutiIsland_Mart_Text_081862CA, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_ShamoutiIsland_Mart_Mart_08158080 {
+    ITEM_GREAT_BALL
+    ITEM_ULTRA_BALL
+    ITEM_SUPER_POTION
+    ITEM_HYPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_REVIVE
+    ITEM_SUPER_REPEL
+    ITEM_WOOD_MAIL
+}
+
+text Naranja_ShamoutiIsland_Mart_Text_081861EF {
+    "SUPER REPEL lasts a long time, and\nit gets the job done.\pIt’s much better than an ordinary\nREPEL."
+}
+
+text Naranja_ShamoutiIsland_Mart_Text_08186251 {
+    "I always stock up on more items than\nI’m sure I’ll need.\pYou never know what might happen.\nBetter to be safe than sorry!"
+}
+
+text Naranja_ShamoutiIsland_Mart_Text_081862CA {
+    "A RARE CANDY makes a POKéMON grow\nimmediately by one level."
+}

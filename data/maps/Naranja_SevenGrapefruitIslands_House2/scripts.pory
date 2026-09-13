@@ -1,0 +1,54 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SevenGrapefruitIslands_House2_MapScripts {
+}
+
+script Naranja_SevenGrapefruitIslands_House2_EventScript_Man4 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0121)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_House2_EventScript_Sub_08153615)
+    msgbox(Naranja_SevenGrapefruitIslands_House2_Text_08175EFE, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0xD9)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_House2_EventScript_Sub_0815360B)
+    setflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0121)
+    release
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_House2_EventScript_Sub_0815360B {
+    msgbox(Naranja_SevenGrapefruitIslands_House2_Text_08175FDA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_House2_EventScript_Sub_08153615 {
+    msgbox(Naranja_SevenGrapefruitIslands_House2_Text_08176055, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_House2_EventScript_Boy2 {
+    msgbox(Naranja_SevenGrapefruitIslands_House2_Text_081760C8, MSGBOX_NPC)
+    end
+}
+
+text Naranja_SevenGrapefruitIslands_House2_Text_08175EFE {
+    "Gorge your eyes on this!\pIt’s a SILK SCARF. It’s right at the\ncutting edge of fashion, yeah!\pOh, I can see your eyes twinkling!\nYou appreciate my dazzling style!\pOh, you’re a delight!\nHere you go. I want you to have it!"
+}
+
+text Naranja_SevenGrapefruitIslands_House2_Text_08175FDA {
+    "Oh, you don’t have room?\pNow, listen tight, this SCARF is a must-\nhave! Why, I would sell all my items\lin order to get it!"
+}
+
+text Naranja_SevenGrapefruitIslands_House2_Text_08176055 {
+    "The SILK SCARF raises the power of\nNORMAL-type moves.\pIt’s a marvelous SCARF that will go\nwith almost all POKéMON!"
+}
+
+text Naranja_SevenGrapefruitIslands_House2_Text_081760C8 {
+    "Wow, you bothered to cross the sea\nto visit DEWFORD?\pDid you maybe come here because you\nheard about BRAWLY?\pHe’s so cool...\nEveryone idolizes him."
+}

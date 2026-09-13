@@ -89,23 +89,23 @@
       "target": "0x1F"
     },
     "0x20": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M44_BREAKABLE_ROCK",
+      "name": "FLAG_HIDE_VICTORY_ROAD_B1_F_BREAKABLE_ROCK",
       "target": "0x20"
     },
     "0x51": {
-      "name": "FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0051",
+      "name": "FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_0051",
       "target": "0x21"
     },
     "0x52": {
-      "name": "FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0052",
+      "name": "FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_0052",
       "target": "0x22"
     },
     "0x56": {
-      "name": "FLAG_HIDE_SIN_NOMBRE_G25_M28_ITEM_BALL",
+      "name": "FLAG_HIDE_LINK_CONTEST_ROOM1_ITEM_BALL",
       "target": "0x23"
     },
     "0x57": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0057",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0057",
       "target": "0x24"
     },
     "0x58": {
@@ -113,63 +113,63 @@
       "target": "0x25"
     },
     "0x59": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0059",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0059",
       "target": "0x26"
     },
     "0x5A": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_005A",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_005A",
       "target": "0x27"
     },
     "0x5E": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_005E",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_005E",
       "target": "0x28"
     },
     "0x5F": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_005F",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_005F",
       "target": "0x29"
     },
     "0x60": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0060",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0060",
       "target": "0x2A"
     },
     "0x62": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0062",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0062",
       "target": "0x2B"
     },
     "0x63": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0063",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0063",
       "target": "0x2C"
     },
     "0x64": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0064",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0064",
       "target": "0x2D"
     },
     "0x65": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0065",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0065",
       "target": "0x2E"
     },
     "0x66": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0066",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0066",
       "target": "0x2F"
     },
     "0x67": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0067",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0067",
       "target": "0x30"
     },
     "0x69": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0069",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0069",
       "target": "0x31"
     },
     "0x6A": {
-      "name": "FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_006A",
+      "name": "FLAG_NARANJA_CRYSTAL_CAVE_EVENT_COMPLETE_006A",
       "target": "0x32"
     },
     "0x6B": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_006B",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_006B",
       "target": "0x33"
     },
     "0x6D": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_BOY_3",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_BOY_3",
       "target": "0x34"
     },
     "0x6E": {
@@ -181,11 +181,11 @@
       "target": "0x36"
     },
     "0x70": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0070",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0070",
       "target": "0x37"
     },
     "0x71": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0071",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071",
       "target": "0x38"
     },
     "0x73": {
@@ -197,19 +197,19 @@
       "target": "0x3A"
     },
     "0x76": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_0076",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_0076",
       "target": "0x3B"
     },
     "0x79": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0079",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0079",
       "target": "0x3C"
     },
     "0x7A": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_007A",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_007A",
       "target": "0x3D"
     },
     "0x7B": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_007B",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_007B",
       "target": "0x3E"
     },
     "0x7E": {
@@ -217,15 +217,15 @@
       "target": "0x3F"
     },
     "0x7F": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_007F",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_007F",
       "target": "0x40"
     },
     "0x81": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_0081",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081",
       "target": "0x41"
     },
     "0x82": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0082",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0082",
       "target": "0x42"
     },
     "0x83": {
@@ -237,11 +237,11 @@
       "target": "0x44"
     },
     "0x85": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0085",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0085",
       "target": "0x45"
     },
     "0x86": {
-      "name": "FLAG_NARANJA_TANGELO_EVENT_COMPLETE_0086",
+      "name": "FLAG_NARANJA_TANGELO_TOWN_TOWN_EVENT_COMPLETE_0086",
       "target": "0x46"
     },
     "0x87": {
@@ -249,7 +249,7 @@
       "target": "0x47"
     },
     "0x89": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0089",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0089",
       "target": "0x48"
     },
     "0x8B": {
@@ -265,7 +265,7 @@
       "target": "0x4B"
     },
     "0x8E": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_LATIAS",
       "target": "0x4C"
     },
     "0x8F": {
@@ -277,7 +277,7 @@
       "target": "0x4E"
     },
     "0x93": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_0093",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_0093",
       "target": "0x4F"
     },
     "0x94": {
@@ -289,7 +289,7 @@
       "target": "0x51"
     },
     "0x96": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0096",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0096",
       "target": "0x52"
     },
     "0x97": {
@@ -297,19 +297,19 @@
       "target": "0x53"
     },
     "0x98": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0098",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0098",
       "target": "0x54"
     },
     "0x99": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0099",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0099",
       "target": "0x55"
     },
     "0x9A": {
-      "name": "FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_009A",
+      "name": "FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_009A",
       "target": "0x56"
     },
     "0x9B": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_009B",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_009B",
       "target": "0x57"
     },
     "0x9F": {
@@ -317,27 +317,27 @@
       "target": "0x58"
     },
     "0xA0": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A0",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00A0",
       "target": "0x59"
     },
     "0xA1": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A1",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00A1",
       "target": "0x5A"
     },
     "0xA2": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A2",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00A2",
       "target": "0x5B"
     },
     "0xA3": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A3",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00A3",
       "target": "0x5C"
     },
     "0xA4": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A4",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00A4",
       "target": "0x5D"
     },
     "0xA5": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_00A5",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_00A5",
       "target": "0x5E"
     },
     "0xA6": {
@@ -349,7 +349,7 @@
       "target": "0x60"
     },
     "0xA8": {
-      "name": "FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00A8",
+      "name": "FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_00A8",
       "target": "0x61"
     },
     "0xA9": {
@@ -357,87 +357,87 @@
       "target": "0x62"
     },
     "0xAA": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00AA",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00AA",
       "target": "0x63"
     },
     "0xAB": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_00AB",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_00AB",
       "target": "0x64"
     },
     "0xAC": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_00AC",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_00AC",
       "target": "0x65"
     },
     "0xAD": {
-      "name": "FLAG_HIDE_SECRET_BASE_G25_M00_255",
+      "name": "FLAG_HIDE_SECRET_BASE_RED_CAVE1_255",
       "target": "0x66"
     },
     "0xAE": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_VARS",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_VARS",
       "target": "0x67"
     },
     "0xAF": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_241",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_241",
       "target": "0x68"
     },
     "0xB0": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_242",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_242",
       "target": "0x69"
     },
     "0xB1": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_243",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_243",
       "target": "0x6A"
     },
     "0xB2": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_244",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_244",
       "target": "0x6B"
     },
     "0xB3": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_245",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_245",
       "target": "0x6C"
     },
     "0xB4": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_246",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_246",
       "target": "0x6D"
     },
     "0xB5": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_247",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_247",
       "target": "0x6E"
     },
     "0xB6": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_248",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_248",
       "target": "0x6F"
     },
     "0xB7": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_249",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_249",
       "target": "0x70"
     },
     "0xB8": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_250",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_250",
       "target": "0x71"
     },
     "0xB9": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_251",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_251",
       "target": "0x72"
     },
     "0xBA": {
-      "name": "FLAG_HIDE_SECRET_BASE_G25_M00_252",
+      "name": "FLAG_HIDE_SECRET_BASE_RED_CAVE1_252",
       "target": "0x73"
     },
     "0xBB": {
-      "name": "FLAG_HIDE_SECRET_BASE_G25_M00_253",
+      "name": "FLAG_HIDE_SECRET_BASE_RED_CAVE1_253",
       "target": "0x74"
     },
     "0xBC": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G00_M20_WALLY",
       "target": "0x75"
     },
     "0xBD": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00BD",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_00BD",
       "target": "0x76"
     },
     "0xC0": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_00C0",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_00C0",
       "target": "0x77"
     },
     "0xC2": {
@@ -461,27 +461,27 @@
       "target": "0x7C"
     },
     "0xC7": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00C7",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_SOUTH_EVENT_COMPLETE_00C7",
       "target": "0x7D"
     },
     "0xC8": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00C8",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_00C8",
       "target": "0x7E"
     },
     "0xC9": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00C9",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_00C9",
       "target": "0x7F"
     },
     "0xCA": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CA",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_00CA",
       "target": "0x80"
     },
     "0xCB": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CB",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_00CB",
       "target": "0x81"
     },
     "0xCC": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_00CC",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_00CC",
       "target": "0x82"
     },
     "0xCE": {
@@ -489,11 +489,11 @@
       "target": "0x83"
     },
     "0xD0": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_00D0",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D0",
       "target": "0x84"
     },
     "0xD1": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_00D1",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D1",
       "target": "0x85"
     },
     "0xD4": {
@@ -501,15 +501,15 @@
       "target": "0x86"
     },
     "0xD5": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_00D5",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_00D5",
       "target": "0x87"
     },
     "0xD7": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00D7",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_00D7",
       "target": "0x88"
     },
     "0xD8": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_00D8",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_00D8",
       "target": "0x89"
     },
     "0xD9": {
@@ -517,7 +517,7 @@
       "target": "0x8A"
     },
     "0xDA": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00DA",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00DA",
       "target": "0x8B"
     },
     "0xDB": {
@@ -525,27 +525,27 @@
       "target": "0x8C"
     },
     "0xDD": {
-      "name": "FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_00DD",
+      "name": "FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_00DD",
       "target": "0x8D"
     },
     "0xDE": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00DE",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00DE",
       "target": "0x8E"
     },
     "0xDF": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00DF",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00DF",
       "target": "0x8F"
     },
     "0xE0": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_00E0",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_00E0",
       "target": "0x90"
     },
     "0xE1": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_00E1",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00E1",
       "target": "0x91"
     },
     "0xE2": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_00E2",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00E2",
       "target": "0x92"
     },
     "0xE3": {
@@ -557,7 +557,7 @@
       "target": "0x94"
     },
     "0xE5": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_00E5",
+      "name": "FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_00E5",
       "target": "0x95"
     },
     "0xE6": {
@@ -565,7 +565,7 @@
       "target": "0x96"
     },
     "0xE7": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_00E7",
+      "name": "FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_00E7",
       "target": "0x97"
     },
     "0xE8": {
@@ -573,23 +573,23 @@
       "target": "0x98"
     },
     "0xEA": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00EA",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00EA",
       "target": "0x99"
     },
     "0xEB": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_00EB",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_SOUTH_EVENT_COMPLETE_00EB",
       "target": "0x9A"
     },
     "0xEC": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00EC",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00EC",
       "target": "0x9B"
     },
     "0xED": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_00ED",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00ED",
       "target": "0x9C"
     },
     "0xEE": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_00EE",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_00EE",
       "target": "0x9D"
     },
     "0xEF": {
@@ -617,7 +617,7 @@
       "target": "0xA3"
     },
     "0xF5": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_00F5",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_00F5",
       "target": "0xA4"
     },
     "0xF6": {
@@ -649,11 +649,11 @@
       "target": "0xAB"
     },
     "0xFF": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_00FF",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_00FF",
       "target": "0xAC"
     },
     "0x100": {
-      "name": "FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_0100",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_0100",
       "target": "0xAD"
     },
     "0x101": {
@@ -661,7 +661,7 @@
       "target": "0xAE"
     },
     "0x102": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0102",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0102",
       "target": "0xAF"
     },
     "0x103": {
@@ -673,7 +673,7 @@
       "target": "0xB1"
     },
     "0x105": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0105",
+      "name": "FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_0105",
       "target": "0xB2"
     },
     "0x106": {
@@ -681,15 +681,15 @@
       "target": "0xB3"
     },
     "0x107": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_0107",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0107",
       "target": "0xB4"
     },
     "0x108": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_0108",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_0108",
       "target": "0xB5"
     },
     "0x109": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0109",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0109",
       "target": "0xB6"
     },
     "0x10A": {
@@ -697,11 +697,11 @@
       "target": "0xB7"
     },
     "0x10B": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_010B",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_010B",
       "target": "0xB8"
     },
     "0x10D": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_010D",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_010D",
       "target": "0xB9"
     },
     "0x10E": {
@@ -709,11 +709,11 @@
       "target": "0xBA"
     },
     "0x10F": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_010F",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_010F",
       "target": "0xBB"
     },
     "0x110": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0110",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0110",
       "target": "0xBC"
     },
     "0x111": {
@@ -721,11 +721,11 @@
       "target": "0xBD"
     },
     "0x112": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0112",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0112",
       "target": "0xBE"
     },
     "0x113": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0113",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0113",
       "target": "0xBF"
     },
     "0x114": {
@@ -737,11 +737,11 @@
       "target": "0xC1"
     },
     "0x116": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0116",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0116",
       "target": "0xC2"
     },
     "0x117": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_0117",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_0117",
       "target": "0xC3"
     },
     "0x118": {
@@ -761,15 +761,15 @@
       "target": "0xC7"
     },
     "0x11E": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_011E",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_011E",
       "target": "0xC8"
     },
     "0x11F": {
-      "name": "FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_011F",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_011F",
       "target": "0xC9"
     },
     "0x120": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0120",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0120",
       "target": "0xCA"
     },
     "0x121": {
@@ -781,27 +781,27 @@
       "target": "0xCC"
     },
     "0x123": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_0123",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0123",
       "target": "0xCD"
     },
     "0x124": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0124",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0124",
       "target": "0xCE"
     },
     "0x125": {
-      "name": "FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_0125",
+      "name": "FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_0125",
       "target": "0xCF"
     },
     "0x126": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0126",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0126",
       "target": "0xD0"
     },
     "0x127": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_0127",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_0127",
       "target": "0xD1"
     },
     "0x128": {
-      "name": "FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0128",
+      "name": "FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_0128",
       "target": "0xD2"
     },
     "0x129": {
@@ -809,43 +809,43 @@
       "target": "0xD3"
     },
     "0x12A": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_012A",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_012A",
       "target": "0xD4"
     },
     "0x12B": {
-      "name": "FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_012B",
+      "name": "FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012B",
       "target": "0xD5"
     },
     "0x12C": {
-      "name": "FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_012C",
+      "name": "FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012C",
       "target": "0xD6"
     },
     "0x12D": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_012D",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_012D",
       "target": "0xD7"
     },
     "0x12E": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_012E",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_012E",
       "target": "0xD8"
     },
     "0x2D1": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G01_M04_PROF_BIRCH",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M04_PROF_BIRCH",
       "target": "0xD9"
     },
     "0x2D2": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M03_RIVAL_MAY_NORMAL",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M03_RIVAL_MAY_NORMAL",
       "target": "0xDA"
     },
     "0x2D3": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G01_M00_PROF_BIRCH",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_PROF_BIRCH",
       "target": "0xDB"
     },
     "0x2D4": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ZIGZAGOON",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_ZIGZAGOON",
       "target": "0xDC"
     },
     "0x2D5": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_MAGMA_MEMBER_F",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_MAGMA_MEMBER_F",
       "target": "0xDD"
     },
     "0x2D6": {
@@ -853,7 +853,7 @@
       "target": "0xDE"
     },
     "0x2D7": {
-      "name": "FLAG_HIDE_ISLA_MELLSWEET_G14_M07_LITTLE_BOY_1",
+      "name": "FLAG_HIDE_MELLSWEET_ISLAND_G14_M07_LITTLE_BOY_1",
       "target": "0xDF"
     },
     "0x2D8": {
@@ -861,47 +861,47 @@
       "target": "0xE0"
     },
     "0x2DB": {
-      "name": "FLAG_HIDE_ISLA_TROVITA_G00_M03_241",
+      "name": "FLAG_HIDE_TROVITA_ISLAND_G00_M03_241",
       "target": "0xE1"
     },
     "0x2DC": {
-      "name": "FLAG_HIDE_ISLA_TROVITA_G00_M03_MAN_2",
+      "name": "FLAG_HIDE_TROVITA_ISLAND_G00_M03_MAN_2",
       "target": "0xE2"
     },
     "0x2DD": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_249",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM9_249",
       "target": "0xE3"
     },
     "0x2DE": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G01_M00_NORMAN",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_NORMAN",
       "target": "0xE4"
     },
     "0x2E2": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G00_M20_OLD_MAN_1",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G00_M20_OLD_MAN_1",
       "target": "0xE5"
     },
     "0x2E3": {
-      "name": "FLAG_HIDE_ISLAS_G17_M00_OLD_MAN_1",
+      "name": "FLAG_HIDE_ORANGE_ISLANDS_G17_M00_OLD_MAN_1",
       "target": "0xE6"
     },
     "0x2E4": {
-      "name": "FLAG_HIDE_7ISLAS_POMELO_G00_M11_OLD_MAN_1",
+      "name": "FLAG_HIDE_SEVEN_GRAPEFRUIT_ISLANDS_OLD_MAN_1",
       "target": "0xE7"
     },
     "0x2E5": {
-      "name": "FLAG_HIDE_ROUTE109_G00_M24_OLD_MAN_1",
+      "name": "FLAG_HIDE_ROUTE109_OLD_MAN_1",
       "target": "0xE8"
     },
     "0x2E6": {
-      "name": "FLAG_HIDE_ISLAS_G00_M19_SPIN_CUSHION",
+      "name": "FLAG_HIDE_ORANGE_ISLANDS_G00_M19_SPIN_CUSHION",
       "target": "0xE9"
     },
     "0x2E7": {
-      "name": "FLAG_HIDE_7ISLAS_POMELO_G00_M11_MR_BRINEYS_BOAT",
+      "name": "FLAG_HIDE_SEVEN_GRAPEFRUIT_ISLANDS_MR_BRINEYS_BOAT",
       "target": "0xEA"
     },
     "0x2E8": {
-      "name": "FLAG_HIDE_ROUTE109_G00_M24_MR_BRINEYS_BOAT",
+      "name": "FLAG_HIDE_ROUTE109_MR_BRINEYS_BOAT",
       "target": "0xEB"
     },
     "0x2EE": {
@@ -909,35 +909,35 @@
       "target": "0xEC"
     },
     "0x2EF": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY_2",
+      "name": "FLAG_HIDE_VICTORY_ROAD_1_F_WALLY_2",
       "target": "0xED"
     },
     "0x2F0": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1_2",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1_2",
       "target": "0xEE"
     },
     "0x2F2": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MACHOKE_FACING_AWAY",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M02_MACHOKE_FACING_AWAY",
       "target": "0xEF"
     },
     "0x2F3": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MACHOKE_CARRYING_BOX",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M02_MACHOKE_CARRYING_BOX",
       "target": "0xF0"
     },
     "0x2F5": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_MOM",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_MOM",
       "target": "0xF1"
     },
     "0x2F6": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G01_M00_MOM",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_MOM",
       "target": "0xF2"
     },
     "0x2F7": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_MOM",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M02_MOM",
       "target": "0xF3"
     },
     "0x2F8": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M01_RIVAL_BRENDAN_NORMAL",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M01_RIVAL_BRENDAN_NORMAL",
       "target": "0xF4"
     },
     "0x2F9": {
@@ -949,575 +949,575 @@
       "target": "0xF6"
     },
     "0x300": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_MAN_1_1",
+      "name": "FLAG_HIDE_ROUTE111_MAN_1_1",
       "target": "0xF7"
     },
     "0x301": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_WOMAN_2",
+      "name": "FLAG_HIDE_ROUTE111_WOMAN_2",
       "target": "0xF8"
     },
     "0x302": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_LASS",
+      "name": "FLAG_HIDE_ROUTE111_LASS",
       "target": "0xF9"
     },
     "0x303": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_OLD_WOMAN_1",
+      "name": "FLAG_HIDE_ROUTE111_OLD_WOMAN_1",
       "target": "0xFA"
     },
     "0x304": {
-      "name": "FLAG_HIDE_INSIDE_OF_TRUCK_G08_M01_NORMAN",
+      "name": "FLAG_HIDE_VALENCIA_ISLAND_GYM_NORMAN",
       "target": "0xFB"
     },
     "0x305": {
-      "name": "FLAG_HIDE_ISLA_VALENCIA_G00_M00_GIRL_3",
+      "name": "FLAG_HIDE_VALENCIA_ISLAND_G00_M00_GIRL_3",
       "target": "0xFC"
     },
     "0x306": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M04_ARTIST",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M04_ARTIST",
       "target": "0xFD"
     },
     "0x307": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M02_GENTLEMAN",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M02_GENTLEMAN",
       "target": "0xFE"
     },
     "0x308": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M02_WOMAN_3",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M02_WOMAN_3",
       "target": "0xFF"
     },
     "0x309": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M03_GIRL_2",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M03_GIRL_2",
       "target": "0x100"
     },
     "0x30A": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M02_PSYCHIC_M",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M02_PSYCHIC_M",
       "target": "0x101"
     },
     "0x30B": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M02_ARTIST",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M02_ARTIST",
       "target": "0x102"
     },
     "0x30C": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M02_FAT_MAN",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M02_FAT_MAN",
       "target": "0x103"
     },
     "0x30D": {
-      "name": "FLAG_HIDE_INSIDE_OF_TRUCK_G08_M01_MAN_2",
+      "name": "FLAG_HIDE_VALENCIA_ISLAND_GYM_MAN_2",
       "target": "0x104"
     },
     "0x310": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G01_M00_BARD",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M00_BARD",
       "target": "0x105"
     },
     "0x311": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M02_WOMAN_5",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M02_WOMAN_5",
       "target": "0x106"
     },
     "0x315": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M09_OLD_WOMAN_1",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M09_OLD_WOMAN_1",
       "target": "0x107"
     },
     "0x316": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M09_BOY_2",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M09_BOY_2",
       "target": "0x108"
     },
     "0x317": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M09_LITTLE_BOY_1",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M09_LITTLE_BOY_1",
       "target": "0x109"
     },
     "0x318": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M09_WOMAN_4",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M09_WOMAN_4",
       "target": "0x10A"
     },
     "0x31C": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_DITTO_DOLL",
+      "name": "FLAG_HIDE_ROUTE111_DITTO_DOLL",
       "target": "0x10B"
     },
     "0x31D": {
-      "name": "FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F",
+      "name": "FLAG_HIDE_ROUTE118_REPORTER_F",
       "target": "0x10C"
     },
     "0x31E": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_CAMERAMAN",
+      "name": "FLAG_HIDE_ROUTE120_CAMERAMAN",
       "target": "0x10D"
     },
     "0x31F": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_REPORTER_F",
+      "name": "FLAG_HIDE_ROUTE111_REPORTER_F",
       "target": "0x10E"
     },
     "0x320": {
-      "name": "FLAG_HIDE_ISLA_NAVEL_G05_M01_REPORTER_M",
+      "name": "FLAG_HIDE_NAVEL_ISLAND_G05_M01_REPORTER_M",
       "target": "0x10F"
     },
     "0x321": {
-      "name": "FLAG_HIDE_ISLA_MANDARINA_G06_M00_REPORTER_M",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_SOUTH_G06_M00_REPORTER_M",
       "target": "0x110"
     },
     "0x322": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M04_REPORTER_M",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M04_REPORTER_M",
       "target": "0x111"
     },
     "0x323": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M02_REPORTER_M",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M02_REPORTER_M",
       "target": "0x112"
     },
     "0x324": {
-      "name": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_WALLY",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_NORTH_G00_M02_WALLY",
       "target": "0x113"
     },
     "0x325": {
-      "name": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_MAN_3",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_NORTH_G00_M02_MAN_3",
       "target": "0x114"
     },
     "0x326": {
-      "name": "FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_0326",
+      "name": "FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_0326",
       "target": "0x115"
     },
     "0x327": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BLACK_BELT",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_BLACK_BELT",
       "target": "0x116"
     },
     "0x328": {
-      "name": "FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_0328",
+      "name": "FLAG_NARANJA_CRYSTAL_CAVE_EVENT_COMPLETE_0328",
       "target": "0x117"
     },
     "0x32D": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_MANIAC",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_MANIAC",
       "target": "0x118"
     },
     "0x32E": {
-      "name": "FLAG_HIDE_ISLA_TROVITA_G00_M03_VARS",
+      "name": "FLAG_HIDE_TROVITA_ISLAND_G00_M03_VARS",
       "target": "0x119"
     },
     "0x32F": {
-      "name": "FLAG_HIDE_ISLA_NUEVA_G15_M00_WALLACE",
+      "name": "FLAG_HIDE_NEW_ISLAND_G15_M00_WALLACE",
       "target": "0x11A"
     },
     "0x330": {
-      "name": "FLAG_HIDE_ISLA_NUEVA_G00_M07_WALLACE",
+      "name": "FLAG_HIDE_NEW_ISLAND_G00_M07_WALLACE",
       "target": "0x11B"
     },
     "0x333": {
-      "name": "FLAG_HIDE_ROUTE112_G00_M27_241",
+      "name": "FLAG_HIDE_ROUTE112_241",
       "target": "0x11C"
     },
     "0x335": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M23_241",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_1_F_241",
       "target": "0x11D"
     },
     "0x336": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M23_241_2",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_1_F_241_2",
       "target": "0x11E"
     },
     "0x339": {
-      "name": "FLAG_HIDE_CAVE_OF_ORIGIN_G24_M42_248",
+      "name": "FLAG_HIDE_CAVE_OF_ORIGIN_B4_F_248",
       "target": "0x11F"
     },
     "0x33C": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_246",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM9_246",
       "target": "0x120"
     },
     "0x33D": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_247",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM9_247",
       "target": "0x121"
     },
     "0x33F": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_244",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM9_244",
       "target": "0x122"
     },
     "0x341": {
-      "name": "FLAG_HIDE_CUEVA_KABUTO_G24_M10_STEVEN",
+      "name": "FLAG_HIDE_KABUTO_CAVE_G24_M10_STEVEN",
       "target": "0x123"
     },
     "0x342": {
-      "name": "FLAG_HIDE_ROUTE128_G00_M43_STEVEN",
+      "name": "FLAG_HIDE_ROUTE128_STEVEN",
       "target": "0x124"
     },
     "0x343": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G00_M01_CAMERAMAN",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G00_M01_CAMERAMAN",
       "target": "0x125"
     },
     "0x348": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G00_M01_SCIENTIST_1",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G00_M01_SCIENTIST_1",
       "target": "0x126"
     },
     "0x349": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M08_SCIENTIST_1",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M08_SCIENTIST_1",
       "target": "0x127"
     },
     "0x34D": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M08_241",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M08_241",
       "target": "0x128"
     },
     "0x34E": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M08_246",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M08_246",
       "target": "0x129"
     },
     "0x350": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M08_SUBMARINE_SHADOW",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M08_SUBMARINE_SHADOW",
       "target": "0x12A"
     },
     "0x351": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G01_M03_PICHU_DOLL",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G01_M03_PICHU_DOLL",
       "target": "0x12B"
     },
     "0x353": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_VARS",
+      "name": "FLAG_HIDE_ROUTE119_VARS",
       "target": "0x12C"
     },
     "0x354": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G00_M05_241",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G00_M05_241",
       "target": "0x12D"
     },
     "0x356": {
-      "name": "FLAG_HIDE_ISLA_NUEVA_G00_M07_OLD_MAN_1",
+      "name": "FLAG_HIDE_NEW_ISLAND_G00_M07_OLD_MAN_1",
       "target": "0x12E"
     },
     "0x357": {
-      "name": "FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY",
+      "name": "FLAG_HIDE_NEW_ISLAND_G00_M07_BEAUTY",
       "target": "0x12F"
     },
     "0x358": {
-      "name": "FLAG_HIDE_ISLA_NUEVA_G00_M07_BEAUTY_2",
+      "name": "FLAG_HIDE_NEW_ISLAND_G00_M07_BEAUTY_2",
       "target": "0x130"
     },
     "0x35A": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M43_WALLY",
+      "name": "FLAG_HIDE_VICTORY_ROAD_1_F_WALLY",
       "target": "0x131"
     },
     "0x35B": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_248",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM9_248",
       "target": "0x132"
     },
     "0x35C": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M08_SS_TIDAL",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M08_SS_TIDAL",
       "target": "0x133"
     },
     "0x35D": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M10_SS_TIDAL",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M10_SS_TIDAL",
       "target": "0x134"
     },
     "0x362": {
-      "name": "FLAG_HIDE_INSIDE_OF_TRUCK_G08_M01_WALLY",
+      "name": "FLAG_HIDE_VALENCIA_ISLAND_GYM_WALLY",
       "target": "0x135"
     },
     "0x364": {
-      "name": "FLAG_HIDE_PUERTO_DE_TANGELO_G00_M09_SCIENTIST_1",
+      "name": "FLAG_HIDE_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1",
       "target": "0x136"
     },
     "0x365": {
-      "name": "FLAG_HIDE_VALN_TANG_G09_M00_OLD_MAN_1",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G09_M00_OLD_MAN_1",
       "target": "0x137"
     },
     "0x366": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G20_M02_NURSE",
+      "name": "FLAG_HIDE_COLD_PATH_G20_M02_NURSE",
       "target": "0x138"
     },
     "0x367": {
-      "name": "FLAG_HIDE_ISLA_NAVEL_G05_M03_WOMAN_3",
+      "name": "FLAG_HIDE_NAVEL_ISLAND_G05_M03_WOMAN_3",
       "target": "0x139"
     },
     "0x368": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M00_MAN_1_1",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_ENTRANCE_MAN_1_1",
       "target": "0x13A"
     },
     "0x36D": {
-      "name": "FLAG_HIDE_MT_CHIMNEY_G24_M12_OLD_WOMAN_2",
+      "name": "FLAG_HIDE_MT_CHIMNEY_OLD_WOMAN_2",
       "target": "0x13B"
     },
     "0x36E": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_241",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_241",
       "target": "0x13C"
     },
     "0x36F": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_TEALA",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_TEALA",
       "target": "0x13D"
     },
     "0x370": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WINGULL",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_WINGULL",
       "target": "0x13E"
     },
     "0x371": {
-      "name": "FLAG_HIDE_ISLAS_G17_M00_WINGULL",
+      "name": "FLAG_HIDE_ORANGE_ISLANDS_G17_M00_WINGULL",
       "target": "0x13F"
     },
     "0x372": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G00_M01_VARS",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G00_M01_VARS",
       "target": "0x140"
     },
     "0x373": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M06_241",
       "target": "0x141"
     },
     "0x374": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M07_241",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M07_241",
       "target": "0x142"
     },
     "0x375": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M07_241_2",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M07_241_2",
       "target": "0x143"
     },
     "0x376": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M07_246",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M07_246",
       "target": "0x144"
     },
     "0x377": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M07_SCIENTIST_1",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M07_SCIENTIST_1",
       "target": "0x145"
     },
     "0x378": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G26_M08_VARS",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M08_VARS",
       "target": "0x146"
     },
     "0x379": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G01_M04_PROF_BIRCH_2",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M04_PROF_BIRCH_2",
       "target": "0x147"
     },
     "0x37A": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_241",
+      "name": "FLAG_HIDE_ROUTE119_241",
       "target": "0x148"
     },
     "0x37B": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_OLD_MAN_1",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_OLD_MAN_1",
       "target": "0x149"
     },
     "0x37C": {
-      "name": "FLAG_HIDE_ROUTE119_G32_M00_MAN_5",
+      "name": "FLAG_HIDE_ROUTE119_WEATHER_INSTITUTE_1_F_MAN_5",
       "target": "0x14A"
     },
     "0x37D": {
-      "name": "FLAG_HIDE_ROUTE119_G32_M01_MAN_5",
+      "name": "FLAG_HIDE_ROUTE119_WEATHER_INSTITUTE_2_F_MAN_5",
       "target": "0x14B"
     },
     "0x37E": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_SWIMMER_M",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_SWIMMER_M",
       "target": "0x14C"
     },
     "0x37F": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M04_ARTIST_2",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M04_ARTIST_2",
       "target": "0x14D"
     },
     "0x380": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0380",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0380",
       "target": "0x14E"
     },
     "0x381": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0381",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0381",
       "target": "0x14F"
     },
     "0x382": {
-      "name": "FLAG_HIDE_RUTA_AZUL_G00_M18_PROF_BIRCH",
+      "name": "FLAG_HIDE_BLUE_ROUTE_G00_M18_PROF_BIRCH",
       "target": "0x150"
     },
     "0x383": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M01_MAN_1_1",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_END_MAN_1_1",
       "target": "0x151"
     },
     "0x384": {
-      "name": "FLAG_HIDE_ROUTE110_G00_M25_241",
+      "name": "FLAG_HIDE_ROUTE110_241",
       "target": "0x152"
     },
     "0x385": {
-      "name": "FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F_2",
+      "name": "FLAG_HIDE_ROUTE118_REPORTER_F_2",
       "target": "0x153"
     },
     "0x386": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_REPORTER_F",
+      "name": "FLAG_HIDE_ROUTE120_REPORTER_F",
       "target": "0x154"
     },
     "0x387": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_REPORTER_F_2",
+      "name": "FLAG_HIDE_ROUTE111_REPORTER_F_2",
       "target": "0x155"
     },
     "0x388": {
-      "name": "FLAG_HIDE_ROUTE118_G00_M33_REPORTER_F_3",
+      "name": "FLAG_HIDE_ROUTE118_REPORTER_F_3",
       "target": "0x156"
     },
     "0x389": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M08_BEAUTY",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M08_BEAUTY",
       "target": "0x157"
     },
     "0x38A": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_038A",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_038A",
       "target": "0x158"
     },
     "0x38B": {
-      "name": "FLAG_HIDE_ISLA_NAVEL_G00_M13_SPIN_CUSHION",
+      "name": "FLAG_HIDE_NAVEL_ISLAND_G00_M13_SPIN_CUSHION",
       "target": "0x159"
     },
     "0x38C": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M10_BEAUTY",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M10_BEAUTY",
       "target": "0x15A"
     },
     "0x38D": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M10_SAILOR",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M10_SAILOR",
       "target": "0x15B"
     },
     "0x38E": {
-      "name": "FLAG_HIDE_SOUTHERN_ISLAND_G26_M10_VARS",
+      "name": "FLAG_HIDE_SOUTHERN_ISLAND_INTERIOR_VARS",
       "target": "0x15C"
     },
     "0x38F": {
-      "name": "FLAG_HIDE_SOUTHERN_ISLAND_G26_M10_241",
+      "name": "FLAG_HIDE_SOUTHERN_ISLAND_INTERIOR_241",
       "target": "0x15D"
     },
     "0x390": {
-      "name": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_WATTSON",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_NORTH_G00_M02_WATTSON",
       "target": "0x15E"
     },
     "0x391": {
-      "name": "FLAG_HIDE_ISLA_MANDARIN_G10_M00_WATTSON",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_NORTH_G10_M00_WATTSON",
       "target": "0x15F"
     },
     "0x392": {
-      "name": "FLAG_HIDE_ROUTE121_G00_M36_241",
+      "name": "FLAG_HIDE_ROUTE121_241",
       "target": "0x160"
     },
     "0x393": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0393",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0393",
       "target": "0x161"
     },
     "0x394": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M22_246",
+      "name": "FLAG_HIDE_MT_PYRE_SUMMIT_246",
       "target": "0x162"
     },
     "0x395": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M22_241",
+      "name": "FLAG_HIDE_MT_PYRE_SUMMIT_241",
       "target": "0x163"
     },
     "0x396": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G26_M05_REPORTER_F",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_REPORTER_F",
       "target": "0x164"
     },
     "0x397": {
-      "name": "FLAG_HIDE_ROUTE110_G00_M25_VARS",
+      "name": "FLAG_HIDE_ROUTE110_VARS",
       "target": "0x165"
     },
     "0x398": {
-      "name": "FLAG_HIDE_ISLA_POMELO_G16_M04_VARS",
+      "name": "FLAG_HIDE_PUMMELO_ISLAND_G16_M04_VARS",
       "target": "0x166"
     },
     "0x399": {
-      "name": "FLAG_HIDE_ISLA_POMELO_G16_M04_PROF_BIRCH",
+      "name": "FLAG_HIDE_PUMMELO_ISLAND_G16_M04_PROF_BIRCH",
       "target": "0x167"
     },
     "0x39A": {
-      "name": "FLAG_HIDE_ROUTE110_G00_M25_243",
+      "name": "FLAG_HIDE_ROUTE110_243",
       "target": "0x168"
     },
     "0x39B": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_243",
+      "name": "FLAG_HIDE_ROUTE119_243",
       "target": "0x169"
     },
     "0x39C": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M23_241_3",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_1_F_241_3",
       "target": "0x16A"
     },
     "0x39D": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G13_M01_MAN_4",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G13_M01_MAN_4",
       "target": "0x16B"
     },
     "0x39E": {
-      "name": "FLAG_HIDE_MT_CHIMNEY_G24_M12_246",
+      "name": "FLAG_HIDE_MT_CHIMNEY_246",
       "target": "0x16C"
     },
     "0x39F": {
-      "name": "FLAG_HIDE_MT_CHIMNEY_G24_M12_247",
+      "name": "FLAG_HIDE_MT_CHIMNEY_247",
       "target": "0x16D"
     },
     "0x3A0": {
-      "name": "FLAG_HIDE_ISLA_NAVEL_G05_M05_SCIENTIST_1",
+      "name": "FLAG_HIDE_NAVEL_ISLAND_G05_M05_SCIENTIST_1",
       "target": "0x16E"
     },
     "0x3A1": {
-      "name": "FLAG_HIDE_VALLE_CHARIZARD_G00_M12_VARS",
+      "name": "FLAG_HIDE_CHARICIFIC_VALLEY_G00_M12_VARS",
       "target": "0x16F"
     },
     "0x3A2": {
-      "name": "FLAG_HIDE_VALLE_CHARIZARD_G00_M12_243",
+      "name": "FLAG_HIDE_CHARICIFIC_VALLEY_G00_M12_243",
       "target": "0x170"
     },
     "0x3A3": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BREAKABLE_ROCK",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_BREAKABLE_ROCK",
       "target": "0x171"
     },
     "0x3A4": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_BREAKABLE_ROCK_2",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_BREAKABLE_ROCK_2",
       "target": "0x172"
     },
     "0x3A5": {
-      "name": "FLAG_HIDE_ISLA_SHAMOUTI_G12_M07_WINGULL",
+      "name": "FLAG_HIDE_SHAMOUTI_ISLAND_G12_M07_WINGULL",
       "target": "0x173"
     },
     "0x3A6": {
-      "name": "FLAG_HIDE_ISLA_MELLSWEET_G14_M02_WINGULL",
+      "name": "FLAG_HIDE_MELLSWEET_ISLAND_G14_M02_WINGULL",
       "target": "0x174"
     },
     "0x3A7": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G24_M06_REGIROCK",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G24_M06_REGIROCK",
       "target": "0x175"
     },
     "0x3A8": {
-      "name": "FLAG_HIDE_ISLAND_CAVE_G24_M67_REGICE",
+      "name": "FLAG_HIDE_ISLAND_CAVE_REGICE",
       "target": "0x176"
     },
     "0x3A9": {
-      "name": "FLAG_HIDE_ANCIENT_TOMB_G24_M68_REGISTEEL",
+      "name": "FLAG_HIDE_ANCIENT_TOMB_REGISTEEL",
       "target": "0x177"
     },
     "0x3AA": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_241",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_241",
       "target": "0x178"
     },
     "0x3AB": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_247",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_247",
       "target": "0x179"
     },
     "0x3AC": {
-      "name": "FLAG_HIDE_7ISLAS_POMELO_G03_M04_MANIAC",
+      "name": "FLAG_HIDE_SEVEN_GRAPEFRUIT_ISLANDS_HALL_MANIAC",
       "target": "0x17A"
     },
     "0x3AD": {
-      "name": "FLAG_HIDE_PUEBLO_PALETA_G26_M05_MAN_2",
+      "name": "FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_MAN_2",
       "target": "0x17B"
     },
     "0x3AE": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_SCIENTIST_1",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_SCIENTIST_1",
       "target": "0x17C"
     },
     "0x3AF": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M25_SUBMARINE_SHADOW",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B2_F_SUBMARINE_SHADOW",
       "target": "0x17D"
     },
     "0x3B0": {
-      "name": "FLAG_HIDE_ROUTE128_G00_M43_246",
+      "name": "FLAG_HIDE_ROUTE128_246",
       "target": "0x17E"
     },
     "0x3B1": {
-      "name": "FLAG_HIDE_ROUTE128_G00_M43_247",
+      "name": "FLAG_HIDE_ROUTE128_247",
       "target": "0x17F"
     },
     "0x3B2": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M28_241",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM1_241",
       "target": "0x180"
     },
     "0x3B3": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_MAN_2",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_MAN_2",
       "target": "0x181"
     },
     "0x3B4": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G00_M01_MART_EMPLOYEE",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G00_M01_MART_EMPLOYEE",
       "target": "0x182"
     },
     "0x3B5": {
-      "name": "FLAG_HIDE_ISLA_TROVITA_G11_M02_TEALA",
+      "name": "FLAG_HIDE_TROVITA_ISLAND_G11_M02_TEALA",
       "target": "0x183"
     },
     "0x3B6": {
-      "name": "FLAG_HIDE_SIN_NOMBRE_G25_M41_OLD_MAN_1",
+      "name": "FLAG_HIDE_SSTIDAL_CORRIDOR_OLD_MAN_1",
       "target": "0x184"
     },
     "0x3B7": {
-      "name": "FLAG_HIDE_SIN_NOMBRE_G25_M43_MANIAC",
+      "name": "FLAG_HIDE_SSTIDAL_ROOMS_MANIAC",
       "target": "0x185"
     },
     "0x3B8": {
@@ -1553,663 +1553,663 @@
       "target": "0x18D"
     },
     "0x3C0": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_BOY_1_33",
+      "name": "FLAG_HIDE_ROUTE111_BOY_1_33",
       "target": "0x18E"
     },
     "0x3C1": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_WOMAN_7",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M06_WOMAN_7",
       "target": "0x18F"
     },
     "0x3C2": {
-      "name": "FLAG_HIDE_ISLA_MANDARINA_G13_M22_ROOFTOP_SALE_WOMAN",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_SOUTH_G13_M22_ROOFTOP_SALE_WOMAN",
       "target": "0x190"
     },
     "0x3C3": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_FOSSIL",
+      "name": "FLAG_HIDE_ROUTE111_FOSSIL",
       "target": "0x191"
     },
     "0x3C4": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_FOSSIL_2",
+      "name": "FLAG_HIDE_ROUTE111_FOSSIL_2",
       "target": "0x192"
     },
     "0x3C5": {
-      "name": "FLAG_HIDE_ISLA_MURCOTT_G09_M06_241_2",
+      "name": "FLAG_HIDE_MURCOTT_ISLAND_G09_M06_241_2",
       "target": "0x193"
     },
     "0x3C6": {
-      "name": "FLAG_HIDE_INSIDE_OF_TRUCK_G08_M01_HOT_SPRINGS_OLD_WOMAN",
+      "name": "FLAG_HIDE_VALENCIA_ISLAND_GYM_HOT_SPRINGS_OLD_WOMAN",
       "target": "0x194"
     },
     "0x3C7": {
-      "name": "FLAG_HIDE_ISLA_MELLSWEET_G14_M07_STEVEN",
+      "name": "FLAG_HIDE_MELLSWEET_ISLAND_G14_M07_STEVEN",
       "target": "0x195"
     },
     "0x3C8": {
-      "name": "FLAG_HIDE_ISLA_MELLSWEET_G14_M07_ITEM_BALL",
+      "name": "FLAG_HIDE_MELLSWEET_ISLAND_G14_M07_ITEM_BALL",
       "target": "0x196"
     },
     "0x3C9": {
-      "name": "FLAG_HIDE_ISLA_SHAMOUTI_G00_M04_KECLEON_1",
+      "name": "FLAG_HIDE_SHAMOUTI_ISLAND_G00_M04_KECLEON_1",
       "target": "0x197"
     },
     "0x3CA": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_1",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_1",
       "target": "0x198"
     },
     "0x3CB": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G00_M05_VARS",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G00_M05_VARS",
       "target": "0x199"
     },
     "0x3CC": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_STEVEN",
+      "name": "FLAG_HIDE_ROUTE120_STEVEN",
       "target": "0x19A"
     },
     "0x3CD": {
-      "name": "FLAG_HIDE_ISLA_NUEVA_G00_M07_STEVEN",
+      "name": "FLAG_HIDE_NEW_ISLAND_G00_M07_STEVEN",
       "target": "0x19B"
     },
     "0x3CE": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_6",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_6",
       "target": "0x19C"
     },
     "0x3CF": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_7",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_7",
       "target": "0x19D"
     },
     "0x3D0": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_8",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_8",
       "target": "0x19E"
     },
     "0x3D1": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M24_ITEM_BALL_3",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B1_F_ITEM_BALL_3",
       "target": "0x19F"
     },
     "0x3D2": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M24_ITEM_BALL_5",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B1_F_ITEM_BALL_5",
       "target": "0x1A0"
     },
     "0x3D3": {
-      "name": "FLAG_HIDE_ISLA_TANGELO_G00_M10_VARS",
+      "name": "FLAG_HIDE_TANGELO_TOWN_ISLAND_G00_M10_VARS",
       "target": "0x1A1"
     },
     "0x3D4": {
-      "name": "FLAG_HIDE_UNDERWATER_G24_M26_RIVAL_BRENDAN_NORMAL",
+      "name": "FLAG_HIDE_UNDERWATER_SEAFLOOR_CAVERN_RIVAL_BRENDAN_NORMAL",
       "target": "0x1A2"
     },
     "0x3D5": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_2",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_2",
       "target": "0x1A3"
     },
     "0x3D6": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_1_2",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_1_2",
       "target": "0x1A4"
     },
     "0x3D7": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_WOMAN_3",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_WOMAN_3",
       "target": "0x1A5"
     },
     "0x3D8": {
-      "name": "FLAG_NARANJA_CUEVA_DE_CRISTAL_EVENT_COMPLETE_03D8",
+      "name": "FLAG_NARANJA_CRYSTAL_CAVE_EVENT_COMPLETE_03D8",
       "target": "0x1A6"
     },
     "0x3D9": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_1_3",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_1_3",
       "target": "0x1A7"
     },
     "0x3DA": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_1_4",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_1_4",
       "target": "0x1A8"
     },
     "0x3DB": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_1_6",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_1_6",
       "target": "0x1A9"
     },
     "0x3DC": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_KECLEON_1_5",
+      "name": "FLAG_HIDE_ROUTE120_KECLEON_1_5",
       "target": "0x1AA"
     },
     "0x3DD": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_KECLEON_1",
+      "name": "FLAG_HIDE_ROUTE119_KECLEON_1",
       "target": "0x1AB"
     },
     "0x3DE": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_KECLEON_1_2",
+      "name": "FLAG_HIDE_ROUTE119_KECLEON_1_2",
       "target": "0x1AC"
     },
     "0x3DF": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_03DF",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_03DF",
       "target": "0x1AD"
     },
     "0x3E8": {
-      "name": "FLAG_HIDE_VALN_TANG_G00_M17_ITEM_BALL",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G00_M17_ITEM_BALL",
       "target": "0x1AE"
     },
     "0x3E9": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_ITEM_BALL_4",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_ITEM_BALL_4",
       "target": "0x1AF"
     },
     "0x3EA": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G00_M20_SPIN_CUSHION",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G00_M20_SPIN_CUSHION",
       "target": "0x1B0"
     },
     "0x3EC": {
-      "name": "FLAG_HIDE_ROUTE106_G00_M21_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE106_ITEM_BALL",
       "target": "0x1B1"
     },
     "0x3ED": {
-      "name": "FLAG_HIDE_ROUTE109_G00_M24_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE109_ITEM_BALL",
       "target": "0x1B2"
     },
     "0x3EE": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G03_M03_MR_BRINEYS_BOAT",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G03_M03_MR_BRINEYS_BOAT",
       "target": "0x1B3"
     },
     "0x3EF": {
-      "name": "FLAG_HIDE_ROUTE110_G00_M25_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_ITEM_BALL",
       "target": "0x1B4"
     },
     "0x3F0": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE111_ITEM_BALL",
       "target": "0x1B5"
     },
     "0x3F1": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE111_ITEM_BALL_2",
       "target": "0x1B6"
     },
     "0x3F2": {
-      "name": "FLAG_HIDE_ROUTE111_G00_M26_ITEM_BALL_3",
+      "name": "FLAG_HIDE_ROUTE111_ITEM_BALL_3",
       "target": "0x1B7"
     },
     "0x3F3": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_SPIN_CUSHION",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_SPIN_CUSHION",
       "target": "0x1B8"
     },
     "0x3F4": {
-      "name": "FLAG_HIDE_NORTE_G00_M28_AZURILL",
+      "name": "FLAG_HIDE_NORTH_G00_M28_AZURILL",
       "target": "0x1B9"
     },
     "0x3F5": {
-      "name": "FLAG_HIDE_NORTE_G00_M28_ITEM_BALL",
+      "name": "FLAG_HIDE_NORTH_G00_M28_ITEM_BALL",
       "target": "0x1BA"
     },
     "0x3F6": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_ITEM_BALL",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_ITEM_BALL",
       "target": "0x1BB"
     },
     "0x3F7": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_ITEM_BALL_2",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_ITEM_BALL_2",
       "target": "0x1BC"
     },
     "0x3F8": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_ITEM_BALL",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_ITEM_BALL",
       "target": "0x1BD"
     },
     "0x3F9": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_ITEM_BALL_2",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_ITEM_BALL_2",
       "target": "0x1BE"
     },
     "0x3FA": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_ITEM_BALL_3",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_ITEM_BALL_3",
       "target": "0x1BF"
     },
     "0x3FB": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_ITEM_BALL",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_ITEM_BALL",
       "target": "0x1C0"
     },
     "0x3FC": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_ITEM_BALL_2",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_ITEM_BALL_2",
       "target": "0x1C1"
     },
     "0x3FD": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_ITEM_BALL_3",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_ITEM_BALL_3",
       "target": "0x1C2"
     },
     "0x3FE": {
-      "name": "FLAG_HIDE_DESIERTO_G00_M32_ITEM_BALL",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_DESERT_G00_M32_ITEM_BALL",
       "target": "0x1C3"
     },
     "0x3FF": {
-      "name": "FLAG_HIDE_DESIERTO_G00_M32_ITEM_BALL_2",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_DESERT_G00_M32_ITEM_BALL_2",
       "target": "0x1C4"
     },
     "0x400": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL",
       "target": "0x1C5"
     },
     "0x401": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL_2",
       "target": "0x1C6"
     },
     "0x402": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL_3",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL_3",
       "target": "0x1C7"
     },
     "0x403": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL_4",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL_4",
       "target": "0x1C8"
     },
     "0x404": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL_5",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL_5",
       "target": "0x1C9"
     },
     "0x405": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL_6",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL_6",
       "target": "0x1CA"
     },
     "0x406": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE120_ITEM_BALL",
       "target": "0x1CB"
     },
     "0x407": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE120_ITEM_BALL_2",
       "target": "0x1CC"
     },
     "0x408": {
-      "name": "FLAG_HIDE_ROUTE123_G00_M38_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE123_ITEM_BALL",
       "target": "0x1CD"
     },
     "0x409": {
-      "name": "FLAG_HIDE_ROUTE123_G00_M38_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE123_ITEM_BALL_2",
       "target": "0x1CE"
     },
     "0x40A": {
-      "name": "FLAG_HIDE_ROUTE666_G00_M42_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE666_ITEM_BALL",
       "target": "0x1CF"
     },
     "0x40B": {
-      "name": "FLAG_HIDE_ROUTE666_G00_M42_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE666_ITEM_BALL_2",
       "target": "0x1D0"
     },
     "0x40C": {
-      "name": "FLAG_HIDE_ROUTE132_G00_M47_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE132_ITEM_BALL",
       "target": "0x1D1"
     },
     "0x40D": {
-      "name": "FLAG_HIDE_ROUTE133_G00_M48_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE133_ITEM_BALL",
       "target": "0x1D2"
     },
     "0x40E": {
-      "name": "FLAG_HIDE_ROUTE133_G00_M48_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE133_ITEM_BALL_2",
       "target": "0x1D3"
     },
     "0x411": {
-      "name": "FLAG_HIDE_ISLA_TROVITA_G00_M03_ITEM_BALL",
+      "name": "FLAG_HIDE_TROVITA_ISLAND_G00_M03_ITEM_BALL",
       "target": "0x1D4"
     },
     "0x412": {
-      "name": "FLAG_HIDE_ISLA_KUMQUAT_G00_M05_ITEM_BALL",
+      "name": "FLAG_HIDE_KUMQUAT_ISLAND_G00_M05_ITEM_BALL",
       "target": "0x1D5"
     },
     "0x413": {
-      "name": "FLAG_HIDE_ISLA_MELLSWEET_G00_M06_ITEM_BALL",
+      "name": "FLAG_HIDE_MELLSWEET_ISLAND_G00_M06_ITEM_BALL",
       "target": "0x1D6"
     },
     "0x414": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_ITEM_BALL",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_ITEM_BALL",
       "target": "0x1D7"
     },
     "0x415": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_ITEM_BALL_3",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_ITEM_BALL_3",
       "target": "0x1D8"
     },
     "0x416": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_ITEM_BALL_2",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_ITEM_BALL_2",
       "target": "0x1D9"
     },
     "0x417": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M00_ITEM_BALL_4",
+      "name": "FLAG_HIDE_METEOR_FALLS_1_F_1_R_ITEM_BALL_4",
       "target": "0x1DA"
     },
     "0x418": {
-      "name": "FLAG_HIDE_MANDARIN_G21_M00_LITTLE_GIRL_1",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G21_M00_LITTLE_GIRL_1",
       "target": "0x1DB"
     },
     "0x419": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_ITEM_BALL",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_ITEM_BALL",
       "target": "0x1DC"
     },
     "0x41A": {
-      "name": "FLAG_HIDE_CUEVA_KABUTO_G24_M07_ITEM_BALL",
+      "name": "FLAG_HIDE_KABUTO_CAVE_G24_M07_ITEM_BALL",
       "target": "0x1DD"
     },
     "0x41B": {
-      "name": "FLAG_HIDE_CUEVA_KABUTO_G24_M08_KECLEON_1",
+      "name": "FLAG_HIDE_KABUTO_CAVE_G24_M08_KECLEON_1",
       "target": "0x1DE"
     },
     "0x41C": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M19_ITEM_BALL",
+      "name": "FLAG_HIDE_MT_PYRE_5_F_ITEM_BALL",
       "target": "0x1DF"
     },
     "0x41D": {
-      "name": "FLAG_HIDE_CUEVA_KABUTO_G24_M09_KECLEON_1",
+      "name": "FLAG_HIDE_KABUTO_CAVE_G24_M09_KECLEON_1",
       "target": "0x1E0"
     },
     "0x41E": {
-      "name": "FLAG_HIDE_CUEVA_KABUTO_G24_M09_ITEM_BALL",
+      "name": "FLAG_HIDE_KABUTO_CAVE_G24_M09_ITEM_BALL",
       "target": "0x1E1"
     },
     "0x41F": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_2",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_ITEM_BALL_2",
       "target": "0x1E2"
     },
     "0x420": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_ITEM_BALL",
       "target": "0x1E3"
     },
     "0x421": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G00_M20_ITEM_BALL_2",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G00_M20_ITEM_BALL_2",
       "target": "0x1E4"
     },
     "0x422": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_3",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_ITEM_BALL_3",
       "target": "0x1E5"
     },
     "0x423": {
-      "name": "FLAG_HIDE_CAVE_OF_ORIGIN_G24_M41_ITEM_BALL",
+      "name": "FLAG_HIDE_CAVE_OF_ORIGIN_B3_F_ITEM_BALL",
       "target": "0x1E6"
     },
     "0x424": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M03_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE1_ITEM_BALL",
       "target": "0x1E7"
     },
     "0x425": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M04_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE2_ITEM_BALL_2",
       "target": "0x1E8"
     },
     "0x426": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M04_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE2_ITEM_BALL",
       "target": "0x1E9"
     },
     "0x427": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M05_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE3_ITEM_BALL_2",
       "target": "0x1EA"
     },
     "0x428": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M05_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE3_ITEM_BALL",
       "target": "0x1EB"
     },
     "0x429": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M06_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE4_ITEM_BALL",
       "target": "0x1EC"
     },
     "0x42A": {
-      "name": "FLAG_HIDE_ROUTE124_G00_M39_ITEM_BALL_3",
+      "name": "FLAG_HIDE_ROUTE124_ITEM_BALL_3",
       "target": "0x1ED"
     },
     "0x42B": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M08_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE6_ITEM_BALL",
       "target": "0x1EE"
     },
     "0x42C": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M09_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE7_ITEM_BALL",
       "target": "0x1EF"
     },
     "0x42D": {
-      "name": "FLAG_HIDE_ROUTE110_G29_M10_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE110_TRICK_HOUSE_PUZZLE8_ITEM_BALL",
       "target": "0x1F0"
     },
     "0x42E": {
-      "name": "FLAG_HIDE_JAGGED_PASS_G24_M13_ITEM_BALL",
+      "name": "FLAG_HIDE_JAGGED_PASS_ITEM_BALL",
       "target": "0x1F1"
     },
     "0x42F": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M24_ITEM_BALL",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B1_F_ITEM_BALL",
       "target": "0x1F2"
     },
     "0x430": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M25_ITEM_BALL",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B2_F_ITEM_BALL",
       "target": "0x1F3"
     },
     "0x431": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M21_ITEM_BALL",
+      "name": "FLAG_HIDE_MT_PYRE_EXTERIOR_ITEM_BALL",
       "target": "0x1F4"
     },
     "0x432": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M21_ITEM_BALL_2",
+      "name": "FLAG_HIDE_MT_PYRE_EXTERIOR_ITEM_BALL_2",
       "target": "0x1F5"
     },
     "0x433": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL",
       "target": "0x1F6"
     },
     "0x434": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_2",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_2",
       "target": "0x1F7"
     },
     "0x435": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M66_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS_ITEM_BALL",
       "target": "0x1F8"
     },
     "0x436": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M66_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS_ITEM_BALL_2",
       "target": "0x1F9"
     },
     "0x437": {
-      "name": "FLAG_HIDE_SCORCHED_SLAB_G24_M73_ITEM_BALL",
+      "name": "FLAG_HIDE_SCORCHED_SLAB_ITEM_BALL",
       "target": "0x1FA"
     },
     "0x438": {
-      "name": "FLAG_HIDE_GRANITE_CAVE_G24_M03_ITEM_BALL",
+      "name": "FLAG_HIDE_METEOR_FALLS_B1_F_2_R_ITEM_BALL",
       "target": "0x1FB"
     },
     "0x439": {
-      "name": "FLAG_HIDE_SHOAL_CAVE_G24_M46_ITEM_BALL",
+      "name": "FLAG_HIDE_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM_ITEM_BALL",
       "target": "0x1FC"
     },
     "0x43A": {
-      "name": "FLAG_HIDE_SHOAL_CAVE_G24_M47_ITEM_BALL",
+      "name": "FLAG_HIDE_SHOAL_CAVE_LOW_TIDE_INNER_ROOM_ITEM_BALL",
       "target": "0x1FD"
     },
     "0x43B": {
-      "name": "FLAG_HIDE_SHOAL_CAVE_G24_M48_ITEM_BALL",
+      "name": "FLAG_HIDE_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM_ITEM_BALL",
       "target": "0x1FE"
     },
     "0x43C": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M43_ITEM_BALL",
+      "name": "FLAG_HIDE_VICTORY_ROAD_1_F_ITEM_BALL",
       "target": "0x1FF"
     },
     "0x43D": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M43_ITEM_BALL_2",
+      "name": "FLAG_HIDE_VICTORY_ROAD_1_F_ITEM_BALL_2",
       "target": "0x200"
     },
     "0x43E": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M44_ITEM_BALL",
+      "name": "FLAG_HIDE_VICTORY_ROAD_B1_F_ITEM_BALL",
       "target": "0x201"
     },
     "0x43F": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M44_ITEM_BALL_2",
+      "name": "FLAG_HIDE_VICTORY_ROAD_B1_F_ITEM_BALL_2",
       "target": "0x202"
     },
     "0x440": {
-      "name": "FLAG_HIDE_VICTORY_ROAD_G24_M45_ITEM_BALL",
+      "name": "FLAG_HIDE_VICTORY_ROAD_B2_F_ITEM_BALL",
       "target": "0x203"
     },
     "0x441": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M20_ITEM_BALL",
+      "name": "FLAG_HIDE_MT_PYRE_6_F_ITEM_BALL",
       "target": "0x204"
     },
     "0x442": {
-      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_G24_M36_ITEM_BALL",
+      "name": "FLAG_HIDE_SEAFLOOR_CAVERN_ROOM9_ITEM_BALL",
       "target": "0x205"
     },
     "0x443": {
-      "name": "FLAG_HIDE_FIERY_PATH_G24_M14_ITEM_BALL",
+      "name": "FLAG_HIDE_FIERY_PATH_ITEM_BALL",
       "target": "0x206"
     },
     "0x444": {
-      "name": "FLAG_HIDE_ROUTE124_G00_M39_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE124_ITEM_BALL",
       "target": "0x207"
     },
     "0x445": {
-      "name": "FLAG_HIDE_ROUTE124_G00_M39_ITEM_BALL_2",
+      "name": "FLAG_HIDE_ROUTE124_ITEM_BALL_2",
       "target": "0x208"
     },
     "0x446": {
-      "name": "FLAG_HIDE_SAFARI_G26_M00_ITEM_BALL",
+      "name": "FLAG_HIDE_SAFARI_ZONE_NORTHWEST_ITEM_BALL",
       "target": "0x209"
     },
     "0x447": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M56_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_ROOMS_1_F_ITEM_BALL",
       "target": "0x20A"
     },
     "0x448": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M58_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_ROOMS_B1_F_ITEM_BALL",
       "target": "0x20B"
     },
     "0x449": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M59_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_ROOMS2_B1_F_ITEM_BALL",
       "target": "0x20C"
     },
     "0x44A": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M61_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_ROOM_B1_F_ITEM_BALL",
       "target": "0x20D"
     },
     "0x44B": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M62_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_ROOMS2_1_F_ITEM_BALL",
       "target": "0x20E"
     },
     "0x44C": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M63_ITEM_BALL",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_CAPTAINS_OFFICE_ITEM_BALL",
       "target": "0x20F"
     },
     "0x44D": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M66_ITEM_BALL_4",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS_ITEM_BALL_4",
       "target": "0x210"
     },
     "0x44E": {
-      "name": "FLAG_HIDE_BANDONED_SHIP_G24_M66_ITEM_BALL_3",
+      "name": "FLAG_HIDE_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS_ITEM_BALL_3",
       "target": "0x211"
     },
     "0x44F": {
-      "name": "FLAG_HIDE_ROUTE121_G00_M36_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE121_ITEM_BALL",
       "target": "0x212"
     },
     "0x450": {
-      "name": "FLAG_HIDE_ROUTE123_G00_M38_ITEM_BALL_3",
+      "name": "FLAG_HIDE_ROUTE123_ITEM_BALL_3",
       "target": "0x213"
     },
     "0x451": {
-      "name": "FLAG_HIDE_ROUTE126_G00_M41_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE126_ITEM_BALL",
       "target": "0x214"
     },
     "0x452": {
-      "name": "FLAG_HIDE_ROUTE119_G00_M34_ITEM_BALL_7",
+      "name": "FLAG_HIDE_ROUTE119_ITEM_BALL_7",
       "target": "0x215"
     },
     "0x453": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_ITEM_BALL_4",
+      "name": "FLAG_HIDE_ROUTE120_ITEM_BALL_4",
       "target": "0x216"
     },
     "0x454": {
-      "name": "FLAG_HIDE_ROUTE120_G00_M35_ITEM_BALL_3",
+      "name": "FLAG_HIDE_ROUTE120_ITEM_BALL_3",
       "target": "0x217"
     },
     "0x455": {
-      "name": "FLAG_HIDE_ROUTE123_G00_M38_ITEM_BALL_4",
+      "name": "FLAG_HIDE_ROUTE123_ITEM_BALL_4",
       "target": "0x218"
     },
     "0x456": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_3",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_3",
       "target": "0x219"
     },
     "0x457": {
-      "name": "FLAG_HIDE_FIERY_PATH_G24_M14_ITEM_BALL_2",
+      "name": "FLAG_HIDE_FIERY_PATH_ITEM_BALL_2",
       "target": "0x21A"
     },
     "0x458": {
-      "name": "FLAG_HIDE_SHOAL_CAVE_G24_M83_ITEM_BALL",
+      "name": "FLAG_HIDE_SHOAL_CAVE_LOW_TIDE_ICE_ROOM_ITEM_BALL",
       "target": "0x21B"
     },
     "0x459": {
-      "name": "FLAG_HIDE_SHOAL_CAVE_G24_M83_ITEM_BALL_2",
+      "name": "FLAG_HIDE_SHOAL_CAVE_LOW_TIDE_ICE_ROOM_ITEM_BALL_2",
       "target": "0x21C"
     },
     "0x45A": {
-      "name": "FLAG_HIDE_RUTA_AZUL_G00_M18_ITEM_BALL",
+      "name": "FLAG_HIDE_BLUE_ROUTE_G00_M18_ITEM_BALL",
       "target": "0x21D"
     },
     "0x45B": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G00_M20_ITEM_BALL",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G00_M20_ITEM_BALL",
       "target": "0x21E"
     },
     "0x45C": {
-      "name": "FLAG_HIDE_ISLA_MANDARIN_G00_M02_ITEM_BALL",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_NORTH_G00_M02_ITEM_BALL",
       "target": "0x21F"
     },
     "0x45D": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_ITEM_BALL_4",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_ITEM_BALL_4",
       "target": "0x220"
     },
     "0x45E": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_ITEM_BALL_3",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_ITEM_BALL_3",
       "target": "0x221"
     },
     "0x45F": {
-      "name": "FLAG_HIDE_SAFARI_G26_M01_ITEM_BALL",
+      "name": "FLAG_HIDE_SAFARI_ZONE_NORTHEAST_ITEM_BALL",
       "target": "0x222"
     },
     "0x460": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M17_ITEM_BALL",
+      "name": "FLAG_HIDE_MT_PYRE_3_F_ITEM_BALL",
       "target": "0x223"
     },
     "0x461": {
-      "name": "FLAG_HIDE_ROUTE118_G00_M33_ITEM_BALL",
+      "name": "FLAG_HIDE_ROUTE118_ITEM_BALL",
       "target": "0x224"
     },
     "0x462": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_4",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_4",
       "target": "0x225"
     },
     "0x463": {
-      "name": "FLAG_HIDE_NEW_MAUVILLE_G24_M53_ITEM_BALL_5",
+      "name": "FLAG_HIDE_NEW_MAUVILLE_INSIDE_ITEM_BALL_5",
       "target": "0x226"
     },
     "0x464": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M24_ITEM_BALL_2",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B1_F_ITEM_BALL_2",
       "target": "0x227"
     },
     "0x465": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M75_ITEM_BALL",
+      "name": "FLAG_HIDE_MAGMA_HIDEOUT_B1_F_ITEM_BALL",
       "target": "0x228"
     },
     "0x466": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M75_ITEM_BALL_2",
+      "name": "FLAG_HIDE_MAGMA_HIDEOUT_B1_F_ITEM_BALL_2",
       "target": "0x229"
     },
     "0x467": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M76_ITEM_BALL",
+      "name": "FLAG_HIDE_MAGMA_HIDEOUT_B2_F_ITEM_BALL",
       "target": "0x22A"
     },
     "0x469": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M16_ITEM_BALL",
+      "name": "FLAG_HIDE_MT_PYRE_2_F_ITEM_BALL",
       "target": "0x22B"
     },
     "0x46A": {
-      "name": "FLAG_HIDE_BEMENTER_G24_M18_ITEM_BALL",
+      "name": "FLAG_HIDE_MT_PYRE_4_F_ITEM_BALL",
       "target": "0x22C"
     },
     "0x46B": {
-      "name": "FLAG_HIDE_SAFARI_G26_M02_ITEM_BALL",
+      "name": "FLAG_HIDE_SAFARI_ZONE_SOUTHWEST_ITEM_BALL",
       "target": "0x22D"
     },
     "0x46C": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M24_ITEM_BALL_4",
+      "name": "FLAG_HIDE_AQUA_HIDEOUT_B1_F_ITEM_BALL_4",
       "target": "0x22E"
     },
     "0x46D": {
-      "name": "FLAG_HIDE_ISLA_MELLSWEET_G14_M07_ITEM_BALL_2",
+      "name": "FLAG_HIDE_MELLSWEET_ISLAND_G14_M07_ITEM_BALL_2",
       "target": "0x22F"
     },
     "0x46E": {
-      "name": "FLAG_HIDE_TEAM_HIDESHOAL_CAVE_G24_M75_ITEM_BALL_3",
+      "name": "FLAG_HIDE_MAGMA_HIDEOUT_B1_F_ITEM_BALL_3",
       "target": "0x230"
     },
     "0x46F": {
-      "name": "FLAG_HIDE_TANGELO_G24_M29_BIG_LAPRAS_DOLL",
+      "name": "FLAG_HIDE_TANGELO_TOWN_TOWN_G24_M29_BIG_LAPRAS_DOLL",
       "target": "0x231"
     },
     "0x4B1": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_04B1",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_04B1",
       "target": "0x232"
     },
     "0x4B4": {
@@ -2217,11 +2217,11 @@
       "target": "0x233"
     },
     "0x4B8": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_04B8",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_04B8",
       "target": "0x234"
     },
     "0x4BD": {
-      "name": "FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_04BD",
+      "name": "FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_04BD",
       "target": "0x235"
     },
     "0x4C1": {
@@ -2229,31 +2229,31 @@
       "target": "0x236"
     },
     "0x4C9": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_04C9",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_04C9",
       "target": "0x237"
     },
     "0x4CD": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_04CD",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_04CD",
       "target": "0x238"
     },
     "0x4D4": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_04D4",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_04D4",
       "target": "0x239"
     },
     "0x4DD": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DD",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04DD",
       "target": "0x23A"
     },
     "0x4DE": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DE",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04DE",
       "target": "0x23B"
     },
     "0x4DF": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04DF",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04DF",
       "target": "0x23C"
     },
     "0x4E0": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_04E0",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_04E0",
       "target": "0x23D"
     },
     "0x800": {
@@ -2273,19 +2273,19 @@
       "target": "0x241"
     },
     "0x805": {
-      "name": "FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0805",
+      "name": "FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_0805",
       "target": "0x242"
     },
     "0x806": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0806",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0806",
       "target": "0x243"
     },
     "0x807": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0807",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0807",
       "target": "0x244"
     },
     "0x808": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_WALLY",
       "target": "0x245"
     },
     "0x809": {
@@ -2293,7 +2293,7 @@
       "target": "0x246"
     },
     "0x80A": {
-      "name": "FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_080A",
+      "name": "FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_080A",
       "target": "0x247"
     },
     "0x80B": {
@@ -2301,23 +2301,23 @@
       "target": "0x248"
     },
     "0x80C": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_080C",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_080C",
       "target": "0x249"
     },
     "0x80D": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_080D",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_080D",
       "target": "0x24A"
     },
     "0x80E": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_080E",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_080E",
       "target": "0x24B"
     },
     "0x80F": {
-      "name": "FLAG_NARANJA_PUERTO_DE_TANGELO_EVENT_COMPLETE_080F",
+      "name": "FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_080F",
       "target": "0x24C"
     },
     "0x810": {
-      "name": "FLAG_NARANJA_ISLA_TANGELO_EVENT_COMPLETE_0810",
+      "name": "FLAG_NARANJA_TANGELO_TOWN_ISLAND_EVENT_COMPLETE_0810",
       "target": "0x24D"
     },
     "0x811": {
@@ -2325,55 +2325,55 @@
       "target": "0x24E"
     },
     "0x812": {
-      "name": "FLAG_NARANJA_VALLE_CHARIZARD_EVENT_COMPLETE_0812",
+      "name": "FLAG_NARANJA_CHARICIFIC_VALLEY_EVENT_COMPLETE_0812",
       "target": "0x24F"
     },
     "0x813": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0813",
+      "name": "FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_0813",
       "target": "0x250"
     },
     "0x814": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_0814",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_SOUTH_EVENT_COMPLETE_0814",
       "target": "0x251"
     },
     "0x815": {
-      "name": "FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_0815",
+      "name": "FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_0815",
       "target": "0x252"
     },
     "0x816": {
-      "name": "FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_0816",
+      "name": "FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_0816",
       "target": "0x253"
     },
     "0x817": {
-      "name": "FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0817",
+      "name": "FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0817",
       "target": "0x254"
     },
     "0x818": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0818",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0818",
       "target": "0x255"
     },
     "0x819": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0819",
+      "name": "FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0819",
       "target": "0x256"
     },
     "0x81A": {
-      "name": "FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_081A",
+      "name": "FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_081A",
       "target": "0x257"
     },
     "0x81B": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_081B",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_081B",
       "target": "0x258"
     },
     "0x81C": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_081C",
+      "name": "FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_081C",
       "target": "0x259"
     },
     "0x81D": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_081D",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_081D",
       "target": "0x25A"
     },
     "0x81E": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_081E",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_081E",
       "target": "0x25B"
     },
     "0x829": {
@@ -2385,15 +2385,15 @@
       "target": "0x25D"
     },
     "0x82B": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED",
+      "name": "FLAG_NARANJA_COLD_PATH_BIKE_RACE_GATE_PASSED",
       "target": "0x25E"
     },
     "0x830": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0830",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0830",
       "target": "0x25F"
     },
     "0x832": {
-      "name": "FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0832",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0832",
       "target": "0x260"
     },
     "0x83A": {
@@ -2405,11 +2405,11 @@
       "target": "0x262"
     },
     "0x83C": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_083C",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_083C",
       "target": "0x263"
     },
     "0x83D": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_083D",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_083D",
       "target": "0x264"
     },
     "0x83E": {
@@ -2437,15 +2437,15 @@
       "target": "0x26A"
     },
     "0x844": {
-      "name": "FLAG_NARANJA_NORTE_EVENT_COMPLETE_0844",
+      "name": "FLAG_NARANJA_NORTH_EVENT_COMPLETE_0844",
       "target": "0x26B"
     },
     "0x845": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_0845",
+      "name": "FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_0845",
       "target": "0x26C"
     },
     "0x846": {
-      "name": "FLAG_NARANJA_DESIERTO_EVENT_COMPLETE_0846",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_DESERT_EVENT_COMPLETE_0846",
       "target": "0x26D"
     },
     "0x847": {
@@ -2453,7 +2453,7 @@
       "target": "0x26E"
     },
     "0x848": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0848",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0848",
       "target": "0x26F"
     },
     "0x849": {
@@ -2469,7 +2469,7 @@
       "target": "0x272"
     },
     "0x84C": {
-      "name": "FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_084C",
+      "name": "FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_084C",
       "target": "0x273"
     },
     "0x84F": {
@@ -2477,7 +2477,7 @@
       "target": "0x274"
     },
     "0x850": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0850",
+      "name": "FLAG_NARANJA_MIKAN_ISLAND_EVENT_COMPLETE_0850",
       "target": "0x275"
     },
     "0x851": {
@@ -2489,11 +2489,11 @@
       "target": "0x277"
     },
     "0x853": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_0853",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0853",
       "target": "0x278"
     },
     "0x854": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_0854",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0854",
       "target": "0x279"
     },
     "0x855": {
@@ -2501,11 +2501,11 @@
       "target": "0x27A"
     },
     "0x856": {
-      "name": "FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0856",
+      "name": "FLAG_NARANJA_MIKAN_ISLAND_EVENT_COMPLETE_0856",
       "target": "0x27B"
     },
     "0x857": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0857",
+      "name": "FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_0857",
       "target": "0x27C"
     },
     "0x858": {
@@ -2517,7 +2517,7 @@
       "target": "0x27E"
     },
     "0x85A": {
-      "name": "FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_085A",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_085A",
       "target": "0x27F"
     },
     "0x85B": {
@@ -2529,7 +2529,7 @@
       "target": "0x281"
     },
     "0x85D": {
-      "name": "FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_085D",
+      "name": "FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_085D",
       "target": "0x282"
     },
     "0x85E": {
@@ -2553,15 +2553,15 @@
       "target": "0x285"
     },
     "0x8C1": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_08C1",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_08C1",
       "target": "0x286"
     },
     "0x8CA": {
-      "name": "FLAG_NARANJA_ISLA_MANDARINA_EVENT_COMPLETE_08CA",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_SOUTH_EVENT_COMPLETE_08CA",
       "target": "0x287"
     },
     "0x8CB": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_08CB",
+      "name": "FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_08CB",
       "target": "0x288"
     },
     "0x8CC": {
@@ -2577,11 +2577,11 @@
       "target": "0x28B"
     },
     "0x8CF": {
-      "name": "FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_08CF",
+      "name": "FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_08CF",
       "target": "0x28C"
     },
     "0x8D0": {
-      "name": "FLAG_NARANJA_ISLAS_EVENT_COMPLETE_08D0",
+      "name": "FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_08D0",
       "target": "0x28D"
     },
     "0x8D1": {
@@ -2589,7 +2589,7 @@
       "target": "0x28E"
     },
     "0x8D2": {
-      "name": "FLAG_NARANJA_ISLA_NUEVA_EVENT_COMPLETE_08D2",
+      "name": "FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_08D2",
       "target": "0x28F"
     },
     "0x200D": {
@@ -2597,7 +2597,7 @@
       "target": "0x290"
     },
     "0x200E": {
-      "name": "FLAG_HIDE_VALN_TANG_G09_M00_HEX_MANIAC",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G09_M00_HEX_MANIAC",
       "target": "0x291"
     },
     "0x200F": {
@@ -2605,19 +2605,19 @@
       "target": "0x292"
     },
     "0x2110": {
-      "name": "FLAG_HIDE_VALN_TANG_G07_M02_TRADER_2",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G07_M02_TRADER_2",
       "target": "0x293"
     },
     "0x2111": {
-      "name": "FLAG_HIDE_VALN_TANG_G09_M01_FIRE_CUSHION",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G09_M01_FIRE_CUSHION",
       "target": "0x294"
     },
     "0x2112": {
-      "name": "FLAG_HIDE_VALN_TANG_G07_M02_TRADER",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G07_M02_TRADER",
       "target": "0x295"
     },
     "0x2113": {
-      "name": "FLAG_HIDE_VALN_TANG_G09_M01_TRADER",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G09_M01_TRADER",
       "target": "0x296"
     },
     "0x2114": {
@@ -2625,15 +2625,15 @@
       "target": "0x297"
     },
     "0x2116": {
-      "name": "FLAG_HIDE_TANGELO_G00_M16_WALLY",
+      "name": "FLAG_HIDE_TANGELO_TOWN_TOWN_G00_M16_WALLY",
       "target": "0x298"
     },
     "0x2117": {
-      "name": "FLAG_HIDE_ISLA_MANDARINA_G00_M14_LITTLE_GIRL_1",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_SOUTH_G00_M14_LITTLE_GIRL_1",
       "target": "0x299"
     },
     "0x2118": {
-      "name": "FLAG_HIDE_MANDARIN_G00_M31_LITTLE_GIRL_1",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ROUTE_G00_M31_LITTLE_GIRL_1",
       "target": "0x29A"
     },
     "0x2119": {
@@ -2641,7 +2641,7 @@
       "target": "0x29B"
     },
     "0x211A": {
-      "name": "FLAG_HIDE_ISLA_TANGELO_G02_M02_WALLY",
+      "name": "FLAG_HIDE_TANGELO_TOWN_ISLAND_G02_M02_WALLY",
       "target": "0x29C"
     },
     "0x211B": {
@@ -2649,15 +2649,15 @@
       "target": "0x29D"
     },
     "0x211C": {
-      "name": "FLAG_HIDE_ISLA_TANGELO_G02_M02_BOY_1_3",
+      "name": "FLAG_HIDE_TANGELO_TOWN_ISLAND_G02_M02_BOY_1_3",
       "target": "0x29E"
     },
     "0x2121": {
-      "name": "FLAG_NARANJA_MANDARINA_GENERATOR_BATTERY_INSTALLED",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ROUTEA_GENERATOR_BATTERY_INSTALLED",
       "target": "0x29F"
     },
     "0x2122": {
-      "name": "FLAG_NARANJA_MANDARINA_GENERATOR_SWITCHED_OFF",
+      "name": "FLAG_NARANJA_MANDARIN_ROUTE_ROUTEA_GENERATOR_SWITCHED_OFF",
       "target": "0x2A0"
     },
     "0x2123": {
@@ -2665,15 +2665,15 @@
       "target": "0x2A1"
     },
     "0x2124": {
-      "name": "FLAG_HIDE_ISLA_MANDARINA_G06_M05_MARILL_DOLL",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_SOUTH_G06_M05_MARILL_DOLL",
       "target": "0x2A2"
     },
     "0x2125": {
-      "name": "FLAG_HIDE_ISLA_MANDARINA_G06_M05_AQUA_MEMBER_F",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_SOUTH_G06_M05_AQUA_MEMBER_F",
       "target": "0x2A3"
     },
     "0x2127": {
-      "name": "FLAG_HIDE_ISLA_PINKAN_G00_M30_BEAUTY",
+      "name": "FLAG_HIDE_PINKAN_ISLAND_G00_M30_BEAUTY",
       "target": "0x2A4"
     },
     "0x2128": {
@@ -2681,15 +2681,15 @@
       "target": "0x2A5"
     },
     "0x2129": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_FIRE_CUSHION",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_FIRE_CUSHION",
       "target": "0x2A6"
     },
     "0x212A": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_MACHOKE_FACING_AWAY",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_MACHOKE_FACING_AWAY",
       "target": "0x2A7"
     },
     "0x212B": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_NURSE",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_NURSE",
       "target": "0x2A8"
     },
     "0x212C": {
@@ -2697,15 +2697,15 @@
       "target": "0x2A9"
     },
     "0x212D": {
-      "name": "FLAG_HIDE_CAMINO_FRIO_G00_M29_SWIMMER_F",
+      "name": "FLAG_HIDE_COLD_PATH_G00_M29_SWIMMER_F",
       "target": "0x2AA"
     },
     "0x2130": {
-      "name": "FLAG_HIDE_ISLA_MIKAN_G00_M20_SS_TIDAL",
+      "name": "FLAG_HIDE_MIKAN_ISLAND_G00_M20_SS_TIDAL",
       "target": "0x2AB"
     },
     "0x2131": {
-      "name": "FLAG_HIDE_CUEVA_KABUTO_G24_M07_KECLEON_1",
+      "name": "FLAG_HIDE_KABUTO_CAVE_G24_M07_KECLEON_1",
       "target": "0x2AC"
     },
     "0x2132": {
@@ -2737,7 +2737,7 @@
       "target": "0x2B3"
     },
     "0x2139": {
-      "name": "FLAG_HIDE_VALLEDELASFLORES_G24_M11_PUSHABLE_BOULDER",
+      "name": "FLAG_HIDE_PETALBURG_WOODS_PUSHABLE_BOULDER",
       "target": "0x2B4"
     },
     "0x213A": {
@@ -2745,7 +2745,7 @@
       "target": "0x2B5"
     },
     "0x213F": {
-      "name": "FLAG_NARANJA_ISLA_PINKAN_EVENT_COMPLETE_213F",
+      "name": "FLAG_NARANJA_PINKAN_ISLAND_EVENT_COMPLETE_213F",
       "target": "0x2B6"
     },
     "0x2142": {
@@ -2753,11 +2753,11 @@
       "target": "0x2B7"
     },
     "0x2150": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_2150",
+      "name": "FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_2150",
       "target": "0x2B8"
     },
     "0x4000": {
-      "name": "FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_4000",
+      "name": "FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_4000",
       "target": "0x2B9"
     },
     "0x4001": {
@@ -2765,27 +2765,27 @@
       "target": "0x2BA"
     },
     "0x400C": {
-      "name": "FLAG_HIDE_VALN_TANG_G09_M00_MAGMA_MEMBER_F",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G09_M00_MAGMA_MEMBER_F",
       "target": "0x2BB"
     },
     "0x400D": {
-      "name": "FLAG_HIDE_VALN_TANG_G09_M00_MAN_7",
+      "name": "FLAG_HIDE_VALENCIA_TANGELO_ROUTE_G09_M00_MAN_7",
       "target": "0x2BC"
     },
     "0x4051": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_4051",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_4051",
       "target": "0x2BD"
     },
     "0x4115": {
-      "name": "FLAG_HIDE_ISLA_MANDARINA_G06_M05_MAN_3",
+      "name": "FLAG_HIDE_MANDARIN_ROUTE_ISLAND_SOUTH_G06_M05_MAN_3",
       "target": "0x2BE"
     },
     "0x4118": {
-      "name": "FLAG_HIDE_CUEVA_DE_CRISTAL_G24_M04_OLD_MAN_1",
+      "name": "FLAG_HIDE_CRYSTAL_CAVE_G24_M04_OLD_MAN_1",
       "target": "0x2BF"
     },
     "0x5051": {
-      "name": "FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_5051",
+      "name": "FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_5051",
       "target": "0x2C0"
     }
   },
@@ -2915,7 +2915,7 @@
       "target": "0x4049"
     },
     "0x4050": {
-      "name": "VAR_NARANJA_PUERTO_DE_TANGELO_STORY_STATE",
+      "name": "VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE",
       "target": "0x4050"
     },
     "0x4051": {
@@ -2923,15 +2923,15 @@
       "target": "0x4051"
     },
     "0x4053": {
-      "name": "VAR_NARANJA_VALLE_CHARIZARD_STORY_STATE",
+      "name": "VAR_NARANJA_CHARICIFIC_VALLEY_STORY_STATE",
       "target": "0x4053"
     },
     "0x4057": {
-      "name": "VAR_NARANJA_ISLA_VALENCIA_TUTORIAL_STATE",
+      "name": "VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE",
       "target": "0x4057"
     },
     "0x4058": {
-      "name": "VAR_NARANJA_ISLA_MURCOTT_STORY_STATE",
+      "name": "VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE",
       "target": "0x4058"
     },
     "0x405A": {
@@ -2939,15 +2939,15 @@
       "target": "0x405A"
     },
     "0x405E": {
-      "name": "VAR_NARANJA_ISLA_NUEVA_STORY_STATE",
+      "name": "VAR_NARANJA_NEW_ISLAND_STORY_STATE",
       "target": "0x405E"
     },
     "0x4060": {
-      "name": "VAR_NARANJA_TANGELO_STORY_STATE",
+      "name": "VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE",
       "target": "0x4060"
     },
     "0x4062": {
-      "name": "VAR_NARANJA_PUEBLO_PALETA_STORY_STATE",
+      "name": "VAR_NARANJA_NARANJA_PALLET_TOWN_STORY_STATE",
       "target": "0x4062"
     },
     "0x4069": {
@@ -3003,19 +3003,19 @@
       "target": "0x4089"
     },
     "0x408A": {
-      "name": "VAR_NARANJA_ISLA_KUMQUAT_STORY_STATE",
+      "name": "VAR_NARANJA_KUMQUAT_ISLAND_STORY_STATE",
       "target": "0x408A"
     },
     "0x408C": {
-      "name": "VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_2",
+      "name": "VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_2",
       "target": "0x408C"
     },
     "0x408D": {
-      "name": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_4",
+      "name": "VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_4",
       "target": "0x408D"
     },
     "0x408E": {
-      "name": "VAR_NARANJA_ISLAS_STORY_STATE",
+      "name": "VAR_NARANJA_ORANGE_ISLANDS_STORY_STATE",
       "target": "0x408E"
     },
     "0x408F": {
@@ -3031,15 +3031,15 @@
       "target": "0x4092"
     },
     "0x4093": {
-      "name": "VAR_NARANJA_ISLA_MANDARIN_STORY_STATE",
+      "name": "VAR_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_STORY_STATE",
       "target": "0x4093"
     },
     "0x4094": {
-      "name": "VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_2",
+      "name": "VAR_NARANJA_KUMQUAT_ISLAND_EVENT_STATE_2",
       "target": "0x4094"
     },
     "0x4095": {
-      "name": "VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_3",
+      "name": "VAR_NARANJA_KUMQUAT_ISLAND_EVENT_STATE_3",
       "target": "0x4095"
     },
     "0x4096": {
@@ -3055,7 +3055,7 @@
       "target": "0x4098"
     },
     "0x4099": {
-      "name": "VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_4",
+      "name": "VAR_NARANJA_KUMQUAT_ISLAND_EVENT_STATE_4",
       "target": "0x4099"
     },
     "0x409A": {
@@ -3067,11 +3067,11 @@
       "target": "0x409B"
     },
     "0x409C": {
-      "name": "VAR_NARANJA_ISLA_POMELO_STORY_STATE",
+      "name": "VAR_NARANJA_PUMMELO_ISLAND_STORY_STATE",
       "target": "0x409C"
     },
     "0x40A0": {
-      "name": "VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_2",
+      "name": "VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_2",
       "target": "0x40A0"
     },
     "0x40A2": {
@@ -3099,11 +3099,11 @@
       "target": "0x40A7"
     },
     "0x40A9": {
-      "name": "VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE",
+      "name": "VAR_NARANJA_COLD_PATH_BIKE_RACE_STATE",
       "target": "0x40A9"
     },
     "0x40AA": {
-      "name": "VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_3",
+      "name": "VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_3",
       "target": "0x40AA"
     },
     "0x40AB": {
@@ -3155,7 +3155,7 @@
       "target": "0x40B6"
     },
     "0x40B7": {
-      "name": "VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_4",
+      "name": "VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_4",
       "target": "0x40B7"
     },
     "0x40B9": {
@@ -3167,7 +3167,7 @@
       "target": "0x40BA"
     },
     "0x40BC": {
-      "name": "VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_6",
+      "name": "VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_6",
       "target": "0x40BC"
     },
     "0x40BD": {
@@ -3183,7 +3183,7 @@
       "target": "0x40BF"
     },
     "0x40C0": {
-      "name": "VAR_NARANJA_ISLA_MELLSWEET_STORY_STATE",
+      "name": "VAR_NARANJA_MELLSWEET_ISLAND_STORY_STATE",
       "target": "0x40C0"
     },
     "0x40C1": {
@@ -3195,19 +3195,19 @@
       "target": "0x40C3"
     },
     "0x40C4": {
-      "name": "VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_3",
+      "name": "VAR_NARANJA_TROVITA_ISLAND_EVENT_STATE_3",
       "target": "0x40C4"
     },
     "0x40C5": {
-      "name": "VAR_NARANJA_ISLA_TROVITA_EVENT_STATE_4",
+      "name": "VAR_NARANJA_TROVITA_ISLAND_EVENT_STATE_4",
       "target": "0x40C5"
     },
     "0x40C6": {
-      "name": "VAR_NARANJA_ISLA_MELLSWEET_EVENT_STATE_2",
+      "name": "VAR_NARANJA_MELLSWEET_ISLAND_EVENT_STATE_2",
       "target": "0x40C6"
     },
     "0x40C7": {
-      "name": "VAR_NARANJA_PUERTO_DE_TANGELO_EVENT_STATE_3",
+      "name": "VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_3",
       "target": "0x40C7"
     },
     "0x8000": {

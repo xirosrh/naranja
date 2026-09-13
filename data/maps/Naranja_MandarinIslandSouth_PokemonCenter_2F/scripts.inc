@@ -1,0 +1,41 @@
+Naranja_MandarinIslandSouth_PokemonCenter_2F_MapScripts::
+# 19 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script MAP_SCRIPT_ON_LOAD, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnLoad
+# 5 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, Naranja_MandarinIslandSouth_PokemonCenter_2F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
+# 12 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Naranja_MandarinIslandSouth_PokemonCenter_2F_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
+	.byte 0
+
+Naranja_MandarinIslandSouth_PokemonCenter_2F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+# 6 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_1
+# 7 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_1
+# 8 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_1
+# 9 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_4
+# 10 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_5
+	.2byte 0
+
+Naranja_MandarinIslandSouth_PokemonCenter_2F_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
+# 13 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+# 14 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+# 15 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+# 16 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+# 17 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	map_script_2 VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4, Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+	.2byte 0
+
+
+Naranja_MandarinIslandSouth_PokemonCenter_2F_EventScript_Teala::
+# 23 "data/maps/Naranja_MandarinIslandSouth_PokemonCenter_2F/scripts.pory"
+	call Naranja_SevenGrapefruitIslands_PokemonCenter_2F_EventScript_Sub_081A41FB
+	end
+

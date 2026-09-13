@@ -1,0 +1,25 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandSouth_PokemonCenter_2F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_4
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnFrame_5
+    ]
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 1: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 2: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 5: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 3: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+        VAR_NARANJA_7ISLAS_POMELO_STORY_STATE, 4: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_LOAD: Naranja_SevenGrapefruitIslands_PokemonCenter_2F_OnLoad
+}
+
+script Naranja_MandarinIslandSouth_PokemonCenter_2F_EventScript_Teala {
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_2F_EventScript_Sub_081A41FB)
+    end
+}

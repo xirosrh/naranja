@@ -1,0 +1,32 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MellsweetIsland_SpaceCenter_2F_MapScripts {
+}
+
+script Naranja_MellsweetIsland_SpaceCenter_2F_EventScript_Scientist1 {
+    msgbox(Naranja_MellsweetIsland_SpaceCenter_2F_Text_0818E483, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_SpaceCenter_2F_EventScript_Gentleman {
+    msgbox(Naranja_MellsweetIsland_SpaceCenter_2F_Text_0818E4EE, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_SpaceCenter_2F_EventScript_Boy4 {
+    msgbox(Naranja_MellsweetIsland_SpaceCenter_2F_Text_0818E564, MSGBOX_NPC)
+    end
+}
+
+text Naranja_MellsweetIsland_SpaceCenter_2F_Text_0818E483 {
+    "MOSSDEEP has mainly sunny weather,\nand its winds are stable.\pIt’s an ideal location for launching\nrockets."
+}
+
+text Naranja_MellsweetIsland_SpaceCenter_2F_Text_0818E4EE {
+    "If only I was a little younger, I would\nhave liked being an astronaut...\pNo... It’s not too late!\nI can and will try!"
+}
+
+text Naranja_MellsweetIsland_SpaceCenter_2F_Text_0818E564 {
+    "I wish ordinary people could go into\nspace one day..."
+}

@@ -1,0 +1,142 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ColdPath_LanettesHouse_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ColdPath_LanettesHouse_OnTransition
+}
+
+script Naranja_ColdPath_LanettesHouse_OnTransition {
+    setflag(FLAG_NARANJA_COLD_PATH_EVENT_COMPLETE_0845)
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C262 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY)
+    goto_if(EQUAL, Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C28F)
+    setflag(FLAG_NARANJA_JOY_ICE_BEAM_REWARD_EVENT)
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192A0D, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x12D)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    nop
+    nop
+    nop
+    nop
+    nop
+    nop
+    setflag(FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY)
+    release
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C28F {
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192ACC, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sign_1 {
+    lockall
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192B4A, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C2B7)
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192DA9, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C2B7 {
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192C01, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C2CC)
+    releaseall
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C2CC {
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192CB4, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sign_2 {
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_08192DC1, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Nurse {
+    faceplayer
+    checkflag(FLAG_HIDE_NARANJA_NAVEL_ISLAND_G05_M03_WOMAN_3)
+    goto_if(EQUAL, Naranja_ColdPath_LanettesHouse_EventScript_Sub_0815C262)
+    setflag(FLAG_HIDE_NARANJA_COLD_PATH_G20_M02_NURSE)
+    clearflag(FLAG_HIDE_NARANJA_NAVEL_ISLAND_G05_M03_WOMAN_3)
+    nop
+    msgbox(Naranja_ColdPath_LanettesHouse_Text_086B73E3, MSGBOX_AUTOCLOSE)
+    closemessage
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 3)
+    call_if(EQUAL, Naranja_ColdPath_LanettesHouse_EventScript_Sub_086B71F5)
+    nop
+    applymovement(LOCALID_NARANJA_COLD_PATH_LANETTES_HOUSE_NURSE, Naranja_ColdPath_LanettesHouse_Movement_086B7200)
+    delay(0x10)
+    end
+}
+
+script Naranja_ColdPath_LanettesHouse_EventScript_Sub_086B71F5 {
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_LanettesHouse_Movement_086B7209)
+    delay(0x20)
+    return
+}
+
+movement Naranja_ColdPath_LanettesHouse_Movement_086B7200 {
+    walk_right
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    set_invisible
+    walk_down
+    walk_down
+}
+
+movement Naranja_ColdPath_LanettesHouse_Movement_086B7209 {
+    walk_in_place_faster_down
+    lock_facing_direction
+    walk_slow_up
+    delay_16
+    walk_slow_down
+    face_left
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192A0D {
+    "JOY: ¡Ya llegaste {PLAYER}!\pMe has ayudado un montón\na atender los POKéMON.\pAl este, en Isla NAVEL\nestá el gimnasio de DANNY.\pSeguro que necesitarás\nesta MT pues él exige \lsaberla para desafiarle."
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192ACC {
+    "¿Desafiaste ya a DANNY?\pBueno, ven a verme cuando quieras.\pQuizá luego nos encarguemos\nde otra aventura. ¿Va?\p¡Me serás útil!"
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192B4A {
+    "It’s LANETTE’s research notes.\nThere’s information about BOXES.\pDesign BOXES to hold 30 POKéMON each.\pEach TRAINER should be able to store\n420 POKéMON on the PC system.\pKeep reading?"
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192C01 {
+    "A marking system should be added to\nmake POKéMON easier to organize.\pThe name and wallpaper design of each\nBOX will be made changeable to please\lthe stored POKéMON.\pKeep reading?"
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192CB4 {
+    "When storing a POKéMON, it should be\nsent to the BOX inspected last.\pIf that BOX is full, the received\nPOKéMON is stored in the next BOX.\pIn other words, when a BOX is examined,\nit is automatically selected as the BOX\lto which POKéMON are sent."
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192DA9 {
+    "{PLAYER} closed the notebook."
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_08192DC1 {
+    "There’s an e-mail from someone on\nthe PC.\p“... ... ... ... ... ... ...\p“Your Storage System offers more\nconvenience than mine.\p“It has a lot of user-friendly features\nthat make it fun and useful, too.\p“It makes me proud that I played\na part in its development.\p“Here’s hoping that you’ll continue\nresearch in Storage Systems.\p“From BILL\n... ... ... ... ... ... ... ...”"
+}
+
+text Naranja_ColdPath_LanettesHouse_Text_086B73E3 {
+    "¡Menos mal\nque ya te recuperaste {PLAYER}!\p¡Te veo ya con mejor pinta!\pNo estaba pendiente de tì\ny no me fijé a tiempo, ya que SHELDER no\lse tragó la poción y lo único que podìa\lera aplicarle un alga SANGORA.\p¡Gracias por encontrarla!\pPor favor, te pido que perdones a SEEL.\nSólo querìa jugar y no podìa saber\lque te quedabas sin aire.\pLos SEEL de NAVEL cuando encuentran\nhumanos les encanta jugar con ellos.\lAntes, no pocos de NAVEL tenìan\lun SEEL como mascota y ayuda\lpara romper los hielos.\pAhora…\pAhora no hay tantos hielos que romper\ncomo habìa antes.\p¡Pero a lo nuestro!\pSi te queda aire en los pulmones\n¿podrás ayudarme con otro SEEL?\p¡Necesitaremos otra POCIÓN!\n¡Estaré al otro lado de ISLA NAVEL!\l¡En marcha! ¡Vamos!"
+}

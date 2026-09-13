@@ -1,0 +1,29 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SeafloorCavern_Room3_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SeafloorCavern_Room3_OnTransition
+}
+
+script Naranja_SeafloorCavern_Room3_OnTransition {
+    call(Naranja_MtPyre_Summit_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_SeafloorCavern_Room3_EventScript_Object10 {
+    trainerbattle_single(TRAINER_NARANJA_SEAFLOOR_CAVERN_600, Naranja_SeafloorCavern_Room3_Text_081975DC, Naranja_SeafloorCavern_Room3_Text_081976F3)
+    msgbox(Naranja_SeafloorCavern_Room3_Text_08197704, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_SeafloorCavern_Room3_Text_081975DC {
+    "Ahahahaha!\pHow did you manage to get here without\na submarine?\lWhat an impressive child!\pBut... It won’t do to have you\nmeddling about here.\pAnd, I do want payback for what\nhappened at the WEATHER INSTITUTE...\pI’m going to give you a little taste\nof pain! Resign yourself to it!"
+}
+
+text Naranja_SeafloorCavern_Room3_Text_081976F3 {
+    "Ahahahaha!\pOuch!"
+}
+
+text Naranja_SeafloorCavern_Room3_Text_08197704 {
+    "Ahahahaha!\nYou’re so darn strong.\pIt’s terribly disappointing that you’re\nnot a TEAM {AQUA} member.\pYou could have enjoyed the fabulous\nworld our BOSS has promised to one\lof our own..."
+}

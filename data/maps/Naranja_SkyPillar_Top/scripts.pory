@@ -1,0 +1,34 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SkyPillar_Top_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_SkyPillar_Top_OnResume
+}
+
+script Naranja_SkyPillar_Top_OnResume {
+    checkflag(FLAG_SYS_POKEDEX_GET)
+    call_if(EQUAL, Naranja_SkyPillar_Top_EventScript_Sub_0815F312)
+    end
+}
+
+script Naranja_SkyPillar_Top_EventScript_Sub_0815F312 {
+    removeobject(32783)
+    return
+}
+
+script Naranja_SkyPillar_Top_EventScript_Dragonite {
+    lock
+    faceplayer
+    setwildbattle(SPECIES_RAYQUAZA, 0x46, 0)
+    waitse
+    playmoncry(SPECIES_RAYQUAZA, 2)
+    delay(0x28)
+    waitmoncry
+    setflag(FLAG_HIDE_NARANJA_VALENCIA_ISLAND_G00_M00_GIRL_3)
+    setflag(FLAG_SYS_POKEDEX_GET)
+    special(BattleSetup_StartLegendaryBattle)
+    waitstate
+    clearflag(FLAG_SYS_POKEDEX_GET)
+    release
+    end
+}

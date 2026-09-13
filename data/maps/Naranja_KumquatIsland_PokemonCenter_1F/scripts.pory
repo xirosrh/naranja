@@ -1,0 +1,53 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_KumquatIsland_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_KumquatIsland_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_KumquatIsland_PokemonCenter_1F_OnTransition {
+    setrespawn(8)
+    end
+}
+
+script Naranja_KumquatIsland_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_KumquatIsland_PokemonCenter_1F_EventScript_Boy1 {
+    msgbox(Naranja_KumquatIsland_PokemonCenter_1F_Text_08189FC9, MSGBOX_NPC)
+    end
+}
+
+script Naranja_KumquatIsland_PokemonCenter_1F_EventScript_Maniac {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_080D)
+    goto_if(EQUAL, Naranja_KumquatIsland_PokemonCenter_1F_EventScript_Sub_0815935D)
+    msgbox(Naranja_KumquatIsland_PokemonCenter_1F_Text_0818A048, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_PokemonCenter_1F_EventScript_Sub_0815935D {
+    msgbox(Naranja_KumquatIsland_PokemonCenter_1F_Text_0818A0A1, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_KumquatIsland_PokemonCenter_1F_Text_08189FC9 {
+    "I wonder how many kinds of POKéMON\nthere are in the world?\pIt’d be great to cross seas and\ntrade POKéMON with people far away."
+}
+
+text Naranja_KumquatIsland_PokemonCenter_1F_Text_0818A048 {
+    "I’ve been hearing about some rotten\nscoundrels who steal POKéMON and rip\loff METEORITES."
+}
+
+text Naranja_KumquatIsland_PokemonCenter_1F_Text_0818A0A1 {
+    "Those rotten scoundrels who steal\nPOKéMON and rip off METEORITES...\pI haven’t seen them around recently."
+}

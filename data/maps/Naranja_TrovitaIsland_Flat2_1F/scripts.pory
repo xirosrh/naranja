@@ -1,0 +1,29 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_Flat2_1F_MapScripts {
+}
+
+script Naranja_TrovitaIsland_Flat2_1F_EventScript_OldWoman2 {
+    msgbox(Naranja_TrovitaIsland_Flat2_1F_Text_081853DD, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_Flat2_1F_EventScript_Skitty {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_SKITTY, 0)
+    msgbox(Naranja_TrovitaIsland_Flat2_1F_Text_08185410, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_TrovitaIsland_Flat2_1F_Text_081853DD {
+    "DEVON CORPORATION’s workers live in\nthis building."
+}
+
+text Naranja_TrovitaIsland_Flat2_1F_Text_08185410 {
+    "SKITTY: Gyaaaah!"
+}

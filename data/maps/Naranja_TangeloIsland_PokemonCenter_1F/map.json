@@ -1,0 +1,107 @@
+{
+  "id": "MAP_NARANJA_TANGELO_ISLAND_POKEMON_CENTER_1F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_TangeloIsland_PokemonCenter_1F",
+  "layout": "LAYOUT_NARANJA_TANGELO_ISLAND_POKEMON_CENTER_1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_TANGELO_TOWN_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_ISLAND_POKEMON_CENTER_1_F_NURSE",
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 7,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloIsland_PokemonCenter_1F_EventScript_Nurse",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_ISLAND_POKEMON_CENTER_1_F_GENTLEMAN",
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 10,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloIsland_PokemonCenter_1F_EventScript_Gentleman",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_ISLAND_POKEMON_CENTER_1_F_BOY_1_3",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_1",
+      "x": 8,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloIsland_PokemonCenter_1F_EventScript_Boy1",
+      "flag": "FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G02_M02_BOY_1_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_TANGELO_TOWN_ISLAND_POKEMON_CENTER_1_F_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
+      "x": 4,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloIsland_PokemonCenter_1F_EventScript_Tracey",
+      "flag": "FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G02_M02_WALLY"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 8,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TANGELO_ISLAND",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 7,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_TANGELO_ISLAND",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 1,
+      "y": 6,
+      "elevation": 4,
+      "dest_map": "MAP_NARANJA_TANGELO_ISLAND_POKEMON_CENTER_2F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TANGELO_ISLAND",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

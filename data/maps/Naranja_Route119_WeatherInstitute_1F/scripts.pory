@@ -1,0 +1,120 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route119_WeatherInstitute_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route119_WeatherInstitute_1F_OnTransition
+}
+
+script Naranja_Route119_WeatherInstitute_1F_OnTransition {
+    call(Naranja_MtPyre_Summit_EventScript_Sub_081A0196)
+    compare_var_to_value(VAR_NARANJA_ROUTE119_EVENT_STATE_2, 0)
+    call_if(EQUAL, Naranja_Route119_WeatherInstitute_1F_EventScript_Sub_08163C41)
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Sub_08163C41 {
+    setobjectxyperm(LOCALID_NARANJA_ROUTE119_WEATHER_INSTITUTE_1F_LITTLE_BOY_1, 0, 5)
+    setobjectmovementtype(LOCALID_NARANJA_ROUTE119_WEATHER_INSTITUTE_1F_LITTLE_BOY_1, 0xA)
+    return
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_LittleBoy1 {
+    lock
+    faceplayer
+    special(GetPlayerBigGuyGirlString)
+    compare_var_to_value(VAR_NARANJA_ROUTE119_EVENT_STATE_2, 0)
+    goto_if(EQUAL, Naranja_Route119_WeatherInstitute_1F_EventScript_Sub_08163C67)
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819ED22, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Sub_08163C67 {
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819ECF4, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Man5_2 {
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819ED6B, MSGBOX_NPC)
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Man5 {
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819EE25, MSGBOX_NPC)
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Sign_1 {
+    lockall
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819EE8B, MSGBOX_DEFAULT)
+    closemessage
+    call(Naranja_Route119_WeatherInstitute_1F_EventScript_Sub_081A02CA)
+    releaseall
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Object1 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE119_582, Naranja_Route119_WeatherInstitute_1F_Text_0819EB8A, Naranja_Route119_WeatherInstitute_1F_Text_0819EBEE)
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819EC0E, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Object2 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE119_591, Naranja_Route119_WeatherInstitute_1F_Text_0819EC6B, Naranja_Route119_WeatherInstitute_1F_Text_0819EC89)
+    msgbox(Naranja_Route119_WeatherInstitute_1F_Text_0819EC97, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route119_WeatherInstitute_1F_EventScript_Sub_081A02CA {
+    fadescreen(1)
+    playfanfare(MUS_HEAL)
+    waitfanfare
+    special(HealPlayerParty)
+    fadescreen(0)
+    return
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EB8A {
+    "The BOSS got interested in the\nresearch they have going here, so he\lsent us out.\pYou quit meddling!"
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EBEE {
+    "Blast it...\nBlasted by a kid..."
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EC0E {
+    "Our BOSS knows everything.\pBut I’m just a GRUNT. What would I know\nabout what he’s thinking?"
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EC6B {
+    "Huh?\nWhat’s a kid doing here?"
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EC89 {
+    "Huh?\nI lost?!"
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EC97 {
+    "Oh, no...\nI’ll catch an earful for losing to a kid...\pI should just take a nap in the bed..."
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819ECF4 {
+    "While I was sleeping, everyone went\nupstairs!"
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819ED22 {
+    "Wow, you’re really strong!\pI wish I could be a POKéMON TRAINER\nlike you!"
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819ED6B {
+    "The PROFESSOR loves rain.\nThat’s a fact.\pBut if it keeps raining, people will be in\ntrouble. That’s another fact.\pAnd thus, the PROFESSOR is studying\nif the rain can be put to good use."
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EE25 {
+    "Hello!\nWe’ve been saved by your actions!\pWhat I don’t understand is what on\nearth the {AQUA}S were up to."
+}
+
+text Naranja_Route119_WeatherInstitute_1F_Text_0819EE8B {
+    "There’s a bed...\nLet’s take a rest."
+}

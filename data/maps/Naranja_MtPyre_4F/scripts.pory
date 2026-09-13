@@ -1,0 +1,30 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_4F_MapScripts {
+}
+
+script Naranja_MtPyre_4F_EventScript_BlackBelt {
+    trainerbattle_single(TRAINER_NARANJA_BEMENTER_190, Naranja_MtPyre_4F_Text_081968A6, Naranja_MtPyre_4F_Text_081968D0)
+    msgbox(Naranja_MtPyre_4F_Text_081968EE, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_4F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0xDC)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_MtPyre_4F_Text_081968A6 {
+    "Teacher...\nPlease watch over my progress!"
+}
+
+text Naranja_MtPyre_4F_Text_081968D0 {
+    "Teacher...\nPlease forgive me!"
+}
+
+text Naranja_MtPyre_4F_Text_081968EE {
+    "Until I improve, my teacher, who rests\nhere, will never find true peace..."
+}

@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MellsweetIsland_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MellsweetIsland_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_MellsweetIsland_PokemonCenter_1F_OnTransition {
+    setrespawn(9)
+    end
+}
+
+script Naranja_MellsweetIsland_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_MellsweetIsland_PokemonCenter_1F_EventScript_Woman3 {
+    msgbox(Naranja_MellsweetIsland_PokemonCenter_1F_Text_0818D62F, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MellsweetIsland_PokemonCenter_1F_EventScript_Girl1 {
+    msgbox(Naranja_MellsweetIsland_PokemonCenter_1F_Text_0818D69A, MSGBOX_NPC)
+    end
+}
+
+text Naranja_MellsweetIsland_PokemonCenter_1F_Text_0818D62F {
+    "The GYM LEADERS in this town are a\nformidable duo.\pTheir combination attacks are, like,\nexcellent and wow!"
+}
+
+text Naranja_MellsweetIsland_PokemonCenter_1F_Text_0818D69A {
+    "Depending on the special abilities of\nPOKéMON, some moves might change\lor not work at all."
+}

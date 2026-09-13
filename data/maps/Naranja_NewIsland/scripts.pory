@@ -1,0 +1,596 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_NewIsland_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_NewIsland_OnTransition
+    MAP_SCRIPT_ON_RESUME: Naranja_NewIsland_OnResume
+}
+
+script Naranja_NewIsland_OnLoad {
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081)
+    call_if(LESS_THAN, Naranja_NewIsland_EventScript_Sub_0814D0A0)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081)
+    call_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D0B1)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D0A0 {
+    setobjectxyperm(LOCALID_NARANJA_NEW_ISLAND_OLD_MAN_1, 0x1F, 0x12)
+    setmetatile(0x1F, 0x20, 0x250, 1)
+    return
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D0B1 {
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    call_if(LESS_THAN, Naranja_NewIsland_EventScript_Sub_0814D0BB)
+    return
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D0BB {
+    setmetatile(9, 6, 0x248, 1)
+    setmetatile(9, 0x11, 0x248, 1)
+    setmetatile(9, 0x1A, 0x248, 1)
+    setmetatile(0x2C, 0x11, 0x248, 1)
+    setmetatile(8, 0x23, 0x248, 1)
+    setmetatile(0x35, 0x1C, 0x248, 1)
+    setmetatile(0x2D, 6, 0x248, 1)
+    setmetatile(0x30, 0x19, 0x248, 1)
+    setmetatile(0x1F, 0x20, 0x250, 1)
+    return
+}
+
+script Naranja_NewIsland_OnTransition {
+    setflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_081D)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    call_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D159)
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D123)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D123 {
+    call(Naranja_KumquatIsland_EventScript_Sub_081A02C1)
+    setobjectxyperm(LOCALID_NARANJA_NEW_ISLAND_BEAUTY, 0x1D, 0x13)
+    setobjectxyperm(LOCALID_NARANJA_NEW_ISLAND_BEAUTY_2, 0x21, 0x13)
+    compare_var_to_value(VAR_NARANJA_NEW_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D142)
+    return
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D142 {
+    setobjectxyperm(LOCALID_NARANJA_NEW_ISLAND_STEVEN, 0x1D, 6)
+    setobjectmovementtype(LOCALID_NARANJA_NEW_ISLAND_STEVEN, 0xA)
+    setobjectxyperm(LOCALID_NARANJA_NEW_ISLAND_WALLACE, 0x1E, 6)
+    setobjectmovementtype(LOCALID_NARANJA_NEW_ISLAND_WALLACE, 9)
+    return
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D159 {
+    setobjectxyperm(LOCALID_NARANJA_NEW_ISLAND_STEVEN, 0x1F, 0x21)
+    setobjectmovementtype(LOCALID_NARANJA_NEW_ISLAND_STEVEN, 8)
+    return
+}
+
+script Naranja_NewIsland_OnResume {
+    setdivewarp(MAP_NARANJA_UNDERWATER_SOOTOPOLIS_CITY, 0xFF, 9, 6)
+    end
+}
+
+script Naranja_NewIsland_EventScript_OldMan1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D183)
+    msgbox(Naranja_NewIsland_Text_081696A4, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D183 {
+    msgbox(Naranja_NewIsland_Text_0816A455, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Beauty {
+    msgbox(Naranja_NewIsland_Text_0816A2B2, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Beauty_2 {
+    msgbox(Naranja_NewIsland_Text_0816A2FB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Girl2 {
+    lock
+    faceplayer
+    dotimebasedevents
+    special(GetPlayerBigGuyGirlString)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_08D2)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D241)
+    msgbox(Naranja_NewIsland_Text_081C63F2, MSGBOX_DEFAULT)
+    random(0xA)
+    addvar(VAR_RESULT, 0x14)
+    addvar(VAR_RESULT, 0x85)
+    setorcopyvar(VAR_0x8000, VAR_RESULT)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_08D2)
+    msgbox(Naranja_NewIsland_Text_081C64D0, MSGBOX_DEFAULT)
+    random(2)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D1FF)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D220)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D1FF {
+    setorcopyvar(VAR_0x8000, 0x8F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    msgbox(Naranja_NewIsland_Text_081C650B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D220 {
+    setorcopyvar(VAR_0x8000, 0x93)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    msgbox(Naranja_NewIsland_Text_081C650B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D241 {
+    msgbox(Naranja_NewIsland_Text_081C6540, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D25E)
+    msgbox(Naranja_NewIsland_Text_081C6626, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D25E {
+    msgbox(Naranja_NewIsland_Text_081C65D4, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Woman5 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_04D4)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D27D)
+    msgbox(Naranja_NewIsland_Text_0816A4D6, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D27D {
+    msgbox(Naranja_NewIsland_Text_0816A531, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Man1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D29C)
+    msgbox(Naranja_NewIsland_Text_08169813, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D29C {
+    msgbox(Naranja_NewIsland_Text_0816A587, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Woman7 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D2BB)
+    msgbox(Naranja_NewIsland_Text_081698A0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D2BB {
+    msgbox(Naranja_NewIsland_Text_0816A614, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_LittleBoy1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D2DA)
+    msgbox(Naranja_NewIsland_Text_081697A7, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D2DA {
+    msgbox(Naranja_NewIsland_Text_0816A6AE, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Boy1 {
+    msgbox(Naranja_NewIsland_Text_0816972B, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sign_1 {
+    msgbox(Naranja_NewIsland_Text_0816A6C7, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sign_6 {
+    msgbox(Naranja_NewIsland_Text_0816A711, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Trigger_1 {
+    lockall
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_NewIsland_Movement_0814D413)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_NewIsland_Text_08169E0F, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_NewIsland_Movement_0814D417)
+    applymovement(LOCALID_PLAYER, Naranja_NewIsland_Movement_0814D440)
+    waitmovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN)
+    msgbox(Naranja_NewIsland_Text_08169E82, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_WALLACE, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_WALLACE, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_NewIsland_Text_08169F3C, MSGBOX_DEFAULT)
+    closemessage
+    delay(0x1E)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_WALLACE, Naranja_NewIsland_Movement_0814D46A)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_NewIsland_Movement_0814D41D)
+    applymovement(LOCALID_PLAYER, Naranja_NewIsland_Movement_0814D445)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_WALLACE, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_NewIsland_Text_08169F6B, MSGBOX_DEFAULT)
+    closemessage
+    delay(0x1E)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_WALLACE, Naranja_NewIsland_Movement_0814D47C)
+    applymovement(LOCALID_PLAYER, Naranja_NewIsland_Movement_0814D457)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_STEVEN, Naranja_NewIsland_Movement_0814D42D)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_NEW_ISLAND_WALLACE, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_NewIsland_Text_0816A06C, MSGBOX_DEFAULT)
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_NewIsland_Text_0816A13E, MSGBOX_DEFAULT)
+    copyobjectxytoperm(LOCALID_NARANJA_NEW_ISLAND_WALLACE)
+    setobjectmovementtype(LOCALID_NARANJA_NEW_ISLAND_WALLACE, 9)
+    copyobjectxytoperm(LOCALID_NARANJA_NEW_ISLAND_STEVEN)
+    setobjectmovementtype(LOCALID_NARANJA_NEW_ISLAND_STEVEN, 0xA)
+    setvar(VAR_NARANJA_NEW_ISLAND_STORY_STATE, 2)
+    releaseall
+    end
+}
+
+script Naranja_NewIsland_EventScript_Wallace {
+    msgbox(Naranja_NewIsland_Text_0816A1DB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_EventScript_Gary {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_EventScript_Sub_0814D4AD)
+    msgbox(Naranja_NewIsland_Text_0816A249, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_EventScript_Sub_0814D4AD {
+    msgbox(Naranja_NewIsland_Text_0816A33E, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x32)
+    setfieldeffectargument(0, 1)
+    dofieldeffect(0x1E)
+    delay(0xF)
+    removeobject(32783)
+    waitfieldeffect(0x1E)
+    release
+    end
+}
+
+movement Naranja_NewIsland_Movement_0814D413 {
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_NewIsland_Movement_0814D417 {
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_in_place_faster_down
+}
+
+movement Naranja_NewIsland_Movement_0814D41D {
+    walk_down
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+}
+
+movement Naranja_NewIsland_Movement_0814D42D {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_NewIsland_Movement_0814D440 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_NewIsland_Movement_0814D445 {
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_NewIsland_Movement_0814D457 {
+    delay_16
+    delay_16
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_NewIsland_Movement_0814D46A {
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_NewIsland_Movement_0814D47C {
+    delay_16
+    delay_16
+    walk_left
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+text Naranja_NewIsland_Text_081696A4 {
+    "Who might you be?\pThis is the CAVE OF ORIGIN.\pThe spirits of POKéMON, becalmed at\nMT. PYRE, are said to be revived here.\pPlease leave."
+}
+
+text Naranja_NewIsland_Text_0816972B {
+    "Diving in the sea. Climbing up and\ndown stairs all the time...\pIf you live in this town, you end up\ngetting physically fit."
+}
+
+text Naranja_NewIsland_Text_081697A7 {
+    "I... I’ve never been out of this city.\pI wonder what the world is like on the\nother side of this round sky?"
+}
+
+text Naranja_NewIsland_Text_08169813 {
+    "Hm!\nYou’ve come all the way to SOOTOPOLIS?\lYou’re no ordinary tourist.\pBut I suppose that doesn’t make you an\nextraordinary tourist, either."
+}
+
+text Naranja_NewIsland_Text_081698A0 {
+    "SOOTOPOLIS sprang up as a town in the\ncrater of a volcano.\pIf you look up at the sky, the lip of\nthe crater is also visible.\lSo, all you see is the sky in a circle.\pBut that’s what makes the sky above\nSOOTOPOLIS the most beautiful."
+}
+
+text Naranja_NewIsland_Text_08169E0F {
+    "STEVEN: {PLAYER}{KUN}, you came, too?\nUnder this scorching sun, yet...\pOh, yes, can you hear out what my\nfriend has to say?"
+}
+
+text Naranja_NewIsland_Text_08169E82 {
+    "My name is WALLACE.\nI’m this town’s GYM LEADER.\pI’ve also been entrusted with the\nprotection of the CAVE OF ORIGIN.\pThis sunshine is caused by a power\nemanating from the CAVE OF ORIGIN."
+}
+
+text Naranja_NewIsland_Text_08169F3C {
+    "That... That is the RED ORB.\pI see.\nFollow me."
+}
+
+text Naranja_NewIsland_Text_08169F6B {
+    "STEVEN: This sunlight...\pPeople and POKéMON need sunlight\nto live...\pBut why does this sunlight fill us\nwith so much dread?\pThe blazing sun over SOOTOPOLIS is\nintensifying... Soon, all of HOENN\lwill be under its withering glare...\pIf that were to happen..."
+}
+
+text Naranja_NewIsland_Text_0816A06C {
+    "WALLACE: The CAVE OF ORIGIN is ahead.\pNo one from SOOTOPOLIS is permitted\nto enter the CAVE OF ORIGIN.\pBut you must go. \nTogether with your RED ORB.\pYou must go regardless of what awaits\nyou inside the CAVE..."
+}
+
+text Naranja_NewIsland_Text_0816A13E {
+    "STEVEN: {PLAYER}{KUN}, I never expected you\nto be holding the RED ORB.\pYou’ll be okay. With your POKéMON,\nyou’ll get things done no matter what.\pI’m convinced of it!"
+}
+
+text Naranja_NewIsland_Text_0816A1DB {
+    "WALLACE: You must go together with\nyour RED ORB.\pYou must go regardless of what awaits\nyou inside the CAVE..."
+}
+
+text Naranja_NewIsland_Text_0816A249 {
+    "STEVEN: You’ll be okay. With your\nPOKéMON, you’ll get things done\lwhatever happens.\pI’m convinced of it!"
+}
+
+text Naranja_NewIsland_Text_0816A2B2 {
+    "The legend told by the old man on\nMT. PYRE... It wasn’t a made-up story."
+}
+
+text Naranja_NewIsland_Text_0816A2FB {
+    "The natural balance of HOENN is going\nthrough a wrenching shift..."
+}
+
+text Naranja_NewIsland_Text_0816A33E {
+    "STEVEN: {PLAYER}{KUN}, we owe it all to you.\pThe sky above SOOTOPOLIS has returned\nto normal. For that, WALLACE sends his\lthanks, too.\pAnd, that same WALLACE is waiting for\nyou inside.\pHe’s strong.\nBut the way you are now, you should be\lon equal footing with him.\pGive it your best shot."
+}
+
+text Naranja_NewIsland_Text_0816A455 {
+    "All life starts at the CAVE OF ORIGIN,\nand it all ends on MT. PYRE...\pWhere do people and POKéMON come\nfrom? Where are we bound?"
+}
+
+text Naranja_NewIsland_Text_0816A4D6 {
+    "Let me guess, you’re going to challenge\nWALLACE?\pOh, you are really?\nYou’re awfully brave!"
+}
+
+text Naranja_NewIsland_Text_0816A531 {
+    "Let me guess, you’ve beaten WALLACE!\nOh, you did, really?\pMaybe I’ll become your fan!"
+}
+
+text Naranja_NewIsland_Text_0816A587 {
+    "Hm!\nYou’ve come all the way to SOOTOPOLIS?\lYou’re no ordinary tourist.\pBut I suppose that doesn’t make you an\nextraordinary tourist, either."
+}
+
+text Naranja_NewIsland_Text_0816A614 {
+    "A circle of a night sky framed by the\ncrater of a volcano...\pAnd in that ring, stars flicker and\nblink as if they were alive...\lIt’s my favorite scenery."
+}
+
+text Naranja_NewIsland_Text_0816A6AE {
+    "Hunh? Where is my house?"
+}
+
+text Naranja_NewIsland_Text_0816A6C7 {
+    "SOOTOPOLIS CITY POKéMON GYM\nLEADER: WALLACE\p“Artist, and lover of WATER.”"
+}
+
+text Naranja_NewIsland_Text_0816A711 {
+    "SOOTOPOLIS CITY\p“The mystical city where history\nslumbers.”"
+}
+
+text Naranja_NewIsland_Text_081C63F2 {
+    "Hi, what’s your name?\p... ... ...  ... ... ...  ... ... ...\nOkay. That’s nice!\pMy name is KIRI.\pMy mommy and daddy named me that so\nI would grow healthy and warmhearted.\lThat’s what they wished.\pYou can have one of these."
+}
+
+text Naranja_NewIsland_Text_081C64D0 {
+    "KIRI will give you this BERRY, too!\nI really like it lots!"
+}
+
+text Naranja_NewIsland_Text_081C650B {
+    "I wonder what kind of wish is included\nin your name."
+}
+
+text Naranja_NewIsland_Text_081C6540 {
+    "Spring, summer, autumn, and winter.\pIf you’re born in springtime, do you like\nthe spring, and if you’re born in the\lsummer, do you like the summer?"
+}
+
+text Naranja_NewIsland_Text_081C65D4 {
+    "Then KIRI was born in the autumn,\nso I love the autumn!\pWhich season do you like?"
+}
+
+text Naranja_NewIsland_Text_081C6626 {
+    "Oh...\nIt doesn’t matter...\pThere’s so much that I want to know..."
+}

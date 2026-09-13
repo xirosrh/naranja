@@ -1,0 +1,184 @@
+{
+  "id": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE",
+  "name": "Naranja_ValenciaTangeloRoute",
+  "layout": "LAYOUT_NARANJA_VALENCIA_TANGELO_ROUTE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_VALENCIA_TANGELO_ROUTE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "offset": -10,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_TANGELO_ISLAND",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_LITTLE_BOY_2",
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "x": 18,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_EventScript_LittleBoy2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_YOUNGSTER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 36,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_ValenciaTangeloRoute_EventScript_Youngster",
+      "flag": "NULL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_BUG_CATCHER",
+      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER",
+      "x": 26,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_ValenciaTangeloRoute_EventScript_BugCatcher",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_GIRL_2",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "x": 10,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_ValenciaTangeloRoute_EventScript_Girl2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 33,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_TangeloIsland_EventScript_DuskullDoll",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 11,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G00_M17_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_BERRY_TREE",
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 14,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Naranja_ColdPath_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_BERRY_TREE_2",
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_ColdPath_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "x": 16,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_TrovitaIsland_Gym_EventScript_Youngster",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TangeloPort_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 40,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_ValenciaTangeloRoute_EventScript_Sign_2"
+    }
+  ],
+  "region": "REGION_HOENN"
+}

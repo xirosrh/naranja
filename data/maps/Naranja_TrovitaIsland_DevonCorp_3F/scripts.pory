@@ -1,0 +1,227 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_DevonCorp_3F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_TrovitaIsland_DevonCorp_3F_OnTransition
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0: Naranja_TrovitaIsland_DevonCorp_3F_OnWarp_1
+    ]
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0: Naranja_TrovitaIsland_DevonCorp_3F_OnFrame_1
+    ]
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_OnTransition {
+    compare_var_to_value(VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 0)
+    call_if(EQUAL, Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_0815772D)
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_0815772D {
+    setobjectxyperm(LOCALID_NARANJA_TROVITA_ISLAND_DEVON_CORP_3F_TEALA, 3, 2)
+    setobjectmovementtype(LOCALID_NARANJA_TROVITA_ISLAND_DEVON_CORP_3F_TEALA, 9)
+    return
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_OnWarp_1 {
+    turnobject(LOCALID_PLAYER, 4)
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_OnFrame_1 {
+    lockall
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_0818374C, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_TROVITA_ISLAND_DEVON_CORP_3F_TEALA, Naranja_TrovitaIsland_DevonCorp_3F_Movement_08157815)
+    waitmovement(LOCALID_NONE)
+    delay(0x50)
+    applymovement(LOCALID_NARANJA_TROVITA_ISLAND_DEVON_CORP_3F_TEALA, Naranja_TrovitaIsland_DevonCorp_3F_Movement_0815781E)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_08183903, MSGBOX_DEFAULT)
+    closemessage
+    playbgm(MUS_FOLLOW_ME, 0)
+    applymovement(LOCALID_NARANJA_TROVITA_ISLAND_DEVON_CORP_3F_TEALA, Naranja_TrovitaIsland_DevonCorp_3F_Movement_08157803)
+    applymovement(LOCALID_PLAYER, Naranja_TrovitaIsland_DevonCorp_3F_Movement_08157827)
+    waitmovement(LOCALID_NONE)
+    fadedefaultbgm
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_0818320B, MSGBOX_DEFAULT)
+    releaseall
+    nop
+    nop
+    nop
+    goto(Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_081577D8)
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_081577D8 {
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_08183439, MSGBOX_DEFAULT)
+    setflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ROUTE_G00_M31_SWIMMER_M)
+    clearflag(FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_BLACK_BELT)
+    clearflag(FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_WOMAN_3)
+    clearflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_OLD_MAN_1)
+    clearflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_WINGULL)
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 1)
+    clearflag(FLAG_HIDE_NARANJA_TROVITA_ISLAND_G00_M03_VARS)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE, 1)
+    releaseall
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Jessie {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0110)
+    goto_if(EQUAL, Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_0815789B)
+    checkflag(FLAG_NARANJA_ORANGE_ISLANDS_EVENT_COMPLETE_00BD)
+    goto_if(EQUAL, Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_08157864)
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_0818351E, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_08157864 {
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_0818353E, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0xB6)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_0110)
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_081835B3, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_0815789B {
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_0818368D, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Teala {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_0100)
+    goto_if(EQUAL, Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_081578C5)
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_0818395C, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sub_081578C5 {
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_081839A3, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_DevonCorp_3F_EventScript_Sign_1 {
+    msgbox(Naranja_TrovitaIsland_DevonCorp_3F_Text_08183A04, MSGBOX_SIGN)
+    end
+}
+
+movement Naranja_TrovitaIsland_DevonCorp_3F_Movement_08157803 {
+    walk_right
+    walk_right
+    walk_right
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_in_place_faster_left
+}
+
+movement Naranja_TrovitaIsland_DevonCorp_3F_Movement_08157815 {
+    walk_right
+    walk_right
+    walk_right
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_TrovitaIsland_DevonCorp_3F_Movement_0815781E {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_TrovitaIsland_DevonCorp_3F_Movement_08157827 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_0818320B {
+    "¿Qué ves aquì?\p{COLOR 0x04}Ehh… \nUnos dibujos infantiles.\p{COLOR 0x01}\nDebido a la excursión que hicieron\llos niños de TROVITA\lpara aprender una cosa:\pAunque parezca insignificante los\nque sacaban unos pocos para un circo\ly otros pocos para otro\ly otros pocos más para otro,\lacabaron extinguiendo\lmuchas variedades rosas\lcomo los famosos TAUROS salmón\ly los escurridizos ALTARIAS fucsias."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_08183439 {
+    "Ahora ya no quedan en esta isla     \nni en ninguna otra parte del mundo,\lpor eso debemos cuidar\lcada forma de vida.\pEspero que a partir de ahora\ntengas más cuidado\lcon lo que haces en esta isla\ly con el todo el mundo en general."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_0818351E {
+    "MR. STONE: I’m counting on you!"
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_0818353E {
+    "MR. STONE: You delivered my LETTER?\nThank you kindly!\pThis is my way of thanking you.\nIt should help you, a TRAINER."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_081835B3 {
+    "MR. STONE: A POKéMON holding that\nEXP. SHARE will be given some of the\lEXP Points from battle.\pIt will get EXP Points even if it didn’t\nactually battle.\pI would say EXP. SHARE is quite useful\nfor raising weak POKéMON."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_0818368D {
+    "MR. STONE: Since my youth, I’ve immersed\nmyself in work.\pConsequently, I’m not familiar with\ntrends and that sort of thing.\pBut do young people all want to be\nTRAINERS in the POKéMON LEAGUE?"
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_0818374C {
+    "Y esta es la oficina  \nde vigilancia de PINKAN.\pDebes cuidar mucho los POKéMON\nque hay por aquì.\pEsta isla es un espacio protegido,\nconcretamente es una\lRESERVA DE LA POKéSFERA.\pY debemos protegerla de\ncazadores ladrones furtivos.\pSólo cuando los del continente\nse dieron cuenta de lo dañino que era\lexhibir animales especiales\lsacándolos de esta pequeña isla\ly condenando estas razas\lrosas de pokemon\ldejaron de exterminarlos cazándolos."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_08183903 {
+    "Ven por aquì, a tu izquierda.      \nQue te explique mejor el problema."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_0818395C {
+    "Cuida mucho el medioambiente\ny los POKéMON que viven en él\pEs crucial."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_081839A3 {
+    "DEVON’s new products, the REPEAT BALL\nand TIMER BALL, have become hugely\lpopular among TRAINERS."
+}
+
+text Naranja_TrovitaIsland_DevonCorp_3F_Text_08183A04 {
+    "It’s a collection of rare rocks and\nstones assembled by the PRESIDENT."
+}

@@ -1,0 +1,201 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route121_SafariZoneEntrance_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_SAFARI_STORY_STATE, 1: Naranja_Route121_SafariZoneEntrance_OnFrame_1
+    ]
+}
+
+script Naranja_Route121_SafariZoneEntrance_OnFrame_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_Route121_SafariZoneEntrance_Movement_0815C348)
+    waitmovement(LOCALID_NONE)
+    special(ExitSafariMode)
+    setvar(VAR_NARANJA_SAFARI_STORY_STATE, 0)
+    releaseall
+    end
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Picnicker {
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C35D0, MSGBOX_NPC)
+    end
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Camper {
+    lock
+    faceplayer
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C3704, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C379)
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C373C, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C379 {
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C375F, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Trigger_1 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    showmoneybox(0, 0)
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C3832, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C3B3)
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C3895, MSGBOX_DEFAULT)
+    goto(Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C46C)
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C3B3 {
+    checkitem(ITEM_POKEBLOCK_CASE, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C450)
+    call(Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C425)
+    checkmoney(0x1F4)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C45E)
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C38D9, MSGBOX_DEFAULT)
+    removemoney(0x1F4)
+    updatemoneybox
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C38F4, MSGBOX_DEFAULT)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(Naranja_Route121_SafariZoneEntrance_Text_081C3910)
+    waitfanfare
+    waitmessage
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C392D, MSGBOX_DEFAULT)
+    closemessage
+    hidemoneybox
+    applymovement(LOCALID_PLAYER, Naranja_Route121_SafariZoneEntrance_Movement_0815C47E)
+    waitmovement(LOCALID_NONE)
+    special(EnterSafariMode)
+    setvar(VAR_NARANJA_SAFARI_STORY_STATE, 2)
+    warp(MAP_NARANJA_SAFARI_ZONE_SOUTHEAST, 0xFF, 0x20, 0x21)
+    waitstate
+    end
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C425 {
+    getpartysize
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(NOT_EQUAL, Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C44F)
+    specialvar(VAR_RESULT, ScriptCheckFreePokemonStorageSpace)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C44F)
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C39A3, MSGBOX_DEFAULT)
+    goto(Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C46C)
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C44F {
+    return
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C450 {
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C39C3, MSGBOX_DEFAULT)
+    goto(Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C46C)
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C45E {
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C38B5, MSGBOX_DEFAULT)
+    goto(Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C46C)
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sub_0815C46C {
+    closemessage
+    hidemoneybox
+    applymovement(LOCALID_PLAYER, Naranja_Route121_SafariZoneEntrance_Movement_0815C47C)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_Route121_SafariZoneEntrance_EventScript_Sign_1 {
+    msgbox(Naranja_Route121_SafariZoneEntrance_Text_081C3E4B, MSGBOX_SIGN)
+    end
+}
+
+movement Naranja_Route121_SafariZoneEntrance_Movement_0815C348 {
+    walk_up
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_Route121_SafariZoneEntrance_Movement_0815C47C {
+    walk_right
+}
+
+movement Naranja_Route121_SafariZoneEntrance_Movement_0815C47E {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    delay_16
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C35D0 {
+    "Welcome to the SAFARI ZONE!\pHere, you may witness many kinds of\nPOKéMON rarely seen in HOENN.\pAnd, you’ll see them in their wild,\nuntamed state in natural habitats.\pWhat’s more, we’ve thrown open the\ngates to POKéMON TRAINERS.\pYou’re encouraged to catch POKéMON\nfor keeps!\pCome in and enjoy the SAFARI ZONE!"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C3704 {
+    "Welcome to the SAFARI ZONE!\nIs it your first time here?"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C373C {
+    "Come in and enjoy the SAFARI ZONE!"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C375F {
+    "When you enter the SAFARI ZONE, you\nstart with 30 SAFARI BALLS for\lcatching POKéMON.\pThe SAFARI Game is over when you run\nout of SAFARI BALLS, or when you’ve\lwalked 500 steps.\pCome in and enjoy the SAFARI ZONE!"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C3832 {
+    "Welcome to the SAFARI ZONE!\pAll you can catch for just ¥500!\nWould you like to play a SAFARI Game?"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C3895 {
+    "Okay.\nPlease play another time!"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C38B5 {
+    "You don’t have enough money.\nSorry."
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C38D9 {
+    "That will be ¥500, please."
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C38F4 {
+    "Here are your SAFARI BALLS."
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C3910 {
+    "{PLAYER} received 30 SAFARI BALLS."
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C392D {
+    "We’ll let you know when your game\nis over.\pSo, until then, enjoy yourself, please!\nOff you go on your wild excursion!"
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C39A3 {
+    "Excuse me!\nYour PC BOX is full."
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C39C3 {
+    "Excuse me!\nYou seem to be without a オカキクケ CASE.\pYour SAFARI Game will be much more\nfruitful if you use オカキクケS.\pPlease come back with a オカキクケ CASE."
+}
+
+text Naranja_Route121_SafariZoneEntrance_Text_081C3E4B {
+    "SAFARI ZONE TRAINER TIP!\pThrow オカキクケS at wild POKéMON to make\nthem less likely to flee."
+}

@@ -1,0 +1,884 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MurcottIsland_OnTransition
+}
+
+script Naranja_MurcottIsland_OnTransition {
+    setvar(VAR_OBJ_GFX_ID_0, 0x78)
+    setvar(VAR_OBJ_GFX_ID_1, 0x77)
+    setvar(VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_3, 0)
+    call(Naranja_MurcottIsland_EventScript_Sub_0814BA5C)
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BA68)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BA5C {
+    setflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0817)
+    setvar(VAR_NARANJA_SIN_NOMBRE_STORY_STATE, 0)
+    setflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M02_REPORTER_M)
+    return
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BA68 {
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, 0x1C, 0xD)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_OLD_WOMAN_2, 0x19, 0xD)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_BOY_4, 0x19, 0xE)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_COOK, 0x1B, 0x10)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_GIRL_1_8, 0x1C, 0x10)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_FAT_MAN, 0x1D, 0x10)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_MAN_1_2, 0x1F, 0xE)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, 8)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_OLD_WOMAN_2, 0x12)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_BOY_4, 0x10)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_COOK, 7)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_GIRL_1_8, 7)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_FAT_MAN, 7)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_MAN_1_2, 9)
+    return
+}
+
+script Naranja_MurcottIsland_EventScript_Man3 {
+    lock
+    faceplayer
+    message(Naranja_MurcottIsland_Text_08164642)
+    waitmessage
+    pokemart(Naranja_MurcottIsland_Mart_0814BAD0)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Woman7_2 {
+    lock
+    faceplayer
+    bufferleadmonspeciesname(0)
+    msgbox(Naranja_MurcottIsland_Text_08164682, MSGBOX_DEFAULT)
+    specialvar(VAR_RESULT, LeadMonHasEffortRibbon)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BB35)
+    specialvar(VAR_RESULT, Special_AreLeadMonEVsMaxedOut)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BB2B)
+    msgbox(Naranja_MurcottIsland_Text_08164691, MSGBOX_DEFAULT)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(Naranja_MurcottIsland_Text_081646DD)
+    waitfanfare
+    waitmessage
+    msgbox(Naranja_MurcottIsland_Text_081646FC, MSGBOX_DEFAULT)
+    special(GiveLeadMonEffortRibbon)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BB2B {
+    msgbox(Naranja_MurcottIsland_Text_0816471C, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BB35 {
+    msgbox(Naranja_MurcottIsland_Text_08164775, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Cook {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BB56)
+    msgbox(Naranja_MurcottIsland_Text_08164814, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BB56 {
+    msgbox(Naranja_MurcottIsland_Text_08165376, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_OldWoman2 {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BB77)
+    msgbox(Naranja_MurcottIsland_Text_081648A0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BB77 {
+    msgbox(Naranja_MurcottIsland_Text_08165222, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Girl1 {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BBA1)
+    checkflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0060)
+    goto_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BBAB)
+    msgbox(Naranja_MurcottIsland_Text_08164937, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BBA1 {
+    msgbox(Naranja_MurcottIsland_Text_081652A0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BBAB {
+    msgbox(Naranja_MurcottIsland_Text_08164995, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Boy4 {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BBCC)
+    msgbox(Naranja_MurcottIsland_Text_08164A30, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BBCC {
+    msgbox(Naranja_MurcottIsland_Text_0816530A, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Man1 {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BC0A)
+    msgbox(Naranja_MurcottIsland_Text_08164B34, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BC0A {
+    msgbox(Naranja_MurcottIsland_Text_081653F4, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Woman5 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY)
+    goto_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BC29)
+    msgbox(Naranja_MurcottIsland_Text_08164BBF, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BC29 {
+    msgbox(Naranja_MurcottIsland_Text_08164BEA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_11 {
+    msgbox(Naranja_MurcottIsland_Text_08165856, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_12 {
+    lockall
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BC63)
+    checkflag(FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_080D)
+    goto_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BC59)
+    msgbox(Naranja_MurcottIsland_Text_081658A0, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BC59 {
+    msgbox(Naranja_MurcottIsland_Text_081658E8, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BC63 {
+    msgbox(Naranja_MurcottIsland_Text_08165952, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_10 {
+    msgbox(Naranja_MurcottIsland_Text_081659B3, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_8 {
+    msgbox(Naranja_MurcottIsland_Text_081659E3, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_9 {
+    msgbox(Naranja_MurcottIsland_Text_08165A17, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_7 {
+    msgbox(Naranja_MurcottIsland_Text_08165A57, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_5 {
+    lockall
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BCA5)
+    msgbox(Naranja_MurcottIsland_Text_08165A8B, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BCA5 {
+    msgbox(Naranja_MurcottIsland_Text_08165B02, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sign_1 {
+    msgbox(Naranja_MurcottIsland_Text_08165B48, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Maniac {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BCCF)
+    msgbox(Naranja_MurcottIsland_Text_08164F9E, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BCCF {
+    msgbox(Naranja_MurcottIsland_Text_08164F9E, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Woman7 {
+    msgbox(Naranja_MurcottIsland_Text_08164FFC, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sailor {
+    msgbox(Naranja_MurcottIsland_Text_08164E85, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sailor_2 {
+    msgbox(Naranja_MurcottIsland_Text_08164EDB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Woman2 {
+    msgbox(Naranja_MurcottIsland_Text_08164F62, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Man4 {
+    msgbox(Naranja_MurcottIsland_Text_0816507C, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_SchoolKidM {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_081650F1, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BD28)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_MurcottIsland_EventScript_Sub_0814BD31)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BD28 {
+    msgbox(Naranja_MurcottIsland_Text_0816511E, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BD31 {
+    msgbox(Naranja_MurcottIsland_Text_081651A1, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_MurcottIsland_EventScript_Vars {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164C64, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_VARS, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object19 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164C9F, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object20 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164CE8, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241_2, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object27 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164D2B, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241_3, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object28 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164D92, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241_4, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object29 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164DD5, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241_5, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object30 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164DF4, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241_6, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Object31 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_Text_08164E46, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_241_7, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_MartEmployee_2 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration(Naranja_MurcottIsland_Mart_0814BE0C)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Sub_0814BE16 {
+    msgbox(Naranja_MurcottIsland_Text_081A116E, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_MartEmployee {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0060)
+    goto_if(LESS_THAN, Naranja_MurcottIsland_EventScript_Sub_0814BE16)
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration(Naranja_MurcottIsland_Mart_0814BE40)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_MartEmployee_3 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MurcottIsland_Mart_0814BEB4)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Scientist1 {
+    lockall
+    msgbox(Naranja_MurcottIsland_Text_08165498, MSGBOX_DEFAULT)
+    msgbox(Naranja_MurcottIsland_Text_081654E0, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_REPORTER_F, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    delay(0xA)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CAMERAMAN, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x19)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_MurcottIsland_Movement_0814C000)
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_Movement_0814C00E)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_REPORTER_F, Naranja_MurcottIsland_Movement_0814BFDD)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CAMERAMAN, Naranja_MurcottIsland_Movement_0814BFEA)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_REPORTER_F)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_CAMERAMAN)
+    msgbox(Naranja_MurcottIsland_Text_0816558D, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_Text_081655E7, MSGBOX_DEFAULT)
+    playbgm(MUS_ENCOUNTER_MAGMA, 0)
+    msgbox(Naranja_MurcottIsland_Text_081656BC, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_COOK, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_FAT_MAN, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OLD_WOMAN_2, Naranja_MurcottIsland_Movement_0814BFCD)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_BOY_4, Naranja_MurcottIsland_Movement_081A0831)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_MAN_1_2, Naranja_MurcottIsland_Movement_0814BFD5)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_Text_0816578F, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_Text_081657FA, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_Text_0816583A, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1, Naranja_MurcottIsland_Movement_0814BFFB)
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_Movement_0814C008)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_SCIENTIST_1)
+    clearflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M08_SCIENTIST_1)
+    clearflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M08_SUBMARINE_SHADOW)
+    clearflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M08_241)
+    clearflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M08_246)
+    setvar(VAR_NARANJA_MURCOTT_ISLAND_STORY_STATE, 2)
+    warp(MAP_NARANJA_MURCOTT_ISLAND_HARBOR, 0xFF, 0xB, 0xE)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Cameraman {
+    msgbox(Naranja_MurcottIsland_Text_08165425, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_ReporterF {
+    msgbox(Naranja_MurcottIsland_Text_08165458, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_EventScript_Man6 {
+    msgbox(Naranja_MurcottIsland_Text_081647A7, MSGBOX_NPC)
+    end
+}
+
+movement Naranja_MurcottIsland_Movement_0814BFCD {
+    delay_16
+    delay_16
+    emote_question_mark
+    walk_in_place_faster_right
+    delay_16
+    delay_16
+    walk_in_place_faster_left
+}
+
+movement Naranja_MurcottIsland_Movement_0814BFD5 {
+    emote_question_mark
+    walk_in_place_faster_up
+    delay_16
+    walk_in_place_faster_down
+    delay_16
+    delay_16
+    walk_in_place_faster_left
+}
+
+movement Naranja_MurcottIsland_Movement_0814BFDD {
+    delay_16
+    walk_left
+    walk_left
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MurcottIsland_Movement_0814BFEA {
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MurcottIsland_Movement_0814BFFB {
+    walk_right
+    walk_up
+    walk_up
+    set_invisible
+}
+
+movement Naranja_MurcottIsland_Movement_0814C000 {
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    walk_down
+    walk_left
+}
+
+movement Naranja_MurcottIsland_Movement_0814C008 {
+    walk_in_place_faster_right
+    delay_16
+    delay_16
+    walk_right
+    walk_up
+}
+
+movement Naranja_MurcottIsland_Movement_0814C00E {
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    walk_in_place_faster_down
+}
+
+movement Naranja_MurcottIsland_Movement_081A0831 {
+    emote_question_mark
+}
+
+mart Naranja_MurcottIsland_Mart_0814BAD0 {
+    ITEM_PROTEIN
+    ITEM_IRON
+    ITEM_CARBOS
+    ITEM_ZINC
+    ITEM_CALCIUM
+    ITEM_HP_UP
+}
+
+mart Naranja_MurcottIsland_Mart_0814BE0C {
+    ITEM_FIRE_STONE
+    ITEM_X_ACCURACY
+    ITEM_THUNDER_STONE
+}
+
+mart Naranja_MurcottIsland_Mart_0814BE40 {
+    ITEM_MAX_REVIVE
+    ITEM_SODA_POP
+    ITEM_FRESH_WATER
+    ITEM_LEMONADE
+    ITEM_MOOMOO_MILK
+    ITEM_ENERGY_POWDER
+    ITEM_GREEN_SHARD
+}
+
+mart Naranja_MurcottIsland_Mart_0814BEB4 {
+    ITEM_TM10
+    ITEM_TM43
+}
+
+text Naranja_MurcottIsland_Text_08164642 {
+    "I’m the ENERGY GURU!\nI’ll go for it and sell you what you need!"
+}
+
+text Naranja_MurcottIsland_Text_08164682 {
+    "Oh?\nYour {STR_VAR_1}..."
+}
+
+text Naranja_MurcottIsland_Text_08164691 {
+    "Went for it stupendously!\pAs its reward, please give it this\nEFFORT RIBBON."
+}
+
+text Naranja_MurcottIsland_Text_081646DD {
+    "{PLAYER} received the EFFORT RIBBON."
+}
+
+text Naranja_MurcottIsland_Text_081646FC {
+    "{PLAYER} put the EFFORT RIBBON\non {STR_VAR_1}."
+}
+
+text Naranja_MurcottIsland_Text_0816471C {
+    "You have to go for it a little harder.\pIf you do, I’ll give your POKéMON\nsomething nice."
+}
+
+text Naranja_MurcottIsland_Text_08164775 {
+    "Oh! Your {STR_VAR_1}, that EFFORT\nRIBBON looks good on it!"
+}
+
+text Naranja_MurcottIsland_Text_081647A7 {
+    "The light of the lighthouse reaches\ndozens of miles away.\pI wonder if it doesn’t startle POKéMON\nin the sea."
+}
+
+text Naranja_MurcottIsland_Text_08164814 {
+    "Ooh, look at this!\pThe seaweed you can get around these\nparts is fresh and full of life.\pWhy, it looks like it can even rear up\nand attack!"
+}
+
+text Naranja_MurcottIsland_Text_081648A0 {
+    "Q. bonito color el del mar del sur.\pSin duda, el turquesa más profundo\nque pueda existir\pJamás me cansaré de verlo.\p{COLOR 0x04}{PLAYER}: Sí, realmente \nes precioso."
+}
+
+text Naranja_MurcottIsland_Text_08164937 {
+    "Shopping where you can breathe the\nscent of the ocean...\pSLATEPORT is such a wonderful place!"
+}
+
+text Naranja_MurcottIsland_Text_08164995 {
+    "If you put DOLLS or CUSHIONS on the\nfloor, they’ll get dirty.\pI’m going to buy some BRICKS so my\nDOLLS and CUSHIONS won’t get dirty\lwhen I leave them out."
+}
+
+text Naranja_MurcottIsland_Text_08164A30 {
+    "Yeah! I’ve waited so long for this!\nPOKéMON CONTESTS!\lI’m going to enter!\pBut before I do, I have to catch some\nPOKéMON!"
+}
+
+text Naranja_MurcottIsland_Text_08164B34 {
+    "STERN, the fellow who built the\nMUSEUM, also happens to be the leader\lof an undersea exploration team.\pSo, everyone calls him CAPT. STERN."
+}
+
+text Naranja_MurcottIsland_Text_08164BBF {
+    "What is that over there?\nThat long line..."
+}
+
+text Naranja_MurcottIsland_Text_08164BEA {
+    "When I was a child, I visited the\nMUSEUM often.\pI used to dream about the mysteries of\nthe sea after seeing the exhibits."
+}
+
+text Naranja_MurcottIsland_Text_08164C64 {
+    "Hey, there! Quit pushing!\nThis is the line, can’t you see?"
+}
+
+text Naranja_MurcottIsland_Text_08164C9F {
+    "TEAM {AQUA} has a policy of\nassembling and dispersing at the\loperation site."
+}
+
+text Naranja_MurcottIsland_Text_08164CE8 {
+    "Our BOSS is brilliant.\pWhat would he want to do with a\nMUSEUM now?"
+}
+
+text Naranja_MurcottIsland_Text_08164D2B {
+    "What’s the new scheme, I wonder?\pOur BOSS is scary when he’s mad, so\nI’d better not screw things up..."
+}
+
+text Naranja_MurcottIsland_Text_08164D92 {
+    "If there’s something we need in the\nMUSEUM, we should take it all!"
+}
+
+text Naranja_MurcottIsland_Text_08164DD5 {
+    "Hey, you there!\nDon’t butt in!"
+}
+
+text Naranja_MurcottIsland_Text_08164DF4 {
+    "A long line, huh?\pIt reminds me of the times I lined up to\nbuy smash-hit games..."
+}
+
+text Naranja_MurcottIsland_Text_08164E46 {
+    "Why are we even lining up and paying?\nWe should just march in!"
+}
+
+text Naranja_MurcottIsland_Text_08164E85 {
+    "The sea is just so vast...\pCould the sea have been made by the\ntears shed by POKéMON?"
+}
+
+text Naranja_MurcottIsland_Text_08164EDB {
+    "Do you know what they do with old\nships that become too creaky to sail?\pThey sink them in the sea so they\nbecome habitats for POKéMON."
+}
+
+text Naranja_MurcottIsland_Text_08164F62 {
+    "Whenever I visit here, I get carried\naway and buy too much."
+}
+
+text Naranja_MurcottIsland_Text_08164F9E {
+    "If you want to change your POKéMON’s\nnickname, you’ll have to get the NAME\lRATER to help you."
+}
+
+text Naranja_MurcottIsland_Text_08164FFC {
+    "Any POKéMON you get in a trade, you\ncan’t change its nickname.\pThe original TRAINER’s love for that\nPOKéMON is in the nickname."
+}
+
+text Naranja_MurcottIsland_Text_0816507C {
+    "A POKéMON CONTEST HALL opened in\nSLATEPORT recently.\pI plan on entering after I improve the\ncondition of my POKéMON."
+}
+
+text Naranja_MurcottIsland_Text_081650F1 {
+    "Do you know about the machine\nBERRY BLENDER?"
+}
+
+text Naranja_MurcottIsland_Text_0816511E {
+    "People have to work together to get it\nto spin faster.\pThe faster you can make it spin, the\nbetter オカキクケS you can get, I’ve heard."
+}
+
+text Naranja_MurcottIsland_Text_081651A1 {
+    "It’s used for making a kind of candy\ncalled a オカキクケ.\pIf you give a good オカキクケ to a POKéMON,\nits condition will improve by a lot."
+}
+
+text Naranja_MurcottIsland_Text_08165222 {
+    "I was hoping that it was a famous star\nso I could get an autograph.\pBut who’s that being interviewed?\nIsn’t that CAPT. STERN?"
+}
+
+text Naranja_MurcottIsland_Text_081652A0 {
+    "That lady interviewer is so cool and\npretty.\pWhen I grow up, I’m going to be an\ninternational journalist!"
+}
+
+text Naranja_MurcottIsland_Text_0816530A {
+    "CAPT. STERN says they discovered\nsomething at the bottom of the sea.\pI wonder what it is?\nWhat could it be?"
+}
+
+text Naranja_MurcottIsland_Text_08165376 {
+    "What’s going on here?\pDid the good CAPTAIN come back with\na big fish from the ocean floor?"
+}
+
+text Naranja_MurcottIsland_Text_081653F4 {
+    "A TV interview! Here!\nThe CAPTAIN’s a celebrity!"
+}
+
+text Naranja_MurcottIsland_Text_08165425 {
+    "TY: Okay, CAPT. STERN, a big smile\nfor the camera!"
+}
+
+text Naranja_MurcottIsland_Text_08165458 {
+    "GABBY: I see, I see. You’ve had a most\ninvaluable experience..."
+}
+
+text Naranja_MurcottIsland_Text_08165498 {
+    "CAPT. STERN: Yes, indeed. We intend to\nmove ahead with our exploration."
+}
+
+text Naranja_MurcottIsland_Text_081654E0 {
+    "GABBY: That’s wonderful, CAPT. STERN!\nThank you for taking the time from\lyour busy schedule to talk to us.\pWe hope we can interview you again\nwith news of more discoveries!"
+}
+
+text Naranja_MurcottIsland_Text_0816558D {
+    "CAPT. STERN: Whew...\pThat was my first time to be filmed for\nTV. That was nerve wracking."
+}
+
+text Naranja_MurcottIsland_Text_081655E7 {
+    "Oh! {PLAYER}{KUN}!\nYou’re looking great!\pWe made a huge discovery on our last\nseafloor exploration.\pWe found an underwater cavern on\nROUTE 128.\pWe think it’s the habitat of a POKéMON\nthat’s said to have been long extinct."
+}
+
+text Naranja_MurcottIsland_Text_081656BC {
+    "Fufufu...\nCAPT. STERN, I presume.\pWe of TEAM {AQUA} will assume\ncontrol of your submarine!\pYour objections are meaningless!\nWe expect your total cooperation!\pFufufu...\nJust watch and learn what TEAM\l{AQUA} has planned!"
+}
+
+text Naranja_MurcottIsland_Text_0816578F {
+    "CAPT. STERN: What was that all about?\pIt sounded like someone using a\nmegaphone...\pWhere did it come from?"
+}
+
+text Naranja_MurcottIsland_Text_081657FA {
+    "It’s from the HARBOR!\pThe submarine!\nThey’re trying to take it!"
+}
+
+text Naranja_MurcottIsland_Text_0816583A {
+    "{PLAYER}{KUN}!\nPlease, come with me!"
+}
+
+text Naranja_MurcottIsland_Text_08165856 {
+    "POKéMON CONTESTS\nHYPER RANK REGISTRATION\l“Let it burn! POKéMON TRAINERS!”"
+}
+
+text Naranja_MurcottIsland_Text_081658A0 {
+    "STERN’S SHIPYARD\p“Wanted: A sailor capable of sailing\nin all currents.”"
+}
+
+text Naranja_MurcottIsland_Text_081658E8 {
+    "STERN’S SHIPYARD\p“The ferry S.S. TIDAL nears\ncompletion for serving the ports of\lSLATEPORT and LILYCOVE.”"
+}
+
+text Naranja_MurcottIsland_Text_08165952 {
+    "STERN’S SHIPYARD\p“Boarding of the SLATEPORT-LILYCOVE\nferry S.S. TIDAL is handled at the\lHARBOR.”"
+}
+
+text Naranja_MurcottIsland_Text_081659B3 {
+    "POKéMON FAN CLUB\n“Calling all fans of POKéMON!”"
+}
+
+text Naranja_MurcottIsland_Text_081659E3 {
+    "“The endless sea sustains\nall life.”\pOCEANIC MUSEUM"
+}
+
+text Naranja_MurcottIsland_Text_08165A17 {
+    "SLATEPORT CITY\p“The port where people and POKéMON\ncross paths.”"
+}
+
+text Naranja_MurcottIsland_Text_08165A57 {
+    "SLATEPORT MARKET\n“Unique items found nowhere else!”"
+}
+
+text Naranja_MurcottIsland_Text_08165A8B {
+    "SLATEPORT HARBOR\p“The ferry S.S. TIDAL is under\nconstruction in the SHIPYARD.\p“Service is scheduled to begin\nshortly.”"
+}
+
+text Naranja_MurcottIsland_Text_08165B02 {
+    "SLATEPORT HARBOR\p“Enjoy a delightful cruise on the\nferry S.S. TIDAL.”"
+}
+
+text Naranja_MurcottIsland_Text_08165B48 {
+    "NAME RATER’S HOUSE\n“POKéMON nicknames rated.”"
+}
+
+text Naranja_MurcottIsland_Text_081A116E {
+    "Do you know the TM SECRET POWER?\pOur group, we love the TM SECRET\nPOWER.\pOne of our members will give it to you.\nCome back and show me if you get it.\pWe’ll accept you as a member and sell\nyou good stuff in secrecy."
+}

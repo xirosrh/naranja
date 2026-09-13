@@ -1,0 +1,53 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_1F_MapScripts {
+}
+
+script Naranja_MtPyre_1F_EventScript_OldWoman2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_011A)
+    goto_if(EQUAL, Naranja_MtPyre_1F_EventScript_Sub_0815D352)
+    msgbox(Naranja_MtPyre_1F_Text_08196151, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0xBE)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_BEMENTER_EVENT_COMPLETE_011A)
+    release
+    end
+}
+
+script Naranja_MtPyre_1F_EventScript_Sub_0815D352 {
+    msgbox(Naranja_MtPyre_1F_Text_081961CE, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MtPyre_1F_EventScript_Woman2 {
+    msgbox(Naranja_MtPyre_1F_Text_08196218, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MtPyre_1F_EventScript_Man5 {
+    msgbox(Naranja_MtPyre_1F_Text_08196283, MSGBOX_NPC)
+    end
+}
+
+text Naranja_MtPyre_1F_Text_08196151 {
+    "All sorts of beings wander the slopes\nof MT. PYRE...\pThere is no telling what may happen.\nTake this. It’s for your own good."
+}
+
+text Naranja_MtPyre_1F_Text_081961CE {
+    "Have a POKéMON hold that\nCLEANSE TAG.\pIt will help ward off wild POKéMON."
+}
+
+text Naranja_MtPyre_1F_Text_08196218 {
+    "Did you come to pay your respect\nto the spirits of departed POKéMON?\pYou must care for your POKéMON a lot."
+}
+
+text Naranja_MtPyre_1F_Text_08196283 {
+    "This is the final resting place of my\nZIGZAGOON. I cherished it..."
+}

@@ -1,0 +1,39 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_House2_MapScripts {
+}
+
+script Naranja_MurcottIsland_House2_EventScript_Man3 {
+    msgbox(Naranja_MurcottIsland_House2_Text_081804CF, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_House2_EventScript_Girl3 {
+    lock
+    faceplayer
+    checkitem(ITEM_CONTEST_PASS, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MurcottIsland_House2_EventScript_Sub_081563B5)
+    msgbox(Naranja_MurcottIsland_House2_Text_08180567, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_House2_EventScript_Sub_081563B5 {
+    msgbox(Naranja_MurcottIsland_House2_Text_081805CD, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_MurcottIsland_House2_Text_081804CF {
+    "My POKéMON has a HASTY nature.\pIt has higher SPEED compared to my\nother POKéMON.\pMaybe their nature has something to\ndo with the stat gains of POKéMON."
+}
+
+text Naranja_MurcottIsland_House2_Text_08180567 {
+    "You need a CONTEST PASS to enter a\nCONTEST.\pIt’s easy to get. They give it to\nanyone who has POKéMON."
+}
+
+text Naranja_MurcottIsland_House2_Text_081805CD {
+    "Oh, a CONTEST PASS!\nYou’re going to be a contestant?"
+}

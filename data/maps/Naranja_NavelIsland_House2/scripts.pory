@@ -1,0 +1,100 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NavelIsland_House2_MapScripts {
+}
+
+script Naranja_NavelIsland_House2_EventScript_OldMan1 {
+    lockall
+    applymovement(LOCALID_NARANJA_NAVEL_ISLAND_HOUSE2_OLD_MAN_1, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    checkflag(FLAG_TEMP_1)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153CB6)
+    msgbox(Naranja_NavelIsland_House2_Text_08177AF4, MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_1)
+    goto(Naranja_NavelIsland_House2_EventScript_Sub_08153CB6)
+}
+
+script Naranja_NavelIsland_House2_EventScript_Sub_08153CB6 {
+    checkitem(ITEM_HEART_SCALE, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153D60)
+    msgbox(Naranja_NavelIsland_House2_Text_08177BDB, MSGBOX_YESNO)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153D60)
+    goto(Naranja_NavelIsland_House2_EventScript_Sub_08153CE4)
+}
+
+script Naranja_NavelIsland_House2_EventScript_Sub_08153CE4 {
+    msgbox(Naranja_NavelIsland_House2_Text_08177C3F, MSGBOX_DEFAULT)
+    special(ChooseMonForMoveRelearner)
+    waitstate
+    compare_var_to_value(VAR_0x8004, 0xFF)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153D60)
+    special(IsSelectedMonEgg)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153D52)
+    compare_var_to_value(VAR_0x8005, 0)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153D44)
+    goto(Naranja_NavelIsland_House2_EventScript_Sub_08153D1A)
+}
+
+script Naranja_NavelIsland_House2_EventScript_Sub_08153D1A {
+    msgbox(Naranja_NavelIsland_House2_Text_08177C5D, MSGBOX_DEFAULT)
+    special(TeachMoveRelearnerMove)
+    waitstate
+    compare_var_to_value(VAR_0x8004, 0)
+    goto_if(EQUAL, Naranja_NavelIsland_House2_EventScript_Sub_08153CE4)
+    msgbox(Naranja_NavelIsland_House2_Text_08177CC3, MSGBOX_DEFAULT)
+    removeitem(ITEM_HEART_SCALE, 1)
+    goto(Naranja_NavelIsland_House2_EventScript_Sub_08153D60)
+}
+
+script Naranja_NavelIsland_House2_EventScript_Sub_08153D44 {
+    msgbox(Naranja_NavelIsland_House2_Text_08177C78, MSGBOX_DEFAULT)
+    goto(Naranja_NavelIsland_House2_EventScript_Sub_08153CE4)
+}
+
+script Naranja_NavelIsland_House2_EventScript_Sub_08153D52 {
+    msgbox(Naranja_NavelIsland_House2_Text_08177D33, MSGBOX_DEFAULT)
+    goto(Naranja_NavelIsland_House2_EventScript_Sub_08153CE4)
+}
+
+script Naranja_NavelIsland_House2_EventScript_Sub_08153D60 {
+    msgbox(Naranja_NavelIsland_House2_Text_08177CEF, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+text Naranja_NavelIsland_House2_Text_08177AF4 {
+    "I’m the MOVE TUTOR.\pI know all the moves that POKéMON\nlearn - every one of them - and I can\lteach POKéMON those moves.\pI can teach a move to a POKéMON\nof yours if you’d like.\pI’ll do it for a HEART SCALE.\nI’m collecting those now."
+}
+
+text Naranja_NavelIsland_House2_Text_08177BDB {
+    "Oh! That’s it! That’s an honest to\ngoodness HEART SCALE!\pLet me guess, you want me to teach\na move?"
+}
+
+text Naranja_NavelIsland_House2_Text_08177C3F {
+    "Which POKéMON needs tutoring?"
+}
+
+text Naranja_NavelIsland_House2_Text_08177C5D {
+    "Which move should I teach?"
+}
+
+text Naranja_NavelIsland_House2_Text_08177C78 {
+    "Sorry...\pIt doesn’t appear as if I have any move\nI can teach that POKéMON."
+}
+
+text Naranja_NavelIsland_House2_Text_08177CC3 {
+    "{PLAYER} handed over one HEART SCALE\nin exchange."
+}
+
+text Naranja_NavelIsland_House2_Text_08177CEF {
+    "If your POKéMON need to learn a move,\ncome back with a HEART SCALE."
+}
+
+text Naranja_NavelIsland_House2_Text_08177D33 {
+    "Hunh? There isn’t a single move that\nI can teach an EGG."
+}

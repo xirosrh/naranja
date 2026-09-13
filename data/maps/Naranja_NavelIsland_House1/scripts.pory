@@ -1,0 +1,128 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NavelIsland_House1_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_NavelIsland_House1_OnTransition
+}
+
+script Naranja_NavelIsland_House1_OnTransition {
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Scientist1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_00E5)
+    goto_if(EQUAL, Naranja_NavelIsland_House1_EventScript_Sub_08153C54)
+    checkitem(ITEM_METEORITE, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_NavelIsland_House1_EventScript_Sub_08153BDA)
+    msgbox(Naranja_NavelIsland_House1_Text_08177755, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153BDA {
+    checkflag(FLAG_TEMP_2)
+    call_if(LESS_THAN, Naranja_NavelIsland_House1_EventScript_Sub_08153C2D)
+    checkflag(FLAG_TEMP_2)
+    call_if(EQUAL, Naranja_NavelIsland_House1_EventScript_Sub_08153C3E)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_NavelIsland_House1_EventScript_Sub_08153C47)
+    msgbox(Naranja_NavelIsland_House1_Text_081778C4, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x13B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setvar(VAR_0x8004, 0x118)
+    call(Naranja_GraniteCave_StevensRoom_EventScript_Sub_081A067F)
+    setflag(FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_00E5)
+    msgbox(Naranja_NavelIsland_House1_Text_08177910, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153C2D {
+    msgbox(Naranja_NavelIsland_House1_Text_08177755, MSGBOX_DEFAULT)
+    msgbox(Naranja_NavelIsland_House1_Text_0817780E, MSGBOX_YESNO)
+    return
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153C3E {
+    msgbox(Naranja_NavelIsland_House1_Text_081779B8, MSGBOX_YESNO)
+    return
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153C47 {
+    setflag(FLAG_TEMP_2)
+    msgbox(Naranja_NavelIsland_House1_Text_0817797D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153C54 {
+    msgbox(Naranja_NavelIsland_House1_Text_08177910, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Woman3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NAVEL_ISLAND_EVENT_COMPLETE_00E5)
+    goto_if(EQUAL, Naranja_NavelIsland_House1_EventScript_Sub_08153C86)
+    checkflag(FLAG_NARANJA_MT_CHIMNEY_EVENT_COMPLETE_008B)
+    goto_if(EQUAL, Naranja_NavelIsland_House1_EventScript_Sub_08153C7C)
+    msgbox(Naranja_NavelIsland_House1_Text_08177A2B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153C7C {
+    msgbox(Naranja_NavelIsland_House1_Text_08177A7C, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NavelIsland_House1_EventScript_Sub_08153C86 {
+    msgbox(Naranja_NavelIsland_House1_Text_08177ABB, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_NavelIsland_House1_Text_08177755 {
+    "PROF. COZMO: Oh...\nI never should have let myself be\lconned into telling TEAM {AQUA} where\lyou can find METEORITES...\pThat METEORITE from METEOR FALLS...\nIt’s never going to be mine now..."
+}
+
+text Naranja_NavelIsland_House1_Text_0817780E {
+    "Oh!\nHah?\pThat item...\pCould it be?\pIs it the METEORITE that TEAM {AQUA}\ntook from METEOR FALLS?\pPlease, may I have it?\pI’m not asking for it for free.\nHow about in exchange for this TM?"
+}
+
+text Naranja_NavelIsland_House1_Text_081778C4 {
+    "PROF. COZMO: This TM, it represents\nmy feeling of gratitude.\lPlease use it!"
+}
+
+text Naranja_NavelIsland_House1_Text_08177910 {
+    "PROF. COZMO: Oh, I can’t believe it.\nThis is really, really great!\pThis is really going to help my research!"
+}
+
+text Naranja_NavelIsland_House1_Text_0817797D {
+    "PROF. COZMO: Oh, but...\nI’m crushed with disappointment..."
+}
+
+text Naranja_NavelIsland_House1_Text_081779B8 {
+    "PROF. COZMO: Please, may I have that\nMETEORITE?\pI’m not asking for it for free.\nHow about in exchange for this TM?"
+}
+
+text Naranja_NavelIsland_House1_Text_08177A2B {
+    "PROF. COZMO went off to METEOR FALLS\non ROUTE 114 with some people from\lTEAM {AQUA}."
+}
+
+text Naranja_NavelIsland_House1_Text_08177A7C {
+    "Poor PROF. COZMO...\nHe’s so depressed... I feel sorry for him."
+}
+
+text Naranja_NavelIsland_House1_Text_08177ABB {
+    "Look at PROF. COZMO...\nHe’s so happy! I think it’s cute."
+}

@@ -1,0 +1,138 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MeteorFalls_1F_2R_MapScripts {
+}
+
+script Naranja_MeteorFalls_1F_2R_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_GRANITE_CAVE_392, Naranja_MeteorFalls_1F_2R_Text_081939C5, Naranja_MeteorFalls_1F_2R_Text_08193A35)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MeteorFalls_1F_2R_EventScript_Sub_0815C6A0)
+    msgbox(Naranja_MeteorFalls_1F_2R_Text_08193A60, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MeteorFalls_1F_2R_EventScript_Sub_0815C6A0 {
+    trainerbattle_rematch(TRAINER_NARANJA_GRANITE_CAVE_392, Naranja_MeteorFalls_1F_2R_Text_08193AB3, Naranja_MeteorFalls_1F_2R_Text_08193B21)
+    msgbox(Naranja_MeteorFalls_1F_2R_Text_08193B4C, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MeteorFalls_1F_2R_EventScript_OldMan1 {
+    trainerbattle_double(TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_MeteorFalls_1F_2R_Text_08193BB7, Naranja_MeteorFalls_1F_2R_Text_08193C10, Naranja_MeteorFalls_1F_2R_Text_08193C9F)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MeteorFalls_1F_2R_EventScript_Sub_0815C6E2)
+    msgbox(Naranja_MeteorFalls_1F_2R_Text_08193C35, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MeteorFalls_1F_2R_EventScript_Sub_0815C6E2 {
+    trainerbattle_rematch_double(TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_MeteorFalls_1F_2R_Text_08193E75, Naranja_MeteorFalls_1F_2R_Text_08193ECE, Naranja_MeteorFalls_1F_2R_Text_08193F59)
+    msgbox(Naranja_MeteorFalls_1F_2R_Text_08193EF3, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MeteorFalls_1F_2R_EventScript_OldWoman1 {
+    trainerbattle_double(TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_MeteorFalls_1F_2R_Text_08193D10, Naranja_MeteorFalls_1F_2R_Text_08193D6E, Naranja_MeteorFalls_1F_2R_Text_08193DFB)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MeteorFalls_1F_2R_EventScript_Sub_0815C728)
+    msgbox(Naranja_MeteorFalls_1F_2R_Text_08193D9A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MeteorFalls_1F_2R_EventScript_Sub_0815C728 {
+    trainerbattle_rematch_double(TRAINER_NARANJA_GRANITE_CAVE_681, Naranja_MeteorFalls_1F_2R_Text_08193FCA, Naranja_MeteorFalls_1F_2R_Text_0819403A, Naranja_MeteorFalls_1F_2R_Text_081940DF)
+    msgbox(Naranja_MeteorFalls_1F_2R_Text_08194066, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_081939C5 {
+    "This is where we DRAGON users do our\ntraining.\pThe CHAMPION even visits.\nNow do you see how special it is here?"
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193A35 {
+    "Urgh!\nI didn’t expect you to be so strong!"
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193A60 {
+    "The road ahead remains long and harsh.\pWhen will my POKéMON and I become the\nbest?"
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193AB3 {
+    "Since we met, we have trained hard\nwith our sights on number one.\pHelp us see how much stronger we’ve\nbecome!"
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193B21 {
+    "Urgh!\nI didn’t expect you to be so strong!"
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193B4C {
+    "You’ve obviously kept up your\nPOKéMON training.\pSo long as you remain strong, I, too,\ncan become stronger!"
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193BB7 {
+    "JOHN: We’ve always battled POKéMON\ntogether as a twosome.\lWe’ve confidence in ourselves."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193C10 {
+    "JOHN: Oh, my.\nWe’ve lost, dear wife."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193C35 {
+    "JOHN: We’ve been married for\nfifty years.\pCome to think of it, I’ve yet to beat\nmy dear wife in a battle."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193C9F {
+    "JOHN: Well, well, what a young TRAINER!\pWill you battle with us? If so, you’ll\nhave to return with more POKéMON."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193D10 {
+    "JAY: We’ve been married for\nfifty years.\pThe bond we share as a couple could\nnever be broken."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193D6E {
+    "JAY: Oh, dear.\nWe’ve lost, my dear husband."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193D9A {
+    "JAY: Fifty years of marriage...\pIf we ever argued, we always settled\nit with a POKéMON battle..."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193DFB {
+    "JAY: Well, well, aren’t you a young\nTRAINER?\pIf you’d care to battle with us, you’ll\nhave to come back with more POKéMON."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193E75 {
+    "JOHN: We’ve always battled POKéMON\ntogether as a twosome.\lWe’ve confidence in ourselves."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193ECE {
+    "JOHN: Oh, my.\nWe’ve lost, dear wife."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193EF3 {
+    "JOHN: Married for fifty years...\pOn reflection, the dear wife and I,\nwe battled day in and day out..."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193F59 {
+    "JOHN: Well, well, what a young\nTRAINER!\pWill you battle with us? If so, you’ll\nhave to return with more POKéMON."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08193FCA {
+    "JAY: We’ve been married for\nfifty years.\pWe’ve supported each other all that\ntime. We’ve made ourselves strong."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_0819403A {
+    "JAY: Oh, dear.\nWe’ve lost, my dear husband."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_08194066 {
+    "JAY: Fifty years of marriage...\nMany things have happened.\pI hope that we will continue to make\nhappy memories together."
+}
+
+text Naranja_MeteorFalls_1F_2R_Text_081940DF {
+    "JAY: Well, well, aren’t you a young\nTRAINER?\pIf you’d care to battle with us, you’ll\nhave to come back with more POKéMON."
+}

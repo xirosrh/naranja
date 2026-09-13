@@ -1,0 +1,442 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValenciaIsland_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ValenciaIsland_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE, 2: Naranja_ValenciaIsland_OnFrame_1
+    ]
+}
+
+script Naranja_ValenciaIsland_OnTransition {
+    setflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_0816)
+    compare_var_to_value(VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE, 0)
+    call_if(EQUAL, Naranja_ValenciaIsland_EventScript_Sub_0814B731)
+    compare_var_to_value(VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE, 2)
+    call_if(EQUAL, Naranja_ValenciaIsland_EventScript_Sub_0814B739)
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_0814B731 {
+    setobjectxyperm(LOCALID_NARANJA_VALENCIA_ISLAND_MAN_4, 5, 0xB)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_0814B739 {
+    savebgm(MUS_FOLLOW_ME)
+    return
+}
+
+script Naranja_ValenciaIsland_OnFrame_1 {
+    lockall
+    setflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_4000)
+    special(SavePlayerParty)
+    special(LoadWallyZigzagoon)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GIRL_3, Naranja_ValenciaIsland_Movement_0814B7ED)
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Movement_0814B7CC)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_ValenciaIsland_Text_0816D361, MSGBOX_DEFAULT)
+    special(StartWallyTutorialBattle)
+    waitstate
+    msgbox(Naranja_ValenciaIsland_Text_0816D3DE, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GIRL_3, Naranja_MeteorFalls_1F_1R_Movement_081A083F, MAP_NARANJA_VALENCIA_ISLAND)
+    waitmovement(LOCALID_NONE, MAP_NARANJA_MANDARIN_ISLAND_NORTH)
+    msgbox(Naranja_ValenciaIsland_Text_0816D408, MSGBOX_DEFAULT)
+    closemessage
+    clearflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_4000)
+    setvar(VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE, 3)
+    fadedefaultbgm
+    clearflag(FLAG_NARANJA_SAILING_MUSIC_ACTIVE)
+    special(LoadPlayerParty)
+    setvar(VAR_NARANJA_ORANGE_LEAGUE_BADGE_COUNT, 1)
+    warp(MAP_NARANJA_VALENCIA_ISLAND_GYM, 0xFF, 4, 0x6C)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Boy2 {
+    lock
+    faceplayer
+    msgbox(Naranja_ValenciaIsland_Text_08164490, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_MART_EMPLOYEE, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Sign_4 {
+    msgbox(Naranja_ValenciaIsland_Text_08164602, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    checkflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_0128)
+    goto_if(EQUAL, Naranja_ValenciaIsland_EventScript_Sub_081552EA)
+    pokemart(Naranja_ValenciaIsland_Mart_081552D0)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_081552EA {
+    pokemart(Naranja_ValenciaIsland_Mart_081552FC)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Trigger_1 {
+    checkflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G02_M02_WALLY)
+    goto_if(LESS_THAN, Naranja_ValenciaIsland_EventScript_Sub_086B5DDC)
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_086B5DDC {
+    lock
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Movement_0801936A)
+    nop
+    msgbox(Naranja_ValenciaIsland_Text_086B5DF0, MSGBOX_AUTOCLOSE)
+    nop
+    release
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB9550 {
+    setmetatile(0x13, 3, 0x35, 1)
+    setmetatile(0x14, 3, 2, 1)
+    setmetatile(0x13, 4, 0x16, 1)
+    setmetatile(0x14, 4, 0x1D4, 1)
+    setmetatile(0xD, 5, 1, 0)
+    setmetatile(0xE, 5, 1, 0)
+    setmetatile(0xF, 5, 0x1D0, 0)
+    setmetatile(0x10, 5, 0x1D1, 0)
+    setmetatile(0x11, 5, 0x1D1, 0)
+    setmetatile(0x12, 5, 0x1D1, 0)
+    setmetatile(0x13, 5, 0x1D2, 0)
+    setmetatile(0xD, 6, 1, 0)
+    setmetatile(0xE, 6, 1, 0)
+    setmetatile(0xF, 6, 0x1E0, 0)
+    setmetatile(0x10, 6, 0x1E1, 0)
+    setmetatile(0x11, 6, 0x1E1, 0)
+    setmetatile(0x12, 6, 0x1E1, 0)
+    setmetatile(0x13, 6, 0x1E1, 0)
+    setmetatile(0x14, 6, 0x1D2, 0)
+    setmetatile(0x15, 6, 0x16, 1)
+    setmetatile(0xE, 7, 0x1D4, 0)
+    setmetatile(0xF, 7, 0x1D5, 1)
+    setmetatile(0x10, 7, 0x1D4, 1)
+    setmetatile(0x11, 7, 0x1D5, 1)
+    setmetatile(0x12, 7, 0xE, 0)
+    setmetatile(0x13, 7, 0xE, 0)
+    setmetatile(0x14, 7, 0x1E0, 0)
+    setmetatile(0x15, 7, 0x253, 0)
+    setmetatile(0x12, 8, 0x16, 1)
+    setmetatile(0x13, 8, 0x16, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Trigger_8 {
+    lockall
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB9550)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB9680 {
+    setmetatile(0x15, 6, 0xC7, 1)
+    setmetatile(0x15, 7, 0x25A, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB9693 {
+    setmetatile(0x14, 3, 0x1FD, 1)
+    setmetatile(0x14, 4, 0x1E4, 1)
+    setmetatile(0x14, 6, 0xE, 1)
+    setmetatile(0x14, 7, 0x16, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB96B8 {
+    setmetatile(0x13, 3, 0x1FC, 1)
+    setmetatile(0x13, 4, 0x1EC, 1)
+    setmetatile(0x13, 5, 0xC7, 1)
+    setmetatile(0x13, 6, 0xC7, 1)
+    setmetatile(0x13, 7, 0x1F5, 1)
+    setmetatile(0x13, 8, 0x1DD, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB96EF {
+    setmetatile(0x12, 5, 0x1D5, 1)
+    setmetatile(0x12, 6, 0x1ED, 1)
+    setmetatile(0x12, 7, 0x1F4, 1)
+    setmetatile(0x12, 8, 0x1DC, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB9714 {
+    setmetatile(0x11, 5, 0x1D4, 1)
+    setmetatile(0x11, 6, 0x1EC, 1)
+    setmetatile(0x11, 7, 0x1F5, 1)
+    setmetatile(0x11, 8, 0x1ED, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB9739 {
+    setmetatile(0x10, 5, 0x1D5, 1)
+    setmetatile(0x10, 6, 0x1DD, 1)
+    setmetatile(0x10, 7, 0x1D4, 1)
+    setmetatile(0x10, 8, 0x1EC, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB975E {
+    setmetatile(0xF, 5, 0x1D4, 1)
+    setmetatile(0xF, 6, 0x1DC, 1)
+    setmetatile(0xF, 7, 0x1D5, 1)
+    setmetatile(0xF, 8, 0x1ED, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB9783 {
+    setmetatile(0xE, 5, 0x1D5, 0)
+    setmetatile(0xE, 6, 0x1ED, 0)
+    setmetatile(0xE, 7, 0x1F4, 0)
+    setmetatile(0xE, 8, 0x1DC, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Sub_08EB97A8 {
+    setmetatile(0xD, 5, 0x1D4, 1)
+    setmetatile(0xD, 6, 0x1DC, 1)
+    return
+}
+
+script Naranja_ValenciaIsland_EventScript_Trigger_5 {
+    lockall
+    playse(SE_ORB)
+    applymovement(LOCALID_PLAYER, Naranja_ValenciaIsland_Movement_08EB97E0)
+    applymovement(LOCALID_NARANJA_VALENCIA_ISLAND_GRASS_CUSHION, Naranja_ValenciaIsland_Movement_08EB97C0)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB9680)
+    special(DrawWholeMapView)
+    delay(0x15)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB9693)
+    special(DrawWholeMapView)
+    delay(0x10)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB96B8)
+    special(DrawWholeMapView)
+    delay(8)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB96EF)
+    special(DrawWholeMapView)
+    delay(6)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB9714)
+    special(DrawWholeMapView)
+    delay(3)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB9739)
+    special(DrawWholeMapView)
+    delay(3)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB975E)
+    special(DrawWholeMapView)
+    delay(3)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB9783)
+    special(DrawWholeMapView)
+    delay(3)
+    call(Naranja_ValenciaIsland_EventScript_Sub_08EB97A8)
+    special(DrawWholeMapView)
+    delay(0x25)
+    removeobject(LOCALID_NARANJA_VALENCIA_ISLAND_GRASS_CUSHION)
+    releaseall
+    end
+}
+
+script Naranja_ValenciaIsland_EventScript_Trigger_7 {
+    setobjectxy(LOCALID_NARANJA_VALENCIA_ISLAND_GRASS_CUSHION, 0x18, 5)
+    release
+    end
+}
+
+movement Naranja_ValenciaIsland_Movement_0801936A {
+    walk_slow_up
+}
+
+movement Naranja_ValenciaIsland_Movement_0814B7CC {
+    acro_end_wheelie_face_down
+    face_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_up
+    walk_in_place_faster_right
+}
+
+movement Naranja_ValenciaIsland_Movement_0814B7ED {
+    delay_8
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_up
+    walk_right
+    delay_16
+    walk_in_place_faster_up
+    delay_16
+    delay_16
+    walk_in_place_faster_right
+}
+
+movement Naranja_ValenciaIsland_Movement_08EB97C0 {
+    set_visible
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    ride_water_current_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+}
+
+movement Naranja_ValenciaIsland_Movement_08EB97E0 {
+    walk_slow_left
+    walk_left
+    walk_left
+    walk_left
+    face_right
+    face_right
+    face_right
+    face_right
+    face_right
+}
+
+mart Naranja_ValenciaIsland_Mart_081552D0 {
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_ESCAPE_ROPE
+    ITEM_REPEL
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+    ITEM_ORANGE_MAIL
+}
+
+mart Naranja_ValenciaIsland_Mart_081552FC {
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_ESCAPE_ROPE
+    ITEM_REPEL
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+    ITEM_ORANGE_MAIL
+}
+
+text Naranja_ValenciaIsland_Text_08164490 {
+    "Me aburro mucho, así que me dedico\na pasear sin salir de estos cuadrados.\pPuede parecer estùpido,\npero es más original que ser otro\lentrenador de pokemon más.\p{COLOR 0x04}{PLAYER}: ¿¿??"
+}
+
+text Naranja_ValenciaIsland_Text_08164602 {
+    "{COLOR 0x0D}Isla VALENCIA\n{SHIFT_DOWN 0x00}“Paraiso sureño”"
+}
+
+text Naranja_ValenciaIsland_Text_0816D361 {
+    "WALLY: {PLAYER}...\nPOKéMON hide in tall grass like this,\ldon’t they?\pPlease watch me and see if I can\ncatch one properly.\p...Whoa!"
+}
+
+text Naranja_ValenciaIsland_Text_0816D3DE {
+    "WALLY: I did it... It’s my...\nMy POKéMON!"
+}
+
+text Naranja_ValenciaIsland_Text_0816D408 {
+    "{PLAYER}, thank you!\nLet’s go back to the GYM!"
+}
+
+text Naranja_ValenciaIsland_Text_086B5DF0 {
+    "Humm…\pMejor no alejarse demasiado\pAhora tengo que ver\ncomo volveré a P. Paleta."
+}

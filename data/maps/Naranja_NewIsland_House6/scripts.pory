@@ -1,0 +1,67 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_House6_MapScripts {
+}
+
+script Naranja_NewIsland_House6_EventScript_Woman3 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_00F5)
+    goto_if(EQUAL, Naranja_NewIsland_House6_EventScript_Sub_0815B3CD)
+    msgbox(Naranja_NewIsland_House6_Text_0818FEA1, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_NewIsland_House6_EventScript_Sub_0815B3C3)
+    msgbox(Naranja_NewIsland_House6_Text_0818FF12, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x75)
+    callstd(7)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_NewIsland_House6_EventScript_Sub_0815B3D7)
+    setflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_00F5)
+    release
+    end
+}
+
+script Naranja_NewIsland_House6_EventScript_Sub_0815B3C3 {
+    msgbox(Naranja_NewIsland_House6_Text_0818FF6D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_House6_EventScript_Sub_0815B3CD {
+    msgbox(Naranja_NewIsland_House6_Text_0818FF95, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_House6_EventScript_Sub_0815B3D7 {
+    bufferdecorationname(1, 0x75)
+    msgbox(Naranja_NewIsland_House6_Text_081A0CEF, MSGBOX_DEFAULT)
+    msgbox(Naranja_NewIsland_House6_Text_0818FF28, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_NewIsland_House6_Text_0818FEA1 {
+    "Hello! You’re our first guest in a\ngood while.\pYou’ve brightened up my day, so I’ll\ngive you a big WAILMER DOLL."
+}
+
+text Naranja_NewIsland_House6_Text_0818FF12 {
+    "Take good care of it!"
+}
+
+text Naranja_NewIsland_House6_Text_0818FF28 {
+    "Oh, you want it, but not right now?\nOkay, then I’ll hold it for you."
+}
+
+text Naranja_NewIsland_House6_Text_0818FF6D {
+    "Are you sure?\nYou don’t want this DOLL?"
+}
+
+text Naranja_NewIsland_House6_Text_0818FF95 {
+    "I love plush DOLLS!"
+}
+
+text Naranja_NewIsland_House6_Text_081A0CEF {
+    "¡Qué mal! No hay sitio   \npara guardar otro {STR_VAR_2}…"
+}

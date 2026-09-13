@@ -1,0 +1,86 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_Mart_MapScripts {
+}
+
+script Naranja_TrovitaIsland_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_011F)
+    goto_if(LESS_THAN, Naranja_TrovitaIsland_Mart_EventScript_Sub_08157BEF)
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_011F)
+    goto_if(EQUAL, Naranja_TrovitaIsland_Mart_EventScript_Sub_08157C18)
+    end
+}
+
+script Naranja_TrovitaIsland_Mart_EventScript_Sub_08157BEF {
+    pokemart(Naranja_TrovitaIsland_Mart_Mart_08157C00)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_Mart_EventScript_Sub_08157C18 {
+    pokemart(Naranja_TrovitaIsland_Mart_Mart_08157C28)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_Mart_EventScript_Woman2 {
+    msgbox(Naranja_TrovitaIsland_Mart_Text_08184C76, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_Mart_EventScript_Boy1 {
+    msgbox(Naranja_TrovitaIsland_Mart_Text_08184CD8, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_Mart_EventScript_BugCatcher {
+    msgbox(Naranja_TrovitaIsland_Mart_Text_08184D43, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_TrovitaIsland_Mart_Mart_08157C00 {
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_ESCAPE_ROPE
+    ITEM_REPEL
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+}
+
+mart Naranja_TrovitaIsland_Mart_Mart_08157C28 {
+    ITEM_POKE_BALL
+    ITEM_TIMER_BALL
+    ITEM_REPEAT_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_ESCAPE_ROPE
+    ITEM_REPEL
+    ITEM_X_SPEED
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+}
+
+text Naranja_TrovitaIsland_Mart_Text_08184C76 {
+    "I’m buying some PARLYZ HEALS and\nANTIDOTES.\pJust in case I run into SHROOMISH\nin PETALBURG WOODS."
+}
+
+text Naranja_TrovitaIsland_Mart_Text_08184CD8 {
+    "My POKéMON evolved.\nIt has a lot of HP now.\pI should buy SUPER POTIONS for it\ninstead of ordinary POTIONS."
+}
+
+text Naranja_TrovitaIsland_Mart_Text_08184D43 {
+    "I’m getting an ESCAPE ROPE just in\ncase I get lost in a cave.\pI just need to use it to get back to the\nentrance."
+}

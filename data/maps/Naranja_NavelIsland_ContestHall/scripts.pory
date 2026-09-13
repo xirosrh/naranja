@@ -1,0 +1,41 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NavelIsland_ContestHall_MapScripts {
+}
+
+script Naranja_NavelIsland_ContestHall_EventScript_Man1 {
+    msgbox(Naranja_NavelIsland_ContestHall_Text_08177335, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NavelIsland_ContestHall_EventScript_Woman7 {
+    msgbox(Naranja_NavelIsland_ContestHall_Text_081773C6, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NavelIsland_ContestHall_EventScript_Youngster {
+    msgbox(Naranja_NavelIsland_ContestHall_Text_08177437, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NavelIsland_ContestHall_EventScript_Sign_1 {
+    msgbox(Naranja_NavelIsland_ContestHall_Text_081774B1, MSGBOX_SIGN)
+    end
+}
+
+text Naranja_NavelIsland_ContestHall_Text_08177335 {
+    "We do all right in the preliminary round,\nbut we can never win the appeals...\pMaybe it means I have to watch what\nother contestants are doing..."
+}
+
+text Naranja_NavelIsland_ContestHall_Text_081773C6 {
+    "See!\nMy POKéMON won all these RIBBONS!\pHave your POKéMON earned any RIBBONS?\nYou can check them on your POKéNAV."
+}
+
+text Naranja_NavelIsland_ContestHall_Text_08177437 {
+    "I can’t beat GYM LEADERS...\pI can’t win any CONTESTS...\pI’ve been here, there, and everywhere,\nand it’s all for naught..."
+}
+
+text Naranja_NavelIsland_ContestHall_Text_081774B1 {
+    "POKéMON CONTESTS\nSUPER RANK STAGE!"
+}

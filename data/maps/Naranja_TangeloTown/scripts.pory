@@ -1,0 +1,244 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TangeloTown_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_TangeloTown_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE, 0: Naranja_TangeloTown_OnFrame_1
+    ]
+}
+
+script Naranja_TangeloTown_OnTransition {
+    call(Naranja_PalletTown_ProfessorOaksLab_EventScript_Sub_081A02F4)
+    end
+}
+
+script Naranja_TangeloTown_OnFrame_1 {
+    setflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_4000)
+    setvar(VAR_NARANJA_TANGELO_TOWN_TOWN_STORY_STATE, 1)
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Trigger_9 {
+    lockall
+    msgbox(Naranja_PalletTown_ProfessorOaksLab_Text_086BEC6C, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_TangeloTown_Movement_0814E9FE)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Youngster {
+    msgbox(Naranja_TangeloTown_Text_0816D25E, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sign_1 {
+    msgbox(Naranja_TangeloTown_Text_086BF497, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Woman7 {
+    lock
+    faceplayer
+    special(GetDaycareMonNicknames)
+    specialvar(VAR_RESULT, GetDaycareState)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_TangeloTown_EventScript_Sub_081B2262)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(EQUAL, Naranja_TangeloTown_EventScript_Sub_081B22E7)
+    compare_var_to_value(VAR_RESULT, 3)
+    goto_if(EQUAL, Naranja_TangeloTown_EventScript_Sub_081B22FE)
+    msgbox(Naranja_TangeloTown_Text_081B25CB, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B2262 {
+    msgbox(Naranja_TangeloTown_Text_081B2659, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_TangeloTown_EventScript_Sub_081B2298)
+    msgbox(Naranja_TangeloTown_Text_081B28C4, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_TangeloTown_EventScript_Sub_081B2298)
+    msgbox(Naranja_TangeloTown_Text_081B2745, MSGBOX_DEFAULT)
+    clearflag(FLAG_NARANJA_TANGELO_TOWN_TOWN_EVENT_COMPLETE_0086)
+    special(RejectEggFromDayCare)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B2298 {
+    specialvar(VAR_RESULT, CalculatePlayerPartyCount)
+    compare_var_to_value(VAR_RESULT, 6)
+    goto_if(NOT_EQUAL, Naranja_TangeloTown_EventScript_Sub_081B22B2)
+    msgbox(Naranja_TangeloTown_Text_081B2766, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B22B2 {
+    message(Naranja_TangeloTown_Text_081B27A2)
+    playfanfare(MUS_LEVEL_UP)
+    waitfanfare
+    waitmessage
+    waitbuttonpress
+    msgbox(Naranja_TangeloTown_Text_081B27CD, MSGBOX_DEFAULT)
+    special(GiveEggFromDaycare)
+    clearflag(FLAG_NARANJA_TANGELO_TOWN_TOWN_EVENT_COMPLETE_0086)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B22CD {
+    specialvar(VAR_RESULT, CheckDaycareMonReceivedMail)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloTown_EventScript_Sub_081B22DE)
+    return
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B22DE {
+    msgbox(Naranja_TangeloTown_Text_081B27E3, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B22E7 {
+    special(GetDaycareMonNicknames)
+    msgbox(Naranja_TangeloTown_Text_081B2710, MSGBOX_DEFAULT)
+    setvar(VAR_0x8004, 0)
+    call(Naranja_TangeloTown_EventScript_Sub_081B22CD)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_081B22FE {
+    special(GetDaycareMonNicknames)
+    msgbox(Naranja_TangeloTown_Text_081B2897, MSGBOX_DEFAULT)
+    special(SetDaycareCompatibilityString)
+    special(ShowFieldMessageStringVar4)
+    waitmessage
+    waitbuttonpress
+    setvar(VAR_0x8004, 0)
+    call(Naranja_TangeloTown_EventScript_Sub_081B22CD)
+    setvar(VAR_0x8004, 1)
+    call(Naranja_TangeloTown_EventScript_Sub_081B22CD)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Tracey {
+    faceplayer
+    checkflag(FLAG_NARANJA_BROCK_RECOMMENDED_PLAYER_FOR_LAPRAS)
+    call_if(LESS_THAN, Naranja_TangeloTown_EventScript_Sub_086B4595)
+    checkflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_TOWN_G00_M16_WALLY)
+    goto_if(LESS_THAN, Naranja_TangeloTown_EventScript_Sub_086B45A7)
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_086B4595 {
+    lock
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_0815C64F)
+    msgbox(Naranja_TangeloTown_Text_08178F9F, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Sub_086B45A7 {
+    setflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_TOWN_G00_M16_WALLY)
+    msgbox(Naranja_TangeloTown_Text_086B45C2, MSGBOX_DEFAULT)
+    nop
+    nop
+    nop
+    nop
+    warp(MAP_NARANJA_SEAFLOOR_CAVERN_ROOM2, 0, 0, 0x26C)
+    nop
+    nop
+    end
+}
+
+script Naranja_TangeloTown_EventScript_Azumarill {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_MACHOP, 0)
+    msgbox(Naranja_TangeloTown_Text_081701F9, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+script Naranja_TangeloTown_EventScript_UnusedPikachuDoll {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_KIRLIA, 0)
+    msgbox(Naranja_ValenciaIsland_House3_Text_0817E156, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+movement Naranja_TangeloTown_Movement_0814E9FE {
+    walk_down
+}
+
+text Naranja_TangeloTown_Text_0816D25E {
+    "Todos los centros trabajamos juntos\npara defenfer a los Pokemon\lde los cazadores.\p ¡Cuida el medio ambiente!"
+}
+
+text Naranja_TangeloTown_Text_081701F9 {
+    "Bow! Bowwow!"
+}
+
+text Naranja_TangeloTown_Text_08178F9F {
+    "{COLOR 0x03}Eh\p¿Quieres entrar?\pJaja…\p¿No sabes que en este lugar   \nlos pokemon se recuperan\lde los daños que hayan sufrido?\pEn ningùn caso podras entrar\nsin un permiso especial expedido por\lalguien competente."
+}
+
+text Naranja_TangeloTown_Text_081B25CB {
+    "I’m the DAY-CARE MAN.\pI help take care of the precious\nPOKéMON of TRAINERS.\pIf you’d like me to raise your POKéMON,\nhave a word with my wife."
+}
+
+text Naranja_TangeloTown_Text_081B2659 {
+    "Ah, it’s you!\pWe were raising your POKéMON, and my\ngoodness, were we surprised!\pYour POKéMON had an EGG!\pWe don’t know how it got there,\nbut your POKéMON had it.\pYou do want it, yes?"
+}
+
+text Naranja_TangeloTown_Text_081B2710 {
+    "Ah, it’s you! Good to see you.\nYour {STR_VAR_1}’s doing fine."
+}
+
+text Naranja_TangeloTown_Text_081B2745 {
+    "Well then, I’ll keep it.\nThanks!"
+}
+
+text Naranja_TangeloTown_Text_081B2766 {
+    "You have no room for it...\nCome back when you’ve made room."
+}
+
+text Naranja_TangeloTown_Text_081B27A2 {
+    "{PLAYER} received the EGG from\nthe DAY-CARE MAN."
+}
+
+text Naranja_TangeloTown_Text_081B27CD {
+    "Take good care of it."
+}
+
+text Naranja_TangeloTown_Text_081B27E3 {
+    "By the way, about your {STR_VAR_1},\nit seemed to be friendly with\l{STR_VAR_2}’s {STR_VAR_3}.\pI may even have seen it receiving\na piece of MAIL."
+}
+
+text Naranja_TangeloTown_Text_081B2897 {
+    "Ah, it’s you! Your {STR_VAR_1} and\n{STR_VAR_2} are doing fine."
+}
+
+text Naranja_TangeloTown_Text_081B28C4 {
+    "I really will keep it.\nYou do want this, yes?"
+}
+
+text Naranja_TangeloTown_Text_086B45C2 {
+    "{COLOR 0x03}¿Tienes el permiso para pasar?\pVa, está bien.\pPero para hacerte cargo de Lapras\ntendré que comprobar que tal\lentrenador eres."
+}
+
+text Naranja_TangeloTown_Text_086BF497 {
+    "Centro de recuperación Pokémon"
+}

@@ -1,0 +1,461 @@
+{
+  "id": "MAP_NARANJA_PINKAN_ISLAND",
+  "region": "REGION_HOENN",
+  "name": "Naranja_PinkanIsland",
+  "layout": "LAYOUT_NARANJA_PINKAN_ISLAND",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_PINKAN_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_TROVITA_ISLAND",
+      "offset": 0,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_WALLY",
+      "graphics_id": "OBJ_EVENT_GFX_TRACEY",
+      "x": 27,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_Tracey",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_LASS",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "x": 25,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "6",
+      "script": "Naranja_PinkanIsland_EventScript_Lass",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 24,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_Beauty",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_BEAUTY"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 16,
+      "y": 74,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_BreakableRock",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_KECLEON_1",
+      "graphics_id": "OBJ_EVENT_GFX_KECLEON",
+      "x": 24,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_Kecleon1",
+      "flag": "FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_MAGMA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_JAMES",
+      "x": 20,
+      "y": 55,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_James",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_NURSE",
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 25,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_PinkanIsland_EventScript_Nurse",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_CAMERAMAN",
+      "graphics_id": "OBJ_EVENT_GFX_CAMERAMAN",
+      "x": 24,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_Cameraman",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_BEAUTY"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_LATIAS",
+      "graphics_id": "OBJ_EVENT_GFX_LATIAS",
+      "x": 24,
+      "y": 66,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_Latias",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_LATIAS"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 16,
+      "y": 54,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_ITEM_BALL_2",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 13,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_ItemBall_2",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_ITEM_BALL_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_PICHU_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_PICHU_DOLL",
+      "x": 25,
+      "y": 52,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_PinkanIsland_EventScript_PichuDoll",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "x": 25,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_DittoDoll",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_BEAUTY"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_ZIGZAGOON",
+      "graphics_id": "OBJ_EVENT_GFX_MEOWTH",
+      "x": 19,
+      "y": 53,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "256",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Wingull",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_BREAKABLE_ROCK_2",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 5,
+      "y": 68,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_BreakableRock",
+      "flag": "FLAG_TEMP_11"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_ITEM_BALL_3",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 18,
+      "y": 59,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_ItemBall_3",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_ITEM_BALL_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_TEALA",
+      "graphics_id": "OBJ_EVENT_GFX_TEALA",
+      "x": 23,
+      "y": 52,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_TEALA"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_SPIN_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_SPIN_CUSHION",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PinkanIsland_EventScript_SpinCushion",
+      "flag": "FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_SPIN_CUSHION"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PINKAN_ISLAND_GRASS_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_GRASS_CUSHION",
+      "x": 33,
+      "y": 65,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 25,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_GRANITE_CAVE_1F",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 23,
+      "y": 52,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_TROVITA_ISLAND_DEVON_CORP_3F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 62,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 69,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_PinkanIsland_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 58,
+      "elevation": 3,
+      "var": "VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE",
+      "var_value": "2",
+      "script": "Naranja_PinkanIsland_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 57,
+      "elevation": 3,
+      "var": "VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE",
+      "var_value": "2",
+      "script": "Naranja_PinkanIsland_EventScript_Trigger_2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "secret_base",
+      "x": 33,
+      "y": 16,
+      "elevation": 0,
+      "secret_base_id": "134217800"
+    },
+    {
+      "type": "secret_base",
+      "x": 36,
+      "y": 17,
+      "elevation": 0,
+      "secret_base_id": "134217790"
+    },
+    {
+      "type": "sign",
+      "x": 21,
+      "y": 72,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_PinkanIsland_EventScript_Sign_3"
+    },
+    {
+      "type": "sign",
+      "x": 23,
+      "y": 20,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_PinkanIsland_EventScript_DittoDoll"
+    },
+    {
+      "type": "secret_base",
+      "x": 35,
+      "y": 20,
+      "elevation": 0,
+      "secret_base_id": "134217861"
+    },
+    {
+      "type": "secret_base",
+      "x": 34,
+      "y": 17,
+      "elevation": 0,
+      "secret_base_id": "134217770"
+    },
+    {
+      "type": "secret_base",
+      "x": 36,
+      "y": 18,
+      "elevation": 0,
+      "secret_base_id": "134217780"
+    },
+    {
+      "type": "secret_base",
+      "x": 34,
+      "y": 16,
+      "elevation": 0,
+      "secret_base_id": "134217771"
+    },
+    {
+      "type": "secret_base",
+      "x": 33,
+      "y": 57,
+      "elevation": 0,
+      "secret_base_id": "134217781"
+    },
+    {
+      "type": "secret_base",
+      "x": 36,
+      "y": 15,
+      "elevation": 0,
+      "secret_base_id": "134217902"
+    },
+    {
+      "type": "secret_base",
+      "x": 37,
+      "y": 15,
+      "elevation": 0,
+      "secret_base_id": "134217911"
+    },
+    {
+      "type": "secret_base",
+      "x": 35,
+      "y": 17,
+      "elevation": 0,
+      "secret_base_id": "134217791"
+    },
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 57,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_PinkanIsland_EventScript_Sign_13"
+    },
+    {
+      "type": "hidden_item",
+      "x": 18,
+      "y": 57,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_PINKAN_ISLAND_HEART_SCALE_14"
+    }
+  ]
+}

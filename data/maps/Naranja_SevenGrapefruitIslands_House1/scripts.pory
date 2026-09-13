@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SevenGrapefruitIslands_House1_MapScripts {
+}
+
+script Naranja_SevenGrapefruitIslands_House1_EventScript_Man1 {
+    msgbox(Naranja_SevenGrapefruitIslands_House1_Text_08174BA5, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_House1_EventScript_Woman4 {
+    msgbox(Naranja_SevenGrapefruitIslands_House1_Text_08174C0D, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_House1_EventScript_Zigzagoon {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_ZIGZAGOON, 0)
+    msgbox(Naranja_SevenGrapefruitIslands_House1_Text_08174CC8, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_SevenGrapefruitIslands_House1_Text_08174BA5 {
+    "There’s a lot to be said for living on\na small island like this in harmony with\lPOKéMON and the family."
+}
+
+text Naranja_SevenGrapefruitIslands_House1_Text_08174C0D {
+    "I came from the large port of SLATEPORT\nCITY when I married my husband here.\pLife goes by slowly on this little\nisland. But being surrounded by the\lbeautiful sea - that’s happiness, too."
+}
+
+text Naranja_SevenGrapefruitIslands_House1_Text_08174CC8 {
+    "ZIGZAGOON: Guguuh!"
+}

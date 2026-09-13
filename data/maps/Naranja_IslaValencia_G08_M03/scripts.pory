@@ -1,9 +1,0 @@
-// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
-// Names use Naranja map context; engine flags retain pokeemerald semantics.
-
-mapscripts Naranja_IslaValencia_G08_M03_MapScripts {
-}
-
-script Naranja_IslaValencia_G08_M03_EventScript_OBJ_EVENT_GFX_WOMAN_2_LocalId1 {
-    end
-}

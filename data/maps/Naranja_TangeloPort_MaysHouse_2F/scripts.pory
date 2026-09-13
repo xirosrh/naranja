@@ -1,0 +1,65 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TangeloPort_MaysHouse_2F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_TangeloPort_MaysHouse_2F_OnTransition
+    MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE [
+        VAR_NARANJA_SECRET_BASE_STORY_STATE, 0: Naranja_TangeloPort_MaysHouse_2F_OnWarp_1
+    ]
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_OnTransition {
+    checkflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0082)
+    call_if(LESS_THAN, Naranja_TangeloPort_MaysHouse_2F_EventScript_Sub_08152A7A)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 4)
+    call_if(EQUAL, Naranja_TangeloPort_BrendansHouse_2F_EventScript_Sub_081B6950)
+    call(Naranja_TangeloPort_BrendansHouse_2F_EventScript_Sub_081A2F3D)
+    setvar(VAR_NARANJA_SECRET_BASE_STORY_STATE, 0)
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_EventScript_Sub_08152A7A {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_2_F_RIVAL_MAY_NORMAL, 7, 2)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_2_F_RIVAL_MAY_NORMAL, 7)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_OnWarp_1 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_SecretBase_RedCave1_OnWarp_1)
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_EventScript_Sign_4 {
+    lockall
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_TangeloPort_MaysHouse_2F_EventScript_Sub_08152C52)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_TangeloPort_MaysHouse_2F_EventScript_Sub_08152C5C)
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_EventScript_Sub_08152C52 {
+    msgbox(Naranja_TangeloPort_BrendansHouse_2F_Text_081A100C, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_EventScript_Sub_08152C5C {
+    setvar(VAR_0x8004, 2)
+    special(DoPCTurnOnEffect)
+    playse(SE_PC_ON)
+    msgbox(Naranja_TangeloPort_BrendansHouse_2F_Text_081A10D6, MSGBOX_DEFAULT)
+    special(BedroomPC)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_2F_EventScript_Sign_3 {
+    lockall
+    setvar(VAR_0x8004, 1)
+    goto(Naranja_TangeloPort_BrendansHouse_2F_EventScript_Sub_081B69EB)
+}

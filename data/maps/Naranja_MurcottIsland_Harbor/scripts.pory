@@ -1,0 +1,510 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_Harbor_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MurcottIsland_Harbor_OnTransition
+}
+
+script Naranja_MurcottIsland_Harbor_OnTransition {
+    setescapewarp(MAP_NARANJA_MURCOTT_ISLAND, 0xFF, 0x1C, 0xD)
+    setvar(VAR_TEMP_1, 0)
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_2, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08155F89)
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08155F85)
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08155F85 {
+    clearflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M08_SS_TIDAL)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08155F89 {
+    savebgm(MUS_ENCOUNTER_MAGMA)
+    setobjectxyperm(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1, 0xC, 0xD)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1, 9)
+    setflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M08_BEAUTY)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8008, 0)
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_08155FD5)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Trigger_2 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_08155FD5)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Trigger_3 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_08155FD5)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Trigger_4 {
+    lockall
+    setvar(VAR_0x8008, 3)
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_Harbor_Movement_081560C2)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_08155FD5)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08155FD5 {
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_246, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FD7D, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_241, Naranja_MurcottIsland_Harbor_Movement_0815609B)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_246, Naranja_MurcottIsland_Harbor_Movement_0815609B)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SUBMARINE_SHADOW, Naranja_MurcottIsland_Harbor_Movement_081560A5)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_241)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_246)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SUBMARINE_SHADOW)
+    setvar(VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_2, 2)
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815605C)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156071)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156086)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156086)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FE60, MSGBOX_DEFAULT)
+    closemessage
+    setflag(FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241)
+    setflag(FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241_2)
+    copyobjectxytoperm(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1)
+    setobjectmovementtype(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1, 0xA)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815605C {
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1, Naranja_MurcottIsland_Harbor_Movement_081560B3)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156071 {
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1, Naranja_MurcottIsland_Harbor_Movement_081560B9)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156086 {
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_HARBOR_SCIENTIST_1, Naranja_MurcottIsland_Harbor_Movement_081560BE)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Beauty {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081560D9)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FA0A, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081560D9 {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FA73, MSGBOX_DEFAULT)
+    checkitem(ITEM_SS_TICKET, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156135)
+    message(Naranja_MurcottIsland_Harbor_Text_0817FB0A)
+    waitmessage
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_081560FD)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081560FD {
+    multichoicedefault(0x12, 6, 0x34, 2, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815613F)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156167)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081561DA)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081561DA)
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156135 {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FAAD, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815613F {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FB81, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815618A)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 1)
+    call(Naranja_MurcottIsland_Harbor_EventScript_Sub_08156196)
+    warp(MAP_NARANJA_SSTIDAL_CORRIDOR, 0xFF, 1, 0xA)
+    waitstate
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156167 {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FB9C, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815618A)
+    call(Naranja_MurcottIsland_Harbor_EventScript_Sub_08156196)
+    warp(MAP_NARANJA_BATTLE_TOWER_OUTSIDE, 0xFF, 0x13, 0x17)
+    waitstate
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815618A {
+    message(Naranja_MurcottIsland_Harbor_Text_0817FBE5)
+    waitmessage
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_081560FD)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156196 {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FBB6, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    hideobjectat(32783, MAP_NARANJA_MURCOTT_ISLAND_HARBOR)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081561EF)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081561E4)
+    delay(0x1E)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_VALENCIA_ISLAND)
+    setvar(VAR_0x8004, 5)
+    call(Naranja_KumquatIsland_Harbor_EventScript_Sub_081A040E)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081561DA {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FB5F, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081561E4 {
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_Harbor_Movement_081561FA)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081561EF {
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_Harbor_Movement_081561FD)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sailor {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FC07, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_FatMan {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FC7C, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Scientist1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_080D)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815626F)
+    checkflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_010F)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156265)
+    checkflag(FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0070)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156258)
+    compare_var_to_value(VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_2, 2)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815624E)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FD1C, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815624E {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FE60, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156258 {
+    setflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_010F)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0817FF35, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156265 {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_081800A0, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815626F {
+    compare_var_to_value(VAR_TEMP_1, 1)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156380)
+    checkitem(ITEM_SCANNER, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081562A7)
+    checkflag(FLAG_NARANJA_SECRET_BASE_EVENT_COMPLETE_0804)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815629D)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0818017B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815629D {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_081801EA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081562A7 {
+    message(Naranja_MurcottIsland_Harbor_Text_0818028B)
+    waitmessage
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_081562B3)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081562B3 {
+    multichoice(0, 0, 0x2E, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_081562EA)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815632A)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815636A)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_0815636A)
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_081562EA {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_081803DD, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156374)
+    setorcopyvar(VAR_0x8000, 0xC0)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    removeitem(ITEM_SCANNER, 1)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0818046B, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0126)
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_08156380)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815632A {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_08180412, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MurcottIsland_Harbor_EventScript_Sub_08156374)
+    setorcopyvar(VAR_0x8000, 0xC1)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    removeitem(ITEM_SCANNER, 1)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_0818046B, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_0126)
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_08156380)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_0815636A {
+    msgbox(Naranja_MurcottIsland_Harbor_Text_08180360, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156374 {
+    message(Naranja_MurcottIsland_Harbor_Text_08180447)
+    waitmessage
+    goto(Naranja_MurcottIsland_Harbor_EventScript_Sub_081562B3)
+}
+
+script Naranja_MurcottIsland_Harbor_EventScript_Sub_08156380 {
+    setvar(VAR_TEMP_1, 1)
+    msgbox(Naranja_MurcottIsland_Harbor_Text_08180491, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_0815609B {
+    delay_16
+    delay_16
+    jump_up
+    set_invisible
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081560A5 {
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    walk_right
+    walk_right
+    walk_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081560B3 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081560B9 {
+    walk_left
+    walk_left
+    walk_up
+    walk_left
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081560BE {
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081560C2 {
+    walk_up
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081561FA {
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_MurcottIsland_Harbor_Movement_081561FD {
+    walk_up
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FA0A {
+    "¿Querías montar en el barco?\nLo siento el servicio no está disponible.\lDiscùlpenos."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FA73 {
+    "Hello, are you here for the ferry?\nMay I see your TICKET?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FAAD {
+    "{PLAYER} no tiene reserva…\pLo sentimos…            \ppero…           \psin reserva no hay crucero."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FB0A {
+    "{PLAYER} flashed the TICKET.\pPerfect! That’s all you need!\pAnd where would you like to go?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FB5F {
+    "Please sail with us another time!"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FB81 {
+    "LILYCOVE CITY it is, then!"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FB9C {
+    "BATTLE TOWER it is, then!"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FBB6 {
+    "Please board the ferry and wait for\ndeparture."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FBE5 {
+    "Then, where would you like to go?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FC07 {
+    "A journey to the bottom of the sea...\nI wonder what it’d be like?\pI’d love to go deep underwater like\nthat some day."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FC7C {
+    "I wanted to go with CAPT. STERN on\nthe ocean floor exploration.\pBut the sub’s too small for me.\pIf I squeezed in, there wouldn’t be\nany room for the CAPTAIN..."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FD1C {
+    "CAPT. STERN: Those thugs...\pThey’re the same lot who tried to rob\nthe DEVON GOODS at the MUSEUM."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FD7D {
+    "{ARCHIE}: Fwahahaha...\nI commiserate with you!\pAll that effort you spent following\nme here all the way from MT. PYRE.\pBut now...\nNo one can stop us! No one!\pOr, will you follow us back to our\nHIDEOUT in LILYCOVE CITY?\pFwahahahaha..."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FE60 {
+    "CAPT. STERN: Why...\pWhy would TEAM {AQUA} steal my\nSUBMARINE EXPLORER 1?\pThey can’t be after the slumbering\nPOKéMON at the bottom of the sea...\pBut even if I were to chase them,\nI don’t stand a chance against them..."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0817FF35 {
+    "CAPT. STERN: Oh, {PLAYER}{KUN}...\pOkay... So TEAM {AQUA} left before you\ncould stop them...\pOh, no, don’t blame yourself.\nYou’re not responsible for this.\pTrying to catch a submarine...\nIt’s impossible for most people.\pYou would need a POKéMON that knows\nhow to DIVE...\pPerhaps if you went out to\nMOSSDEEP CITY...\pA lot of divers live out there, so\nsomeone might teach you..."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_081800A0 {
+    "CAPT. STERN: Trying to catch a\nsubmarine...  It’s impossible.\pYou would need a POKéMON that knows\nhow to DIVE...\pPerhaps if you went out to\nMOSSDEEP CITY...\pA lot of divers live out there, so\nsomeone might teach you..."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0818017B {
+    "CAPT. STERN: Oh, yes.\nMR. BRINEY came to our SHIPYARD.\pIt won’t be long now before we finish\nmaking the ferry!"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_081801EA {
+    "CAPT. STERN: {PLAYER}{KUN}!\pWe finally finished making the ferry\nS.S. TIDAL!\pWe couldn’t have done it without your\nfriend MR. BRINEY.\pPlease go for a short cruise on it!"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0818028B {
+    "CAPT. STERN: Oh?\n{PLAYER}{KUN}, that item you have...\pThat’s a SCANNER! That would sure\nhelp us on our explorations.\p{PLAYER}{KUN}, would you trade your\nSCANNER for something?\pLike say a DEEPSEATOOTH or a\nDEEPSEASCALE that I have?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_08180360 {
+    "CAPT. STERN: Are you certain?\nIt’s useless to you, {PLAYER}{KUN}...\pWell, okay, then. If you want to trade\nyour SCANNER, let me know."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_081803DD {
+    "CAPT. STERN: So you’ll trade it for\nmy DEEPSEATOOTH?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_08180412 {
+    "CAPT. STERN: So you’ll trade it for\nmy DEEPSEASCALE?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_08180447 {
+    "CAPT. STERN: Which one do you want?"
+}
+
+text Naranja_MurcottIsland_Harbor_Text_0818046B {
+    "{PLAYER} handed the SCANNER to\nCAPT. STERN."
+}
+
+text Naranja_MurcottIsland_Harbor_Text_08180491 {
+    "CAPT. STERN: Thanks, {PLAYER}{KUN}!\nThis will help our research a lot!"
+}

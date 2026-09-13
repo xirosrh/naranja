@@ -1,0 +1,86 @@
+{
+  "id": "MAP_NARANJA_AQUA_HIDEOUT_1F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_AquaHideout_1F",
+  "layout": "LAYOUT_NARANJA_AQUA_HIDEOUT_1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_TEAM_HIDESHOAL_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_AQUA",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_1F_241",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 13,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_1F_EventScript_Object1",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_1F_241_2",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 14,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_1F_EventScript_Object2",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_1F_241_3",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 20,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 13,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_AquaHideout_1F_EventScript_Object3",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241_3"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 13,
+      "y": 27,
+      "elevation": 1,
+      "dest_map": "MAP_NARANJA_KUMQUAT_ISLAND",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 14,
+      "y": 27,
+      "elevation": 1,
+      "dest_map": "MAP_NARANJA_KUMQUAT_ISLAND",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 22,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

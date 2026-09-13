@@ -4,7 +4,7 @@
   "layout": "LAYOUT_HOUSE1",
   "music": "MUS_FALLARBOR",
   "region": "REGION_HOENN",
-  "region_map_section": "MAPSEC_ISLA_NAVEL",
+  "region_map_section": "MAPSEC_NAVEL_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",

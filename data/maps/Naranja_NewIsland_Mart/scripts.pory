@@ -1,0 +1,80 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_Mart_MapScripts {
+}
+
+script Naranja_NewIsland_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_NewIsland_Mart_Mart_0815B234)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_Mart_EventScript_FatMan {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_Mart_EventScript_Sub_0815B268)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081)
+    goto_if(LESS_THAN, Naranja_NewIsland_Mart_EventScript_Sub_0815B268)
+    msgbox(Naranja_NewIsland_Mart_Text_0818F8D7, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_Mart_EventScript_Sub_0815B268 {
+    msgbox(Naranja_NewIsland_Mart_Text_0818F890, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_Mart_EventScript_Gentleman {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0071)
+    goto_if(EQUAL, Naranja_NewIsland_Mart_EventScript_Sub_0815B290)
+    checkflag(FLAG_NARANJA_NEW_ISLAND_EVENT_COMPLETE_0081)
+    goto_if(LESS_THAN, Naranja_NewIsland_Mart_EventScript_Sub_0815B290)
+    msgbox(Naranja_NewIsland_Mart_Text_0818F96B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_NewIsland_Mart_EventScript_Sub_0815B290 {
+    msgbox(Naranja_NewIsland_Mart_Text_0818F8F2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+mart Naranja_NewIsland_Mart_Mart_0815B234 {
+    ITEM_ULTRA_BALL
+    ITEM_HYPER_POTION
+    ITEM_MAX_POTION
+    ITEM_FULL_HEAL
+    ITEM_REVIVE
+    ITEM_MAX_REPEL
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+    ITEM_SHADOW_MAIL
+}
+
+text Naranja_NewIsland_Mart_Text_0818F890 {
+    "PP UP is great!\pIt raises the POWER POINTS, the PP,\nof a POKéMON move."
+}
+
+text Naranja_NewIsland_Mart_Text_0818F8D7 {
+    "What... What is happening?"
+}
+
+text Naranja_NewIsland_Mart_Text_0818F8F2 {
+    "Do you know FULL RESTORE?\pFull restoration of HP!\nEradication of all status problems!\pIt’s truly an item of your dreams!"
+}
+
+text Naranja_NewIsland_Mart_Text_0818F96B {
+    "This weather...\nDid something awaken?"
+}

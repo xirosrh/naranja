@@ -1,0 +1,10 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ValenciaIsland_House1_MapScripts {
+}
+
+script Naranja_ValenciaIsland_House1_EventScript_Girl1 {
+    msgbox(Naranja_MikanIsland_Gym_Text_0817BCB1, MSGBOX_NPC)
+    end
+}

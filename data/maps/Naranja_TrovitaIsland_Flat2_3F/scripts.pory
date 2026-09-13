@@ -1,0 +1,23 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_Flat2_3F_MapScripts {
+}
+
+script Naranja_TrovitaIsland_Flat2_3F_EventScript_Man7 {
+    msgbox(Naranja_TrovitaIsland_Flat2_3F_Text_0818551D, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_Flat2_3F_EventScript_Woman1 {
+    msgbox(Naranja_TrovitaIsland_Flat2_3F_Text_0818554D, MSGBOX_NPC)
+    end
+}
+
+text Naranja_TrovitaIsland_Flat2_3F_Text_0818551D {
+    "DEVON’s PRESIDENT likes to collect\nrare stones."
+}
+
+text Naranja_TrovitaIsland_Flat2_3F_Text_0818554D {
+    "I think the PRESIDENT’s son also\ncollects rare stones."
+}

@@ -1,0 +1,46 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_Mart_MapScripts {
+}
+
+script Naranja_MurcottIsland_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MurcottIsland_Mart_Mart_08156428)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_Mart_EventScript_BlackBelt {
+    msgbox(Naranja_MurcottIsland_Mart_Text_08180730, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_Mart_EventScript_Man4 {
+    msgbox(Naranja_MurcottIsland_Mart_Text_0818079D, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_MurcottIsland_Mart_Mart_08156428 {
+    ITEM_POKE_BALL
+    ITEM_GREAT_BALL
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_ESCAPE_ROPE
+    ITEM_REPEL
+    ITEM_HARBOR_MAIL
+}
+
+text Naranja_MurcottIsland_Mart_Text_08180730 {
+    "The MARKET does have some interesting\nmerchandise.\pBut there are some items you can only\nget at a POKé MART."
+}
+
+text Naranja_MurcottIsland_Mart_Text_0818079D {
+    "A GREAT BALL is better than a POKé BALL\nat catching POKéMON.\pWith this, I should be able to get that\nelusive POKéMON..."
+}

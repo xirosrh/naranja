@@ -1,0 +1,78 @@
+{
+  "id": "MAP_NARANJA_SAFARI_ZONE_SOUTHWEST",
+  "region": "REGION_HOENN",
+  "name": "Naranja_SafariZone_Southwest",
+  "layout": "LAYOUT_NARANJA_SAFARI_ZONE_SOUTHWEST",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_SAFARI",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_SAFARI_ZONE_NORTHWEST",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_SAFARI_ZONE_SOUTHEAST",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_SAFARI_ZONE_SOUTHWEST_ROXANNE",
+      "graphics_id": "OBJ_EVENT_GFX_SCYTHER",
+      "x": 22,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_SafariZone_Southwest_EventScript_Scyther",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_SAFARI_ZONE_SOUTHWEST_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 0,
+      "y": 37,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_SafariZone_Southwest_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_SAFARI_ZONE_SOUTHWEST_ITEM_BALL"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 7,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_SAFARI_ZONE_REST_HOUSE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 32,
+      "y": 7,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_SafariZone_Southwest_EventScript_Sign_1"
+    }
+  ]
+}

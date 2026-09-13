@@ -1,0 +1,91 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route126_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_Route126_OnTransition
+}
+
+script Naranja_Route126_OnTransition {
+    checkflag(FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A)
+    call_if(EQUAL, Naranja_KumquatIsland_EventScript_Sub_081A02C1)
+    end
+}
+
+script Naranja_Route126_EventScript_SwimmerM {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE126_163, Naranja_Route126_Text_081C1590, Naranja_Route126_Text_081C15C3)
+    msgbox(Naranja_Route126_Text_081C15D8, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route126_EventScript_SwimmerM_2 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE126_164, Naranja_Route126_Text_081C1627, Naranja_Route126_Text_081C1660)
+    msgbox(Naranja_Route126_Text_081C166F, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route126_EventScript_SwimmerF {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE126_453, Naranja_Route126_Text_081C16AB, Naranja_Route126_Text_081C16C5)
+    msgbox(Naranja_Route126_Text_081C1702, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route126_EventScript_SwimmerF_2 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE126_454, Naranja_Route126_Text_081C1741, Naranja_Route126_Text_081C1766)
+    msgbox(Naranja_Route126_Text_081C1773, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route126_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x33)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route126_Text_081C1590 {
+    "Swimming is a full-body workout!\nYou will get fit!"
+}
+
+text Naranja_Route126_Text_081C15C3 {
+    "I admit it! You win!"
+}
+
+text Naranja_Route126_Text_081C15D8 {
+    "Thanks to my daily swimming routine...\nLook! Feast your eyes on this physique!"
+}
+
+text Naranja_Route126_Text_081C1627 {
+    "This towering white mountain of rock\nis SOOTOPOLIS CITY."
+}
+
+text Naranja_Route126_Text_081C1660 {
+    "I was done in?"
+}
+
+text Naranja_Route126_Text_081C166F {
+    "I can’t find the entrance to\nSOOTOPOLIS. Where could it be?"
+}
+
+text Naranja_Route126_Text_081C16AB {
+    "Ufufufufu!\nI’m a mermaid!"
+}
+
+text Naranja_Route126_Text_081C16C5 {
+    "My fantasy burst as if it were a bubble!\nBlub, blub, blub..."
+}
+
+text Naranja_Route126_Text_081C1702 {
+    "You thrashed me... I want to\ndisappear in a wave of despair..."
+}
+
+text Naranja_Route126_Text_081C1741 {
+    "Hello, kiddo!\nWant a battle with me?"
+}
+
+text Naranja_Route126_Text_081C1766 {
+    "Oh, noooooh!"
+}
+
+text Naranja_Route126_Text_081C1773 {
+    "I love frolicking with POKéMON in\nthe sea like this!"
+}

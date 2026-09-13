@@ -1,0 +1,83 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AquaHideout_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_AquaHideout_1F_OnTransition
+}
+
+script Naranja_AquaHideout_1F_OnTransition {
+    call(Naranja_MtPyre_Summit_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_AquaHideout_1F_EventScript_Object1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_TEAM_HIDESHOAL_CAVE_EVENT_COMPLETE_006F)
+    goto_if(EQUAL, Naranja_AquaHideout_1F_EventScript_Sub_0815D7E3)
+    msgbox(Naranja_AquaHideout_1F_Text_08196AFD, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_AquaHideout_1F_EventScript_Sub_0815D7E3 {
+    msgbox(Naranja_AquaHideout_1F_Text_08196BC5, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_AquaHideout_1F_EventScript_Object2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_TEAM_HIDESHOAL_CAVE_EVENT_COMPLETE_006F)
+    goto_if(EQUAL, Naranja_AquaHideout_1F_EventScript_Sub_0815D802)
+    msgbox(Naranja_AquaHideout_1F_Text_08196C83, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_AquaHideout_1F_EventScript_Sub_0815D802 {
+    msgbox(Naranja_AquaHideout_1F_Text_08196D46, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_AquaHideout_1F_EventScript_Object3 {
+    trainerbattle_single(TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_567, Naranja_AquaHideout_1F_Text_08196E01, Naranja_AquaHideout_1F_Text_08196E28, Naranja_AquaHideout_1F_EventScript_AfterBattle_0815D827)
+    msgbox(Naranja_AquaHideout_1F_Text_08196E3D, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_AquaHideout_1F_EventScript_AfterBattle_0815D827 {
+    msgbox(Naranja_AquaHideout_1F_Text_08196E3D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_AquaHideout_1F_Text_08196AFD {
+    "What? What? What do you want with \nTEAM {AQUA}?\pOur BOSS isn’t here! He’s gone off to\nsnatch something important!\p... ...\nWhere did he go?\pWahaha! Do you really think I’d tell\nyou something that crucial?"
+}
+
+text Naranja_AquaHideout_1F_Text_08196BC5 {
+    "What? What? What do you want with \nTEAM {AQUA}?\pOur BOSS isn’t here!\nHe’s gone off to jack a submarine!\p... ...\nWhere did he go?\pWahaha! Do you really think I’d tell\nyou something that crucial?"
+}
+
+text Naranja_AquaHideout_1F_Text_08196C83 {
+    "What? What? What do you want with \nTEAM {AQUA}?\pOur BOSS isn’t here! He’s on his way to\nMT. PYRE on ROUTE 122!\p... ...\nWhy did he go?\pWahaha! Do you really think I’d tell\nyou something that crucial?"
+}
+
+text Naranja_AquaHideout_1F_Text_08196D46 {
+    "What? What? What do you want with\nTEAM {AQUA}?\pOur BOSS isn’t here!\nHe’s on his way to SLATEPORT CITY!\p... ...\nWhy did he go?\pWahaha! Do you really think I’d tell\nyou something that crucial?"
+}
+
+text Naranja_AquaHideout_1F_Text_08196E01 {
+    "Ayiyiyi!\nSuspicious character spotted!"
+}
+
+text Naranja_AquaHideout_1F_Text_08196E28 {
+    "Grrrrr...\nI lost it!"
+}
+
+text Naranja_AquaHideout_1F_Text_08196E3D {
+    "I took the loss for the TEAM, but\nI did my job..."
+}

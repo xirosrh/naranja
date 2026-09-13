@@ -1,0 +1,73 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_VictoryRoad_B1F_MapScripts {
+}
+
+script Naranja_VictoryRoad_B1F_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_081, Naranja_VictoryRoad_B1F_Text_08197CE9, Naranja_VictoryRoad_B1F_Text_08197D42)
+    msgbox(Naranja_VictoryRoad_B1F_Text_08197D5B, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B1F_EventScript_Woman7 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_097, Naranja_VictoryRoad_B1F_Text_08197D98, Naranja_VictoryRoad_B1F_Text_08197DE8)
+    msgbox(Naranja_VictoryRoad_B1F_Text_08197E13, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B1F_EventScript_Woman7_2 {
+    trainerbattle_single(TRAINER_NARANJA_VICTORY_ROAD_098, Naranja_VictoryRoad_B1F_Text_08197E5D, Naranja_VictoryRoad_B1F_Text_08197EA6)
+    msgbox(Naranja_VictoryRoad_B1F_Text_08197EB6, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_VictoryRoad_B1F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x13D)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_VictoryRoad_B1F_EventScript_ItemBall_2 {
+    setorcopyvar(VAR_0x8000, 0x13)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197CE9 {
+    "The thought that I’m getting closer to\nthe POKéMON LEAGUE...\pI’m getting stage fright..."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197D42 {
+    "I couldn’t do a thing..."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197D5B {
+    "The POKéMON LEAGUE became distant\nagain... What a letdown..."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197D98 {
+    "To win your way through the POKéMON\nLEAGUE, you need the trust of your\lPOKéMON."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197DE8 {
+    "Your relationship is based on\nsolid trust."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197E13 {
+    "By being together all the time, trust\ngrows between POKéMON and TRAINERS."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197E5D {
+    "This isn’t the goal. It’s only a place\non the way to the POKéMON LEAGUE."
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197EA6 {
+    "That’s the way!"
+}
+
+text Naranja_VictoryRoad_B1F_Text_08197EB6 {
+    "You’ll do fine, for sure!\nYour POKéMON are all eager to go!"
+}

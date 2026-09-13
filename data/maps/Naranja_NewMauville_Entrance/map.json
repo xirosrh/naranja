@@ -1,0 +1,46 @@
+{
+  "id": "MAP_NARANJA_NEW_MAUVILLE_ENTRANCE",
+  "region": "REGION_HOENN",
+  "name": "Naranja_NewMauville_Entrance",
+  "layout": "LAYOUT_NARANJA_NEW_MAUVILLE_ENTRANCE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_NEW_MAUVILLE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 0,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_ROUTE110",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_NEW_MAUVILLE_INSIDE",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE",
+      "var_value": "0",
+      "script": "Naranja_NewMauville_Entrance_EventScript_Trigger_1"
+    }
+  ],
+  "bg_events": []
+}

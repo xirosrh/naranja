@@ -1,0 +1,117 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route106_MapScripts {
+}
+
+script Naranja_Route106_EventScript_SwimmerM {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE106_153, Naranja_Route106_Text_081B913D, Naranja_Route106_Text_081B917F)
+    msgbox(Naranja_Route106_Text_081B918A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route106_EventScript_SwimmerF {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE106_443, Naranja_Route106_Text_081B91AC, Naranja_Route106_Text_081B91F8)
+    msgbox(Naranja_Route106_Text_081B9222, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route106_EventScript_Boy2 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE106_339, Naranja_Route106_Text_081B8EF0, Naranja_Route106_Text_081B8F25)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_Route106_EventScript_Sub_0814F38D)
+    msgbox(Naranja_Route106_Text_081B8F55, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route106_EventScript_Sub_0814F38D {
+    trainerbattle_rematch(TRAINER_NARANJA_ROUTE106_339, Naranja_Route106_Text_081B8FAC, Naranja_Route106_Text_081B8FF5)
+    msgbox(Naranja_Route106_Text_081B9011, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route106_EventScript_Fisherman {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE106_340, Naranja_Route106_Text_081B9052, Naranja_Route106_Text_081B90D3)
+    msgbox(Naranja_Route106_Text_081B910A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route106_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x40)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route106_EventScript_Sign_4 {
+    checkflag(FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    checkflag(FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    setflag(FLAG_NARANJA_ENCOUNTERED_ROUTE106_SQUIRTLE)
+    setwildbattle(SPECIES_SQUIRTLE, 5, 0)
+    special(BattleSetup_StartLatiBattle)
+    release
+    end
+}
+
+text Naranja_Route106_Text_081B8EF0 {
+    "Which do you prefer, fishing in the\nsea or a stream?"
+}
+
+text Naranja_Route106_Text_081B8F25 {
+    "Like in deep-sea fishing, I lost\nspectacularly!"
+}
+
+text Naranja_Route106_Text_081B8F55 {
+    "Fishing is the greatest whether it’s\nin the sea or a stream.\lYou agree with me, right?"
+}
+
+text Naranja_Route106_Text_081B8FAC {
+    "I caught a bunch of POKéMON fishing.\nI’ll show you an impressive battle!"
+}
+
+text Naranja_Route106_Text_081B8FF5 {
+    "I lost again spectacularly!"
+}
+
+text Naranja_Route106_Text_081B9011 {
+    "Win or lose, POKéMON are the greatest!\nYou agree with me, right?"
+}
+
+text Naranja_Route106_Text_081B9052 {
+    "What do people do if they need to go\nto a washroom?\pWhat if my ROD hooks a big one while\nI’m in the washroom? I just can’t go..."
+}
+
+text Naranja_Route106_Text_081B90D3 {
+    "I lost because I’m trying to not go\nto the washroom..."
+}
+
+text Naranja_Route106_Text_081B910A {
+    "Oh, no! I’ve got this feeling I’ll hook\na big one!"
+}
+
+text Naranja_Route106_Text_081B913D {
+    "Hahahah! I’m a lousy runner, but in\nthe water you can’t catch me!"
+}
+
+text Naranja_Route106_Text_081B917F {
+    "I give up!"
+}
+
+text Naranja_Route106_Text_081B918A {
+    "I wouldn’t lose in a swim race..."
+}
+
+text Naranja_Route106_Text_081B91AC {
+    "The sea is my backyard. I’m not going\nto take it easy because you’re a kid!"
+}
+
+text Naranja_Route106_Text_081B91F8 {
+    "Did you take it easy on me by any\nchance?"
+}
+
+text Naranja_Route106_Text_081B9222 {
+    "Drifting along with the waves...\nI love it! Why don’t you give it a try?"
+}

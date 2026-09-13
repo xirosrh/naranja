@@ -1,0 +1,310 @@
+{
+  "id": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_AquaHideout_B1F",
+  "layout": "LAYOUT_NARANJA_AQUA_HIDEOUT_B1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_TEAM_HIDESHOAL_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_AQUA",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_241",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 27,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_AquaHideout_B1F_EventScript_Object1",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_241_2",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 6,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "5",
+      "script": "Naranja_AquaHideout_B1F_EventScript_Object2",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 29,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_B1F_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_242",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_2",
+      "x": 20,
+      "y": 18,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
+      "movement_range_x": 4,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Naranja_AquaHideout_B1F_EventScript_Object4",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_1F_241_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_2",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 15,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_B1F_EventScript_ItemBall_2",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_3",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 16,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_B1F_EventScript_ItemBall_3",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_4",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 15,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_B1F_EventScript_ItemBall_4",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_4"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_5",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 16,
+      "y": 10,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_AquaHideout_B1F_EventScript_ItemBall_5",
+      "flag": "FLAG_HIDE_NARANJA_AQUA_HIDEOUT_B1F_ITEM_BALL_5"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 29,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_1F",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 18,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B2F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B2F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B2F",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 31,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 27,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 20,
+      "y": 4,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 27,
+      "y": 12,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 3,
+      "y": 15,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 3,
+      "y": 20,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 32,
+      "y": 19,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 23,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "22"
+    },
+    {
+      "x": 45,
+      "y": 3,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 42,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 45,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 48,
+      "y": 5,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "16"
+    },
+    {
+      "x": 42,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "15"
+    },
+    {
+      "x": 45,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "20"
+    },
+    {
+      "x": 48,
+      "y": 9,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "13"
+    },
+    {
+      "x": 42,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "24"
+    },
+    {
+      "x": 45,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "17"
+    },
+    {
+      "x": 48,
+      "y": 13,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 42,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 45,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "17"
+    },
+    {
+      "x": 48,
+      "y": 17,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_AQUA_HIDEOUT_B1F",
+      "dest_warp_id": "19"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

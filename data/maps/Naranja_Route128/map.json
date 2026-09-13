@@ -1,0 +1,180 @@
+{
+  "id": "MAP_NARANJA_ROUTE128",
+  "region": "REGION_HOENN",
+  "name": "Naranja_Route128",
+  "layout": "LAYOUT_NARANJA_ROUTE128",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_ROUTE_128",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ROUTE666",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE129",
+      "offset": 0,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_NARANJA_PUMMELO_ISLAND",
+      "offset": -40,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_NARANJA_UNDERWATER4",
+      "offset": 0,
+      "direction": "dive"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_DITTO_DOLL",
+      "graphics_id": "OBJ_EVENT_GFX_DITTO_DOLL",
+      "x": 77,
+      "y": 24,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_RIGHT_UP_LEFT_DOWN",
+      "movement_range_x": 5,
+      "movement_range_y": 5,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_MandarinDesert_EventScript_Man6_2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 35,
+      "y": 34,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 5,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "7",
+      "script": "Naranja_Route128_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_GARY",
+      "x": 40,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_ROUTE128_STEVEN"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_246",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_6",
+      "x": 37,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_ROUTE128_246"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_247",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_7",
+      "x": 38,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_ROUTE128_247"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_FISHERMAN",
+      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
+      "x": 63,
+      "y": 28,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_Route128_EventScript_Fisherman",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 24,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_Route128_EventScript_Man4",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_ROUTE128_WOMAN_7",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 47,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_Route128_EventScript_Woman7",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 49,
+      "y": 9,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_ROUTE128_HEART_SCALE_1"
+    },
+    {
+      "type": "hidden_item",
+      "x": 57,
+      "y": 21,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_ROUTE128_HEART_SCALE_2"
+    },
+    {
+      "type": "hidden_item",
+      "x": 31,
+      "y": 33,
+      "elevation": 3,
+      "item": "ITEM_HEART_SCALE",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_ROUTE128_HEART_SCALE_3"
+    }
+  ]
+}

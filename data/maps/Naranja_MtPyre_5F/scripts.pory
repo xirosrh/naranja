@@ -1,0 +1,30 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_5F_MapScripts {
+}
+
+script Naranja_MtPyre_5F_EventScript_HexManiac {
+    trainerbattle_single(TRAINER_NARANJA_BEMENTER_109, Naranja_MtPyre_5F_Text_08196939, Naranja_MtPyre_5F_Text_08196997)
+    msgbox(Naranja_MtPyre_5F_Text_081969AC, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_5F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0xDD)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_MtPyre_5F_Text_08196939 {
+    "I love all things horrifying...\nIt’s like a disease...\pWhen I’m here...\nI shiver with fear..."
+}
+
+text Naranja_MtPyre_5F_Text_08196997 {
+    "Losing, I dislike..."
+}
+
+text Naranja_MtPyre_5F_Text_081969AC {
+    "I want to see dreadful things...\nI can’t leave...\pStay...\nWon’t you stay with me?"
+}

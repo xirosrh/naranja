@@ -1,0 +1,21 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_Rooms_1F_MapScripts {
+}
+
+script Naranja_AbandonedShip_Rooms_1F_EventScript_Gentleman {
+    msgbox(Naranja_AbandonedShip_Rooms_1F_Text_0819850A, MSGBOX_NPC)
+    end
+}
+
+script Naranja_AbandonedShip_Rooms_1F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x7A)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_AbandonedShip_Rooms_1F_Text_0819850A {
+    "Ships of this sort are rare, so I’m\ntaking a look around.\pHmhm...\nThere appear to be other cabins..."
+}

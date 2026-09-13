@@ -1,0 +1,57 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandSouth_Mart_MapScripts {
+}
+
+script Naranja_MandarinIslandSouth_Mart_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MandarinIslandSouth_Mart_Mart_08153ED4)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_Mart_EventScript_Boy2 {
+    msgbox(Naranja_MandarinIslandSouth_Mart_Text_081781C9, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_Mart_EventScript_OldWoman1 {
+    msgbox(Naranja_MandarinIslandSouth_Mart_Text_08178240, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_Mart_EventScript_Lass {
+    msgbox(Naranja_MandarinIslandSouth_Mart_Text_081782C0, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_MandarinIslandSouth_Mart_Mart_08153ED4 {
+    ITEM_GREAT_BALL
+    ITEM_NEST_BALL
+    ITEM_SUPER_POTION
+    ITEM_ANTIDOTE
+    ITEM_PARALYZE_HEAL
+    ITEM_AWAKENING
+    ITEM_BURN_HEAL
+    ITEM_ICE_HEAL
+    ITEM_REPEL
+    ITEM_X_SPECIAL
+    ITEM_FLUFFY_TAIL
+}
+
+text Naranja_MandarinIslandSouth_Mart_Text_081781C9 {
+    "For any POKéMON match, X SPECIAL\nis crucial.\pIt jacks up the power of some moves\neven though it’s only for one battle."
+}
+
+text Naranja_MandarinIslandSouth_Mart_Text_08178240 {
+    "They don’t sell any items that will let\nyou win CONTESTS...\pIt means you have to raise POKéMON\ndiligently on an everyday basis."
+}
+
+text Naranja_MandarinIslandSouth_Mart_Text_081782C0 {
+    "The NEST BALL works better on\nweakened POKéMON.\pVERDANTURF is the only place you can\nbuy it."
+}

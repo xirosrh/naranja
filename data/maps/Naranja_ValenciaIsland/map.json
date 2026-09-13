@@ -1,0 +1,306 @@
+{
+  "id": "MAP_NARANJA_VALENCIA_ISLAND",
+  "region": "REGION_HOENN",
+  "name": "Naranja_ValenciaIsland",
+  "layout": "LAYOUT_NARANJA_VALENCIA_ISLAND",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_VALENCIA_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_ORANGE_ISLANDS",
+      "offset": -50,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE",
+      "offset": 10,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_BOY_2",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "x": 15,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_COPY_PLAYER_COUNTERCLOCKWISE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Boy2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_GIRL_3",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 20,
+      "y": 21,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "9",
+      "script": "Naranja_TangeloIsland_EventScript_Girl2",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_ISLAND_G00_M00_GIRL_3"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_MART_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "x": 21,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_MartEmployee",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_NURSE",
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 4,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_Harbor_EventScript_Beauty",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 7,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_DOWN_UP_RIGHT",
+      "movement_range_x": 6,
+      "movement_range_y": 7,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MikanIsland_EventScript_Wingull",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_SS_TIDAL",
+      "graphics_id": "OBJ_EVENT_GFX_SS_TIDAL",
+      "x": 3,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MikanIsland_EventScript_Wingull",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_GRASS_CUSHION",
+      "graphics_id": "OBJ_EVENT_GFX_GRASS_CUSHION",
+      "x": 31,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MikanIsland_EventScript_Wingull",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_WINGULL_2",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 3,
+      "y": 17,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_range_x": 3,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MikanIsland_EventScript_Wingull",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 5,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_EventScript_OldWoman2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_ISLAND_WINGULL_3",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 14,
+      "y": 1,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 6,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MikanIsland_EventScript_Wingull",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND_HOUSE4",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 4,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND_POKEMON_CENTER_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 15,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND_POKEMON_CENTER_1F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 36,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 36,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_5"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 6,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_5"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_7"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaIsland_EventScript_Trigger_8"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "hidden_item",
+      "x": 512,
+      "y": 22,
+      "elevation": 0,
+      "item": "ITEM_NARANJA_UNUSED_0EA",
+      "flag": "FLAG_HIDDEN_ITEM_NARANJA_VALENCIA_ISLAND_0_EA_3"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_ValenciaIsland_EventScript_Sign_4"
+    }
+  ]
+}

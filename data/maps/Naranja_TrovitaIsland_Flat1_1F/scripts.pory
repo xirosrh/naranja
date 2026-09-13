@@ -1,0 +1,23 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_Flat1_1F_MapScripts {
+}
+
+script Naranja_TrovitaIsland_Flat1_1F_EventScript_Man4 {
+    msgbox(Naranja_TrovitaIsland_Flat1_1F_Text_08184DB4, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_Flat1_1F_EventScript_Woman7 {
+    msgbox(Naranja_TrovitaIsland_Flat1_1F_Text_08184DE9, MSGBOX_NPC)
+    end
+}
+
+text Naranja_TrovitaIsland_Flat1_1F_Text_08184DB4 {
+    "Every POKéMON has a special ability\nthat it can use."
+}
+
+text Naranja_TrovitaIsland_Flat1_1F_Text_08184DE9 {
+    "POKéMON are such strange creatures."
+}

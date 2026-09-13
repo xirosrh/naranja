@@ -1,0 +1,118 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandSouth_DepartmentStore_5F_MapScripts {
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_Woman4 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A078)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_Woman4_2 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A0AC)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_Woman4_3 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A0DC)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_Woman4_4 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemartdecoration2(Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A10C)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_Woman2 {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_5F_Text_0818C4F9, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_Woman3 {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_5F_Text_0818C59F, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_5F_EventScript_LittleGirl2 {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_5F_Text_0818C556, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A078 {
+    ITEM_X_DEFEND
+    ITEM_X_SPEED
+    ITEM_X_ACCURACY
+    ITEM_SUPER_REPEL
+    ITEM_SUN_STONE
+    ITEM_MOON_STONE
+    ITEM_FIRE_STONE
+    ITEM_THUNDER_STONE
+    ITEM_WATER_STONE
+    ITEM_LEAF_STONE
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A0AC {
+    ITEM_BIG_MUSHROOM
+    ITEM_PEARL
+    ITEM_BIG_PEARL
+    ITEM_STARDUST
+    ITEM_STAR_PIECE
+    ITEM_NUGGET
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A0DC {
+    ITEM_CARBOS
+    ITEM_CALCIUM
+    ITEM_RARE_CANDY
+    ITEM_PP_UP
+    ITEM_ZINC
+    ITEM_PP_MAX
+    ITEM_GUARD_SPEC
+    ITEM_DIRE_HIT
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_5F_Mart_0815A10C {
+    ITEM_HP_UP
+    ITEM_PROTEIN
+    ITEM_IRON
+    ITEM_RED_SHARD
+    ITEM_BLUE_SHARD
+    ITEM_YELLOW_SHARD
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_5F_Text_0818C4F9 {
+    "This place is full of cute DOLLS.\pI should buy some for me, instead of\njust for my children."
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_5F_Text_0818C556 {
+    "I’m not big enough to raise POKéMON,\nso I’m getting a cute DOLL instead."
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_5F_Text_0818C59F {
+    "They sell many cute MATS here.\pI wonder which one I should get?\nMaybe I’ll buy them all..."
+}

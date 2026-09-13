@@ -2627,32 +2627,32 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
     {
         switch (gMapHeader.regionMapSectionId)
         {
-        case MAPSEC_ISLA_TROVITA:
+        case MAPSEC_TROVITA_ISLAND:
         case MAPSEC_PEWTER_CITY:
             multi = TYPE_ROCK;
             break;
-        case MAPSEC_7_ISLAS_POMELO:
+        case MAPSEC_SEVEN_GRAPEFRUIT_ISLANDS:
             multi = TYPE_FIGHTING;
             break;
-        case MAPSEC_ISLA_MANDARIN:
+        case MAPSEC_MANDARIN_ROUTE_ISLAND_NORTH:
         case MAPSEC_VERMILION_CITY:
             multi = TYPE_ELECTRIC;
             break;
-        case MAPSEC_VALLE_CHARIZARD:
+        case MAPSEC_CHARICIFIC_VALLEY:
         case MAPSEC_CINNABAR_ISLAND:
             multi = TYPE_FIRE;
             break;
-        case MAPSEC_ISLA_VALENCIA:
+        case MAPSEC_VALENCIA_ISLAND:
             multi = TYPE_NORMAL;
             break;
-        case MAPSEC_ISLA_SHAMOUTI:
+        case MAPSEC_SHAMOUTI_ISLAND:
             multi = TYPE_FLYING;
             break;
-        case MAPSEC_ISLA_MELLSWEET:
+        case MAPSEC_MELLSWEET_ISLAND:
         case MAPSEC_SAFFRON_CITY:
             multi = TYPE_PSYCHIC;
             break;
-        case MAPSEC_ISLA_NUEVA:
+        case MAPSEC_NEW_ISLAND:
         case MAPSEC_CERULEAN_CITY:
             multi = TYPE_WATER;
             break;

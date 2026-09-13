@@ -1,0 +1,29 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_CharicificValley_House_MapScripts {
+}
+
+script Naranja_CharicificValley_House_EventScript_OldMan2 {
+    msgbox(Naranja_CharicificValley_House_Text_08176D07, MSGBOX_NPC)
+    end
+}
+
+script Naranja_CharicificValley_House_EventScript_Zigzagoon {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_ZIGZAGOON, 0)
+    msgbox(Naranja_CharicificValley_House_Text_08176D94, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_CharicificValley_House_Text_08176D07 {
+    "My wife’s warming an EGG in the hot\nsprings. This is what she told me.\pShe left two POKéMON with the DAY CARE.\nAnd they discovered that EGG!"
+}
+
+text Naranja_CharicificValley_House_Text_08176D94 {
+    "ZIGZAGOON: Pshoo!"
+}

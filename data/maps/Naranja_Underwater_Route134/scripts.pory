@@ -1,0 +1,11 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Underwater_Route134_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_Underwater_Route134_OnResume
+}
+
+script Naranja_Underwater_Route134_OnResume {
+    setdivewarp(MAP_NARANJA_ROUTE134, 0xFF, 0x3C, 0x1F)
+    end
+}

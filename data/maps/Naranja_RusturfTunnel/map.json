@@ -1,0 +1,405 @@
+{
+  "id": "MAP_NARANJA_RUSTURF_TUNNEL",
+  "region": "REGION_HOENN",
+  "name": "Naranja_RusturfTunnel",
+  "layout": "LAYOUT_NARANJA_RUSTURF_TUNNEL",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_CRYSTAL_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_AQUA",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_BLACK_BELT",
+      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
+      "x": 22,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_BlackBelt",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_BLACK_BELT"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 25,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_BreakableRock",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_BREAKABLE_ROCK"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 34,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_ItemBall",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_ITEM_BALL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_MACHOKE_FACING_AWAY",
+      "graphics_id": "OBJ_EVENT_GFX_MACHOKE_FACING_AWAY",
+      "x": 15,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_MachokeFacingAway",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_MACHOKE_FACING_AWAY"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_OLD_MAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 21,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_OLD_MAN_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_241",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 27,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Object6",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 29,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Wingull",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_WINGULL"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_BREAKABLE_ROCK_2",
+      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "x": 23,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ColdPath_EventScript_BreakableRock",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_BREAKABLE_ROCK_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "x": 24,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_RusturfTunnel_EventScript_Hiker",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_RUSTURF_TUNNEL_WOMAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 28,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Woman3",
+      "flag": "FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_WOMAN_3"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 12,
+      "y": 0,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 31,
+      "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "17"
+    },
+    {
+      "x": 25,
+      "y": 21,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_MANDARIN_ROUTE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 12,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "12"
+    },
+    {
+      "x": 31,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "18"
+    },
+    {
+      "x": 32,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "19"
+    },
+    {
+      "x": 27,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "21"
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "25"
+    },
+    {
+      "x": 25,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "11"
+    },
+    {
+      "x": 23,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "23"
+    },
+    {
+      "x": 24,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MANDARIN_ROUTE",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 20,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "8"
+    },
+    {
+      "x": 20,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "27"
+    },
+    {
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "24"
+    },
+    {
+      "x": 7,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "26"
+    },
+    {
+      "x": 3,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "22"
+    },
+    {
+      "x": 1,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "4"
+    },
+    {
+      "x": 3,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 23,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 6,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 24,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "16"
+    },
+    {
+      "x": 34,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "9"
+    },
+    {
+      "x": 8,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "14"
+    },
+    {
+      "x": 34,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 26,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "15"
+    },
+    {
+      "x": 26,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_RUSTURF_TUNNEL",
+      "dest_warp_id": "13"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 5,
+      "elevation": 3,
+      "var": "VAR_NARANJA_BEMENTER_STORY_STATE_2",
+      "var_value": "0",
+      "script": "Naranja_RusturfTunnel_EventScript_Trigger_5"
+    }
+  ],
+  "bg_events": []
+}

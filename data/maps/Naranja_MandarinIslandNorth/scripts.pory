@@ -1,0 +1,205 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandNorth_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MandarinIslandNorth_OnTransition
+}
+
+script Naranja_MandarinIslandNorth_OnTransition {
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0818)
+    clearflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_WOMAN_7)
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0832)
+    clearflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0063)
+    setvar(VAR_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_STORY_STATE, 0)
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D1)
+    call_if(EQUAL, Naranja_MandarinIslandNorth_EventScript_Sub_0814C053)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sub_0814C053 {
+    clearflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_G10_M00_WATTSON)
+    setflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_G00_M02_WATTSON)
+    return
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Boy3 {
+    msgbox(Naranja_MandarinIslandNorth_Text_081664DF, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Maniac {
+    msgbox(Naranja_MandarinIslandNorth_Text_0816655C, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Woman5 {
+    msgbox(Naranja_MandarinIslandNorth_Text_081665DB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Boy4 {
+    msgbox(Naranja_MandarinIslandNorth_Text_0816662A, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sign_6 {
+    msgbox(Naranja_MandarinIslandNorth_Text_08166665, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sign_2 {
+    msgbox(Naranja_MandarinIslandNorth_Text_08166697, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sign_7 {
+    msgbox(Naranja_MandarinIslandNorth_Text_081666E4, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sign_8 {
+    msgbox(Naranja_MandarinIslandNorth_Text_0816671C, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_SchoolKidM {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0062)
+    goto_if(EQUAL, Naranja_MandarinIslandNorth_EventScript_Sub_0814C0BA)
+    msgbox(Naranja_MandarinIslandNorth_Text_0816674A, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_0062)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sub_0814C0BA {
+    msgbox(Naranja_MandarinIslandNorth_Text_08166879, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Man3 {
+    lock
+    return
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Tracey {
+    return
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Wattson {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D1)
+    goto_if(EQUAL, Naranja_MandarinIslandNorth_EventScript_Sub_0814C368)
+    compare_var_to_value(VAR_NARANJA_MIKAN_GYM_CHALLENGE_STATE, 2)
+    goto_if(EQUAL, Naranja_MandarinIslandNorth_EventScript_Sub_0814C33C)
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D0)
+    goto_if(EQUAL, Naranja_MandarinIslandNorth_EventScript_Sub_0814C332)
+    msgbox(Naranja_MandarinIslandNorth_Text_081661C1, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x10F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D0)
+    msgbox(Naranja_MandarinIslandNorth_Text_08166331, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sub_0814C332 {
+    msgbox(Naranja_MandarinIslandNorth_Text_08166331, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sub_0814C33C {
+    msgbox(Naranja_MandarinIslandNorth_Text_081663EB, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x138)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_EVENT_COMPLETE_00D1)
+    msgbox(Naranja_MandarinIslandNorth_Text_08166488, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sub_0814C368 {
+    msgbox(Naranja_MandarinIslandNorth_Text_08166488, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_Sign_3 {
+    msgbox(Naranja_MandarinIslandNorth_Text_081A0D41, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinIslandNorth_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x4D)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_MandarinIslandNorth_Text_081661C1 {
+    "WATTSON: Oh, {PLAYER}{KUN}!\nYou look like you have a lot of zip!\lThat’s a good thing, wahahahaha!\pFine! I’ve decided!\nI need a favor, {PLAYER}{KUN}!\pMAUVILLE CITY has an underground\nsector called NEW MAUVILLE.\p{PLAYER}{KUN}, I’d like you to go there and\nswitch off the GENERATOR.\pThe GENERATOR has been running a bit\nhaywire. It’s getting unsafe.\pHere, this is the KEY to get into NEW\nMAUVILLE."
+}
+
+text Naranja_MandarinIslandNorth_Text_08166331 {
+    "WATTSON: Don’t you worry about it.\nIt won’t be a challenge to you.\pThe entrance to NEW MAUVILLE is just\na short SURF away from ROUTE 110.\pThat’s it, then, you have my trust!\nWahahahaha!"
+}
+
+text Naranja_MandarinIslandNorth_Text_081663EB {
+    "WATTSON: Wahahahaha!\pI knew it, {PLAYER}{KUN}! I knew I’d made\nthe right choice asking you!\pThis is my thanks - a TM containing\nTHUNDERBOLT!\pGo on, you’ve earned it!"
+}
+
+text Naranja_MandarinIslandNorth_Text_08166488 {
+    "WATTSON: Wahahahaha!\pIt pleases me to no end to see the\nyoung step up and take charge!"
+}
+
+text Naranja_MandarinIslandNorth_Text_081664DF {
+    "You know, it’s cool to have POKéMON\nbattles and stuff...\pBut if your POKéMON gets hurt, you\nhave to nurse it back to health."
+}
+
+text Naranja_MandarinIslandNorth_Text_0816655C {
+    "Los viajes en zepelín son\nextremadamente divertidos.\pMe encanta ver la cara de la gente\nque acaba de salir de uno de uno, jeje"
+}
+
+text Naranja_MandarinIslandNorth_Text_081665DB {
+    "Have you been to RYDEL’S CYCLES yet?\pRYDEL, the owner, is a very generous\nman."
+}
+
+text Naranja_MandarinIslandNorth_Text_0816662A {
+    "Even if you’re riding a BIKE, wild\nPOKéMON could jump you."
+}
+
+text Naranja_MandarinIslandNorth_Text_08166665 {
+    "MAUVILLE CITY\n“The bright and shiny city of fun!”"
+}
+
+text Naranja_MandarinIslandNorth_Text_08166697 {
+    "MAUVILLE CITY POKéMON GYM\nLEADER: WATTSON\l“The cheerfully electrifying man!”"
+}
+
+text Naranja_MandarinIslandNorth_Text_081666E4 {
+    "“Ride in gravel and shake up your\nsoul!”\lRYDEL’S CYCLES"
+}
+
+text Naranja_MandarinIslandNorth_Text_0816671C {
+    "“The play spot for all!”\nMAUVILLE GAME CORNER"
+}
+
+text Naranja_MandarinIslandNorth_Text_0816674A {
+    "Hi, do you check out TV at all?\pThey’ve added a bunch of cool new\nshows recently.\pTV is so cool. I’ve seen my friends on\nTV just out of the blue.\pAnd, sometimes, they even put you on TV\nwithout telling you.\pI wish I would be on TV sometime.\pThat’s why I think you should check\nout TVs whenever you can."
+}
+
+text Naranja_MandarinIslandNorth_Text_08166879 {
+    "Hi, have you been checking out TVs?"
+}
+
+text Naranja_MandarinIslandNorth_Text_081A0D41 {
+    "“Selected items for your convenience!”\nPOKéMON MART"
+}

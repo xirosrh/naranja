@@ -1,0 +1,165 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_HamlinIsland_House2_MapScripts {
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Gentleman {
+    lock
+    faceplayer
+    dotimebasedevents
+    call(Naranja_HamlinIsland_House2_EventScript_Sub_081541B4)
+    checkflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012B)
+    goto_if(EQUAL, Naranja_HamlinIsland_House2_EventScript_Sub_08154254)
+    checkflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012C)
+    call_if(EQUAL, Naranja_HamlinIsland_House2_EventScript_Sub_081541CE)
+    checkflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012C)
+    call_if(LESS_THAN, Naranja_HamlinIsland_House2_EventScript_Sub_081541D7)
+    setflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012C)
+    specialvar(VAR_RESULT, GetLeadMonFriendshipScore)
+    compare_var_to_value(VAR_RESULT, 4)
+    goto_if(GREATER_THAN_OR_EQUAL, Naranja_HamlinIsland_House2_EventScript_Sub_081541EC)
+    specialvar(VAR_RESULT, GetLeadMonFriendshipScore)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(GREATER_THAN_OR_EQUAL, Naranja_HamlinIsland_House2_EventScript_Sub_0815421B)
+    goto(Naranja_HamlinIsland_House2_EventScript_Sub_08154225)
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_081541B4 {
+    checkflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012B)
+    goto_if(LESS_THAN, Naranja_HamlinIsland_House2_EventScript_Sub_081A14DC)
+    specialvar(VAR_RESULT, GetDaysUntilPacifidlogTMAvailable)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_HamlinIsland_House2_EventScript_Sub_081541E8)
+    return
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_081541CE {
+    msgbox(Naranja_HamlinIsland_House2_Text_08179155, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_081541D7 {
+    msgbox(Naranja_HamlinIsland_House2_Text_081790C1, MSGBOX_DEFAULT)
+    msgbox(Naranja_HamlinIsland_House2_Text_08179155, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_081541E8 {
+    clearflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012B)
+    return
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_081541EC {
+    msgbox(Naranja_HamlinIsland_House2_Text_08179169, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x13B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012B)
+    special(SetPacifidlogTMReceivedDay)
+    msgbox(Naranja_HamlinIsland_House2_Text_08179283, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_0815421B {
+    msgbox(Naranja_HamlinIsland_House2_Text_081791CA, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_08154225 {
+    msgbox(Naranja_HamlinIsland_House2_Text_0817922D, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x135)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_012B)
+    special(SetPacifidlogTMReceivedDay)
+    msgbox(Naranja_HamlinIsland_House2_Text_08179283, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_08154254 {
+    specialvar(VAR_RESULT, GetDaysUntilPacifidlogTMAvailable)
+    buffernumberstring(0, VAR_RESULT)
+    msgbox(Naranja_HamlinIsland_House2_Text_081792F2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Azurill {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_AZURILL, 0)
+    msgbox(Naranja_HamlinIsland_House2_Text_0817938B, MSGBOX_DEFAULT)
+    waitmoncry
+    msgbox(Naranja_HamlinIsland_House2_Text_0817939B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Azurill_2 {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_AZURILL, 2)
+    msgbox(Naranja_HamlinIsland_House2_Text_081793CC, MSGBOX_DEFAULT)
+    waitmoncry
+    msgbox(Naranja_HamlinIsland_House2_Text_081793DD, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House2_EventScript_Sub_081A14DC {
+    return
+}
+
+text Naranja_HamlinIsland_House2_Text_081790C1 {
+    ""
+}
+
+text Naranja_HamlinIsland_House2_Text_08179155 {
+    "Ah!\nYour POKéMON..."
+}
+
+text Naranja_HamlinIsland_House2_Text_08179169 {
+    "It clearly likes you very much.\pA POKéMON that adoring and adorable\ndeserves a TM like this, no?"
+}
+
+text Naranja_HamlinIsland_House2_Text_081791CA {
+    "Hmm...\nIt’s not bad, but it’s also not good.\pYou, as the TRAINER, need to put in\nsome more effort."
+}
+
+text Naranja_HamlinIsland_House2_Text_0817922D {
+    "It has a vicious look to it.\pA frightening POKéMON like that\ndeserves a TM like this."
+}
+
+text Naranja_HamlinIsland_House2_Text_08179283 {
+    "If a POKéMON likes you a lot, RETURN’s\npower is enhanced.\pIf it doesn’t like you, FRUSTRATION’s\npower goes up."
+}
+
+text Naranja_HamlinIsland_House2_Text_081792F2 {
+    "Oh, yes. In about {STR_VAR_1} or so days,\nI should be getting a good TM or two.\pYou should come see me then.\nI’ll give you a TM that’s suitable for\lyour POKéMON."
+}
+
+text Naranja_HamlinIsland_House2_Text_0817938B {
+    "AZURILL: Rurii."
+}
+
+text Naranja_HamlinIsland_House2_Text_0817939B {
+    "It appears to be very friendly with the\nTRAINER."
+}
+
+text Naranja_HamlinIsland_House2_Text_081793CC {
+    "AZURILL: Rururi!"
+}
+
+text Naranja_HamlinIsland_House2_Text_081793DD {
+    "It doesn’t appear to like the TRAINER\nvery much."
+}

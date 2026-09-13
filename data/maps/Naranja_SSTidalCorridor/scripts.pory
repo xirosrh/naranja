@@ -1,0 +1,240 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SSTidalCorridor_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 1: Naranja_SSTidalCorridor_OnFrame_1
+        VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 5: Naranja_SSTidalCorridor_OnFrame_2
+        VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 9: Naranja_SSTidalCorridor_OnFrame_3
+        VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 10: Naranja_SSTidalCorridor_OnFrame_4
+    ]
+}
+
+script Naranja_SSTidalCorridor_OnFrame_1 {
+    special(SetSSTidalFlag)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 2)
+    lockall
+    playse(SE_DING_DONG)
+    msgbox(Naranja_SSTidalCorridor_Text_08199007, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_SSTidalCorridor_OnFrame_2 {
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 6)
+    lockall
+    playse(SE_DING_DONG)
+    msgbox(Naranja_SSTidalCorridor_Text_08199088, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_SSTidalCorridor_OnFrame_3 {
+    special(ResetSSTidalFlag)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 3)
+    lockall
+    playse(SE_DING_DONG)
+    msgbox(Naranja_SSTidalCorridor_Text_08199088, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_SSTidalCorridor_OnFrame_4 {
+    special(ResetSSTidalFlag)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 8)
+    lockall
+    playse(SE_DING_DONG)
+    msgbox(Naranja_SSTidalCorridor_Text_081990B4, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_OldMan1 {
+    msgbox(Naranja_SSTidalCorridor_Text_08199291, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Wingull {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    msgbox(Naranja_SSTidalCorridor_Text_08199388, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sign_9 {
+    msgbox(Naranja_SSTidalCorridor_Text_081993A1, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sign_10 {
+    msgbox(Naranja_SSTidalCorridor_Text_081993A9, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sign_11 {
+    msgbox(Naranja_SSTidalCorridor_Text_081993B1, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sign_12 {
+    msgbox(Naranja_SSTidalCorridor_Text_081993B9, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sailor {
+    lock
+    faceplayer
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 4)
+    goto_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FDF8)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 8)
+    goto_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FE17)
+    msgbox(Naranja_SSTidalCorridor_Text_0819913B, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FDF8 {
+    setrespawn(8)
+    msgbox(Naranja_SSTidalCorridor_Text_081991F4, MSGBOX_DEFAULT)
+    checkflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_0104)
+    call_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FE36)
+    warp(MAP_NARANJA_KUMQUAT_ISLAND_HARBOR, 0xFF, 8, 0xB)
+    waitstate
+    release
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FE17 {
+    setrespawn(4)
+    msgbox(Naranja_SSTidalCorridor_Text_081991F4, MSGBOX_DEFAULT)
+    checkflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_0104)
+    call_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FE36)
+    warp(MAP_NARANJA_MURCOTT_ISLAND_HARBOR, 0xFF, 8, 0xB)
+    waitstate
+    release
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FE36 {
+    setflag(FLAG_HIDE_NARANJA_SSTIDAL_ROOMS_MANIAC)
+    return
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sign_1 {
+    lockall
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 2)
+    goto_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FE5B)
+    compare_var_to_value(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_3, 7)
+    goto_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FE5B)
+    msgbox(Naranja_SSTidalCorridor_Text_08199268, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FE5B {
+    special(LookThroughPorthole)
+    waitstate
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sailor_2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_00F7)
+    goto_if(EQUAL, Naranja_SSTidalCorridor_EventScript_Sub_0815FE7A)
+    call(Naranja_SSTidalCorridor_EventScript_Sub_0815FE84)
+    msgbox(Naranja_SSTidalCorridor_Text_08199203, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FE7A {
+    msgbox(Naranja_SSTidalCorridor_Text_08199255, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FE84 {
+    checktrainerflag(0x1EE)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0x1EF)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0x126)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0xFF)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0x100)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0x281)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0x8A)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    checktrainerflag(0x77)
+    goto_if(LESS_THAN, Naranja_SSTidalCorridor_EventScript_Sub_0815FED5)
+    setflag(FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_00F7)
+    goto(Naranja_SSTidalCorridor_EventScript_Sub_0815FE7A)
+}
+
+script Naranja_SSTidalCorridor_EventScript_Sub_0815FED5 {
+    return
+}
+
+text Naranja_SSTidalCorridor_Text_08199007 {
+    "This ferry is built to plow through\nfast-running currents.\pWe hope you enjoy your voyage with us.\nFeel free to explore the ship."
+}
+
+text Naranja_SSTidalCorridor_Text_08199088 {
+    "We hope you enjoy your voyage on\nour ferry."
+}
+
+text Naranja_SSTidalCorridor_Text_081990B4 {
+    "We have made land in SLATEPORT CITY.\nThank you for sailing with us."
+}
+
+text Naranja_SSTidalCorridor_Text_0819913B {
+    "It’ll be some time before we make land,\nI reckon.\pYou can rest up in your cabin if you’d\nlike. Your cabin’s No. 2.\pThe bed in there is soft and plushy.\nI can attest to how comfy it is!"
+}
+
+text Naranja_SSTidalCorridor_Text_081991F4 {
+    "We’ve arrived!"
+}
+
+text Naranja_SSTidalCorridor_Text_08199203 {
+    "Go visit other cabins.\nTRAINERS bored of the boat trip will\lbe itching to battle."
+}
+
+text Naranja_SSTidalCorridor_Text_08199255 {
+    "Enjoy your cruise!"
+}
+
+text Naranja_SSTidalCorridor_Text_08199268 {
+    "The horizon spreads beyond the\nporthole."
+}
+
+text Naranja_SSTidalCorridor_Text_08199291 {
+    "MR. BRINEY: Welcome aboard, {PLAYER}{KUN}!\pThey made me honorary captain of the\nS.S. TIDAL!\pYou can call me CAPTAIN BRINEY now!\pYou know, I retired once before, but\nwhen I saw this majestic ship...\pLet me just say, it stirred my sleeping\nsoul as a sailor!"
+}
+
+text Naranja_SSTidalCorridor_Text_08199388 {
+    "PEEKO: Pihyo pihyohyo..."
+}
+
+text Naranja_SSTidalCorridor_Text_081993A1 {
+    "Cabin 1"
+}
+
+text Naranja_SSTidalCorridor_Text_081993A9 {
+    "Cabin 2"
+}
+
+text Naranja_SSTidalCorridor_Text_081993B1 {
+    "Cabin 3"
+}
+
+text Naranja_SSTidalCorridor_Text_081993B9 {
+    "Cabin 4"
+}

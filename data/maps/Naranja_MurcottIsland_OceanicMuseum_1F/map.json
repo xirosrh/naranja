@@ -1,0 +1,364 @@
+{
+  "id": "MAP_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_MurcottIsland_OceanicMuseum_1F",
+  "layout": "LAYOUT_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_MURCOTT_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 7,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Beauty",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_241",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 18,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Object2",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_241_2",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 12,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Object3",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_241_3",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 2,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Object4",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_VARS",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 3,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Vars",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_241_4",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 14,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Object6",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_BEAUTY_2",
+      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "x": 12,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Beauty",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_241_5",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 8,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Object8",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_WOMAN_7",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Woman7",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_WOMAN_7"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 10,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Maniac",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_WOMAN_7"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_MAN_3",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "x": 17,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Man3",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_WOMAN_7"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_LITTLE_GIRL_2",
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "x": 18,
+      "y": 8,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_LittleGirl2",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_WOMAN_7"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_241_6",
+      "graphics_id": "OBJ_EVENT_GFX_VAR_1",
+      "x": 9,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Object13",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241_2"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_1F_REPORTER_M",
+      "graphics_id": "OBJ_EVENT_GFX_REPORTER_M",
+      "x": 7,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_ReporterM",
+      "flag": "FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_WOMAN_7"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MURCOTT_ISLAND",
+      "dest_warp_id": "5"
+    },
+    {
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MURCOTT_ISLAND",
+      "dest_warp_id": "7"
+    },
+    {
+      "x": 6,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 9,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_3",
+      "var_value": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 7,
+      "elevation": 3,
+      "var": "VAR_NARANJA_MURCOTT_ISLAND_EVENT_STATE_3",
+      "var_value": "0",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Trigger_2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_2"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_3"
+    },
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_4"
+    },
+    {
+      "type": "sign",
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_3"
+    },
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_4"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_7"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_8"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 7,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_9"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_10"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_10"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_12"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_MurcottIsland_OceanicMuseum_1F_EventScript_Sign_12"
+    }
+  ]
+}

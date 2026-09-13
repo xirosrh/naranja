@@ -1,0 +1,55 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MellsweetIsland_House3_MapScripts {
+}
+
+script Naranja_MellsweetIsland_House3_EventScript_Fisherman {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0098)
+    goto_if(EQUAL, Naranja_MellsweetIsland_House3_EventScript_Sub_0815A9B1)
+    msgbox(Naranja_MellsweetIsland_House3_Text_0818D909, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MellsweetIsland_House3_EventScript_Sub_0815A9BB)
+    msgbox(Naranja_MellsweetIsland_House3_Text_0818D9A9, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x108)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_MELLSWEET_ISLAND_EVENT_COMPLETE_0098)
+    msgbox(Naranja_MellsweetIsland_House3_Text_0818D9E3, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MellsweetIsland_House3_EventScript_Sub_0815A9B1 {
+    msgbox(Naranja_MellsweetIsland_House3_Text_0818DA44, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MellsweetIsland_House3_EventScript_Sub_0815A9BB {
+    msgbox(Naranja_MellsweetIsland_House3_Text_0818DA26, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_MellsweetIsland_House3_Text_0818D909 {
+    "Hey there, TRAINER!\nA SUPER ROD really is super!\pSay all you want, but this baby can\ncatch POKéMON off the seafloor!\pWhat do you think?\nYou want it, don’t you?"
+}
+
+text Naranja_MellsweetIsland_House3_Text_0818D9A9 {
+    "You bet, you bet!\nAfter all, a SUPER ROD is really super!"
+}
+
+text Naranja_MellsweetIsland_House3_Text_0818D9E3 {
+    "If there’s any water, try dropping in\nyour ROD and see what bites!"
+}
+
+text Naranja_MellsweetIsland_House3_Text_0818DA26 {
+    "Hunh?\nDon’t you like to fish?"
+}
+
+text Naranja_MellsweetIsland_House3_Text_0818DA44 {
+    "Go after the seafloor POKéMON with\nyour SUPER ROD."
+}

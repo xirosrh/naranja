@@ -1,0 +1,310 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_GraniteCave_B2F_MapScripts {
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Sub_081B17BA {
+    setorcopyvar(VAR_0x8000, 0x11E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x44)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Trigger_1 {
+    checkflag(FLAG_NARANJA_DEFEATED_CUEVA_KABUTO_MAWILE)
+    goto_if(LESS_THAN, Naranja_GraniteCave_B2F_EventScript_Sub_086B513B)
+    release
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Sub_086B513B {
+    lock
+    waitse
+    playmoncry(SPECIES_MAWILE, 0x2800)
+    waitse
+    nop
+    waitse
+    playmoncry(SPECIES_MAWILE, 0x528)
+    nop
+    waitse
+    playmoncry(SPECIES_MAWILE, 0x2A28)
+    nop
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_WALLY)
+    goto_if(EQUAL, Naranja_GraniteCave_B2F_EventScript_Sub_086B5170)
+    nop
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_B2F_Movement_086B51BC)
+    delay(0x10)
+    nop
+    msgbox(Naranja_GraniteCave_B2F_Text_086B5C30, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Sub_086B5170 {
+    nop
+    nop
+    nop
+    nop
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_B2F_Movement_08009606)
+    nop
+    msgbox(Naranja_GraniteCave_B2F_Text_086B5C8A, MSGBOX_AUTOCLOSE)
+    delay(0x20)
+    setwildbattle(SPECIES_MAWILE, 0x14, 0)
+    special(BattleSetup_StartLatiBattle)
+    delay(0x80)
+    setflag(FLAG_NARANJA_DEFEATED_CUEVA_KABUTO_MAWILE)
+    nop
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Trigger_4 {
+    lock
+    checkflag(FLAG_HIDE_NARANJA_KABUTO_CAVE_G24_M07_KECLEON_1)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    checkflag(FLAG_HIDE_NARANJA_MIKAN_ISLAND_G00_M20_SS_TIDAL)
+    call_if(LESS_THAN, Naranja_GraniteCave_B2F_EventScript_Trigger_2)
+    clearflag(FLAG_HIDE_NARANJA_MIKAN_ISLAND_G00_M20_SS_TIDAL)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_BEAUTY, Naranja_GraniteCave_B2F_Movement_086B854F)
+    delay(0x20)
+    msgbox(Naranja_GraniteCave_B2F_Text_086B8420, MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(1)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_B2F_Movement_086B8530)
+    delay(0x50)
+    fadescreen(0)
+    animateflash(2)
+    msgbox(Naranja_GraniteCave_B2F_Text_086B8580, MSGBOX_DEFAULT)
+    closemessage
+    playbgm(MUS_ENCOUNTER_MAGMA, 0)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_BEAUTY, Naranja_GraniteCave_B2F_Movement_086B8551)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_ZIGZAGOON, Naranja_GraniteCave_B2F_Movement_086B855B)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_F, Naranja_GraniteCave_B2F_Movement_086B855A)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_M, Naranja_GraniteCave_B2F_Movement_086B8559)
+    delay(0x40)
+    message(Naranja_GraniteCave_B2F_Text_086B8642)
+    waitmessage
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_ZIGZAGOON, Naranja_GraniteCave_B2F_Movement_086B8560)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_M, Naranja_GraniteCave_B2F_Movement_086B8563)
+    delay(0x30)
+    message(Naranja_GraniteCave_B2F_Text_086B8697)
+    waitmessage
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_F, Naranja_GraniteCave_B2F_Movement_086B8570)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_ZIGZAGOON, Naranja_GraniteCave_B2F_Movement_086B8573)
+    delay(0x30)
+    msgbox(Naranja_GraniteCave_B2F_Text_086B86F9, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_CAMERAMAN, Naranja_GraniteCave_B2F_Movement_086B857C)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_BEAUTY, Naranja_GraniteCave_B2F_Movement_086B857C)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_ZIGZAGOON, Naranja_GraniteCave_B2F_Movement_086B857C)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_F, Naranja_GraniteCave_B2F_Movement_086B857C)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_MAGMA_MEMBER_M, Naranja_GraniteCave_B2F_Movement_086B857C)
+    msgbox(Naranja_GraniteCave_B2F_Text_086B876E, MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(1)
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_B2F_Movement_086B8540)
+    delay(0x30)
+    fadescreen(0)
+    release
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Beauty {
+    playse(0x2F2F)
+    playse(0x5555)
+    playse(0x2F2F)
+    playse(0x2E2F)
+    gettime
+    return
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Trigger_2 {
+    applymovement(LOCALID_PLAYER, Naranja_GraniteCave_B2F_Movement_086B87AD)
+    message(Naranja_GraniteCave_B2F_Text_086B87C4)
+    delay(0x30)
+    waitmessage
+    release
+    end
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Zigzagoon {
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_BEAUTY, Naranja_GraniteCave_B2F_Movement_086B88ED)
+    applymovement(LOCALID_NARANJA_GRANITE_CAVE_B2F_CAMERAMAN, Naranja_GraniteCave_B2F_Movement_086B88ED)
+    goto(Naranja_Route108_EventScript_DittoDoll)
+}
+
+script Naranja_GraniteCave_B2F_EventScript_Kecleon1 {
+    msgbox(Naranja_GraniteCave_1F_Text_086B8B67, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_GraniteCave_1F_EventScript_Sub_086B38F4)
+    closemessage
+    waitse
+    playmoncry(SPECIES_KIRLIA, 0)
+    delay(0x20)
+    message(Naranja_GraniteCave_B2F_Text_086B8BB7)
+    waitmessage
+    goto(Naranja_GraniteCave_B2F_EventScript_Sub_081B17BA)
+}
+
+movement Naranja_GraniteCave_B2F_Movement_08009606 {
+    emote_exclamation_mark
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B51BC {
+    emote_exclamation_mark
+    jump_in_place_left
+    walk_right
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8530 {
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    set_invisible
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_right
+    walk_faster_down
+    walk_faster_down
+    face_up
+    face_up
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8540 {
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    set_visible
+    set_visible
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_left
+    walk_faster_up
+    walk_faster_up
+    face_right
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B854F {
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8551 {
+    face_down
+    delay_16
+    walk_in_place_faster_right
+    lock_facing_direction
+    walk_slow_left
+    unlock_facing_direction
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8559 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B855A {
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B855B {
+    walk_up
+    walk_up
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8560 {
+    walk_left
+    walk_up
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8563 {
+    delay_16
+    walk_in_place_faster_up
+    lock_facing_direction
+    walk_fast_down
+    walk_right
+    unlock_facing_direction
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8570 {
+    walk_right
+    walk_up
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B8573 {
+    delay_16
+    walk_in_place_faster_up
+    lock_facing_direction
+    walk_fast_down
+    walk_left
+    unlock_facing_direction
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B857C {
+    delay_16
+    delay_16
+    face_left
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B87AD {
+    walk_slow_right
+}
+
+movement Naranja_GraniteCave_B2F_Movement_086B88ED {
+    face_down
+}
+
+text Naranja_GraniteCave_B2F_Text_086B5C30 {
+    "{COLOR 0x04}¿Qué fue ese grito?\pSeguro que será algun tipo \nde monstruo extraño.\pCreo que… me voy."
+}
+
+text Naranja_GraniteCave_B2F_Text_086B5C8A {
+    "{COLOR 0x04}Ahh vaya… \nEra un mawile…\pEstá bien\p¿Querìas fiesta?\p¡Pues la tendrás!"
+}
+
+text Naranja_GraniteCave_B2F_Text_086B8420 {
+    "¡El TEAM ROCKET está\nrobando los fósiles!"
+}
+
+text Naranja_GraniteCave_B2F_Text_086B8580 {
+    "{COLOR 0x09}Reportera:{COLOR 0x01}\n¡Espectacularmente secuestrados\len este oscuro lugar\lpor la también oscura banda de villanos\lTEAM ROCKET,\lpodemos ver como se intentan hacer\lcon los Fósiles DOMO de esta cueva!"
+}
+
+text Naranja_GraniteCave_B2F_Text_086B8642 {
+    "JAMES: {COLOR 0x07}¡Enfócame bien!\pPues le dedicamos este robo\na nuestro jefe Giovanni, jeje."
+}
+
+text Naranja_GraniteCave_B2F_Text_086B8697 {
+    "MEOWTH: {COLOR 0x07}¡Quita! ¡So pelota!\p¡Jefe! Cuando veas esto que sepas\nque el plan entero fue idea mìa."
+}
+
+text Naranja_GraniteCave_B2F_Text_086B86F9 {
+    "JESSIE: {COLOR 0x07}¿De un gato? ¡Venga ya!\pAdemás el jefe me prefiere a mi\ly como aquì soy la que manda\lla que salgo soy yo."
+}
+
+text Naranja_GraniteCave_B2F_Text_086B876E {
+    "{COLOR 0x04}¿Queréis dejar ya de grabar\nese reportaje tan penoso?"
+}
+
+text Naranja_GraniteCave_B2F_Text_086B87C4 {
+    "¡No puedo dejarles!"
+}
+
+text Naranja_GraniteCave_B2F_Text_086B8BB7 {
+    "Desprendiste el fósil fácilmente."
+}

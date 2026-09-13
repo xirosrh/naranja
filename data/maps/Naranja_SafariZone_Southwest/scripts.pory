@@ -1,0 +1,30 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SafariZone_Southwest_MapScripts {
+}
+
+script Naranja_SafariZone_Southwest_EventScript_Scyther {
+    msgbox(Naranja_SafariZone_Southwest_Text_081C3C39, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SafariZone_Southwest_EventScript_Sign_1 {
+    msgbox(Naranja_SafariZone_Southwest_Text_081C3EA3, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_SafariZone_Southwest_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x19)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_SafariZone_Southwest_Text_081C3C39 {
+    "Sometimes, when I toss a オカキクケ at \nPOKéMON, it gets ignored.\pDo POKéMON have likes and dislikes\nabout what they eat?"
+}
+
+text Naranja_SafariZone_Southwest_Text_081C3EA3 {
+    "“Relieve your tired feet.”\nREST HOUSE"
+}

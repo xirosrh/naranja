@@ -1,0 +1,36 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_KumquatIsland_House2_MapScripts {
+}
+
+script Naranja_KumquatIsland_House2_EventScript_FatMan {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00EA)
+    goto_if(EQUAL, Naranja_KumquatIsland_House2_EventScript_Sub_08159BDA)
+    msgbox(Naranja_KumquatIsland_House2_Text_0818B83C, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x14C)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_00EA)
+    msgbox(Naranja_KumquatIsland_House2_Text_0818B883, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_KumquatIsland_House2_EventScript_Sub_08159BDA {
+    msgbox(Naranja_KumquatIsland_House2_Text_0818B883, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_KumquatIsland_House2_Text_0818B83C {
+    "Huh? What? What’s that?\pI’m not near awake yet...\nYou can have this..."
+}
+
+text Naranja_KumquatIsland_House2_Text_0818B883 {
+    "Yawn...\pSleep is essential for good health...\nSleep and regain health..."
+}

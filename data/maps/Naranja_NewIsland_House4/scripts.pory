@@ -1,0 +1,38 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_NewIsland_House4_MapScripts {
+}
+
+script Naranja_NewIsland_House4_EventScript_Man1 {
+    msgbox(Naranja_NewIsland_House4_Text_0818FC92, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_House4_EventScript_Woman5 {
+    msgbox(Naranja_NewIsland_House4_Text_0818FD41, MSGBOX_NPC)
+    end
+}
+
+script Naranja_NewIsland_House4_EventScript_Azumarill {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_AZUMARILL, 0)
+    msgbox(Naranja_NewIsland_House4_Text_0818FDD8, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_NewIsland_House4_Text_0818FC92 {
+    "Listen up, and I’ll tell you something\ngood.\pThere’s supposed to be an ancient\nruin in the sea around here.\pThere could be treasures just waiting\nto be discovered down there."
+}
+
+text Naranja_NewIsland_House4_Text_0818FD41 {
+    "Ancient treasures...\pIt would be nice if they existed, but\neven if they didn’t, it would be so\lbeautiful to take an underwater\lstroll with my POKéMON."
+}
+
+text Naranja_NewIsland_House4_Text_0818FDD8 {
+    "AZUMARILL: Marurii."
+}

@@ -1,0 +1,47 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ShamoutiIsland_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ShamoutiIsland_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_ShamoutiIsland_PokemonCenter_1F_OnTransition {
+    setrespawn(7)
+    end
+}
+
+script Naranja_ShamoutiIsland_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_ShamoutiIsland_PokemonCenter_1F_EventScript_Gentleman {
+    msgbox(Naranja_ShamoutiIsland_PokemonCenter_1F_Text_08186027, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ShamoutiIsland_PokemonCenter_1F_EventScript_Man4 {
+    msgbox(Naranja_ShamoutiIsland_PokemonCenter_1F_Text_08186086, MSGBOX_NPC)
+    end
+}
+
+script Naranja_ShamoutiIsland_PokemonCenter_1F_EventScript_Boy3 {
+    msgbox(Naranja_ShamoutiIsland_PokemonCenter_1F_Text_08186138, MSGBOX_NPC)
+    end
+}
+
+text Naranja_ShamoutiIsland_PokemonCenter_1F_Text_08186027 {
+    "Listen, kid, are you working\non a POKéDEX?\pHmm... Go to the SAFARI ZONE.\nThat’s my suggestion."
+}
+
+text Naranja_ShamoutiIsland_PokemonCenter_1F_Text_08186086 {
+    "Have you done anything at the\nRECORD CORNER?\pIt’s pretty neat. It mixes and matches\nthe records of TRAINERS.\pI don’t know quite how it works,\nbut it’s cool. It’s exciting, even!"
+}
+
+text Naranja_ShamoutiIsland_PokemonCenter_1F_Text_08186138 {
+    "Hey, you’ve got a POKéNAV!\nIt’s the same as mine.\pCheck out the TRAINER’S EYES on it.\pIt shows you TRAINERS who want a\nrematch with you.\pIsn’t it great?\nYou have to hand it to DEVON!"
+}

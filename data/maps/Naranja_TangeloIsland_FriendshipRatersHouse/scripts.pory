@@ -1,0 +1,15 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TangeloIsland_FriendshipRatersHouse_MapScripts {
+}
+
+script Naranja_TangeloIsland_FriendshipRatersHouse_EventScript_Lass {
+    msgbox(Naranja_TangeloIsland_FriendshipRatersHouse_Text_081BC0C3, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_TangeloIsland_FriendshipRatersHouse_Text_081BC0C3 {
+    "¡Hey tìo! ¿Acaso es que ve tu culo\nque yo te moleste a tì?\p¡Déjame ver la tele, hermano!"
+}

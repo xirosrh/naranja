@@ -1,0 +1,180 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_ContestLobby_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MurcottIsland_ContestLobby_OnTransition
+}
+
+script Naranja_MurcottIsland_ContestLobby_OnTransition {
+    call(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_081AE188)
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Teala {
+    setvar(VAR_0x800B, 7)
+    setvar(VAR_CONTEST_RANK, 2)
+    call(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_081A4E92)
+    call(Naranja_MurcottIsland_ContestLobby_EventScript_Sub_08155448)
+    special(SetContestTrainerGfxIds)
+    call(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_0815FBDB)
+    setvar(VAR_NARANJA_SIN_NOMBRE_EVENT_STATE_2, 3)
+    warp(MAP_NARANJA_LINK_CONTEST_ROOM1, 0xFF, 7, 5)
+    waitstate
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Sub_08155448 {
+    lockall
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CONTEST_LOBBY_TEALA, Naranja_MurcottIsland_ContestLobby_Movement_081554CC)
+    waitmovement(LOCALID_NONE)
+    playse(SE_BRIDGE_WALK)
+    setmetatile(4, 2, 0x221, 1)
+    setmetatile(4, 3, 0x261, 1)
+    special(DrawWholeMapView)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CONTEST_LOBBY_TEALA, Naranja_MurcottIsland_ContestLobby_Movement_081554CF)
+    waitmovement(LOCALID_NONE)
+    playse(SE_BRIDGE_WALK)
+    setmetatile(4, 2, 0x2D1, 1)
+    setmetatile(4, 3, 0x2D9, 1)
+    special(DrawWholeMapView)
+    delay(0x14)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CONTEST_LOBBY_TEALA, Naranja_MurcottIsland_ContestLobby_Movement_081554DC)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_ContestLobby_Movement_081554CA)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_KumquatIsland_ContestLobby_Text_081A6832, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CONTEST_LOBBY_TEALA, Naranja_MurcottIsland_ContestLobby_Movement_081554D3)
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_ContestLobby_Movement_081554C0)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    return
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Man4 {
+    msgbox(Naranja_MurcottIsland_ContestLobby_Text_0817C937, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Girl1 {
+    msgbox(Naranja_MurcottIsland_ContestLobby_Text_0817C9D5, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Woman3 {
+    msgbox(Naranja_MurcottIsland_ContestLobby_Text_0817CAEC, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_LittleGirl2 {
+    lockall
+    checkflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_005F)
+    goto_if(EQUAL, Naranja_MurcottIsland_ContestLobby_EventScript_Sub_08155526)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CONTEST_LOBBY_LITTLE_GIRL_2, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_ContestLobby_Text_0817CA67, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0x111)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    setflag(FLAG_NARANJA_MURCOTT_ISLAND_EVENT_COMPLETE_005F)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Sub_08155526 {
+    msgbox(Naranja_MurcottIsland_ContestLobby_Text_0817CA88, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Sign_3 {
+    lockall
+    fadescreen(1)
+    showcontestpainting(3)
+    releaseall
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Boy1 {
+    msgbox(Naranja_KumquatIsland_ContestLobby_Text_081B7225, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Sign_2 {
+    setvar(VAR_0x8008, 2)
+    setvar(VAR_0x8009, 2)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_CONTEST_LOBBY_BOY_1_6, Naranja_RusturfTunnel_Movement_081A083D)
+    applymovement(32776, Naranja_KumquatIsland_ContestLobby_Movement_081B7821)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_081B7681)
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_OldMan1 {
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_081B77B6)
+}
+
+script Naranja_MurcottIsland_ContestLobby_EventScript_Sign_1 {
+    goto(Naranja_KumquatIsland_ContestLobby_EventScript_Sub_081B783B)
+}
+
+movement Naranja_MurcottIsland_ContestLobby_Movement_081554C0 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    delay_8
+    set_invisible
+}
+
+movement Naranja_MurcottIsland_ContestLobby_Movement_081554CA {
+    walk_in_place_faster_left
+}
+
+movement Naranja_MurcottIsland_ContestLobby_Movement_081554CC {
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_MurcottIsland_ContestLobby_Movement_081554CF {
+    walk_down
+    walk_down
+    walk_in_place_faster_up
+}
+
+movement Naranja_MurcottIsland_ContestLobby_Movement_081554D3 {
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    delay_8
+    set_invisible
+}
+
+movement Naranja_MurcottIsland_ContestLobby_Movement_081554DC {
+    walk_in_place_faster_right
+}
+
+text Naranja_MurcottIsland_ContestLobby_Text_0817C937 {
+    "I want to raise a POKéMON that’s\nthe ultimate in “great” for both\lbattles and CONTESTS.\pIt’s vexing, trying to figure out\nwhich moves I should make it learn."
+}
+
+text Naranja_MurcottIsland_ContestLobby_Text_0817C9D5 {
+    "Do any of your friends have any\nBERRIES?\pYou can use that BERRY BLENDER and\nmake オカキクケS with your friends!\pYou should try it - it’s a lot of fun!"
+}
+
+text Naranja_MurcottIsland_ContestLobby_Text_0817CA67 {
+    "I have two, so you can have one!"
+}
+
+text Naranja_MurcottIsland_ContestLobby_Text_0817CA88 {
+    "Make オカキクケS and put them in there.\pWhen you make a オカキクケ, everyone\nhas to put in a different BERRY."
+}
+
+text Naranja_MurcottIsland_ContestLobby_Text_0817CAEC {
+    "If you win a CONTEST, they put up a\nposter of your POKéMON on the wall.\pIt will have a portrait of your\nPOKéMON and both your names."
+}

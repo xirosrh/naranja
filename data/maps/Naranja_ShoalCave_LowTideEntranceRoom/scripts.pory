@@ -1,0 +1,154 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ShoalCave_LowTideEntranceRoom_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_ShoalCave_LowTideEntranceRoom_OnTransition
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_OnTransition {
+    special(UpdateShoalTideFlag)
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_083A)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E06E)
+    goto(Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E072)
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E06E {
+    setmaplayoutindex(0xA9)
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E072 {
+    setmaplayoutindex(0xA5)
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_OldMan1 {
+    lock
+    faceplayer
+    dotimebasedevents
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_085F)
+    call_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E176)
+    checkitem(ITEM_SHOAL_SALT, 4)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E138)
+    checkitem(ITEM_SHOAL_SHELL, 4)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E138)
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6793, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E16C)
+    checkitemspace(ITEM_SHELL_BELL, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E106)
+    compare_var_to_value(VAR_RESULT, 2)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E12E)
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6808, MSGBOX_DEFAULT)
+    removeitem(ITEM_SHOAL_SALT, 4)
+    removeitem(ITEM_SHOAL_SHELL, 4)
+    setorcopyvar(VAR_0x8000, 0xDB)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C688E, MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_2)
+    release
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E106 {
+    checkitem(ITEM_SHOAL_SALT, 5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E117)
+    return
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E117 {
+    checkitem(ITEM_SHOAL_SHELL, 5)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E128)
+    return
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E128 {
+    setvar(VAR_RESULT, 2)
+    return
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E12E {
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C69F5, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E138 {
+    checkitem(ITEM_SHOAL_SALT, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E162)
+    checkitem(ITEM_SHOAL_SHELL, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E162)
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6668, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E162 {
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C670D, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E16C {
+    msgbox(Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6944, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_Sub_0815E176 {
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B8)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03B9)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BA)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BB)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BC)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BD)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BE)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BF)
+    clearflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_085F)
+    return
+}
+
+script Naranja_ShoalCave_LowTideEntranceRoom_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x6B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6668 {
+    "Are you planning on going deep in\nthere?\pHow about bringing me back some\nSHOAL SALT and SHOAL SHELLS?\pI can make you something good if\nyou bring me the ingredients."
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C670D {
+    "If you bring me four each of the\nSHOAL SALT and SHOAL SHELLS,\lI can make you a SHELL BELL...\pYou can get those ingredients\nevery day."
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6793 {
+    "Oh, hey! SHOAL SALT and SHOAL\nSHELLS! And enough of them, too!\pWould you like me to make you a\nSHELL BELL with them?"
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6808 {
+    "All righty, then! I’ll make you a\nSHELL BELL right away.\p... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pThere! Done!"
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C688E {
+    "Have a POKéMON hold on to that.\nIt’ll love it, that’s for certain.\pWhy, the SHELL BELL’s chime...\nIt’s simply sublime!\pYou can get its ingredients every\nday, so I can make you more."
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C6944 {
+    "Oh... Is that so...\nI wanted to make a SHELL BELL..."
+}
+
+text Naranja_ShoalCave_LowTideEntranceRoom_Text_081C69F5 {
+    "You don’t have space in your BAG\nif I were to make it for you.\pYou should make room and come back\nfor a SHELL BELL."
+}

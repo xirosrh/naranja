@@ -1,0 +1,394 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MurcottIsland_OceanicMuseum_2F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MurcottIsland_OceanicMuseum_2F_OnTransition
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_OnTransition {
+    call(Naranja_MtPyre_Summit_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Scientist1 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817ECFD, MSGBOX_DEFAULT)
+    closemessage
+    playbgm(MUS_ENCOUNTER_MAGMA, 1)
+    addobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB4)
+    waitmovement(LOCALID_NONE)
+    addobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EC3)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB8)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EC5)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E62)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E62)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EDAE, MSGBOX_DEFAULT)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(NOT_EQUAL, Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E6D)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EDD7, MSGBOX_DEFAULT)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EE01, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB2)
+    waitmovement(LOCALID_NONE)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E78)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E83)
+    trainerbattle_no_intro(TRAINER_NARANJA_MURCOTT_ISLAND_585, Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EE4E)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EE66, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EBF)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB2)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EEA5, MSGBOX_DEFAULT)
+    savebgm(MUS_DUMMY)
+    trainerbattle_no_intro(TRAINER_NARANJA_MURCOTT_ISLAND_586, Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EED6)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EBF)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EEEA, MSGBOX_DEFAULT)
+    closemessage
+    delay(0x23)
+    addobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_246)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_246, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EA8)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155ECE)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EF62, MSGBOX_DEFAULT)
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_246, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EA6)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F17E, MSGBOX_DEFAULT)
+    closemessage
+    fadescreen(1)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_246)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_241_2)
+    fadescreen(0)
+    delay(0x1E)
+    setflag(FLAG_HIDE_NARANJA_MURCOTT_ISLAND_G09_M06_241)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F352, MSGBOX_DEFAULT)
+    setvar(VAR_0x8004, 0x10D)
+    call(Naranja_GraniteCave_StevensRoom_EventScript_Sub_081A067F)
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F433, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_SCIENTIST_1, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155E98)
+    waitmovement(LOCALID_NONE)
+    playse(SE_EXIT)
+    removeobject(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_SCIENTIST_1)
+    setflag(FLAG_HIDE_NARANJA_ROUTE110_241)
+    setflag(FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095)
+    clearflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ROUTE_G00_M31_MAN_2)
+    setflag(FLAG_HIDE_NARANJA_TROVITA_ISLAND_G11_M02_TEALA)
+    release
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E62 {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E6D {
+    applymovement(LOCALID_NARANJA_MURCOTT_ISLAND_OCEANIC_MUSEUM_2F_SCIENTIST_1, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E78 {
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155E8E)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sub_08155E83 {
+    applymovement(LOCALID_PLAYER, Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155E92)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_1 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F572, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_2 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F5E3, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_18 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F653, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_16 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F754, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_14 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F7BC, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_12 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F84E, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_8 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F8BC, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_5 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F918, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_3 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F975, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Sign_10 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F9C7, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_OldMan2 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F4B6, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_Woman2 {
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F50E, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MurcottIsland_OceanicMuseum_2F_EventScript_LittleBoy1 {
+    lock
+    faceplayer
+    msgbox(Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F53B, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    release
+    end
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155E8E {
+    walk_left
+    walk_down
+    walk_in_place_faster_left
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155E92 {
+    walk_up
+    walk_left
+    walk_left
+    walk_down
+    walk_in_place_faster_left
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155E98 {
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    walk_left
+    walk_left
+    walk_up
+    walk_up
+    delay_8
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EA6 {
+    walk_right
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EA8 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB2 {
+    walk_right
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB4 {
+    walk_down
+    walk_right
+    walk_in_place_faster_down
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EB8 {
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EBF {
+    lock_facing_direction
+    walk_left
+    unlock_facing_direction
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EC3 {
+    walk_down
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155EC5 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_MurcottIsland_OceanicMuseum_2F_Movement_08155ECE {
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_16
+    delay_8
+    walk_fast_down
+    walk_in_place_faster_up
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817ECFD {
+    "Yes? If you’re looking for STERN,\nthat would be me.\pAh! That must be the part I\nordered from MR. STONE of DEVON.\pThank you! That’s great!\nWe can prepare for our expedition now."
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EDAE {
+    "Hehehe, hold it!\nWe’ll take those parts!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EDD7 {
+    "CAPT. STERN: Wh-what?\nWho are you people?"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EE01 {
+    "We’re TEAM {AQUA}!\pOur BOSS wants those parts!\nShut your yap and fork them over!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EE4E {
+    "Awaaaah!\nA kid beat me!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EE66 {
+    "Oh, man, what a disaster...\nThe BOSS is going to be furious..."
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EEA5 {
+    "Humph, sniveling wimp!\nLet me take care of this!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EED6 {
+    "What?!\nI lost, too!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EEEA {
+    "Now what? If we don’t get the parts,\nwe’re in for it!\pArrgh, I didn’t count on being meddled\nwith by some meddling kid!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817EF62 {
+    "I came to see what was taking so\nlong to snatch some parts, and you\lsimps are held up by a mere child?"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F17E {
+    "I am TEAM MAGMA’s MAXIE.\pWhy on earth do you feel compelled\nto mess up TEAM MAGMA’s plans?\pPOKéMON, people, all life exists on land...\pThat’s why TEAM MAGMA is trying to\nexpand the world’s landmass.\pDon’t you agree? What we are doing\nis a magnificent undertaking.\pWell, no matter...\nYou’re young.\pYour inability to understand our\nnoble cause can’t be helped...\pBut, if you were to impede us ever\nagain, you’ll see no mercy from us!\pKeep that firmly in mind!\nFarewell!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F352 {
+    "CAPT. STERN: You’re...\nAh, okay, you’re {PLAYER}{KUN}...\pAnyway, that was a tense situation!\nThank you for saving us!\pOh, yes, I almost forgot that you\neven brought the parts from DEVON!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F433 {
+    "CAPT. STERN: Whoops!\nThere’s no time to lose!\pWe have to set out on our ocean floor\nexpedition really soon.\pThanks, and excuse me!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F4B6 {
+    "I saw a model of a ship here.\pIt reminded me of the ABANDONED SHIP\nnear DEWFORD TOWN..."
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F50E {
+    "Don’t you dare run around inside\nthe MUSEUM!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F53B {
+    "Wow, the submarine’s awesome!\nI want to go for a ride!"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F572 {
+    "“KANTO WATER QUALITY SAMPLE,” the\nlabel says.\pThe sea is all connected, but the\nwater seems to differ by region."
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F5E3 {
+    "“JOHTO WATER QUALITY SAMPLE,” the\nlabel says.\pMaybe the water’s saltiness differs\nfrom one region to another..."
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F653 {
+    "A rubber ball is expanding and shrinking.\p“In the sea, the weight of water itself\nexerts pressure.\p“In shallow water, the pressure is not\nvery heavy.\p“However, in extremely deep water,\nthe pressure can reach even tens of\lthousands of tons on a small area.”"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F754 {
+    "“MODEL OF HOENN REGION”\pIt’s a miniature diorama of the\nHOENN region.\pWhere is LITTLEROOT TOWN on this?"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F7BC {
+    "It’s a display on the flow of seawater.\p“Near the bottom of the sea, water\nflows due to differences in such\lfactors as temperature and salinity.”"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F84E {
+    "It’s a display on the flow of\nseawater.\p“Toward the surface, seawater flows\nas currents driven by the winds.”"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F8BC {
+    "“THE FERRY S.S. TIDAL\p“A scale replica of the ship under\nconstruction at STERN’S SHIPYARD.”"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F918 {
+    "“SUBMARINE EXPLORER 1\p“A replica of the high-performance\nocean floor exploration submarine.”"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F975 {
+    "“SUBMERSIBLE POD\p“A replica of a compact, unmanned\npod for seafloor exploration.”"
+}
+
+text Naranja_MurcottIsland_OceanicMuseum_2F_Text_0817F9C7 {
+    "“S.S. ANNE\p“A replica of the luxury liner that\ncircles the globe.”"
+}

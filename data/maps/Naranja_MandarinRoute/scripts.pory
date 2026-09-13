@@ -1,0 +1,516 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinRoute_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MandarinRoute_OnTransition
+}
+
+script Naranja_MandarinRoute_EventScript_Sign_4 {
+    return
+}
+
+script Naranja_MandarinRoute_EventScript_Woman7 {
+    trainerbattle_single(TRAINER_NARANJA_MANDARIN_ROUTE_ROUTE_434, Naranja_MandarinRoute_Text_081BBB27, Naranja_MandarinRoute_Text_081BBB7A)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150690)
+    msgbox(Naranja_MandarinRoute_Text_081BBB9A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150690 {
+    trainerbattle_rematch(TRAINER_NARANJA_MANDARIN_ROUTE_ROUTE_434, Naranja_MandarinRoute_Text_081BBBCE, Naranja_MandarinRoute_Text_081BBC0D)
+    msgbox(Naranja_MandarinRoute_Text_081BBC1C, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MandarinRoute_OnTransition {
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150A41)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150A41 {
+    setobjectxyperm(LOCALID_NARANJA_MANDARIN_ROUTE_ROUTE_SWIMMER_M, 0x29, 0xA)
+    return
+}
+
+script Naranja_MandarinRoute_EventScript_SwimmerM {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150A67)
+    checkflag(FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_LATIAS)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150A71)
+    msgbox(Naranja_MandarinRoute_Text_081703CF, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150A67 {
+    msgbox(Naranja_MandarinRoute_Text_08170556, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150A71 {
+    msgbox(Naranja_MandarinRoute_Text_081703F7, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Man2 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_011F)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150B04)
+    msgbox(Naranja_MandarinRoute_Text_081705AE, MSGBOX_DEFAULT)
+    goto(Naranja_MandarinRoute_EventScript_Sub_08150A94)
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150A94 {
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_011F)
+    setorcopyvar(VAR_0x8000, 9)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150B12)
+    msgbox(Naranja_MandarinRoute_Text_081707B8, MSGBOX_DEFAULT)
+    closemessage
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150AEE)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150AEE)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150AEE)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150AF9)
+    removeobject(32783)
+    clearflag(FLAG_HIDE_NARANJA_TROVITA_ISLAND_G11_M02_TEALA)
+    setflag(FLAG_NARANJA_MANDARIN_ROUTE_ROUTE_EVENT_COMPLETE_0100)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150AEE {
+    applymovement(32783, Naranja_MandarinRoute_Movement_08150B1C)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150AF9 {
+    applymovement(32783, Naranja_MandarinRoute_Movement_08150B25)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150B04 {
+    msgbox(Naranja_MandarinRoute_Text_08170865, MSGBOX_DEFAULT)
+    goto(Naranja_MandarinRoute_EventScript_Sub_08150A94)
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150B12 {
+    msgbox(Naranja_MandarinRoute_Text_0817082A, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sign_1 {
+    msgbox(Naranja_MandarinRoute_Text_08170A46, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sign_2 {
+    msgbox(Naranja_MandarinRoute_Text_08170A60, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sign_3 {
+    msgbox(Naranja_MandarinRoute_Text_08170AB8, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sign_6 {
+    msgbox(Naranja_MandarinRoute_Text_08170ACE, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sign_7 {
+    msgbox(Naranja_MandarinRoute_Text_08170B7D, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_OldMan1 {
+    lock
+    faceplayer
+    msgbox(Naranja_MandarinRoute_Text_0817032A, MSGBOX_DEFAULT)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE, 2)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Maniac {
+    lock
+    faceplayer
+    checkitem(ITEM_BLACK_GLASSES, 1)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150BCA)
+    specialvar(VAR_RESULT, FoundBlackGlasses)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150BBB)
+    msgbox(Naranja_MandarinRoute_Text_081708EE, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150BBB {
+    msgbox(Naranja_MandarinRoute_Text_081709B7, MSGBOX_DEFAULT)
+    closemessage
+    goto(Naranja_MandarinRoute_EventScript_Sub_08150C03)
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150BCA {
+    msgbox(Naranja_MandarinRoute_Text_081708EE, MSGBOX_DEFAULT)
+    msgbox(Naranja_MandarinRoute_Text_08170921, MSGBOX_DEFAULT)
+    specialvar(VAR_RESULT, FoundBlackGlasses)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150BF4)
+    msgbox(Naranja_MandarinRoute_Text_08170A03, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150BF4 {
+    msgbox(Naranja_MandarinRoute_Text_0817094D, MSGBOX_DEFAULT)
+    closemessage
+    goto(Naranja_MandarinRoute_EventScript_Sub_08150C03)
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150C03 {
+    delay(0x14)
+    compare_var_to_value(VAR_FACING, 2)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150C37)
+    compare_var_to_value(VAR_FACING, 1)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150C37)
+    compare_var_to_value(VAR_FACING, 3)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150C37)
+    compare_var_to_value(VAR_FACING, 4)
+    call_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150C42)
+    removeobject(32783)
+    release
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150C37 {
+    applymovement(32783, Naranja_MandarinRoute_Movement_08150C4D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150C42 {
+    applymovement(32783, Naranja_MandarinRoute_Movement_08150C57)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_MandarinRoute_EventScript_ReporterF {
+    trainerbattle_single(TRAINER_NARANJA_MANDARIN_ROUTE_ROUTE_631, Naranja_MandarinRoute_Text_081BCF79, Naranja_MandarinRoute_Text_081BCFBB)
+    msgbox(Naranja_MandarinRoute_Text_081BCFE3, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_SwimmerF {
+    trainerbattle_single(TRAINER_NARANJA_MANDARIN_ROUTE_ROUTE_280, Naranja_MandarinRoute_Text_081BD377, Naranja_MandarinRoute_Text_081BD3AC)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MandarinRoute_EventScript_Sub_08150D23)
+    msgbox(Naranja_MandarinRoute_Text_081BD3C3, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Sub_08150D23 {
+    trainerbattle_rematch(TRAINER_NARANJA_MANDARIN_ROUTE_ROUTE_280, Naranja_MandarinRoute_Text_081BD405, Naranja_MandarinRoute_Text_081BD44A)
+    msgbox(Naranja_MandarinRoute_Text_081BD466, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_ItemBall_4 {
+    setorcopyvar(VAR_0x8000, 0x4F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x22)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_ItemBall_2 {
+    setorcopyvar(VAR_0x8000, 0x56)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_ItemBall_3 {
+    setorcopyvar(VAR_0x8000, 0x3F)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_MandarinRoute_EventScript_Trigger_1 {
+    checkflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ROUTE_G00_M31_LITTLE_GIRL_1)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_Sub_086B7E7E)
+    applymovement(LOCALID_NARANJA_MANDARIN_ROUTE_ROUTE_LITTLE_GIRL_1, Naranja_MandarinRoute_Movement_086B65E0)
+    applymovement(LOCALID_PLAYER, Naranja_MandarinRoute_Movement_086B65E6)
+    msgbox(Naranja_MandarinRoute_Text_08166EC6, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, Naranja_MandarinRoute_Movement_086B65F0)
+    applymovement(LOCALID_NARANJA_MANDARIN_ROUTE_ROUTE_LITTLE_GIRL_1, Naranja_MandarinRoute_Movement_086B6600)
+    delay(0xB0)
+    applymovement(LOCALID_NARANJA_MANDARIN_ROUTE_ROUTE_LITTLE_GIRL_1, Naranja_MandarinRoute_Movement_086B6610)
+    delay(0x70)
+    release
+    end
+}
+
+movement Naranja_MandarinRoute_Movement_08150B1C {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MandarinRoute_Movement_08150B25 {
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MandarinRoute_Movement_08150C4D {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MandarinRoute_Movement_08150C57 {
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_MandarinRoute_Movement_086B65E0 {
+    jump_in_place_down
+    emote_exclamation_mark
+    walk_down
+    walk_down
+    walk_left
+}
+
+movement Naranja_MandarinRoute_Movement_086B65E6 {
+    delay_16
+    delay_16
+    face_right
+}
+
+movement Naranja_MandarinRoute_Movement_086B65F0 {
+    delay_8
+    walk_right
+    walk_up
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    face_up
+}
+
+movement Naranja_MandarinRoute_Movement_086B6600 {
+    face_up
+    lock_facing_direction
+    walk_down
+    unlock_facing_direction
+    walk_up
+    walk_up
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_MandarinRoute_Movement_086B6610 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    face_down
+}
+
+text Naranja_MandarinRoute_Text_08166EC6 {
+    "¡No te vayas todavìa!\pQuedaste conmigo en que ayudarìas\na mi hermanito encontrando el Onix.\pVen a nuestra y ofrécele tu ayuda.\p¡Eso le animará muchìsimo!\p¡Arreando!"
+}
+
+text Naranja_MandarinRoute_Text_0817032A {
+    "Ohhh, what am I to do?\pWe were on our walk, PEEKO and I, when\nwe were jumped by an odd thug...\pThe scoundrel made off with my\ndarling PEEKO!\pWrrrooooooaaaar! PEEKO!"
+}
+
+text Naranja_MandarinRoute_Text_081703CF {
+    "Nnn... Roar!\pI want to dig that tunnel!"
+}
+
+text Naranja_MandarinRoute_Text_081703F7 {
+    "Nnn... Roar!\nWhat’s going on?\pI was digging the tunnel without any\ntools when some goon ordered me out!\pThat tunnel’s filled with POKéMON\nthat react badly to loud noises.\lThey could cause an uproar.\pThat’s why we stopped using heavy\nequipment for tunneling...\pI’m worried that the goon will do\nsomething stupid and startle the\lPOKéMON into an uproar."
+}
+
+text Naranja_MandarinRoute_Text_08170556 {
+    "Nnn... Roar!\pThat goofy goon hightailed it out of\nthe tunnel! I can go back to digging!"
+}
+
+text Naranja_MandarinRoute_Text_081705AE {
+    "Oh! It’s you!\pYou’re that person who not only helped\nme in PETALBURG WOODS, but also got\lback my stolen package and then even\lgraciously delivered it to SLATEPORT!\pCAPT. STERN informed us that the\npackage arrived, too!\pI thank you very, very much!\pWhy, if I were a rain cloud, I would\nshower you with gratitude and hail\lyou as a hero!\pFor you, the most wonderful TRAINER,\nI bear good news!\pRecently, our company developed a new\nkind of POKé BALL.\pAs a token of our appreciation, this\nis our gift to our wonderful TRAINER!"
+}
+
+text Naranja_MandarinRoute_Text_081707B8 {
+    "Our new POKé BALL will be available\nat the POKéMON MART in RUSTBORO.\pPlease do try it out!\nThank you and bye-bye!"
+}
+
+text Naranja_MandarinRoute_Text_0817082A {
+    "Your BAG is jam-packed.\nI can’t give you this REPEAT BALL."
+}
+
+text Naranja_MandarinRoute_Text_08170865 {
+    "As a token of our appreciation for\nyour delivering our package, I have a\lgift of a new kind of POKé BALL for our\lmost wonderful TRAINER!"
+}
+
+text Naranja_MandarinRoute_Text_081708EE {
+    "I dropped my glasses...\nCan you help me find them?"
+}
+
+text Naranja_MandarinRoute_Text_08170921 {
+    "Those glasses!\nMay I see them for a second?"
+}
+
+text Naranja_MandarinRoute_Text_0817094D {
+    "Hmm...\nThese are BLACKGLASSES.\lThey’re not what I’m looking for...\pMaybe my glasses aren’t around\nhere..."
+}
+
+text Naranja_MandarinRoute_Text_081709B7 {
+    "Hmm...\nI can’t find my glasses anywhere...\lMaybe they’re not around here..."
+}
+
+text Naranja_MandarinRoute_Text_08170A03 {
+    "Hmm...\nThese are BLACKGLASSES.\lThey’re not what I’m looking for..."
+}
+
+text Naranja_MandarinRoute_Text_08170A46 {
+    "ROUTE 116\nロ RUSTBORO CITY"
+}
+
+text Naranja_MandarinRoute_Text_08170A60 {
+    "RUSTURF TUNNEL\n“Linking RUSTBORO and VERDANTURF\p“The tunnel project has been\ncanceled.”"
+}
+
+text Naranja_MandarinRoute_Text_08170AB8 {
+    "Cueva de {COLOR 0x0D}Isla SUNBURST"
+}
+
+text Naranja_MandarinRoute_Text_08170ACE {
+    "RST"
+}
+
+text Naranja_MandarinRoute_Text_08170B7D {
+    "TRAINER TIPS\pYour BAG has several POCKETS.\pItems you obtain are automatically\nplaced in the appropriate POCKETS.\pNo TRAINER can afford to be without\na BAG of their own."
+}
+
+text Naranja_MandarinRoute_Text_081BBB27 {
+    "I use this parasol to ward off this\nfilthy, yucky volcanic ash from my\ldear NUMEL."
+}
+
+text Naranja_MandarinRoute_Text_081BBB7A {
+    "Huff, huff...\nI am exhausted..."
+}
+
+text Naranja_MandarinRoute_Text_081BBB9A {
+    "You’re very good at this.\nI must say I’m impressed!"
+}
+
+text Naranja_MandarinRoute_Text_081BBBCE {
+    "Oh, hello, hasn’t it been a while?\nMay I invite you to battle?"
+}
+
+text Naranja_MandarinRoute_Text_081BBC0D {
+    "Oh, how super!"
+}
+
+text Naranja_MandarinRoute_Text_081BBC1C {
+    "You’ve remained very good at this.\nI must say I’m impressed!"
+}
+
+text Naranja_MandarinRoute_Text_081BCF79 {
+    "If the tunnel doesn’t go through, then\nI’ll just go over the top."
+}
+
+text Naranja_MandarinRoute_Text_081BCFBB {
+    "Gasp... Gasp...\nLosing made me tired..."
+}
+
+text Naranja_MandarinRoute_Text_081BCFE3 {
+    "It’s no big deal if there’s no tunnel.\nTo a HIKER, mountains are roads!"
+}
+
+text Naranja_MandarinRoute_Text_081BD377 {
+    "I study at school, and I study on the\nway home, too!"
+}
+
+text Naranja_MandarinRoute_Text_081BD3AC {
+    "I’m in shock - I lost?"
+}
+
+text Naranja_MandarinRoute_Text_081BD3C3 {
+    "Awww, I’ll never become an elegant\nTRAINER like ROXANNE this way!"
+}
+
+text Naranja_MandarinRoute_Text_081BD405 {
+    "I studied a whole lot since I saw you.\nYou must see my achievements!"
+}
+
+text Naranja_MandarinRoute_Text_081BD44A {
+    "I’m in shock. I lost again?"
+}
+
+text Naranja_MandarinRoute_Text_081BD466 {
+    "You’ve beaten ROXANNE?\nI can’t beat you, then. Not yet."
+}

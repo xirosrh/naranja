@@ -1,0 +1,17 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route110_SeasideCyclingRoadSouthEntrance_MapScripts {
+}
+
+script Naranja_Route110_SeasideCyclingRoadSouthEntrance_EventScript_MartEmployee {
+    lock
+    faceplayer
+    msgbox(Naranja_Route110_SeasideCyclingRoadSouthEntrance_Text_0819E326, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_Route110_SeasideCyclingRoadSouthEntrance_Text_0819E326 {
+    "On CYCLING ROAD, you can go all out\nand cycle as fast as you’d like.\pIt feels great to go that fast, but try\nnot to crash into anyone!"
+}

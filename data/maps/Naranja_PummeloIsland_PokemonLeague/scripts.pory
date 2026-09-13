@@ -1,0 +1,145 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PummeloIsland_PokemonLeague_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_PummeloIsland_PokemonLeague_OnTransition
+}
+
+script Naranja_PummeloIsland_PokemonLeague_OnTransition {
+    setrespawn(0x14)
+    setflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0854)
+    checkflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0107)
+    call_if(LESS_THAN, Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BA8B)
+    end
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BA8B {
+    setobjectxyperm(LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4, 9, 2)
+    setobjectxyperm(LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4_2, 0xA, 2)
+    return
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_MartEmployee {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_PummeloIsland_PokemonLeague_Mart_0815BAC0)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Man4 {
+    lockall
+    checkflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0107)
+    goto_if(EQUAL, Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB57)
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    compare_var_to_value(VAR_TEMP_0, 0xB)
+    call_if(GREATER_THAN_OR_EQUAL, Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB34)
+    compare_var_to_value(VAR_TEMP_0, 8)
+    call_if(LESS_THAN_OR_EQUAL, Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB3F)
+    message(Naranja_PummeloIsland_PokemonLeague_Text_081916FD)
+    waitmessage
+    delay(0x4B)
+    checkflag(FLAG_NARANJA_SHAMOUTI_ISLAND_EVENT_COMPLETE_080C)
+    goto_if(LESS_THAN, Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB4A)
+    closemessage
+    applymovement(LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4, Naranja_PummeloIsland_PokemonLeague_Movement_0815BB7E)
+    applymovement(LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4_2, Naranja_PummeloIsland_PokemonLeague_Movement_0815BB81)
+    waitmovement(LOCALID_NONE)
+    delay(0xA)
+    playfanfare(MUS_OBTAIN_BADGE)
+    message(Naranja_PummeloIsland_PokemonLeague_Text_08191804)
+    waitmessage
+    waitfanfare
+    closemessage
+    copyobjectxytoperm(LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4)
+    copyobjectxytoperm(LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4_2)
+    setflag(FLAG_NARANJA_PUMMELO_ISLAND_EVENT_COMPLETE_0107)
+    releaseall
+    end
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB34 {
+    applymovement(LOCALID_PLAYER, Naranja_PummeloIsland_PokemonLeague_Movement_0815BB76)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB3F {
+    applymovement(LOCALID_PLAYER, Naranja_PummeloIsland_PokemonLeague_Movement_0815BB7A)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB4A {
+    playse(SE_FAILURE)
+    msgbox(Naranja_PummeloIsland_PokemonLeague_Text_0819179C, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_PummeloIsland_PokemonLeague_EventScript_Sub_0815BB57 {
+    applymovement(32783, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_PummeloIsland_PokemonLeague_Text_08191804, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32783, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+movement Naranja_PummeloIsland_PokemonLeague_Movement_0815BB76 {
+    walk_down
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_PummeloIsland_PokemonLeague_Movement_0815BB7A {
+    walk_down
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_PummeloIsland_PokemonLeague_Movement_0815BB7E {
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_PummeloIsland_PokemonLeague_Movement_0815BB81 {
+    walk_right
+    walk_in_place_faster_down
+}
+
+mart Naranja_PummeloIsland_PokemonLeague_Mart_0815BAC0 {
+    ITEM_ULTRA_BALL
+    ITEM_HYPER_POTION
+    ITEM_MAX_POTION
+    ITEM_FULL_RESTORE
+    ITEM_FULL_HEAL
+    ITEM_REVIVE
+    ITEM_MAX_REPEL
+}
+
+text Naranja_PummeloIsland_PokemonLeague_Text_081916FD {
+    "Beyond this point, only those TRAINERS\nwho have collected all the GYM BADGES\lare permitted to enter.\pTRAINER, let us confirm that you have\nall the GYM BADGES."
+}
+
+text Naranja_PummeloIsland_PokemonLeague_Text_0819179C {
+    "You haven’t obtained all the BADGES.\pIf you’re bound for the POKéMON\nLEAGUE, you must return with them."
+}
+
+text Naranja_PummeloIsland_PokemonLeague_Text_08191804 {
+    "TRAINER! Believe in yourself and your\nPOKéMON, and go forth!"
+}

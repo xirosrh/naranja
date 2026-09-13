@@ -1,0 +1,49 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_Exterior_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MtPyre_Exterior_OnTransition
+}
+
+script Naranja_MtPyre_Exterior_OnTransition {
+    call(Naranja_MtPyre_Exterior_EventScript_Sub_0815D492)
+    end
+}
+
+script Naranja_MtPyre_Exterior_EventScript_Sub_0815D492 {
+    getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
+    compare_var_to_value(VAR_TEMP_1, 0xC)
+    goto_if(LESS_THAN, Naranja_MtPyre_Exterior_EventScript_Sub_0815D4A3)
+    return
+}
+
+script Naranja_MtPyre_Exterior_EventScript_Sub_0815D4A3 {
+    setweather(6)
+    return
+}
+
+script Naranja_MtPyre_Exterior_EventScript_Trigger_1 {
+    setweather(6)
+    doweather
+    end
+}
+
+script Naranja_MtPyre_Exterior_EventScript_Trigger_3 {
+    setweather(2)
+    doweather
+    end
+}
+
+script Naranja_MtPyre_Exterior_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x14)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_MtPyre_Exterior_EventScript_ItemBall_2 {
+    setorcopyvar(VAR_0x8000, 0x150)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}

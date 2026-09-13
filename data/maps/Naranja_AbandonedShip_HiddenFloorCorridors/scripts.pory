@@ -1,0 +1,190 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AbandonedShip_HiddenFloorCorridors_MapScripts {
+    MAP_SCRIPT_ON_RESUME: Naranja_AbandonedShip_HiddenFloorCorridors_OnResume
+    MAP_SCRIPT_ON_LOAD: Naranja_AbandonedShip_HiddenFloorCorridors_OnLoad
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_OnResume {
+    setdivewarp(MAP_NARANJA_ABANDONED_SHIP_UNDERWATER1, 0xFF, 5, 4)
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_OnLoad {
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    call_if(LESS_THAN, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBCB)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    call_if(LESS_THAN, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBD5)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    call_if(LESS_THAN, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBDF)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    call_if(LESS_THAN, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBE9)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    call_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBA3)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    call_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBAD)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    call_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBB7)
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    call_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBC1)
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBA3 {
+    setmetatile(3, 8, 0x22B, 1)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBAD {
+    setmetatile(6, 8, 0x22B, 1)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBB7 {
+    setmetatile(3, 3, 0x21A, 0)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBC1 {
+    setmetatile(9, 3, 0x21A, 0)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBCB {
+    setmetatile(3, 8, 0x233, 1)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBD5 {
+    setmetatile(6, 8, 0x233, 1)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBDF {
+    setmetatile(3, 3, 0x234, 0)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBE9 {
+    setmetatile(9, 3, 0x234, 0)
+    return
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_KEY_TO_ROOM_1, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECCF)
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E90, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    removeitem(ITEM_KEY_TO_ROOM_1, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F0)
+    call(Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBA3)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sign_2 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_KEY_TO_ROOM_2, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECD9)
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E90, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    removeitem(ITEM_KEY_TO_ROOM_2, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F1)
+    call(Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBAD)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sign_3 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_KEY_TO_ROOM_4, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECE3)
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E90, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    removeitem(ITEM_KEY_TO_ROOM_4, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F2)
+    call(Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBB7)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sign_4 {
+    lockall
+    checkflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECF7)
+    checkitem(ITEM_KEY_TO_ROOM_6, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECED)
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E90, MSGBOX_DEFAULT)
+    playse(SE_PIN)
+    removeitem(ITEM_KEY_TO_ROOM_6, 1)
+    setflag(FLAG_NARANJA_BANDONED_SHIP_EVENT_COMPLETE_00F3)
+    call(Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815EBC1)
+    special(DrawWholeMapView)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECCF {
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198DC0, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECD9 {
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198DF4, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECE3 {
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E28, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECED {
+    msgbox(Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E5C, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_AbandonedShip_HiddenFloorCorridors_EventScript_Sub_0815ECF7 {
+    msgbox(Naranja_AbandonedShip_Corridors_B1F_Text_081986EC, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+text Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198DC0 {
+    "The door is locked.\p“RM. 1” is painted on the door."
+}
+
+text Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198DF4 {
+    "The door is locked.\p“RM. 2” is painted on the door."
+}
+
+text Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E28 {
+    "The door is locked.\p“RM. 4” is painted on the door."
+}
+
+text Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E5C {
+    "The door is locked.\p“RM. 6” is painted on the door."
+}
+
+text Naranja_AbandonedShip_HiddenFloorCorridors_Text_08198E90 {
+    "{PLAYER} inserted and turned the\nKEY.\pThe inserted KEY stuck fast, but the\ndoor opened."
+}

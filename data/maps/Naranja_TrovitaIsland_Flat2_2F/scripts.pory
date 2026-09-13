@@ -1,0 +1,44 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TrovitaIsland_Flat2_2F_MapScripts {
+}
+
+script Naranja_TrovitaIsland_Flat2_2F_EventScript_OldMan2 {
+    msgbox(Naranja_TrovitaIsland_Flat2_2F_Text_08185421, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TrovitaIsland_Flat2_2F_EventScript_LittleBoy1 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_00D5)
+    goto_if(EQUAL, Naranja_TrovitaIsland_Flat2_2F_EventScript_Sub_08157DCF)
+    msgbox(Naranja_TrovitaIsland_Flat2_2F_Text_08185461, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0xC)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_TROVITA_ISLAND_EVENT_COMPLETE_00D5)
+    release
+    end
+}
+
+script Naranja_TrovitaIsland_Flat2_2F_EventScript_Sub_08157DCF {
+    msgbox(Naranja_TrovitaIsland_Flat2_2F_Text_081854C4, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_TrovitaIsland_Flat2_2F_Text_08185421 {
+    "Way back in the old days, DEVON was just\na teeny, tiny company."
+}
+
+text Naranja_TrovitaIsland_Flat2_2F_Text_08185461 {
+    "My daddy’s working at the CORPORATION.\pMy daddy made this!\nBut I can’t use it, so you can have it."
+}
+
+text Naranja_TrovitaIsland_Flat2_2F_Text_081854C4 {
+    "My daddy’s working at the CORPORATION.\pWhen I grow up, I’m going to work for\nDEVON, too."
+}

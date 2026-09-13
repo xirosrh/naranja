@@ -1,0 +1,109 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route133_MapScripts {
+}
+
+script Naranja_Route133_EventScript_SwimmerM {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_170, Naranja_Route133_Text_081C2DA5, Naranja_Route133_Text_081C2DF4)
+    msgbox(Naranja_Route133_Text_081C2E09, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route133_EventScript_SwimmerF_2 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_460, Naranja_Route133_Text_081C2E61, Naranja_Route133_Text_081C2EBD)
+    msgbox(Naranja_Route133_Text_081C2ECD, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route133_EventScript_SwimmerF {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_461, Naranja_Route133_Text_081C2EF7, Naranja_Route133_Text_081C2F19)
+    msgbox(Naranja_Route133_Text_081C2F25, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route133_EventScript_Man4 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_088, Naranja_Route133_Text_081C2F53, Naranja_Route133_Text_081C2FA3)
+    msgbox(Naranja_Route133_Text_081C2FC7, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route133_EventScript_Man6 {
+    trainerbattle_single(TRAINER_NARANJA_ROUTE133_414, Naranja_Route133_Text_081C302D, Naranja_Route133_Text_081C305F)
+    msgbox(Naranja_Route133_Text_081C307E, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_Route133_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x6B)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_Route133_EventScript_ItemBall_2 {
+    setorcopyvar(VAR_0x8000, 0x32)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_Route133_Text_081C2DA5 {
+    "Did the currents carry you here, too?\nThis must have been fated. Let’s battle!"
+}
+
+text Naranja_Route133_Text_081C2DF4 {
+    "Strong!\nToo much so!"
+}
+
+text Naranja_Route133_Text_081C2E09 {
+    "It’s just my luck that a tough TRAINER\nlike you would drift here...\lI must be cursed..."
+}
+
+text Naranja_Route133_Text_081C2E61 {
+    "I’ve led a life of woe and misery...\nI’ve been cast away, and this is where\lI’ve drifted..."
+}
+
+text Naranja_Route133_Text_081C2EBD {
+    "Another loss..."
+}
+
+text Naranja_Route133_Text_081C2ECD {
+    "A life adrift...\nI don’t want it anymore!"
+}
+
+text Naranja_Route133_Text_081C2EF7 {
+    "Welcome!\nI’ve been expecting you!"
+}
+
+text Naranja_Route133_Text_081C2F19 {
+    "No! Please!"
+}
+
+text Naranja_Route133_Text_081C2F25 {
+    "A strong child TRAINER...\nThat’s so annoying!"
+}
+
+text Naranja_Route133_Text_081C2F53 {
+    "I want to win like everyone else, but I\nwon’t raise POKéMON like everyone else."
+}
+
+text Naranja_Route133_Text_081C2FA3 {
+    "Darn it!\nMy way is still too slack!"
+}
+
+text Naranja_Route133_Text_081C2FC7 {
+    "It’s way more fun to do things the way\nI want than to be like everybody else.\lI mean, that’s obvious!"
+}
+
+text Naranja_Route133_Text_081C302D {
+    "I came all the way out here with my\nBIRD POKéMON."
+}
+
+text Naranja_Route133_Text_081C305F {
+    "You...\nYou’re stunningly cool!"
+}
+
+text Naranja_Route133_Text_081C307E {
+    "I’d like to go back to FORTREE, but I’ve\ngrown to like this place, too."
+}

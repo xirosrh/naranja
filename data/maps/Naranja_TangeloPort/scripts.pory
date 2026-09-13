@@ -1,0 +1,985 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TangeloPort_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_TangeloPort_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 1: Naranja_TangeloPort_OnFrame_1
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2: Naranja_TangeloPort_OnFrame_2
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 7: Naranja_TangeloPort_OnFrame_3
+    ]
+}
+
+script Naranja_TangeloPort_OnTransition {
+    setflag(FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_080F)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 2)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D57B)
+    checkflag(FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_0052)
+    call_if(LESS_THAN, Naranja_TangeloPort_EventScript_Sub_0814D583)
+    compare_var_to_value(VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE, 3)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D5A6)
+    compare_var_to_value(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 4)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D570)
+    compare_var_to_value(VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_2, 4)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D570)
+    compare_var_to_value(VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_3, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D567)
+    compare_var_to_value(VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_4, 3)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D563)
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D563 {
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_012D)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D567 {
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_3, 2)
+    setflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G00_M10_VARS)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D570 {
+    setvar(VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 5)
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_2, 5)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D57B {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, 0xE, 8)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D583 {
+    compare_var_to_value(VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE, 0)
+    goto_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D59A)
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, 0xA, 1)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, 7)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D59A {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, 7, 2)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, 8)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D5A6 {
+    clearflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1_2)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, 8)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D5C5)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D5CD)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D5C5 {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, 5, 9)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D5CD {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, 0xE, 9)
+    return
+}
+
+script Naranja_TangeloPort_OnFrame_1 {
+    lockall
+    setvar(VAR_0x8004, 5)
+    setvar(VAR_0x8005, 8)
+    call(Naranja_TangeloPort_EventScript_Sub_0814D62B)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02F9)
+    warpsilent(MAP_NARANJA_PALLET_TOWN_ASHS_HOUSE_1F, 0xFF, 8, 8)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_OnFrame_2 {
+    lockall
+    setvar(VAR_0x8004, 0xE)
+    setvar(VAR_0x8005, 8)
+    call(Naranja_TangeloPort_EventScript_Sub_0814D62B)
+    setflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_02FA)
+    warpsilent(MAP_NARANJA_TANGELO_PORT_MAYS_HOUSE_1F, 0xFF, 2, 8)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D62B {
+    delay(0xF)
+    playse(SE_LEDGE)
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_Movement_0814D6C0)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8004, 0x8005)
+    waitdooranim
+    addobject(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814D6AC)
+    waitmovement(LOCALID_NONE)
+    closedoor(0x8004, 0x8005)
+    waitdooranim
+    delay(0xA)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814D6AE)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_TangeloPort_Text_0816A7C9, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814D6B1)
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_Movement_0814D6B8)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8004, 0x8005)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814D6B5)
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_Movement_0814D6BD)
+    waitmovement(LOCALID_NONE)
+    setflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1_2)
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3)
+    hideobjectat(LOCALID_PLAYER, MAP_NARANJA_VALENCIA_ISLAND)
+    closedoor(0x8004, 0x8005)
+    waitdooranim
+    clearflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_PORT_G00_M09_SCIENTIST_1)
+    clearflag(FLAG_NARANJA_VALENCIA_ISLAND_EVENT_COMPLETE_4000)
+    return
+}
+
+script Naranja_TangeloPort_OnFrame_3 {
+    lockall
+    setvar(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 8)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Scientist1_2 {
+    msgbox(Naranja_TangeloPort_Text_0816AC00, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Scientist1_3 {
+    msgbox(Naranja_TangeloPort_Text_0816AC56, MSGBOX_NPC)
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Scientist1_4 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_RECEIVED_UPGRADED_POKEDEX)
+    goto_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D72F)
+    checkflag(FLAG_NARANJA_TANGELO_TOWN_PORT_EVENT_COMPLETE_0052)
+    goto_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D722)
+    compare_var_to_value(VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE, 0)
+    goto_if(NOT_EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D708)
+    msgbox(Naranja_TangeloPort_Text_0816ACEB, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D708 {
+    msgbox(Naranja_TangeloPort_Text_0816AD82, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE, 2)
+    release
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D722 {
+    special(GetPlayerBigGuyGirlString)
+    msgbox(Naranja_TangeloPort_Text_0816ADF2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D72F {
+    msgbox(Naranja_TangeloPort_Text_0816AE25, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_1 {
+    lockall
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_TangeloPort_Movement_0814D779)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_TangeloPort_EventScript_Sub_0814D755)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_TangeloPort_Movement_0814D789)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D755 {
+    msgbox(Naranja_TangeloPort_Text_0816ACEB, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_TangeloPort_Movement_0814D787)
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_Movement_0814D793)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_TangeloPort_Text_0816AD3C, MSGBOX_DEFAULT)
+    closemessage
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_2 {
+    lockall
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_TangeloPort_Movement_0814D7B3)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_TangeloPort_EventScript_Sub_0814D755)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_TangeloPort_Movement_0814D7C0)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_3 {
+    lockall
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_TangeloPort_Text_0816AD82, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE, 2)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sign_1 {
+    msgbox(Naranja_TangeloPort_Text_0816AE50, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sign_2 {
+    msgbox(Naranja_TangeloPort_Text_0816AE87, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sign_3 {
+    lockall
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_ColdPath_EventScript_TotodileDoll)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_086B67B1)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sign_4 {
+    lockall
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D84E)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sign_3)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D84E {
+    msgbox(Naranja_BattleTower_Outside_Text_0816AEAC, MSGBOX_DEFAULT)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_9 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    setobjectxy(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, 0xB, 9)
+    goto(Naranja_TangeloPort_EventScript_Sub_0814D8B6)
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_6 {
+    lockall
+    setvar(VAR_0x8008, 2)
+    goto(Naranja_TangeloPort_EventScript_Sub_0814D8B6)
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_7 {
+    lockall
+    setvar(VAR_0x8008, 3)
+    goto(Naranja_TangeloPort_EventScript_Sub_0814D8B6)
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_4 {
+    lockall
+    setvar(VAR_0x8008, 4)
+    goto(Naranja_TangeloPort_EventScript_Sub_0814D8B6)
+}
+
+script Naranja_TangeloPort_EventScript_Trigger_5 {
+    lockall
+    setvar(VAR_0x8008, 5)
+    goto(Naranja_TangeloPort_EventScript_Sub_0814D8B6)
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D8B6 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D93C)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D947)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D926)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D931)
+    msgbox(Naranja_TangeloPort_Text_0816A8EE, MSGBOX_DEFAULT)
+    closemessage
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D952)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D995)
+    call(Naranja_TangeloPort_EventScript_Sub_0814DD38)
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DAAA)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DAED)
+    goto(Naranja_TangeloPort_EventScript_Sub_0814DD2B)
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D926 {
+    setvar(VAR_0x8009, 5)
+    setvar(VAR_0x800A, 8)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D931 {
+    setvar(VAR_0x8009, 0xE)
+    setvar(VAR_0x800A, 8)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D93C {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D947 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D952 {
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D9D8)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D9ED)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA02)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA17)
+    compare_var_to_value(VAR_0x8008, 4)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA2C)
+    compare_var_to_value(VAR_0x8008, 5)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA41)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D995 {
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D9D8)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D9ED)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA56)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA6B)
+    compare_var_to_value(VAR_0x8008, 4)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA80)
+    compare_var_to_value(VAR_0x8008, 5)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DA95)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D9D8 {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC76)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814D9ED {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC7D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA02 {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC84)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA17 {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC89)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA2C {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC8F)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA41 {
+    applymovement(LOCALID_PLAYER, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC92)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA56 {
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC96)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA6B {
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC9A)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA80 {
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DC9D)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DA95 {
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCA3)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DAAA {
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB30)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB3B)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB46)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB6C)
+    compare_var_to_value(VAR_0x8008, 4)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB92)
+    compare_var_to_value(VAR_0x8008, 5)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DBB8)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DAED {
+    compare_var_to_value(VAR_0x8008, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB30)
+    compare_var_to_value(VAR_0x8008, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DB3B)
+    compare_var_to_value(VAR_0x8008, 2)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DBDE)
+    compare_var_to_value(VAR_0x8008, 3)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DC04)
+    compare_var_to_value(VAR_0x8008, 4)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DC2A)
+    compare_var_to_value(VAR_0x8008, 5)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814DC50)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DB30 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCA8)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DB3B {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCAE)
+    waitmovement(LOCALID_NONE)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DB46 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCB4)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DB6C {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCBA)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DB92 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCC1)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DBB8 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCC5)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DBDE {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCCA)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DC04 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCCF)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DC2A {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCD3)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DC50 {
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCDA)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Scientist1 {
+    lock
+    faceplayer
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D926)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_TangeloPort_EventScript_Sub_0814D931)
+    call(Naranja_TangeloPort_EventScript_Sub_0814DD38)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    opendoor(0x8009, 0x800A)
+    waitdooranim
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, Naranja_TangeloPort_Movement_0814DCE0)
+    waitmovement(LOCALID_NONE)
+    hideobjectat(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4, MAP_NARANJA_TANGELO_PORT)
+    closedoor(0x8009, 0x800A)
+    waitdooranim
+    goto(Naranja_TangeloPort_EventScript_Sub_0814DD2B)
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DD2B {
+    removeobject(LOCALID_NARANJA_TANGELO_TOWN_PORT_SCIENTIST_1_4)
+    setflag(FLAG_SYS_POKEMON_GET)
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_STORY_STATE, 4)
+    release
+    end
+}
+
+script Naranja_TangeloPort_EventScript_Sub_0814DD38 {
+    msgbox(Naranja_TangeloPort_Text_0816A8FD, MSGBOX_DEFAULT)
+    playfanfare(MUS_OBTAIN_ITEM)
+    message(Naranja_TangeloPort_Text_0816AA32)
+    waitfanfare
+    waitmessage
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0112)
+    msgbox(Naranja_TangeloPort_Text_0816AA5C, MSGBOX_DEFAULT)
+    msgbox(Naranja_TangeloPort_Text_0816AB10, MSGBOX_DEFAULT)
+    closemessage
+    delay(0x1E)
+    return
+}
+
+script Naranja_TangeloPort_EventScript_Sub_086B67B1 {
+    gotostd(0x28)
+}
+
+movement Naranja_TangeloPort_Movement_0814D6AC {
+    walk_down
+}
+
+movement Naranja_TangeloPort_Movement_0814D6AE {
+    walk_down
+    walk_in_place_faster_left
+}
+
+movement Naranja_TangeloPort_Movement_0814D6B1 {
+    delay_16
+    delay_8
+    walk_up
+}
+
+movement Naranja_TangeloPort_Movement_0814D6B5 {
+    walk_up
+    set_invisible
+}
+
+movement Naranja_TangeloPort_Movement_0814D6B8 {
+    delay_16
+    delay_8
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814D6BD {
+    walk_up
+    walk_up
+}
+
+movement Naranja_TangeloPort_Movement_0814D6C0 {
+    jump_right
+    delay_16
+    delay_16
+    delay_16
+}
+
+movement Naranja_TangeloPort_Movement_0814D779 {
+    face_right
+    delay_8
+    disable_jump_landing_ground_effect
+    jump_in_place_right
+    delay_8
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_up
+    walk_fast_up
+    walk_fast_left
+    face_down
+}
+
+movement Naranja_TangeloPort_Movement_0814D787 {
+    walk_down
+}
+
+movement Naranja_TangeloPort_Movement_0814D789 {
+    walk_right
+    walk_down
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_up
+    walk_in_place_faster_down
+}
+
+movement Naranja_TangeloPort_Movement_0814D793 {
+    lock_facing_direction
+    walk_down
+    unlock_facing_direction
+}
+
+movement Naranja_TangeloPort_Movement_0814D7B3 {
+    face_right
+    delay_8
+    disable_jump_landing_ground_effect
+    jump_in_place_right
+    delay_8
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_up
+    walk_fast_up
+    walk_fast_right
+    face_down
+}
+
+movement Naranja_TangeloPort_Movement_0814D7C0 {
+    walk_left
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_in_place_faster_down
+}
+
+movement Naranja_TangeloPort_Movement_0814DC76 {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DC7D {
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DC84 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_TangeloPort_Movement_0814DC89 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_TangeloPort_Movement_0814DC8F {
+    walk_right
+    walk_right
+}
+
+movement Naranja_TangeloPort_Movement_0814DC92 {
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_TangeloPort_Movement_0814DC96 {
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_TangeloPort_Movement_0814DC9A {
+    walk_left
+    walk_left
+}
+
+movement Naranja_TangeloPort_Movement_0814DC9D {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_TangeloPort_Movement_0814DCA3 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_TangeloPort_Movement_0814DCA8 {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_TangeloPort_Movement_0814DCAE {
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_TangeloPort_Movement_0814DCB4 {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCBA {
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCC1 {
+    walk_left
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCC5 {
+    walk_left
+    walk_left
+    walk_left
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCCA {
+    walk_right
+    walk_right
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCCF {
+    walk_right
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCD3 {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCDA {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_in_place_faster_up
+}
+
+movement Naranja_TangeloPort_Movement_0814DCE0 {
+    walk_up
+}
+
+text Naranja_TangeloPort_Text_0816A7C9 {
+    "MOM: {PLAYER}, we’re here, honey!\pIt must be tiring riding with our things\nin the moving truck.\pWell, this is LITTLEROOT TOWN.\pHow do you like it?\nThis is our new home!\pIt has a quaint feel, but it seems to be\nan easy place to live, don’t you think?\pAnd, you get your own room, {PLAYER}!\nLet’s go inside."
+}
+
+text Naranja_TangeloPort_Text_0816A8EE {
+    "MOM: Wait, {PLAYER}!"
+}
+
+text Naranja_TangeloPort_Text_0816A8FD {
+    "MOM: {PLAYER}! {PLAYER}! Did you\nintroduce yourself to PROF. BIRCH?\pOh! What an adorable POKéMON!\nYou got it from PROF. BIRCH. How nice!\pYou’re your father’s child, all right.\nYou look good together with POKéMON!\pHere, honey! If you’re going out on an\nadventure, wear these RUNNING SHOES.\pThey’ll put a zip in your step!"
+}
+
+text Naranja_TangeloPort_Text_0816AA32 {
+    "{PLAYER} switched shoes with the\nRUNNING SHOES."
+}
+
+text Naranja_TangeloPort_Text_0816AA5C {
+    "MOM: {PLAYER}, those shoes came with\ninstructions.\p“Press the B Button while wearing these\nRUNNING SHOES to run extra-fast!\p“Slip on these RUNNING SHOES and race\nin the great outdoors!”"
+}
+
+text Naranja_TangeloPort_Text_0816AB10 {
+    "... ... ... ... ... ... ... ...\n... ... ... ... ... ... ... ...\pTo think that you have your very own\nPOKéMON now...\lYour father will be overjoyed.\p...But please be careful.\nIf anything happens, you can come home.\pGo on, go get them, honey!"
+}
+
+text Naranja_TangeloPort_Text_0816AC00 {
+    "If you use a PC, you can store items\nand POKéMON.\pThe power of science is staggering!"
+}
+
+text Naranja_TangeloPort_Text_0816AC56 {
+    "PROF. BIRCH spends days in his LAB\nstudying, then he’ll suddenly go out in\lthe wild to do more research...\pWhen does PROF. BIRCH spend time\nat home?"
+}
+
+text Naranja_TangeloPort_Text_0816ACEB {
+    "If you go in the tall grass at the sides\nof this road, wild POKéMON will appear."
+}
+
+text Naranja_TangeloPort_Text_0816AD3C {
+    "It’s not safe to go out there if you\ndon’t have any POKéMON with you."
+}
+
+text Naranja_TangeloPort_Text_0816AD82 {
+    "I can hear someone shouting down the\nroad here.\pWhat should I do? What should we do?\nSomebody has to go help..."
+}
+
+text Naranja_TangeloPort_Text_0816ADF2 {
+    "Boy, am I glad you went and rescued\nthe PROFESSOR."
+}
+
+text Naranja_TangeloPort_Text_0816AE25 {
+    "Are you going to catch POKéMON?\nGood luck!"
+}
+
+text Naranja_TangeloPort_Text_0816AE50 {
+    "LITTLEROOT TOWN\n“A town that can’t be shaded any hue.”"
+}
+
+text Naranja_TangeloPort_Text_0816AE87 {
+    "Laboratorio Profesora IVY"
+}

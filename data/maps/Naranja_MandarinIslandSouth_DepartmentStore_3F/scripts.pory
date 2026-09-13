@@ -1,0 +1,73 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandSouth_DepartmentStore_3F_MapScripts {
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_3F_EventScript_Woman4 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MandarinIslandSouth_DepartmentStore_3F_Mart_08159FA8)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_3F_EventScript_Woman4_2 {
+    lock
+    faceplayer
+    message(Naranja_ColdPath_Text_081A0BE4)
+    waitmessage
+    pokemart(Naranja_MandarinIslandSouth_DepartmentStore_3F_Mart_08159FD0)
+    msgbox(Naranja_ColdPath_Text_081A0C02, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_3F_EventScript_RunningTriathleteM {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_3F_Text_0818C24B, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_3F_EventScript_Man3 {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_3F_Text_0818C2B5, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_DepartmentStore_3F_EventScript_Woman7 {
+    msgbox(Naranja_MandarinIslandSouth_DepartmentStore_3F_Text_0818C32E, MSGBOX_NPC)
+    end
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_3F_Mart_08159FA8 {
+    ITEM_PROTEIN
+    ITEM_CALCIUM
+    ITEM_IRON
+    ITEM_ZINC
+    ITEM_CARBOS
+    ITEM_HP_UP
+}
+
+mart Naranja_MandarinIslandSouth_DepartmentStore_3F_Mart_08159FD0 {
+    ITEM_X_SPEED
+    ITEM_X_SPECIAL
+    ITEM_X_ATTACK
+    ITEM_X_DEFEND
+    ITEM_DIRE_HIT
+    ITEM_GUARD_SPEC
+    ITEM_X_ACCURACY
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_3F_Text_0818C24B {
+    "For quickly toughening up POKéMON,\nitems are the best.\pPROTEIN boosts ATTACK, and CALCIUM\nraises SP. ATK."
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_3F_Text_0818C2B5 {
+    "I want my POKéMON to have more\nendurance.\pI’m trying to decide whether to raise\nDEFENSE with IRON, or SP. DEF with ZINC."
+}
+
+text Naranja_MandarinIslandSouth_DepartmentStore_3F_Text_0818C32E {
+    "I gave a CARBOS to my POKéMON and its\nSPEED went up."
+}

@@ -1,0 +1,51 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MtPyre_6F_MapScripts {
+}
+
+script Naranja_MtPyre_6F_EventScript_HexManiac {
+    trainerbattle_single(TRAINER_NARANJA_BEMENTER_108, Naranja_MtPyre_6F_Text_081969FE, Naranja_MtPyre_6F_Text_08196A30)
+    specialvar(VAR_RESULT, ShouldTryRematchBattle)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_MtPyre_6F_EventScript_Sub_0815D46F)
+    msgbox(Naranja_MtPyre_6F_Text_08196A4C, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_6F_EventScript_Sub_0815D46F {
+    trainerbattle_rematch(TRAINER_NARANJA_BEMENTER_108, Naranja_MtPyre_6F_Text_08196A95, Naranja_MtPyre_6F_Text_08196AB1)
+    msgbox(Naranja_MtPyre_6F_Text_08196AC9, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_MtPyre_6F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x13E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+text Naranja_MtPyre_6F_Text_081969FE {
+    "When I’m here...\nA curious power flows into me..."
+}
+
+text Naranja_MtPyre_6F_Text_08196A30 {
+    "The power is ebbing away..."
+}
+
+text Naranja_MtPyre_6F_Text_08196A4C {
+    "Perhaps the power is from the spirits\nof POKéMON in fitful sleep here..."
+}
+
+text Naranja_MtPyre_6F_Text_08196A95 {
+    "Behind you...\nWhat is it..."
+}
+
+text Naranja_MtPyre_6F_Text_08196AB1 {
+    "Something faded away..."
+}
+
+text Naranja_MtPyre_6F_Text_08196AC9 {
+    "The POKéMON at rest here...\nSometimes, they play..."
+}

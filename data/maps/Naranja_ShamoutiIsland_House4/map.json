@@ -1,0 +1,79 @@
+{
+  "id": "MAP_NARANJA_SHAMOUTI_ISLAND_HOUSE4",
+  "region": "REGION_HOENN",
+  "name": "Naranja_ShamoutiIsland_House4",
+  "layout": "LAYOUT_NARANJA_SHAMOUTI_ISLAND_HOUSE2",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_SHAMOUTI_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_SHAMOUTI_ISLAND_HOUSE4_WOMAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_4",
+      "x": 6,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ShamoutiIsland_House4_EventScript_Woman5",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_SHAMOUTI_ISLAND_HOUSE4_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 1,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ShamoutiIsland_House4_EventScript_Boy3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_SHAMOUTI_ISLAND_HOUSE4_WINGULL",
+      "graphics_id": "OBJ_EVENT_GFX_WINGULL",
+      "x": 2,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ShamoutiIsland_House4_EventScript_Wingull",
+      "flag": "FLAG_HIDE_NARANJA_SHAMOUTI_ISLAND_G12_M07_WINGULL"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SHAMOUTI_ISLAND",
+      "dest_warp_id": "6"
+    },
+    {
+      "x": 4,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_SHAMOUTI_ISLAND",
+      "dest_warp_id": "6"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

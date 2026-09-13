@@ -1,0 +1,127 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_AquaHideout_B2F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_AquaHideout_B2F_OnTransition
+}
+
+script Naranja_AquaHideout_B2F_OnTransition {
+    call(Naranja_MtPyre_Summit_EventScript_Sub_081A0196)
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8008, 1)
+    playse(SE_PIN)
+    applymovement(32776, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(32776, Naranja_SevenGrapefruitIslands_Hall_Movement_081A0841)
+    waitmovement(LOCALID_NONE)
+    setvar(VAR_TEMP_1, 1)
+    releaseall
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_Object1 {
+    trainerbattle_single(TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_596, Naranja_AquaHideout_B2F_Text_08197093, Naranja_AquaHideout_B2F_Text_08197145, Naranja_AquaHideout_B2F_EventScript_AfterBattle_0815D8FD)
+    msgbox(Naranja_AquaHideout_B2F_Text_081971AE, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_AfterBattle_0815D8FD {
+    setvar(VAR_0x8008, 1)
+    setvar(VAR_0x8009, 3)
+    applymovement(32776, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    delay(0x14)
+    applymovement(32776, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_AquaHideout_B2F_Text_08197162, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32776, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    applymovement(32777, Naranja_AquaHideout_B2F_Movement_0815D95D)
+    waitmovement(LOCALID_NONE)
+    removeobject(32777)
+    delay(0x14)
+    applymovement(32776, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_AquaHideout_B2F_Text_081971AE, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_KUMQUAT_ISLAND_EVENT_COMPLETE_0070)
+    setflag(FLAG_HIDE_NARANJA_KUMQUAT_ISLAND_G00_M05_241)
+    release
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_Object2 {
+    trainerbattle_single(TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_570, Naranja_AquaHideout_B2F_Text_08197270, Naranja_AquaHideout_B2F_Text_081972AC, Naranja_AquaHideout_B2F_EventScript_AfterBattle_0815D97D)
+    msgbox(Naranja_AquaHideout_B2F_Text_081972D2, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_AfterBattle_0815D97D {
+    msgbox(Naranja_AquaHideout_B2F_Text_081972D2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_Object5 {
+    trainerbattle_single(TRAINER_NARANJA_TEAM_HIDESHOAL_CAVE_593, Naranja_AquaHideout_B2F_Text_081972EF, Naranja_AquaHideout_B2F_Text_08197390)
+    msgbox(Naranja_AquaHideout_B2F_Text_081973C0, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_AquaHideout_B2F_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 8)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+movement Naranja_AquaHideout_B2F_Movement_0815D95D {
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+}
+
+text Naranja_AquaHideout_B2F_Text_08197093 {
+    "Hehehe...\pGot here already, did you?\nWe underestimated you!\pBut this is it!\pI’m a cut above the GRUNTS you’ve seen\nso far.\pI’m not stalling for time. I’m going\nto pulverize you!"
+}
+
+text Naranja_AquaHideout_B2F_Text_08197145 {
+    "Hehehe...\nSo, I lost, too..."
+}
+
+text Naranja_AquaHideout_B2F_Text_08197162 {
+    "Hehehe!\pWhile I was toying with you, our BOSS\ngot through his preparations!"
+}
+
+text Naranja_AquaHideout_B2F_Text_081971AE {
+    "Hehehe!\pOur BOSS has already gone on his way to\nsome cave under the sea!\pIf you’re going to give chase, you’d\nbetter search the big, wide sea beyond\lLILYCOVE.\pBut will you find it then?\nHehehe!"
+}
+
+text Naranja_AquaHideout_B2F_Text_08197270 {
+    "Wahahah, I grew weary of waiting!\nYou owe me a battle, too!"
+}
+
+text Naranja_AquaHideout_B2F_Text_081972AC {
+    "Tired of waiting...\nLost and dazed..."
+}
+
+text Naranja_AquaHideout_B2F_Text_081972D2 {
+    "BOSS...\nIs this good enough?"
+}
+
+text Naranja_AquaHideout_B2F_Text_081972EF {
+    "Warp panels, the HIDEOUT’s pride\nand joy!\pYou’re clueless about where you are,\naren’t you?\pFluster and tire out the enemy, then\nlower the boom! That’s our plan!"
+}
+
+text Naranja_AquaHideout_B2F_Text_08197390 {
+    "What’s wrong with you?\nYou’re not tired at all!"
+}
+
+text Naranja_AquaHideout_B2F_Text_081973C0 {
+    "That reminds me... I can’t remember\nwhere I put the MASTER BALL.\pIf I fail to guard it, our BOSS will\nchew me out..."
+}

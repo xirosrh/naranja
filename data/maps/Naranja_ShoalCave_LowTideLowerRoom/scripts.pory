@@ -1,0 +1,74 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_ShoalCave_LowTideLowerRoom_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_ShoalCave_LowTideLowerRoom_OnLoad
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_OnLoad {
+    call(Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E3FF)
+    end
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E3FF {
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BB)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E412)
+    setmetatile(0x12, 2, 0x358, 1)
+    return
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E412 {
+    return
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sign_1 {
+    lockall
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BB)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E445)
+    setorcopyvar(VAR_0x8000, 0x2E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setmetatile(0x12, 2, 0x35A, 0)
+    special(DrawWholeMapView)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_03BB)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E445 {
+    msgbox(Naranja_ShoalCave_LowTideInnerRoom_Text_081C6979, MSGBOX_DEFAULT)
+    releaseall
+    end
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_EventScript_BlackBelt {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_011B)
+    goto_if(EQUAL, Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E47E)
+    msgbox(Naranja_ShoalCave_LowTideLowerRoom_Text_08198200, MSGBOX_DEFAULT)
+    setorcopyvar(VAR_0x8000, 0xC4)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(0)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_Hall_EventScript_Sub_081A029B)
+    setflag(FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_011B)
+    release
+    end
+}
+
+script Naranja_ShoalCave_LowTideLowerRoom_EventScript_Sub_0815E47E {
+    msgbox(Naranja_ShoalCave_LowTideLowerRoom_Text_081982A2, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+text Naranja_ShoalCave_LowTideLowerRoom_Text_08198200 {
+    "The penetrating cold around these\nparts is an impediment to training.\pBut with focus, one can overcome!\pWith this FOCUS BAND, buckle down and\nwithstand the cold!"
+}
+
+text Naranja_ShoalCave_LowTideLowerRoom_Text_081982A2 {
+    "Everything starts with focus!"
+}

@@ -1,0 +1,41 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SSTidalLowerDeck_MapScripts {
+}
+
+script Naranja_SSTidalLowerDeck_EventScript_Sailor {
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_494, Naranja_SSTidalLowerDeck_Text_081993C1, Naranja_SSTidalLowerDeck_Text_0819941A)
+    msgbox(Naranja_SSTidalLowerDeck_Text_0819942E, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_SSTidalLowerDeck_EventScript_Sailor_2 {
+    trainerbattle_single(TRAINER_NARANJA_SIN_NOMBRE_495, Naranja_SSTidalLowerDeck_Text_08199491, Naranja_SSTidalLowerDeck_Text_081994F7)
+    msgbox(Naranja_SSTidalLowerDeck_Text_08199508, MSGBOX_AUTOCLOSE)
+    end
+}
+
+text Naranja_SSTidalLowerDeck_Text_081993C1 {
+    "Arrrgh! I’m fed up and dog-tired of\ncleaning this huge place!\pLet’s have a quick battle!"
+}
+
+text Naranja_SSTidalLowerDeck_Text_0819941A {
+    "Little bro, I lost!"
+}
+
+text Naranja_SSTidalLowerDeck_Text_0819942E {
+    "We’re the CLEANUP BROTHERS!\pThe old one dumps the detergent,\nand the young one does the scrubbing!"
+}
+
+text Naranja_SSTidalLowerDeck_Text_08199491 {
+    "This is the bottom of the ship’s hull.\nThere’s plenty of room.\lIt’ll be alright for a POKéMON battle."
+}
+
+text Naranja_SSTidalLowerDeck_Text_081994F7 {
+    "Big bro, I lost!"
+}
+
+text Naranja_SSTidalLowerDeck_Text_08199508 {
+    "We’re the CLEANUP BROTHERS!\pThe old one dumps the detergent,\nand the young one does the scrubbing!"
+}

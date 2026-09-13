@@ -1,0 +1,93 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_SevenGrapefruitIslands_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_SevenGrapefruitIslands_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_OnTransition {
+    setrespawn(0xF)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD1B)
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Nurse {
+    setvar(VAR_0x800B, 1)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B)
+    waitmessage
+    waitbuttonpress
+    release
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Woman2 {
+    msgbox(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_08174CDB, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Man4 {
+    msgbox(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_08174D32, MSGBOX_NPC)
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD1B {
+    checkflag(FLAG_HIDE_NARANJA_MIKAN_ISLAND_G00_M20_WALLY)
+    goto_if(LESS_THAN, Naranja_HamlinIsland_House2_EventScript_Sub_081A14DC)
+    checkflag(FLAG_NARANJA_INSIDE_OF_TRUCK_EVENT_COMPLETE_04C1)
+    goto_if(EQUAL, Naranja_HamlinIsland_House2_EventScript_Sub_081A14DC)
+    checkflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G00_M19_SPIN_CUSHION)
+    goto_if(LESS_THAN, Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD49)
+    checkflag(FLAG_HIDE_NARANJA_SEVEN_GRAPEFRUIT_ISLANDS_OLD_MAN_1)
+    goto_if(LESS_THAN, Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD4F)
+    checkflag(FLAG_HIDE_NARANJA_ROUTE109_OLD_MAN_1)
+    goto_if(LESS_THAN, Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD55)
+    return
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD49 {
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 1)
+    return
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD4F {
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 2)
+    return
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD55 {
+    setvar(VAR_NARANJA_FERRY_DESTINATION, 3)
+    return
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD5B {
+    lock
+    faceplayer
+    msgbox(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_081A0A7D, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_NavelIsland_PokemonCenter_1F_EventScript_Sub_086B8F00)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FDC7)
+    end
+}
+
+script Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FDC7 {
+    message(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_081A0AFA)
+    waitmessage
+    return
+}
+
+text Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_08174CDB {
+    "There’s a stone cavern at the edge\nof town.\pI’ve heard you can find rare stones\nthere."
+}
+
+text Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_08174D32 {
+    "Even if a POKéMON faints and can’t\nbattle, it can still use a move learned\lfrom a Hidden Machine, HM."
+}
+
+text Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_081A0A7D {
+    "¡ Muy buenos días ! \nGracias por volver a este Pokecentro.\lLe atiende la enfermera JOY.\p¿Quieres que te curemos tus Pokemon?"
+}
+
+text Naranja_SevenGrapefruitIslands_PokemonCenter_1F_Text_081A0AFA {
+    "¡ Adiós {PLAYER} !"
+}

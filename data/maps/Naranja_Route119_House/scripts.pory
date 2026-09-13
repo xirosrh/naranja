@@ -1,0 +1,29 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_Route119_House_MapScripts {
+}
+
+script Naranja_Route119_House_EventScript_Woman5 {
+    msgbox(Naranja_Route119_House_Text_0819F371, MSGBOX_NPC)
+    end
+}
+
+script Naranja_Route119_House_EventScript_Wingull {
+    lock
+    faceplayer
+    waitse
+    playmoncry(SPECIES_WINGULL, 0)
+    msgbox(Naranja_Route119_House_Text_0819F406, MSGBOX_DEFAULT)
+    waitmoncry
+    release
+    end
+}
+
+text Naranja_Route119_House_Text_0819F371 {
+    "I heard about a cave called the CAVE\nOF ORIGIN.\pPeople rumor that the spirits of\nPOKéMON are revived there.\lCould something like that really happen?"
+}
+
+text Naranja_Route119_House_Text_0819F406 {
+    "WINGULL: Pihyo?"
+}

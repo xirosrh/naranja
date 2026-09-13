@@ -1,0 +1,552 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_PinkanIsland_MapScripts {
+}
+
+script Naranja_PinkanIsland_EventScript_Sign_13 {
+    gotonative(0x81C0988B)
+}
+
+script Naranja_PinkanIsland_EventScript_Latias {
+    lockall
+    setobjectxyperm(LOCALID_NARANJA_PINKAN_ISLAND_LATIAS, 0xE, 0x15)
+    setobjectmovementtype(2057, 0xA)
+    setvar(VAR_0x8004, 1)
+    goto(Naranja_PinkanIsland_EventScript_Sub_0814C4F4)
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_0814C4F4 {
+    msgbox(Naranja_PinkanIsland_Text_08166E65, MSGBOX_DEFAULT)
+    closemessage
+    addobject(LOCALID_NARANJA_PINKAN_ISLAND_ITEM_BALL)
+    addobject(LOCALID_NARANJA_PINKAN_ISLAND_LATIAS)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_LATIAS, Naranja_PinkanIsland_Movement_0814C5D3)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_NARANJA_PINKAN_ISLAND_ITEM_BALL)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_LATIAS, Naranja_PinkanIsland_Movement_0814C5C2)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_PinkanIsland_Text_08166E7E, MSGBOX_DEFAULT)
+    closemessage
+    nop
+    nop
+    nop
+    setobjectxyperm(LOCALID_NARANJA_PINKAN_ISLAND_LATIAS, 0x1E, 0xA)
+    clearflag(FLAG_HIDE_NARANJA_TROVITA_ISLAND_G00_M03_MAN_2)
+    setflag(FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_LATIAS)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 2)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 2)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE, 1)
+    clearflag(FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ROUTE_G00_M31_OLD_MAN_1)
+    clearflag(FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_WINGULL)
+    clearflag(FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_241)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_OLD_MAN_1)
+    setflag(FLAG_HIDE_NARANJA_ORANGE_ISLANDS_G17_M00_WINGULL)
+    releaseall
+    goto(Naranja_PinkanIsland_EventScript_Sub_086B5300)
+}
+
+script Naranja_PinkanIsland_EventScript_Lass {
+    trainerbattle_single(TRAINER_NARANJA_PINKAN_ISLAND_046, Naranja_PinkanIsland_Text_081B8B40, Naranja_PinkanIsland_Text_081B8B93)
+    msgbox(Naranja_PinkanIsland_Text_081B8BDE, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Tracey {
+    msgbox(Naranja_PinkanIsland_Text_08170273, MSGBOX_NPC)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sign_3 {
+    msgbox(Naranja_PinkanIsland_Text_081702E7, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_DittoDoll {
+    msgbox(Naranja_PinkanIsland_Text_08170301, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_08152F2E {
+    msgbox(Naranja_PinkanIsland_Text_08174945, MSGBOX_NPC)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Trigger_2 {
+    lockall
+    msgbox(Naranja_PinkanIsland_Text_08194159, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_MAGMA_MEMBER_M, Naranja_PinkanIsland_Movement_0815C9D3)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_ZIGZAGOON, Naranja_PinkanIsland_Movement_0815CA8A)
+    waitmovement(LOCALID_NONE)
+    copyobjectxytoperm(LOCALID_NARANJA_PINKAN_ISLAND_MAGMA_MEMBER_M)
+    copyobjectxytoperm(LOCALID_NARANJA_PINKAN_ISLAND_NURSE)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 3)
+    releaseall
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_SpinCushion {
+    setorcopyvar(VAR_0x8000, 0x6E)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_ItemBall {
+    setorcopyvar(VAR_0x8000, 0x16)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_ItemBall_2 {
+    setorcopyvar(VAR_0x8000, 0x121)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_ItemBall_3 {
+    setorcopyvar(VAR_0x8000, 3)
+    setorcopyvar(VAR_0x8001, 1)
+    callstd(1)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4060 {
+    checkitem(ITEM_KEY_TO_ROOM_1, 0)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(LESS_THAN, Naranja_PinkanIsland_EventScript_Sub_086B4095)
+    nop
+    lock
+    faceplayer
+    msgbox(Naranja_PinkanIsland_Text_086B4214, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_PinkanIsland_EventScript_Sub_086B4520)
+    msgbox(Naranja_PinkanIsland_Text_086B4386, MSGBOX_NPC)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4095 {
+    msgbox(Naranja_PinkanIsland_Text_086B40B3, MSGBOX_NPC)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4520 {
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_BEAUTY, Naranja_ColdPath_Movement_080008A0)
+    msgbox(Naranja_PinkanIsland_Text_086B4437, MSGBOX_NPC)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_CAMERAMAN, Naranja_PinkanIsland_Movement_0845D6E1)
+    faceplayer
+    delay(0x10)
+    setflag(FLAG_HIDE_NARANJA_ROUTE111_DITTO_DOLL)
+    call(Naranja_PinkanIsland_EventScript_Sub_086B4544)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4544 {
+    removeitem(ITEM_KEY_TO_ROOM_1, 1)
+    call(Naranja_Route111_EventScript_DittoDoll)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4550 {
+    faceplayer
+    checkitem(ITEM_KEY_TO_ROOM_1, 0)
+    compare_var_to_value(VAR_RESULT, 1)
+    call_if(EQUAL, Naranja_PinkanIsland_EventScript_Sub_086B456E)
+    nop
+    msgbox(Naranja_PinkanIsland_Text_086B4145, MSGBOX_NPC)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B456E {
+    msgbox(Naranja_PinkanIsland_Text_086B4319, MSGBOX_NPC)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Beauty {
+    checkflag(FLAG_HIDE_NARANJA_ROUTE111_DITTO_DOLL)
+    nop
+    goto_if(LESS_THAN, Naranja_PinkanIsland_EventScript_Sub_086B4060)
+    nop
+    call(Naranja_PinkanIsland_EventScript_Sub_086B4BA2)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Cameraman {
+    checkflag(FLAG_HIDE_NARANJA_ROUTE111_DITTO_DOLL)
+    nop
+    goto_if(LESS_THAN, Naranja_PinkanIsland_EventScript_Sub_086B4550)
+    nop
+    call(Naranja_PinkanIsland_EventScript_Sub_08152F2E)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4BA2 {
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_BEAUTY, Naranja_PinkanIsland_Movement_083E76C6)
+    msgbox(Naranja_PinkanIsland_Text_086B4CD0, MSGBOX_NPC)
+    nop
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_NURSE, Naranja_PinkanIsland_Movement_086B5420)
+    msgbox(Naranja_PinkanIsland_Text_086B4EDB, MSGBOX_NPC)
+    applymovement(LOCALID_PLAYER, Naranja_PinkanIsland_Movement_084700A7)
+    delay(0x20)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_BEAUTY, Naranja_PinkanIsland_Movement_086B4F51)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_CAMERAMAN, Naranja_PinkanIsland_Movement_086B4F58)
+    msgbox(Naranja_PinkanIsland_Text_086C0384, MSGBOX_NPC)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_NURSE, Naranja_PinkanIsland_Movement_086B541C)
+    delay(0x20)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_BEAUTY, Naranja_PinkanIsland_Movement_086B5400)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_CAMERAMAN, Naranja_PinkanIsland_Movement_086B5408)
+    delay(0x60)
+    nop
+    msgbox(Naranja_PinkanIsland_Text_086B5410, MSGBOX_NPC)
+    nop
+    setflag(FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_BEAUTY)
+    removeobject(LOCALID_NARANJA_PINKAN_ISLAND_DITTO_DOLL)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Kecleon1 {
+    lock
+    msgbox(Naranja_PinkanIsland_Text_086B4FC0, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_GraniteCave_1F_EventScript_Sub_086B38F4)
+    checkflag(FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_BEAUTY)
+    goto_if(LESS_THAN, Naranja_PinkanIsland_EventScript_Sub_086B4FB0)
+    faceplayer
+    msgbox(Naranja_PinkanIsland_Text_086B5068, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_PinkanIsland_EventScript_Sub_086B4FA2)
+    applymovement(LOCALID_NARANJA_PINKAN_ISLAND_KECLEON_1, Naranja_PinkanIsland_Movement_0800A854)
+    msgbox(Naranja_PinkanIsland_Text_086B510E, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4FA2 {
+    msgbox(Naranja_PinkanIsland_Text_086B50C2, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B4FB0 {
+    msgbox(Naranja_PinkanIsland_Text_086B502A, MSGBOX_AUTOCLOSE)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_James {
+    setflag(FLAG_HIDE_NARANJA_CRYSTAL_CAVE_G24_M04_WINGULL)
+    nop
+    goto(Naranja_RusturfTunnel_EventScript_Object6)
+}
+
+script Naranja_PinkanIsland_EventScript_Trigger_1 {
+    checkflag(FLAG_HIDE_NARANJA_PINKAN_ISLAND_G00_M30_LATIAS)
+    goto_if(LESS_THAN, Naranja_PinkanIsland_EventScript_Latias)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B5300 {
+    setwildbattle(SPECIES_RHYHORN, 0x14, 0)
+    special(BattleSetup_StartLatiBattle)
+    nop
+    delay(0x80)
+    nop
+    fadescreen(1)
+    delay(0x58)
+    removeobject(7689)
+    nop
+    fadescreen(0)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Nurse {
+    faceplayer
+    msgbox(Naranja_PinkanIsland_Text_0816E35B, MSGBOX_AUTOCLOSE)
+    applymovement(LOCALID_PLAYER, Naranja_PinkanIsland_Movement_086B544D)
+    release
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B9280 {
+    checkflag(FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_AIPOM)
+    goto_if(EQUAL, Naranja_MikanIsland_EventScript_Sub_086B920A)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
+    setflag(FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_AIPOM)
+    message(Naranja_MikanIsland_Text_086B917F)
+    delay(0x90)
+    waitmessage
+    waitse
+    playmoncry(SPECIES_AIPOM, 0)
+    message(Naranja_MikanIsland_Text_086B91B6)
+    delay(0x40)
+    waitmessage
+    setwildbattle(SPECIES_AIPOM, 0x14, 0)
+    special(BattleSetup_StartLatiBattle)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_Sub_086B9300 {
+    checkflag(FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_SLAKOTH)
+    call_if(EQUAL, Naranja_MikanIsland_EventScript_Sub_086B920A)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
+    setflag(FLAG_NARANJA_ENCOUNTERED_PINKAN_POKE_DRINKER_SLAKOTH)
+    message(Naranja_MikanIsland_Text_086B917F)
+    delay(0x90)
+    waitmessage
+    waitse
+    playmoncry(SPECIES_SLAKOTH, 0)
+    message(Naranja_MikanIsland_Text_086B91B6)
+    delay(0x40)
+    waitmessage
+    setwildbattle(SPECIES_SLAKOTH, 0x14, 0)
+    special(BattleSetup_StartLatiBattle)
+    end
+}
+
+script Naranja_PinkanIsland_EventScript_PichuDoll {
+    checkflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    call_if(LESS_THAN, Naranja_MikanIsland_EventScript_Sub_086B8F10)
+    checkflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    goto_if(EQUAL, Naranja_MikanIsland_EventScript_Sub_086B8F73)
+    checkflag(FLAG_NARANJA_POKE_DRINKERS_UNLOCKED)
+    goto_if(LESS_THAN, Naranja_MikanIsland_EventScript_Sub_086B8F43)
+    checkflag(FLAG_NARANJA_PINKAN_ISLAND_EVENT_COMPLETE_213F)
+    goto_if(EQUAL, Naranja_PinkanIsland_EventScript_Sub_086B9300)
+    checkflag(FLAG_HIDE_NARANJA_COLD_PATH_G00_M29_WALLY)
+    goto_if(EQUAL, Naranja_PinkanIsland_EventScript_Sub_086B9280)
+    setflag(FLAG_NARANJA_POKE_DRINKER_EMPTY)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_MILK)
+    clearflag(FLAG_NARANJA_POKE_DRINKER_FILLED_WITH_WATER)
+    message(Naranja_MikanIsland_Text_086B917F)
+    delay(0x90)
+    waitmessage
+    nop
+    special(RockSmashWildEncounter)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_MikanIsland_EventScript_Sub_081B0F3A)
+    waitstate
+    releaseall
+    message(Naranja_MikanIsland_Text_086B91B6)
+    delay(0x40)
+    waitmessage
+    release
+    end
+}
+
+movement Naranja_PinkanIsland_Movement_0800A854 {
+    face_up
+}
+
+movement Naranja_PinkanIsland_Movement_0814C5C2 {
+    delay_16
+    acro_wheelie_hop_face_right
+    walk_in_place_faster_up
+    walk_in_place_faster_up
+}
+
+movement Naranja_PinkanIsland_Movement_0814C5D3 {
+    walk_in_place_faster_up
+    walk_in_place_faster_up
+    acro_wheelie_hop_face_left
+    acro_wheelie_hop_face_left
+    walk_in_place_faster_up
+    walk_in_place_faster_up
+    walk_in_place_faster_up
+}
+
+movement Naranja_PinkanIsland_Movement_0815C9D3 {
+    lock_facing_direction
+    walk_right
+    unlock_facing_direction
+}
+
+movement Naranja_PinkanIsland_Movement_0815CA8A {
+    emote_exclamation_mark
+    jump_2_right
+    face_left
+}
+
+movement Naranja_PinkanIsland_Movement_083E76C6 {
+    delay_16
+    face_down
+}
+
+movement Naranja_PinkanIsland_Movement_0845D6E1 {
+    walk_slow_down
+    face_up
+}
+
+movement Naranja_PinkanIsland_Movement_084700A7 {
+    walk_down
+    face_up
+}
+
+movement Naranja_PinkanIsland_Movement_086B4F51 {
+    walk_slow_left
+    delay_16
+    walk_slow_up
+    walk_slow_up
+    delay_16
+    walk_slow_right
+}
+
+movement Naranja_PinkanIsland_Movement_086B4F58 {
+    walk_slow_up
+    walk_slow_up
+    walk_slow_right
+    face_up
+}
+
+movement Naranja_PinkanIsland_Movement_086B5400 {
+    walk_slow_right
+    delay_16
+    walk_slow_up
+    set_invisible
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+}
+
+movement Naranja_PinkanIsland_Movement_086B5408 {
+    walk_slow_up
+    walk_slow_up
+    walk_slow_up
+    set_invisible
+    walk_slow_up
+    walk_slow_up
+}
+
+movement Naranja_PinkanIsland_Movement_086B541C {
+    emote_exclamation_mark
+    walk_right
+    face_left
+}
+
+movement Naranja_PinkanIsland_Movement_086B5420 {
+    set_invisible
+    walk_slow_down
+    walk_slow_down
+    walk_slow_down
+    set_visible
+    walk_slow_down
+}
+
+movement Naranja_PinkanIsland_Movement_086B544D {
+    face_up
+    walk_slow_up
+}
+
+text Naranja_PinkanIsland_Text_08166E65 {
+    "¿Qué es eso rosa?"
+}
+
+text Naranja_PinkanIsland_Text_08166E7E {
+    "...es un rhyhorn\p¡Y parece furioso!"
+}
+
+text Naranja_PinkanIsland_Text_0816E35B {
+    "Esta gente no sabe lo que hace...\n…pero ya que estamos…\p¿Le echamos una ojeada a la cueva?\pTe llamarán la atención todos los\nfósiles que puedes encontrar ahì dentro."
+}
+
+text Naranja_PinkanIsland_Text_08170273 {
+    "Exploring a cave isn’t like walking\non a road.\pYou never know when wild POKéMON will\nappear. It’s full of suspense."
+}
+
+text Naranja_PinkanIsland_Text_081702E7 {
+    "Reserva POKéMON {COLOR 0x02}PINKAN"
+}
+
+text Naranja_PinkanIsland_Text_08170301 {
+    "Isla KABUTO:\nProhibido arrancar fósiles."
+}
+
+text Naranja_PinkanIsland_Text_08174945 {
+    "Jeje…\pEl reportaje está saliendo \na pedir de boca.\p¡Prepárate!\pEn unos momentos lo retomaremos\ncon un reportaje del fosil."
+}
+
+text Naranja_PinkanIsland_Text_08194159 {
+    "¡Eh!  \nViene hacia aquì.\p¡Escóndete! \n¡Rápido!"
+}
+
+text Naranja_PinkanIsland_Text_081B8B40 {
+    "Con los pokemon…\pno soy demasiado bueno.\p¡Pero en una excavación\nte machaco! jaja…"
+}
+
+text Naranja_PinkanIsland_Text_081B8B93 {
+    "Estaba claro desde el principio\npero eso no le quitó emoción.\p¡¿Verdad?!"
+}
+
+text Naranja_PinkanIsland_Text_081B8BDE {
+    "Puedo estar horas y horas ayudando a mis\nPOKéMON a excavar sin aburrirme."
+}
+
+text Naranja_PinkanIsland_Text_086B40B3 {
+    "¿Ves que estamos ocupados?\pHemos tenido un problema técnico,\ny mientras no pueda hacer MI reportaje\lno habrá tiempo para batallitas.\p¿Te enteras?"
+}
+
+text Naranja_PinkanIsland_Text_086B4145 {
+    "¿Hablaste con la corresponsal?\pA veces cari parece un poco borde,\npero merece la pena…\pEs que nuestra cámara ha quedado\nsin energía y necesitamos un \lgenerador para hacer el reportaje\lsobre esta isla fósil."
+}
+
+text Naranja_PinkanIsland_Text_086B4214 {
+    "¿Que pasa aho…    \n¡Tienes un generador!\pSiendo una gran y famosa persona\nen el fascinante mundo\ldel entrenamiento pokemon sabía \lque lo conseguirías…\pehh…\p{COLOR 0x04}{PLAYER}, \nme llamo {PLAYER}.\p{COLOR 0x01}¡ Sabía que ibas a conseguir \nel generador {PLAYER} !\p{COLOR 0x04}Yaa…\p{COLOR 0x01}Ahora…\p¿Nos lo dejas?"
+}
+
+text Naranja_PinkanIsland_Text_086B4319 {
+    "Vaya… necesitamos un generador como\nel que llevas para cargar el equipo.\pPor favor déjaselo a la reportera."
+}
+
+text Naranja_PinkanIsland_Text_086B4386 {
+    "(mordiendose la lengua):\n{COLOR 0x0B}(grrr) (…)(grrr)\l{COLOR 0x04}¿Como dices?\p{COLOR 0x01}Decía que los entrenadores pokemon\ndeben ser solidarios.\p(Guiñando un ojo)\nY tu eres de los mejores que conozco."
+}
+
+text Naranja_PinkanIsland_Text_086B4437 {
+    "Le diste el generador.\p¡Cámara! ¡Coloca esto!\pPreparados para entrar."
+}
+
+text Naranja_PinkanIsland_Text_086B4CD0 {
+    "¡Y seguimos!\pEn vuestras casas os preguntareis\nqué hacemos en esta isla.\pVereis…\p…aquí…\p¡Se acaba de hacer uno de los mayores\ndescubrimientos de la humanidad!\pLa piedra que tengo detrás mía es en\nrealidad lo que queda de un pokemon\lque se movía por el mar hace eones.\pEs el fosil pokemon descubierto más\nantiguo, más incluso que los que se \ldescubrieron cerca de Ciudad Plateada\ly hoy se conservan en su museo.\pBla, bla, bla…\pAhora estamos esperando aparezca\nla directora de esta expedición."
+}
+
+text Naranja_PinkanIsland_Text_086B4EDB {
+    "\pY ahora hablaremos con ella…\p…\p…si nuestro ambicioso chupacámara\nnos lo permite.\p{COLOR 0x04}¿Ehh?\pAh… yo…\pYa voy simpática…"
+}
+
+text Naranja_PinkanIsland_Text_086B4FC0 {
+    "¡Que extraña roca!\pPor este lado no se puede ver\nclaramente lo que es.\p¿Quieres moverla para verla mejor?"
+}
+
+text Naranja_PinkanIsland_Text_086B502A {
+    "¡¡ Ni se te ocurra tocar el fosil\nmientras esté yo delante !!"
+}
+
+text Naranja_PinkanIsland_Text_086B5068 {
+    "De frente también parece\nuna roca bastante extraña.\p¿Quieres dejarla como la encontraste?"
+}
+
+text Naranja_PinkanIsland_Text_086B50C2 {
+    "Mejor moverlo lo mìnimo posible.\pEs muy antiguo y no aguantará\nmucha traca."
+}
+
+text Naranja_PinkanIsland_Text_086B510E {
+    "Mejor no dejar huellas…"
+}
+
+text Naranja_PinkanIsland_Text_086B5410 {
+    "d.Joy: Ehh…"
+}
+
+text Naranja_PinkanIsland_Text_086C0384 {
+    "Texto no recuperable del ROM original."
+}

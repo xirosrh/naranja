@@ -1,0 +1,14 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TangeloIsland_House1_MapScripts {
+}
+
+script Naranja_TangeloIsland_House1_EventScript_Hiker {
+    msgbox(Naranja_TangeloIsland_House1_Text_0817476D, MSGBOX_NPC)
+    end
+}
+
+text Naranja_TangeloIsland_House1_Text_0817476D {
+    "Crío Geodudes para llevarlos cuando\nescalo los Picos NARANJA.\pMe ayudan mucho.\p{COLOR 0x04}{PLAYER}:  ¿Picos NARANJA?\p{COLOR 0x01} ¡Las más altas de todas las\n{COLOR 0x0E}IslasNaranjas{COLOR 0x01}!\pSon de origen volcánico y están en el\nnoreste."
+}

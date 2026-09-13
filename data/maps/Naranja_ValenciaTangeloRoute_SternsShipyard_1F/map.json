@@ -1,0 +1,170 @@
+{
+  "id": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F",
+  "region": "REGION_HOENN",
+  "name": "Naranja_ValenciaTangeloRoute_SternsShipyard_1F",
+  "layout": "LAYOUT_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_VALENCIA_TANGELO_ROUTE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F_HEX_MANIAC",
+      "graphics_id": "OBJ_EVENT_GFX_HEX_MANIAC",
+      "x": 18,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_1F_EventScript_HexManiac",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G09_M00_HEX_MANIAC"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F_BARD",
+      "graphics_id": "OBJ_EVENT_GFX_BARD",
+      "x": 8,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_1F_EventScript_Bard",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F_HIPSTER",
+      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "x": 5,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F_OLD_MAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 20,
+      "y": 0,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 1,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_1F_EventScript_OldMan1",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G09_M00_OLD_MAN_1"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F_MAN_7",
+      "graphics_id": "OBJ_EVENT_GFX_DEVON_EMPLOYEE",
+      "x": 11,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G09_M00_MAN_7"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_1F_MAGMA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_JESSIE",
+      "x": 20,
+      "y": 0,
+      "elevation": 4,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_NARANJA_VALENCIA_TANGELO_ROUTE_G09_M00_MAGMA_MEMBER_F"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 14,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_TANGELO_ROUTE_STERNS_SHIPYARD_2F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 11,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_1F_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 0,
+      "elevation": 3,
+      "var": "VAR_TEMP_C",
+      "var_value": "0",
+      "script": "Naranja_ValenciaTangeloRoute_SternsShipyard_1F_EventScript_Trigger_1"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_TrovitaIsland_DevonCorp_2F_EventScript_Scientist1_5"
+    }
+  ]
+}

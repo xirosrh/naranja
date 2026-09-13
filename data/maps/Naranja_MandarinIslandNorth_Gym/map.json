@@ -1,0 +1,166 @@
+{
+  "id": "MAP_NARANJA_MANDARIN_ISLAND_NORTH_GYM",
+  "region": "REGION_HOENN",
+  "name": "Naranja_MandarinIslandNorth_Gym",
+  "layout": "LAYOUT_NARANJA_MANDARIN_ISLAND_NORTH_GYM",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_MANDARIN_ROUTE_ISLAND_NORTH",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_GYM",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_GYM_WATTSON",
+      "graphics_id": "OBJ_EVENT_GFX_WATTSON",
+      "x": 4,
+      "y": 3,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_ValenciaIsland_Gym_EventScript_HotSpringsOldWoman",
+      "flag": "FLAG_HIDE_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_G10_M00_WATTSON"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_GYM_MAN_6",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 6,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Man6",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_GYM_GIRL_3",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Girl3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_GYM_YOUNGSTER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "x": 1,
+      "y": 13,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "1",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Youngster",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_GYM_MAN_6_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "x": 2,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Man6_2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MANDARIN_ROUTE_ISLAND_NORTH_GYM_MAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_2",
+      "x": 7,
+      "y": 20,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Man2",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MANDARIN_ISLAND_NORTH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_MANDARIN_ISLAND_NORTH",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 9,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 11,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 15,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Trigger_3"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Sign_1"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 18,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
+      "script": "Naranja_MandarinIslandNorth_Gym_EventScript_Sign_2"
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_TangeloPort_MaysHouse_1F_MapScripts {
+    MAP_SCRIPT_ON_LOAD: Naranja_TangeloPort_MaysHouse_1F_OnLoad
+    MAP_SCRIPT_ON_TRANSITION: Naranja_TangeloPort_MaysHouse_1F_OnTransition
+    MAP_SCRIPT_ON_FRAME_TABLE [
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3: Naranja_TangeloPort_MaysHouse_1F_OnFrame_1
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5: Naranja_TangeloPort_MaysHouse_1F_OnFrame_2
+        VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6: Naranja_TangeloPort_MaysHouse_1F_OnFrame_3
+        VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_2, 1: Naranja_TangeloPort_MaysHouse_1F_OnFrame_4
+        VAR_NARANJA_PALLET_TOWN_OAK_SCENE_STATE, 3: Naranja_PalletTown_AshsHouse_1F_OnFrame_5
+    ]
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_OnLoad {
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
+    call_if(LESS_THAN, Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_0815289E)
+    checkflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0112)
+    call_if(EQUAL, Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528B1)
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_0815289E {
+    setmetatile(5, 4, 0x270, 1)
+    setmetatile(5, 2, 0x268, 1)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528B1 {
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528BE)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528BE {
+    setmetatile(6, 7, 0x293, 1)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_OnTransition {
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 3)
+    call_if(EQUAL, Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_08152902)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 5)
+    call_if(EQUAL, Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528EA)
+    compare_var_to_value(VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE, 6)
+    call_if(EQUAL, Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528F6)
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528EA {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, 2, 4)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, 7)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081528F6 {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, 6, 5)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, 7)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_08152902 {
+    setobjectxyperm(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, 1, 8)
+    setobjectmovementtype(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, 7)
+    return
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_OnFrame_2 {
+    lockall
+    msgbox(Naranja_PalletTown_AshsHouse_1F_Text_08172574, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_MaysHouse_1F_Movement_0815295E)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_MOM, Naranja_TangeloPort_MaysHouse_1F_Movement_0815295E)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_TANGELO_PORT_MAYS_HOUSE_2F, 0xFF, 1, 1)
+    waitstate
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_OnFrame_1 {
+    lockall
+    setvar(VAR_0x8004, 1)
+    setvar(VAR_0x8005, 1)
+    goto(Naranja_PalletTown_AshsHouse_1F_EventScript_Sub_081B6956)
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_OnFrame_3 {
+    lockall
+    setvar(VAR_0x8004, 1)
+    setvar(VAR_0x8005, 1)
+    goto(Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081B6B2E)
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_OnFrame_4 {
+    lockall
+    playse(SE_PIN)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_WOMAN_5, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_WOMAN_5, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    applymovement(LOCALID_NARANJA_TANGELO_TOWN_PORT_MAYS_HOUSE_1_F_WOMAN_5, Naranja_TangeloPort_MaysHouse_1F_Movement_081529C0)
+    waitmovement(LOCALID_NONE)
+    special(GetRivalSonDaughterString)
+    msgbox(Naranja_PalletTown_AshsHouse_1F_Text_081730C2, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0057)
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_2, 2)
+    releaseall
+    end
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Trigger_1 {
+    lockall
+    setvar(VAR_0x8004, 1)
+    setvar(VAR_0x8005, 1)
+    applymovement(32772, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_PalletTown_AshsHouse_1F_EventScript_Sub_081B69B7)
+}
+
+script Naranja_TangeloPort_MaysHouse_1F_EventScript_Sub_081B6B2E {
+    applymovement(32773, Naranja_MeteorFalls_1F_1R_Movement_081A083F)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_PalletTown_AshsHouse_1F_EventScript_Sub_081B6B9D)
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_MaysHouse_1F_Movement_081B6CD4)
+    waitmovement(LOCALID_NONE)
+    playbgm(MUS_ENCOUNTER_INTERVIEWER, 0)
+    msgbox(Naranja_PalletTown_AshsHouse_1F_Text_081725C9, MSGBOX_DEFAULT)
+    closemessage
+    applymovement(32773, Naranja_TangeloPort_MaysHouse_1F_Movement_081B6BDE)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_PLAYER, Naranja_TangeloPort_MaysHouse_1F_Movement_081B6CDA)
+    waitmovement(LOCALID_NONE)
+    call(Naranja_PalletTown_AshsHouse_1F_EventScript_Sub_081B6BBE)
+    applymovement(LOCALID_PLAYER, Naranja_ColdPath_FossilManiacsTunnel_Movement_081A0843)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_PalletTown_AshsHouse_1F_Text_081725FE, MSGBOX_DEFAULT)
+    msgbox(Naranja_PalletTown_AshsHouse_1F_Text_08172644, MSGBOX_DEFAULT)
+    closemessage
+    setvar(VAR_TEMP_1, 1)
+    applymovement(32773, Naranja_TangeloPort_MaysHouse_1F_Movement_081B6BE5)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_PalletTown_AshsHouse_1F_EventScript_Sub_081B6AB8)
+}
+
+movement Naranja_TangeloPort_MaysHouse_1F_Movement_0815295E {
+    walk_up
+}
+
+movement Naranja_TangeloPort_MaysHouse_1F_Movement_081529C0 {
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+}
+
+movement Naranja_TangeloPort_MaysHouse_1F_Movement_081B6BDE {
+    walk_right
+    walk_in_place_faster_left
+}
+
+movement Naranja_TangeloPort_MaysHouse_1F_Movement_081B6BE5 {
+    walk_right
+    walk_down
+    walk_in_place_faster_left
+}
+
+movement Naranja_TangeloPort_MaysHouse_1F_Movement_081B6CD4 {
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    walk_right
+}
+
+movement Naranja_TangeloPort_MaysHouse_1F_Movement_081B6CDA {
+    walk_right
+}

@@ -1,0 +1,399 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_BattleTower_Outside_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_BattleTower_Outside_OnTransition
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sign_2 {
+    msgbox(Naranja_BattleTower_Outside_Text_0816AEA1, MSGBOX_AUTOCLOSE)
+    return
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sign_1 {
+    msgbox(Naranja_BattleTower_Outside_Text_0816AEAC, MSGBOX_AUTOCLOSE)
+    return
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sign_3 {
+    msgbox(Naranja_BattleTower_Outside_Text_0816AEF2, MSGBOX_AUTOCLOSE)
+    return
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sign_4 {
+    msgbox(Naranja_BattleTower_Outside_Text_0816B20E, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Gary {
+    lockall
+    checkplayergender
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EBAB)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EC04)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EBAB {
+    msgbox(Naranja_BattleTower_Outside_Text_0816D57A, MSGBOX_DEFAULT)
+    playbgm(MUS_ENCOUNTER_MAY, 1)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_BattleTower_Outside_Text_086BF221, MSGBOX_DEFAULT)
+    copyvar(VAR_0x8000, VAR_STARTER_MON)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EC5D)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EC6D)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EC7D)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EC04 {
+    msgbox(Naranja_BattleTower_Outside_Text_0816D762, MSGBOX_DEFAULT)
+    playbgm(MUS_ENCOUNTER_BRENDAN, 1)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_KumquatIsland_Movement_081A0839)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0833)
+    waitmovement(LOCALID_NONE)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_MeteorFalls_1F_1R_Movement_081A0835)
+    waitmovement(LOCALID_NONE)
+    msgbox(Naranja_BattleTower_Outside_Text_086BECF6, MSGBOX_DEFAULT)
+    copyvar(VAR_0x8000, VAR_STARTER_MON)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EC8D)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814EC9D)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814ECAD)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EC5D {
+    trainerbattle_no_intro(TRAINER_NARANJA_NARANJA_PALLET_TOWN_532, Naranja_BattleTower_Outside_Text_086BEFC7)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECBD)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EC6D {
+    trainerbattle_no_intro(TRAINER_NARANJA_NARANJA_PALLET_TOWN_535, Naranja_BattleTower_Outside_Text_086BEFC7)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECBD)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EC7D {
+    trainerbattle_no_intro(TRAINER_NARANJA_NARANJA_PALLET_TOWN_529, Naranja_BattleTower_Outside_Text_086BEFC7)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECBD)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EC8D {
+    trainerbattle_no_intro(TRAINER_NARANJA_NARANJA_PALLET_TOWN_523, Naranja_BattleTower_Outside_Text_0816D836)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECCB)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814EC9D {
+    trainerbattle_no_intro(TRAINER_NARANJA_NARANJA_PALLET_TOWN_526, Naranja_BattleTower_Outside_Text_0816D836)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECCB)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ECAD {
+    trainerbattle_no_intro(TRAINER_NARANJA_NARANJA_PALLET_TOWN_520, Naranja_BattleTower_Outside_Text_0816D836)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECCB)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ECBD {
+    msgbox(Naranja_BattleTower_Outside_Text_0816D688, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECD9)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ECCB {
+    msgbox(Naranja_BattleTower_Outside_Text_086BF019, MSGBOX_DEFAULT)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ECD9)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ECD9 {
+    closemessage
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814ED29)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814ED0C)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814ED29)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_0814ED29)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ED0C {
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_BattleTower_Outside_Movement_0814ED67)
+    waitmovement(LOCALID_NONE)
+    playse(SE_LEDGE)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_BattleTower_Outside_Movement_0814ED6B)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ED46)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ED29 {
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_BattleTower_Outside_Movement_0814ED71)
+    waitmovement(LOCALID_NONE)
+    playse(SE_LEDGE)
+    applymovement(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN, Naranja_BattleTower_Outside_Movement_0814ED74)
+    waitmovement(LOCALID_NONE)
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0814ED46)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0814ED46 {
+    removeobject(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_STEVEN)
+    setvar(VAR_NARANJA_NARANJA_PALLET_TOWN_STORY_STATE, 1)
+    setvar(VAR_NARANJA_OAK_LAB_STORY_STATE, 4)
+    clearflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G01_M04_PROF_BIRCH_2)
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0082)
+    setvar(VAR_NARANJA_TANGELO_TOWN_PORT_EVENT_STATE_3, 1)
+    clearflag(FLAG_HIDE_NARANJA_TANGELO_TOWN_ISLAND_G00_M10_VARS)
+    savebgm(MUS_DUMMY)
+    fadedefaultbgm
+    releaseall
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sign_5 {
+    msgbox(Naranja_BattleTower_Outside_Text_0816E026, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_BattleTower_Outside_OnTransition {
+    setflag(FLAG_NARANJA_NARANJA_PALLET_TOWN_EVENT_COMPLETE_0848)
+    setvar(VAR_NARANJA_NARANJA_PALLET_TOWN_EVENT_STATE_6, 0)
+    setflag(FLAG_HIDE_NARANJA_PALLET_TOWN_G26_M05_REPORTER_F)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Beauty {
+    lock
+    faceplayer
+    msgbox(Naranja_BattleTower_Outside_Text_08199D06, MSGBOX_DEFAULT)
+    checkitem(ITEM_SS_TICKET, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_081601C6)
+    message(Naranja_BattleTower_Outside_Text_08199D9D)
+    waitmessage
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0816018E)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_0816018E {
+    multichoicedefault(0x15, 6, 0x35, 2, 0)
+    copyvar(VAR_0x8000, VAR_RESULT)
+    compare_var_to_value(VAR_0x8000, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_081601D0)
+    compare_var_to_value(VAR_0x8000, 1)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_081601FB)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_08160250)
+    compare_var_to_value(VAR_0x8000, 0x7F)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_08160250)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_081601C6 {
+    msgbox(Naranja_BattleTower_Outside_Text_08199D40, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_081601D0 {
+    msgbox(Naranja_BattleTower_Outside_Text_08199DF2, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_08160226)
+    msgbox(Naranja_BattleTower_Outside_Text_08199E4B, MSGBOX_DEFAULT)
+    call(Naranja_BattleTower_Outside_EventScript_Sub_08160232)
+    warp(MAP_NARANJA_MURCOTT_ISLAND_HARBOR, 0xFF, 8, 0xB)
+    waitstate
+    release
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_081601FB {
+    msgbox(Naranja_BattleTower_Outside_Text_08199E0E, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_BattleTower_Outside_EventScript_Sub_08160226)
+    msgbox(Naranja_BattleTower_Outside_Text_08199E4B, MSGBOX_DEFAULT)
+    call(Naranja_BattleTower_Outside_EventScript_Sub_08160232)
+    warp(MAP_NARANJA_KUMQUAT_ISLAND_HARBOR, 0xFF, 8, 0xB)
+    waitstate
+    release
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_08160226 {
+    message(Naranja_BattleTower_Outside_Text_08199E7A)
+    waitmessage
+    goto(Naranja_BattleTower_Outside_EventScript_Sub_0816018E)
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_08160232 {
+    closemessage
+    applymovement(32783, Naranja_MeteorFalls_1F_1R_Movement_081A0845)
+    waitmovement(LOCALID_NONE)
+    delay(0x1E)
+    hideobjectat(LOCALID_NARANJA_BATTLE_TOWER_OUTSIDE_BEAUTY, MAP_NARANJA_BATTLE_TOWER_OUTSIDE)
+    setvar(VAR_0x8004, 4)
+    call(Naranja_SouthernIsland_Exterior_EventScript_Sub_081A047C)
+    return
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sub_08160250 {
+    msgbox(Naranja_BattleTower_Outside_Text_08199E29, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Sign_6 {
+    msgbox(Naranja_BattleTower_Outside_Text_08199C6F, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_BugCatcher {
+    msgbox(Naranja_BattleTower_Outside_Text_08199CA4, MSGBOX_NPC)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Woman1 {
+    msgbox(Naranja_BattleTower_Outside_Text_086BECA3, MSGBOX_NPC)
+    end
+}
+
+script Naranja_BattleTower_Outside_EventScript_Boy2 {
+    msgbox(Naranja_BattleTower_Outside_Text_08199ED4, MSGBOX_NPC)
+    end
+}
+
+movement Naranja_BattleTower_Outside_Movement_0814ED67 {
+    walk_left
+    walk_down
+    walk_down
+}
+
+movement Naranja_BattleTower_Outside_Movement_0814ED6B {
+    jump_2_down
+    delay_16
+    walk_down
+    walk_down
+    walk_down
+}
+
+movement Naranja_BattleTower_Outside_Movement_0814ED71 {
+    walk_down
+    walk_down
+}
+
+movement Naranja_BattleTower_Outside_Movement_0814ED74 {
+    jump_2_down
+    delay_16
+    walk_down
+    walk_down
+}
+
+text Naranja_BattleTower_Outside_Text_0816AEA1 {
+    "Casa de {PLAYER}"
+}
+
+text Naranja_BattleTower_Outside_Text_0816AEAC {
+    "Laboratorio Prf.OAK"
+}
+
+text Naranja_BattleTower_Outside_Text_0816AEF2 {
+    "Casa de GARY"
+}
+
+text Naranja_BattleTower_Outside_Text_0816B20E {
+    "AERÓDROMO de PALETA  \n“Mejor que un PIDGEOT“"
+}
+
+text Naranja_BattleTower_Outside_Text_0816D57A {
+    "… \p…a ver si el tío sale ya de la casa del\nmocoso este…"
+}
+
+text Naranja_BattleTower_Outside_Text_0816D688 {
+    "{COLOR 0x02}Gary: Quizás no seas tan malo\n{PLAYER}, pero eres bastante imbecil.\pY eso me da pena.\pQuizá algùn dia te parezcas a mí…\p…  \pMi tío ya a ido al laboratorio,\ntenía una importante misón para mí.\pY no es como transportista…\p"
+}
+
+text Naranja_BattleTower_Outside_Text_0816D762 {
+    "…      \p…a ver si el tío sale ya de la casa de la\nniña pija esta…   "
+}
+
+text Naranja_BattleTower_Outside_Text_0816D836 {
+    "{COLOR 0x02}¡Vaya! Mejor no te crezcas… "
+}
+
+text Naranja_BattleTower_Outside_Text_0816E026 {
+    "{COLOR 0x02}ADVERTENCIA\p{COLOR 0x01}\nLa ruta 1 está bloqueda,\lpor lo que no esta permitido pasar.\lDisculpen"
+}
+
+text Naranja_BattleTower_Outside_Text_08199C6F {
+    "PUEBLO PALETA   \n“¡Un lienzo en blanco en tu viaje!“"
+}
+
+text Naranja_BattleTower_Outside_Text_08199CA4 {
+    "¡ Oye !    \n¡Tu eres {PLAYER}!\pMe contaron todo sobre tus victorias en\nla Liga Añil. ¡ Qué gran pelea !"
+}
+
+text Naranja_BattleTower_Outside_Text_08199D06 {
+    "¡Hola! ¿Vas a viajar en crucero?\nTendré q ver tu reserva."
+}
+
+text Naranja_BattleTower_Outside_Text_08199D40 {
+    "{PLAYER} no tiene reserva…\pDe momento no podrás viajar en\nnuestro crucero…     \p…de momento…    "
+}
+
+text Naranja_BattleTower_Outside_Text_08199D9D {
+    "{PLAYER} flashed the TICKET.\pPerfect! That’s all you need!\pAnd where would you like to go?"
+}
+
+text Naranja_BattleTower_Outside_Text_08199DF2 {
+    "SLATEPORT CITY it is, then!"
+}
+
+text Naranja_BattleTower_Outside_Text_08199E0E {
+    "LILYCOVE CITY it is, then!"
+}
+
+text Naranja_BattleTower_Outside_Text_08199E29 {
+    "Please sail with us another time!"
+}
+
+text Naranja_BattleTower_Outside_Text_08199E4B {
+    "Please board the ferry and wait for\ndeparture."
+}
+
+text Naranja_BattleTower_Outside_Text_08199E7A {
+    "Then, where would you like to go?"
+}
+
+text Naranja_BattleTower_Outside_Text_08199ED4 {
+    "Hay mucha gente que te ayudará en \ntu camino.         \pDeberías procurar no evitarlos"
+}
+
+text Naranja_BattleTower_Outside_Text_086BECA3 {
+    "Î\nキ\n Eres {PLAYER} !! \pOjalá tubiese un Pikachu como el tuyo.\p\p¿Me lo das?\p{COLOR 0x04}{PLAYER}: ¡NOOO!"
+}
+
+text Naranja_BattleTower_Outside_Text_086BECF6 {
+    "{COLOR 0x02}Gary: ¡Ah!, pero si está aquí.\pUohh, la chica acuática…\p¡Pues por lo visto todos en KANTO\nsabemos que ni siquiera sabes nadar!\p{COLOR 0x04}{PLAYER}: ¡¡Pues mira como te derrota\nla chica acuática !!"
+}
+
+text Naranja_BattleTower_Outside_Text_086BEFC7 {
+    "{COLOR 0x02}Mejoraste algo, {PLAYER}.\nPero puedo asegurarte que tù no\lganarás la ùltima batalla."
+}
+
+text Naranja_BattleTower_Outside_Text_086BF019 {
+    "{COLOR 0x02}Gary: Parece que ya manejas\ntu Pikachu. Aunque sigues siendo la \lmisma a la q. derroté estrepitosamente\len Ciudad Celeste.\pLa habilidad es un don que no posee\ntodo el mundo…\p{COLOR 0x04}{PLAYER}: Supongo que lo dirás\npor tu triste Eevee\pSiempre me dió pena…"
+}
+
+text Naranja_BattleTower_Outside_Text_086BF221 {
+    "{COLOR 0x02}Gary: ¡Vaya! ¡Aquí lo tenemos!\p¡Espero que ya hayas conseguido que te\nobedezcan tus propios Pokemon!\p{COLOR 0x04}{PLAYER}:Bueno Gary,\nNo hace falta que estés rencoroso por \lsuperarte en la liga Añil…"
+}

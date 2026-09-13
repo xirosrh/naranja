@@ -1,0 +1,87 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_HamlinIsland_House3_MapScripts {
+}
+
+script Naranja_HamlinIsland_House3_EventScript_Woman5 {
+    lock
+    faceplayer
+    checkflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_009A)
+    goto_if(EQUAL, Naranja_HamlinIsland_House3_EventScript_Sub_08154338)
+    setvar(VAR_0x8008, 2)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    specialvar(VAR_RESULT, GetInGameTradeSpeciesInfo)
+    copyvar(VAR_0x8009, VAR_RESULT)
+    msgbox(Naranja_HamlinIsland_House3_Text_0817940E, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_HamlinIsland_House3_EventScript_Sub_08154320)
+    special(ChoosePartyMon)
+    waitstate
+    copyvar(VAR_0x800A, VAR_0x8004)
+    compare_var_to_value(VAR_0x8004, 0xFF)
+    goto_if(EQUAL, Naranja_HamlinIsland_House3_EventScript_Sub_08154320)
+    copyvar(VAR_0x8005, VAR_0x800A)
+    specialvar(VAR_RESULT, GetTradeSpecies)
+    copyvar(VAR_0x800B, VAR_RESULT)
+    compare_var_to_var(VAR_RESULT, VAR_0x8009)
+    goto_if(NOT_EQUAL, Naranja_HamlinIsland_House3_EventScript_Sub_0815432A)
+    copyvar(VAR_0x8004, VAR_0x8008)
+    copyvar(VAR_0x8005, VAR_0x800A)
+    special(CreateInGameTradePokemon)
+    special(DoInGameTradeScene)
+    waitstate
+    bufferspeciesname(0, 0x8009)
+    msgbox(Naranja_HamlinIsland_House3_Text_081794C4, MSGBOX_DEFAULT)
+    setflag(FLAG_NARANJA_HAMLIN_ISLAND_EVENT_COMPLETE_009A)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House3_EventScript_Sub_08154320 {
+    msgbox(Naranja_HamlinIsland_House3_Text_081794ED, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House3_EventScript_Sub_0815432A {
+    bufferspeciesname(0, 0x8009)
+    msgbox(Naranja_HamlinIsland_House3_Text_081794DF, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House3_EventScript_Sub_08154338 {
+    msgbox(Naranja_HamlinIsland_House3_Text_0817950A, MSGBOX_DEFAULT)
+    release
+    end
+}
+
+script Naranja_HamlinIsland_House3_EventScript_Girl2 {
+    msgbox(Naranja_HamlinIsland_House3_Text_08179541, MSGBOX_NPC)
+    end
+}
+
+text Naranja_HamlinIsland_House3_Text_0817940E {
+    "Hello, TRAINER. Would you do me a favor\nand trade POKéMON with me?\pLiving in PACIFIDLOG, I can only catch\ncertain kinds of POKéMON.\p{STR_VAR_1}? Do you have one?\nI’ll trade you my {STR_VAR_2} for it."
+}
+
+text Naranja_HamlinIsland_House3_Text_081794C4 {
+    "Wow!\nThis {STR_VAR_1} is so fluffy!"
+}
+
+text Naranja_HamlinIsland_House3_Text_081794DF {
+    "That’s no {STR_VAR_1}."
+}
+
+text Naranja_HamlinIsland_House3_Text_081794ED {
+    "I’m a little disappointed..."
+}
+
+text Naranja_HamlinIsland_House3_Text_0817950A {
+    "Since we traded, you and me,\nwe’re friends, aren’t we?"
+}
+
+text Naranja_HamlinIsland_House3_Text_08179541 {
+    "Is that a POKéDEX?\pDid you get to meet a lot of different\nPOKéMON?\pI wish I was like you."
+}

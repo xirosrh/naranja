@@ -1,0 +1,117 @@
+{
+  "id": "MAP_NARANJA_MORO_ISLAND",
+  "region": "REGION_HOENN",
+  "name": "Naranja_MoroIsland",
+  "layout": "LAYOUT_NARANJA_MORO_ISLAND",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_MORO_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_NARANJA_SEVEN_GRAPEFRUIT_ISLANDS",
+      "offset": 0,
+      "direction": "left"
+    },
+    {
+      "map": "MAP_NARANJA_ROUTE108",
+      "offset": 0,
+      "direction": "right"
+    }
+  ],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_MORO_ISLAND_SWIMMER_M",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 27,
+      "y": 10,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_MoroIsland_EventScript_SwimmerM",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MORO_ISLAND_SWIMMER_M_2",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
+      "x": 41,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
+      "movement_range_x": 6,
+      "movement_range_y": 2,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Naranja_MoroIsland_EventScript_SwimmerM_2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MORO_ISLAND_SWIMMER_F",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 50,
+      "y": 6,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Naranja_MoroIsland_EventScript_SwimmerF",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MORO_ISLAND_SWIMMER_F_2",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 16,
+      "y": 11,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "Naranja_MoroIsland_EventScript_SwimmerF_2",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MORO_ISLAND_SWIMMER_F_3",
+      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
+      "x": 33,
+      "y": 4,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MoroIsland_EventScript_SwimmerF_3",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_MORO_ISLAND_TUBER_M_SWIMMING",
+      "graphics_id": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
+      "x": 32,
+      "y": 4,
+      "elevation": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_MoroIsland_EventScript_TuberMSwimming",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

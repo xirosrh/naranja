@@ -1,0 +1,30 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_MandarinIslandSouth_PokemonCenter_1F_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION: Naranja_MandarinIslandSouth_PokemonCenter_1F_OnTransition
+}
+
+script Naranja_MandarinIslandSouth_PokemonCenter_1F_OnTransition {
+    setrespawn(0x12)
+    call(Naranja_SevenGrapefruitIslands_PokemonCenter_1F_EventScript_Sub_0819FD1B)
+    end
+}
+
+script Naranja_MandarinIslandSouth_PokemonCenter_1F_EventScript_OldMan1 {
+    msgbox(Naranja_MandarinIslandSouth_PokemonCenter_1F_Text_08178389, MSGBOX_NPC)
+    end
+}
+
+script Naranja_MandarinIslandSouth_PokemonCenter_1F_EventScript_Gentleman {
+    msgbox(Naranja_MandarinIslandSouth_PokemonCenter_1F_Text_08178D8E, MSGBOX_NPC)
+    end
+}
+
+text Naranja_MandarinIslandSouth_PokemonCenter_1F_Text_08178389 {
+    "No todos los viejos son sabios,\nni todos los sabios son viejos.\pSin embargo yo sì.\nYo sé todo lo importante."
+}
+
+text Naranja_MandarinIslandSouth_PokemonCenter_1F_Text_08178D8E {
+    "¡Che flac{RIVAL}!\p¿Tambien estás de paso?\nEsta ciudad es extraña.\lIncluso atacan SNUBULL en la calle.\pTe aconsejo que te quedes lo m nimo:\nDanny entrena en el Norte\len la nevada Isla NAVEL."
+}

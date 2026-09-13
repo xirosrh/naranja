@@ -1,0 +1,204 @@
+{
+  "id": "MAP_NARANJA_INSIDE_OF_TRUCK",
+  "region": "REGION_HOENN",
+  "name": "Naranja_InsideOfTruck",
+  "layout": "LAYOUT_NARANJA_INSIDE_OF_TRUCK",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_INSIDE_OF_TRUCK",
+  "requires_flash": false,
+  "weather": "WEATHER_FOG_DIAGONAL",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_INSIDE_OF_TRUCK_MOVING_BOX",
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_INSIDE_OF_TRUCK_MOVING_BOX_2",
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 2,
+      "y": 14,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_INSIDE_OF_TRUCK_PIKACHU",
+      "graphics_id": "OBJ_EVENT_GFX_PIKACHU",
+      "x": 4,
+      "y": 18,
+      "elevation": 8,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_InsideOfTruck_EventScript_Pikachu",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_INSIDE_OF_TRUCK_MOVING_BOX_3",
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 5,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_INSIDE_OF_TRUCK_MOVING_BOX_4",
+      "graphics_id": "OBJ_EVENT_GFX_MOVING_BOX",
+      "x": 5,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": -12028,
+      "y": 0,
+      "elevation": 4,
+      "dest_map": "MAP_NARANJA_SEVEN_GRAPEFRUIT_ISLANDS",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 259,
+      "y": 0,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 0,
+      "y": 2048,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_PALLET_TOWN_HERB_SHOP",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 5,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_NARANJA_VALENCIA_ISLAND",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 1,
+      "elevation": 3,
+      "var": "VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE",
+      "var_value": "0",
+      "script": "Naranja_InsideOfTruck_EventScript_Trigger_1"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 3,
+      "elevation": 3,
+      "var": "VAR_NARANJA_VALENCIA_ISLAND_TUTORIAL_STATE",
+      "var_value": "0",
+      "script": "Naranja_InsideOfTruck_EventScript_Trigger_2"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 14,
+      "elevation": 3,
+      "var": "VAR_NARANJA_INSIDE_OF_TRUCK_EVENT_STATE_3",
+      "var_value": "0",
+      "script": "Naranja_InsideOfTruck_EventScript_Trigger_3"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 0,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_InsideOfTruck_EventScript_Pikachu"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_InsideOfTruck_EventScript_Pikachu"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_InsideOfTruck_EventScript_Pikachu"
+    },
+    {
+      "type": "sign",
+      "x": 0,
+      "y": 1,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_InsideOfTruck_EventScript_Pikachu"
+    },
+    {
+      "type": "sign",
+      "x": 0,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Naranja_InsideOfTruck_EventScript_Pikachu"
+    }
+  ]
+}

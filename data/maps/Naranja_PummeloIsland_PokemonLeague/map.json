@@ -1,0 +1,107 @@
+{
+  "id": "MAP_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE",
+  "region": "REGION_HOENN",
+  "name": "Naranja_PummeloIsland_PokemonLeague",
+  "layout": "LAYOUT_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_PUMMELO_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_NURSE",
+      "graphics_id": "OBJ_EVENT_GFX_NURSE",
+      "x": 3,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PummeloIsland_PokemonLeague_EventScript_Nurse",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MART_EMPLOYEE",
+      "graphics_id": "OBJ_EVENT_GFX_MART_EMPLOYEE",
+      "x": 16,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PummeloIsland_PokemonLeague_EventScript_MartEmployee",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 8,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PummeloIsland_PokemonLeague_EventScript_Man4",
+      "flag": "0x0"
+    },
+    {
+      "local_id": "LOCALID_NARANJA_PUMMELO_ISLAND_POKEMON_LEAGUE_MAN_4_2",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 11,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Naranja_PummeloIsland_PokemonLeague_EventScript_Man4",
+      "flag": "0x0"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 9,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_PUMMELO_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 11,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_PUMMELO_ISLAND",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_PUMMELO_ISLAND_CORRIDOR5",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 3,
+      "dest_map": "MAP_NARANJA_PUMMELO_ISLAND_CORRIDOR5",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

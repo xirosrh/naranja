@@ -1,0 +1,285 @@
+// Auto-generated from Naranja Beta 2. Edit the importer, not scripts.inc.
+// Names use Naranja map context; engine flags retain pokeemerald semantics.
+
+mapscripts Naranja_KumquatIsland_LilycoveMuseum_1F_MapScripts {
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Beauty {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187348, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Gentleman {
+    lockall
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_1F_GENTLEMAN, Naranja_KumquatIsland_Movement_081A0839)
+    message(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081873B9)
+    waitmessage
+    multichoice(0x14, 8, 0x10, 1)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_08158458)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_0815844F)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_0815844F {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187459, MSGBOX_NPC)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_08158458 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187495, MSGBOX_YESNO)
+    compare_var_to_value(VAR_RESULT, 0)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_08158477)
+    compare_var_to_value(VAR_RESULT, 1)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_08158481)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_08158477 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081874F5, MSGBOX_SIGN)
+    releaseall
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_08158481 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187534, MSGBOX_SIGN)
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_1F_GENTLEMAN, Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_081584FC)
+    waitmovement(LOCALID_NONE)
+    removeobject(LOCALID_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_1F_GENTLEMAN)
+    copyvar(VAR_0x8000, VAR_FACING)
+    compare_var_to_value(VAR_0x8000, 2)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_081584BD)
+    compare_var_to_value(VAR_0x8000, 3)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_081584D2)
+    compare_var_to_value(VAR_0x8000, 4)
+    goto_if(EQUAL, Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_081584E7)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_081584BD {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_08158504)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_2F, 0xFF, 0xB, 8)
+    waitstate
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_081584D2 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_081584FE)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_2F, 0xFF, 0xB, 8)
+    waitstate
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sub_081584E7 {
+    lockall
+    applymovement(LOCALID_PLAYER, Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_08158501)
+    waitmovement(LOCALID_NONE)
+    warp(MAP_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_2F, 0xFF, 0xB, 8)
+    waitstate
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_5 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818757F, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_1 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081875BE, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_6 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081875F8, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_12 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187641, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_10 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081876A1, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_3 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818770C, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_8 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818775F, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_15 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081877A9, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Sign_11 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187810, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_SchoolKidM {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081878B7, MSGBOX_NPC)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Artist {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818791D, MSGBOX_NPC)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_LittleBoy1 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081879BF, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Woman5 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081879E6, MSGBOX_SIGN)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Woman3 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187A1A, MSGBOX_NPC)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_PsychicM {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187AA0, MSGBOX_NPC)
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_Artist_2 {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187B04, MSGBOX_NPC)
+    lockall
+    applymovement(LOCALID_NARANJA_KUMQUAT_ISLAND_LILYCOVE_MUSEUM_1F_ARTIST_2, Naranja_RusturfTunnel_Movement_081A083D)
+    waitmovement(LOCALID_NONE)
+    releaseall
+    end
+}
+
+script Naranja_KumquatIsland_LilycoveMuseum_1F_EventScript_FatMan {
+    msgbox(Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187B7F, MSGBOX_NPC)
+    end
+}
+
+movement Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_081584FC {
+    walk_up
+}
+
+movement Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_081584FE {
+    walk_left
+    walk_up
+}
+
+movement Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_08158501 {
+    walk_right
+    walk_up
+}
+
+movement Naranja_KumquatIsland_LilycoveMuseum_1F_Movement_08158504 {
+    walk_up
+    walk_up
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187348 {
+    "Welcome to LILYCOVE MUSEUM.\pPlease take the time to enjoy our\ncollection of fantastic artwork\lfeaturing POKéMON."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081873B9 {
+    "I’m the CURATOR of this MUSEUM of\nfine arts.\pIt’s heartening to see someone so\nyoung as you in our MUSEUM.\pHave you viewed our collection of\npaintings already?"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187459 {
+    "Ah, then let me not disturb you.\nPlease, do take your time."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187495 {
+    "Oh? I do believe that you seem to\nbe a POKéMON TRAINER.\pHave you an interest in paintings,\ntoo?"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081874F5 {
+    "I see...\pI’m honored that you would visit\nus in spite of that."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187534 {
+    "Ah, excellent!\nYou do like paintings!\pThen, may I ask you to come with me?"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818757F {
+    "It’s a very old painting.\nThe paint is peeling here and there."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081875BE {
+    "It’s an odd landscape with bizarre\nand fantastic scenery."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081875F8 {
+    "It’s a painting of a beautiful, smiling\nwoman with a POKéMON on her lap."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187641 {
+    "It’s a painting of a legendary POKéMON\nfrom long ago.\pThe artist painted this from\nimagination."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081876A1 {
+    "It’s a painting of GRASS POKéMON\nswaying in a breeze.\pThey appear to be enjoying the wind’s\ngentle caress."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818770C {
+    "It’s a delicious-looking painting\nof BERRIES.\pThis painting could make you hungry!"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818775F {
+    "It’s a replica of a famous sculpture.\pIt depicts an ancient BIRD POKéMON."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081877A9 {
+    "It’s a big POKé BALL carved from a\nblack stone.\pIt was apparently used in festivals\nin the olden days."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187810 {
+    "It’s a huge stone tablet inscribed\nwith POKéMON and dense text in the\lsmall characters of an ancient,\lunreadable language."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081878B7 {
+    "Battling with POKéMON is fun,\nI’ll grant you that.\pBut one mustn’t forget our love for\nthe fine arts."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_0818791D {
+    "This ART MUSEUM... Well, you could\nsee many fantastic paintings.\pAnd the CURATOR is a wonderful person.\pAmong artists like myself, this MUSEUM\nis an inspiration."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081879BF {
+    "This lady is pretty!\nShe’s like Mommy!"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_081879E6 {
+    "This POKéMON is adorable!\nJust like our little boy!"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187A1A {
+    "I’d heard that this ART MUSEUM got\nin some new paintings.\pSo, naturally I hurried over.\pAre the new paintings up on the\nsecond floor?"
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187AA0 {
+    "Lately, the CURATOR has been\nunusually cheerful.\pI bet something good happened for him.\nDefinitely."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187B04 {
+    "I aim to see many great paintings\nhere and learn from them.\pI have this dream of one day having\nmy artwork exhibited here."
+}
+
+text Naranja_KumquatIsland_LilycoveMuseum_1F_Text_08187B7F {
+    "The ART MUSEUM has become a favorite\ntourist destination.\pIt’s great for LILYCOVE...\nNo, great for the HOENN region!\pThis is what I’ve heard - a lone TRAINER\nprocured all the paintings upstairs."
+}
