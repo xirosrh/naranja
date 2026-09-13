@@ -20,7 +20,7 @@ Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262::
 # 17 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
 	goto_if EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C28F
 # 18 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B
+	setflag FLAG_NARANJA_JOY_ICE_BEAM_REWARD_EVENT
 # 19 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"
 	msgbox Naranja_CaminoFrio_G20_M02_Text_08192A0D, MSGBOX_DEFAULT
 # 20 "data/maps/Naranja_CaminoFrio_G20_M02/scripts.pory"

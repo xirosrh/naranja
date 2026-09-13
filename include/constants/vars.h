@@ -338,7 +338,7 @@
 #define VAR_NARANJA_TANGELO_STORY_STATE                                          0x4060
 #define VAR_NARANJA_PUEBLO_PALETA_STORY_STATE                                    0x4062
 #define VAR_NARANJA_ROUTE110_STORY_STATE                                         0x4069
-#define VAR_NARANJA_MANDARIN_STORY_STATE                                         0x406F
+#define VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE                               0x406F
 #define VAR_NARANJA_MIKAN_GYM_INTRO_STATE                                        0x4071
 #define VAR_NARANJA_ROUTE119_STORY_STATE                                         0x4072
 #define VAR_NARANJA_ROUTE121_STORY_STATE                                         0x4074
@@ -355,7 +355,7 @@
 #define VAR_NARANJA_PUEBLO_PALETA_EVENT_STATE_4                                  0x408D
 #define VAR_NARANJA_ISLAS_STORY_STATE                                            0x408E
 #define VAR_NARANJA_CRYSTAL_ONIX_AFTERMATH_STATE                                 0x408F
-#define VAR_NARANJA_ISLAS_EVENT_STATE_2                                          0x4090
+#define VAR_NARANJA_CRYSTAL_ONIX_GUIDE_POSITION_STATE                            0x4090
 #define VAR_NARANJA_PALLET_TANGELO_TRAVEL_STATE                                  0x4092
 #define VAR_NARANJA_ISLA_MANDARIN_STORY_STATE                                    0x4093
 #define VAR_NARANJA_ISLA_KUMQUAT_EVENT_STATE_2                                   0x4094
@@ -374,7 +374,7 @@
 #define VAR_NARANJA_ROUTE110_EVENT_STATE_2                                       0x40A5
 #define VAR_NARANJA_ROUTE110_EVENT_STATE_3                                       0x40A6
 #define VAR_NARANJA_ROUTE110_EVENT_STATE_4                                       0x40A7
-#define VAR_NARANJA_CAMINO_FRIO_STORY_STATE                                      0x40A9
+#define VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE                                  0x40A9
 #define VAR_NARANJA_ISLA_MURCOTT_EVENT_STATE_3                                   0x40AA
 #define VAR_NARANJA_ROUTE110_EVENT_STATE_5                                       0x40AB
 #define VAR_NARANJA_ROUTE110_EVENT_STATE_6                                       0x40AC

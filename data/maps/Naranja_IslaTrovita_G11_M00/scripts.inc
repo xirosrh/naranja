@@ -6,7 +6,7 @@ Naranja_IslaTrovita_G11_M00_MapScripts::
 
 Naranja_IslaTrovita_G11_M00_OnTransition::
 # 9 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090
+	checkflag FLAG_NARANJA_MET_MARA_ON_TROVITA
 # 10 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	call_if LESS_THAN, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157416
 	end
@@ -26,7 +26,7 @@ Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId1::
 # 22 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	faceplayer
 # 23 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090
+	checkflag FLAG_NARANJA_MET_MARA_ON_TROVITA
 # 24 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815744A
 # 25 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
@@ -62,11 +62,11 @@ Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId2::
 # 46 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	faceplayer
 # 47 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090
+	checkflag FLAG_NARANJA_MET_MARA_ON_TROVITA
 # 48 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815747B
 # 49 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	checkflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 50 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485
 # 51 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
@@ -102,11 +102,11 @@ Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3::
 # 72 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	faceplayer
 # 73 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090
+	checkflag FLAG_NARANJA_MET_MARA_ON_TROVITA
 # 74 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574B6
 # 75 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	checkflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 76 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"
 	goto_if EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574C0
 # 77 "data/maps/Naranja_IslaTrovita_G11_M00/scripts.pory"

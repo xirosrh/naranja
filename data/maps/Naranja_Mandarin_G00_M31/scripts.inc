@@ -32,7 +32,7 @@ Naranja_Mandarin_G00_M31_EventScript_Sub_08150690::
 
 Naranja_Mandarin_G00_M31_OnTransition::
 # 28 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	checkflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 29 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
 	call_if EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A41
 	end
@@ -50,7 +50,7 @@ Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId21::
 # 40 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
 	faceplayer
 # 41 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	checkflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 42 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
 	goto_if EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A67
 # 43 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
@@ -210,7 +210,7 @@ Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId11::
 # 146 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
 	msgbox Naranja_Mandarin_G00_M31_Text_0817032A, MSGBOX_DEFAULT
 # 147 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
-	setvar VAR_NARANJA_MANDARIN_STORY_STATE, 2
+	setvar VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE, 2
 # 148 "data/maps/Naranja_Mandarin_G00_M31/scripts.pory"
 	release
 	end

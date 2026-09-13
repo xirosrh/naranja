@@ -535,11 +535,11 @@ Naranja_CuevaDeCristal_G24_M04_EventScript_Sub_086B93B0::
 # 325 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	setflag FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS
 # 326 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	setflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	setflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 327 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	setvar VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 4
 # 328 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
-	setvar VAR_NARANJA_ISLAS_EVENT_STATE_2, 1
+	setvar VAR_NARANJA_CRYSTAL_ONIX_GUIDE_POSITION_STATE, 1
 # 329 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"
 	setflag FLAG_HIDE_MANDARIN_G00_M31_OLD_MAN_1
 # 330 "data/maps/Naranja_CuevaDeCristal_G24_M04/scripts.pory"

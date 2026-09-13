@@ -84,7 +84,7 @@ script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_MAN_1_LocalId7 {
 script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId9 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114)
+    checkflag(FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MELLSWEET)
     goto_if(EQUAL, Naranja_IslaMellsweet_G00_M06_EventScript_Sub_0814D069)
     msgbox(Naranja_IslaMellsweet_G00_M06_Text_081690A9, MSGBOX_YESNO)
     compare_var_to_value(VAR_RESULT, 0)
@@ -95,7 +95,7 @@ script Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId9 {
     callstd(0)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B)
-    setflag(FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114)
+    setflag(FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MELLSWEET)
     release
     end
 }

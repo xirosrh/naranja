@@ -10,7 +10,7 @@ Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId3::
 # 10 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	faceplayer
 # 11 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
-	checkflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	checkflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 12 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	goto_if LESS_THAN, Naranja_7islasPomelo_G00_M11_EventScript_Sub_086B93D0
 # 13 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
@@ -474,7 +474,7 @@ Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C::
 
 Naranja_7islasPomelo_G00_M11_EventScript_Sub_086B93D0::
 # 300 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
-	setflag FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F
+	setflag FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE
 # 301 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"
 	setwildbattle SPECIES_SNORLAX, 0x20, 0
 # 302 "data/maps/Naranja_7islasPomelo_G00_M11/scripts.pory"

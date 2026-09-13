@@ -8,7 +8,7 @@ Naranja_Islas_G17_M00_OnTransition::
 # 9 "data/maps/Naranja_Islas_G17_M00/scripts.pory"
 	setflag FLAG_NARANJA_ISLAS_EVENT_COMPLETE_083D
 # 10 "data/maps/Naranja_Islas_G17_M00/scripts.pory"
-	compare_var_to_value VAR_NARANJA_ISLAS_EVENT_STATE_2, 1
+	compare_var_to_value VAR_NARANJA_CRYSTAL_ONIX_GUIDE_POSITION_STATE, 1
 # 11 "data/maps/Naranja_Islas_G17_M00/scripts.pory"
 	call_if EQUAL, Naranja_Islas_G17_M00_EventScript_Sub_0815BCD4
 # 12 "data/maps/Naranja_Islas_G17_M00/scripts.pory"

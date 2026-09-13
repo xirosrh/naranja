@@ -110,7 +110,7 @@ Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FD7C::
 # 71 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
 	special HealPlayerParty
 # 72 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111
+	checkflag FLAG_NARANJA_NURSE_EXPLAINED_POKERUS_ON_NAVEL
 # 73 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
 	goto_if LESS_THAN, Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDCE
 # 74 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
@@ -154,7 +154,7 @@ Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDEA::
 # 98 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
 	waitmessage
 # 99 "data/maps/Naranja_IslaNavel_G05_M03/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111
+	setflag FLAG_NARANJA_NURSE_EXPLAINED_POKERUS_ON_NAVEL
 	return
 
 

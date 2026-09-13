@@ -25,7 +25,7 @@ script Naranja_Mandarin_G00_M31_EventScript_Sub_08150690 {
 }
 
 script Naranja_Mandarin_G00_M31_OnTransition {
-    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
     call_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A41)
     end
 }
@@ -38,7 +38,7 @@ script Naranja_Mandarin_G00_M31_EventScript_Sub_08150A41 {
 script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_SWIMMER_M_LocalId21 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A67)
     checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
     goto_if(EQUAL, Naranja_Mandarin_G00_M31_EventScript_Sub_08150A71)
@@ -144,7 +144,7 @@ script Naranja_Mandarin_G00_M31_EventScript_OBJ_EVENT_GFX_OLD_MAN_1_LocalId11 {
     lock
     faceplayer
     msgbox(Naranja_Mandarin_G00_M31_Text_0817032A, MSGBOX_DEFAULT)
-    setvar(VAR_NARANJA_MANDARIN_STORY_STATE, 2)
+    setvar(VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE, 2)
     release
     end
 }

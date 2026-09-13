@@ -5,7 +5,7 @@ mapscripts Naranja_Route110_G00_M25_MapScripts {
     MAP_SCRIPT_ON_RESUME: Naranja_CaminoFrio_G20_M01_OnResume
     MAP_SCRIPT_ON_TRANSITION: Naranja_CaminoFrio_G20_M01_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1: Naranja_CaminoFrio_G20_M01_OnFrame_1
+        VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1: Naranja_CaminoFrio_G20_M01_OnFrame_1
     ]
 }
 
@@ -151,7 +151,7 @@ script Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_L
     specialvar(VAR_RESULT, GetPlayerAvatarBike)
     compare_var_to_value(VAR_RESULT, 1)
     goto_if(EQUAL, Naranja_Route110_G00_M25_EventScript_Sub_0814FA84)
-    compare_var_to_value(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0)
+    compare_var_to_value(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 0)
     goto_if(EQUAL, Naranja_Route110_G00_M25_EventScript_Sub_0814FA7A)
     msgbox(Naranja_Route110_G00_M25_Text_0816F26A, MSGBOX_DEFAULT)
     release

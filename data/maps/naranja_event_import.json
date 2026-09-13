@@ -269,11 +269,11 @@
       "target": "0x4C"
     },
     "0x8F": {
-      "name": "FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F",
+      "name": "FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE",
       "target": "0x4D"
     },
     "0x90": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090",
+      "name": "FLAG_NARANJA_MET_MARA_ON_TROVITA",
       "target": "0x4E"
     },
     "0x93": {
@@ -313,7 +313,7 @@
       "target": "0x57"
     },
     "0x9F": {
-      "name": "FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_009F",
+      "name": "FLAG_NARANJA_PROMISED_TO_FIND_CRYSTAL_ONIX",
       "target": "0x58"
     },
     "0xA0": {
@@ -717,7 +717,7 @@
       "target": "0xBC"
     },
     "0x111": {
-      "name": "FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111",
+      "name": "FLAG_NARANJA_NURSE_EXPLAINED_POKERUS_ON_NAVEL",
       "target": "0xBD"
     },
     "0x112": {
@@ -729,7 +729,7 @@
       "target": "0xBF"
     },
     "0x114": {
-      "name": "FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114",
+      "name": "FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MELLSWEET",
       "target": "0xC0"
     },
     "0x115": {
@@ -2385,7 +2385,7 @@
       "target": "0x25D"
     },
     "0x82B": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B",
+      "name": "FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED",
       "target": "0x25E"
     },
     "0x830": {
@@ -2465,7 +2465,7 @@
       "target": "0x271"
     },
     "0x84B": {
-      "name": "FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B",
+      "name": "FLAG_NARANJA_JOY_ICE_BEAM_REWARD_EVENT",
       "target": "0x272"
     },
     "0x84C": {
@@ -2955,7 +2955,7 @@
       "target": "0x4069"
     },
     "0x406F": {
-      "name": "VAR_NARANJA_MANDARIN_STORY_STATE",
+      "name": "VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE",
       "target": "0x406F"
     },
     "0x4071": {
@@ -3023,7 +3023,7 @@
       "target": "0x408F"
     },
     "0x4090": {
-      "name": "VAR_NARANJA_ISLAS_EVENT_STATE_2",
+      "name": "VAR_NARANJA_CRYSTAL_ONIX_GUIDE_POSITION_STATE",
       "target": "0x4090"
     },
     "0x4092": {
@@ -3099,7 +3099,7 @@
       "target": "0x40A7"
     },
     "0x40A9": {
-      "name": "VAR_NARANJA_CAMINO_FRIO_STORY_STATE",
+      "name": "VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE",
       "target": "0x40A9"
     },
     "0x40AA": {

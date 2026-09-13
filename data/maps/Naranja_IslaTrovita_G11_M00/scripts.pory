@@ -6,7 +6,7 @@ mapscripts Naranja_IslaTrovita_G11_M00_MapScripts {
 }
 
 script Naranja_IslaTrovita_G11_M00_OnTransition {
-    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090)
+    checkflag(FLAG_NARANJA_MET_MARA_ON_TROVITA)
     call_if(LESS_THAN, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157416)
     end
 }
@@ -20,7 +20,7 @@ script Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157416 {
 script Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId1 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090)
+    checkflag(FLAG_NARANJA_MET_MARA_ON_TROVITA)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815744A)
     checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157440)
@@ -44,9 +44,9 @@ script Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815744A {
 script Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_MAN_7_LocalId2 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090)
+    checkflag(FLAG_NARANJA_MET_MARA_ON_TROVITA)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_0815747B)
-    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485)
     checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485)
@@ -70,9 +70,9 @@ script Naranja_IslaTrovita_G11_M00_EventScript_Sub_08157485 {
 script Naranja_IslaTrovita_G11_M00_EventScript_OBJ_EVENT_GFX_WOMAN_4_LocalId3 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090)
+    checkflag(FLAG_NARANJA_MET_MARA_ON_TROVITA)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574B6)
-    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574C0)
     checkflag(FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS)
     goto_if(EQUAL, Naranja_IslaTrovita_G11_M00_EventScript_Sub_081574C0)

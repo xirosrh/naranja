@@ -15,7 +15,7 @@ script Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C262 {
     faceplayer
     checkflag(FLAG_NARANJA_RECEIVED_TM_ICE_BEAM_FROM_JOY)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M02_EventScript_Sub_0815C28F)
-    setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B)
+    setflag(FLAG_NARANJA_JOY_ICE_BEAM_REWARD_EVENT)
     msgbox(Naranja_CaminoFrio_G20_M02_Text_08192A0D, MSGBOX_DEFAULT)
     setorcopyvar(VAR_0x8000, 0x12D)
     setorcopyvar(VAR_0x8001, 1)

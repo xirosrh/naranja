@@ -5,7 +5,7 @@ mapscripts Naranja_CaminoFrio_G20_M01_MapScripts {
     MAP_SCRIPT_ON_RESUME: Naranja_CaminoFrio_G20_M01_OnResume
     MAP_SCRIPT_ON_TRANSITION: Naranja_CaminoFrio_G20_M01_OnTransition
     MAP_SCRIPT_ON_FRAME_TABLE [
-        VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1: Naranja_CaminoFrio_G20_M01_OnFrame_1
+        VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1: Naranja_CaminoFrio_G20_M01_OnFrame_1
     ]
 }
 
@@ -18,7 +18,7 @@ script Naranja_CaminoFrio_G20_M01_OnTransition {
     call(Naranja_Bementer_G24_M22_EventScript_Sub_081A0196)
     call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A014E)
     call(Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A0172)
-    compare_var_to_value(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1)
+    compare_var_to_value(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1)
     call_if(EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814F92F)
     end
 }
@@ -30,7 +30,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814F92F {
 
 script Naranja_CaminoFrio_G20_M01_OnFrame_1 {
     special(Special_BeginCyclingRoadChallenge)
-    setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 2)
+    setvar(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 2)
     return
 }
 
@@ -98,7 +98,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCFB {
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09 {
-    setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 3)
+    setvar(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 3)
     savebgm(MUS_DUMMY)
     fadedefaultbgm
     return
@@ -109,7 +109,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_2 {
     specialvar(VAR_RESULT, GetPlayerAvatarBike)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_081634A6)
-    setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B)
+    setflag(FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED)
     setvar(VAR_TEMP_1, 1)
     releaseall
     end
@@ -126,7 +126,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Sub_081634A6 {
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_7 {
     lockall
-    clearflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B)
+    clearflag(FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED)
     setvar(VAR_TEMP_1, 0)
     releaseall
     end
@@ -198,20 +198,20 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_1 {
     call_if(EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D51)
     compare_var_to_value(VAR_RESULT, 0)
     goto_if(EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D85)
-    setflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B)
+    setflag(FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED)
     setvar(VAR_TEMP_1, 1)
     releaseall
     end
 }
 
 script Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D51 {
-    setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0)
-    clearflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B)
+    setvar(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 0)
+    clearflag(FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED)
     setvar(VAR_TEMP_1, 0)
     nop1
     nop
     nop
-    setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1)
+    setvar(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1)
     nop
     checkflag(FLAG_HIDE_CAMINO_FRIO_G00_M29_WALLY)
     call_if(LESS_THAN, Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7DB1)
@@ -276,7 +276,7 @@ script Naranja_CaminoFrio_G20_M01_EventScript_Trigger_8 {
     compare_var_to_value(VAR_0x8000, 0)
     goto_if(EQUAL, Naranja_IslaNavel_G00_M13_EventScript_OBJ_EVENT_GFX_SPIN_CUSHION_LocalId4)
     nop
-    setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 3)
+    setvar(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 3)
     savebgm(0x3500)
     nop
     nop

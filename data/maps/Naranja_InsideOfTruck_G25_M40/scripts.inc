@@ -256,7 +256,7 @@ Naranja_InsideOfTruck_G25_M40_EventScript_Sub_086B4650::
 # 156 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_HIDE_MANDARIN_G00_M31_LITTLE_GIRL_1
 # 157 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B
+	setflag FLAG_NARANJA_JOY_ICE_BEAM_REWARD_EVENT
 # 158 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"
 	setflag FLAG_NARANJA_POKE_DRINKERS_UNLOCKED
 # 159 "data/maps/Naranja_InsideOfTruck_G25_M40/scripts.pory"

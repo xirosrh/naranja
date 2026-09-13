@@ -9,7 +9,7 @@ Naranja_Route110_G00_M25_MapScripts::
 
 Naranja_Route110_G00_M25_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 8 "data/maps/Naranja_Route110_G00_M25/scripts.pory"
-	map_script_2 VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1, Naranja_CaminoFrio_G20_M01_OnFrame_1
+	map_script_2 VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1, Naranja_CaminoFrio_G20_M01_OnFrame_1
 	.2byte 0
 
 
@@ -209,7 +209,7 @@ Naranja_Route110_G00_M25_EventScript_OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M_LocalId2
 # 153 "data/maps/Naranja_Route110_G00_M25/scripts.pory"
 	goto_if EQUAL, Naranja_Route110_G00_M25_EventScript_Sub_0814FA84
 # 154 "data/maps/Naranja_Route110_G00_M25/scripts.pory"
-	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0
+	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 0
 # 155 "data/maps/Naranja_Route110_G00_M25/scripts.pory"
 	goto_if EQUAL, Naranja_Route110_G00_M25_EventScript_Sub_0814FA7A
 # 156 "data/maps/Naranja_Route110_G00_M25/scripts.pory"

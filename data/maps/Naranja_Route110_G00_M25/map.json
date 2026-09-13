@@ -516,7 +516,7 @@
       "x": 28,
       "y": 92,
       "elevation": 3,
-      "var": "VAR_NARANJA_CAMINO_FRIO_STORY_STATE",
+      "var": "VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE",
       "var_value": "2",
       "script": "Naranja_CaminoFrio_G20_M01_EventScript_Trigger_3"
     },
@@ -525,7 +525,7 @@
       "x": 29,
       "y": 92,
       "elevation": 3,
-      "var": "VAR_NARANJA_CAMINO_FRIO_STORY_STATE",
+      "var": "VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE",
       "var_value": "2",
       "script": "Naranja_CaminoFrio_G20_M01_EventScript_Trigger_3"
     },

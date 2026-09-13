@@ -69,7 +69,7 @@ script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FD7C {
     applymovement(32779, Naranja_GraniteCave_G24_M00_Movement_081A0845)
     waitmovement(LOCALID_NONE)
     special(HealPlayerParty)
-    checkflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111)
+    checkflag(FLAG_NARANJA_NURSE_EXPLAINED_POKERUS_ON_NAVEL)
     goto_if(LESS_THAN, Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDCE)
     goto(Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDB0)
 }
@@ -96,7 +96,7 @@ script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDCE {
 script Naranja_IslaNavel_G05_M03_EventScript_Sub_0819FDEA {
     message(Naranja_IslaNavel_G05_M03_Text_081A1275)
     waitmessage
-    setflag(FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111)
+    setflag(FLAG_NARANJA_NURSE_EXPLAINED_POKERUS_ON_NAVEL)
     return
 }
 

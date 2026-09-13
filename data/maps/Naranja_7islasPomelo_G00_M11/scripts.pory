@@ -8,7 +8,7 @@ mapscripts Naranja_7islasPomelo_G00_M11_MapScripts {
 script Naranja_7islasPomelo_G00_M11_EventScript_OBJ_EVENT_GFX_POOCHYENA_LocalId3 {
     lock
     faceplayer
-    checkflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    checkflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
     goto_if(LESS_THAN, Naranja_7islasPomelo_G00_M11_EventScript_Sub_086B93D0)
     msgbox(Naranja_7islasPomelo_G00_M11_Text_08166F6B, MSGBOX_DEFAULT)
     release
@@ -297,7 +297,7 @@ script Naranja_7islasPomelo_G00_M11_EventScript_Sub_081A010C {
 }
 
 script Naranja_7islasPomelo_G00_M11_EventScript_Sub_086B93D0 {
-    setflag(FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F)
+    setflag(FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE)
     setwildbattle(SPECIES_SNORLAX, 0x20, 0)
     special(BattleSetup_StartLatiBattle)
     release

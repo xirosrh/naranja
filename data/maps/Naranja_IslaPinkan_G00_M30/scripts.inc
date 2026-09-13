@@ -62,7 +62,7 @@ Naranja_IslaPinkan_G00_M30_EventScript_Sub_0814C4F4::
 # 38 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	setvar VAR_NARANJA_CRYSTAL_ONIX_CAVE_SCENE_STATE, 2
 # 39 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
-	setvar VAR_NARANJA_MANDARIN_STORY_STATE, 1
+	setvar VAR_NARANJA_CRYSTAL_ONIX_CLUE_SEARCH_STATE, 1
 # 40 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"
 	clearflag FLAG_HIDE_MANDARIN_G00_M31_OLD_MAN_1
 # 41 "data/maps/Naranja_IslaPinkan_G00_M30/scripts.pory"

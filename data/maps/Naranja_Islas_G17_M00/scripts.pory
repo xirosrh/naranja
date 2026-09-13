@@ -7,7 +7,7 @@ mapscripts Naranja_Islas_G17_M00_MapScripts {
 
 script Naranja_Islas_G17_M00_OnTransition {
     setflag(FLAG_NARANJA_ISLAS_EVENT_COMPLETE_083D)
-    compare_var_to_value(VAR_NARANJA_ISLAS_EVENT_STATE_2, 1)
+    compare_var_to_value(VAR_NARANJA_CRYSTAL_ONIX_GUIDE_POSITION_STATE, 1)
     call_if(EQUAL, Naranja_Islas_G17_M00_EventScript_Sub_0815BCD4)
     checkflag(FLAG_HIDE_ISLA_MIKAN_G00_M20_WALLY)
     call_if(EQUAL, Naranja_Islas_G17_M00_EventScript_Sub_0815BCD0)

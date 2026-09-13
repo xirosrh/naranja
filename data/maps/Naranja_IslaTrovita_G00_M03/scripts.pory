@@ -206,7 +206,7 @@ script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C650 {
     call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C6E9)
     compare_var_to_value(VAR_TEMP_1, 3)
     call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C715)
-    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_009F)
+    setflag(FLAG_NARANJA_PROMISED_TO_FIND_CRYSTAL_ONIX)
     setvar(VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 3)
     copyobjectxytoperm(LOCALID_ISLA_TROVITA_G00_M03_MAN_2)
     msgbox(Naranja_IslaTrovita_G00_M03_Text_08166EA5, MSGBOX_DEFAULT)
@@ -311,7 +311,7 @@ script Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C77D {
     call_if(EQUAL, Naranja_IslaTrovita_G00_M03_EventScript_Sub_0814C7F5)
     msgbox(Naranja_IslaTrovita_G00_M03_Text_0816707F, MSGBOX_DEFAULT)
     closemessage
-    setflag(FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090)
+    setflag(FLAG_NARANJA_MET_MARA_ON_TROVITA)
     setflag(FLAG_HIDE_ISLA_TROVITA_G00_M03_MAN_2)
     setvar(VAR_NARANJA_CRYSTAL_ONIX_QUEST_STATE, 5)
     delay(0x1E)

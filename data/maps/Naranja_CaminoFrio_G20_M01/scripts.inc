@@ -9,7 +9,7 @@ Naranja_CaminoFrio_G20_M01_MapScripts::
 
 Naranja_CaminoFrio_G20_M01_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 8 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	map_script_2 VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1, Naranja_CaminoFrio_G20_M01_OnFrame_1
+	map_script_2 VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1, Naranja_CaminoFrio_G20_M01_OnFrame_1
 	.2byte 0
 
 
@@ -27,7 +27,7 @@ Naranja_CaminoFrio_G20_M01_OnTransition::
 # 20 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	call Naranja_CaminoFrio_G20_M01_EventScript_Sub_081A0172
 # 21 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1
+	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1
 # 22 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	call_if EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814F92F
 	end
@@ -43,7 +43,7 @@ Naranja_CaminoFrio_G20_M01_OnFrame_1::
 # 32 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	special Special_BeginCyclingRoadChallenge
 # 33 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 2
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 2
 	return
 
 
@@ -157,7 +157,7 @@ Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FCFB::
 
 Naranja_CaminoFrio_G20_M01_EventScript_Sub_0814FD09::
 # 101 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 3
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 3
 # 102 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	savebgm MUS_DUMMY
 # 103 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
@@ -175,7 +175,7 @@ Naranja_CaminoFrio_G20_M01_EventScript_Trigger_2::
 # 111 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	goto_if EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_081634A6
 # 112 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B
+	setflag FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED
 # 113 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 114 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
@@ -201,7 +201,7 @@ Naranja_CaminoFrio_G20_M01_EventScript_Trigger_7::
 # 128 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	lockall
 # 129 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	clearflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B
+	clearflag FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED
 # 130 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	setvar VAR_TEMP_1, 0
 # 131 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
@@ -311,7 +311,7 @@ Naranja_CaminoFrio_G20_M01_EventScript_Trigger_1::
 # 200 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	goto_if EQUAL, Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D85
 # 201 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B
+	setflag FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED
 # 202 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 203 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
@@ -321,9 +321,9 @@ Naranja_CaminoFrio_G20_M01_EventScript_Trigger_1::
 
 Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D51::
 # 208 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 0
 # 209 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	clearflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B
+	clearflag FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED
 # 210 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	setvar VAR_TEMP_1, 0
 # 211 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
@@ -333,7 +333,7 @@ Naranja_CaminoFrio_G20_M01_EventScript_Sub_086B7D51::
 # 213 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	nop
 # 214 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1
 # 215 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	nop
 # 216 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
@@ -449,7 +449,7 @@ Naranja_CaminoFrio_G20_M01_EventScript_Trigger_8::
 # 278 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	nop
 # 279 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 3
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 3
 # 280 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"
 	savebgm 0x3500
 # 281 "data/maps/Naranja_CaminoFrio_G20_M01/scripts.pory"

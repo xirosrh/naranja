@@ -38,9 +38,9 @@ Naranja_IslaNavel_G20_M00_EventScript_OBJ_EVENT_GFX_DANNY_LocalId1::
 # 30 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
 	lockall
 # 31 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 0
 # 32 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
-	clearflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B
+	clearflag FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED
 # 33 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"
 	setvar VAR_TEMP_1, 0
 # 34 "data/maps/Naranja_IslaNavel_G20_M00/scripts.pory"

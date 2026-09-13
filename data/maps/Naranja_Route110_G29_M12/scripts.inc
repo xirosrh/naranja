@@ -6,11 +6,11 @@ Naranja_Route110_G29_M12_MapScripts::
 
 Naranja_Route110_G29_M12_OnTransition::
 # 9 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
-	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 3
+	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 3
 # 10 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
 	call_if EQUAL, Naranja_Route110_G29_M12_EventScript_Sub_081634E5
 # 11 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
-	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 2
+	compare_var_to_value VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 2
 # 12 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
 	call_if EQUAL, Naranja_Route110_G29_M12_EventScript_Sub_081634E5
 	end
@@ -18,7 +18,7 @@ Naranja_Route110_G29_M12_OnTransition::
 
 Naranja_Route110_G29_M12_EventScript_Sub_081634E5::
 # 17 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1
 	return
 
 
@@ -48,7 +48,7 @@ Naranja_Route110_G29_M12_EventScript_Trigger_1::
 # 35 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
 	goto_if EQUAL, Naranja_Route110_G29_M12_EventScript_Sub_08163523
 # 36 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
-	setflag FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B
+	setflag FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED
 # 37 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 38 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
@@ -58,7 +58,7 @@ Naranja_Route110_G29_M12_EventScript_Trigger_1::
 
 Naranja_Route110_G29_M12_EventScript_Sub_0816351D::
 # 43 "data/maps/Naranja_Route110_G29_M12/scripts.pory"
-	setvar VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 1
+	setvar VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 1
 	return
 
 

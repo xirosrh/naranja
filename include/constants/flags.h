@@ -2482,8 +2482,8 @@
 #define FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008C                                0x04A
 #define FLAG_NARANJA_ROUTE109_EVENT_COMPLETE_008D                                0x04B
 #define FLAG_HIDE_ISLA_PINKAN_G00_M30_LATIAS                                     0x04C
-#define FLAG_NARANJA_MANDARIN_EVENT_COMPLETE_008F                                0x04D
-#define FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0090                            0x04E
+#define FLAG_NARANJA_DEFEATED_TEAM_ROCKET_IN_CRYSTAL_CAVE                        0x04D
+#define FLAG_NARANJA_MET_MARA_ON_TROVITA                                         0x04E
 #define FLAG_NARANJA_ISLAS_EVENT_COMPLETE_0093                                   0x04F
 #define FLAG_NARANJA_RECEIVED_GS_BALL_FROM_IVY                                   0x050
 #define FLAG_NARANJA_7ISLAS_POMELO_EVENT_COMPLETE_0095                           0x051
@@ -2493,7 +2493,7 @@
 #define FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0099                            0x055
 #define FLAG_NARANJA_ISLA_HAMLIN_EVENT_COMPLETE_009A                             0x056
 #define FLAG_NARANJA_ISLA_SHAMOUTI_EVENT_COMPLETE_009B                           0x057
-#define FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_009F                            0x058
+#define FLAG_NARANJA_PROMISED_TO_FIND_CRYSTAL_ONIX                               0x058
 #define FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A0                            0x059
 #define FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A1                            0x05A
 #define FLAG_NARANJA_ISLA_KUMQUAT_EVENT_COMPLETE_00A2                            0x05B
@@ -2594,10 +2594,10 @@
 #define FLAG_NARANJA_SIN_NOMBRE_EVENT_COMPLETE_010E                              0x0BA
 #define FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_010F                            0x0BB
 #define FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0110                            0x0BC
-#define FLAG_NARANJA_ISLA_NAVEL_EVENT_COMPLETE_0111                              0x0BD
+#define FLAG_NARANJA_NURSE_EXPLAINED_POKERUS_ON_NAVEL                            0x0BD
 #define FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0112                           0x0BE
 #define FLAG_NARANJA_ISLA_TROVITA_EVENT_COMPLETE_0113                            0x0BF
-#define FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114                          0x0C0
+#define FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MELLSWEET                            0x0C0
 #define FLAG_NARANJA_ROUTE111_EVENT_COMPLETE_0115                                0x0C1
 #define FLAG_NARANJA_ISLA_MURCOTT_EVENT_COMPLETE_0116                            0x0C2
 #define FLAG_NARANJA_ISLAS_EVENT_COMPLETE_0117                                   0x0C3
@@ -3011,7 +3011,7 @@
 #define FLAG_NARANJA_ISLA_POMELO_EVENT_COMPLETE_081E                             0x25B
 #define FLAG_NARANJA_FIERY_PATH_EVENT_COMPLETE_0829                              0x25C
 #define FLAG_NARANJA_ROUTE666_EVENT_COMPLETE_082A                                0x25D
-#define FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B                             0x25E
+#define FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED                           0x25E
 #define FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0830                           0x25F
 #define FLAG_NARANJA_ISLA_MANDARIN_EVENT_COMPLETE_0832                           0x260
 #define FLAG_NARANJA_SHOAL_CAVE_EVENT_COMPLETE_083A                              0x261
@@ -3031,7 +3031,7 @@
 #define FLAG_NARANJA_PUEBLO_PALETA_EVENT_COMPLETE_0848                           0x26F
 #define FLAG_NARANJA_SOUTHERN_ISLAND_EVENT_COMPLETE_0849                         0x270
 #define FLAG_NARANJA_FIERY_PATH_EVENT_COMPLETE_084A                              0x271
-#define FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_084B                             0x272
+#define FLAG_NARANJA_JOY_ICE_BEAM_REWARD_EVENT                                   0x272
 #define FLAG_NARANJA_ISLA_VALENCIA_EVENT_COMPLETE_084C                           0x273
 #define FLAG_NARANJA_SEALED_CHAMBER_EVENT_COMPLETE_084F                          0x274
 #define FLAG_NARANJA_ISLA_MIKAN_EVENT_COMPLETE_0850                              0x275

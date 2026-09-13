@@ -28,8 +28,8 @@ script Naranja_IslaNavel_G20_M00_OnTransition {
 
 script Naranja_IslaNavel_G20_M00_EventScript_OBJ_EVENT_GFX_DANNY_LocalId1 {
     lockall
-    setvar(VAR_NARANJA_CAMINO_FRIO_STORY_STATE, 0)
-    clearflag(FLAG_NARANJA_CAMINO_FRIO_EVENT_COMPLETE_082B)
+    setvar(VAR_NARANJA_CAMINO_FRIO_BIKE_RACE_STATE, 0)
+    clearflag(FLAG_NARANJA_CAMINO_FRIO_BIKE_RACE_GATE_PASSED)
     setvar(VAR_TEMP_1, 0)
     releaseall
     end

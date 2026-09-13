@@ -110,7 +110,7 @@ Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId9::
 # 86 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
 	faceplayer
 # 87 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
-	checkflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114
+	checkflag FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MELLSWEET
 # 88 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
 	goto_if EQUAL, Naranja_IslaMellsweet_G00_M06_EventScript_Sub_0814D069
 # 89 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
@@ -132,7 +132,7 @@ Naranja_IslaMellsweet_G00_M06_EventScript_OBJ_EVENT_GFX_BOY_2_LocalId9::
 # 97 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
 	goto_if EQUAL, Naranja_7islasPomelo_G03_M04_EventScript_Sub_081A029B
 # 98 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
-	setflag FLAG_NARANJA_ISLA_MELLSWEET_EVENT_COMPLETE_0114
+	setflag FLAG_NARANJA_RECEIVED_KINGS_ROCK_ON_MELLSWEET
 # 99 "data/maps/Naranja_IslaMellsweet_G00_M06/scripts.pory"
 	release
 	end
